@@ -1,0 +1,32 @@
+{
+  "kategori": "Rotasi - Dealer / Support",
+  "deskripsi": "Data proposal support dealer (REF_SM): harga kalah, usulan support, SRP setelah support.",
+  "sumber": ["Rotation - REF/REF_SM.xlsx", "Rotation - REF/REF_SM_feedback.xlsx"],
+  "fakta": [
+    {
+      "judul": "CV Sendiran Agung Bernato (Bandung)",
+      "isi": "AQR-TTD546RBG(WT): kalah harga vs LG GCFB41FPGAM (Rp10.235.015), usulan support Rp850.000, SRP Rp10.178.500. AQR-TTD546RBG(BK): support Rp1.300.000, SRP Rp10.202.200. AQR-CTD506RGG(BK): vs Hisense RQ558N4IBN (Rp6.937.000).",
+      "sumber": "REF_SM / REF_SM_feedback"
+    },
+    {
+      "judul": "PT Akur Pratama (Bandung)",
+      "isi": "AQR-TTD546RBC(CB): vs Sharp SJ-IF51PG (Rp10.199.000), usulan support Rp400.000, SRP Rp10.099.000.",
+      "sumber": "REF_SM / REF_SM_feedback"
+    },
+    {
+      "judul": "PT Universal Joyo Lestari (Surabaya)",
+      "isi": "AQR-CTD746RAG(BK): vs Electrolux EQE5715A-B (Rp15.198.000), support Rp2.000.000, SRP Rp16.898.000. AQR-IG685AMTGB: status EOL, SRP Rp11.248.000.",
+      "sumber": "REF_SM / REF_SM_feedback"
+    },
+    {
+      "judul": "Atakrib (Yogyakarta)",
+      "isi": "AQR-DTM265RAV(MX) (53 unit): vs Sharp SJ246SI GK (Rp3.609.000), support Rp50.000, SRP Rp3.589.000. AQR-DTM285RAV(MX) (74 unit): support Rp100.000, SRP Rp3.809.000. AQR-DTM305RAV(MX) (42 unit): vs Sharp SJ326SI GK, support Rp300.000, SRP Rp4.119.000.",
+      "sumber": "REF_SM / REF_SM_feedback"
+    },
+    {
+      "judul": "Feedback proses REF_SM",
+      "isi": "Beberapa kasus tercatat 'Belum ada mapping kompetitor untuk model AQUA ini' atau 'Brand tidak ada di mapping' (Hisense, Electrolux) — peluang memperbarui peta kompetitor.",
+      "sumber": "REF_SM_feedback"
+    }
+  ]
+}

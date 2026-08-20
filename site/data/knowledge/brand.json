@@ -1,0 +1,46 @@
+{
+  "kategori": "Brand",
+  "deskripsi": "Profil Haier dan Aqua: posisi global, target Indonesia, garansi.",
+  "sumber": [
+    "Product Knowledge/Cold+Chain+-+Christie+(+AI+Refined).docx",
+    "Product Knowledge/TV+-+ANDIKA.docx",
+    "SS Induction/Water+Solution+-+Awan.docx"
+  ],
+  "fakta": [
+    {
+      "judul": "Haier: #1 global dan Asia",
+      "isi": "Haier adalah pemimpin pasar home appliances nomor 1 di dunia dan di Asia dengan pangsa pasar 15,2%.",
+      "sumber": "Cold Chain - Christie"
+    },
+    {
+      "judul": "Target Haier di Indonesia",
+      "isi": "Target: masuk peringkat 1-2 di Indonesia dalam 2-3 tahun ke depan.",
+      "sumber": "Cold Chain - Christie"
+    },
+    {
+      "judul": "Aqua = merek lokal Haier Indonesia",
+      "isi": "Aqua adalah merek lokal yang dinaungi Haier Asia International Indonesia (HSI). Kode produk dimulai 'AQ' untuk Aqua dan 'HR' untuk Haier.",
+      "sumber": "Kulkas - Teh Lidia"
+    },
+    {
+      "judul": "Aqua TV: rising star",
+      "isi": "Penjualan Aqua TV naik dari rata-rata 30 juta/bulan (2021) menjadi 75 juta/bulan (awal 2026).",
+      "sumber": "TV - ANDIKA"
+    },
+    {
+      "judul": "Pemanas air: pengalaman global 40 tahun",
+      "isi": "Water heater Aqua baru ~6 bulan hadir di Indonesia, tapi sudah berpengalaman global 40 tahun dengan sekitar 20 pabrik di dunia.",
+      "sumber": "Water Solution - Awan"
+    },
+    {
+      "judul": "Garansi kompresor kulkas",
+      "isi": "Kompresor non-inverter 7 tahun; inverter <400L 12 tahun; inverter >400L 20 tahun. Servis dan sparepart 1 tahun.",
+      "sumber": "Kulkas - Teh Lidia"
+    },
+    {
+      "judul": "Garansi produk lain",
+      "isi": "Freezer (Cold Chain): 7+2 tahun. TV Aqua: 3 tahun all-in (panel, sparepart, jasa). Pemanas air: tangki 10 tahun (seri tertentu) / 7 tahun mekanikal, elemen 2 tahun.",
+      "sumber": "Cold Chain - Christie / TV - ANDIKA / Water Solution - Awan"
+    }
+  ]
+}

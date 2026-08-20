@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galeri — MTMS AQUA HAIER</title>
+<meta name="description" content="323 foto kegiatan MTMS AQUA HAIER: kunjungan gudang, manufacturing visit, dan sesi induksi.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<header>
+  <div class="nav">
+    <div class="brand"><img src="assets/Haier_Logo.svg" alt="Haier" class="brand-logo"><span class="brand-name">MTMS</span></div>
+    <nav class="nav-links">
+      <a href="index.html">Beranda</a>
+      <a href="induksi.html">Induksi</a>
+      <a href="produk.html">Produk</a>
+      <a href="kompetitor.html">Kompetitor</a>
+      <a href="rotasi.html">Rotasi</a>
+      <a href="proses.html">Proses</a>
+      <a href="galeri.html" class="active">Galeri</a>
+      <a href="file.html">File</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" onclick="openSearch()">Cari</button>
+      <button class="icon-btn" onclick="toggleTheme()">Mode</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero-mini">
+    <span class="hero-mini-ico">📸</span>
+    <div>
+      <h1>Galeri Kegiatan</h1>
+      <p>Klik foto untuk memperbesar. 323 foto dari kunjungan gudang, pabrik, dan sesi induksi.</p>
+    </div>
+  </section>
+  <div id="galeri-root">
+    <div class="gallery-skeleton" id="gal-skeleton">
+      <div class="skel"></div><div class="skel"></div><div class="skel"></div>
+      <div class="skel"></div><div class="skel"></div><div class="skel"></div>
+      <div class="skel"></div><div class="skel"></div><div class="skel"></div>
+      <div class="skel"></div><div class="skel"></div><div class="skel"></div>
+    </div>
+    <p class="sec-sub" id="gal-loading" style="display:none">Foto belum dimuat — tarik ulang</p>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-in">
+    <span>MTMS AQUA HAIER — Knowledge Hub · Management Trainee 2026</span>
+    <span>Halaman: Galeri</span>
+  </div>
+</footer>
+
+<div class="search-overlay" id="search-overlay">
+  <div class="search-box">
+    <input id="search-input" placeholder="Cari di semua materi..." oninput="doSearch()">
+    <div class="search-results" id="search-results"></div>
+  </div>
+</div>
+<div class="lightbox" id="lightbox">
+  <button class="close" aria-label="Tutup">&times;</button>
+  <button class="navbtn prev" aria-label="Sebelumnya">&#10094;</button>
+  <img src="" alt="">
+  <button class="navbtn next" aria-label="Berikutnya">&#10095;</button>
+  <div class="cap"></div>
+</div>
+
+<script src="js/theme.js"></script>
+<script src="js/data.js"></script>
+<script src="js/search.js"></script>
+<script src="js/lightbox.js"></script>
+<script>
+function loadGaleri() {
+  if (window.MTMS_DATA && window.MTMS_DATA.galeri && window.MTMS_DATA.galeri.length) {
+    return Promise.resolve(window.MTMS_DATA.galeri);
+  }
+  return fetch("data/galeri.json")
+    .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); });
+}
+loadGaleri()
+  .then(function (groups) {
+    var root = document.getElementById("galeri-root");
+    var skeleton = document.getElementById("gal-skeleton");
+    var loading = document.getElementById("gal-loading");
+    if (skeleton) skeleton.style.display = "none";
+    if (loading) loading.style.display = "block";
+    root.innerHTML = "";
+    var idx = 0;
+    function buildGroup(g) {
+      var h = document.createElement("h2");
+      h.className = "sec";
+      h.textContent = g.folder;
+      var p = document.createElement("p");
+      p.className = "sec-sub";
+      p.textContent = g.files.length + " foto";
+      var gal = document.createElement("div");
+      gal.className = "gallery";
+      g.files.forEach(function (f) {
+        var fig = document.createElement("figure");
+        var img = document.createElement("img");
+        img.loading = "lazy";
+        img.decoding = "async";
+        img.src = "media/" + g.folder + "/" + f.file;
+        img.alt = f.name;
+        var cap = document.createElement("figcaption");
+        cap.textContent = f.name;
+        fig.appendChild(img);
+        fig.appendChild(cap);
+        gal.appendChild(fig);
+      });
+      root.appendChild(h);
+      root.appendChild(p);
+      root.appendChild(gal);
+    }
+    function renderNext() {
+      if (idx >= groups.length) { lightboxInit(); return; }
+      buildGroup(groups[idx]);
+      idx++;
+      lightboxInit();
+      if (idx >= groups.length) return;
+      var sentinel = document.createElement("div");
+      sentinel.style.height = "1px";
+      root.appendChild(sentinel);
+      if ("IntersectionObserver" in window) {
+        var io = new IntersectionObserver(function (entries) {
+          if (entries[0].isIntersecting) {
+            io.disconnect();
+            sentinel.remove();
+            renderNext();
+          }
+        }, { rootMargin: "600px 0px" });
+        io.observe(sentinel);
+      } else {
+        setTimeout(renderNext, 50);
+      }
+    }
+    renderNext();
+  })
+  .catch(function (err) {
+    var root = document.getElementById("galeri-root");
+    var skeleton = document.getElementById("gal-skeleton");
+    var loading = document.getElementById("gal-loading");
+    if (skeleton) skeleton.style.display = "none";
+    if (loading) loading.style.display = "block";
+    root.innerHTML = '<p class="sec-sub">Gagal memuat galeri (' + err.message + ').</p>' +
+      '<button class="icon-btn" onclick="location.reload()">Coba lagi</button>';
+  });
+</script>
+<button class="to-top" id="to-top" aria-label="Kembali ke atas" title="Kembali ke atas">&#8593;</button>
+<script>
+var tt = document.getElementById("to-top");
+window.addEventListener("scroll", function () {
+  tt.classList.toggle("show", window.scrollY > 600);
+});
+tt.addEventListener("click", function () { window.scrollTo({ top: 0, behavior: "smooth" }); });
+</script>
+</body>
+</html>

@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perbandingan Kompetitor — MTMS AQUA HAIER</title>
+<meta name="description" content="Perbandingan kulkas AQUA vs LG, Midea, Polytron, Samsung, Sharp per kategori">
+<link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<header>
+  <div class="nav">
+    <div class="brand"><img src="assets/Haier_Logo.svg" alt="Haier" class="brand-logo"><span class="brand-name">MTMS</span></div>
+    <nav class="nav-links">
+      <a href="index.html">Beranda</a>
+      <a href="induksi.html">Induksi</a>
+      <a href="produk.html">Produk</a>
+      <a href="kompetitor.html" class="active">Kompetitor</a>
+      <a href="rotasi.html">Rotasi</a>
+      <a href="proses.html">Proses</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="file.html">File</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" onclick="openSearch()">Cari</button>
+      <button class="icon-btn" onclick="toggleTheme()">Mode</button>
+    </div>
+  </div>
+</header>
+
+<main class="comp-main">
+  <section class="hero-mini">
+    <span class="hero-mini-ico">&#9878;</span>
+    <div>
+      <h1>Perbandingan Kompetitor</h1>
+      <p>Bandingkan kulkas AQUA vs LG, Midea, Polytron, Samsung, Sharp. Klik Edit/Hapus pada tiap baris.</p>
+    </div>
+  </section>
+  <div class="comp-legend">
+    <span class="comp-brand-dot" style="background:#0066CC"></span> AQUA
+    <span class="comp-brand-dot" style="background:#C00000"></span> LG
+    <span class="comp-brand-dot" style="background:#E60012"></span> Midea
+    <span class="comp-brand-dot" style="background:#0047AB"></span> Polytron
+    <span class="comp-brand-dot" style="background:#1428A0"></span> Samsung
+    <span class="comp-brand-dot" style="background:#C41E3A"></span> Sharp
+  </div>
+  <div id="comp-categories"></div>
+  <div id="comp-empty" class="comp-empty" style="display:none"><p>Tidak ada data kompetitor.</p></div>
+</main>
+<footer>
+  <div class="footer-in">
+    <span>MTMS AQUA HAIER - Knowledge Hub</span>
+    <span>Kompetitor</span>
+  </div>
+</footer>
+
+<script src="js/theme.js"></script>
+<script src="js/data.js"></script>
+<script src="js/search.js"></script>
+<script>
+(function(){
+var CAT_ORDER=["SB","TM","BM","SBS","MD"];
+var CAT_LABELS={"SB":"1 Pintu","TM":"2 Pintu Top Mount","BM":"2 Pintu Freezer Bawah","SBS":"Side by Side","MD":"Multi Pintu"};
+var BRANDS=["LG","MIDEA","POLYTRON","SAMSUNG","SHARP"];
+var container=document.getElementById("comp-categories");
+var emptyState=document.getElementById("comp-empty");
+var compData=null;
+
+function grpToCat(g){return{"Single Door":"SB","Top Mount":"TM","Bottom Mount":"BM","Side by Side":"SBS","Multidoor":"MD"}[g]||""}
+function ph(brand,model){var c={"AQUA":"0066CC","LG":"C00000","MIDEA":"E60012","POLYTRON":"0047AB","SAMSUNG":"1428A0","SHARP":"C41E3A"}[brand]||"999999";return"https://dummyimage.com/400x533/"+c+"/fff.jpg&text="+encodeURIComponent(brand+" "+model)}
+function fp(v){return v?"Rp "+String(v).replace(/\B(?=(\d{3})+(?!\d))/g,"."):"-"}
+
+function esc(s){var d=document.createElement("div");d.textContent=s;return d.innerHTML}
+
+function fiturHtml(f){
+  if(!f||!f.length)return'<span class="comp-meta">-</span>';
+  var h='<ul class="comp-fitur-list">';
+  for(var i=0;i<f.length;i++)h+='<li title="'+esc(f[i])+'">'+esc(f[i])+'</li>';
+  return h+'</ul>';
+}
+
+/* === BUILD ROWS: one row per AQUA group, competitors from PDF mapping === */
+function buildRows(catCode){
+  if(!compData||!compData.brands)return[];
+  // index models by brand+model
+  var idx={};
+  for(var b=0;b<compData.brands.length;b++){
+    var brand=compData.brands[b].brand;
+    var models=compData.brands[b].models;
+    for(var j=0;j<models.length;j++){
+      var m=models[j];
+      idx[brand+"|"+m.model]={brand:brand,model:m.model,cat:m.cat||m.subcat||"",capacity:m.capacity_l||0,price:m.price_idr||0,fitur:m.fitur||[],source_url:m.source_url||"",image:m.image||""};
+    }
+  }
+  var groups=compData.groups||[];
+  var rows=[];
+  for(var i=0;i<groups.length;i++){
+    var g=groups[i];
+    var aq=idx["AQUA|"+g.aqua];
+    if(!aq)continue;
+    if(aq.cat!==catCode)continue;
+    var competitors={};
+    for(var bi=0;bi<BRANDS.length;bi++){
+      var brand=BRANDS[bi];
+      var compModel=g.competitors&&g.competitors[brand];
+      if(compModel){
+        var c=idx[brand+"|"+compModel];
+        if(c)competitors[brand]=c;
+      }
+    }
+    rows.push({aqua:aq,competitors:competitors});
+  }
+  return rows;
+}
+
+function renderRow(row,catCode){
+  var aq=row.aqua;
+  var html='<tr>';
+  // AQUA cell
+  if(aq){
+    var img=aq.image||ph("AQUA",aq.model);
+    html+='<td class="comp-cell comp-aqua"><div class="comp-model-info">'+
+      '<img class="comp-thumb" data-src="'+img+'" alt="'+esc(aq.model)+'" loading="lazy">'+
+      '<div class="comp-model-detail">'+
+      '<strong class="comp-model-name">'+esc(aq.model)+'</strong>'+
+      '<div class="comp-meta"><span class="comp-cap">'+(aq.capacity?aq.capacity+" L":"-")+'</span><span class="comp-price">'+fp(aq.price)+'</span></div>'+
+      fiturHtml(aq.fitur)+
+      '</div></div>'+
+      '<div class="comp-row-actions">'+
+      '<button class="comp-edit" data-brand="AQUA" data-model="'+esc(aq.model)+'">✎ Edit</button>'+
+      '<button class="comp-del" data-brand="AQUA" data-model="'+esc(aq.model)+'">🗑 Hapus</button>'+
+      '</div></td>';
+  }else{
+    html+='<td class="comp-cell comp-aqua comp-empty">&mdash;</td>';
+  }
+  // Competitor cells
+  for(var bi=0;bi<BRANDS.length;bi++){
+    var brand=BRANDS[bi];
+    var c=row.competitors[brand];
+    var lk=brand.toLowerCase();
+    if(c){
+      html+='<td class="comp-cell comp-'+lk+'"><div class="comp-model-info">'+
+        '<img class="comp-thumb" data-src="'+c.image+'" alt="'+esc(brand+" "+c.model)+'" loading="lazy">'+
+        '<div class="comp-model-detail">'+
+        '<span class="comp-brand-badge comp-'+lk+'">'+brand+'</span>'+
+        '<strong class="comp-model-name">'+esc(c.model)+'</strong>'+
+        '<div class="comp-meta"><span class="comp-cap">'+(c.capacity?c.capacity+" L":"-")+'</span><span class="comp-price">'+fp(c.price)+'</span></div>'+
+        fiturHtml(c.fitur)+
+        (c.source_url?'<a class="comp-source" href="'+c.source_url+'" target="_blank" rel="noopener">Sumber</a>':'')+
+        '</div></div>'+
+        '<div class="comp-row-actions">'+
+        '<button class="comp-edit" data-brand="'+esc(c.brand)+'" data-model="'+esc(c.model)+'">✎ Edit</button>'+
+        '<button class="comp-del" data-brand="'+esc(c.brand)+'" data-model="'+esc(c.model)+'">🗑 Hapus</button>'+
+        '</div></td>';
+    }else{
+      html+='<td class="comp-cell comp-empty"><button type="button" class="comp-add-cell" data-brand="'+esc(brand)+'" data-aqua="'+esc(aq.model)+'" data-cat="'+esc(catCode)+'">＋ Model</button></td>';
+    }
+  }
+  html+='</tr>';
+  return html;
+}
+
+function renderAll(){
+  var katalog=(window.MTMS_DATA&&window.MTMS_DATA.katalog)||[];
+  var aqByCat={};
+  for(var i=0;i<katalog.length;i++){
+    var p=katalog[i];
+    if(p.brand!=="AQUA")continue;
+    var c=grpToCat(p.group);
+    if(c){if(!aqByCat[c])aqByCat[c]=[];aqByCat[c].push(p);}
+  }
+  var html="";
+  for(var ci=0;ci<CAT_ORDER.length;ci++){
+    var catCode=CAT_ORDER[ci];
+    var aqs=aqByCat[catCode]||[];
+    if(!aqs.length)continue;
+    var rows=buildRows(catCode);
+    if(!rows.length)continue;
+    html+='<section class="comp-category-section">'+
+      '<div class="comp-cat-header"><h2 class="comp-category-title" style="margin:0;border-radius:6px">'+CAT_LABELS[catCode]+" ("+rows.length+" model)</h2>"+
+      '<button class="comp-add-btn" data-cat="'+catCode+'">+ Tambah Model</button></div>'+
+      '<div class="comp-table-wrap"><table class="comp-full-table"><thead><tr>'+
+      '<th style="width:18%">AQUA (Referensi)</th>'+
+      '<th>LG</th><th>Midea</th><th>Polytron</th><th>Samsung</th><th>Sharp</th>'+
+      '</tr></thead><tbody>';
+    for(var ri=0;ri<rows.length;ri++)html+=renderRow(rows[ri],catCode);
+    html+='</tbody></table></div></section>';
+  }
+  if(!html){emptyState.style.display="block";container.innerHTML="";}
+  else{emptyState.style.display="none";container.innerHTML=html;}
+  lazyLoad();
+}
+
+function lazyLoad(){
+  var imgs=document.querySelectorAll(".comp-thumb[data-src]");
+  if("IntersectionObserver" in window){
+    var obs=new IntersectionObserver(function(entries){
+      for(var i=0;i<entries.length;i++){
+        if(entries[i].isIntersecting){
+          entries[i].target.src=entries[i].target.dataset.src;
+          entries[i].target.removeAttribute("data-src");
+          obs.unobserve(entries[i].target);
+        }
+      }
+    },{rootMargin:"100px"});
+    for(var i=0;i<imgs.length;i++)obs.observe(imgs[i]);
+  }else{
+    for(var i=0;i<imgs.length;i++){imgs[i].src=imgs[i].dataset.src;imgs[i].removeAttribute("data-src");}
+  }
+}
+
+/* === EVENT DELEGATION for edit/delete/add buttons === */
+container.addEventListener("click",function(e){
+  var btn=e.target.closest(".comp-edit");
+  if(btn){doEdit(btn.dataset.brand,btn.dataset.model);return;}
+  btn=e.target.closest(".comp-del");
+  if(btn){doDel(btn.dataset.brand,btn.dataset.model);return;}
+  btn=e.target.closest(".comp-add-btn");
+  if(btn){doAdd(btn.dataset.cat);return;}
+  btn=e.target.closest(".comp-add-cell");
+  if(btn){doAddInCell(btn.dataset.brand,btn.dataset.aqua);return;}
+});
+
+/* === EDIT OVERLAY === */
+function openOverlay(title,fields,onSave){
+  var o=document.createElement("div");
+  o.className="comp-edit-overlay";
+  var h='<div class="comp-edit-card"><h3>'+esc(title)+'</h3>';
+  for(var i=0;i<fields.length;i++){
+    var f=fields[i];
+    // add section divider for fields after the 3rd (index 2) and 5th (index 4)
+    if(i===3 || i===5) h+='<div class="comp-edit-seksi"></div>';
+    h+='<label>'+esc(f.label)+'</label>';
+    if(f.type==="textarea"){
+      h+='<textarea id="cef_'+f.id+'" placeholder="'+esc(f.ph||"")+'">'+esc(f.val||"")+'</textarea>';
+    }else if(f.type==="select"){
+      h+='<select id="cef_'+f.id+'">';
+      for(var j=0;j<f.opts.length;j++){
+        h+='<option value="'+esc(f.opts[j].v)+'"'+(f.opts[j].v===f.val?" selected":"")+'> '+esc(f.opts[j].t)+'</option>';
+      }
+      h+='</select>';
+    }else{
+      h+='<input type="'+(f.type||"text")+'" id="cef_'+f.id+'" value="'+esc(f.val||"")+'" placeholder="'+esc(f.ph||"")+'">';
+    }
+    if(f.preview)h+='<img class="foto-preview" id="cef_prev_'+f.id+'" src="'+esc(f.val||"")+'" onerror="this.style.display=\'none\'">';
+    if(f.fileUpload){
+      h+='<div class="foto-upload-row"><input type="file" id="cef_file_'+f.id+'" accept="image/*"><button type="button" id="cef_up_'+f.id+'">Upload</button></div>';
+    }
+  }
+  h+='<div class="edit-actions"><button class="btn-cancel" id="cef_cancel">Batal</button><button class="btn-save" id="cef_save">Simpan</button></div></div>';
+  o.innerHTML=h;
+  document.body.appendChild(o);
+
+  // Wire upload buttons
+  for(var i=0;i<fields.length;i++){
+    if(fields[i].fileUpload)(function(fid){
+      var upBtn=o.querySelector("#cef_up_"+fid);
+      if(upBtn)upBtn.onclick=function(){
+        var fi=o.querySelector("#cef_file_"+fid);
+        if(!fi||!fi.files.length)return;
+        var reader=new FileReader();
+        reader.onload=function(ev){
+          o.querySelector("#cef_"+fid).value=ev.target.result;
+          var prev=o.querySelector("#cef_prev_"+fid);
+          if(prev){prev.src=ev.target.result;prev.style.display="";}
+        };
+        reader.readAsDataURL(fi.files[0]);
+      };
+    })(fields[i].id);
+  }
+
+  o.querySelector("#cef_cancel").onclick=function(){o.remove();};
+  o.querySelector("#cef_save").onclick=function(){
+    var vals={};
+    for(var i=0;i<fields.length;i++){
+      vals[fields[i].id]=o.querySelector("#cef_"+fields[i].id).value;
+    }
+    onSave(vals);
+    o.remove();
+  };
+  o.addEventListener("click",function(e){if(e.target===o)o.remove();});
+}
+
+function doEdit(brand,model){
+  if(!compData)return;
+  var bd=null;
+  for(var i=0;i<compData.brands.length;i++){
+    if(compData.brands[i].brand===brand){bd=compData.brands[i];break;}
+  }
+  if(!bd)return;
+  var m=null;
+  for(var i=0;i<bd.models.length;i++){
+    if(bd.models[i].model===model){m=bd.models[i];break;}
+  }
+  if(!m)return;
+  var catOpts=[];
+  for(var i=0;i<CAT_ORDER.length;i++)catOpts.push({v:CAT_ORDER[i],t:CAT_LABELS[CAT_ORDER[i]]});
+  openOverlay("Edit: "+brand+" "+model,[
+    {id:"model",label:"Model",val:m.model},
+    {id:"cat",label:"Kategori",type:"select",val:m.cat||m.subcat||"TM",opts:catOpts},
+    {id:"cap",label:"Kapasitas (L)",type:"number",val:m.capacity_l||""},
+    {id:"price",label:"Harga (Rp)",type:"number",val:m.price_idr||""},
+    {id:"fitur",label:"Fitur (1 baris = 1 poin)",type:"textarea",val:(m.fitur||[]).join("\n"),ph:"Inverter\nAnti-bakteri"},
+    {id:"image",label:"URL Gambar",val:m.image||"",ph:"https://... atau upload",fileUpload:true,preview:true},
+    {id:"source",label:"Sumber URL",val:m.source_url||"",ph:"https://..."}
+  ],function(v){
+    var prevSnap=JSON.parse(JSON.stringify(compData));
+    var oldModel=m.model;
+    m.model=v.model;
+    m.cat=v.cat;m.subcat=v.cat;
+    m.capacity_l=Number(v.cap)||0;
+    m.price_idr=Number(v.price)||0;
+    m.fitur=v.fitur.split("\n").map(function(s){return s.trim()}).filter(Boolean);
+    if(v.image)m.image=v.image;
+    m.source_url=v.source;
+    // keep group references in sync on rename
+    if(oldModel!==m.model&&compData.groups){
+      for(var gi=0;gi<compData.groups.length;gi++){
+        var g=compData.groups[gi];
+        if(brand==="AQUA"&&g.aqua===oldModel)g.aqua=m.model;
+        if(brand!=="AQUA"&&g.competitors&&g.competitors[brand]===oldModel)g.competitors[brand]=m.model;
+      }
+    }
+    saveData(prevSnap);
+  });
+}
+
+function doDel(brand,model){
+  if(!compData)return;
+  if(!confirm("Hapus "+brand+" "+model+"?"))return;
+  var prevSnap=JSON.parse(JSON.stringify(compData));
+  var bd=null;
+  for(var i=0;i<compData.brands.length;i++){
+    if(compData.brands[i].brand===brand){bd=compData.brands[i];break;}
+  }
+  if(!bd)return;
+  bd.models=bd.models.filter(function(m){return m.model!==model});
+  // remove from groups
+  if(compData.groups){
+    for(var gi=compData.groups.length-1;gi>=0;gi--){
+      var g=compData.groups[gi];
+      if(brand==="AQUA"){
+        if(g.aqua===model)compData.groups.splice(gi,1);
+      }else{
+        if(g.competitors&&g.competitors[brand]===model)delete g.competitors[brand];
+      }
+    }
+  }
+  saveData(prevSnap);
+}
+
+function doAdd(catCode){
+  var catOpts=[];
+  for(var i=0;i<CAT_ORDER.length;i++)catOpts.push({v:CAT_ORDER[i],t:CAT_LABELS[CAT_ORDER[i]]});
+  var brandOpts=[];
+  for(var i=0;i<BRANDS.length;i++)brandOpts.push({v:BRANDS[i],t:BRANDS[i]});
+  openOverlay("Tambah Model Baru",[
+    {id:"brand",label:"Brand",type:"select",val:"LG",opts:brandOpts},
+    {id:"model",label:"Model",val:"",ph:"GN-Y201CLAR"},
+    {id:"cat",label:"Kategori",type:"select",val:catCode,opts:catOpts},
+    {id:"cap",label:"Kapasitas (L)",type:"number",val:""},
+    {id:"price",label:"Harga (Rp)",type:"number",val:""},
+    {id:"fitur",label:"Fitur (1 baris = 1 poin)",type:"textarea",val:"",ph:"Inverter\nAnti-bakteri"},
+    {id:"image",label:"URL Gambar",val:"",ph:"https://... atau upload",fileUpload:true,preview:true},
+    {id:"source",label:"Sumber URL",val:"",ph:"https://..."}
+  ],function(v){
+    var prevSnap=JSON.parse(JSON.stringify(compData));
+    var bd=null;
+    for(var i=0;i<compData.brands.length;i++){
+      if(compData.brands[i].brand===v.brand){bd=compData.brands[i];break;}
+    }
+    if(!bd)return;
+    bd.models.push({
+      model:v.model,cat:v.cat,subcat:v.cat,
+      capacity_l:Number(v.cap)||0,price_idr:Number(v.price)||0,
+      fitur:v.fitur.split("\n").map(function(s){return s.trim()}).filter(Boolean),
+      image:v.image||ph(v.brand,v.model),source_url:v.source
+    });
+    if(!compData.groups)compData.groups=[];
+    if(v.brand==="AQUA"){
+      // new AQUA model = new group (no competitors yet)
+      compData.groups.push({aqua:v.model,competitors:{}});
+    }else{
+      // attach competitor to closest AQUA group in same category
+      var best=null;
+      for(var gi=0;gi<compData.groups.length;gi++){
+        var g=compData.groups[gi];
+        var aq=null;
+        for(var i=0;i<compData.brands[0].models.length;i++){
+          if(compData.brands[0].models[i].model===g.aqua){aq=compData.brands[0].models[i];break;}
+        }
+        if(!aq)continue;
+        var aqc=aq.cat||aq.subcat||"";
+        if(aqc!==v.cat)continue;
+        if(!best||Math.abs((aq.capacity_l||0)-Number(v.cap))<Math.abs((best.cap||0)-Number(v.cap))){
+          best={g:g,cap:aq.capacity_l||0};
+        }
+      }
+      if(best){
+        if(!best.g.competitors)best.g.competitors={};
+        best.g.competitors[v.brand]=v.model;
+      }
+    }
+    saveData(prevSnap);
+  });
+}
+
+/* Tambah model langsung di baris (sel) yang kosong — brand & grup sudah ditentukan dari posisi tombol */
+function doAddInCell(brand,aquaModel){
+  var target=null;
+  if(!compData.groups)compData.groups=[];
+  for(var gi=0;gi<compData.groups.length;gi++){
+    if(compData.groups[gi].aqua===aquaModel){target=compData.groups[gi];break;}
+  }
+  if(!target)return;
+  var aq=null;
+  for(var i=0;i<compData.brands[0].models.length;i++){
+    if(compData.brands[0].models[i].model===aquaModel){aq=compData.brands[0].models[i];break;}
+  }
+  var catCode=aq?(aq.cat||aq.subcat||"TM"):"TM";
+  var catOpts=[];
+  for(var i=0;i<CAT_ORDER.length;i++)catOpts.push({v:CAT_ORDER[i],t:CAT_LABELS[CAT_ORDER[i]]});
+  var brandOpts=[];
+  for(var i=0;i<BRANDS.length;i++)brandOpts.push({v:BRANDS[i],t:BRANDS[i]});
+  openOverlay("Tambah Model di baris "+brand+" — "+aquaModel,[
+    {id:"brand",label:"Brand",type:"select",val:brand,opts:brandOpts},
+    {id:"model",label:"Model",val:"",ph:"GN-Y201CLAR"},
+    {id:"cat",label:"Kategori",type:"select",val:catCode,opts:catOpts},
+    {id:"cap",label:"Kapasitas (L)",type:"number",val:""},
+    {id:"price",label:"Harga (Rp)",type:"number",val:""},
+    {id:"fitur",label:"Fitur (1 baris = 1 poin)",type:"textarea",val:"",ph:"Inverter\nAnti-bakteri"},
+    {id:"image",label:"URL Gambar",val:"",ph:"https://... atau upload",fileUpload:true,preview:true},
+    {id:"source",label:"Sumber URL",val:"",ph:"https://..."}
+  ],function(v){
+    var prevSnap=JSON.parse(JSON.stringify(compData));
+    var bd=null;
+    for(var i=0;i<compData.brands.length;i++){
+      if(compData.brands[i].brand===v.brand){bd=compData.brands[i];break;}
+    }
+    if(!bd)return;
+    bd.models.push({
+      model:v.model,cat:v.cat,subcat:v.cat,
+      capacity_l:Number(v.cap)||0,price_idr:Number(v.price)||0,
+      fitur:v.fitur.split("\n").map(function(s){return s.trim()}).filter(Boolean),
+      image:v.image||ph(v.brand,v.model),source_url:v.source
+    });
+    if(v.brand==="AQUA"){
+      compData.groups.push({aqua:v.model,competitors:{}});
+    }else{
+      if(!target.competitors)target.competitors={};
+      target.competitors[v.brand]=v.model;
+    }
+    saveData(prevSnap);
+  });
+}
+
+function saveData(prevSnap){
+  // optimistic: langsung render state baru di memori, PUT jalan di background
+  renderAll();
+  showToast("Menyimpan\u2026","info");
+  fetch("api/kompetitor",{method:"PUT",headers:{"Content-Type":"application/json"},body:JSON.stringify(compData)})
+  .then(function(r){return r.json()})
+  .then(function(d){
+    if(d.ok){showToast("Tersimpan","ok");}
+    else{
+      if(prevSnap)compData=prevSnap;
+      renderAll();
+      showToast("Gagal: "+(d.error||"coba lagi"),"err");
+    }
+  })
+  .catch(function(e){
+    if(prevSnap)compData=prevSnap;
+    renderAll();
+    showToast("Error: "+e.message,"err");
+  });
+}
+
+var toastTimer=null;
+function showToast(msg,type){
+  var el=document.getElementById("comp-toast");
+  if(!el){el=document.createElement("div");el.id="comp-toast";el.className="comp-toast";document.body.appendChild(el);}
+  el.textContent=msg;
+  el.className="comp-toast "+(type==="ok"?"ok":(type==="err"?"err":""));
+  if(toastTimer)clearTimeout(toastTimer);
+  toastTimer=setTimeout(function(){el.remove();},type==="err"?5000:2200);
+}
+
+/* === INIT === */
+function loadData(){
+  // coba data live dari API (editable, sumber GitHub). Kalau gagal, pakai data bawaan.
+  return fetch("api/kompetitor").then(function(r){
+    if(!r.ok)throw new Error("api "+r.status);
+    return r.json();
+  }).then(function(d){compData=d;}).catch(function(){
+    return fetch("data/kompetitor.json").then(function(r){return r.json()}).then(function(d){compData=d;}).catch(function(){compData={brands:[]};});
+  });
+}
+function waitForData(){
+  return new Promise(function(resolve){
+    if(window.MTMS_DATA&&window.MTMS_DATA.katalog)return resolve();
+    var c=setInterval(function(){if(window.MTMS_DATA&&window.MTMS_DATA.katalog){clearInterval(c);resolve();}},50);
+  });
+}
+waitForData().then(function(){loadData().then(renderAll);});
+})();
+</script>
+</body>
+</html>

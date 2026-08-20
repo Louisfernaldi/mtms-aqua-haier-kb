@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Induksi — MTMS AQUA HAIER</title>
+<meta name="description" content="Materi induksi MTMS AQUA HAIER: profil brand Haier/Aqua, kode produk kulkas, pemanas air, cold chain, TV.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<header>
+  <div class="nav">
+    <div class="brand"><img src="assets/Haier_Logo.svg" alt="Haier" class="brand-logo"><span class="brand-name">MTMS</span></div>
+    <nav class="nav-links">
+      <a href="index.html">Beranda</a>
+      <a href="induksi.html" class="active">Induksi</a>
+      <a href="produk.html">Produk</a>
+      <a href="kompetitor.html">Kompetitor</a>
+      <a href="rotasi.html">Rotasi</a>
+      <a href="proses.html">Proses</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="file.html">File</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" onclick="openSearch()">Cari</button>
+      <button class="icon-btn" onclick="toggleTheme()">Mode</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero-mini">
+    <span class="hero-mini-ico">🎓</span>
+    <div>
+      <h1>Induksi — Ilmu Dasar</h1>
+      <p>Materi sesi induksi: profil brand, produk, dan cara memahami kode-kode produk.</p>
+    </div>
+  </section>
+  <div id="konten-induksi"></div>
+</main>
+
+<footer>
+  <div class="footer-in">
+    <span>MTMS AQUA HAIER — Knowledge Hub · Management Trainee 2026</span>
+    <span>Halaman: Induksi</span>
+  </div>
+</footer>
+
+<div class="search-overlay" id="search-overlay">
+  <div class="search-box">
+    <input id="search-input" placeholder="Cari di semua materi..." oninput="doSearch()">
+    <div class="search-results" id="search-results"></div>
+  </div>
+</div>
+
+<script src="js/theme.js"></script>
+<script src="js/data.js"></script>
+<script src="js/search.js"></script>
+<script src="js/knowledge.js"></script>
+<script>
+renderKb("konten-induksi", ["brand.json", "induksi-kulkas.json", "induksi-water.json", "induksi-tv.json", "induksi-coldchain.json"]);
+</script>
+</body>
+</html>

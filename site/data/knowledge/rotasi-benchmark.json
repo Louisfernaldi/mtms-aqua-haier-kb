@@ -1,0 +1,43 @@
+{
+  "kategori": "Rotasi - Benchmark",
+  "deskripsi": "Benchmark kulkas: SBS vs kompetitor (Electronic City), peta harga-kapasitas, perbandingan 1 pintu.",
+  "sumber": [
+    "Rotation - REF/File Rapih/EC BENCHMARK.xlsx",
+    "Rotation - REF/Product_Benchmark_rev_Agu2026 (1).xlsx",
+    "Rotation - REF/Bandingin Produk.xlsx",
+    "Rotation - REF/Diagram Sebar - Kapasitas vs Kategori (AQUA vs Kompetitor) - Sharleen MT.xlsx",
+    "Rotation - REF/Benchmark_Kulkas_Indonesia_Agu2026.xlsx"
+  ],
+  "fakta": [
+    {
+      "judul": "Benchmark SBS Electronic City (Jul 26)",
+      "isi": "AQUA: AQR-CSE696RSV(SL)U1 658L Rp19.119.000; AQR-TSE696RAV(MX) 616L Rp10.259.000; AQR-CSE605RBC(CB) 542L Rp10.439.000; AQR-CSE565RBC(CB) 480L Rp8.959.000. Dibandingkan dengan Samsung, Electrolux, Sharp, LG, Hisense, Midea, TCL, Polytron.",
+      "sumber": "EC BENCHMARK"
+    },
+    {
+      "judul": "Peta harga-kapasitas Haier (MD/SBS)",
+      "isi": "HRF-CTD579RAG(BK) 502L Rp8.999.000 (Rp17.926/L); HRF-CTD579RSG(BK)U1 500L Rp12.999.000; HRF-CTD579RSG(WT)U1 508L Rp18.999.000; HRF-CMD589RSG(WT)U1 512L 5 pintu Rp20.999.000; HRF-CTD619RSG(WT)U1 550L Rp16.999.000; HRF-CTD729RITA(BK)U1 650L Rp34.999.000; HRF-CTD779RAA(BK) 700L Rp17.999.000; HRF-CTD779RSA(BK)U1 700L Rp21.999.000.",
+      "sumber": "Product_Benchmark_rev_Agu2026"
+    },
+    {
+      "judul": "Perbandingan 1 pintu",
+      "isi": "AQUA AQR-225/205/185 vs Sharp SJ-X198W / SJ-X198MG / SJ-X188MG, LG GN-Y331SLSR / GN-Y331CLAR, Toshiba GR-RD235CC / GR-RD196CC, Hisense RR198D4IBN / RR125D4IBN, Polytron PRA 18 MNX / PRA 18 DDS.",
+      "sumber": "Bandingin Produk"
+    },
+    {
+      "judul": "Diagram sebar kapasitas vs kategori",
+      "isi": "Data sebar (scatter) AQUA vs Sharp, Midea, Polytron: tiap titik = model dengan kapasitas liter, kategori, dan rentang harga — dipakai memetakan celah di tiap segmen.",
+      "sumber": "Diagram Sebar"
+    },
+    {
+      "judul": "Metode segmentasi benchmark",
+      "isi": "3 sumbu: tipe pintu (1 pintu, 2 pintu, SBS, 4 pintu, 5 pintu), kapasitas per 50L (1 pintu >=126L, SBS >=400L s/d 700L+), material pintu (metal/glass).",
+      "sumber": "Benchmark_Kulkas_Indonesia_Agu2026"
+    },
+    {
+      "judul": "Struktur workbook benchmark",
+      "isi": "6 sheet: 2_Ringkasan, 3_Master_Benchmark, 4_Matriks_Segmen, 5_Harga_Channel, 6_Referensi. Legenda warna: kuning = input, hijau = rumus, oranye = asumsi, biru = brand sendiri.",
+      "sumber": "Benchmark_Kulkas_Indonesia_Agu2026"
+    }
+  ]
+}

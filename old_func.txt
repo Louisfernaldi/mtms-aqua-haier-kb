@@ -1,0 +1,90 @@
+function openModal(p) {
+        var rows = [
+          ["Kategori", p.kategori],
+          ["Kapasitas", (p.kapasitas_gross ? p.kapasitas_gross + " L gross" : "") + (p.kapasitas_nett ? " / " + p.kapasitas_nett + " L nett" : "")],
+          ["Rentang kapasitas", p.range],
+          ["Material pintu", p.material],
+          ["Daya listrik", p.daya_watt ? p.daya_watt + " W" : "-"],
+          ["Garansi kompresor", p.garansi_tahun ? p.garansi_tahun + " tahun" : "-"],
+          ["Warna / varian", (p.varian || []).join(", ") || "-"],
+          ["Seri", p.serie || "-"]
+        ];
+        if (p.harga_idr) {
+          rows.push(["Harga pasar", fmtRp(p.harga_idr) + (p.harga_source ? ' <span class="pk-harga-src">(sumber: ' + p.harga_source + ")</span>" : "")]);
+        }
+        var rowsHtml = rows.map(function (r) {
+          return "<tr><th>" + r[0] + "</th><td>" + r[1] + "</td></tr>";
+        }).join("");
+        var flags = (p.flags || []).map(function (f) {
+          return '<span class="badge ' + f.toLowerCase().replace(/[^a-z]+/g, "-") + '">' + fmtFlag(f) + "</span>";
+        }).join("");
+        var fotos = (p.foto_list && p.foto_list.length) ? p.foto_list : (p.foto ? [p.foto] : []);
+        var fotoHtml = "";
+        if (fotos.length > 1) {
+          var thumbs = fotos.map(function (f, i) {
+            return '<button type="button" class="pk-gal-thumb' + (i === 0 ? " active" : "") +
+              '" data-idx="' + i + '" aria-label="Foto ' + (i + 1) + '"><img src="' + f + '" alt=""></button>';
+          }).join("");
+          fotoHtml =
+            '<div class="pk-gal">' +
+            '<div class="pk-gal-stage">' +
+            '<button type="button" class="pk-gal-nav" data-dir="-1" aria-label="Foto sebelumnya">&#8249;</button>' +
+            '<img class="pk-modal-img pk-gal-img" src="' + fotos[0] + '" alt="' + p.model + '" data-idx="0">' +
+            '<button type="button" class="pk-gal-nav" data-dir="1" aria-label="Foto berikutnya">&#8250;</button>' +
+            "</div>" +
+            '<div class="pk-gal-thumbs">' + thumbs + "</div>" +
+            "</div>";
+        } else if (fotos.length === 1) {
+          fotoHtml = '<img class="pk-modal-img" src="' + fotos[0] + '" alt="' + p.model + '">';
+        }
+        var fiturHtml = "<h4>Fitur Unggulan</h4>" +
+          ((p.fitur && p.fitur.length) ?
+            '<ul class="pk-fitur">' + p.fitur.map(function (x) { return "<li>" + x + "</li>"; }).join("") + "</ul>" :
+            '<p class="pk-benefit">Data fitur menyusul.</p>');
+        modal.querySelector(".pk-modal-title").innerHTML = p.model + ' <span class="pk-cat">' + p.kategori + "</span>";
+        // tombol Edit di modal detail
+        var editBtn = document.createElement("button");
+        editBtn.type = "button";
+        editBtn.className = "pk-modal-edit";
+        editBtn.textContent = "✏️ Edit";
+        editBtn.title = "Ubah produk ini";
+        editBtn.onclick = function () { closeModal(); openEdit(p, files); };
+        modal.querySelector(".pk-modal-title").appendChild(editBtn);
+        modal.querySelector(".pk-modal-body").innerHTML =
+          fotoHtml +
+          (flags ? '<div class="pk-modal-flags">' + flags + "</div>" : "") +
+          "<table><tbody>" + rowsHtml + "</tbody></table>" +
+          fiturHtml +
+          '<h4>Keunggulan &amp; Fitur</h4>' +
+          "<p class='pk-benefit'>" + p.benefit + "</p>";
+        var gal = modal.querySelector(".pk-gal");
+        if (gal) {
+          var galImg = gal.querySelector(".pk-gal-img");
+          var thumbBtns = gal.querySelectorAll(".pk-gal-thumb");
+          function setFoto(i) {
+            i = (i + fotos.length) % fotos.length;
+            galImg.src = fotos[i];
+            galImg.setAttribute("data-idx", i);
+            for (var k = 0; k < thumbBtns.length; k++) {
+              if (Number(thumbBtns[k].getAttribute("data-idx")) === i) {
+                thumbBtns[k].classList.add("active");
+              } else {
+                thumbBtns[k].classList.remove("active");
+              }
+            }
+          }
+          var navs = gal.querySelectorAll(".pk-gal-nav");
+          for (var j = 0; j < navs.length; j++) {
+            navs[j].onclick = function () {
+              setFoto(Number(galImg.getAttribute("data-idx")) + Number(this.getAttribute("data-dir")));
+            };
+          }
+          for (var t = 0; t < thumbBtns.length; t++) {
+            thumbBtns[t].onclick = function () {
+              setFoto(Number(this.getAttribute("data-idx")));
+            };
+          }
+        }
+        modal.classList.add("open");
+        document.body.style.overflow = "hidden";
+      }

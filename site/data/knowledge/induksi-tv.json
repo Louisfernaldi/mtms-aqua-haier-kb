@@ -1,0 +1,32 @@
+{
+  "kategori": "Induksi - TV",
+  "deskripsi": "Materi induksi TV Aqua (ANDIKA): teknologi layar, fitur, kompetitor, garansi.",
+  "sumber": ["Product Knowledge/TV+-+ANDIKA.docx", "Product Knowledge/Aqua TV one-pager.pdf", "Product Knowledge/TV Product Knowledge - New PMT.pdf"],
+  "fakta": [
+    {
+      "judul": "Pertumbuhan penjualan",
+      "isi": "Aqua TV: rata-rata 30 juta/bulan (2021) -> 75 juta/bulan (awal 2026) — kategori rising star.",
+      "sumber": "TV - ANDIKA"
+    },
+    {
+      "judul": "Teknologi layar",
+      "isi": "Tersedia panel OLED, Mini LED, dan QLED — garis premium vs entry class.",
+      "sumber": "TV - ANDIKA"
+    },
+    {
+      "judul": "Fitur unggulan",
+      "isi": "AI Picture Quality (optimasi gambar otomatis), fitur karaoke, dan High Cast untuk mirroring layar HP.",
+      "sumber": "TV - ANDIKA"
+    },
+    {
+      "judul": "Garansi",
+      "isi": "Garansi 3 tahun all-in: panel, sparepart, dan jasa.",
+      "sumber": "TV - ANDIKA"
+    },
+    {
+      "judul": "Peta kompetitor",
+      "isi": "Korea: LG, Samsung. China: TCL, Hisense, Aqua, Xiaomi.",
+      "sumber": "TV - ANDIKA"
+    }
+  ]
+}

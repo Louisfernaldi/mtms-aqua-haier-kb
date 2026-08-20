@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rotasi — MTMS AQUA HAIER</title>
+<meta name="description" content="Rotasi MTMS AQUA HAIER: benchmark kulkas vs kompetitor, market share GFK per wilayah, dan support dealer.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<header>
+  <div class="nav">
+    <div class="brand"><img src="assets/Haier_Logo.svg" alt="Haier" class="brand-logo"><span class="brand-name">MTMS</span></div>
+    <nav class="nav-links">
+      <a href="index.html">Beranda</a>
+      <a href="induksi.html">Induksi</a>
+      <a href="produk.html">Produk</a>
+      <a href="kompetitor.html">Kompetitor</a>
+      <a href="rotasi.html" class="active">Rotasi</a>
+      <a href="proses.html">Proses</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="file.html">File</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" onclick="openSearch()">Cari</button>
+      <button class="icon-btn" onclick="toggleTheme()">Mode</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero-mini">
+    <span class="hero-mini-ico">📊</span>
+    <div>
+      <h1>Rotasi — Pasar &amp; Benchmark</h1>
+      <p>Analisa pasar dari data GFK, benchmark kompetitor, dan data support dealer.</p>
+    </div>
+  </section>
+
+  <div class="chart-wrap">
+    <h3>Pangsa pasar unit — kulkas 1 pintu, Jabodetabek (GFK Cooling)</h3>
+    <p>AQUA berada di posisi 3 dengan 14,7% unit. Sharp dan Polytron memimpin.</p>
+    <div id="chart-share-unit"></div>
+  </div>
+
+  <div class="chart-wrap">
+    <h3>Pangsa pasar unit AQUA per wilayah</h3>
+    <p>AQUA terkuat di Central Java (21,5%) dan Jabodetabek (19,6%).</p>
+    <div id="chart-share-aqua-region"></div>
+  </div>
+
+  <div class="chart-wrap">
+    <h3>Peta harga vs kapasitas — Haier Multi-Door &amp; SBS</h3>
+    <p>Setiap titik = satu model. Semakin ke kanan-atas = makin besar dan premium. HRF-CTD729RITA (650L) adalah model termahal (Rp34,9 jt).</p>
+    <div id="chart-peta-harga"></div>
+  </div>
+
+  <div class="chart-wrap">
+    <h3>Benchmark SBS — Electronic City (Juli 2026)</h3>
+    <p>Empat model SBS AQUA yang dibandingkan dengan Samsung, Electrolux, Sharp, LG, Hisense, Midea, TCL, Polytron.</p>
+    <div id="chart-sbs-ec"></div>
+  </div>
+
+  <div id="konten-rotasi"></div>
+</main>
+
+<footer>
+  <div class="footer-in">
+    <span>MTMS AQUA HAIER — Knowledge Hub · Management Trainee 2026</span>
+    <span>Halaman: Rotasi</span>
+  </div>
+</footer>
+
+<div class="search-overlay" id="search-overlay">
+  <div class="search-box">
+    <input id="search-input" placeholder="Cari di semua materi..." oninput="doSearch()">
+    <div class="search-results" id="search-results"></div>
+  </div>
+</div>
+
+<script src="js/theme.js"></script>
+<script src="js/data.js"></script>
+<script src="js/search.js"></script>
+<script src="js/knowledge.js"></script>
+<script src="js/charts.js"></script>
+<script>
+renderKb("konten-rotasi", ["rotasi-pasar.json", "rotasi-benchmark.json", "rotasi-dealer.json"]);
+drawBarChart("chart-share-unit", [
+  ["Sharp", 32.3, "#7a7a7a"], ["Polytron", 27.0, "#7a7a7a"], ["AQUA", 14.7, "#0097d6"],
+  ["Changhong", 7.2, "#7a7a7a"], ["Electrolux", 1.1, "#7a7a7a"], ["Hisense", 1.0, "#7a7a7a"],
+  ["Sanken", 0.9, "#7a7a7a"], ["Modena", 0.2, "#7a7a7a"], ["TCL", 0.1, "#7a7a7a"]
+], { suffix: "%" });
+drawBarChart("chart-share-aqua-region", [
+  ["Central Java", 21.5, "#0097d6"], ["Jabodetabek", 19.6, "#0097d6"], ["Kalimantan", 16.8, "#0097d6"],
+  ["West Java", 14.0, "#0097d6"], ["Sulawesi", 12.1, "#0097d6"], ["Sumatera", 11.5, "#0097d6"],
+  ["East Java", 10.9, "#0097d6"]
+], { suffix: "%" });
+drawScatter("chart-peta-harga", [
+  [502, 9.0], [500, 13.0], [508, 19.0], [512, 21.0],
+  [550, 17.0], [650, 35.0], [700, 18.0], [700, 22.0]
+], { height: 360, xLabel: "Kapasitas (L)", yLabel: "Harga (jt)" });
+drawBarChart("chart-sbs-ec", [
+  ["AQR-CSE696RSV(SL)U1", 19.119, "#0097d6"],
+  ["AQR-TSE696RAV(MX)", 10.259, "#0097d6"],
+  ["AQR-CSE605RBC(CB)", 10.439, "#0097d6"],
+  ["AQR-CSE565RBC(CB)", 8.959, "#0097d6"]
+], { suffix: " jt", subLabel: ["658L", "616L", "542L", "480L"], height: 300 });
+</script>
+</body>
+</html>

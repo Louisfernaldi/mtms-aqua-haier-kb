@@ -1,0 +1,1502 @@
+{
+ "pdf": {
+  "file": "KOMPARASI-KULKAS-AQUA-5-BRAND-FINAL-v5.pdf",
+  "path": "files/KOMPARASI-KULKAS-AQUA-5-BRAND-FINAL-v5.pdf",
+  "size_bytes": 1067463,
+  "size_mb": "1.0 MB"
+ },
+ "categories": [
+  {
+   "code": "SB",
+   "label": "1 Pintu",
+   "desc": "Satu pintu, freezer satu ruang"
+  },
+  {
+   "code": "TM",
+   "label": "2 Pintu Top Mount",
+   "desc": "Freezer di atas"
+  },
+  {
+   "code": "BM",
+   "label": "2 Pintu Freezer Bawah",
+   "desc": "Freezer di bawah"
+  },
+  {
+   "code": "SBS",
+   "label": "Side by Side",
+   "desc": "Dua pintu samping"
+  },
+  {
+   "code": "MD",
+   "label": "Multi Pintu",
+   "desc": "French Door / lebih dari 2 pintu"
+  }
+ ],
+ "brands": [
+  {
+   "brand": "AQUA",
+   "model_count": 32,
+   "models": [
+    {
+     "model": "AQR-350RBM",
+     "subcat": "BM",
+     "cat": "BM",
+     "door": "Bottom Mount (2 pintu, freezer di bawah)",
+     "capacity_l": 324,
+     "price_idr": 9657000,
+     "price_source": "official-page",
+     "fitur": [
+      "Magic Cooling (pembekuan lembut, daging/ikan tidak membeku keras)",
+      "Twin Inverter (hemat listrik, suara senyap)"
+     ],
+     "source_url": "https://aquaelektronik.com/product/detail/387/AQR-350RBM%28BK%29"
+    },
+    {
+     "model": "AQR-355IG",
+     "subcat": "TM",
+     "cat": "TM",
+     "door": "Top Mount (2 pintu, freezer di atas)",
+     "capacity_l": 237,
+     "price_idr": 6729000,
+     "price_source": "official-page",
+     "fitur": [
+      "Navi Cooling (5 mode pengaturan suhu freezer 5-24°C)",
+      "Twin Inverter (hemat listrik & listrik stabil)"
+     ],
+     "source_url": "https://aquaelektronik.com/product/detail/343/AQR-355IG%28BK%29"
+    },
+    {
+     "model": "AQR-355IM",
+     "subcat": "TM",
+     "cat": "TM",
+     "door": "Top Mount (2 pintu, freezer di atas)",
+     "capacity_l": 237,
+     "price_idr": 5242000,
+     "price_source": "official-page",
+     "fitur": [
+      "Navi Cooling (5 mode pengaturan suhu freezer 5-24°C)",
+      "Twin Inverter (hemat listrik & listrik stabil)"
+     ],
+     "source_url": "https://aquaelektronik.com/product/detail/344/AQR-355IM%28BB%29"
+    },
+    {
+     "model": "AQR-382IM",
+     "subcat": "TM",
+     "cat": "TM",
+     "door": "Top Mount (2 pintu, freezer di atas)",
+     "capacity_l": 285,
+     "price_idr": 5400000,
+     "price_source": "brief-gfk",
+     "fitur": [
+      "Flash Design (desain modern)",
+      "Twin Inverter (hemat listrik & senyap)"
+     ],
+     "source_url": "https://aquaelektronik.com/product/detail/689/AQR-382IM%28BB%29"
+    },
+    {
+     "model": "AQR-395IM",
+     "subcat": "TM",
+     "cat": "TM",
+     "door": "Top Mount (2 pintu, freezer di atas)",
+     "capacity_l": 315,
+     "price_idr": 6279000,
+     "price_source": "official-page",
+     "fitur": [
+      "-1°C Chiller Box (daging/ikan segar tanpa membeku)",
+      "Eliminate 99,9% Bacteria & Odor (antibakteri & anti bau)"
+     ],
+     "source_url": "https://aquaelektronik.com/product/detail/450/AQR-395IM%28BK%29"
+    },
+    {
+     "model": "AQR-405IG",
+     "subcat": "TM",
+     "cat": "TM",
+     "door": "Top Mount (2 pintu, freezer di atas)",
+     "capacity_l": 315,
+     "price_idr": 5804000,
+     "price_source": "official-page",
+     "fitur": [
+      "Magic Cooling (pembekuan lembut)",
+      "Twin Inverter (hemat listrik)"
+     ],
+     "source_url": "https://aquaelektronik.com/product/detail/345/AQR-405IG%28BK%29"
+    },
+    {
+     "model": "AQR-415IM",
+     "subcat": "TM",
+     "cat": "TM",
+     "door": "Top Mount (2 pintu, freezer di atas)",
+     "capacity_l": 357,
+     "price_idr": 6619000,
+     "price_source": "official-page",
+     "fitur": [
+      "-1°C Chiller Box (daging/ikan segar tanpa membeku)",
+      "Eliminate 99,9% Bacteria & Odor (antibakteri & anti bau)"
+     ],
+     "source_url": "https://aquaelektronik.com/product/detail/449/AQR-415IM%28BK%29"
+    },
+    {
+     "model": "AQR-CSE565RBC",
+     "subcat": "SBS",
+     "cat": "SBS",
+     "door": "Side by Side (2 pintu berdampingan)",
+     "capacity_l": 442,
+     "price_idr": 10750000,
+     "price_source": "official-page",
+     "fitur": [
+      "Twin Inverter (hemat listrik)",
+      "Digital Touch Screen (panel sentuh digital)"
+     ],
+     "source_url": "https://aquaelektronik.com/product/detail/627/AQR-CSE565RBC%28CB%29"
+    },
+    {
+     "model": "AQR-CSE605RBC",
+     "subcat": "SBS",
+     "cat": "SBS",
+     "door": "Side by Side (2 pintu berdampingan)",
+     "capacity_l": 532,
+     "price_idr": 11999000,
+     "price_source": "official-page",
+     "fitur": [
+      "Twin Inverter (hemat listrik)",
+      "Digital Touch Screen (panel sentuh digital)"
+     ],
+     "source_url": "https://aquaelektronik.com/product/detail/629/AQR-CSE605RBC%28CB%29"
+    },
+    {
+     "model": "AQR-CSE696RSV",
+     "subcat": "SBS",
+     "cat": "SBS",
+     "door": "Side by Side (2 pintu berdampingan)",
+     "capacity_l": 618,
+     "price_idr": 19329000,
+     "price_source": "official-page",
+     "fitur": [
+      "Smart Ice & Water Dispenser (es & air tanpa buka pintu)",
+      "Bigger Capacity (kapasitas besar)"
+     ],
+     "source_url": "https://aquaelektronik.com/product/detail/645/AQR-CSE696RSV%28SL%29"
+    },
+    {
+     "model": "AQR-CTD506RGC",
+     "subcat": "MD",
+     "cat": "MD",
+     "door": "Multidoor (multi-pintu)",
+     "capacity_l": 401,
+     "price_idr": 11299000,
+     "price_source": "official-page",
+     "fitur": [
+      "Magic Zone (3 zona suhu khusus)",
+      "Twin Inverter (hemat listrik)"
+     ],
+     "source_url": "https://aquaelektronik.com/product/detail/628/AQR-CTD506RGC%28CB%29"
+    },
+    {
+     "model": "AQR-CTD506RGG",
+     "subcat": "MD",
+     "cat": "MD",
+     "door": "Multidoor (multi-pintu)",
+     "capacity_l": 406,
+     "price_idr": 11799000,
+     "price_source": "official-page",
+     "fitur": [
+      "Magic Zone (3 zona suhu khusus)",
+      "Flexible Storage (penyimpanan fleksibel)"
+     ],
+     "source_url": "https://aquaelektronik.com/product/detail/556/AQR-CTD506RGG%28BK%29"
+    },
+    {
+     "model": "AQR-CTD746RAG",
+     "subcat": "MD",
+     "cat": "MD",
+     "door": "Multidoor (multi-pintu)",
+     "capacity_l": 658,
+     "price_idr": 21260000,
+     "price_source": "official-page",
+     "fitur": [
+      "Smart IoT/WiFi (kontrol dari smartphone)",
+      "Twin Inverter (hemat listrik)"
+     ],
+     "source_url": "https://aquaelektronik.com/product/detail/552/AQR-CTD746RAG%28BK%29"
+    },
+    {
+     "model": "AQR-D185",
+     "subcat": "SD",
+     "cat": "SB",
+     "door": "1 pintu (Single Door)",
+     "capacity_l": 145,
+     "price_idr": 2091000,
+     "price_source": "official-page",
+     "fitur": [
+      "Giant Freezer (freezer besar)",
+      "Environmental Friendly (refrigerant R600a ramah lingkungan)"
+     ],
+     "source_url": "https://aquaelektronik.com/product/detail/463/AQR-D185+%28MDS%29+Dark+Silver"
+    },
+    {
+     "model": "AQR-D205",
+     "subcat": "SD",
+     "cat": "SB",
+     "door": "1 pintu (Single Door)",
+     "capacity_l": 165,
+     "price_idr": 2215000,
+     "price_source": "official-page",
+     "fitur": [
+      "Giant Freezer (freezer besar)",
+      "Environmental Friendly (refrigerant R600a ramah lingkungan)"
+     ],
+     "source_url": "https://aquaelektronik.com/product/detail/464/AQR-D205+%28MDS%29+Dark+Silver"
+    },
+    {
+     "model": "AQR-D225",
+     "subcat": "SD",
+     "cat": "SB",
+     "door": "1 pintu (Single Door)",
+     "capacity_l": 180,
+     "price_idr": 2467000,
+     "price_source": "official-page",
+     "fitur": [
+      "Giant Freezer (freezer besar 30L)",
+      "Environmental Friendly (refrigerant R600a ramah lingkungan)"
+     ],
+     "source_url": "https://aquaelektronik.com/product/detail/465/AQR-D225+%28MDS%29+Dark+Silver"
+    },
+    {
+     "model": "AQR-DTM245CBP",
+     "subcat": "TM",
+     "cat": "TM",
+     "door": "Top Mount (2 pintu, freezer di atas)",
+     "capacity_l": 187,
+     "price_idr": 3260000,
+     "price_source": "official-page",
+     "fitur": [
+      "Turbo Cooling (pendinginan cepat)",
+      "Bigger Freezer (freezer lebih besar)"
+     ],
+     "source_url": "https://aquaelektronik.com/product/detail/603/AQR-DTM245CBP%28DS%29"
+    },
+    {
+     "model": "AQR-DTM265CBP",
+     "subcat": "TM",
+     "cat": "TM",
+     "door": "Top Mount (2 pintu, freezer di atas)",
+     "capacity_l": 187,
+     "price_idr": 3428000,
+     "price_source": "official-page",
+     "fitur": [
+      "Turbo Cooling (pendinginan cepat)",
+      "Bigger Freezer (freezer lebih besar)"
+     ],
+     "source_url": "https://aquaelektronik.com/product/detail/610/AQR-DTM265CBP%28DS%29"
+    },
+    {
+     "model": "AQR-DTM265RAP",
+     "subcat": "TM",
+     "cat": "TM",
+     "door": "Top Mount (2 pintu, freezer di atas)",
+     "capacity_l": 187,
+     "price_idr": 3860000,
+     "price_source": "official-page",
+     "fitur": [
+      "Turbo Cooling (pendinginan cepat)",
+      "Bigger Freezer (freezer lebih besar)"
+     ],
+     "source_url": "https://aquaelektronik.com/product/detail/620/AQR-DTM265RAP%28FB%29+"
+    },
+    {
+     "model": "AQR-DTM265RAV",
+     "subcat": "TM",
+     "cat": "TM",
+     "door": "Top Mount (2 pintu, freezer di atas)",
+     "capacity_l": 187,
+     "price_idr": 3975000,
+     "price_source": "official-page",
+     "fitur": [
+      "Turbo Cooling (pendinginan cepat)",
+      "Bigger Freezer (freezer lebih besar)"
+     ],
+     "source_url": "https://aquaelektronik.com/product/detail/621/AQR-DTM265RAV%28MX%29"
+    },
+    {
+     "model": "AQR-DTM285CBP",
+     "subcat": "TM",
+     "cat": "TM",
+     "door": "Top Mount (2 pintu, freezer di atas)",
+     "capacity_l": 237,
+     "price_idr": 3647000,
+     "price_source": "official-page",
+     "fitur": [
+      "Turbo Cooling (pendinginan cepat)",
+      "Bigger Freezer (freezer lebih besar)"
+     ],
+     "source_url": "https://aquaelektronik.com/product/detail/605/AQR-DTM285CBP%28DS%29"
+    },
+    {
+     "model": "AQR-DTM285RAP",
+     "subcat": "TM",
+     "cat": "TM",
+     "door": "Top Mount (2 pintu, freezer di atas)",
+     "capacity_l": 237,
+     "price_idr": 4034000,
+     "price_source": "official-page",
+     "fitur": [
+      "Turbo Cooling (pendinginan cepat)",
+      "Bigger Freezer (freezer lebih besar)"
+     ],
+     "source_url": "https://aquaelektronik.com/product/detail/618/AQR-DTM285RAP%28FB%29"
+    },
+    {
+     "model": "AQR-DTM285RAV",
+     "subcat": "TM",
+     "cat": "TM",
+     "door": "Top Mount (2 pintu, freezer di atas)",
+     "capacity_l": 237,
+     "price_idr": 4155000,
+     "price_source": "official-page",
+     "fitur": [
+      "Turbo Cooling (pendinginan cepat)",
+      "Bigger Freezer (freezer lebih besar)"
+     ],
+     "source_url": "https://aquaelektronik.com/product/detail/619/AQR-DTM285RAV%28MX%29"
+    },
+    {
+     "model": "AQR-DTM305RAP",
+     "subcat": "TM",
+     "cat": "TM",
+     "door": "Top Mount (2 pintu, freezer di atas)",
+     "capacity_l": 237,
+     "price_idr": 4736000,
+     "price_source": "official-page",
+     "fitur": [
+      "Turbo Cooling (pendinginan cepat)",
+      "Big Freezer (freezer besar)"
+     ],
+     "source_url": "https://aquaelektronik.com/product/detail/615/AQR-DTM305RAP%28FB%29"
+    },
+    {
+     "model": "AQR-DTM305RAV",
+     "subcat": "TM",
+     "cat": "TM",
+     "door": "Top Mount (2 pintu, freezer di atas)",
+     "capacity_l": 237,
+     "price_idr": 4878000,
+     "price_source": "official-page",
+     "fitur": [
+      "Turbo Cooling (pendinginan cepat)",
+      "Big Freezer (freezer besar)"
+     ],
+     "source_url": "https://aquaelektronik.com/product/detail/614/AQR-DTM305RAV%28MX%29"
+    },
+    {
+     "model": "AQR-TSE605RBM",
+     "subcat": "SBS",
+     "cat": "SBS",
+     "door": "Side by Side (2 pintu berdampingan)",
+     "capacity_l": 532,
+     "price_idr": 9900000,
+     "price_source": "brief-gfk",
+     "fitur": [
+      "HCS Humidity Zone (kelembapan terkontrol)",
+      "Multi Air Flow (udara dingin merata)"
+     ],
+     "source_url": "https://aquaelektronik.com/product/detail/703/AQR-TSE605RBM%28MX%29"
+    },
+    {
+     "model": "AQR-TTD546RBC",
+     "subcat": "MD",
+     "cat": "MD",
+     "door": "Multidoor (multi-pintu)",
+     "capacity_l": 466,
+     "price_idr": 11499000,
+     "price_source": "official-page",
+     "fitur": [
+      "Magic Zone (3 zona suhu khusus)",
+      "H-Deo (anti bau & bakteri)"
+     ],
+     "source_url": "https://aquaelektronik.com/product/detail/637/AQR-TTD546RBC%28CB%29"
+    },
+    {
+     "model": "AQR-TTD576RAG",
+     "subcat": "MD",
+     "cat": "MD",
+     "door": "Multidoor (multi-pintu)",
+     "capacity_l": 520,
+     "price_idr": 16200000,
+     "price_source": "brief-gfk",
+     "fitur": [
+      "HCS Humidity Zone (kelembapan terkontrol)",
+      "Minimize Bacteria & Odors (anti bakteri & bau)"
+     ],
+     "source_url": "https://aquaelektronik.com/product/detail/682/AQR-TTD576RAG%28BK%29"
+    },
+    {
+     "model": "AQR-TTD576RSG",
+     "subcat": "MD",
+     "cat": "MD",
+     "door": "Multidoor (multi-pintu)",
+     "capacity_l": 522,
+     "price_idr": null,
+     "price_source": null,
+     "fitur": [
+      "HCS Humidity Zone (kelembapan terkontrol)",
+      "Minimize Bacteria & Odors (anti bakteri & bau)"
+     ],
+     "source_url": "https://aquaelektronik.com/product/detail/681/AQR-TTD576RSG%28CL%29"
+    },
+    {
+     "model": "AQR-VTM515RBC",
+     "subcat": "TM",
+     "cat": "TM",
+     "door": "Top Mount (2 pintu, freezer di atas)",
+     "capacity_l": 471,
+     "price_idr": 8295000,
+     "price_source": "official-page",
+     "fitur": [
+      "Double Magic Zone (2 zona suhu khusus)",
+      "H-Deo Fresh (anti bau & bakteri)"
+     ],
+     "source_url": "https://aquaelektronik.com/product/detail/660/AQR-VTM515RBC%28CB%29"
+    },
+    {
+     "model": "AQR-VTM535RAG",
+     "subcat": "TM",
+     "cat": "TM",
+     "door": "Top Mount (2 pintu, freezer di atas)",
+     "capacity_l": 471,
+     "price_idr": 9296000,
+     "price_source": "official-page",
+     "fitur": [
+      "Double Magic Zone (2 zona suhu khusus)",
+      "H-Deo Fresh (anti bau & bakteri)"
+     ],
+     "source_url": "https://aquaelektronik.com/product/detail/661/AQR-VTM535RAG%28BK%29"
+    },
+    {
+     "model": "AQR-VTM535RSG",
+     "subcat": "TM",
+     "cat": "TM",
+     "door": "Top Mount (2 pintu, freezer di atas)",
+     "capacity_l": null,
+     "price_idr": 11469000,
+     "price_source": "official-page",
+     "fitur": [
+      "Sensor Light (lampu sensor otomatis)",
+      "Double Magic Zone (2 zona suhu khusus)"
+     ],
+     "source_url": "https://aquaelektronik.com/product/detail/662/AQR-VTM535RSG%28CL%29"
+    }
+   ]
+  },
+  {
+   "brand": "LG",
+   "model_count": 16,
+   "models": [
+    {
+     "model": "GC-L257CQEL",
+     "subcat": "Kulkas Side by Side",
+     "cat": "SBS",
+     "door": "Side by Side",
+     "capacity_l": 617,
+     "price_idr": 12579000,
+     "price_source": "price_gfk (brief)",
+     "fitur": [
+      "Smart Inverter Compressor",
+      "LINEAR Cooling"
+     ],
+     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-side-by-side/gc-l257cqel/"
+    },
+    {
+     "model": "GC-V22FFQMB",
+     "subcat": "Kulkas Multi Door",
+     "cat": "MD",
+     "door": "Multi Door",
+     "capacity_l": 458,
+     "price_idr": 17369000,
+     "price_source": "price_gfk (brief)",
+     "fitur": [
+      "Smart Inverter Compressor",
+      "InstaView"
+     ],
+     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gc-v22ffqmb/"
+    },
+    {
+     "model": "GCFB41FPGAM",
+     "subcat": "Kulkas Multi Door",
+     "cat": "MD",
+     "door": "Multi Door",
+     "capacity_l": 400,
+     "price_idr": 11414000,
+     "price_source": "LG official (lg.com JSON-LD)",
+     "fitur": [
+      "Inverter Compressor",
+      "Total No Frost"
+     ],
+     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb41fpgam/"
+    },
+    {
+     "model": "GCFB48FPGAM",
+     "subcat": "Kulkas Multi Door",
+     "cat": "MD",
+     "door": "Multi Door",
+     "capacity_l": 502,
+     "price_idr": 14070000,
+     "price_source": "price_gfk (brief)",
+     "fitur": [
+      "Inverter Compressor",
+      "Total No Frost"
+     ],
+     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb48fpgam/"
+    },
+    {
+     "model": "GCFB507PQAM",
+     "subcat": "Kulkas Side by Side",
+     "cat": "SBS",
+     "door": "Side by Side",
+     "capacity_l": 509,
+     "price_idr": 8821000,
+     "price_source": "price_gfk (brief)",
+     "fitur": [
+      "Total No Frost",
+      "Multi Air Flow"
+     ],
+     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-side-by-side/gcfb507pqam/"
+    },
+    {
+     "model": "GN-B202SQIR",
+     "subcat": "Kulkas 2 Pintu",
+     "cat": "BM",
+     "door": "2 Pintu (Bottom Freezer)",
+     "capacity_l": 202,
+     "price_idr": 3416000,
+     "price_source": "price_gfk (brief)",
+     "fitur": [
+      "Multi Air Flow",
+      "Total No Frost"
+     ],
+     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b202sqir/"
+    },
+    {
+     "model": "GN-B212PQNF",
+     "subcat": "Kulkas 2 Pintu",
+     "cat": "TM",
+     "door": "2 Pintu (Top Freezer)",
+     "capacity_l": 217,
+     "price_idr": 4173000,
+     "price_source": "price_gfk (brief)",
+     "fitur": [
+      "Inverter Compressor",
+      "Multi Air Flow"
+     ],
+     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b212pqnf/"
+    },
+    {
+     "model": "GN-B242PFSF",
+     "subcat": "Kulkas 2 Pintu",
+     "cat": "TM",
+     "door": "2 Pintu (Top Freezer)",
+     "capacity_l": 243,
+     "price_idr": 5083000,
+     "price_source": "price_gfk (brief)",
+     "fitur": [
+      "Smart Inverter",
+      "Multi Air Flow"
+     ],
+     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b242pfsf/"
+    },
+    {
+     "model": "GN-B262PQSF",
+     "subcat": "Kulkas 2 Pintu",
+     "cat": "TM",
+     "door": "2 Pintu (Top Freezer)",
+     "capacity_l": 266,
+     "price_idr": 5757000,
+     "price_source": "LG official (lg.com JSON-LD)",
+     "fitur": [
+      "Linear Cooling",
+      "DoorCooling+"
+     ],
+     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b262pqsf/"
+    },
+    {
+     "model": "GN-B332PGFB",
+     "subcat": "Kulkas 2 Pintu",
+     "cat": "TM",
+     "door": "2 Pintu (Top Freezer)",
+     "capacity_l": 335,
+     "price_idr": 7126000,
+     "price_source": "LG official (lg.com JSON-LD)",
+     "fitur": [
+      "Linear Cooling",
+      "DoorCooling+"
+     ],
+     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b332pgfb-abmpein/"
+    },
+    {
+     "model": "GN-B332PQQF",
+     "subcat": "Kulkas 2 Pintu",
+     "cat": "TM",
+     "door": "2 Pintu (Top Freezer)",
+     "capacity_l": 335,
+     "price_idr": 6217000,
+     "price_source": "LG official (lg.com JSON-LD)",
+     "fitur": [
+      "LINEARCooling",
+      "Multi Air Flow"
+     ],
+     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b332pqqf/"
+    },
+    {
+     "model": "GN-B392PGFB",
+     "subcat": "Kulkas 2 Pintu",
+     "cat": "TM",
+     "door": "2 Pintu (Top Freezer)",
+     "capacity_l": 395,
+     "price_idr": null,
+     "price_source": null,
+     "fitur": [
+      "Smart Inverter Compressor",
+      "Total No Frost"
+     ],
+     "source_url": "https://www.lg.com/id/kulkas-dan-freezer1/kulkas-2-pintu/gn-b392pgfb/"
+    },
+    {
+     "model": "GN-F372PXAK",
+     "subcat": "Kulkas 2 Pintu",
+     "cat": "TM",
+     "door": "2 Pintu",
+     "capacity_l": 363,
+     "price_idr": 7560000,
+     "price_source": "price_gfk (brief)",
+     "fitur": [
+      "LinearCooling",
+      "Door Cooling+"
+     ],
+     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-f372pxak/"
+    },
+    {
+     "model": "GN-Y201CLAR",
+     "subcat": "Kulkas 1 Pintu",
+     "cat": "SB",
+     "door": "1 Pintu",
+     "capacity_l": 164,
+     "price_idr": 2449000,
+     "price_source": "price_gfk (brief)",
+     "fitur": [
+      "Bio Shield",
+      "Rak Tempered Glass"
+     ],
+     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-1-pintu/gn-y201clar/"
+    },
+    {
+     "model": "GN-Y331SLSR",
+     "subcat": "Kulkas 1 Pintu",
+     "cat": "SB",
+     "door": "1 Pintu",
+     "capacity_l": 195,
+     "price_idr": 2449000,
+     "price_source": "price_gfk (brief)",
+     "fitur": [
+      "Semi-round Door",
+      "Moist Balance Crisper"
+     ],
+     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-1-pintu/gn-y331slsr/"
+    },
+    {
+     "model": "GN_B222SFIF",
+     "subcat": "Kulkas 2 Pintu",
+     "cat": "TM",
+     "door": "2 Pintu (Top Freezer)",
+     "capacity_l": 209,
+     "price_idr": null,
+     "price_source": null,
+     "fitur": [
+      "Inverter Compressor",
+      "Multi Air Flow"
+     ],
+     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b222sfif/"
+    }
+   ]
+  },
+  {
+   "brand": "MIDEA",
+   "model_count": 7,
+   "models": [
+    {
+     "model": "MDRF550FGF28ID",
+     "subcat": "MD",
+     "cat": "MD",
+     "door": "4 Pintu (Multi Door)",
+     "capacity_l": 407,
+     "price_idr": 7359000,
+     "price_source": null,
+     "fitur": [
+      "Inverter Quattro: kompresor & kipas inverter, hemat listrik hingga 25%, lebih senyap",
+      "Platinum Fresh: ion platinum pada saluran udara menghilangkan bakteri & bau tak sedap"
+     ],
+     "source_url": "https://www.midea.com/id/refrigerators/fridge/multi-door/midea-407-l-platinum-fresh-multi-door-refrigerator-mdrf550fgf28id.mdrf550fgf28id"
+    },
+    {
+     "model": "MDRS710FGF28ID",
+     "subcat": "SBS",
+     "cat": "SBS",
+     "door": "Side by Side (2 Pintu)",
+     "capacity_l": 548,
+     "price_idr": 6999000,
+     "price_source": null,
+     "fitur": [
+      "Inverter Quattro: pendinginan lebih cepat, hemat listrik hingga 25%, lebih senyap",
+      "Platinum Fresh: ion platinum menghilangkan hingga 99,99% bakteri dan 99,1% bau"
+     ],
+     "source_url": "https://web.archive.org/web/20260309031926/https://www.midea.com/id/refrigerators/fridge/side-by-side/midea-548-l-large-capacity-side-by-side-refrigerator-mdrs710fgf28id.mdrs710fgf28id"
+    },
+    {
+     "model": "MDRT345MTB30",
+     "subcat": "TM",
+     "cat": "TM",
+     "door": "2 Pintu",
+     "capacity_l": 236,
+     "price_idr": 3120000,
+     "price_source": null,
+     "fitur": [
+      "Multi Air-Flow: udara dingin tersebar merata ke setiap rak dan sudut kulkas",
+      "Humidity Control: pengatur kelembapan di laci penyimpanan menjaga sayur & buah segar"
+     ],
+     "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-236-l-multi-air-flow-meet-2-door-refrigerator-mdrt345mtb30.mdrt345mtb30"
+    },
+    {
+     "model": "MDRT385MTB30",
+     "subcat": "TM",
+     "cat": "TM",
+     "door": "2 Pintu",
+     "capacity_l": 266,
+     "price_idr": null,
+     "price_source": null,
+     "fitur": [
+      "Multi Air-Flow: pendinginan merata di setiap rak dan sudut kulkas",
+      "Humidity Box Control: pengatur kelembapan menjaga kesegaran sayur dan buah"
+     ],
+     "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-266-l-multi-air-flow-meet-2-door-refrigerator-mdrt385mtb30.mdrt385mtb30"
+    },
+    {
+     "model": "MDRT611EVD28ID",
+     "subcat": "TM",
+     "cat": "TM",
+     "door": "2 Pintu",
+     "capacity_l": 473,
+     "price_idr": 5109000,
+     "price_source": null,
+     "fitur": [
+      "Kapasitas besar 473 liter (freezer 128L, chiller 345L)",
+      "Inverter Quattro: hemat listrik, pendinginan cepat, suara senyap, suhu stabil"
+     ],
+     "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-473-l-big-capacity-everest-2-door-refrigerator-mdrt611evd28id.mdrt611evd28id"
+    },
+    {
+     "model": "MDRT611EVD50ID",
+     "subcat": "TM",
+     "cat": "TM",
+     "door": "2 Pintu",
+     "capacity_l": 473,
+     "price_idr": 5799000,
+     "price_source": null,
+     "fitur": [
+      "Kapasitas besar 473 liter (freezer 128L, chiller 345L)",
+      "Inverter Quattro: hemat listrik hingga 180W, pendinginan stabil, senyap"
+     ],
+     "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-473-l-big-capacity-everest-2-door-refrigerator-mdrt611evd50id.mdrt611evd50id"
+    },
+    {
+     "model": "MDRU288FZG02ID",
+     "subcat": "SD",
+     "cat": "SB",
+     "door": "1 Pintu (Upright Freezer)",
+     "capacity_l": 200,
+     "price_idr": 2909000,
+     "price_source": null,
+     "fitur": [
+      "Inverter Quattro: pendinginan lebih cepat, hemat listrik hingga 15%, lebih senyap",
+      "2 Mode Pendinginan: bisa dipakai sebagai fridge atau freezer"
+     ],
+     "source_url": "https://www.midea.com/id/refrigerators/freezer/upright-freezer/midea-200-l-inverter-quattro-upright-freezer-mdru288fzg02id.mdru288fzg02id"
+    }
+   ]
+  },
+  {
+   "brand": "POLYTRON",
+   "model_count": 13,
+   "models": [
+    {
+     "model": "PRA_18DMY",
+     "subcat": "SD",
+     "cat": "SB",
+     "door": "1 Pintu (One Door, freezer di atas)",
+     "capacity_l": 182,
+     "price_idr": 2369000,
+     "price_source": "official-page",
+     "fitur": [
+      "Tempered Glass Door elegan warna dark grey",
+      "Jumbo Freezer & Ice Twist (freezer besar & pembuat es putar)"
+     ],
+     "source_url": "https://polytron.co.id/produk/polytron-kulkas-1-pintu-belleza-180-liter-pra-18dmy/"
+    },
+    {
+     "model": "PRB_159B_R",
+     "subcat": "SD",
+     "cat": "SB",
+     "door": "1 Pintu (One Door, freezer di atas)",
+     "capacity_l": 143,
+     "price_idr": 1939000,
+     "price_source": "official-page",
+     "fitur": [
+      "Rak kaca tempered adjustable (bisa diatur ketinggiannya)",
+      "Ice tray mudah dilepas untuk membuat es batu"
+     ],
+     "source_url": "https://polytron.co.id/produk/polytron-kulkas-1-pintu-metallic-series-150-liter-prb-159r/"
+    },
+    {
+     "model": "PRB_179R_B",
+     "subcat": "SD",
+     "cat": "SB",
+     "door": "1 Pintu (One Door, freezer di atas)",
+     "capacity_l": 168,
+     "price_idr": 2069000,
+     "price_source": "official-page",
+     "fitur": [
+      "Pintu metal elegan dengan aksen cetakan bunga vivid (warna merah)",
+      "Freezer memadai & rak kaca tempered adjustable"
+     ],
+     "source_url": "https://polytron.co.id/produk/polytron-kulkas-1-pintu-metallic-series-170-liter-prb-179r/"
+    },
+    {
+     "model": "PRB_219R",
+     "subcat": "TM",
+     "cat": "TM",
+     "door": "2 Pintu (Top Mount, freezer di atas)",
+     "capacity_l": 176,
+     "price_idr": 3149000,
+     "price_source": "official-page",
+     "fitur": [
+      "Ice Twist Pocket (pembuat es putar)",
+      "Sistem Defrost Otomatis (auto defrost)"
+     ],
+     "source_url": "https://polytron.co.id/produk/polytron-kulkas-2-pintu-metallic-series-210-liter-prb-219r/"
+    },
+    {
+     "model": "PRB_25MNX",
+     "subcat": "TM",
+     "cat": "TM",
+     "door": "2 Pintu (Top Mount, freezer di atas, pintu kaca tempered)",
+     "capacity_l": 212,
+     "price_idr": 3679000,
+     "price_source": "official-page",
+     "fitur": [
+      "Jumbo Cabinet (kabin besar, rak lebih lebar hingga 58cm)",
+      "Borderless Round Edge Tempered Glass Door (pintu kaca tempered tanpa bingkai)"
+     ],
+     "source_url": "https://polytron.co.id/produk/kulkas-2-pintu-polytron-belleza-jumbo-prw-25mnx-series/"
+    },
+    {
+     "model": "PRM_495X",
+     "subcat": "TM",
+     "cat": "TM",
+     "door": "2 Pintu (Top Mount, pintu kaca tempered)",
+     "capacity_l": 350,
+     "price_idr": 6419000,
+     "price_source": "official-page",
+     "fitur": [
+      "Smart Inverter Compressor (hemat hingga 30%, konsumsi daya 140 watt)",
+      "Vacuum Compartment (kompartemen vakum menjaga kesegaran makanan)"
+     ],
+     "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-big-liter-inverter-with-vacuum-compartment-prm-495x/"
+    },
+    {
+     "model": "PRS_455S",
+     "subcat": "SBS",
+     "cat": "SBS",
+     "door": "Side by Side (2 pintu vertikal)",
+     "capacity_l": 450,
+     "price_idr": 7149000,
+     "price_source": "official-page",
+     "fitur": [
+      "Inverter Compressor (hemat energi, garansi kompresor 10 tahun)",
+      "Dual Controller System & Electronic Temperature Touch Control (pengaturan suhu digital)"
+     ],
+     "source_url": "https://polytron.co.id/produk/polytron-kulkas-2-pintu-side-by-side-450-liter-prs-455s/"
+    },
+    {
+     "model": "PRS_465X",
+     "subcat": "MD",
+     "cat": "MD",
+     "door": "4 Pintu (Multidoor Side by Side, metal door)",
+     "capacity_l": 419,
+     "price_idr": 7859000,
+     "price_source": "official-page",
+     "fitur": [
+      "Inverter Compressor (hemat energi)",
+      "Multi Air Flow & Smart Air Distribution (pendinginan lebih cepat & merata)"
+     ],
+     "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-belleza-inverter-4-pintu-multidoor-side-by-side-prs-465x/"
+    },
+    {
+     "model": "PRS_510X",
+     "subcat": "MD",
+     "cat": "MD",
+     "door": "4 Pintu (French Door Side by Side, pintu kaca tempered)",
+     "capacity_l": 480,
+     "price_idr": 8819000,
+     "price_source": "official-page",
+     "fitur": [
+      "Partitionless Space, Big Capacity (ruang tanpa sekat, 480L)",
+      "Electronic Temperature Touch Control (pengaturan suhu digital LCD)"
+     ],
+     "source_url": "https://polytron.co.id/produk/kulkas-polytron-new-belleza-inverter-4-pintu-side-by-side-prs-510x/"
+    },
+    {
+     "model": "PRS_521Y",
+     "subcat": "SBS",
+     "cat": "SBS",
+     "door": "Side by Side (2 pintu vertikal, French Door)",
+     "capacity_l": 525,
+     "price_idr": 7409000,
+     "price_source": "official-page",
+     "fitur": [
+      "Precise Temperature Control (pengaturan suhu digital LED terpisah fridge & freezer)",
+      "30% Energy Saving Advanced Inverter (hemat listrik hingga 30%)"
+     ],
+     "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-side-by-side-2-pintu-prs-521y/"
+    },
+    {
+     "model": "PRS_551X",
+     "subcat": "MD",
+     "cat": "MD",
+     "door": "4 Pintu (Multidoor Side by Side, pintu kaca tempered)",
+     "capacity_l": 548,
+     "price_idr": 9709000,
+     "price_source": "official-page",
+     "fitur": [
+      "Inverter Compressor (hemat energi, garansi 10 tahun)",
+      "Kapasitas besar tanpa sekat (548L)"
+     ],
+     "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-belleza-inverter-4-pintu-multidoor-side-by-side-prs-551x/"
+    },
+    {
+     "model": "PRW_23MNX",
+     "subcat": "TM",
+     "cat": "TM",
+     "door": "2 Pintu (Top Mount, freezer di atas, pintu kaca tempered)",
+     "capacity_l": 186,
+     "price_idr": 3669000,
+     "price_source": "official-page",
+     "fitur": [
+      "Jumbo Capacity (kabin jumbo, rak lebih lebar hingga 58cm)",
+      "Luxurious Curved-Edge Design (pintu kaca tempered tanpa bingkai, tepi bulat)"
+     ],
+     "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-jumbo-prw-23mnx/"
+    },
+    {
+     "model": "PRW_29VX",
+     "subcat": "TM",
+     "cat": "TM",
+     "door": "2 Pintu (Top Mount, freezer di atas, pintu kaca tempered)",
+     "capacity_l": 260,
+     "price_idr": 4469000,
+     "price_source": "official-page",
+     "fitur": [
+      "Inverter Compressor (hemat hingga 30%, konsumsi daya 75 watt, garansi kompresor 10 tahun)",
+      "Jumbo Capacity (rak lebih lebar hingga 58cm)"
+     ],
+     "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-jumbo-inverter-prw-29vx-260-liter/"
+    }
+   ]
+  },
+  {
+   "brand": "SAMSUNG",
+   "model_count": 11,
+   "models": [
+    {
+     "model": "RB30N4050B1_SE",
+     "subcat": "BM",
+     "cat": "BM",
+     "door": "Bottom Mount Freezer (2 pintu, freezer di bawah)",
+     "capacity_l": 315,
+     "price_idr": 7199000,
+     "price_source": "https://www.sinarmaju.co.id/kulkas-2-pintu-samsung-315-liter-inverter-rb-30n4050b1",
+     "fitur": [
+      "Optimal Fresh Zone: daging dan ikan tetap segar lebih lama tanpa membeku",
+      "Digital Inverter: hemat energi, minim noise"
+     ],
+     "source_url": "https://www.samsung.com/id/refrigerators/bottom-mount-freezer/black-doi-rb30n4050b1-ss-315l-black-rb30n4050b1-se/"
+    },
+    {
+     "model": "RF48A4000B4_SE",
+     "subcat": "MD",
+     "cat": "MD",
+     "door": "French Door 4 pintu (multidoor)",
+     "capacity_l": 468,
+     "price_idr": 14999000,
+     "price_source": "https://www.bhinneka.com/samsung-kulkas-side-by-side-4-pintu-rf48a4000b4-se-sku3337913755",
+     "fitur": [
+      "Twin Cooling Plus: dua sistem pendingin terpisah agar rasa makanan terjaga dan bau tidak bercampur",
+      "Digital Inverter: hemat energi"
+     ],
+     "source_url": "https://www.samsung.com/id/refrigerators/french-door/rf4000tm-511l-black-rf48a4000b4-se/"
+    },
+    {
+     "model": "RF65DB90B012SE",
+     "subcat": "MD",
+     "cat": "MD",
+     "door": "Bespoke French Door 4 pintu (T-style)",
+     "capacity_l": 602,
+     "price_idr": 30199000,
+     "price_source": "https://www.bonbonelektronik.com/product-page/samsung-kulkas-multi-door-681l-rf65db90b012se-rf65-rf65db90b012-customizab",
+     "fitur": [
+      "Triple Cooling: pendinginan 3 zona independen, bau tidak tercampur",
+      "AI Energy Mode: hemat energi hingga 10% dengan pola pemakaian"
+     ],
+     "source_url": "https://www.samsung.com/id/refrigerators/french-door/rf9000d-rf9000dc-t-style-french-door-beverage-center-681l-clean-white-rf65db90b012se/"
+    },
+    {
+     "model": "RR18R1000SA_SE",
+     "subcat": "SD",
+     "cat": "SB",
+     "door": "1 pintu (One Door)",
+     "capacity_l": 176,
+     "price_idr": 2650000,
+     "price_source": "https://wahanasuperstore.com/samsung-kulkas-one-door-185-l-rr18r1000sa",
+     "fitur": [
+      "Rak tempered glass: kuat dan tahan lama",
+      "Desain kompak hemat tempat untuk keluarga kecil"
+     ],
+     "source_url": "https://www.samsung.com/id/refrigerators/one-door/176l-metal-graphite-rr18r1000sa-se/"
+    },
+    {
+     "model": "RS70F65KNFSE",
+     "subcat": "SBS",
+     "cat": "SBS",
+     "door": "Side by Side (2 pintu samping)",
+     "capacity_l": 617,
+     "price_idr": 21399000,
+     "price_source": "https://ose.co.id/product/samsung-rs70f65knfse-rs70-kulkas-side-by-side-bespoke-ai-smartthings-660l-black-ice-water-dispenser/",
+     "fitur": [
+      "AI Energy Mode: hemat energi hingga 10% lewat SmartThings",
+      "Water & Ice Dispenser: air dan es tanpa pemasangan pipa (tangki 4,5L)"
+     ],
+     "source_url": "https://www.samsung.com/id/refrigerators/side-by-side/refrigerator-sbs-rs90f-basic-660l-black-doi-rs70f65knfse/"
+    },
+    {
+     "model": "RT19M300BGS",
+     "subcat": "",
+     "cat": "TM",
+     "door": "Top Mount Freezer (2 pintu, freezer di atas)",
+     "capacity_l": 208,
+     "price_idr": 3799200,
+     "price_source": "https://www.tokopedia.com/find/samsung-rt19m300bgs",
+     "fitur": [
+      "Digital Inverter: hemat energi",
+      "All Around Cooling: pendinginan merata"
+     ],
+     "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/top-mount-freezer-rt19m300bgs-rt19m300bgs-se/"
+    },
+    {
+     "model": "RT22FARBDBB1",
+     "subcat": "",
+     "cat": "TM",
+     "door": "Top Mount Freezer (2 pintu, freezer di atas)",
+     "capacity_l": 234,
+     "price_idr": 4790000,
+     "price_source": "https://wahanasuperstore.com/samsung-kulkas-two-doors-234-liter-rt22farbdb1",
+     "fitur": [
+      "Coolpack 12 Jam: tahan dingin hingga 12 jam saat listrik padam",
+      "Digital Inverter: hemat energi"
+     ],
+     "source_url": "https://www.samsung.com/id/business/refrigerators/top-mount-freezer/234l-black-rt22farbdb1-se-rt22farbdb1-se/"
+    },
+    {
+     "model": "RT25FARBDB1_SE",
+     "subcat": "TM",
+     "cat": "TM",
+     "door": "Top Mount Freezer (2 pintu, freezer di atas)",
+     "capacity_l": 255,
+     "price_idr": 6468550,
+     "price_source": "https://www.ruparupa.com/p/samsung-lemari-es-2-pintu-255-ltr-rt25farbdb1-se.html",
+     "fitur": [
+      "Coolpack: tahan dingin saat listrik padam",
+      "Digital Inverter: hemat energi"
+     ],
+     "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/digital-inverter-234l-black-rt25farbdb1-se/"
+    },
+    {
+     "model": "RT35CG5420B1SE",
+     "subcat": "TM",
+     "cat": "TM",
+     "door": "Top Mount Freezer (2 pintu, freezer di atas)",
+     "capacity_l": 348,
+     "price_idr": 7490000,
+     "price_source": "https://wahanasuperstore.com/samsung-kulkas-two-doors-ungkep-compartment-rt35-348-l-rt35cg5420b1se",
+     "fitur": [
+      "Ungkep Compartment: laci khusus penyimpanan bumbu ungkep",
+      "SpaceMax: ruang lebih besar tanpa menambah dimensi luar"
+     ],
+     "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt5300c-top-mount-freezer-spacemax-348l-black-rt35cg5420b1se/"
+    },
+    {
+     "model": "RT42CG6420B1SE",
+     "subcat": "TM",
+     "cat": "TM",
+     "door": "Top Mount Freezer (2 pintu, freezer di atas)",
+     "capacity_l": 415,
+     "price_idr": 8250000,
+     "price_source": "https://wahanasuperstore.com/samsung-kulkas-two-doors-ungkep-compartment-rt42-415-l-rt42cg6420b1se",
+     "fitur": [
+      "Optimal Fresh+ Ungkep Compartment: laci penyimpanan bumbu ungkep",
+      "SpaceMax: ruang lebih besar tanpa menambah dimensi luar"
+     ],
+     "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-optimal-fresh-and-space-max-425l-black-rt42cg6420b1se/"
+    },
+    {
+     "model": "RT47CB66228JSE",
+     "subcat": "TM",
+     "cat": "TM",
+     "door": "Bespoke Top Mount Freezer (2 pintu, freezer di atas)",
+     "capacity_l": 465,
+     "price_idr": 9926550,
+     "price_source": "https://www.ruparupa.com/p/samsung-465-ltr-kulkas-2-pintu-rt47cb66228jse-peach-krem-vanilla.html",
+     "fitur": [
+      "Ungkep Compartment: laci khusus penyimpanan bumbu ungkep",
+      "Optimal Fresh+: kesegaran makanan lebih lama"
+     ],
+     "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-bespoke-design-476l-rt47cb66228jse/"
+    }
+   ]
+  },
+  {
+   "brand": "SHARP",
+   "model_count": 23,
+   "models": [
+    {
+     "model": "SJ-236MN-HS",
+     "subcat": "TM",
+     "cat": "TM",
+     "door": "2 Pintu (Top Mount, freezer di atas)",
+     "capacity_l": 187,
+     "price_idr": 4250000,
+     "price_source": "gfk-brief",
+     "fitur": [
+      "MEGA Freezer Deep Freezing hingga -21°C",
+      "Wide LED Lighting (pencahayaan luas)"
+     ],
+     "source_url": "https://id.sharp/products/home-appliances/sj-236mn-hs"
+    },
+    {
+     "model": "SJ-246SI-GK",
+     "subcat": "TM",
+     "cat": "TM",
+     "door": "2 Pintu (Top Mount, freezer di atas)",
+     "capacity_l": 187,
+     "price_idr": null,
+     "price_source": null,
+     "fitur": [
+      "J-TECH Inverter Technology (hemat listrik)",
+      "Ag+ Nano Deodorizer (anti bakteri & penyerap bau)"
+     ],
+     "source_url": "https://id.sharp/products/home-appliances/sj-246si-gk"
+    },
+    {
+     "model": "SJ-326SI-GK",
+     "subcat": "TM",
+     "cat": "TM",
+     "door": "2 Pintu (Top Mount, freezer di atas)",
+     "capacity_l": 237,
+     "price_idr": 4250000,
+     "price_source": "gfk-brief",
+     "fitur": [
+      "J-TECH Inverter Technology (hemat listrik)",
+      "Ag+ Nano Deodorizer (anti bakteri & penyerap bau)"
+     ],
+     "source_url": "https://id.sharp/products/home-appliances/sj-326si-gk"
+    },
+    {
+     "model": "SJ-326XI-MK",
+     "subcat": "TM",
+     "cat": "TM",
+     "door": "2 Pintu (Top Mount, freezer di atas)",
+     "capacity_l": 237,
+     "price_idr": 4250000,
+     "price_source": "gfk-brief",
+     "fitur": [
+      "J-Tech Inverter (hemat listrik & listrik stabil)",
+      "Borderless Tempered Glass Door (pintu kaca premium)"
+     ],
+     "source_url": "https://id.sharp/products/home-appliances/sj-326xi-mk"
+    },
+    {
+     "model": "SJ-386SI-DS",
+     "subcat": "TM",
+     "cat": "TM",
+     "door": "2 Pintu (Top Mount, freezer di atas)",
+     "capacity_l": 285,
+     "price_idr": 5400000,
+     "price_source": "gfk-brief",
+     "fitur": [
+      "24H/7 Always ON Plasmacluster (udara bersih nonstop)",
+      "Mega Freezer rasio 30:70 (freezer lebih besar)"
+     ],
+     "source_url": "https://id.sharp/products/home-appliances/sj-386si-ds-2-door-shine-j-tech-inverter"
+    },
+    {
+     "model": "SJ-426GI-GK",
+     "subcat": "TM",
+     "cat": "TM",
+     "door": "2 Pintu (Top Mount, freezer di atas, pintu kaca)",
+     "capacity_l": 315,
+     "price_idr": 5240000,
+     "price_source": "gfk-brief",
+     "fitur": [
+      "J-TECH Inverter Technology (hemat listrik)",
+      "Black Glitter Glass Door & Side Handle (pintu kaca elegan)"
+     ],
+     "source_url": "https://id.sharp/products/home-appliances/sj-426gi-gk-2-door-shine-glassdoor-j-tech-inverter"
+    },
+    {
+     "model": "SJ-426SI-GK",
+     "subcat": "TM",
+     "cat": "TM",
+     "door": "2 Pintu (Top Mount, freezer di atas)",
+     "capacity_l": 315,
+     "price_idr": 5240000,
+     "price_source": "gfk-brief",
+     "fitur": [
+      "J-TECH Inverter Technology (hemat listrik)",
+      "24H/7 Always ON Plasmacluster (udara bersih nonstop)"
+     ],
+     "source_url": "https://id.sharp/products/home-appliances/sj-426si-gk"
+    },
+    {
+     "model": "SJ-456SI-GK",
+     "subcat": "TM",
+     "cat": "TM",
+     "door": "2 Pintu (Top Mount, freezer di atas)",
+     "capacity_l": 329,
+     "price_idr": 5240000,
+     "price_source": "gfk-brief",
+     "fitur": [
+      "J-TECH Inverter Technology (hemat listrik)",
+      "24H/7 Always ON Plasmacluster (udara bersih nonstop)"
+     ],
+     "source_url": "https://id.sharp/products/home-appliances/sj-456si-gk"
+    },
+    {
+     "model": "SJ-IF50PMA-DS",
+     "subcat": "MD",
+     "cat": "MD",
+     "door": "Multi Door (4 pintu, seri Queen)",
+     "capacity_l": 401,
+     "price_idr": 8950000,
+     "price_source": "gfk-brief",
+     "fitur": [
+      "24H/7 Always ON Plasmacluster (udara bersih nonstop)",
+      "Ag+ Nano Deodorizer (anti bakteri & penyerap bau)"
+     ],
+     "source_url": "https://id.sharp/products/home-appliances/sj-if50pma-ds-4-door-queen-series"
+    },
+    {
+     "model": "SJ-IF51PG-BK",
+     "subcat": "MD",
+     "cat": "MD",
+     "door": "Multi Door (4 pintu, seri Queen)",
+     "capacity_l": 401,
+     "price_idr": 8950000,
+     "price_source": "gfk-brief",
+     "fitur": [
+      "Inverter Technology (hemat listrik)",
+      "Plasmacluster Ion (udara bersih)"
+     ],
+     "source_url": "https://id.sharp/products/home-appliances/sj-if51pg-bk"
+    },
+    {
+     "model": "SJ-IF60PM-DS",
+     "subcat": "MD",
+     "cat": "MD",
+     "door": "Multi Door (4 pintu, seri Queen)",
+     "capacity_l": 466,
+     "price_idr": 10500000,
+     "price_source": "gfk-brief",
+     "fitur": [
+      "Hybrid Cooling System (pendingin ganda lebih merata)",
+      "Multi Temperature Compartment (kompartemen suhu beragam)"
+     ],
+     "source_url": "https://id.sharp/products/home-appliances/sj-if60pm-ds-4-door-hybrid-cooling-system-queen-series"
+    },
+    {
+     "model": "SJ-IF85PG-GB",
+     "subcat": "MD",
+     "cat": "MD",
+     "door": "Multi Door (4 pintu)",
+     "capacity_l": 520,
+     "price_idr": 16200000,
+     "price_source": "gfk-brief",
+     "fitur": [
+      "J-Tech Inverter (hemat listrik)",
+      "Plasmacluster Ion Technology (udara bersih)"
+     ],
+     "source_url": "https://id.sharp/products/home-appliances/sj-if85pg-gb"
+    },
+    {
+     "model": "SJ-IF91PG-GB",
+     "subcat": "MD",
+     "cat": "MD",
+     "door": "Multi Door (4 pintu)",
+     "capacity_l": 572,
+     "price_idr": 17939000,
+     "price_source": "market-master.json (avg online, 4-Agu-2026)",
+     "fitur": [
+      "J-Tech Inverter (hemat listrik)",
+      "Plasmacluster Ion Technology (udara bersih)"
+     ],
+     "source_url": "https://id.sharp/products/home-appliances/sj-if91pg-gb"
+    },
+    {
+     "model": "SJ-IS50M-SL",
+     "subcat": "SBS",
+     "cat": "SBS",
+     "door": "Side by Side (2 pintu)",
+     "capacity_l": 442,
+     "price_idr": 7900000,
+     "price_source": "gfk-brief",
+     "fitur": [
+      "Smart Fan Controlled by Inverter (kipas pintar hemat energi)",
+      "4 Mode Function (Smart, ECO, Extra Cooling, Express Freezing)"
+     ],
+     "source_url": "https://id.sharp/products/home-appliances/sj-is50ma-sl-side-side-series"
+    },
+    {
+     "model": "SJ-IS60MB-DS",
+     "subcat": "SBS",
+     "cat": "SBS",
+     "door": "Side by Side (2 pintu)",
+     "capacity_l": 532,
+     "price_idr": 9900000,
+     "price_source": "gfk-brief",
+     "fitur": [
+      "Smart Fan Controlled by Inverter (kipas pintar hemat energi)",
+      "360° Air Cooling System (udara dingin merata)"
+     ],
+     "source_url": "https://id.sharp/products/home-appliances/sj-is60mb-ds-side-side-series"
+    },
+    {
+     "model": "SJ-IT660PM-DS",
+     "subcat": "TM",
+     "cat": "TM",
+     "door": "2 Pintu (Top Mount, freezer di atas, seri Grand Vetro)",
+     "capacity_l": 471,
+     "price_idr": 7450000,
+     "price_source": "gfk-brief",
+     "fitur": [
+      "MEGA Freezer rasio 30:70 (freezer lebih besar)",
+      "24H/7 Always ON Plasmacluster Ion (udara bersih nonstop)"
+     ],
+     "source_url": "https://id.sharp/products/home-appliances/sj-it660pm-ds-2-door-grand-vetro-series"
+    },
+    {
+     "model": "SJ-N162N-HS",
+     "subcat": "SD",
+     "cat": "SB",
+     "door": "1 Pintu (Single Door)",
+     "capacity_l": 128,
+     "price_idr": 1800000,
+     "price_source": "gfk-brief",
+     "fitur": [
+      "Mega Crisper Room (laci sayur besar)",
+      "Direct Cooling System (pendinginan langsung)"
+     ],
+     "source_url": "https://id.sharp/products/home-appliances/sj-n162n-hs"
+    },
+    {
+     "model": "SJ-N182N",
+     "subcat": "SD",
+     "cat": "SB",
+     "door": "1 Pintu (Single Door)",
+     "capacity_l": 157,
+     "price_idr": 1900000,
+     "price_source": "gfk-brief",
+     "fitur": [
+      "Large Freezer (freezer besar)",
+      "Interior Lamp (lampu interior)"
+     ],
+     "source_url": "https://id.sharp/products/home-appliances/sj-n182n-hs"
+    },
+    {
+     "model": "SJ-N192N",
+     "subcat": "SD",
+     "cat": "SB",
+     "door": "1 Pintu (Single Door)",
+     "capacity_l": 175,
+     "price_idr": 2100000,
+     "price_source": "gfk-brief",
+     "fitur": [
+      "Mega Crisper Room (laci sayur besar)",
+      "Direct Cooling System (pendinginan langsung)"
+     ],
+     "source_url": "https://id.sharp/products/home-appliances/sj-n192n-hs"
+    },
+    {
+     "model": "SJ-X165MG-GB_GR",
+     "subcat": "SD",
+     "cat": "SB",
+     "door": "1 Pintu (Single Door)",
+     "capacity_l": 128,
+     "price_idr": 1800000,
+     "price_source": "gfk-brief",
+     "fitur": [
+      "Flat Door dengan Magneglas Steel Plate (pintu datar anti karat)",
+      "Direct Cooling System (pendinginan langsung)"
+     ],
+     "source_url": "https://id.sharp/products/home-appliances/sj-x165mg-gbgr"
+    },
+    {
+     "model": "SJ-X185MG-GB_GR",
+     "subcat": "SD",
+     "cat": "SB",
+     "door": "1 Pintu (Single Door)",
+     "capacity_l": 157,
+     "price_idr": 1900000,
+     "price_source": "gfk-brief",
+     "fitur": [
+      "Flat Door dengan Magneglas Steel Plate (pintu datar anti karat)",
+      "Direct Cooling System (pendinginan langsung)"
+     ],
+     "source_url": "https://www.elektronikmurah.biz/products/sharp-kulkas-1-pintu-166l-sj-x185mg-gb"
+    },
+    {
+     "model": "SJ-X195MG-GB_GR",
+     "subcat": "SD",
+     "cat": "SB",
+     "door": "1 Pintu (Single Door)",
+     "capacity_l": 175,
+     "price_idr": 2100000,
+     "price_source": "gfk-brief",
+     "fitur": [
+      "Flat Door dengan Magneglas Steel Plate (pintu datar anti karat)",
+      "Direct Cooling System (pendinginan langsung)"
+     ],
+     "source_url": "https://id.sharp/products/home-appliances/sj-x195mg-gbgr"
+    },
+    {
+     "model": "SJ316MGGB",
+     "subcat": "TM",
+     "cat": "TM",
+     "door": "2 Pintu (Top Mount, freezer di atas)",
+     "capacity_l": 237,
+     "price_idr": 4250000,
+     "price_source": "gfk-brief",
+     "fitur": [
+      "Extra Big Freezer (freezer ekstra besar)",
+      "AG+ Nano Deo (anti bakteri & penyerap bau)"
+     ],
+     "source_url": "https://id.sharp/products/home-appliances/sj-316mg-gbgr"
+    }
+   ]
+  }
+ ],
+ "sumber": "Riset per brand (website resmi + GFK), lihat price_source per model; angka dihitung mesin dari riset_brand JSON."
+}

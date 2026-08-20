@@ -1,0 +1,85 @@
+{
+  "kategori": "Induksi - Kulkas",
+  "deskripsi": "Cara membaca kode produk kulkas AQUA/HAIER dari materi induksi Teh Lidia.",
+  "sumber": ["SS Induction/Kulkas+-+Teh+Lidia.docx"],
+  "fakta": [
+    {
+      "judul": "Cara baca kode produk kulkas",
+      "isi": "Kode produk punya 6 bagian: (1) brand: AQ=Aqua, HR=Haier; (2) jenis: R=Refrigerator; (3) pabrik: D=Indonesia, V=Vietnam, T=Thailand, L=India, C=China; (4) sub-kategori: SE, TD, TM, BM, SB; (5) angka = kapasitas (liter); (6) C/R = kompresor konvensional/inverter, lalu level (S/A/B/Basic), material pintu (G=glass/Metal), dan kode warna.",
+      "sumber": "Kulkas - Teh Lidia"
+    },
+    {
+      "judul": "Contoh: AQR-DTM285CBP(DS)",
+      "isi": "AQ (Aqua) - R (Refrigerator) - D (pabrik Indonesia) - TM (sub-kategori 2 pintu Top Mount) - 285 liter - C (kompresor konvensional) - BP (kode warna) - (DS).",
+      "sumber": "Kulkas - Teh Lidia / RAW DATA PC MA"
+    },
+    {
+      "judul": "Sub-kategori kulkas",
+      "isi": "SB (single door / 1 pintu), SE (side by side), TD (4 pintu), TM (2 pintu top mount), BM (bottom mount). Angka setelahnya menandakan kapasitas dalam liter.",
+      "sumber": "Kulkas - Teh Lidia"
+    },
+    {
+      "judul": "Level dan material pintu",
+      "isi": "Level produk: S, A, B, Basic. Material pintu: G = Glass, Metal (tanpa kode). Contoh: AQR-D185MPE(Glass) vs AQR-D185MDS(Metal).",
+      "sumber": "Kulkas - Teh Lidia / AQUA REF Product Mapping"
+    },
+    {
+      "judul": "Komponen utama kulkas",
+      "isi": "Materi induksi membahas komponen: kompresor, evaporator, kondensor, thermostat, refrigerant (gas), dan komponen elektronik pendukung.",
+      "sumber": "Kulkas - Teh Lidia"
+    }
+  ],
+  "visual": {
+    "kode": [
+      {
+        "nama": "AQR-DTM285CBP",
+        "keterangan": "Kulkas 2 pintu Top Mount, kompresor konvensional (fakta 2).",
+        "segmen": [
+          { "segmen": "AQ", "label": "Brand: Aqua", "warna": "#e11d48" },
+          { "segmen": "R", "label": "Jenis: Refrigerator", "warna": "#2563eb" },
+          { "segmen": "D", "label": "Pabrik: Indonesia", "warna": "#7c3aed" },
+          { "segmen": "TM", "label": "Sub-kategori: 2 pintu Top Mount", "warna": "#059669" },
+          { "segmen": "285", "label": "Kapasitas: 285 liter", "warna": "#ea580c" },
+          { "segmen": "C", "label": "Kompresor: Konvensional", "warna": "#ec4899" },
+          { "segmen": "BP", "label": "Kode warna", "warna": "#64748b" }
+        ]
+      },
+      {
+        "nama": "AQR-D185MPE",
+        "keterangan": "Kulkas 1 pintu seri AQR-D dengan pintu Glass (fakta 4).",
+        "segmen": [
+          { "segmen": "AQ", "label": "Brand: Aqua", "warna": "#e11d48" },
+          { "segmen": "R", "label": "Jenis: Refrigerator", "warna": "#2563eb" },
+          { "segmen": "D", "label": "Pabrik: Indonesia", "warna": "#7c3aed" },
+          { "segmen": "185", "label": "Kapasitas: 185 liter", "warna": "#ea580c" },
+          { "segmen": "MPE", "label": "Kode warna: Chic Color Series - pintu Glass", "warna": "#0d9488" }
+        ]
+      }
+    ],
+    "subkategori": [
+      { "kode": "SB", "nama": "Single Door", "desc": "Kulkas 1 pintu", "varian": "sb" },
+      { "kode": "SE", "nama": "Side by Side", "desc": "Dua pintu berdampingan", "varian": "se" },
+      { "kode": "TD", "nama": "4 Pintu", "desc": "Kulkas dengan 4 pintu", "varian": "td" },
+      { "kode": "TM", "nama": "2 Pintu Top Mount", "desc": "Freezer di atas", "varian": "tm" },
+      { "kode": "BM", "nama": "Bottom Mount", "desc": "Freezer di bawah", "varian": "bm" }
+    ],
+    "level": [
+      { "kode": "S", "desc": "Level", "warna": "#7c3aed" },
+      { "kode": "A", "desc": "Level", "warna": "#2563eb" },
+      { "kode": "B", "desc": "Level", "warna": "#059669" },
+      { "kode": "Basic", "desc": "Level", "warna": "#64748b" }
+    ],
+    "material": [
+      { "kode": "G", "nama": "Glass", "catatan": "berkode G", "warna": "#0e7490" },
+      { "kode": "-", "nama": "Metal", "catatan": "tanpa kode", "warna": "#6b7280" }
+    ],
+    "komponen": [
+      { "nama": "Kompresor", "peran": "Memompa refrigerant agar mengalir dalam siklus pendinginan.", "tipe": "siklus" },
+      { "nama": "Kondensor", "peran": "Melepas panas dari refrigerant di sisi luar kulkas.", "tipe": "siklus" },
+      { "nama": "Evaporator", "peran": "Menyerap panas dari dalam kulkas sehingga ruang jadi dingin.", "tipe": "siklus" },
+      { "nama": "Thermostat", "peran": "Mengatur suhu sesuai setelan dan mengendalikan nyala pendinginan.", "tipe": "pendukung" },
+      { "nama": "Refrigerant (gas)", "peran": "Zat pembawa panas yang bersirkulasi di dalam sistem.", "tipe": "pendukung" },
+      { "nama": "Komponen elektronik pendukung", "peran": "Mengatur kerja sistem, misalnya kontrol suhu dan proteksi.", "tipe": "pendukung" }
+    ]
+  }
+}

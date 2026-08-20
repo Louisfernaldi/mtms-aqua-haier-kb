@@ -1,0 +1,51 @@
+{
+  "kategori": "Tugas - Latihan",
+  "deskripsi": "Latihan soal Excel Basic for MT: upah karyawan, paket liburan, klinik, komisi sales.",
+  "sumber": ["Tugas/Copy of Sharleen Progress 100% - Latihan Soal Basic for MT.xlsx", "Tugas/Sharleen - Warehouse Visit Report- Management Trainee 2026.pdf"],
+  "fakta": [
+    {
+      "judul": "Soal 1: Daftar upah karyawan",
+      "isi": "Upah kerja Rp10.000/jam, lembur Rp15.000/jam. Pajak: 5% jika upah kotor >Rp700.000, 2% jika <Rp700.000. 14 karyawan contoh (Agus, Bambang, Ragil, dll).",
+      "poin": [
+        "Upah normal [[Rp10.000/jam]], lembur [[Rp15.000/jam]].",
+        "Pajak [[5%]] jika upah kotor > [[Rp700.000]], [[2%]] jika di bawahnya.",
+        "14 karyawan contoh (Agus, Bambang, Ragil, dll)."
+      ],
+      "sumber": "Latihan Soal Basic for MT"
+    },
+    {
+      "judul": "Soal 2: Paket liburan",
+      "isi": "Kode tujuan: BL=Bali, BD=Bandung, LB=Lombok. Kategori: BS=Biasa, IS=Istimewa. Harga per peserta Rp2.000.000.",
+      "poin": [
+        "Kode tujuan: [[BL=Bali]], [[BD=Bandung]], [[LB=Lombok]].",
+        "Kategori: [[BS=Biasa]], [[IS=Istimewa]].",
+        "Harga per peserta [[Rp2.000.000]]."
+      ],
+      "sumber": "Latihan Soal Basic for MT"
+    },
+    {
+      "judul": "Soal 3: Klinik persalinan",
+      "isi": "Biaya persalinan: Dokter Rp100.000, Bidan Rp75.000. Biaya inap/hari: Kelas A Rp300.000, B Rp200.000, C Rp100.000.",
+      "poin": [
+        "Biaya persalinan: Dokter [[Rp100.000]], Bidan [[Rp75.000]].",
+        "Biaya inap/hari: Kelas A [[Rp300.000]], B [[Rp200.000]], C [[Rp100.000]]."
+      ],
+      "sumber": "Latihan Soal Basic for MT"
+    },
+    {
+      "judul": "Soal 4: Komisi sales",
+      "isi": "Komisi 10% untuk penjualan >=Rp5.000.000, 5% untuk Rp3.000.000-Rp5.000.000, 2% di bawah Rp3.000.000.",
+      "poin": [
+        "Penjualan >= [[Rp5.000.000]]: komisi [[10%]].",
+        "Penjualan [[Rp3.000.000]] - [[Rp5.000.000]]: komisi [[5%]].",
+        "Penjualan di bawah [[Rp3.000.000]]: komisi [[2%]]."
+      ],
+      "sumber": "Latihan Soal Basic for MT"
+    },
+    {
+      "judul": "Warehouse Visit Report",
+      "isi": "Laporan kunjungan gudang (PDF). Catatan: file asli gagal terunduh dari Drive (0 byte) — di situs tersedia link ke Drive asli.",
+      "sumber": "Warehouse Visit Report"
+    }
+  ]
+}

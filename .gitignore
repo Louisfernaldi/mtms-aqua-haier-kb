@@ -1,0 +1,21 @@
+# Cloudflare Pages cache (build artifact)
+.wrangler/
+
+# Materi mentah dari Google Drive Sharleen (sumber asli ada di Drive; ada data internal mentah)
+materi-drive/
+
+# Hasil ekstraksi teks PDF/DOCX/XLSX/XLSB (bisa diregenerasi; termasuk dump 1.6GB data mentah)
+tools/extracted/
+
+# Screenshot & artefak verifikasi headless (regenerable dari tools/verify_site.py)
+tools/evidence/
+
+# Log unduhan drive
+tools/download_log*.txt
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Local dev vars (berisi token asli — JANGAN commit)
+.dev.vars

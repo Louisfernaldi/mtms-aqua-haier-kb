@@ -1,0 +1,2 @@
+﻿tiket: G
+status: jalan

@@ -1,0 +1,78 @@
+{
+  "kategori": "Produk - Kulkas",
+  "deskripsi": "Mapping produk kulkas AQUA: seri AQR-D, segmentasi, harga, daya listrik.",
+  "sumber": [
+    "Rotation - REF/File Rapih/AQUA REF - Product Mapping (Ref 2026 Juli) - Sharleen MT.xlsx",
+    "Rotation - REF/POP Listrik List.xlsx",
+    "Rotation - REF/File Rapih/Aqua PM.xlsx"
+  ],
+  "fakta": [
+    {
+      "judul": "Seri AQR-D (1 pintu)",
+      "isi": "AQR-D225, AQR-D205, AQR-D185. Kode warna: MPE/MBE/MME = Chic Color Series; MDS/MLS/MS/MSG = Magic Neo Series (wave design). Refrigerant R600a.",
+      "sumber": "AQUA REF Product Mapping"
+    },
+    {
+      "judul": "Keunggulan seri AQR-D",
+      "isi": "Giant Freezer 13% lebih besar dari freezer standar, Semi-Auto Defrost (pencairan es otomatis sebagian), Tempered Glass Tray (rak kaca tempered), garansi 7 tahun.",
+      "sumber": "AQUA REF Product Mapping"
+    },
+    {
+      "judul": "Kelas segmen kulkas",
+      "isi": "SD = Single Door (1 pintu), TD = 2 pintu, TM = 2 pintu Top Mount, BM = Bottom Mount, SBS = Side By Side, MD = Multi Door (4-5 pintu).",
+      "sumber": "Aqua PM / RAW DATA PC MA"
+    },
+    {
+      "judul": "Rentang harga per segmen",
+      "isi": "1 pintu: 2-3 juta. 2 pintu inverter: 3-6 juta. SBS: 8-11 juta (half lineup terkonsentrasi 8,6-9,2 juta). Multi Door: 10-12 juta.",
+      "sumber": "Aqua PM"
+    },
+    {
+      "judul": "Analisa segmen (Aqua PM)",
+      "isi": "SD: Aqua unggul kapasitas. TM/SBS: value for money dengan pintu metal. TD: kategori paling seimbang — waspadai Midea yang berpotensi lebih murah di 407-474L.",
+      "sumber": "Aqua PM"
+    },
+    {
+      "judul": "Model unggulan MD (Haier)",
+      "isi": "HRF-CTD729RITA(BK)U1 650L dan HRF-CTD779RSA(BK)U1 700L — kelas premium multi-door Haier.",
+      "sumber": "POP Listrik List"
+    },
+    {
+      "judul": "Daya listrik contoh model",
+      "isi": "AQR-D185/205/225, AQR-DTM247-288 CB, AQR-DTM265-305 RAP/RAV, AQR-382IM/395IM, HRF-CTD779RSA(BK)U1, HRF-CTD729RITA(BK)U1 — semua tercatat di POP Listrik List.",
+      "sumber": "POP Listrik List"
+    }
+  ],
+  "segmen_harga": [
+    {
+      "segmen": "Single Door",
+      "label": "1 Pintu / Single Door",
+      "rentang": "2-3 juta",
+      "sumber": "Aqua PM"
+    },
+    {
+      "segmen": "Top Mount",
+      "label": "2 Pintu Top Mount",
+      "rentang": "3-6 juta",
+      "sumber": "Aqua PM"
+    },
+    {
+      "segmen": "Bottom Mount",
+      "label": "2 Pintu Freezer Bawah / Bottom Mount",
+      "rentang": "3-6 juta",
+      "sumber": "Aqua PM"
+    },
+    {
+      "segmen": "Side by Side",
+      "label": "Side by Side",
+      "rentang": "8-11 juta",
+      "sumber": "Aqua PM"
+    },
+    {
+      "segmen": "Multidoor",
+      "label": "Multi Pintu (4-5 pintu)",
+      "rentang": "10-12 juta",
+      "sumber": "Aqua PM"
+    }
+  ]
+}

@@ -1,0 +1,1003 @@
+[
+  {
+    "brand": "AQUA",
+    "model": "AQR-320RBG",
+    "varian": [
+      "BK"
+    ],
+    "kategori": "2 Pintu Freezer Bawah",
+    "group": "Bottom Mount",
+    "kapasitas_gross": 320,
+    "kapasitas_nett": 292,
+    "range": "300-350",
+    "material": "Kaca (Glass)",
+    "daya_watt": "44",
+    "garansi_tahun": "12",
+    "flags": [
+      "Inverter"
+    ],
+    "serie": null,
+    "benefit": "Freezer di bawah: area pendingin sejajar mata (easy to see) dan akses sayur/buah jauh lebih nyaman (easy to use). 360 Multi Air Flow: dingin merata satu putaran penuh. Magic Room: kompartemen fleksibel 5C s/d -18C. HCS jaga kelembapan hingga 90%, buah & sayur 2x lebih segar. H-Deo Fresh 99,9%. Digital Touch Screen. Twin Inverter 44 W. Garansi kompresor inverter 12 tahun."
+  },
+  {
+    "brand": "AQUA",
+    "model": "AQR-350RBG",
+    "varian": [
+      "BK"
+    ],
+    "kategori": "2 Pintu Freezer Bawah",
+    "group": "Bottom Mount",
+    "kapasitas_gross": 350,
+    "kapasitas_nett": 324,
+    "range": "300-350",
+    "material": "Kaca (Glass)",
+    "daya_watt": "44",
+    "garansi_tahun": "12",
+    "flags": [
+      "Inverter"
+    ],
+    "serie": null,
+    "benefit": "Bottom freezer 324 L. 360 Multi Air Flow, Magic Room 5C s/d -18C, HCS kelembapan 90% (buah & sayur 2x lebih segar), H-Deo Fresh 99,9%, Digital Touch Screen, Twin Inverter 44 W. Garansi kompresor inverter 12 tahun.",
+    "foto": "assets/produk/AQR-350RBG__0.jpg"
+  },
+  {
+    "brand": "AQUA",
+    "model": "AQR-350RBM",
+    "varian": [
+      "EBM"
+    ],
+    "kategori": "2 Pintu Freezer Bawah",
+    "group": "Bottom Mount",
+    "kapasitas_gross": 350,
+    "kapasitas_nett": 324,
+    "range": "300-350",
+    "material": "Metal",
+    "daya_watt": "44",
+    "garansi_tahun": "12",
+    "flags": [
+      "Inverter"
+    ],
+    "serie": null,
+    "benefit": "Versi metal dari bottom freezer 324 L, harga lebih terjangkau. Multi Air Flow, H-Deo Fresh 99,9%, Twin Inverter 44 W. Layout bottom freezer: makanan segar sejajar mata, freezer di bawah. Garansi kompresor inverter 12 tahun.",
+    "foto": "assets/produk/AQR-350RBM__web0.jpg",
+    "harga_idr": 9657000,
+    "harga_source": "official-page"
+  },
+  {
+    "brand": "AQUA",
+    "model": "AQR-CTD506RBG",
+    "varian": [
+      "BK"
+    ],
+    "kategori": "Multi Pintu",
+    "group": "Multidoor",
+    "kapasitas_gross": 506,
+    "kapasitas_nett": 406,
+    "range": "500-550",
+    "material": "Kaca (Glass)",
+    "daya_watt": "33",
+    "garansi_tahun": "20 (Twin Inverter)",
+    "flags": [
+      "Inverter",
+      "Entry"
+    ],
+    "serie": "Magic Zone",
+    "benefit": "Entry point 4 pintu. Digital Touch Screen. Magic Zone: atur suhu 0C / 2C / 4C sesuai jenis makanan. H-Deo Fresh: netralisir bau & hambat kuman/bakteri 99,9%. Twin Inverter super hemat, hanya 33 W untuk 406 L. Garansi kompresor Twin Inverter 20 tahun."
+  },
+  {
+    "brand": "AQUA",
+    "model": "AQR-CTD506RBC",
+    "varian": [
+      "CB"
+    ],
+    "kategori": "Multi Pintu",
+    "group": "Multidoor",
+    "kapasitas_gross": 506,
+    "kapasitas_nett": 406,
+    "range": "500-550",
+    "material": "Metal (PCM)",
+    "daya_watt": "33",
+    "garansi_tahun": "20 (Twin Inverter)",
+    "flags": [
+      "Inverter",
+      "Entry"
+    ],
+    "serie": "Magic Zone",
+    "benefit": "Entry point 4 pintu. Digital Touch Screen. Magic Zone: atur suhu 0C / 2C / 4C sesuai jenis makanan. H-Deo Fresh: netralisir bau & hambat kuman/bakteri 99,9%. Twin Inverter super hemat, hanya 33 W untuk 406 L. Garansi kompresor Twin Inverter 20 tahun."
+  },
+  {
+    "brand": "AQUA",
+    "model": "AQR-TTD546RBG",
+    "varian": [
+      "WT",
+      "CL",
+      "BK"
+    ],
+    "kategori": "Multi Pintu",
+    "group": "Multidoor",
+    "kapasitas_gross": 546,
+    "kapasitas_nett": 456,
+    "range": "500-550",
+    "material": "Kaca (Glass)",
+    "daya_watt": "40",
+    "garansi_tahun": "20 (Twin Inverter)",
+    "flags": [
+      "Inverter"
+    ],
+    "serie": "Magic Zone",
+    "benefit": "Multidoor 456 L. Digital Touch Screen. Magic Zone: suhu 0C / 2C / 4C sesuai jenis makanan. HCS (Humidity Control System) jaga kelembapan hingga 90%, buah & sayur 2x lebih segar. H-Deo Fresh 99,9%. Twin Inverter hemat 40 W. Garansi kompresor Twin Inverter 20 tahun.",
+    "foto": "assets/produk/AQR-TTD546RBG__0.jpg"
+  },
+  {
+    "brand": "AQUA",
+    "model": "AQR-TTD546RBC",
+    "varian": [
+      "CB"
+    ],
+    "kategori": "Multi Pintu",
+    "group": "Multidoor",
+    "kapasitas_gross": 546,
+    "kapasitas_nett": 456,
+    "range": "500-550",
+    "material": "Metal (PCM)",
+    "daya_watt": "40",
+    "garansi_tahun": "20 (Twin Inverter)",
+    "flags": [
+      "Inverter"
+    ],
+    "serie": "Magic Zone",
+    "benefit": "Multidoor 456 L. Digital Touch Screen. Magic Zone: suhu 0C / 2C / 4C sesuai jenis makanan. HCS (Humidity Control System) jaga kelembapan hingga 90%, buah & sayur 2x lebih segar. H-Deo Fresh 99,9%. Twin Inverter hemat 40 W. Garansi kompresor Twin Inverter 20 tahun.",
+    "foto": "assets/produk/AQR-TTD546RBC__0.jpg",
+    "harga_idr": 11499000,
+    "harga_source": "official-page"
+  },
+  {
+    "brand": "AQUA",
+    "model": "AQR-TTD546RBV",
+    "varian": [
+      "MX"
+    ],
+    "kategori": "Multi Pintu",
+    "group": "Multidoor",
+    "kapasitas_gross": 546,
+    "kapasitas_nett": 456,
+    "range": "500-550",
+    "material": "Metal (VCM)",
+    "daya_watt": "40",
+    "garansi_tahun": "20 (Twin Inverter)",
+    "flags": [
+      "Inverter"
+    ],
+    "serie": "Magic Zone",
+    "benefit": "Multidoor 456 L. Digital Touch Screen. Magic Zone: suhu 0C / 2C / 4C sesuai jenis makanan. HCS (Humidity Control System) jaga kelembapan hingga 90%, buah & sayur 2x lebih segar. H-Deo Fresh 99,9%. Twin Inverter hemat 40 W. Garansi kompresor Twin Inverter 20 tahun.",
+    "foto": "assets/produk/AQR-TTD546RBV__0.jpg"
+  },
+  {
+    "brand": "AQUA",
+    "model": "AQR-TTD576RSG",
+    "varian": [
+      "CL"
+    ],
+    "kategori": "Multi Pintu",
+    "group": "Multidoor",
+    "kapasitas_gross": 576,
+    "kapasitas_nett": 522,
+    "range": "550-600",
+    "material": "Kaca (Glass)",
+    "daya_watt": "55",
+    "garansi_tahun": "20 (Twin Inverter)",
+    "flags": [
+      "Inverter"
+    ],
+    "serie": "HaiSmart",
+    "benefit": "Multidoor premium 522 L. Water Dispenser + Auto Ice Maker. Smart IoT HaiSmart: kontrol dari smartphone. Smart Color Screen: kontrol sentuh premium dengan warna elegan. Day Light. Magic Zone 0/2/4C. HCS kelembapan 90%. ABT Pro: hilangkan bau & bakteri. Twin Inverter 55 W. Garansi kompresor Twin Inverter 20 tahun.",
+    "foto": "assets/produk/AQR-TTD576RSG__0.jpg"
+  },
+  {
+    "brand": "AQUA",
+    "model": "AQR-TTD576RAG",
+    "varian": [
+      "BK"
+    ],
+    "kategori": "Multi Pintu",
+    "group": "Multidoor",
+    "kapasitas_gross": 576,
+    "kapasitas_nett": 522,
+    "range": "550-600",
+    "material": "Kaca (Glass)",
+    "daya_watt": "55",
+    "garansi_tahun": "20 (Twin Inverter)",
+    "flags": [
+      "Inverter"
+    ],
+    "serie": "Magic Zone",
+    "benefit": "Multidoor 522 L dengan pintu kaca hitam. Smart Color Screen, Day Light, Magic Zone 0/2/4C, HCS kelembapan 90% (buah & sayur 2x lebih segar), ABT Pro anti bakteri, Twin Inverter 55 W. Garansi kompresor Twin Inverter 20 tahun.",
+    "foto": "assets/produk/AQR-TTD576RAG__0.jpg",
+    "harga_idr": 16200000,
+    "harga_source": "brief-gfk"
+  },
+  {
+    "brand": "AQUA",
+    "model": "AQR-CTD746RAG",
+    "varian": [
+      "BK"
+    ],
+    "kategori": "Multi Pintu",
+    "group": "Multidoor",
+    "kapasitas_gross": 746,
+    "kapasitas_nett": 658,
+    "range": "700-750",
+    "material": "Kaca (Glass)",
+    "daya_watt": "40",
+    "garansi_tahun": "20 (Twin Inverter)",
+    "flags": [
+      "Inverter",
+      "Halo Product"
+    ],
+    "serie": "HaiSmart",
+    "benefit": "Halo product / statement dapur premium, 658 L. Fresher Shield: suhu freezer stabil sehingga makanan beku tetap fresh dan tidak kehilangan nutrisi. Fresh Box. Day Light. Smart Color Screen. HCS kelembapan 90%. ABT Pro: netralisir bau & hambat kuman/bakteri. Smart IoT HaiSmart. Twin Inverter hanya 40 W untuk 658 L. Garansi kompresor Twin Inverter 20 tahun.",
+    "foto": "assets/produk/AQR-CTD746RAG__0.jpg",
+    "harga_idr": 21260000,
+    "harga_source": "official-page"
+  },
+  {
+    "brand": "AQUA",
+    "model": "AQR-CSE565RBC",
+    "varian": [
+      "CB"
+    ],
+    "kategori": "Side by Side",
+    "group": "Side by Side",
+    "kapasitas_gross": 565,
+    "kapasitas_nett": 480,
+    "range": "550-600",
+    "material": "Metal (PCM)",
+    "daya_watt": "41",
+    "garansi_tahun": "20 (Twin Inverter)",
+    "flags": [
+      "Inverter",
+      "Entry"
+    ],
+    "serie": null,
+    "benefit": "Entry point Side by Side. Multi Air Flow: suhu merata berkat sensor akurat. 90 Door Open Friendly: pintu terbuka 90 derajat, mudah menata barang. Digital Touch Screen. H-Deo Fresh 99,9%. Twin Inverter sangat hemat, hanya 41 W untuk 480 L. Garansi kompresor Twin Inverter 20 tahun.",
+    "foto": "assets/produk/AQR-CSE565RBC__0.jpg",
+    "harga_idr": 10750000,
+    "harga_source": "official-page"
+  },
+  {
+    "brand": "AQUA",
+    "model": "AQR-TSE605RBM",
+    "varian": [
+      "MX"
+    ],
+    "kategori": "Side by Side",
+    "group": "Side by Side",
+    "kapasitas_gross": 605,
+    "kapasitas_nett": 542,
+    "range": "600-650",
+    "material": "Metal",
+    "daya_watt": null,
+    "garansi_tahun": "20 (Twin Inverter)",
+    "flags": [
+      "Inverter"
+    ],
+    "serie": null,
+    "benefit": "Side by Side 542 L. Multi Air Flow, 90 Door Open Friendly, Digital Touch Screen, HCS (Humidity Control System) jaga kelembapan 90% sehingga buah & sayur 2x lebih segar, H-Deo Fresh 99,9%, Twin Inverter. Garansi kompresor Twin Inverter 20 tahun.",
+    "foto": "assets/produk/AQR-TSE605RBM__0.jpg",
+    "harga_idr": 9900000,
+    "harga_source": "brief-gfk"
+  },
+  {
+    "brand": "AQUA",
+    "model": "AQR-CSE605RBC",
+    "varian": [
+      "CB"
+    ],
+    "kategori": "Side by Side",
+    "group": "Side by Side",
+    "kapasitas_gross": 605,
+    "kapasitas_nett": 542,
+    "range": "600-650",
+    "material": "Metal (PCM)",
+    "daya_watt": "44",
+    "garansi_tahun": "20 (Twin Inverter)",
+    "flags": [
+      "Inverter"
+    ],
+    "serie": null,
+    "benefit": "Side by Side 542 L dengan konsumsi daya paling efisien di kelasnya (44 W). Multi Air Flow, 90 Door Open Friendly, Digital Touch Screen, HCS kelembapan 90%, H-Deo Fresh 99,9%, Twin Inverter. Garansi kompresor Twin Inverter 20 tahun.",
+    "foto": "assets/produk/AQR-CSE605RBC__0.jpg",
+    "harga_idr": 11999000,
+    "harga_source": "official-page"
+  },
+  {
+    "brand": "AQUA",
+    "model": "AQR-TSE696RAV",
+    "varian": [
+      "MX"
+    ],
+    "kategori": "Side by Side",
+    "group": "Side by Side",
+    "kapasitas_gross": 696,
+    "kapasitas_nett": 630,
+    "range": "650-700",
+    "material": "Metal (VCM)",
+    "daya_watt": null,
+    "garansi_tahun": "20 (Twin Inverter)",
+    "flags": [
+      "Inverter"
+    ],
+    "serie": null,
+    "benefit": "Kapasitas terbesar di kelas Side by Side: 630 L untuk keluarga besar / stok belanja bulanan. Multi Air Flow, 90 Door Open Friendly, Digital Touch Screen, HCS kelembapan 90%, H-Deo Fresh 99,9%, Twin Inverter. Garansi kompresor Twin Inverter 20 tahun."
+  },
+  {
+    "brand": "AQUA",
+    "model": "AQR-CSE696RSV",
+    "varian": [
+      "SL"
+    ],
+    "kategori": "Side by Side",
+    "group": "Side by Side",
+    "kapasitas_gross": 696,
+    "kapasitas_nett": 618,
+    "range": "650-700",
+    "material": "Metal (VCM)",
+    "daya_watt": "42",
+    "garansi_tahun": "20 (Twin Inverter)",
+    "flags": [
+      "Inverter",
+      "Flagship"
+    ],
+    "serie": "HaiSmart",
+    "benefit": "Flagship Side by Side, fitur terlengkap. Water Dispenser + Auto Ice Maker dengan pitcher air yang bisa dilepas. Smart IoT HaiSmart: kontrol kulkas dari smartphone. Day Light: lampu tidak menyilaukan. HCS kelembapan 90%. H-Deo Fresh 99,9%. Multi Air Flow, 90 Door Open Friendly, Digital Touch Screen. Twin Inverter super hemat 42 W untuk 618 L. Garansi kompresor Twin Inverter 20 tahun.",
+    "foto": "assets/produk/AQR-CSE696RSV__web0.jpg",
+    "harga_idr": 19329000,
+    "harga_source": "official-page"
+  },
+  {
+    "brand": "AQUA",
+    "model": "AQR-DTM248CBP",
+    "varian": [
+      "PE",
+      "ME",
+      "BE",
+      "DS",
+      "LS",
+      "SB",
+      "SG"
+    ],
+    "kategori": "2 Pintu Freezer Atas",
+    "group": "Top Mount",
+    "kapasitas_gross": 248,
+    "kapasitas_nett": 185,
+    "range": "200-250",
+    "material": "Metal",
+    "daya_watt": "46.8",
+    "garansi_tahun": "7",
+    "flags": [
+      "Non-Inverter"
+    ],
+    "serie": "Chic Color / Magic Neo",
+    "benefit": "Turbo Cooling Pro: bikin es hanya 1 jam, freezer sampai -24C. -1C Chiller Box: daging/ikan tetap segar 2-3 hari tanpa perlu defrost. H-Deo Fresh: hambat kuman & bakteri 99,9% dan netralisir bau. Finishing Metal Premium, hemat daya 46,8 W. Chic Color Series & Magic Neo Series, non-inverter. Garansi kompresor 7 tahun."
+  },
+  {
+    "brand": "AQUA",
+    "model": "AQR-DTM268CBP",
+    "varian": [
+      "PE",
+      "ME",
+      "BE",
+      "DS",
+      "LS",
+      "SB",
+      "SG"
+    ],
+    "kategori": "2 Pintu Freezer Atas",
+    "group": "Top Mount",
+    "kapasitas_gross": 268,
+    "kapasitas_nett": 205,
+    "range": "250-300",
+    "material": "Metal",
+    "daya_watt": "47.9",
+    "garansi_tahun": "7",
+    "flags": [
+      "Non-Inverter"
+    ],
+    "serie": "Chic Color / Magic Neo",
+    "benefit": "Turbo Cooling Pro: bikin es hanya 1 jam, freezer sampai -24C. -1C Chiller Box: daging/ikan tetap segar 2-3 hari tanpa perlu defrost. H-Deo Fresh: hambat kuman & bakteri 99,9% dan netralisir bau. Finishing Metal Premium, hemat daya 47,9 W. Chic Color Series & Magic Neo Series, non-inverter. Garansi kompresor 7 tahun."
+  },
+  {
+    "brand": "AQUA",
+    "model": "AQR-DTM288CBP",
+    "varian": [
+      "PE",
+      "ME",
+      "BE",
+      "DS",
+      "LS",
+      "SB",
+      "SG"
+    ],
+    "kategori": "2 Pintu Freezer Atas",
+    "group": "Top Mount",
+    "kapasitas_gross": 288,
+    "kapasitas_nett": 225,
+    "range": "250-300",
+    "material": "Metal",
+    "daya_watt": "49.5",
+    "garansi_tahun": "7",
+    "flags": [
+      "Non-Inverter"
+    ],
+    "serie": "Chic Color / Magic Neo",
+    "benefit": "Turbo Cooling Pro: bikin es hanya 1 jam, freezer sampai -24C. -1C Chiller Box: daging/ikan tetap segar 2-3 hari tanpa perlu defrost. H-Deo Fresh: hambat kuman & bakteri 99,9% dan netralisir bau. Finishing Metal Premium, hemat daya 49,5 W. Chic Color Series & Magic Neo Series, non-inverter. Garansi kompresor 7 tahun."
+  },
+  {
+    "brand": "AQUA",
+    "model": "AQR-382IM",
+    "varian": [],
+    "kategori": "2 Pintu Freezer Atas",
+    "group": "Top Mount",
+    "kapasitas_gross": 382,
+    "kapasitas_nett": 283,
+    "range": "350-400",
+    "material": "Metal",
+    "daya_watt": "41",
+    "garansi_tahun": "12",
+    "flags": [
+      "Inverter",
+      "Import Thailand"
+    ],
+    "serie": null,
+    "benefit": "Import Thailand. Fast Cooling -22C bikin es hanya 1 jam. -1C Chiller Box: daging/ikan segar 2-3 hari tanpa defrost. H-Deo Fresh anti kuman & bakteri 99,9%. Twin Inverter senyap & hemat (41 W) untuk kapasitas nett 283 L. Finishing Metal Premium. Garansi kompresor inverter 12 tahun.",
+    "foto": "assets/produk/AQR-382IM__0.jpg",
+    "harga_idr": 5400000,
+    "harga_source": "brief-gfk"
+  },
+  {
+    "brand": "AQUA",
+    "model": "AQR-395IM",
+    "varian": [],
+    "kategori": "2 Pintu Freezer Atas",
+    "group": "Top Mount",
+    "kapasitas_gross": 395,
+    "kapasitas_nett": 333,
+    "range": "350-400",
+    "material": "Metal",
+    "daya_watt": "41",
+    "garansi_tahun": "12",
+    "flags": [
+      "Inverter",
+      "Import Thailand"
+    ],
+    "serie": null,
+    "benefit": "Import Thailand. Fast Cooling -22C bikin es hanya 1 jam. -1C Chiller Box: daging/ikan segar 2-3 hari tanpa defrost. H-Deo Fresh anti kuman & bakteri 99,9%. Twin Inverter senyap & hemat (41 W) untuk kapasitas nett 333 L. Finishing Metal Premium. Garansi kompresor inverter 12 tahun.",
+    "foto": "assets/produk/AQR-395IM__web0.jpg",
+    "harga_idr": 6279000,
+    "harga_source": "official-page"
+  },
+  {
+    "brand": "AQUA",
+    "model": "AQR-415IM",
+    "varian": [],
+    "kategori": "2 Pintu Freezer Atas",
+    "group": "Top Mount",
+    "kapasitas_gross": 415,
+    "kapasitas_nett": 357,
+    "range": "400-450",
+    "material": "Metal",
+    "daya_watt": "41",
+    "garansi_tahun": "12",
+    "flags": [
+      "Inverter",
+      "Import Thailand"
+    ],
+    "serie": null,
+    "benefit": "Import Thailand. Fast Cooling -22C bikin es hanya 1 jam. -1C Chiller Box: daging/ikan segar 2-3 hari tanpa defrost. H-Deo Fresh anti kuman & bakteri 99,9%. Twin Inverter senyap & hemat (41 W) untuk kapasitas nett 357 L. Finishing Metal Premium. Garansi kompresor inverter 12 tahun.",
+    "foto": "assets/produk/AQR-415IM__web0.jpg",
+    "harga_idr": 6619000,
+    "harga_source": "official-page"
+  },
+  {
+    "brand": "AQUA",
+    "model": "AQR-VTM515RBC",
+    "varian": [
+      "CB"
+    ],
+    "kategori": "2 Pintu Freezer Atas",
+    "group": "Top Mount",
+    "kapasitas_gross": 515,
+    "kapasitas_nett": 455,
+    "range": "500-550",
+    "material": "Metal (PCM)",
+    "daya_watt": "55",
+    "garansi_tahun": "20 (Twin Inverter)",
+    "flags": [
+      "Inverter"
+    ],
+    "serie": "Magic Zone",
+    "benefit": "Kapasitas besar 455 L dengan harga lebih terjangkau (finishing metal). Magic Zone (Double Chiller) 3 mode suhu. H-Deo Fresh 99,9%. Twin Inverter hemat 55 W. Garansi kompresor Twin Inverter 20 tahun.",
+    "foto": "assets/produk/AQR-VTM515RBC__web0.jpg",
+    "harga_idr": 8295000,
+    "harga_source": "official-page"
+  },
+  {
+    "brand": "AQUA",
+    "model": "AQR-VTM535RSG",
+    "varian": [
+      "CL"
+    ],
+    "kategori": "2 Pintu Freezer Atas",
+    "group": "Top Mount",
+    "kapasitas_gross": 535,
+    "kapasitas_nett": 480,
+    "range": "500-550",
+    "material": "Kaca (Glass)",
+    "daya_watt": "56",
+    "garansi_tahun": "20 (Twin Inverter)",
+    "flags": [
+      "Inverter",
+      "Flagship"
+    ],
+    "serie": "HaiSmart",
+    "benefit": "Flagship 2 pintu. Smart IoT HaiSmart: atur suhu dari smartphone kapan saja. Water Dispenser + Auto Ice Maker: ambil air dingin tanpa buka pintu. Magic Zone (Double Chiller) 3 mode suhu sesuai jenis makanan. Double Cosmetic Box untuk produk kecantikan. Day Light + Sensor Light. H-Deo Fresh 99,9%. Twin Inverter hanya 56 W untuk 480 L. Garansi kompresor Twin Inverter 20 tahun.",
+    "foto": "assets/produk/AQR-VTM535RSG__web0.jpg",
+    "harga_idr": 11469000,
+    "harga_source": "official-page"
+  },
+  {
+    "brand": "AQUA",
+    "model": "AQR-VTM535RAG",
+    "varian": [
+      "BK"
+    ],
+    "kategori": "2 Pintu Freezer Atas",
+    "group": "Top Mount",
+    "kapasitas_gross": 535,
+    "kapasitas_nett": 480,
+    "range": "500-550",
+    "material": "Kaca (Glass)",
+    "daya_watt": "55",
+    "garansi_tahun": "20 (Twin Inverter)",
+    "flags": [
+      "Inverter"
+    ],
+    "serie": "Magic Zone",
+    "benefit": "Kapasitas jumbo 480 L dengan pintu kaca hitam premium. Magic Zone (Double Chiller) 3 mode suhu sesuai jenis makanan. H-Deo Fresh: netralisir bau & hambat kuman/bakteri 99,9%. Twin Inverter hemat 55 W dan senyap. Garansi kompresor Twin Inverter 20 tahun.",
+    "foto": "assets/produk/AQR-VTM535RAG__web0.jpg",
+    "harga_idr": 9296000,
+    "harga_source": "official-page"
+  },
+  {
+    "brand": "AQUA",
+    "model": "AQR-CTD506RGC",
+    "varian": [
+      "CB"
+    ],
+    "kategori": "Multi Pintu",
+    "group": "Multidoor",
+    "kapasitas_gross": 401,
+    "kapasitas_nett": null,
+    "range": "400-450",
+    "material": null,
+    "daya_watt": null,
+    "garansi_tahun": null,
+    "flags": [
+      "Inverter"
+    ],
+    "serie": "Magic Zone",
+    "benefit": "Magic Zone (3 zona suhu khusus); Twin Inverter (hemat listrik); Flexible Storage (penyimpanan fleksibel); 360° Cooling (pendinginan merata); Deo Fresh (penyerap bau); Premium Design & Texture",
+    "fitur": [
+      "Magic Zone (3 zona suhu khusus)",
+      "Twin Inverter (hemat listrik)",
+      "Flexible Storage (penyimpanan fleksibel)",
+      "360° Cooling (pendinginan merata)",
+      "Deo Fresh (penyerap bau)",
+      "Premium Design & Texture"
+    ]
+  },
+  {
+    "brand": "AQUA",
+    "model": "AQR-CTD506RGG",
+    "varian": [
+      "BK"
+    ],
+    "kategori": "Multi Pintu",
+    "group": "Multidoor",
+    "kapasitas_gross": 406,
+    "kapasitas_nett": null,
+    "range": "400-450",
+    "material": null,
+    "daya_watt": null,
+    "garansi_tahun": null,
+    "flags": [
+      "Inverter"
+    ],
+    "serie": "Magic Zone",
+    "benefit": "Magic Zone (3 zona suhu khusus); Flexible Storage (penyimpanan fleksibel); 360° Cooling (pendinginan merata); Deo Fresh (penyerap bau); Twin Fresh (kesegaran ganda)",
+    "fitur": [
+      "Magic Zone (3 zona suhu khusus)",
+      "Flexible Storage (penyimpanan fleksibel)",
+      "360° Cooling (pendinginan merata)",
+      "Deo Fresh (penyerap bau)",
+      "Twin Fresh (kesegaran ganda)"
+    ]
+  },
+  {
+    "brand": "AQUA",
+    "model": "AQR-405IG",
+    "varian": [
+      "BK"
+    ],
+    "kategori": "2 Pintu Freezer Atas",
+    "group": "Top Mount",
+    "kapasitas_gross": 315,
+    "kapasitas_nett": null,
+    "range": "300-350",
+    "material": "Kaca (Glass)",
+    "daya_watt": null,
+    "garansi_tahun": "12",
+    "flags": [
+      "Inverter"
+    ],
+    "serie": null,
+    "benefit": "Magic Cooling (pembekuan lembut); Twin Inverter (hemat listrik); Deo Fresh (penyerap bau); 360° Air Flow (udara dingin merata); Magic Room (kompartemen khusus 3 zona); Glass Door & Digital Temperature Control",
+    "fitur": [
+      "Magic Cooling (pembekuan lembut)",
+      "Twin Inverter (hemat listrik)",
+      "Deo Fresh (penyerap bau)",
+      "360° Air Flow (udara dingin merata)",
+      "Magic Room (kompartemen khusus 3 zona)",
+      "Glass Door & Digital Temperature Control"
+    ]
+  },
+  {
+    "brand": "AQUA",
+    "model": "AQR-355IG",
+    "varian": [
+      "BK"
+    ],
+    "kategori": "2 Pintu Freezer Atas",
+    "group": "Top Mount",
+    "kapasitas_gross": 237,
+    "kapasitas_nett": null,
+    "range": "200-250",
+    "material": "Kaca (Glass)",
+    "daya_watt": null,
+    "garansi_tahun": "12",
+    "flags": [
+      "Inverter"
+    ],
+    "serie": null,
+    "benefit": "Navi Cooling (5 mode pengaturan suhu freezer 5-24°C); Twin Inverter (hemat listrik & listrik stabil); Deo Fresh (mencegah & menyerap bau tak sedap); Glass Door (pintu kaca elegan); Chiller Box & Moist Fresh Box (kesegaran sayur/buah); Double Ice Maker (es batu cepat)",
+    "fitur": [
+      "Navi Cooling (5 mode pengaturan suhu freezer 5-24°C)",
+      "Twin Inverter (hemat listrik & listrik stabil)",
+      "Deo Fresh (mencegah & menyerap bau tak sedap)",
+      "Glass Door (pintu kaca elegan)",
+      "Chiller Box & Moist Fresh Box (kesegaran sayur/buah)",
+      "Double Ice Maker (es batu cepat)"
+    ]
+  },
+  {
+    "brand": "AQUA",
+    "model": "AQR-355IM",
+    "varian": [
+      "BB"
+    ],
+    "kategori": "2 Pintu Freezer Atas",
+    "group": "Top Mount",
+    "kapasitas_gross": 237,
+    "kapasitas_nett": null,
+    "range": "200-250",
+    "material": null,
+    "daya_watt": null,
+    "garansi_tahun": "12",
+    "flags": [
+      "Inverter"
+    ],
+    "serie": null,
+    "benefit": "Navi Cooling (5 mode pengaturan suhu freezer 5-24°C); Twin Inverter (hemat listrik & listrik stabil); Deo Fresh (mencegah & menyerap bau tak sedap); Chiller Box & Moist Fresh Box (kesegaran sayur/buah); Double Ice Maker (es batu cepat)",
+    "fitur": [
+      "Navi Cooling (5 mode pengaturan suhu freezer 5-24°C)",
+      "Twin Inverter (hemat listrik & listrik stabil)",
+      "Deo Fresh (mencegah & menyerap bau tak sedap)",
+      "Chiller Box & Moist Fresh Box (kesegaran sayur/buah)",
+      "Double Ice Maker (es batu cepat)"
+    ]
+  },
+  {
+    "brand": "AQUA",
+    "model": "AQR-DTM305RAV",
+    "varian": [
+      "MX"
+    ],
+    "kategori": "2 Pintu Freezer Atas",
+    "group": "Top Mount",
+    "kapasitas_gross": 305,
+    "kapasitas_nett": 245,
+    "range": "300-350",
+    "material": "Metal",
+    "daya_watt": "33.5",
+    "garansi_tahun": "12",
+    "flags": [
+      "Inverter"
+    ],
+    "serie": null,
+    "benefit": "Twin Inverter (kompresor + motor kipas inverter): udara dingin mengalir lebih merata, lebih senyap, dan sangat hemat listrik (33,5 W). Turbo Cooling -22C bikin es 1 jam. -1C Chiller Box tanpa defrost. H-Deo Fresh anti bakteri 99,9%. Finishing Metal Premium. Garansi kompresor inverter 12 tahun.",
+    "harga_idr": 4878000,
+    "harga_source": "official-page"
+  },
+  {
+    "brand": "AQUA",
+    "model": "AQR-DTM285RAV",
+    "varian": [
+      "MX"
+    ],
+    "kategori": "2 Pintu Freezer Atas",
+    "group": "Top Mount",
+    "kapasitas_gross": 285,
+    "kapasitas_nett": 225,
+    "range": "250-300",
+    "material": "Metal",
+    "daya_watt": "33.8",
+    "garansi_tahun": "12",
+    "flags": [
+      "Inverter"
+    ],
+    "serie": null,
+    "benefit": "Twin Inverter (kompresor + motor kipas inverter): udara dingin mengalir lebih merata, lebih senyap, dan sangat hemat listrik (33,8 W). Turbo Cooling -22C bikin es 1 jam. -1C Chiller Box tanpa defrost. H-Deo Fresh anti bakteri 99,9%. Finishing Metal Premium. Garansi kompresor inverter 12 tahun.",
+    "harga_idr": 4155000,
+    "harga_source": "official-page"
+  },
+  {
+    "brand": "AQUA",
+    "model": "AQR-DTM265RAV",
+    "varian": [
+      "MX"
+    ],
+    "kategori": "2 Pintu Freezer Atas",
+    "group": "Top Mount",
+    "kapasitas_gross": 265,
+    "kapasitas_nett": 205,
+    "range": "250-300",
+    "material": "Metal",
+    "daya_watt": "33.8",
+    "garansi_tahun": "12",
+    "flags": [
+      "Inverter"
+    ],
+    "serie": null,
+    "benefit": "Twin Inverter (kompresor + motor kipas inverter): udara dingin mengalir lebih merata, lebih senyap, dan sangat hemat listrik (33,8 W). Turbo Cooling -22C bikin es 1 jam. -1C Chiller Box tanpa defrost. H-Deo Fresh anti bakteri 99,9%. Finishing Metal Premium. Garansi kompresor inverter 12 tahun.",
+    "harga_idr": 3975000,
+    "harga_source": "official-page"
+  },
+  {
+    "brand": "AQUA",
+    "model": "AQR-DTM305RAP",
+    "varian": [
+      "FB"
+    ],
+    "kategori": "2 Pintu Freezer Atas",
+    "group": "Top Mount",
+    "kapasitas_gross": 305,
+    "kapasitas_nett": 245,
+    "range": "300-350",
+    "material": "Metal",
+    "daya_watt": "33.5",
+    "garansi_tahun": "12",
+    "flags": [
+      "Inverter"
+    ],
+    "serie": null,
+    "benefit": "Twin Inverter (kompresor + motor kipas inverter): udara dingin mengalir lebih merata, lebih senyap, dan sangat hemat listrik (33,5 W). Turbo Cooling -22C bikin es 1 jam. -1C Chiller Box tanpa defrost. H-Deo Fresh anti bakteri 99,9%. Finishing Metal Premium. Garansi kompresor inverter 12 tahun.",
+    "harga_idr": 4736000,
+    "harga_source": "official-page"
+  },
+  {
+    "brand": "AQUA",
+    "model": "AQR-DTM285RAP",
+    "varian": [
+      "FB"
+    ],
+    "kategori": "2 Pintu Freezer Atas",
+    "group": "Top Mount",
+    "kapasitas_gross": 285,
+    "kapasitas_nett": 225,
+    "range": "250-300",
+    "material": "Metal",
+    "daya_watt": "33.8",
+    "garansi_tahun": "12",
+    "flags": [
+      "Inverter"
+    ],
+    "serie": null,
+    "benefit": "Twin Inverter (kompresor + motor kipas inverter): udara dingin mengalir lebih merata, lebih senyap, dan sangat hemat listrik (33,8 W). Turbo Cooling -22C bikin es 1 jam. -1C Chiller Box tanpa defrost. H-Deo Fresh anti bakteri 99,9%. Finishing Metal Premium. Garansi kompresor inverter 12 tahun.",
+    "harga_idr": 4034000,
+    "harga_source": "official-page"
+  },
+  {
+    "brand": "AQUA",
+    "model": "AQR-DTM265RAP",
+    "varian": [
+      "FB"
+    ],
+    "kategori": "2 Pintu Freezer Atas",
+    "group": "Top Mount",
+    "kapasitas_gross": 265,
+    "kapasitas_nett": 205,
+    "range": "250-300",
+    "material": "Metal",
+    "daya_watt": "33.8",
+    "garansi_tahun": "12",
+    "flags": [
+      "Inverter"
+    ],
+    "serie": null,
+    "benefit": "Twin Inverter (kompresor + motor kipas inverter): udara dingin mengalir lebih merata, lebih senyap, dan sangat hemat listrik (33,8 W). Turbo Cooling -22C bikin es 1 jam. -1C Chiller Box tanpa defrost. H-Deo Fresh anti bakteri 99,9%. Finishing Metal Premium. Garansi kompresor inverter 12 tahun.",
+    "harga_idr": 3860000,
+    "harga_source": "official-page"
+  },
+  {
+    "brand": "AQUA",
+    "model": "AQR-DTM285CBP",
+    "varian": [],
+    "kategori": "2 Pintu Freezer Atas",
+    "group": "Top Mount",
+    "kapasitas_gross": 237,
+    "kapasitas_nett": 225,
+    "range": "200-250",
+    "material": null,
+    "daya_watt": null,
+    "garansi_tahun": null,
+    "flags": [],
+    "serie": null,
+    "benefit": "Turbo Cooling (pendinginan cepat); Bigger Freezer (freezer lebih besar); -1°C Chiller Box (kesegaran daging/ikan); Humidity Control (kontrol kelembapan); H-DEO Fresh (anti bau & bakteri); Organized Storage (penyimpanan teratur)",
+    "fitur": [
+      "Turbo Cooling (pendinginan cepat)",
+      "Bigger Freezer (freezer lebih besar)",
+      "-1°C Chiller Box (kesegaran daging/ikan)",
+      "Humidity Control (kontrol kelembapan)",
+      "H-DEO Fresh (anti bau & bakteri)",
+      "Organized Storage (penyimpanan teratur)"
+    ]
+  },
+  {
+    "brand": "AQUA",
+    "model": "AQR-DTM265CBP",
+    "varian": [],
+    "kategori": "2 Pintu Freezer Atas",
+    "group": "Top Mount",
+    "kapasitas_gross": 187,
+    "kapasitas_nett": 205,
+    "range": "150-200",
+    "material": null,
+    "daya_watt": null,
+    "garansi_tahun": null,
+    "flags": [],
+    "serie": null,
+    "benefit": "Turbo Cooling (pendinginan cepat); Bigger Freezer (freezer lebih besar); -1°C Chiller Box (kesegaran daging/ikan); Humidity Control (kontrol kelembapan); H-DEO Fresh (anti bau & bakteri); Organized Storage (penyimpanan teratur)",
+    "fitur": [
+      "Turbo Cooling (pendinginan cepat)",
+      "Bigger Freezer (freezer lebih besar)",
+      "-1°C Chiller Box (kesegaran daging/ikan)",
+      "Humidity Control (kontrol kelembapan)",
+      "H-DEO Fresh (anti bau & bakteri)",
+      "Organized Storage (penyimpanan teratur)"
+    ]
+  },
+  {
+    "brand": "AQUA",
+    "model": "AQR-DTM245CBP",
+    "varian": [],
+    "kategori": "2 Pintu Freezer Atas",
+    "group": "Top Mount",
+    "kapasitas_gross": 187,
+    "kapasitas_nett": 185,
+    "range": "150-200",
+    "material": null,
+    "daya_watt": null,
+    "garansi_tahun": null,
+    "flags": [],
+    "serie": null,
+    "benefit": "Turbo Cooling (pendinginan cepat); Bigger Freezer (freezer lebih besar); -1°C Chiller Box (kesegaran daging/ikan); Humidity Control (kontrol kelembapan); H-DEO Fresh (anti bau & bakteri); Organized Storage (penyimpanan teratur)",
+    "fitur": [
+      "Turbo Cooling (pendinginan cepat)",
+      "Bigger Freezer (freezer lebih besar)",
+      "-1°C Chiller Box (kesegaran daging/ikan)",
+      "Humidity Control (kontrol kelembapan)",
+      "H-DEO Fresh (anti bau & bakteri)",
+      "Organized Storage (penyimpanan teratur)"
+    ]
+  },
+  {
+    "brand": "AQUA",
+    "model": "AQR-D185",
+    "varian": [
+      "MPE",
+      "MBE",
+      "MME",
+      "MDS",
+      "MLS",
+      "MS",
+      "MSG"
+    ],
+    "kategori": "1 Pintu",
+    "group": "Single Door",
+    "kapasitas_gross": 185,
+    "kapasitas_nett": 145,
+    "range": "150-200",
+    "material": "Metal",
+    "daya_watt": "67",
+    "garansi_tahun": "7",
+    "flags": [
+      "Entry",
+      "Best Seller"
+    ],
+    "serie": "Chic Color / Magic Neo",
+    "benefit": "Entry level best seller. R600a: pendinginan ramah lingkungan & hemat daya (67 W). Giant Freezer kapasitas freezer 13% lebih besar. Semi-Auto Defrost: cairkan es 1 langkah. Tempered Glass Tray tahan beban berat tanpa pecah. Chic Color Series (Pink/Beige/Green pastel). Garansi kompresor 7 tahun.",
+    "foto": "assets/produk/AQR-D185__web0.jpg",
+    "harga_idr": 2091000,
+    "harga_source": "official-page"
+  },
+  {
+    "brand": "AQUA",
+    "model": "AQR-D205",
+    "varian": [
+      "MPE",
+      "MBE",
+      "MME",
+      "MDS",
+      "MLS",
+      "MS",
+      "MSG"
+    ],
+    "kategori": "1 Pintu",
+    "group": "Single Door",
+    "kapasitas_gross": 205,
+    "kapasitas_nett": 165,
+    "range": "200-250",
+    "material": "Metal",
+    "daya_watt": "71",
+    "garansi_tahun": "7",
+    "flags": [
+      "Entry",
+      "Best Seller"
+    ],
+    "serie": "Chic Color / Magic Neo",
+    "benefit": "Entry level best seller. R600a: pendinginan ramah lingkungan & hemat daya (71 W). Giant Freezer kapasitas freezer 13% lebih besar. Semi-Auto Defrost: cairkan es 1 langkah. Tempered Glass Tray tahan beban berat tanpa pecah. Chic Color Series (Pink/Beige/Green pastel). Garansi kompresor 7 tahun.",
+    "foto": "assets/produk/AQR-D205__web0.jpg",
+    "harga_idr": 2215000,
+    "harga_source": "official-page"
+  },
+  {
+    "brand": "AQUA",
+    "model": "AQR-D225",
+    "varian": [
+      "MPE",
+      "MBE",
+      "MME",
+      "MDS",
+      "MLS",
+      "MS",
+      "MSG"
+    ],
+    "kategori": "1 Pintu",
+    "group": "Single Door",
+    "kapasitas_gross": 225,
+    "kapasitas_nett": 180,
+    "range": "200-250",
+    "material": "Metal",
+    "daya_watt": "81",
+    "garansi_tahun": "7",
+    "flags": [
+      "Entry",
+      "Best Seller"
+    ],
+    "serie": "Chic Color / Magic Neo",
+    "benefit": "Entry level best seller. R600a: pendinginan ramah lingkungan & hemat daya (81 W). Giant Freezer kapasitas freezer 13% lebih besar. Semi-Auto Defrost: cairkan es 1 langkah. Tempered Glass Tray tahan beban berat tanpa pecah. Chic Color Series (Pink/Beige/Green pastel). Garansi kompresor 7 tahun.",
+    "foto": "assets/produk/AQR-D225__web0.jpg",
+    "harga_idr": 2467000,
+    "harga_source": "official-page"
+  }
+]

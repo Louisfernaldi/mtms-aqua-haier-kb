@@ -1,0 +1,32 @@
+{
+  "kategori": "Proses - Launch Produk",
+  "deskripsi": "T588: daftar kerja peluncuran produk baru (New Product Launch) per divisi.",
+  "sumber": ["Rotation - REF/T588-produk-baru-promosi.xlsx"],
+  "langkah": [
+    {"urut": 1, "judul": "Price List", "pic": "Hendry", "status": "selesai", "detail": "Selesai 3 Agu."},
+    {"urut": 2, "judul": "Display Plan", "pic": "Sherline", "status": "selesai", "detail": "Selesai 6 Agu."},
+    {"urut": 3, "judul": "POP Design", "pic": "Sherline", "status": "in-progress", "detail": "In progress, tunggu materi HQ."},
+    {"urut": 4, "judul": "Sellout Program", "pic": "", "status": "belum", "detail": "Belum diisi."},
+    {"urut": 5, "judul": "Sell-in Plan", "pic": "Sapto / Hendry / Putri", "status": "belum", "detail": "3 rencana per channel."},
+    {"urut": 6, "judul": "Training Material", "pic": "Lidia", "status": "selesai", "detail": "Selesai 6 Agu."},
+    {"urut": 7, "judul": "Internal Meeting with Sales", "pic": "Sapto", "status": "belum", "detail": "Jadwal 7 Agu."},
+    {"urut": 8, "judul": "PSI", "pic": "Tim", "status": "belum", "detail": "Minta stok."}
+  ],
+  "fakta": [
+    {
+      "judul": "Tahapan New Product Launch",
+      "isi": "1) Price List (PIC Hendry) - selesai 3 Agu; 2) Display Plan (Sherline) - selesai 6 Agu; 3) POP Design (Sherline) - in progress, tunggu materi HQ; 4) Sellout Program - belum diisi; 5) Sell-in Plan (Sapto/Hendry/Putri) - 3 rencana per channel; 6) Training Material (Lidia) - selesai 6 Agu; 7) Internal Meeting with Sales (Sapto) - 7 Agu; 8) PSI - minta stok.",
+      "sumber": "T588-produk-baru-promosi"
+    },
+    {
+      "judul": "PIC per pekerjaan",
+      "isi": "Hendry (price list), Sherline (display plan & POP design), Sapto/Hendry/Putri (sell-in plan), Lidia (training material), Sapto (internal meeting), tim untuk PSI (stok).",
+      "sumber": "T588-produk-baru-promosi"
+    },
+    {
+      "judul": "Kunci sukses launch",
+      "isi": "Training material dan price list wajib kelar lebih dulu agar display plan, POP, dan sell-in plan bisa mengikuti.",
+      "sumber": "T588-produk-baru-promosi"
+    }
+  ]
+}

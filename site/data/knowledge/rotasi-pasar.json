@@ -1,0 +1,32 @@
+{
+  "kategori": "Rotasi - Market Share",
+  "deskripsi": "Data GFK cooling Indonesia: pangsa pasar unit dan nilai per brand, per wilayah.",
+  "sumber": ["Rotation - REF/GFK_STDB_COOLING_ID_HAIERASIAINTERNATI_Jun25.xlsx"],
+  "fakta": [
+    {
+      "judul": "Pangsa pasar unit kulkas 1 pintu (JABOTABEK)",
+      "isi": "Sharp 32,3%, Polytron 27,0%, Aqua 14,7%, Changhong 7,2%, Electrolux 1,1%, Hisense 1,0%, Sanken 0,9%, Modena 0,2%, TCL 0,1%.",
+      "sumber": "GFK Cooling (sheet Market Share)"
+    },
+    {
+      "judul": "Pangsa pasar nilai (JABOTABEK)",
+      "isi": "Sharp 27,8%, Polytron 18,5%, Aqua 12,3%, Electrolux 3,4%, Hisense 1,2%, Changhong 0,6%, Sanken 0,6%, Modena 0,4%, TCL 0,2%.",
+      "sumber": "GFK Cooling (sheet Market Share)"
+    },
+    {
+      "judul": "Pangsa Aqua per wilayah (unit)",
+      "isi": "Jabodetabek 19,6%, Central Java 21,5%, West Java 14,0%, Kalimantan 16,8%, Sulawesi 12,1%, Sumatera 11,5%, East Java 10,9%.",
+      "sumber": "GFK Cooling (Market Share Per Region)"
+    },
+    {
+      "judul": "Polytron kuat di Jawa Timur & Jawa Barat",
+      "isi": "Polytron menguasai 42,6% unit di East Java dan 41,3% di West Java — pemimpin dominan di dua wilayah itu.",
+      "sumber": "GFK Cooling (Market Share Per Region)"
+    },
+    {
+      "judul": "Struktur data RAW DATA PC MA",
+      "isi": "Data sell-out per toko: Key, Retail Code, Region, Channel by Shop, Customer, Shop, Invoice Code, Sell Out Date, Product Group (RF/TV/WM/AC/FZ), Category, Sub-category, Product Model, Positioning, Quantity, Total Sell-out, Mid High Sell-out, dan PIC (User NAME).",
+      "sumber": "RAW DATA PC MA LY2025 & FY2026"
+    }
+  ]
+}

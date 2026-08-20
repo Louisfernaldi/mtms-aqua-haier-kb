@@ -1,0 +1,40 @@
+{
+  "kategori": "Produk - Lainnya",
+  "deskripsi": "Water dispenser, AC, TV, mesin cuci Aqua: model dan spesifikasi.",
+  "sumber": [
+    "Product Knowledge/Product WS Water Dispenser 2026.pdf",
+    "Rotation - REF/File Rapih/RAW_DATA_PC_MA_LY2025_&_FY2026_(MTD_1-10_August_'26).xlsb"
+  ],
+  "fakta": [
+    {
+      "judul": "Water dispenser electric cooling",
+      "isi": "AWD-617BE: cooling elektrik, 0,5 L/jam pada suhu <=15C. Cocok untuk rumah/kantor ringan.",
+      "sumber": "Product WS Water Dispenser 2026"
+    },
+    {
+      "judul": "Water dispenser compressor",
+      "isi": "AWD-605BC dan AWD-1180BC: cooling kompresor, 2,0 L/jam pada suhu <=10C — lebih cepat dingin.",
+      "sumber": "Product WS Water Dispenser 2026"
+    },
+    {
+      "judul": "Spesifikasi pemanas dispenser",
+      "isi": "Heating: >=90C, 5,0 L/jam, daya 500W. Dimensi unit: 310x340-345 x 1035 mm.",
+      "sumber": "Product WS Water Dispenser 2026"
+    },
+    {
+      "judul": "AC Aqua",
+      "isi": "Contoh model dari data penjualan: AQA-KR18VQC (inverter), AQA-KR5FQA dan AQA-KR9FQAL (standard).",
+      "sumber": "RAW DATA PC MA"
+    },
+    {
+      "judul": "TV Aqua",
+      "isi": "Contoh model: AQT32K701AF (32-39 inci), AQT55K800UX dan AQT55P750UX (44-55 inci).",
+      "sumber": "RAW DATA PC MA"
+    },
+    {
+      "judul": "Mesin cuci Aqua",
+      "isi": "AQW-800F (top load), FQW-700829QD dan FQW-850829QD (front load <10 kg), FQV-701E (dryer).",
+      "sumber": "RAW DATA PC MA"
+    }
+  ]
+}

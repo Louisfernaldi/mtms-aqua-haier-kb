@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Masuk — MTMS AQUA HAIER</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<main class="login-wrap">
+  <div class="login-card">
+    <div class="brand login-brand"><img src="assets/Haier_Logo.svg" alt="Haier" class="brand-logo"><span class="brand-name">MTMS</span></div>
+    <h1>Masuk Knowledge Hub</h1>
+    <p class="sec-sub">Website ini dikunci. Masukkan password untuk masuk.</p>
+    <input type="password" id="login-pass" placeholder="Password" autocomplete="current-password">
+    <button class="btn" id="login-go">Masuk</button>
+    <p class="login-msg"></p>
+  </div>
+</main>
+<script>
+(function () {
+  var pass = document.getElementById("login-pass");
+  var go = document.getElementById("login-go");
+  var msg = document.querySelector(".login-msg");
+  var q = new URLSearchParams(location.search);
+  var next = q.get("next") || "/index.html";
+  function submit() {
+    var v = pass.value;
+    if (!v) return;
+    go.disabled = true;
+    msg.textContent = "Memeriksa…";
+    fetch("/api/login", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ password: v }) })
+      .then(function (r) { return r.json().then(function (d) { return { ok: r.ok, d: d }; }); })
+      .then(function (res) {
+        if (res.ok) { location.href = next; }
+        else { msg.textContent = "Password salah."; go.disabled = false; }
+      })
+      .catch(function () { msg.textContent = "Gagal menghubungi server."; go.disabled = false; });
+  }
+  go.onclick = submit;
+  pass.addEventListener("keydown", function (e) { if (e.key === "Enter") submit(); });
+  pass.focus();
+})();
+</script>
+</body>
+</html>

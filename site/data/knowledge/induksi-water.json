@@ -1,0 +1,37 @@
+{
+  "kategori": "Induksi - Pemanas Air",
+  "deskripsi": "Materi induksi Water Solution (Awan): keunggulan, seri, garansi pemanas air.",
+  "sumber": ["SS Induction/Water+Solution+-+Awan.docx", "Product Knowledge/Water Solutions - 2026 Juli.pdf"],
+  "fakta": [
+    {
+      "judul": "Keunggulan teknis",
+      "isi": "IPX4 (tahan percikan air), 2 sensor termal anti-overheat, lapisan anti-korosi, anoda magnesium, teknologi Ag+ anti-bakteri.",
+      "sumber": "Water Solution - Awan"
+    },
+    {
+      "judul": "Dimensi ringkas",
+      "isi": "Ukuran pemanas air: 35 x 40 cm — cocok untuk kamar mandi kecil, bisa dikontrol dari HP.",
+      "sumber": "Water Solution - Awan"
+    },
+    {
+      "judul": "Seri AES (mekanikal)",
+      "isi": "Seri AES tersedia kapasitas 10L, 15L, 30L — kontrol mekanikal sederhana.",
+      "sumber": "Water Solution - Awan"
+    },
+    {
+      "judul": "Seri CW WiFi",
+      "isi": "Seri CW tersedia kapasitas 15L dan 30L, bisa dipantau/diatur dari HP lewat WiFi.",
+      "sumber": "Water Solution - Awan"
+    },
+    {
+      "judul": "Daya listrik",
+      "isi": "Pemanas air 10-15L: 200W. Pemanas air 30L: 350W.",
+      "sumber": "Water Solution - Awan"
+    },
+    {
+      "judul": "Garansi",
+      "isi": "Tangki 10 tahun (seri tertentu) atau 7 tahun (mekanikal); elemen 2 tahun.",
+      "sumber": "Water Solution - Awan"
+    }
+  ]
+}
