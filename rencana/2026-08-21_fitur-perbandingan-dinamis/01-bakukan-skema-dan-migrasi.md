@@ -7,3 +7,5 @@
 **File yang disentuh:** `tools/migrate_dynamic_specs.py`, `tools/verify_dynamic_specs.py`, `site/data/spec-categories.json`, `site/data/kompetitor.json`, `site/data/produk-katalog.json`, `tools/gen_data_js.py`.
 **Dependensi:** nol.
 **Catatan tes:** wajib gerbang sabotase.
+
+**Sumber keputusan kategori:** `../../evidence/taxonomy-research-2026-08-21.md`.

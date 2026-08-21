@@ -1,0 +1,112 @@
+{
+  "spec_categories": [
+    {
+      "key": "form_factor",
+      "label": "Tipe Kulkas",
+      "group": "Konfigurasi",
+      "unit": "-",
+      "comparison": true,
+      "order": 10,
+      "active": true
+    },
+    {
+      "key": "door_count",
+      "label": "Jumlah Pintu",
+      "group": "Konfigurasi",
+      "unit": "pintu",
+      "comparison": true,
+      "order": 20,
+      "active": true
+    },
+    {
+      "key": "freezer_position",
+      "label": "Posisi Freezer",
+      "group": "Konfigurasi",
+      "unit": "-",
+      "comparison": true,
+      "order": 30,
+      "active": true
+    },
+    {
+      "key": "gross_capacity_l",
+      "label": "Kapasitas Kotor",
+      "group": "Kapasitas",
+      "unit": "L",
+      "comparison": true,
+      "order": 40,
+      "active": true
+    },
+    {
+      "key": "net_capacity_l",
+      "label": "Kapasitas Bersih",
+      "group": "Kapasitas",
+      "unit": "L",
+      "comparison": true,
+      "order": 50,
+      "active": true
+    },
+    {
+      "key": "width_mm",
+      "label": "Lebar",
+      "group": "Dimensi",
+      "unit": "mm",
+      "comparison": true,
+      "order": 60,
+      "active": true
+    },
+    {
+      "key": "height_mm",
+      "label": "Tinggi",
+      "group": "Dimensi",
+      "unit": "mm",
+      "comparison": true,
+      "order": 70,
+      "active": true
+    },
+    {
+      "key": "depth_mm",
+      "label": "Kedalaman",
+      "group": "Dimensi",
+      "unit": "mm",
+      "comparison": true,
+      "order": 80,
+      "active": true
+    },
+    {
+      "key": "rated_power_w",
+      "label": "Daya Listrik",
+      "group": "Performa",
+      "unit": "W",
+      "comparison": true,
+      "order": 90,
+      "active": true
+    },
+    {
+      "key": "compressor_type",
+      "label": "Jenis Kompresor",
+      "group": "Performa",
+      "unit": "-",
+      "comparison": true,
+      "order": 100,
+      "active": true
+    },
+    {
+      "key": "cooling_system",
+      "label": "Sistem Pendinginan",
+      "group": "Performa",
+      "unit": "-",
+      "comparison": true,
+      "order": 110,
+      "active": true
+    },
+    {
+      "key": "defrost_type",
+      "label": "Sistem Defrost",
+      "group": "Performa",
+      "unit": "-",
+      "comparison": true,
+      "order": 120,
+      "active": true
+    }
+  ]
+}

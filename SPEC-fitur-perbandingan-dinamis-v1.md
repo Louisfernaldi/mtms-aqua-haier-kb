@@ -27,7 +27,9 @@ Acceptance induk:
 - `origin=user` atau `user_locked=true` tidak boleh ditimpa riset.
 - Saran bentrok disimpan terpisah sebagai `research_suggestions[]` sampai user menerima/menolak.
 - Hirarki sumber: situs merek -> toko resmi marketplace -> retailer besar -> sumber lain.
-- Dua belas kategori inti ditetapkan setelah sensus sumber; detail resmi tambahan boleh melahirkan kategori non-utama.
+- Dua belas kategori inti dibekukan dari sensus lokal 102 model dan sampel resmi enam merek: `form_factor`, `door_count`, `freezer_position`, `gross_capacity_l`, `net_capacity_l`, `width_mm`, `height_mm`, `depth_mm`, `rated_power_w`, `compressor_type`, `cooling_system`, dan `defrost_type`.
+- Semua kategori inti aktif dan tampil di tabel utama; detail resmi tambahan boleh melahirkan kategori non-utama yang tetap tampil di modal.
+- Bukti pemilihan dan aturan normalisasi ada di `evidence/taxonomy-research-2026-08-21.md`.
 - Tombol `Riset ulang` memulai pekerjaan terpisah dan langsung mengembalikan status; halaman tidak menunggu scrape selesai.
 - Vanilla JS dan Pages Functions dipertahankan; nol framework/DB baru.
 

@@ -54,7 +54,19 @@
      ],
      "image": "assets/kompetitor/AQUA_AQR-350RBM.jpg",
      "photo_url": "https://aquaelektronik.com/upload_files/files/a4455398-210c-4d2d-9d69-a930d2625304/AQR350RBMBKFront.png",
-     "source_url": "https://aquaelektronik.com/product/detail/387/AQR-350RBM%28BK%29"
+     "source_url": "https://aquaelektronik.com/product/detail/387/AQR-350RBM%28BK%29",
+     "model_id": "AQUA::AQR-350RBM",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Freezer Bawah",
+       "source_url": "https://aquaelektronik.com/product/detail/387/AQR-350RBM%28BK%29",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "AQR-355IG",
@@ -74,7 +86,19 @@
      ],
      "image": "assets/kompetitor/AQUA_AQR-355IG.jpg",
      "photo_url": "https://aquaelektronik.com/upload_files/files/63fa2ed6-d6ec-40e7-89c1-f165108d4ce8/kulkasaquajapanAQR305IGgallery2.png",
-     "source_url": "https://aquaelektronik.com/product/detail/343/AQR-355IG%28BK%29"
+     "source_url": "https://aquaelektronik.com/product/detail/343/AQR-355IG%28BK%29",
+     "model_id": "AQUA::AQR-355IG",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://aquaelektronik.com/product/detail/343/AQR-355IG%28BK%29",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "AQR-355IM",
@@ -93,7 +117,19 @@
      ],
      "image": "assets/kompetitor/AQUA_AQR-355IM.jpg",
      "photo_url": "https://aquaelektronik.com/upload_files/files/a12c0174-d1e3-48cb-ad69-b46b8365a291/kulkasaquajapanAQR355IMgallery1.png",
-     "source_url": "https://aquaelektronik.com/product/detail/344/AQR-355IM%28BB%29"
+     "source_url": "https://aquaelektronik.com/product/detail/344/AQR-355IM%28BB%29",
+     "model_id": "AQUA::AQR-355IM",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://aquaelektronik.com/product/detail/344/AQR-355IM%28BB%29",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "AQR-382IM",
@@ -112,7 +148,19 @@
      ],
      "image": "assets/kompetitor/AQUA_AQR-382IM.jpg",
      "photo_url": "https://aquaelektronik.com/upload_files/files/891b3794-2c79-4101-ad7d-3b3a5a1d850b/AQR382IMBBFront.webp",
-     "source_url": "https://aquaelektronik.com/product/detail/689/AQR-382IM%28BB%29"
+     "source_url": "https://aquaelektronik.com/product/detail/689/AQR-382IM%28BB%29",
+     "model_id": "AQUA::AQR-382IM",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://aquaelektronik.com/product/detail/689/AQR-382IM%28BB%29",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "AQR-395IM",
@@ -132,7 +180,19 @@
      ],
      "image": "assets/kompetitor/AQUA_AQR-395IM.jpg",
      "photo_url": "https://aquaelektronik.com/upload_files/files/588270f8-7f53-4922-9944-beb75f30b1a8/AQR395IMFrontClose.jpg",
-     "source_url": "https://aquaelektronik.com/product/detail/450/AQR-395IM%28BK%29"
+     "source_url": "https://aquaelektronik.com/product/detail/450/AQR-395IM%28BK%29",
+     "model_id": "AQUA::AQR-395IM",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://aquaelektronik.com/product/detail/450/AQR-395IM%28BK%29",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "AQR-405IG",
@@ -152,7 +212,19 @@
      ],
      "image": "assets/kompetitor/AQUA_AQR-405IG.jpg",
      "photo_url": "https://aquaelektronik.com/upload_files/files/6c4cc2d9-93ec-4d16-a119-96decff546ed/kulkasaquajapanAQR405IGBKgallery1.png",
-     "source_url": "https://aquaelektronik.com/product/detail/345/AQR-405IG%28BK%29"
+     "source_url": "https://aquaelektronik.com/product/detail/345/AQR-405IG%28BK%29",
+     "model_id": "AQUA::AQR-405IG",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://aquaelektronik.com/product/detail/345/AQR-405IG%28BK%29",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "AQR-415IM",
@@ -172,7 +244,19 @@
      ],
      "image": "assets/kompetitor/AQUA_AQR-415IM.jpg",
      "photo_url": "https://aquaelektronik.com/upload_files/files/a9500a0e-9ce1-4ead-a5c4-ea641147ece3/photo20230228162906.jpg",
-     "source_url": "https://aquaelektronik.com/product/detail/449/AQR-415IM%28BK%29"
+     "source_url": "https://aquaelektronik.com/product/detail/449/AQR-415IM%28BK%29",
+     "model_id": "AQUA::AQR-415IM",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://aquaelektronik.com/product/detail/449/AQR-415IM%28BK%29",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "AQR-CSE565RBC",
@@ -192,7 +276,19 @@
      ],
      "image": "assets/kompetitor/AQUA_AQR-CSE565RBC.jpg",
      "photo_url": "https://aquaelektronik.com/upload_files/files/4da2b1ad-4cd4-41ed-a83a-6b87ceee6bad/AQRCSE565RBCCBFront.webp",
-     "source_url": "https://aquaelektronik.com/product/detail/627/AQR-CSE565RBC%28CB%29"
+     "source_url": "https://aquaelektronik.com/product/detail/627/AQR-CSE565RBC%28CB%29",
+     "model_id": "AQUA::AQR-CSE565RBC",
+     "spec_values": {
+      "form_factor": {
+       "value": "Side by Side",
+       "source_url": "https://aquaelektronik.com/product/detail/627/AQR-CSE565RBC%28CB%29",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "AQR-CSE605RBC",
@@ -212,7 +308,19 @@
      ],
      "image": "assets/kompetitor/AQUA_AQR-CSE605RBC.jpg",
      "photo_url": "https://aquaelektronik.com/upload_files/files/d8eb8992-c0fc-44e7-bc09-24ee87438e52/AQRCSE605RBCCBFront.webp",
-     "source_url": "https://aquaelektronik.com/product/detail/629/AQR-CSE605RBC%28CB%29"
+     "source_url": "https://aquaelektronik.com/product/detail/629/AQR-CSE605RBC%28CB%29",
+     "model_id": "AQUA::AQR-CSE605RBC",
+     "spec_values": {
+      "form_factor": {
+       "value": "Side by Side",
+       "source_url": "https://aquaelektronik.com/product/detail/629/AQR-CSE605RBC%28CB%29",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "AQR-CSE696RSV",
@@ -231,7 +339,19 @@
      ],
      "image": "assets/kompetitor/AQUA_AQR-CSE696RSV.jpg",
      "photo_url": "https://aquaelektronik.com/upload_files/files/ebdf1a59-c453-4edb-b9d1-daf54a8b000d/AQRCSE696RSVSLFront.webp",
-     "source_url": "https://aquaelektronik.com/product/detail/645/AQR-CSE696RSV%28SL%29"
+     "source_url": "https://aquaelektronik.com/product/detail/645/AQR-CSE696RSV%28SL%29",
+     "model_id": "AQUA::AQR-CSE696RSV",
+     "spec_values": {
+      "form_factor": {
+       "value": "Side by Side",
+       "source_url": "https://aquaelektronik.com/product/detail/645/AQR-CSE696RSV%28SL%29",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "AQR-CTD506RGC",
@@ -251,7 +371,19 @@
      ],
      "image": "assets/kompetitor/AQUA_AQR-CTD506RGC.jpg",
      "photo_url": "https://aquaelektronik.com/upload_files/files/6e61f2b7-4996-40b9-ada5-b381cd76d01d/AQRCTD506RGCCBFrontdoor.webp",
-     "source_url": "https://aquaelektronik.com/product/detail/628/AQR-CTD506RGC%28CB%29"
+     "source_url": "https://aquaelektronik.com/product/detail/628/AQR-CTD506RGC%28CB%29",
+     "model_id": "AQUA::AQR-CTD506RGC",
+     "spec_values": {
+      "form_factor": {
+       "value": "Multi Pintu",
+       "source_url": "https://aquaelektronik.com/product/detail/628/AQR-CTD506RGC%28CB%29",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "AQR-CTD506RGG",
@@ -270,7 +402,19 @@
      ],
      "image": "assets/kompetitor/AQUA_AQR-CTD506RGG.jpg",
      "photo_url": "https://aquaelektronik.com/upload_files/files/cfb9c3d9-7ce8-4c7a-8ea8-ea71eca4353a/AQRCTD506RGGFront.webp",
-     "source_url": "https://aquaelektronik.com/product/detail/556/AQR-CTD506RGG%28BK%29"
+     "source_url": "https://aquaelektronik.com/product/detail/556/AQR-CTD506RGG%28BK%29",
+     "model_id": "AQUA::AQR-CTD506RGG",
+     "spec_values": {
+      "form_factor": {
+       "value": "Multi Pintu",
+       "source_url": "https://aquaelektronik.com/product/detail/556/AQR-CTD506RGG%28BK%29",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "AQR-CTD746RAG",
@@ -288,7 +432,19 @@
      ],
      "image": "assets/kompetitor/AQUA_AQR-CTD746RAG.jpg",
      "photo_url": "https://aquaelektronik.com/upload_files/files/a55a1f65-9d62-4225-885d-1505b88818cd/AQRCTD746RAGBKFront1.webp",
-     "source_url": "https://aquaelektronik.com/product/detail/552/AQR-CTD746RAG%28BK%29"
+     "source_url": "https://aquaelektronik.com/product/detail/552/AQR-CTD746RAG%28BK%29",
+     "model_id": "AQUA::AQR-CTD746RAG",
+     "spec_values": {
+      "form_factor": {
+       "value": "Multi Pintu",
+       "source_url": "https://aquaelektronik.com/product/detail/552/AQR-CTD746RAG%28BK%29",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "AQR-D185",
@@ -308,7 +464,19 @@
      ],
      "image": "assets/kompetitor/AQUA_AQR-D185.jpg",
      "photo_url": "https://aquaelektronik.com/upload_files/files/08afe310-ee6c-4619-bf02-1596e4681547/AQRD185MDSFrontEmpty.png",
-     "source_url": "https://aquaelektronik.com/product/detail/463/AQR-D185+%28MDS%29+Dark+Silver"
+     "source_url": "https://aquaelektronik.com/product/detail/463/AQR-D185+%28MDS%29+Dark+Silver",
+     "model_id": "AQUA::AQR-D185",
+     "spec_values": {
+      "form_factor": {
+       "value": "1 Pintu",
+       "source_url": "https://aquaelektronik.com/product/detail/463/AQR-D185+%28MDS%29+Dark+Silver",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "AQR-D205",
@@ -328,7 +496,19 @@
      ],
      "image": "assets/kompetitor/AQUA_AQR-D205.jpg",
      "photo_url": "https://aquaelektronik.com/upload_files/files/e4166d68-0a5f-44e3-980f-3e3b29945b37/AQRD205MDSFrontEmpty.png",
-     "source_url": "https://aquaelektronik.com/product/detail/464/AQR-D205+%28MDS%29+Dark+Silver"
+     "source_url": "https://aquaelektronik.com/product/detail/464/AQR-D205+%28MDS%29+Dark+Silver",
+     "model_id": "AQUA::AQR-D205",
+     "spec_values": {
+      "form_factor": {
+       "value": "1 Pintu",
+       "source_url": "https://aquaelektronik.com/product/detail/464/AQR-D205+%28MDS%29+Dark+Silver",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "AQR-D225",
@@ -348,7 +528,19 @@
      ],
      "image": "assets/kompetitor/AQUA_AQR-D225.jpg",
      "photo_url": "https://aquaelektronik.com/upload_files/files/9f93a7fd-20d5-4ed5-8189-54c1f33ae14e/AQRD225MDSFrontClose.png",
-     "source_url": "https://aquaelektronik.com/product/detail/465/AQR-D225+%28MDS%29+Dark+Silver"
+     "source_url": "https://aquaelektronik.com/product/detail/465/AQR-D225+%28MDS%29+Dark+Silver",
+     "model_id": "AQUA::AQR-D225",
+     "spec_values": {
+      "form_factor": {
+       "value": "1 Pintu",
+       "source_url": "https://aquaelektronik.com/product/detail/465/AQR-D225+%28MDS%29+Dark+Silver",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "AQR-DTM245CBP",
@@ -368,7 +560,19 @@
      ],
      "image": "assets/kompetitor/AQUA_AQR-DTM245CBP.jpg",
      "photo_url": "https://aquaelektronik.com/upload_files/files/d97d9ff7-6b88-4345-955e-730c53fe3869/AQRDTM245CBPDSFront.webp",
-     "source_url": "https://aquaelektronik.com/product/detail/603/AQR-DTM245CBP%28DS%29"
+     "source_url": "https://aquaelektronik.com/product/detail/603/AQR-DTM245CBP%28DS%29",
+     "model_id": "AQUA::AQR-DTM245CBP",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://aquaelektronik.com/product/detail/603/AQR-DTM245CBP%28DS%29",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "AQR-DTM265CBP",
@@ -388,7 +592,19 @@
      ],
      "image": "assets/kompetitor/AQUA_AQR-DTM265CBP.jpg",
      "photo_url": "https://aquaelektronik.com/upload_files/files/c3bcc691-4e55-4662-96b0-da7ad147d099/AQRDTM265CBPDSFront.webp",
-     "source_url": "https://aquaelektronik.com/product/detail/610/AQR-DTM265CBP%28DS%29"
+     "source_url": "https://aquaelektronik.com/product/detail/610/AQR-DTM265CBP%28DS%29",
+     "model_id": "AQUA::AQR-DTM265CBP",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://aquaelektronik.com/product/detail/610/AQR-DTM265CBP%28DS%29",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "AQR-DTM265RAP",
@@ -408,7 +624,19 @@
      ],
      "image": "assets/kompetitor/AQUA_AQR-DTM265RAP.jpg",
      "photo_url": "https://aquaelektronik.com/upload_files/files/49084cbe-3a18-4d22-a12c-045cc85aced1/AQRDTM265RAPFBFront.webp",
-     "source_url": "https://aquaelektronik.com/product/detail/620/AQR-DTM265RAP%28FB%29+"
+     "source_url": "https://aquaelektronik.com/product/detail/620/AQR-DTM265RAP%28FB%29+",
+     "model_id": "AQUA::AQR-DTM265RAP",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://aquaelektronik.com/product/detail/620/AQR-DTM265RAP%28FB%29+",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "AQR-DTM265RAV",
@@ -428,7 +656,19 @@
      ],
      "image": "assets/kompetitor/AQUA_AQR-DTM265RAV.jpg",
      "photo_url": "https://aquaelektronik.com/upload_files/files/6f6345b0-732d-4c5d-9e81-2a8433fec248/AQRDTM265RAVMXFront.webp",
-     "source_url": "https://aquaelektronik.com/product/detail/621/AQR-DTM265RAV%28MX%29"
+     "source_url": "https://aquaelektronik.com/product/detail/621/AQR-DTM265RAV%28MX%29",
+     "model_id": "AQUA::AQR-DTM265RAV",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://aquaelektronik.com/product/detail/621/AQR-DTM265RAV%28MX%29",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "AQR-DTM285CBP",
@@ -448,7 +688,19 @@
      ],
      "image": "assets/kompetitor/AQUA_AQR-DTM285CBP.jpg",
      "photo_url": "https://aquaelektronik.com/upload_files/files/6ac93656-9d97-4e99-b771-24025b2517ec/AQRDTM285CBPDSFront.webp",
-     "source_url": "https://aquaelektronik.com/product/detail/605/AQR-DTM285CBP%28DS%29"
+     "source_url": "https://aquaelektronik.com/product/detail/605/AQR-DTM285CBP%28DS%29",
+     "model_id": "AQUA::AQR-DTM285CBP",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://aquaelektronik.com/product/detail/605/AQR-DTM285CBP%28DS%29",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "AQR-DTM285RAP",
@@ -468,7 +720,19 @@
      ],
      "image": "assets/kompetitor/AQUA_AQR-DTM285RAP.jpg",
      "photo_url": "https://aquaelektronik.com/upload_files/files/65254137-0727-48f0-8d82-f3a4ae896017/AQRDTM285RAPFBFront.webp",
-     "source_url": "https://aquaelektronik.com/product/detail/618/AQR-DTM285RAP%28FB%29"
+     "source_url": "https://aquaelektronik.com/product/detail/618/AQR-DTM285RAP%28FB%29",
+     "model_id": "AQUA::AQR-DTM285RAP",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://aquaelektronik.com/product/detail/618/AQR-DTM285RAP%28FB%29",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "AQR-DTM285RAV",
@@ -488,7 +752,19 @@
      ],
      "image": "assets/kompetitor/AQUA_AQR-DTM285RAV.jpg",
      "photo_url": "https://aquaelektronik.com/upload_files/files/db97fe34-153c-4cce-9571-31372e2339b3/AQRDTM285RAVMXFront.webp",
-     "source_url": "https://aquaelektronik.com/product/detail/619/AQR-DTM285RAV%28MX%29"
+     "source_url": "https://aquaelektronik.com/product/detail/619/AQR-DTM285RAV%28MX%29",
+     "model_id": "AQUA::AQR-DTM285RAV",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://aquaelektronik.com/product/detail/619/AQR-DTM285RAV%28MX%29",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "AQR-DTM305RAP",
@@ -508,7 +784,19 @@
      ],
      "image": "assets/kompetitor/AQUA_AQR-DTM305RAP.jpg",
      "photo_url": "https://aquaelektronik.com/upload_files/files/53860bee-7de0-4c64-987e-0bb878e29d7a/AQRDTM305RAPFBFront.webp",
-     "source_url": "https://aquaelektronik.com/product/detail/615/AQR-DTM305RAP%28FB%29"
+     "source_url": "https://aquaelektronik.com/product/detail/615/AQR-DTM305RAP%28FB%29",
+     "model_id": "AQUA::AQR-DTM305RAP",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://aquaelektronik.com/product/detail/615/AQR-DTM305RAP%28FB%29",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "AQR-DTM305RAV",
@@ -528,7 +816,19 @@
      ],
      "image": "assets/kompetitor/AQUA_AQR-DTM305RAV.jpg",
      "photo_url": "https://aquaelektronik.com/upload_files/files/9aceabd9-8286-4c58-a399-b9b4ae0d8eb8/AQRDTM305RAVMXFront.webp",
-     "source_url": "https://aquaelektronik.com/product/detail/614/AQR-DTM305RAV%28MX%29"
+     "source_url": "https://aquaelektronik.com/product/detail/614/AQR-DTM305RAV%28MX%29",
+     "model_id": "AQUA::AQR-DTM305RAV",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://aquaelektronik.com/product/detail/614/AQR-DTM305RAV%28MX%29",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "AQR-TSE605RBM",
@@ -548,7 +848,19 @@
      ],
      "image": "assets/kompetitor/AQUA_AQR-TSE605RBM.jpg",
      "photo_url": "https://aquaelektronik.com/upload_files/files/194cc15b-a091-4d9d-a7f8-2f84e9677ca0/AQRTSE605RBMMXFront.webp",
-     "source_url": "https://aquaelektronik.com/product/detail/703/AQR-TSE605RBM%28MX%29"
+     "source_url": "https://aquaelektronik.com/product/detail/703/AQR-TSE605RBM%28MX%29",
+     "model_id": "AQUA::AQR-TSE605RBM",
+     "spec_values": {
+      "form_factor": {
+       "value": "Side by Side",
+       "source_url": "https://aquaelektronik.com/product/detail/703/AQR-TSE605RBM%28MX%29",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "AQR-TTD546RBC",
@@ -569,7 +881,19 @@
      ],
      "image": "assets/kompetitor/AQUA_AQR-TTD546RBC.jpg",
      "photo_url": "https://aquaelektronik.com/upload_files/files/8a4338bd-8891-438f-b41b-518c22bc85ca/AQRTTD546RBCCBFront.webp",
-     "source_url": "https://aquaelektronik.com/product/detail/637/AQR-TTD546RBC%28CB%29"
+     "source_url": "https://aquaelektronik.com/product/detail/637/AQR-TTD546RBC%28CB%29",
+     "model_id": "AQUA::AQR-TTD546RBC",
+     "spec_values": {
+      "form_factor": {
+       "value": "Multi Pintu",
+       "source_url": "https://aquaelektronik.com/product/detail/637/AQR-TTD546RBC%28CB%29",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "AQR-TTD576RAG",
@@ -589,7 +913,19 @@
      ],
      "image": "assets/kompetitor/AQUA_AQR-TTD576RAG.jpg",
      "photo_url": "https://aquaelektronik.com/upload_files/files/48a7576f-db12-428a-b0c3-45bf4ac7b3c5/AQRTTD576RAGBKFront.webp",
-     "source_url": "https://aquaelektronik.com/product/detail/682/AQR-TTD576RAG%28BK%29"
+     "source_url": "https://aquaelektronik.com/product/detail/682/AQR-TTD576RAG%28BK%29",
+     "model_id": "AQUA::AQR-TTD576RAG",
+     "spec_values": {
+      "form_factor": {
+       "value": "Multi Pintu",
+       "source_url": "https://aquaelektronik.com/product/detail/682/AQR-TTD576RAG%28BK%29",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "AQR-TTD576RSG",
@@ -610,7 +946,19 @@
      ],
      "image": "assets/kompetitor/AQUA_AQR-TTD576RSG.jpg",
      "photo_url": "https://aquaelektronik.com/upload_files/files/6824bd33-85c5-415d-a48b-f65e8c6223ba/AQRTTD576RSGCLFront.webp",
-     "source_url": "https://aquaelektronik.com/product/detail/681/AQR-TTD576RSG%28CL%29"
+     "source_url": "https://aquaelektronik.com/product/detail/681/AQR-TTD576RSG%28CL%29",
+     "model_id": "AQUA::AQR-TTD576RSG",
+     "spec_values": {
+      "form_factor": {
+       "value": "Multi Pintu",
+       "source_url": "https://aquaelektronik.com/product/detail/681/AQR-TTD576RSG%28CL%29",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "AQR-VTM515RBC",
@@ -629,7 +977,19 @@
      ],
      "image": "assets/kompetitor/AQUA_AQR-VTM515RBC.jpg",
      "photo_url": "https://aquaelektronik.com/upload_files/files/9d73519b-2089-446d-922d-d72786e4daa5/AQRVTM515RBCCBFront.webp",
-     "source_url": "https://aquaelektronik.com/product/detail/660/AQR-VTM515RBC%28CB%29"
+     "source_url": "https://aquaelektronik.com/product/detail/660/AQR-VTM515RBC%28CB%29",
+     "model_id": "AQUA::AQR-VTM515RBC",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://aquaelektronik.com/product/detail/660/AQR-VTM515RBC%28CB%29",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "AQR-VTM535RAG",
@@ -648,7 +1008,19 @@
      ],
      "image": "assets/kompetitor/AQUA_AQR-VTM535RAG.jpg",
      "photo_url": "https://aquaelektronik.com/upload_files/files/fe267008-f7b3-4d2a-b201-4cd612c46567/AQRVTM535RAGBKFront.webp",
-     "source_url": "https://aquaelektronik.com/product/detail/661/AQR-VTM535RAG%28BK%29"
+     "source_url": "https://aquaelektronik.com/product/detail/661/AQR-VTM535RAG%28BK%29",
+     "model_id": "AQUA::AQR-VTM535RAG",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://aquaelektronik.com/product/detail/661/AQR-VTM535RAG%28BK%29",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "AQR-VTM535RSG",
@@ -670,7 +1042,19 @@
      ],
      "image": "assets/kompetitor/AQUA_AQR-VTM535RSG.jpg",
      "photo_url": "https://aquaelektronik.com/upload_files/files/219dad08-6f59-471b-87a3-b3a66dcb004c/AQRVTM535RSGCLFront.webp",
-     "source_url": "https://aquaelektronik.com/product/detail/662/AQR-VTM535RSG%28CL%29"
+     "source_url": "https://aquaelektronik.com/product/detail/662/AQR-VTM535RSG%28CL%29",
+     "model_id": "AQUA::AQR-VTM535RSG",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://aquaelektronik.com/product/detail/662/AQR-VTM535RSG%28CL%29",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     }
    ]
   },
@@ -694,7 +1078,19 @@
      ],
      "image": "assets/kompetitor/LG_GC-L257CQEL.jpg",
      "photo_url": "https://www.lg.com/content/dam/channel/wcms/id/images/kulkas/gc-l257cqel_amcpgsa_eain_id_c/gallery/large01.jpg",
-     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-side-by-side/gc-l257cqel/"
+     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-side-by-side/gc-l257cqel/",
+     "model_id": "LG::GC-L257CQEL",
+     "spec_values": {
+      "form_factor": {
+       "value": "Side by Side",
+       "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-side-by-side/gc-l257cqel/",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "GC-V22FFQMB",
@@ -712,7 +1108,19 @@
      ],
      "image": "assets/kompetitor/LG_GC-V22FFQMB.jpg",
      "photo_url": "https://www.lg.com/content/dam/channel/wcms/id/images/top-brand/hs/ref/450x450/MultiDoor__GC-V22FFQMB_450x450.jpg",
-     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gc-v22ffqmb/"
+     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gc-v22ffqmb/",
+     "model_id": "LG::GC-V22FFQMB",
+     "spec_values": {
+      "form_factor": {
+       "value": "Multi Pintu",
+       "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gc-v22ffqmb/",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "GCFB41FPGAM",
@@ -730,7 +1138,19 @@
      ],
      "image": "assets/kompetitor/LG_GCFB41FPGAM.jpg",
      "photo_url": "https://www.lg.com/content/dam/channel/wcms/id/refrigerators/2025/gcfb41fpgam/gallery/450x450_multi-door-odmrichome-2026-gcfb41fpgam-f446gdbbam-hk-blackglass-06-front-lighting.png",
-     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb41fpgam/"
+     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb41fpgam/",
+     "model_id": "LG::GCFB41FPGAM",
+     "spec_values": {
+      "form_factor": {
+       "value": "Multi Pintu",
+       "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb41fpgam/",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "GCFB48FPGAM",
@@ -748,7 +1168,19 @@
      ],
      "image": "assets/kompetitor/LG_GCFB48FPGAM.jpg",
      "photo_url": "https://www.lg.com/content/dam/channel/wcms/id/refrigerators/2025/gcfb48fpgam/gallery/450x450_multi-door-odmrichome-2025-gcfb48fpgam-f50bg-vn-blackglass-06-front.png",
-     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb48fpgam/"
+     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb48fpgam/",
+     "model_id": "LG::GCFB48FPGAM",
+     "spec_values": {
+      "form_factor": {
+       "value": "Multi Pintu",
+       "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb48fpgam/",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "GCFB507PQAM",
@@ -766,7 +1198,19 @@
      ],
      "image": "assets/kompetitor/LG_GCFB507PQAM.jpg",
      "photo_url": "https://www.lg.com/content/dam/channel/wcms/id/images/top-brand/hs/ref/450x450/SideBySide__GC-FB507PQAM_450x450.jpg",
-     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-side-by-side/gcfb507pqam/"
+     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-side-by-side/gcfb507pqam/",
+     "model_id": "LG::GCFB507PQAM",
+     "spec_values": {
+      "form_factor": {
+       "value": "Side by Side",
+       "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-side-by-side/gcfb507pqam/",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "GN-B202SQIR",
@@ -784,7 +1228,19 @@
      ],
      "image": "assets/kompetitor/LG_GN-B202SQIR.jpg",
      "photo_url": "https://www.lg.com/content/dam/channel/wcms/id/images/top-brand/hs/ref/update/gn-b202sqir/450x450/Omega9_Di2_GN-B202SQIR_Front_Top Brand_Square.jpg",
-     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b202sqir/"
+     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b202sqir/",
+     "model_id": "LG::GN-B202SQIR",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Freezer Bawah",
+       "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b202sqir/",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "GN-B212PQNF",
@@ -802,7 +1258,19 @@
      ],
      "image": "assets/kompetitor/LG_GN-B212PQNF.jpg",
      "photo_url": "https://www.lg.com/content/dam/channel/wcms/id/refrigerators/2025/gn-b212pqnf/gallery-image/450x450/Gallery Image_GN_B212PQNFBasic_Image_1.jpg",
-     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b212pqnf/"
+     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b212pqnf/",
+     "model_id": "LG::GN-B212PQNF",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b212pqnf/",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "GN-B242PFSF",
@@ -820,7 +1288,19 @@
      ],
      "image": "assets/kompetitor/LG_GN-B242PFSF.jpg",
      "photo_url": "https://www.lg.com/content/dam/channel/wcms/id/refrigerators/2025/gn-b242pfsf/gallery/450x450/VT11CK_Di_GN-B242PFSF_GT-1SI_PY_Front_450X450.jpg",
-     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b242pfsf/"
+     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b242pfsf/",
+     "model_id": "LG::GN-B242PFSF",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b242pfsf/",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "GN-B262PQSF",
@@ -838,7 +1318,19 @@
      ],
      "image": "assets/kompetitor/LG_GN-B262PQSF.jpg",
      "photo_url": "https://www.lg.com/content/dam/channel/wcms/id/refrigerators/2025/gn_b262pqsf/gallery/450x450/VT10CK_Di_GN-B262PQSF_LTB26BLM_EP_Front.jpg",
-     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b262pqsf/"
+     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b262pqsf/",
+     "model_id": "LG::GN-B262PQSF",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b262pqsf/",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "GN-B332PGFB",
@@ -856,7 +1348,19 @@
      ],
      "image": "assets/kompetitor/LG_GN-B332PGFB.jpg",
      "photo_url": "https://www.lg.com/content/dam/channel/wcms/id/images/top-brand/hs/ref/450x450/2_Doors__GN-B332PGFB_450x450.jpg",
-     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b332pgfb-abmpein/"
+     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b332pgfb-abmpein/",
+     "model_id": "LG::GN-B332PGFB",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b332pgfb-abmpein/",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "GN-B332PQQF",
@@ -874,7 +1378,19 @@
      ],
      "image": "assets/kompetitor/LG_GN-B332PQQF.jpg",
      "photo_url": "https://www.lg.com/content/dam/channel/wcms/id/refrigerators/2025/gn-b332pqqf/gallery/GN-B332PQQF_450x450_1.jpg",
-     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b332pqqf/"
+     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b332pqqf/",
+     "model_id": "LG::GN-B332PQQF",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b332pqqf/",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "GN-B392PGFB",
@@ -892,7 +1408,19 @@
      ],
      "image": "assets/kompetitor/LG_GN-B392PGFB.jpg",
      "photo_url": "https://www.lg.com/content/dam/channel/wcms/id/images/top-brand/hs/ref/450x450/2_Doors__GN-B392PGFB_450x450.jpg",
-     "source_url": "https://www.lg.com/id/kulkas-dan-freezer1/kulkas-2-pintu/gn-b392pgfb/"
+     "source_url": "https://www.lg.com/id/kulkas-dan-freezer1/kulkas-2-pintu/gn-b392pgfb/",
+     "model_id": "LG::GN-B392PGFB",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://www.lg.com/id/kulkas-dan-freezer1/kulkas-2-pintu/gn-b392pgfb/",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "GN-F372PXAK",
@@ -910,7 +1438,19 @@
      ],
      "image": "assets/kompetitor/LG_GN-F372PXAK.jpg",
      "photo_url": "https://www.lg.com/content/dam/channel/wcms/id/images/kulkas/gn-f372pxak_ablpein_eain_id_c/450.jpg",
-     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-f372pxak/"
+     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-f372pxak/",
+     "model_id": "LG::GN-F372PXAK",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-f372pxak/",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "GN-Y201CLAR",
@@ -927,7 +1467,19 @@
      ],
      "image": "assets/kompetitor/LG_GN-Y201CLAR.jpg",
      "photo_url": "https://www.lg.com/content/dam/channel/wcms/id/refrigerators/2025/gn_y201clar/gallery/450.jpg",
-     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-1-pintu/gn-y201clar/"
+     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-1-pintu/gn-y201clar/",
+     "model_id": "LG::GN-Y201CLAR",
+     "spec_values": {
+      "form_factor": {
+       "value": "1 Pintu",
+       "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-1-pintu/gn-y201clar/",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "GN-Y331SLSR",
@@ -945,7 +1497,19 @@
      ],
      "image": "assets/kompetitor/LG_GN-Y331SLSR.jpg",
      "photo_url": "https://www.lg.com/content/dam/channel/wcms/id/images/top-brand/hs/ref/450x450/1_door__GN-Y331SLSR_450x450.jpg",
-     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-1-pintu/gn-y331slsr/"
+     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-1-pintu/gn-y331slsr/",
+     "model_id": "LG::GN-Y331SLSR",
+     "spec_values": {
+      "form_factor": {
+       "value": "1 Pintu",
+       "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-1-pintu/gn-y331slsr/",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "GN_B222SFIF",
@@ -963,7 +1527,19 @@
      ],
      "image": "assets/kompetitor/LG_GN_B222SFIF.jpg",
      "photo_url": "https://www.lg.com/content/dam/channel/wcms/id/refrigerators/2025/gn-b222sfif/gallery/450x450/TopBrand_GN-B222SFIF_01_Omega8_CK2_GN-B222SFIF_DS_Front.jpg",
-     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b222sfif/"
+     "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b222sfif/",
+     "model_id": "LG::GN_B222SFIF",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b222sfif/",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     }
    ]
   },
@@ -987,7 +1563,19 @@
      ],
      "image": "assets/kompetitor/MIDEA_MDRF550FGF28ID.jpg",
      "photo_url": "https://www.midea.com/content/dam/midea-aem/id/MDRF550FGF28ID-1-plp-revised.jpg",
-     "source_url": "https://www.midea.com/id/refrigerators/fridge/multi-door/midea-407-l-platinum-fresh-multi-door-refrigerator-mdrf550fgf28id.mdrf550fgf28id"
+     "source_url": "https://www.midea.com/id/refrigerators/fridge/multi-door/midea-407-l-platinum-fresh-multi-door-refrigerator-mdrf550fgf28id.mdrf550fgf28id",
+     "model_id": "MIDEA::MDRF550FGF28ID",
+     "spec_values": {
+      "form_factor": {
+       "value": "Multi Pintu",
+       "source_url": "https://www.midea.com/id/refrigerators/fridge/multi-door/midea-407-l-platinum-fresh-multi-door-refrigerator-mdrf550fgf28id.mdrf550fgf28id",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "MDRS710FGF28ID",
@@ -1005,7 +1593,19 @@
      ],
      "image": "assets/kompetitor/MIDEA_MDRS710FGF28ID.jpg",
      "photo_url": "https://www.midea.com/content/dam/midea-aem/id/id-new/pdp/refrigerator/mdrs710fgf28id/MDRS710FGF028ID-new.jpg",
-     "source_url": "https://web.archive.org/web/20260309031926/https://www.midea.com/id/refrigerators/fridge/side-by-side/midea-548-l-large-capacity-side-by-side-refrigerator-mdrs710fgf28id.mdrs710fgf28id"
+     "source_url": "https://web.archive.org/web/20260309031926/https://www.midea.com/id/refrigerators/fridge/side-by-side/midea-548-l-large-capacity-side-by-side-refrigerator-mdrs710fgf28id.mdrs710fgf28id",
+     "model_id": "MIDEA::MDRS710FGF28ID",
+     "spec_values": {
+      "form_factor": {
+       "value": "Side by Side",
+       "source_url": "https://web.archive.org/web/20260309031926/https://www.midea.com/id/refrigerators/fridge/side-by-side/midea-548-l-large-capacity-side-by-side-refrigerator-mdrs710fgf28id.mdrs710fgf28id",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "MDRT345MTB30",
@@ -1022,7 +1622,19 @@
      ],
      "image": "assets/kompetitor/MIDEA_MDRT345MTB30.jpg",
      "photo_url": "https://www.midea.com/content/dam/midea-aem/id/id-new/pdp/refrigerator/mdrt345mtb30/MDRT345MTB30-ID-1-1200x1200-new.jpg",
-     "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-236-l-multi-air-flow-meet-2-door-refrigerator-mdrt345mtb30.mdrt345mtb30"
+     "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-236-l-multi-air-flow-meet-2-door-refrigerator-mdrt345mtb30.mdrt345mtb30",
+     "model_id": "MIDEA::MDRT345MTB30",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-236-l-multi-air-flow-meet-2-door-refrigerator-mdrt345mtb30.mdrt345mtb30",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "MDRT385MTB30",
@@ -1040,7 +1652,19 @@
      ],
      "image": "assets/kompetitor/MIDEA_MDRT385MTB30.jpg",
      "photo_url": "https://www.midea.com/content/dam/midea-aem/id/id-new/pdp/refrigerator/mdrt385mtb30/MDRT385MTB30-ID-1-1200x1200-new.jpg",
-     "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-266-l-multi-air-flow-meet-2-door-refrigerator-mdrt385mtb30.mdrt385mtb30"
+     "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-266-l-multi-air-flow-meet-2-door-refrigerator-mdrt385mtb30.mdrt385mtb30",
+     "model_id": "MIDEA::MDRT385MTB30",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-266-l-multi-air-flow-meet-2-door-refrigerator-mdrt385mtb30.mdrt385mtb30",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "MDRT611EVD28ID",
@@ -1059,7 +1683,19 @@
      ],
      "image": "assets/kompetitor/MIDEA_MDRT611EVD28ID.jpg",
      "photo_url": "https://www.midea.com/content/dam/midea-aem/id/id-new/pdp/refrigerator/mdrt611evd28id/MDRT611EVD28ID-1-new.jpg",
-     "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-473-l-big-capacity-everest-2-door-refrigerator-mdrt611evd28id.mdrt611evd28id"
+     "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-473-l-big-capacity-everest-2-door-refrigerator-mdrt611evd28id.mdrt611evd28id",
+     "model_id": "MIDEA::MDRT611EVD28ID",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-473-l-big-capacity-everest-2-door-refrigerator-mdrt611evd28id.mdrt611evd28id",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "MDRT611EVD50ID",
@@ -1078,7 +1714,19 @@
      ],
      "image": "assets/kompetitor/MIDEA_MDRT611EVD50ID.jpg",
      "photo_url": "https://www.midea.com/content/dam/midea-aem/id/id-new/pdp/refrigerator/mdrt611evd50id/MDRT611EVD50ID-1-new.jpg",
-     "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-473-l-big-capacity-everest-2-door-refrigerator-mdrt611evd50id.mdrt611evd50id"
+     "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-473-l-big-capacity-everest-2-door-refrigerator-mdrt611evd50id.mdrt611evd50id",
+     "model_id": "MIDEA::MDRT611EVD50ID",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-473-l-big-capacity-everest-2-door-refrigerator-mdrt611evd50id.mdrt611evd50id",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "MDRU288FZG02ID",
@@ -1096,7 +1744,19 @@
      ],
      "image": "assets/kompetitor/MIDEA_MDRU288FZG02ID.jpg",
      "photo_url": "https://www.midea.com/content/dam/midea-aem/id/id-new/pdp/refrigerator/mdru288fzg02id/MDRU288FZG02ID-1v.jpg",
-     "source_url": "https://www.midea.com/id/refrigerators/freezer/upright-freezer/midea-200-l-inverter-quattro-upright-freezer-mdru288fzg02id.mdru288fzg02id"
+     "source_url": "https://www.midea.com/id/refrigerators/freezer/upright-freezer/midea-200-l-inverter-quattro-upright-freezer-mdru288fzg02id.mdru288fzg02id",
+     "model_id": "MIDEA::MDRU288FZG02ID",
+     "spec_values": {
+      "form_factor": {
+       "value": "1 Pintu",
+       "source_url": "https://www.midea.com/id/refrigerators/freezer/upright-freezer/midea-200-l-inverter-quattro-upright-freezer-mdru288fzg02id.mdru288fzg02id",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     }
    ]
   },
@@ -1121,7 +1781,19 @@
      ],
      "image": "assets/kompetitor/POLYTRON_PRA_18DMY.jpg",
      "photo_url": "https://cdn.polytron.co.id/public-assets/polytroncoid/2026/06/PRA-18DMY.webp",
-     "source_url": "https://polytron.co.id/produk/polytron-kulkas-1-pintu-belleza-180-liter-pra-18dmy/"
+     "source_url": "https://polytron.co.id/produk/polytron-kulkas-1-pintu-belleza-180-liter-pra-18dmy/",
+     "model_id": "POLYTRON::PRA_18DMY",
+     "spec_values": {
+      "form_factor": {
+       "value": "1 Pintu",
+       "source_url": "https://polytron.co.id/produk/polytron-kulkas-1-pintu-belleza-180-liter-pra-18dmy/",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "PRB_159B_R",
@@ -1140,7 +1812,19 @@
      ],
      "image": "assets/kompetitor/POLYTRON_PRB_159B_R.jpg",
      "photo_url": "https://cdn.polytron.co.id/public-assets/polytroncoid/2026/06/PRB-159R.webp",
-     "source_url": "https://polytron.co.id/produk/polytron-kulkas-1-pintu-metallic-series-150-liter-prb-159r/"
+     "source_url": "https://polytron.co.id/produk/polytron-kulkas-1-pintu-metallic-series-150-liter-prb-159r/",
+     "model_id": "POLYTRON::PRB_159B_R",
+     "spec_values": {
+      "form_factor": {
+       "value": "1 Pintu",
+       "source_url": "https://polytron.co.id/produk/polytron-kulkas-1-pintu-metallic-series-150-liter-prb-159r/",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "PRB_179R_B",
@@ -1157,7 +1841,19 @@
      ],
      "image": "assets/kompetitor/POLYTRON_PRB_179R_B.jpg",
      "photo_url": "https://cdn.polytron.co.id/public-assets/polytroncoid/2026/06/PRB-179R.webp",
-     "source_url": "https://polytron.co.id/produk/polytron-kulkas-1-pintu-metallic-series-170-liter-prb-179r/"
+     "source_url": "https://polytron.co.id/produk/polytron-kulkas-1-pintu-metallic-series-170-liter-prb-179r/",
+     "model_id": "POLYTRON::PRB_179R_B",
+     "spec_values": {
+      "form_factor": {
+       "value": "1 Pintu",
+       "source_url": "https://polytron.co.id/produk/polytron-kulkas-1-pintu-metallic-series-170-liter-prb-179r/",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "PRB_219R",
@@ -1175,7 +1871,19 @@
      ],
      "image": "assets/kompetitor/POLYTRON_PRB_219R.jpg",
      "photo_url": "https://cdn.polytron.co.id/public-assets/polytroncoid/2026/06/PRB-219R.webp",
-     "source_url": "https://polytron.co.id/produk/polytron-kulkas-2-pintu-metallic-series-210-liter-prb-219r/"
+     "source_url": "https://polytron.co.id/produk/polytron-kulkas-2-pintu-metallic-series-210-liter-prb-219r/",
+     "model_id": "POLYTRON::PRB_219R",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://polytron.co.id/produk/polytron-kulkas-2-pintu-metallic-series-210-liter-prb-219r/",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "PRB_25MNX",
@@ -1194,7 +1902,19 @@
      ],
      "image": "assets/kompetitor/POLYTRON_PRB_25MNX.jpg",
      "photo_url": "https://cdn.polytron.co.id/public-assets/polytroncoid/2026/06/PRW-25MNX.webp",
-     "source_url": "https://polytron.co.id/produk/kulkas-2-pintu-polytron-belleza-jumbo-prw-25mnx-series/"
+     "source_url": "https://polytron.co.id/produk/kulkas-2-pintu-polytron-belleza-jumbo-prw-25mnx-series/",
+     "model_id": "POLYTRON::PRB_25MNX",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://polytron.co.id/produk/kulkas-2-pintu-polytron-belleza-jumbo-prw-25mnx-series/",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "PRM_495X",
@@ -1212,7 +1932,19 @@
      ],
      "image": "assets/kompetitor/POLYTRON_PRM_495X.jpg",
      "photo_url": "https://cdn.polytron.co.id/public-assets/polytroncoid/2026/06/PRM-495X.webp",
-     "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-big-liter-inverter-with-vacuum-compartment-prm-495x/"
+     "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-big-liter-inverter-with-vacuum-compartment-prm-495x/",
+     "model_id": "POLYTRON::PRM_495X",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-big-liter-inverter-with-vacuum-compartment-prm-495x/",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "PRS_455S",
@@ -1230,7 +1962,19 @@
      ],
      "image": "assets/kompetitor/POLYTRON_PRS_455S.jpg",
      "photo_url": "https://cdn.polytron.co.id/public-assets/polytroncoid/2023/12/PRS455S.png",
-     "source_url": "https://polytron.co.id/produk/polytron-kulkas-2-pintu-side-by-side-450-liter-prs-455s/"
+     "source_url": "https://polytron.co.id/produk/polytron-kulkas-2-pintu-side-by-side-450-liter-prs-455s/",
+     "model_id": "POLYTRON::PRS_455S",
+     "spec_values": {
+      "form_factor": {
+       "value": "Side by Side",
+       "source_url": "https://polytron.co.id/produk/polytron-kulkas-2-pintu-side-by-side-450-liter-prs-455s/",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "PRS_465X",
@@ -1248,7 +1992,19 @@
      ],
      "image": "assets/kompetitor/POLYTRON_PRS_465X.jpg",
      "photo_url": "https://cdn.polytron.co.id/public-assets/polytroncoid/2026/07/prs-465.webp",
-     "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-belleza-inverter-4-pintu-multidoor-side-by-side-prs-465x/"
+     "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-belleza-inverter-4-pintu-multidoor-side-by-side-prs-465x/",
+     "model_id": "POLYTRON::PRS_465X",
+     "spec_values": {
+      "form_factor": {
+       "value": "Multi Pintu",
+       "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-belleza-inverter-4-pintu-multidoor-side-by-side-prs-465x/",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "PRS_510X",
@@ -1266,7 +2022,19 @@
      ],
      "image": "assets/kompetitor/POLYTRON_PRS_510X.jpg",
      "photo_url": "https://cdn.polytron.co.id/public-assets/polytroncoid/2026/06/PRS-510X.webp",
-     "source_url": "https://polytron.co.id/produk/kulkas-polytron-new-belleza-inverter-4-pintu-side-by-side-prs-510x/"
+     "source_url": "https://polytron.co.id/produk/kulkas-polytron-new-belleza-inverter-4-pintu-side-by-side-prs-510x/",
+     "model_id": "POLYTRON::PRS_510X",
+     "spec_values": {
+      "form_factor": {
+       "value": "Multi Pintu",
+       "source_url": "https://polytron.co.id/produk/kulkas-polytron-new-belleza-inverter-4-pintu-side-by-side-prs-510x/",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "PRS_521Y",
@@ -1283,7 +2051,19 @@
      ],
      "image": "assets/kompetitor/POLYTRON_PRS_521Y.jpg",
      "photo_url": "https://cdn.polytron.co.id/public-assets/polytroncoid/2026/07/prs-521Y.webp",
-     "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-side-by-side-2-pintu-prs-521y/"
+     "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-side-by-side-2-pintu-prs-521y/",
+     "model_id": "POLYTRON::PRS_521Y",
+     "spec_values": {
+      "form_factor": {
+       "value": "Side by Side",
+       "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-side-by-side-2-pintu-prs-521y/",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "PRS_551X",
@@ -1301,7 +2081,19 @@
      ],
      "image": "assets/kompetitor/POLYTRON_PRS_551X.jpg",
      "photo_url": "https://cdn.polytron.co.id/public-assets/polytroncoid/2026/07/PRS-551X.webp",
-     "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-belleza-inverter-4-pintu-multidoor-side-by-side-prs-551x/"
+     "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-belleza-inverter-4-pintu-multidoor-side-by-side-prs-551x/",
+     "model_id": "POLYTRON::PRS_551X",
+     "spec_values": {
+      "form_factor": {
+       "value": "Multi Pintu",
+       "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-belleza-inverter-4-pintu-multidoor-side-by-side-prs-551x/",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "PRW_23MNX",
@@ -1319,7 +2111,19 @@
      ],
      "image": "assets/kompetitor/POLYTRON_PRW_23MNX.jpg",
      "photo_url": "https://cdn.polytron.co.id/public-assets/polytroncoid/2026/06/PRM-23MNX.webp",
-     "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-jumbo-prw-23mnx/"
+     "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-jumbo-prw-23mnx/",
+     "model_id": "POLYTRON::PRW_23MNX",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-jumbo-prw-23mnx/",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "PRW_29VX",
@@ -1337,7 +2141,19 @@
      ],
      "image": "assets/kompetitor/POLYTRON_PRW_29VX.jpg",
      "photo_url": "https://cdn.polytron.co.id/public-assets/polytroncoid/2024/04/main-image-belleza-jumborevvaria-rev1-9.jpg",
-     "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-jumbo-inverter-prw-29vx-260-liter/"
+     "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-jumbo-inverter-prw-29vx-260-liter/",
+     "model_id": "POLYTRON::PRW_29VX",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-jumbo-inverter-prw-29vx-260-liter/",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     }
    ]
   },
@@ -1361,7 +2177,19 @@
      ],
      "image": "assets/kompetitor/SAMSUNG_RB30N4050B1_SE.jpg",
      "photo_url": "https://images.samsung.com/is/image/samsung/p6pim/id/rb30n4050b1-se/gallery/id-rt25farbdb1-digital-inverter-403314-rb30n4050b1-se-thumb-503499067",
-     "source_url": "https://www.samsung.com/id/refrigerators/bottom-mount-freezer/black-doi-rb30n4050b1-ss-315l-black-rb30n4050b1-se/"
+     "source_url": "https://www.samsung.com/id/refrigerators/bottom-mount-freezer/black-doi-rb30n4050b1-ss-315l-black-rb30n4050b1-se/",
+     "model_id": "SAMSUNG::RB30N4050B1_SE",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Freezer Bawah",
+       "source_url": "https://www.samsung.com/id/refrigerators/bottom-mount-freezer/black-doi-rb30n4050b1-ss-315l-black-rb30n4050b1-se/",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "RF48A4000B4_SE",
@@ -1379,7 +2207,19 @@
      ],
      "image": "assets/kompetitor/SAMSUNG_RF48A4000B4_SE.jpg",
      "photo_url": "https://images.samsung.com/is/image/samsung/p6pim/id/rf48a4000b4-se/gallery/id-twin-cooling-plus-rf48a4000b4-se-thumb-425419445",
-     "source_url": "https://www.samsung.com/id/refrigerators/french-door/rf4000tm-511l-black-rf48a4000b4-se/"
+     "source_url": "https://www.samsung.com/id/refrigerators/french-door/rf4000tm-511l-black-rf48a4000b4-se/",
+     "model_id": "SAMSUNG::RF48A4000B4_SE",
+     "spec_values": {
+      "form_factor": {
+       "value": "Multi Pintu",
+       "source_url": "https://www.samsung.com/id/refrigerators/french-door/rf4000tm-511l-black-rf48a4000b4-se/",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "RF65DB90B012SE",
@@ -1397,7 +2237,19 @@
      ],
      "image": "assets/kompetitor/SAMSUNG_RF65DB90B012SE.jpg",
      "photo_url": "https://images.samsung.com/is/image/samsung/p6pim/id/rf65db90b012se/gallery/id-4-door-beverage-center-rf65db90b012se-thumb-541547386",
-     "source_url": "https://www.samsung.com/id/refrigerators/french-door/rf9000d-rf9000dc-t-style-french-door-beverage-center-681l-clean-white-rf65db90b012se/"
+     "source_url": "https://www.samsung.com/id/refrigerators/french-door/rf9000d-rf9000dc-t-style-french-door-beverage-center-681l-clean-white-rf65db90b012se/",
+     "model_id": "SAMSUNG::RF65DB90B012SE",
+     "spec_values": {
+      "form_factor": {
+       "value": "Multi Pintu",
+       "source_url": "https://www.samsung.com/id/refrigerators/french-door/rf9000d-rf9000dc-t-style-french-door-beverage-center-681l-clean-white-rf65db90b012se/",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "RR18R1000SA_SE",
@@ -1414,7 +2266,19 @@
      ],
      "image": "assets/kompetitor/SAMSUNG_RR18R1000SA_SE.jpg",
      "photo_url": "https://stg-images.samsung.com/is/image/samsung/id-one-door-rr18r1000sa-rr18r1000sa-se-frontsilver-thumb-172739359",
-     "source_url": "https://www.samsung.com/id/refrigerators/one-door/176l-metal-graphite-rr18r1000sa-se/"
+     "source_url": "https://www.samsung.com/id/refrigerators/one-door/176l-metal-graphite-rr18r1000sa-se/",
+     "model_id": "SAMSUNG::RR18R1000SA_SE",
+     "spec_values": {
+      "form_factor": {
+       "value": "1 Pintu",
+       "source_url": "https://www.samsung.com/id/refrigerators/one-door/176l-metal-graphite-rr18r1000sa-se/",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "RS70F65KNFSE",
@@ -1432,7 +2296,19 @@
      ],
      "image": "assets/kompetitor/SAMSUNG_RS70F65KNFSE.jpg",
      "photo_url": "https://images.samsung.com/is/image/samsung/p6pim/id/rs70f65knfse/gallery/id-rs90f-basic-rs70f65knfse-thumb-545567298",
-     "source_url": "https://www.samsung.com/id/refrigerators/side-by-side/refrigerator-sbs-rs90f-basic-660l-black-doi-rs70f65knfse/"
+     "source_url": "https://www.samsung.com/id/refrigerators/side-by-side/refrigerator-sbs-rs90f-basic-660l-black-doi-rs70f65knfse/",
+     "model_id": "SAMSUNG::RS70F65KNFSE",
+     "spec_values": {
+      "form_factor": {
+       "value": "Side by Side",
+       "source_url": "https://www.samsung.com/id/refrigerators/side-by-side/refrigerator-sbs-rs90f-basic-660l-black-doi-rs70f65knfse/",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "RT19M300BGS",
@@ -1449,7 +2325,19 @@
      ],
      "image": "assets/kompetitor/SAMSUNG_RT19M300BGS.jpg",
      "photo_url": "https://images.samsung.com/is/image/samsung/id-top-mount-freezer-rt19m300bgs-rt19m300bgs-se-frontsilver-thumb-86041244",
-     "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/top-mount-freezer-rt19m300bgs-rt19m300bgs-se/"
+     "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/top-mount-freezer-rt19m300bgs-rt19m300bgs-se/",
+     "model_id": "SAMSUNG::RT19M300BGS",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/top-mount-freezer-rt19m300bgs-rt19m300bgs-se/",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "RT22FARBDBB1",
@@ -1467,7 +2355,19 @@
      ],
      "image": "assets/kompetitor/SAMSUNG_RT22FARBDBB1.jpg",
      "photo_url": "https://images.samsung.com/is/image/samsung/p6pim/id/rt22farbdb1-se/gallery/id-rt25farbdb1-digital-inverter-rt22farbdb1-se-thumb-503497042?$720_576_JPG$",
-     "source_url": "https://www.samsung.com/id/business/refrigerators/top-mount-freezer/234l-black-rt22farbdb1-se-rt22farbdb1-se/"
+     "source_url": "https://www.samsung.com/id/business/refrigerators/top-mount-freezer/234l-black-rt22farbdb1-se-rt22farbdb1-se/",
+     "model_id": "SAMSUNG::RT22FARBDBB1",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://www.samsung.com/id/business/refrigerators/top-mount-freezer/234l-black-rt22farbdb1-se-rt22farbdb1-se/",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "RT25FARBDB1_SE",
@@ -1484,7 +2384,19 @@
      ],
      "image": "assets/kompetitor/SAMSUNG_RT25FARBDB1_SE.jpg",
      "photo_url": "https://images.samsung.com/is/image/samsung/p6pim/id/rt25farbdb1-se/gallery/id-rt25farbdb1-digital-inverter-rt25farbdb1-se-thumb-503497053",
-     "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/digital-inverter-234l-black-rt25farbdb1-se/"
+     "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/digital-inverter-234l-black-rt25farbdb1-se/",
+     "model_id": "SAMSUNG::RT25FARBDB1_SE",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/digital-inverter-234l-black-rt25farbdb1-se/",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "RT35CG5420B1SE",
@@ -1503,7 +2415,19 @@
      ],
      "image": "assets/kompetitor/SAMSUNG_RT35CG5420B1SE.jpg",
      "photo_url": "https://images.samsung.com/is/image/samsung/p6pim/id/rt35cg5420b1se/gallery/id-top-mount-freezer-spacemax-rt35cg5420b1se-thumb-536493135",
-     "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt5300c-top-mount-freezer-spacemax-348l-black-rt35cg5420b1se/"
+     "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt5300c-top-mount-freezer-spacemax-348l-black-rt35cg5420b1se/",
+     "model_id": "SAMSUNG::RT35CG5420B1SE",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt5300c-top-mount-freezer-spacemax-348l-black-rt35cg5420b1se/",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "RT42CG6420B1SE",
@@ -1521,7 +2445,19 @@
      ],
      "image": "assets/kompetitor/SAMSUNG_RT42CG6420B1SE.jpg",
      "photo_url": "https://images.samsung.com/is/image/samsung/p6pim/id/rt42cg6420b1se/gallery/id-top-mount-freezer-optimal-fresh-and-space-max-rt42cg6420b1se-thumb-536314363",
-     "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-optimal-fresh-and-space-max-425l-black-rt42cg6420b1se/"
+     "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-optimal-fresh-and-space-max-425l-black-rt42cg6420b1se/",
+     "model_id": "SAMSUNG::RT42CG6420B1SE",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-optimal-fresh-and-space-max-425l-black-rt42cg6420b1se/",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "RT47CB66228JSE",
@@ -1539,7 +2475,19 @@
      ],
      "image": "assets/kompetitor/SAMSUNG_RT47CB66228JSE.jpg",
      "photo_url": "https://images.samsung.com/is/image/samsung/p6pim/id/rt47cb66228jse/gallery/id-top-mount-freezer-bespoke-design-rt47cb66228jse-thumb-536291810",
-     "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-bespoke-design-476l-rt47cb66228jse/"
+     "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-bespoke-design-476l-rt47cb66228jse/",
+     "model_id": "SAMSUNG::RT47CB66228JSE",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-bespoke-design-476l-rt47cb66228jse/",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     }
    ]
   },
@@ -1563,7 +2511,19 @@
      ],
      "image": "assets/kompetitor/SHARP_SJ-236MN-HS.jpg",
      "photo_url": "https://id.sharp/sites/default/files/2021-08/SJ-236MN-HS%20front_OK-01.jpg",
-     "source_url": "https://id.sharp/products/home-appliances/sj-236mn-hs"
+     "source_url": "https://id.sharp/products/home-appliances/sj-236mn-hs",
+     "model_id": "SHARP::SJ-236MN-HS",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://id.sharp/products/home-appliances/sj-236mn-hs",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "SJ-246SI-GK",
@@ -1580,7 +2540,19 @@
      ],
      "image": "assets/kompetitor/SHARP_SJ-246SI-GK.jpg",
      "photo_url": "https://id.sharp/sites/default/files/2024-07/SJ-246SI-GK-Front-BADGE.png",
-     "source_url": "https://id.sharp/products/home-appliances/sj-246si-gk"
+     "source_url": "https://id.sharp/products/home-appliances/sj-246si-gk",
+     "model_id": "SHARP::SJ-246SI-GK",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://id.sharp/products/home-appliances/sj-246si-gk",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "SJ-326SI-GK",
@@ -1598,7 +2570,19 @@
      ],
      "image": "assets/kompetitor/SHARP_SJ-326SI-GK.jpg",
      "photo_url": "https://id.sharp/sites/default/files/2024-07/SJ-326SI-GK-Front-BADGE.png",
-     "source_url": "https://id.sharp/products/home-appliances/sj-326si-gk"
+     "source_url": "https://id.sharp/products/home-appliances/sj-326si-gk",
+     "model_id": "SHARP::SJ-326SI-GK",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://id.sharp/products/home-appliances/sj-326si-gk",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "SJ-326XI-MK",
@@ -1615,7 +2599,19 @@
      ],
      "image": "assets/kompetitor/SHARP_SJ-326XI-MK.jpg",
      "photo_url": "https://id.sharp/sites/default/files/uploads/RichContentWeb/Refrigerator/SJ-326XI-MK/img/17128407215239766.jpg",
-     "source_url": "https://id.sharp/products/home-appliances/sj-326xi-mk"
+     "source_url": "https://id.sharp/products/home-appliances/sj-326xi-mk",
+     "model_id": "SHARP::SJ-326XI-MK",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://id.sharp/products/home-appliances/sj-326xi-mk",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "SJ-386SI-DS",
@@ -1632,7 +2628,19 @@
      ],
      "image": "assets/kompetitor/SHARP_SJ-386SI-DS.jpg",
      "photo_url": "https://id.sharp/sites/default/files/2025-08/SJ-356%20%26%20386SI-DS.png",
-     "source_url": "https://id.sharp/products/home-appliances/sj-386si-ds-2-door-shine-j-tech-inverter"
+     "source_url": "https://id.sharp/products/home-appliances/sj-386si-ds-2-door-shine-j-tech-inverter",
+     "model_id": "SHARP::SJ-386SI-DS",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://id.sharp/products/home-appliances/sj-386si-ds-2-door-shine-j-tech-inverter",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "SJ-426GI-GK",
@@ -1650,7 +2658,19 @@
      ],
      "image": "assets/kompetitor/SHARP_SJ-426GI-GK.jpg",
      "photo_url": "https://id.sharp/sites/default/files/2026-06/NEW_SJ-426GI-GK-FRONT.png",
-     "source_url": "https://id.sharp/products/home-appliances/sj-426gi-gk-2-door-shine-glassdoor-j-tech-inverter"
+     "source_url": "https://id.sharp/products/home-appliances/sj-426gi-gk-2-door-shine-glassdoor-j-tech-inverter",
+     "model_id": "SHARP::SJ-426GI-GK",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://id.sharp/products/home-appliances/sj-426gi-gk-2-door-shine-glassdoor-j-tech-inverter",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "SJ-426SI-GK",
@@ -1668,7 +2688,19 @@
      ],
      "image": "assets/kompetitor/SHARP_SJ-426SI-GK.jpg",
      "photo_url": "https://id.sharp/sites/default/files/2024-07/SJ-426SI-GK-Front-BADGE.png",
-     "source_url": "https://id.sharp/products/home-appliances/sj-426si-gk"
+     "source_url": "https://id.sharp/products/home-appliances/sj-426si-gk",
+     "model_id": "SHARP::SJ-426SI-GK",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://id.sharp/products/home-appliances/sj-426si-gk",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "SJ-456SI-GK",
@@ -1685,7 +2717,19 @@
      ],
      "image": "assets/kompetitor/SHARP_SJ-456SI-GK.jpg",
      "photo_url": "https://id.sharp/sites/default/files/2024-07/SJ-456SI-GK-Front-BADGE.png",
-     "source_url": "https://id.sharp/products/home-appliances/sj-456si-gk"
+     "source_url": "https://id.sharp/products/home-appliances/sj-456si-gk",
+     "model_id": "SHARP::SJ-456SI-GK",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://id.sharp/products/home-appliances/sj-456si-gk",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "SJ-IF50PMA-DS",
@@ -1703,7 +2747,19 @@
      ],
      "image": "assets/kompetitor/SHARP_SJ-IF50PMA-DS.jpg",
      "photo_url": "https://id.sharp/sites/default/files/2025-11/SJ-IF50PMA-DS%20Front.png",
-     "source_url": "https://id.sharp/products/home-appliances/sj-if50pma-ds-4-door-queen-series"
+     "source_url": "https://id.sharp/products/home-appliances/sj-if50pma-ds-4-door-queen-series",
+     "model_id": "SHARP::SJ-IF50PMA-DS",
+     "spec_values": {
+      "form_factor": {
+       "value": "Multi Pintu",
+       "source_url": "https://id.sharp/products/home-appliances/sj-if50pma-ds-4-door-queen-series",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "SJ-IF51PG-BK",
@@ -1721,7 +2777,19 @@
      ],
      "image": "assets/kompetitor/SHARP_SJ-IF51PG-BK.jpg",
      "photo_url": "https://id.sharp/sites/default/files/2025-05/SJ-IF51PG-BK.png",
-     "source_url": "https://id.sharp/products/home-appliances/sj-if51pg-bk"
+     "source_url": "https://id.sharp/products/home-appliances/sj-if51pg-bk",
+     "model_id": "SHARP::SJ-IF51PG-BK",
+     "spec_values": {
+      "form_factor": {
+       "value": "Multi Pintu",
+       "source_url": "https://id.sharp/products/home-appliances/sj-if51pg-bk",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "SJ-IF60PM-DS",
@@ -1739,7 +2807,19 @@
      ],
      "image": "assets/kompetitor/SHARP_SJ-IF60PM-DS.jpg",
      "photo_url": "https://id.sharp/sites/default/files/uploads/RichContentWeb/InpopRichContent/SJ-IF60PM-DS/product.png",
-     "source_url": "https://id.sharp/products/home-appliances/sj-if60pm-ds-4-door-hybrid-cooling-system-queen-series"
+     "source_url": "https://id.sharp/products/home-appliances/sj-if60pm-ds-4-door-hybrid-cooling-system-queen-series",
+     "model_id": "SHARP::SJ-IF60PM-DS",
+     "spec_values": {
+      "form_factor": {
+       "value": "Multi Pintu",
+       "source_url": "https://id.sharp/products/home-appliances/sj-if60pm-ds-4-door-hybrid-cooling-system-queen-series",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "SJ-IF85PG-GB",
@@ -1757,7 +2837,19 @@
      ],
      "image": "assets/kompetitor/SHARP_SJ-IF85PG-GB.jpg",
      "photo_url": "https://id.sharp/sites/default/files/2021-08/SJ-IF85PG-GB%20REAR_OK-01_0.jpg",
-     "source_url": "https://id.sharp/products/home-appliances/sj-if85pg-gb"
+     "source_url": "https://id.sharp/products/home-appliances/sj-if85pg-gb",
+     "model_id": "SHARP::SJ-IF85PG-GB",
+     "spec_values": {
+      "form_factor": {
+       "value": "Multi Pintu",
+       "source_url": "https://id.sharp/products/home-appliances/sj-if85pg-gb",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "SJ-IF91PG-GB",
@@ -1775,7 +2867,19 @@
      ],
      "image": "assets/kompetitor/SHARP_SJ-IF91PG-GB.jpg",
      "photo_url": "https://id.sharp/sites/default/files/2025-05/SJ-IF91PG-GB-Front_OK-01.png",
-     "source_url": "https://id.sharp/products/home-appliances/sj-if91pg-gb"
+     "source_url": "https://id.sharp/products/home-appliances/sj-if91pg-gb",
+     "model_id": "SHARP::SJ-IF91PG-GB",
+     "spec_values": {
+      "form_factor": {
+       "value": "Multi Pintu",
+       "source_url": "https://id.sharp/products/home-appliances/sj-if91pg-gb",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "SJ-IS50M-SL",
@@ -1793,7 +2897,19 @@
      ],
      "image": "assets/kompetitor/SHARP_SJ-IS50M-SL.jpg",
      "photo_url": "https://id.sharp/sites/default/files/2024-01/SJ-IS50MA-SLFRONT.png",
-     "source_url": "https://id.sharp/products/home-appliances/sj-is50ma-sl-side-side-series"
+     "source_url": "https://id.sharp/products/home-appliances/sj-is50ma-sl-side-side-series",
+     "model_id": "SHARP::SJ-IS50M-SL",
+     "spec_values": {
+      "form_factor": {
+       "value": "Side by Side",
+       "source_url": "https://id.sharp/products/home-appliances/sj-is50ma-sl-side-side-series",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "SJ-IS60MB-DS",
@@ -1811,7 +2927,19 @@
      ],
      "image": "assets/kompetitor/SHARP_SJ-IS60MB-DS.jpg",
      "photo_url": "https://id.sharp/sites/default/files/2025-01/SJ-IS60MB-DS.png",
-     "source_url": "https://id.sharp/products/home-appliances/sj-is60mb-ds-side-side-series"
+     "source_url": "https://id.sharp/products/home-appliances/sj-is60mb-ds-side-side-series",
+     "model_id": "SHARP::SJ-IS60MB-DS",
+     "spec_values": {
+      "form_factor": {
+       "value": "Side by Side",
+       "source_url": "https://id.sharp/products/home-appliances/sj-is60mb-ds-side-side-series",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "SJ-IT660PM-DS",
@@ -1829,7 +2957,19 @@
      ],
      "image": "assets/kompetitor/SHARP_SJ-IT660PM-DS.jpg",
      "photo_url": "https://id.sharp/sites/default/files/2025-07/SJ-IT660PM-DS.png",
-     "source_url": "https://id.sharp/products/home-appliances/sj-it660pm-ds-2-door-grand-vetro-series"
+     "source_url": "https://id.sharp/products/home-appliances/sj-it660pm-ds-2-door-grand-vetro-series",
+     "model_id": "SHARP::SJ-IT660PM-DS",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://id.sharp/products/home-appliances/sj-it660pm-ds-2-door-grand-vetro-series",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "SJ-N162N-HS",
@@ -1846,7 +2986,19 @@
      ],
      "image": "assets/kompetitor/SHARP_SJ-N162N-HS.jpg",
      "photo_url": "https://id.sharp/sites/default/files/2022-03/WEB_SJ-N162N-HS%20FRONT-01.jpg",
-     "source_url": "https://id.sharp/products/home-appliances/sj-n162n-hs"
+     "source_url": "https://id.sharp/products/home-appliances/sj-n162n-hs",
+     "model_id": "SHARP::SJ-N162N-HS",
+     "spec_values": {
+      "form_factor": {
+       "value": "1 Pintu",
+       "source_url": "https://id.sharp/products/home-appliances/sj-n162n-hs",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "SJ-N182N",
@@ -1863,7 +3015,19 @@
      ],
      "image": "assets/kompetitor/SHARP_SJ-N182N.jpg",
      "photo_url": "https://id.sharp/sites/default/files/2021-08/SJ-N182N-HS%20front_OK-01.jpg",
-     "source_url": "https://id.sharp/products/home-appliances/sj-n182n-hs"
+     "source_url": "https://id.sharp/products/home-appliances/sj-n182n-hs",
+     "model_id": "SHARP::SJ-N182N",
+     "spec_values": {
+      "form_factor": {
+       "value": "1 Pintu",
+       "source_url": "https://id.sharp/products/home-appliances/sj-n182n-hs",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "SJ-N192N",
@@ -1880,7 +3044,19 @@
      ],
      "image": "assets/kompetitor/SHARP_SJ-N192N.jpg",
      "photo_url": "https://id.sharp/sites/default/files/uploads/RichContentWeb/Refrigerator/SJ-N192N-HS/img/17134350415632203.jpg",
-     "source_url": "https://id.sharp/products/home-appliances/sj-n192n-hs"
+     "source_url": "https://id.sharp/products/home-appliances/sj-n192n-hs",
+     "model_id": "SHARP::SJ-N192N",
+     "spec_values": {
+      "form_factor": {
+       "value": "1 Pintu",
+       "source_url": "https://id.sharp/products/home-appliances/sj-n192n-hs",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "SJ-X165MG-GB_GR",
@@ -1897,7 +3073,19 @@
      ],
      "image": "assets/kompetitor/SHARP_SJ-X165MG-GB_GR.jpg",
      "photo_url": "https://id.sharp/sites/default/files/uploads/RichContentWeb/Refrigerator/SJ-X165MG-GB/img/17125737155368459.jpg",
-     "source_url": "https://id.sharp/products/home-appliances/sj-x165mg-gbgr"
+     "source_url": "https://id.sharp/products/home-appliances/sj-x165mg-gbgr",
+     "model_id": "SHARP::SJ-X165MG-GB_GR",
+     "spec_values": {
+      "form_factor": {
+       "value": "1 Pintu",
+       "source_url": "https://id.sharp/products/home-appliances/sj-x165mg-gbgr",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "SJ-X185MG-GB_GR",
@@ -1914,7 +3102,19 @@
      ],
      "image": "assets/kompetitor/SHARP_SJ-X185MG-GB_GR.jpg",
      "photo_url": "https://www.elektronikmurah.biz/cdn/shop/files/sharp_sharp_sj-x185mg-gb_1d_ref_kulkas_garansi_resmi_blue_full03_d2c25f92_cef52b27-3703-4e79-b616-746ae15dae84_grande.webp?v=1744708895",
-     "source_url": "https://www.elektronikmurah.biz/products/sharp-kulkas-1-pintu-166l-sj-x185mg-gb"
+     "source_url": "https://www.elektronikmurah.biz/products/sharp-kulkas-1-pintu-166l-sj-x185mg-gb",
+     "model_id": "SHARP::SJ-X185MG-GB_GR",
+     "spec_values": {
+      "form_factor": {
+       "value": "1 Pintu",
+       "source_url": "https://www.elektronikmurah.biz/products/sharp-kulkas-1-pintu-166l-sj-x185mg-gb",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "SJ-X195MG-GB_GR",
@@ -1931,7 +3131,19 @@
      ],
      "image": "assets/kompetitor/SHARP_SJ-X195MG-GB_GR.jpg",
      "photo_url": "https://id.sharp/sites/default/files/2024-05/SJ-X195MG-GB.png",
-     "source_url": "https://id.sharp/products/home-appliances/sj-x195mg-gbgr"
+     "source_url": "https://id.sharp/products/home-appliances/sj-x195mg-gbgr",
+     "model_id": "SHARP::SJ-X195MG-GB_GR",
+     "spec_values": {
+      "form_factor": {
+       "value": "1 Pintu",
+       "source_url": "https://id.sharp/products/home-appliances/sj-x195mg-gbgr",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     },
     {
      "model": "SJ316MGGB",
@@ -1949,7 +3161,19 @@
      ],
      "image": "assets/kompetitor/SHARP_SJ316MGGB.jpg",
      "photo_url": "https://id.sharp/sites/default/files/2018-12/SJ-316MG-GB%20.jpg",
-     "source_url": "https://id.sharp/products/home-appliances/sj-316mg-gbgr"
+     "source_url": "https://id.sharp/products/home-appliances/sj-316mg-gbgr",
+     "model_id": "SHARP::SJ316MGGB",
+     "spec_values": {
+      "form_factor": {
+       "value": "2 Pintu Top Mount",
+       "source_url": "https://id.sharp/products/home-appliances/sj-316mg-gbgr",
+       "source_kind": "legacy",
+       "verified_at": null,
+       "origin": "legacy",
+       "user_locked": false
+      }
+     },
+     "research_suggestions": []
     }
    ]
   }
