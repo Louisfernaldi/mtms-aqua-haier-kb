@@ -135,6 +135,14 @@
     var bootStatus = document.createElement("span");
     bootStatus.className = "ds-editor-boot-status";
     bootStatus.textContent = "Editor menunggu API live...";
+    bootStatus.setAttribute("role", "status");
+    bootStatus.setAttribute("aria-live", "polite");
+
+    var entry = document.createElement("div");
+    entry.className = "ds-editor-entry";
+    entry.setAttribute("data-dynamic-spec-editor-entry", "true");
+    entry.appendChild(button);
+    entry.appendChild(bootStatus);
 
     var shell = document.createElement("div");
     shell.id = "ds-editor-shell";
@@ -156,8 +164,8 @@
         '<div class="ds-editor-content"></div>' +
       '</aside>';
 
-    document.body.appendChild(button);
-    document.body.appendChild(bootStatus);
+    var hero = document.querySelector(".hero-mini");
+    (hero || document.body).appendChild(entry);
     document.body.appendChild(shell);
 
     var content = shell.querySelector(".ds-editor-content");

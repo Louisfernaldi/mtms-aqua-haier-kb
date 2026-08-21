@@ -163,6 +163,9 @@ function renderRingkasan(targetId) {
 function renderKatalog(targetId) {
   var host = document.getElementById(targetId);
   if (!host) return;
+  var specCategoryStaticUrl = window.MTMSSpecCategories ? window.MTMSSpecCategories.staticUrl : "data/spec-categories.json";
+  var specCategoryLiveUrl = window.MTMSSpecCategories ? window.MTMSSpecCategories.liveUrl : "api/spec-categories";
+  host.setAttribute("data-category-sources", specCategoryStaticUrl + "|" + specCategoryLiveUrl);
   function loadKatalog() {
     function clone(value) {
       return JSON.parse(JSON.stringify(value || []));
@@ -207,6 +210,8 @@ function renderKatalog(targetId) {
     .then(function (payload) {
       var items = payload.items;
       var state = { group: "Semua", q: "", page: 1, pageSize: 12 };
+      var specCategories = window.MTMSSpecCategories ? window.MTMSSpecCategories.get() : [];
+      var activeDetailModel = null;
 
       var chips = document.createElement("div");
       chips.className = "pk-chips";
@@ -292,11 +297,26 @@ function renderKatalog(targetId) {
       }
 
       function openProductDetail(p) {
+        activeDetailModel = p.model;
         window.MTMSProductDetail.open(p, {
+          categories: specCategories,
           onEdit: function (record) {
             if (window.__mtms_openEdit) window.__mtms_openEdit(record);
             else alert("Editor belum siap — refresh halaman");
           }
+        });
+      }
+
+      function refreshOpenProductDetail() {
+        if (!activeDetailModel || !window.MTMSProductDetail || !window.MTMSProductDetail.isOpen()) return;
+        var current = items.find(function (item) { return item.model === activeDetailModel; });
+        if (current) openProductDetail(current);
+      }
+
+      if (window.MTMSSpecCategories) {
+        window.MTMSSpecCategories.subscribe(function (categories) {
+          specCategories = categories;
+          refreshOpenProductDetail();
         });
       }
 
@@ -384,9 +404,13 @@ function renderKatalog(targetId) {
             initialData: liveItems,
             initialSha: window.MTMS_PRODUCTS_SHA
           });
+          var specEditorTrigger = document.querySelector(".ds-editor-fab");
+          if (specEditorTrigger) specEditorTrigger.setAttribute("aria-label", "Editor spesifikasi");
           if (requestedModel !== null && document.querySelector('.pk-modal.open[data-mtms-product-detail="true"]')) {
             var refreshedProduct = items.find(function (item) { return item.model === requestedModel; });
             if (refreshedProduct) openProductDetail(refreshedProduct);
+          } else {
+            refreshOpenProductDetail();
           }
         }).catch(function () {});
       }

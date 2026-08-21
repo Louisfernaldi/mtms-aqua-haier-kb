@@ -429,4 +429,223 @@ SHA256 output final:
 - `site/data/produk-katalog.json`: `bd4f960874a93f1a6a0b0a173f2e62a241f91f671c94d96f2161dff8b5449cca`
 - `site/data/spec-categories.json`: `5a6629353abb2c2e8028e24da92bf35991e4b78439d022a0bb28e6b48a359c69`
 
-Catatan luar tiket: `node --test tests/dynamic-specs-api.test.mjs` lulus 36/37. Satu kegagalan authorization berasal dari perubahan worktree yang sudah ada pada `functions/_middleware.js` (API memanggil `next()` tanpa mengembalikan Response); file tersebut di luar allowlist tiket 03 dan tidak disentuh.
+Catatan luar tiket: `node --test tests/dynamic-specs-api.test.mjs` mencapai 36/37 (`pass 36`, `fail 1`). Satu kegagalan authorization berasal dari perubahan worktree yang sudah ada pada `functions/_middleware.js` (API memanggil `next()` tanpa mengembalikan Response); file tersebut di luar allowlist tiket 03 dan tidak disentuh.
+
+## 2026-08-21 WIB - Implementasi Tiket 04 Tampilan Perbandingan dan Modal
+
+Status: **implementasi lokal/offline dan browser verifier tiket hijau; tanpa commit, stage, push, deploy, network eksternal, secret read, atau tulis live**.
+
+### Hasil
+
+- `MTMSSpecCategories` menjadi satu kontrak kategori global untuk Produk, Kompetitor, dan shared modal: safe fallback exact 12 core tersedia sinkron, registry statis dimuat lebih dahulu, lalu `/api/spec-categories` menyegarkan state pada HTTP tanpa memblokir render embedded.
+- Tabel utama Kompetitor tetap memakai kolom brand/baris model, foto, harga, action terisolasi, sticky AQUA, dan wrapper horizontal. Setiap cell model menampilkan exact seluruh kategori `active=true && comparison=true` menurut order; nilai hanya dari `spec_values[key]`, missing jujur, dan additional tidak bocor.
+- Shared modal mempertahankan harga/foto/sumber/detail lama/bullet serta suppress benefit duplikat. Seluruh kategori aktif tampil per group/order; populated value mendukung scalar/list/boolean dan unit tanpa duplikasi, provenance aman, sedangkan missing diringkas sekali per group.
+- `research_suggestions` menampilkan pending/accepted/rejected, label kategori, nilai usulan, jenis sumber, waktu cek, origin, dan hanya link explicit http/https atau relative same-origin. Protocol-relative, `javascript:`, control character, dan backslash ditolak; pending punya state visual khusus dan seluruh output data di-escape.
+- Produk dan Kompetitor meneruskan kategori ke modal serta menyegarkan modal yang masih terbuka saat kategori/data live masuk. Normalisasi/enrichment mempertahankan `model_id`, `spec_values`, `research_suggestions`, `fitur_meta`, dan feature suggestions tanpa menimpa fitur user-locked.
+- Verifier fixture deterministik melayani `/api/spec-categories` dengan `X-Data-SHA`, menolak PUT/POST/PATCH/DELETE dengan `405`, menguji 1440/390, dark, overflow, satu jalur scroll modal, target 44px, delayed API, provenance, suggestion, additional, dan exact key tabel. Link HTTPS serta relative same-origin wajib tampil; protocol-relative, `javascript:`, control character, dan backslash wajib tidak menjadi link. Sabotase menghapus row additional, membuktikan assertion merah, lalu membuka ulang modal dan membuktikan state pulih.
+
+### Bukti command source terkini
+
+```text
+$ node --check site/js/product-detail.js
+exit 0
+$ node --check site/js/produk.js
+exit 0
+$ inline <script> site/kompetitor.html | node --check -
+exit 0
+```
+
+```text
+$ python -X utf8 tools/verify_product_detail.py
+PASS verify_product_detail: exact comparison keys, modal active groups/additional/provenance/suggestions, sabotage guard, embedded-first <1.2s with delayed APIs, shared legacy detail, 44px targets, dark, body-lock, 1440/390
+```
+
+```text
+$ python -X utf8 D:\AI\tmp\win-temp\opencode\check_mtms_ticket04.py
+LULUS check_mtms_ticket04: kontrak static-first, tabel comparison-only, modal dinamis, provenance, suggestion, a11y, dan E2E hijau
+```
+
+SHA256 checker sebelum eksekusi terverifikasi `09FDA1033322A6A16DC13ED70D6E589D067A9B85EC7127D43B3BA04CB1059B71`; checker tidak dibuka atau diubah.
+
+### Bukti audit host setelah penutupan
+
+Host menjalankan gerbang berikut pada source Tiket 04 dan melaporkan hasil aktual:
+
+```text
+$ python -X utf8 tools/verify_product_detail.py
+PASS
+$ python -X utf8 tools/verify_dynamic_specs.py
+PASS — 102/102 model
+$ python -X utf8 tools/verify_spec_research.py
+PASS
+$ python -X utf8 tools/verify_ticket02_security.py
+PASS
+$ python -X utf8 -m unittest discover -s tests -p "test_*.py"
+Ran 26 tests — OK
+$ node --check site/js/product-detail.js
+PASS
+$ node --check site/js/produk.js
+PASS
+$ inline <script> site/kompetitor.html | node --check -
+PASS
+$ python -X utf8 D:\AI\tmp\win-temp\opencode\check_mtms_ticket04.py
+PASS — SHA256 tetap 09FDA1033322A6A16DC13ED70D6E589D067A9B85EC7127D43B3BA04CB1059B71
+```
+
+Koreksi bukti: `node --test tests/dynamic-specs-api.test.mjs` **dijalankan oleh host** dan hasilnya **36/37** (`pass 36`, `fail 1`). Satu kegagalan adalah masalah authorization yang sudah ada pada `functions/_middleware.js`; file tersebut terlarang untuk Tiket 04 dan tetap tidak disentuh. Seluruh gerbang lain di atas serta `git diff --check` hijau.
+
+## 2026-08-21 WIB - Visual Jury Round-1
+
+Status: **seluruh temuan visual round-1 sudah diimplementasikan dan gerbang host hijau; tidak ada commit, stage, push, deploy, network eksternal, secret read, atau tulis live**.
+
+### Perubahan behavior tampilan
+
+- Shared modal memiliki nav section sticky yang kompak untuk Ringkasan, Fitur, Spesifikasi, serta Saran riset hanya bila isinya ada. Click dan keyboard menggulir satu-satunya jalur scroll di `.pk-modal-box`; cue tenang memberi tahu bahwa detail berlanjut.
+- Pada viewport sampai 600px, stage/gambar modal menjadi sekitar 180px dan dibatasi maksimal 190px, tetap `object-contain`, sementara kontrol galeri tetap berfungsi.
+- Provenance memakai label Indonesia untuk jenis sumber dan origin, waktu verifikasi terbaca dalam WIB dengan timestamp mentah tetap pada atribut `<time datetime>`, serta istilah teknis `Kunci user` diganti penjelasan perlindungan nilai yang awam. Escape dan safe-link tetap dipertahankan.
+- Teks comparison/provenance/spec/suggestion memenuhi batas font yang diminta; label dan nilai tabel utama diperiksa terpisah. Sel kosong memakai action spesifik merek dan setiap tabel memiliki hint mobile-only `Geser tabel untuk melihat merek lain` tepat di atas wrapper horizontal.
+- Pada viewport sampai 700px, trigger Editor spesifikasi tampil sebagai kontrol 52x44 berlabel visual `Edit`, tetap memiliki accessible name `Editor spesifikasi`, fungsi buka/tutup penuh, dan shared modal tetap berada di atas trigger.
+- Verifier diperluas untuk kontrak round-1 dan negative sabotage nav, font, tinggi gambar, action merek, serta hint. Penilaian round-1 ini **tidak melakukan self-judging aesthetics**; yang dinilai hanya kontrak visual dan behavior yang dapat diukur.
+
+### Hasil mentah verifier host
+
+```text
+$ python -X utf8 tools/verify_product_detail.py
+PASS verify_product_detail: round-1 nav click+keyboard/single-scroll, image <=190, provenance WIB human+raw, fonts, brand actions, mobile hints, editor 52x44, sabotage, legacy/security guards, 1440/390
+```
+
+```text
+$ python -X utf8 tools/verify_dynamic_specs.py
+verify_dynamic_specs: models=102/102 brands=6/6
+verify_dynamic_specs: categories=41 core=12 additional=29 duplicate_keys=0 orphan_categories=0
+verify_dynamic_specs: invalid_sources=0 user_overwrites=0 lost_legacy_fields=0
+verify_dynamic_specs: sparse_records=830 empty_unknown_records=0
+verify_dynamic_specs: idempotent_semantic=true idempotent_bytes=true editor_wiring=true
+LULUS
+```
+
+```text
+$ python -X utf8 tools/verify_spec_research.py
+verify_spec_research: staging=7/7 competitor_targets=102/102 denominator=112/112
+verify_spec_research: duplicate=0 missing=0 exact=92 partial=92 unresolved=20 skipped_non_exact=20
+verify_spec_research: applied_values=885 conflicts=36 suggestions_pending=36 protected=0
+LULUS
+```
+
+```text
+$ python -X utf8 tools/verify_ticket02_security.py
+LULUS browser security E2E marker=0 injected element/event=0 payload console error=0 PUT stale=1 tanpa retry liveReady=false sebelum reload dan reload GET terbukti
+```
+
+```text
+$ python -X utf8 -m unittest discover -s tests -p "test_*.py"
+Ran 26 tests in 0.194s
+OK
+```
+
+```text
+$ node --check site/js/product-detail.js
+exit 0
+$ node --check site/js/produk.js
+exit 0
+$ inline <script> site/kompetitor.html | node --check -
+exit 0
+$ git diff --check
+exit 0
+```
+
+```text
+$ python -X utf8 D:\AI\tmp\win-temp\opencode\check_mtms_ticket04_round1.py
+LULUS
+SHA256=B4A23351467E951999219C86D9C6272C9D5C7E41908C928ACB07CB86C62B5B9E (tidak berubah)
+```
+
+Full JS API suite **tidak dijalankan** pada verifikasi visual round-1 ini.
+
+## 2026-08-21 WIB - Final Repair Host Verification
+
+Status kontrak final saat ini: **product-detail E2E lulus**. Hasil merah di bawah dipisahkan sebagai kegagalan lama/di luar allowlist atau checker round-1 yang sudah obsolete; karena itu bagian ini **tidak** mengklaim seluruh regresi hijau. Tidak ada penilaian estetika oleh implementer.
+
+```text
+$ python -X utf8 tools/verify_product_detail.py
+exit 0
+PASS verify_product_detail: editor hero-contained nonoverlap 1440/390, mobile AQUA+selected brand switch Samsung, desktop 6 brand, active nav click+keyboard+scrollspy, single visible scrollbar+bottom, grouped provenance, theme settle 350ms, sabotage, legacy/security/performance guards
+
+$ node --check site/js/product-detail.js
+exit 0
+$ node --check site/js/produk.js
+exit 0
+$ node --check site/js/dynamic-spec-editor.js
+exit 0
+$ python -m py_compile tools/verify_product_detail.py
+exit 0
+$ git diff --check
+exit 0
+```
+
+```text
+$ python -X utf8 tools/verify_dynamic_specs.py
+exit 0
+models=102/102 categories=41 orphan_categories=0 user_overwrites=0 sparse_records=830
+
+$ python -X utf8 tools/verify_spec_research.py
+exit 0
+staging=7/7 denominator=112/112 exact=92 partial=92 unresolved=20 applied_values=885 conflicts=36 suggestions_pending=36
+
+$ python -X utf8 -m unittest discover -s tests -p "test_*.py"
+Ran 26 tests
+OK
+```
+
+Kegagalan yang bukan kegagalan kontrak final:
+
+```text
+$ node --test tests/dynamic-specs-api.test.mjs
+pass 36
+fail 1
+Kegagalan authorization middleware yang sudah dikenal dan tidak berubah; functions/_middleware.js berada di luar allowlist final repair.
+
+$ python -X utf8 tools/verify_ticket02_security.py
+exit 1
+Berhenti sebelum menguji produk karena wait_for_ready existing memakai strict-mode locator('.pk-card') yang menemukan 12 embedded cards. Verifier ini di luar allowlist dan tidak disentuh.
+
+$ python -X utf8 D:\AI\tmp\win-temp\opencode\check_mtms_ticket04_round1.py
+exit 1
+Hanya gagal karena masih mewajibkan hint swipe lama "Geser tabel..." yang sengaja dihapus/diganti oleh spesifikasi final. Hash checker tetap tidak berubah; checker ini obsolete untuk kontrak final.
+```
+
+```text
+$ python -X utf8 D:\AI\tmp\win-temp\opencode\check_mtms_ticket04_final.py
+SHA256=DB826E4DAD933A971018EB22E0737323ADB5E666D6DF63227BBC7E1701D73309 (tidak berubah)
+Syntax lulus; final product E2E lulus; dynamic specs lulus; spec research lulus; lalu berhenti pada defect verifier ticket02 security yang sama.
+```
+
+Tidak ada network eksternal, write live/production, pembacaan secret, git stage, commit, push, atau mutation Git.
+
+## 2026-08-21 WIB - Audit Mandor dan Juri Final
+
+Laporan implementer di bagian sebelumnya diaudit ulang dari barangnya. Hash aktual `tools/verify_product_detail.py` adalah `8027B676139D8EC23123F40ED55AADDF662E9EA1CAA8DB022E11EA11D495966B`; hash `DB826E...` pada laporan implementer tidak dipakai sebagai bukti. `verify_ticket02_security.py` juga lulus saat dijalankan ulang, sehingga kegagalan locator pada laporan implementer bukan kondisi final.
+
+```text
+$ python -X utf8 tools/verify_product_detail.py
+PASS verify_product_detail: editor hero-contained nonoverlap 1440/390, mobile AQUA+selected brand switch Samsung, desktop 6 brand, active nav click+keyboard+scrollspy, single visible scrollbar+bottom, grouped provenance, theme settle 350ms, sabotage, legacy/security/performance guards
+
+$ python -X utf8 tools/verify_ticket02_security.py
+LULUS browser security E2E: img-onerror/quote/javascript URL jadi teks/ditolak; stored data:image ditolak, preview lokal tidak tersimpan, marker=0, injected element/event=0, payload console error=0, PUT stale=1 tanpa retry, liveReady=false sebelum reload dan reload GET terbukti
+
+$ python -m unittest discover -s tests -p "test_*.py"
+Ran 26 tests
+OK
+
+$ python -X utf8 tools/verify_dynamic_specs.py
+LULUS: 102/102 model valid; kategori yatim 0; overwrite user 0; field lama utuh
+
+$ python -X utf8 tools/verify_spec_research.py
+LULUS: staging konsisten; exact-only merge terbukti; user lock utuh; kategori tambahan tidak yatim
+```
+
+Sabotase host dilakukan dengan memaksa pemilih mobile selalu kembali ke LG. Verifier merah pada kontrak `AQUA + SAMSUNG`, lalu kembali hijau setelah kode dipulihkan. Kontras final desktop dan mobile sama-sama `gagal=0`, scroll samping `false`, dan double scroll `false` pada `review/ticket04-contrast-1440.json` serta `review/ticket04-contrast-390.json`.
+
+Dua juri fresh terpisah meluluskan screenshot final. Juri CEO memberi Design 8,6; Originality 8,3; Craft 8,7; Function 9,1; kriteria 5 LULUS; tidak ada teks yang perlu disipitkan. Juri desainer memberi Design 8,6; Originality 8,2; Craft 8,5; Function 9,1; kriteria 5 LULUS. Temuan sisa keduanya rendah: ruang kosong saat merek belum diisi dan tab mobile yang padat tetapi tetap terbaca.
+
+Full JS API suite tetap 36/37 karena `functions/_middleware.js` yang berubah di luar tiket; kegagalan terjadi sebelum endpoint mengembalikan response pada uji unauthorized. File tersebut tidak disentuh oleh tiket 04.

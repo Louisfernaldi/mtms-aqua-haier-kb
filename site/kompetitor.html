@@ -45,6 +45,17 @@
     <span class="comp-legend-item"><span class="comp-brand-dot" style="background:#1428A0" aria-hidden="true"></span>Samsung</span>
     <span class="comp-legend-item"><span class="comp-brand-dot" style="background:#C41E3A" aria-hidden="true"></span>Sharp</span>
   </div>
+  <div class="comp-mobile-brand-picker" data-mobile-comparison-selector="true">
+    <label for="comp-mobile-brand">Bandingkan AQUA dengan</label>
+    <select id="comp-mobile-brand" class="comp-mobile-brand-select" aria-describedby="comp-mobile-brand-guide">
+      <option value="LG">LG</option>
+      <option value="MIDEA">MIDEA</option>
+      <option value="POLYTRON">POLYTRON</option>
+      <option value="SAMSUNG">SAMSUNG</option>
+      <option value="SHARP">SHARP</option>
+    </select>
+    <p id="comp-mobile-brand-guide">Pilih satu merek untuk dibandingkan dengan AQUA di semua kategori.</p>
+  </div>
   <div id="comp-categories"></div>
   <div id="comp-empty" class="comp-empty" style="display:none"><p>Tidak ada data kompetitor.</p></div>
 </main>
@@ -76,6 +87,11 @@ var CAT_LABELS={"SB":"1 Pintu","TM":"2 Pintu Top Mount","BM":"2 Pintu Freezer Ba
 var BRANDS=["LG","MIDEA","POLYTRON","SAMSUNG","SHARP"];
 var container=document.getElementById("comp-categories");
 var emptyState=document.getElementById("comp-empty");
+var mobileBrandSelect=document.getElementById("comp-mobile-brand");
+var selectedMobileBrand=mobileBrandSelect?mobileBrandSelect.value:"LG";
+var specCategoryStaticUrl=window.MTMSSpecCategories?window.MTMSSpecCategories.staticUrl:"data/spec-categories.json";
+var specCategoryLiveUrl=window.MTMSSpecCategories?window.MTMSSpecCategories.liveUrl:"api/spec-categories";
+container.setAttribute("data-category-sources",specCategoryStaticUrl+"|"+specCategoryLiveUrl);
 var compData=null;
 var catalogData=[];
 var liveReady=false;
@@ -83,6 +99,8 @@ var compSha="";
 var saveLock=window.MTMSCompetitorSaveLock.create();
 var saveBusy=false;
 var saveSequence=0;
+var specCategories=window.MTMSSpecCategories?window.MTMSSpecCategories.get():[];
+var lastDetailRequest=null;
 window.MTMS_COMPETITOR_LIVE_READY=false;
 
 function syncSaveLockState(){var state=saveLock.state();saveBusy=state.busy;saveSequence=state.sequence;}
@@ -183,6 +201,21 @@ function detailTriggerHtml(record){
     '<span class="comp-detail-label">Lihat detail</span></span></button>';
 }
 
+function comparisonSpecsHtml(record){
+  var contract=window.MTMSSpecCategories;
+  var missing=contract?contract.missingLabel:"Belum tersedia";
+  var values=record.spec_values&&typeof record.spec_values==="object"&&!Array.isArray(record.spec_values)?record.spec_values:{};
+  var categories=specCategories.filter(function(category){return category.active===true&&category.comparison===true})
+    .sort(function(a,b){return a.order-b.order||a.key.localeCompare(b.key)});
+  return '<dl class="comp-spec-list">'+categories.map(function(category){
+    var entry=values[category.key];
+    var formatted=contract?contract.formatValue(entry,category):missing;
+    var empty=formatted===missing;
+    return '<div class="comp-spec-item'+(empty?' is-missing':'')+'" data-spec-key="'+esc(category.key)+'">'+
+      '<dt>'+esc(category.label)+'</dt><dd>'+esc(formatted)+'</dd></div>';
+  }).join("")+'</dl>';
+}
+
 function findCanonical(model){
   for(var i=0;i<catalogData.length;i++)if(catalogData[i].model===model)return catalogData[i];
   return null;
@@ -220,7 +253,12 @@ function normalizeCompetitor(brand,record){
     benefit:null,
     foto:record.image||record.photo||null,
     photo_url:record.photo_url||null,
-    source_url:record.source_url||null
+    source_url:record.source_url||null,
+    model_id:record.model_id||brand+"::"+record.model,
+    spec_values:cloneData(record.spec_values||{}),
+    research_suggestions:cloneData(record.research_suggestions||[]),
+    fitur_meta:record.fitur_meta?cloneData(record.fitur_meta):null,
+    feature_suggestions:cloneData(record.feature_suggestions||[])
   };
 }
 
@@ -236,6 +274,7 @@ function fillMissingCanonical(canonical,fallback){
 }
 
 function openDetail(brand,model){
+  lastDetailRequest={brand:brand,model:model};
   if(brand==="AQUA"){
     var canonical=findCanonical(model);
     if(!canonical){showToast("Record katalog Produk belum tersedia untuk "+model,"err");return;}
@@ -245,7 +284,8 @@ function openDetail(brand,model){
       canonicalUrl:"produk.html?model="+encodeURIComponent(model),
       sourceUrl:detail.source_url,
       sourceLabel:"Sumber "+brand+" "+model,
-      photoUrl:detail.photo_url
+      photoUrl:detail.photo_url,
+      categories:specCategories
     });
     return;
   }
@@ -254,8 +294,15 @@ function openDetail(brand,model){
   var detail=normalizeCompetitor(brand,source);
   window.MTMSProductDetail.open(detail,{
     sourceUrl:detail.source_url,
-    sourceLabel:"Sumber "+brand+" "+model
+    sourceLabel:"Sumber "+brand+" "+model,
+    categories:specCategories
   });
+}
+
+function refreshOpenDetail(){
+  if(lastDetailRequest&&window.MTMSProductDetail&&window.MTMSProductDetail.isOpen()){
+    openDetail(lastDetailRequest.brand,lastDetailRequest.model);
+  }
 }
 
 function renderRow(row,catCode){
@@ -263,13 +310,14 @@ function renderRow(row,catCode){
   var html='<tr>';
   // AQUA cell
   if(aq){
-    html+='<td class="comp-cell comp-aqua">'+detailTriggerHtml(aq)+
+    html+='<td class="comp-cell comp-aqua" data-brand="AQUA" data-reference-brand="true">'+detailTriggerHtml(aq)+
+      comparisonSpecsHtml(aq)+
       '<div class="comp-row-actions">'+
       '<button class="comp-edit" data-brand="AQUA" data-model="'+esc(aq.model)+'">✎ Edit</button>'+
       '<button class="comp-del" data-brand="AQUA" data-model="'+esc(aq.model)+'">🗑 Hapus</button>'+
       '</div></td>';
   }else{
-    html+='<td class="comp-cell comp-aqua comp-empty">&mdash;</td>';
+    html+='<td class="comp-cell comp-aqua comp-empty" data-brand="AQUA" data-reference-brand="true">&mdash;</td>';
   }
   // Competitor cells
   for(var bi=0;bi<BRANDS.length;bi++){
@@ -277,17 +325,31 @@ function renderRow(row,catCode){
     var c=row.competitors[brand];
     var lk=brand.toLowerCase();
     if(c){
-      html+='<td class="comp-cell comp-'+lk+'">'+detailTriggerHtml(c)+
+      html+='<td class="comp-cell comp-'+lk+'" data-brand="'+esc(brand)+'">'+detailTriggerHtml(c)+
+        comparisonSpecsHtml(c)+
         '<div class="comp-row-actions">'+
         '<button class="comp-edit" data-brand="'+esc(c.brand)+'" data-model="'+esc(c.model)+'">✎ Edit</button>'+
         '<button class="comp-del" data-brand="'+esc(c.brand)+'" data-model="'+esc(c.model)+'">🗑 Hapus</button>'+
         '</div></td>';
     }else{
-      html+='<td class="comp-cell comp-empty"><button type="button" class="comp-add-cell" data-brand="'+esc(brand)+'" data-aqua="'+esc(aq.model)+'" data-cat="'+esc(catCode)+'">＋ Model</button></td>';
+      html+='<td class="comp-cell comp-empty" data-brand="'+esc(brand)+'"><button type="button" class="comp-add-cell" data-brand="'+esc(brand)+'" data-aqua="'+esc(aq.model)+'" data-cat="'+esc(catCode)+'">+ Tambah '+esc(brand)+'</button></td>';
     }
   }
   html+='</tr>';
   return html;
+}
+
+function applySelectedMobileBrand(){
+  var selected=BRANDS.indexOf(selectedMobileBrand)>=0?selectedMobileBrand:"LG";
+  selectedMobileBrand=selected;
+  if(mobileBrandSelect&&mobileBrandSelect.value!==selected)mobileBrandSelect.value=selected;
+  container.setAttribute("data-selected-mobile-brand",selected);
+  container.querySelectorAll("[data-brand]").forEach(function(cell){
+    var isSelected=cell.getAttribute("data-brand")===selected;
+    cell.classList.toggle("is-mobile-selected",isSelected);
+    if(isSelected)cell.setAttribute("data-selected-brand","true");
+    else cell.removeAttribute("data-selected-brand");
+  });
 }
 
 function renderAll(){
@@ -312,8 +374,8 @@ function renderAll(){
       '<p class="comp-category-count">'+rows.length+' model</p></div>'+
       '<button class="comp-add-btn" data-cat="'+esc(catCode)+'">+ Tambah Model</button></div>'+
       '<div class="comp-table-wrap"><table class="comp-full-table"><thead><tr>'+
-      '<th scope="col"><span class="comp-column-head-primary">AQUA</span><small class="comp-column-head-secondary">Referensi</small></th>'+
-      '<th scope="col">LG</th><th scope="col">Midea</th><th scope="col">Polytron</th><th scope="col">Samsung</th><th scope="col">Sharp</th>'+
+      '<th scope="col" data-brand="AQUA" data-reference-brand="true"><span class="comp-column-head-primary">AQUA</span><small class="comp-column-head-secondary">Referensi</small></th>'+
+      '<th scope="col" data-brand="LG">LG</th><th scope="col" data-brand="MIDEA">MIDEA</th><th scope="col" data-brand="POLYTRON">POLYTRON</th><th scope="col" data-brand="SAMSUNG">SAMSUNG</th><th scope="col" data-brand="SHARP">SHARP</th>'+
       '</tr></thead><tbody>';
     for(var ri=0;ri<rows.length;ri++)html+=renderRow(rows[ri],catCode);
     html+='</tbody></table></div></section>';
@@ -323,7 +385,15 @@ function renderAll(){
   container.querySelectorAll(".comp-edit,.comp-del,.comp-add-btn,.comp-add-cell").forEach(function(button){
     button.disabled=!liveReady||saveBusy;
   });
+  applySelectedMobileBrand();
   lazyLoad();
+}
+
+if(mobileBrandSelect){
+  mobileBrandSelect.addEventListener("change",function(){
+    selectedMobileBrand=mobileBrandSelect.value;
+    applySelectedMobileBrand();
+  });
 }
 
 function lazyLoad(){
@@ -685,7 +755,7 @@ function loadCatalog(){
   return fetch("api/produk").then(function(r){
     if(!r.ok)throw new Error("api "+r.status);
     return r.json();
-  }).then(function(data){catalogData=data;}).catch(function(){});
+  }).then(function(data){catalogData=data;refreshOpenDetail();}).catch(function(){});
 }
 
 function enrichCompetitor(data){
@@ -706,9 +776,19 @@ function enrichCompetitor(data){
       var proof=evidence[apiBrand+"|"+apiModel.model];
       if(!proof)continue;
       var fullFeatures=proof.fitur||proof.features||[];
-      if(fullFeatures.length)apiModel.fitur=fullFeatures.slice();
+      var featureProtected=apiModel.fitur_meta&&
+        (apiModel.fitur_meta.origin==="user"||apiModel.fitur_meta.user_locked===true);
+      if(!featureProtected&&fullFeatures.length&&(!Array.isArray(apiModel.fitur)||!apiModel.fitur.length)){
+        apiModel.fitur=fullFeatures.slice();
+      }
       ["door","source_url","price_source","image","photo","photo_url"].forEach(function(field){
-        if(proof[field]!==null&&proof[field]!==undefined&&proof[field]!=="")apiModel[field]=proof[field];
+        if((apiModel[field]===null||apiModel[field]===undefined||apiModel[field]==="")&&
+          proof[field]!==null&&proof[field]!==undefined&&proof[field]!=="")apiModel[field]=proof[field];
+      });
+      ["spec_values","research_suggestions","fitur_meta","feature_suggestions","model_id"].forEach(function(field){
+        if((apiModel[field]===null||apiModel[field]===undefined)&&proof[field]!==null&&proof[field]!==undefined){
+          apiModel[field]=cloneData(proof[field]);
+        }
       });
     }
   }
@@ -735,16 +815,27 @@ function loadData(){
       initialData: d,
       initialSha: compSha
     });
+    var specEditorTrigger=document.querySelector(".ds-editor-fab");
+    if(specEditorTrigger)specEditorTrigger.setAttribute("aria-label","Editor spesifikasi");
+    refreshOpenDetail();
     return d;
   }).catch(function(){});
 }
 catalogData=cloneData(embeddedCatalog());
 compData=enrichCompetitor(cloneData(embeddedCompetitor()));
+if(window.MTMSSpecCategories){
+  window.MTMSSpecCategories.subscribe(function(categories){
+    specCategories=categories;
+    renderAll();
+    refreshOpenDetail();
+  });
+}
 renderAll();
 if(isHttp()){
   Promise.all([loadCatalog(),loadData()]).then(function(){
     window.MTMS_COMPETITOR_LIVE_READY=liveReady;
     renderAll();
+    refreshOpenDetail();
   });
 }
 })();
