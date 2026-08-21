@@ -1,0 +1,1089 @@
+{
+  "brand": "SAMSUNG",
+  "model_count": 11,
+  "researched_at": "2026-08-21T19:51:32+07:00",
+  "records": [
+    {
+      "model_id": "SAMSUNG::RB30N4050B1_SE",
+      "brand": "SAMSUNG",
+      "model": "RB30N4050B1_SE",
+      "research_status": "unresolved",
+      "exact_match": false,
+      "checked_urls": [
+        {
+          "url": "https://www.samsung.com/id/refrigerators/bottom-mount-freezer/black-doi-rb30n4050b1-ss-315l-black-rb30n4050b1-se/",
+          "source_kind": "official_product_page",
+          "attempt": 1,
+          "outcome": "success_exact_alias",
+          "checked_at": "2026-08-21T19:51:32+07:00"
+        },
+        {
+          "url": "https://www.samsung.com/id/business/refrigerators/bottom-mount-freezer/black-doi-rb30n4050b1-ss-315l-black-rb30n4050b1-se/",
+          "source_kind": "official_business_product_page",
+          "attempt": 1,
+          "outcome": "success_exact_alias",
+          "checked_at": "2026-08-21T19:51:32+07:00"
+        }
+      ],
+      "specs": {},
+      "additional_specs": {},
+      "unresolved_core": [
+        "form_factor",
+        "door_count",
+        "freezer_position",
+        "gross_capacity_l",
+        "net_capacity_l",
+        "width_mm",
+        "height_mm",
+        "depth_mm",
+        "rated_power_w",
+        "compressor_type",
+        "cooling_system",
+        "defrost_type"
+      ],
+      "notes": [
+        "Sumber resmi terdekat menampilkan kode RB30N4050B1/SE, bukan token target RB30N4050B1_SE.",
+        "Tidak ada nilai yang disalin karena sumber resmi tidak menyatakan secara eksplisit bahwa RB30N4050B1_SE adalah alias RB30N4050B1/SE."
+      ]
+    },
+    {
+      "model_id": "SAMSUNG::RF48A4000B4_SE",
+      "brand": "SAMSUNG",
+      "model": "RF48A4000B4_SE",
+      "research_status": "unresolved",
+      "exact_match": false,
+      "checked_urls": [
+        {
+          "url": "https://www.samsung.com/id/refrigerators/french-door/rf4000tm-511l-black-rf48a4000b4-se/",
+          "source_kind": "official_product_page",
+          "attempt": 1,
+          "outcome": "success_exact_alias",
+          "checked_at": "2026-08-21T19:51:32+07:00"
+        }
+      ],
+      "specs": {},
+      "additional_specs": {},
+      "unresolved_core": [
+        "form_factor",
+        "door_count",
+        "freezer_position",
+        "gross_capacity_l",
+        "net_capacity_l",
+        "width_mm",
+        "height_mm",
+        "depth_mm",
+        "rated_power_w",
+        "compressor_type",
+        "cooling_system",
+        "defrost_type"
+      ],
+      "notes": [
+        "Sumber resmi terdekat menampilkan kode RF48A4000B4/SE, bukan token target RF48A4000B4_SE.",
+        "Tidak ada nilai yang disalin karena sumber resmi tidak menyatakan secara eksplisit bahwa RF48A4000B4_SE adalah alias RF48A4000B4/SE."
+      ]
+    },
+    {
+      "model_id": "SAMSUNG::RF65DB90B012SE",
+      "brand": "SAMSUNG",
+      "model": "RF65DB90B012SE",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        {
+          "url": "https://www.samsung.com/id/refrigerators/french-door/rf9000d-rf9000dc-t-style-french-door-beverage-center-681l-clean-white-rf65db90b012se/",
+          "source_kind": "official_product_page",
+          "attempt": 1,
+          "outcome": "success_exact_match",
+          "checked_at": "2026-08-21T19:51:32+07:00"
+        }
+      ],
+      "specs": {
+        "form_factor": {
+          "value": "French Door",
+          "raw_value": "4-Door French Door Refrigerator",
+          "source_url": "https://www.samsung.com/id/refrigerators/french-door/rf9000d-rf9000dc-t-style-french-door-beverage-center-681l-clean-white-rf65db90b012se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "door_count": {
+          "value": 4,
+          "raw_value": "4-Door French Door Refrigerator",
+          "source_url": "https://www.samsung.com/id/refrigerators/french-door/rf9000d-rf9000dc-t-style-french-door-beverage-center-681l-clean-white-rf65db90b012se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "gross_capacity_l": {
+          "value": 681,
+          "raw_value": "Gross Total(Liter) 681 L",
+          "source_url": "https://www.samsung.com/id/refrigerators/french-door/rf9000d-rf9000dc-t-style-french-door-beverage-center-681l-clean-white-rf65db90b012se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "net_capacity_l": {
+          "value": 602,
+          "raw_value": "Net Total(Liter) 602 L",
+          "source_url": "https://www.samsung.com/id/refrigerators/french-door/rf9000d-rf9000dc-t-style-french-door-beverage-center-681l-clean-white-rf65db90b012se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "width_mm": {
+          "value": 912,
+          "raw_value": "Net Width(mm) 912 mm",
+          "source_url": "https://www.samsung.com/id/refrigerators/french-door/rf9000d-rf9000dc-t-style-french-door-beverage-center-681l-clean-white-rf65db90b012se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "height_mm": {
+          "value": 1853,
+          "raw_value": "Net Case Height with Hinge(mm) 1853 mm",
+          "source_url": "https://www.samsung.com/id/refrigerators/french-door/rf9000d-rf9000dc-t-style-french-door-beverage-center-681l-clean-white-rf65db90b012se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "depth_mm": {
+          "value": 731,
+          "raw_value": "Net Depth with Door Handle(mm) 731 mm",
+          "source_url": "https://www.samsung.com/id/refrigerators/french-door/rf9000d-rf9000dc-t-style-french-door-beverage-center-681l-clean-white-rf65db90b012se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "cooling_system": {
+          "value": "Triple Cooling",
+          "raw_value": "Cooling Type Triple Cooling",
+          "source_url": "https://www.samsung.com/id/refrigerators/french-door/rf9000d-rf9000dc-t-style-french-door-beverage-center-681l-clean-white-rf65db90b012se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        }
+      },
+      "additional_specs": {
+        "door_alarm": {
+          "value": true,
+          "raw_value": "Door Alarm Yes",
+          "source_url": "https://www.samsung.com/id/refrigerators/french-door/rf9000d-rf9000dc-t-style-french-door-beverage-center-681l-clean-white-rf65db90b012se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "flexzone": {
+          "value": true,
+          "raw_value": "FlexZone™ Yes",
+          "source_url": "https://www.samsung.com/id/refrigerators/french-door/rf9000d-rf9000dc-t-style-french-door-beverage-center-681l-clean-white-rf65db90b012se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "net_weight_kg": {
+          "value": 130,
+          "raw_value": "Net Weight(kg) 130 kg",
+          "source_url": "https://www.samsung.com/id/refrigerators/french-door/rf9000d-rf9000dc-t-style-french-door-beverage-center-681l-clean-white-rf65db90b012se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "smartthings_app_support": {
+          "value": true,
+          "raw_value": "SmartThings App Support Yes",
+          "source_url": "https://www.samsung.com/id/refrigerators/french-door/rf9000d-rf9000dc-t-style-french-door-beverage-center-681l-clean-white-rf65db90b012se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        }
+      },
+      "unresolved_core": [
+        "freezer_position",
+        "rated_power_w",
+        "compressor_type",
+        "defrost_type"
+      ],
+      "notes": [
+        "Halaman menyebut kompresor ber-efisiensi tinggi tetapi tidak memberi nama tipe teknis, sehingga compressor_type tidak diisi.",
+        "Bagian Bottom Left dan Bottom Right tidak secara eksplisit memetakan posisi freezer, sehingga freezer_position tidak diisi.",
+        "Dimensi menggunakan ukuran bersih: tinggi dengan engsel dan kedalaman dengan pegangan pintu."
+      ]
+    },
+    {
+      "model_id": "SAMSUNG::RR18R1000SA_SE",
+      "brand": "SAMSUNG",
+      "model": "RR18R1000SA_SE",
+      "research_status": "unresolved",
+      "exact_match": false,
+      "checked_urls": [
+        {
+          "url": "https://www.samsung.com/id/refrigerators/one-door/176l-metal-graphite-rr18r1000sa-se/",
+          "source_kind": "official_product_page",
+          "attempt": 1,
+          "outcome": "success_exact_alias",
+          "checked_at": "2026-08-21T19:51:32+07:00"
+        }
+      ],
+      "specs": {},
+      "additional_specs": {},
+      "unresolved_core": [
+        "form_factor",
+        "door_count",
+        "freezer_position",
+        "gross_capacity_l",
+        "net_capacity_l",
+        "width_mm",
+        "height_mm",
+        "depth_mm",
+        "rated_power_w",
+        "compressor_type",
+        "cooling_system",
+        "defrost_type"
+      ],
+      "notes": [
+        "Sumber resmi terdekat menampilkan kode RR18R1000SA/SE, bukan token target RR18R1000SA_SE.",
+        "Tidak ada nilai yang disalin karena sumber resmi tidak menyatakan secara eksplisit bahwa RR18R1000SA_SE adalah alias RR18R1000SA/SE."
+      ]
+    },
+    {
+      "model_id": "SAMSUNG::RS70F65KNFSE",
+      "brand": "SAMSUNG",
+      "model": "RS70F65KNFSE",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        {
+          "url": "https://www.samsung.com/id/refrigerators/side-by-side/refrigerator-sbs-rs90f-basic-660l-black-doi-rs70f65knfse/",
+          "source_kind": "official_product_page",
+          "attempt": 1,
+          "outcome": "success_exact_match",
+          "checked_at": "2026-08-21T19:51:32+07:00"
+        }
+      ],
+      "specs": {
+        "form_factor": {
+          "value": "Side by Side",
+          "raw_value": "Bespoke AI SBS Refrigerator",
+          "source_url": "https://www.samsung.com/id/refrigerators/side-by-side/refrigerator-sbs-rs90f-basic-660l-black-doi-rs70f65knfse/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "gross_capacity_l": {
+          "value": 660,
+          "raw_value": "Gross Total(Liter) 660 ℓ",
+          "source_url": "https://www.samsung.com/id/refrigerators/side-by-side/refrigerator-sbs-rs90f-basic-660l-black-doi-rs70f65knfse/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "net_capacity_l": {
+          "value": 617,
+          "raw_value": "Net Total(Liter) 617 ℓ",
+          "source_url": "https://www.samsung.com/id/refrigerators/side-by-side/refrigerator-sbs-rs90f-basic-660l-black-doi-rs70f65knfse/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "width_mm": {
+          "value": 912,
+          "raw_value": "Net Width(mm) 912 mm",
+          "source_url": "https://www.samsung.com/id/refrigerators/side-by-side/refrigerator-sbs-rs90f-basic-660l-black-doi-rs70f65knfse/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "height_mm": {
+          "value": 1786,
+          "raw_value": "Net Case Height with Hinge(mm) 1786 mm",
+          "source_url": "https://www.samsung.com/id/refrigerators/side-by-side/refrigerator-sbs-rs90f-basic-660l-black-doi-rs70f65knfse/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "depth_mm": {
+          "value": 716,
+          "raw_value": "Net Depth with Door Handle(mm) 716 mm",
+          "source_url": "https://www.samsung.com/id/refrigerators/side-by-side/refrigerator-sbs-rs90f-basic-660l-black-doi-rs70f65knfse/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "compressor_type": {
+          "value": "AI Inverter Compressor",
+          "raw_value": "Compressor AI Inverter Compressor",
+          "source_url": "https://www.samsung.com/id/refrigerators/side-by-side/refrigerator-sbs-rs90f-basic-660l-black-doi-rs70f65knfse/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "cooling_system": {
+          "value": "Mono Cooling",
+          "raw_value": "Cooling Type Mono Cooling",
+          "source_url": "https://www.samsung.com/id/refrigerators/side-by-side/refrigerator-sbs-rs90f-basic-660l-black-doi-rs70f65knfse/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        }
+      },
+      "additional_specs": {
+        "dispenser_type": {
+          "value": "Ice and Water, non-plumbing, water tank",
+          "raw_value": "I&W Dispenser(Non Plumbing, with Water Tank)",
+          "source_url": "https://www.samsung.com/id/refrigerators/side-by-side/refrigerator-sbs-rs90f-basic-660l-black-doi-rs70f65knfse/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "gross_freezer_capacity_l": {
+          "value": 240,
+          "raw_value": "Gross for Freezer(Liter) 240 ℓ",
+          "source_url": "https://www.samsung.com/id/refrigerators/side-by-side/refrigerator-sbs-rs90f-basic-660l-black-doi-rs70f65knfse/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "gross_refrigerator_capacity_l": {
+          "value": 420,
+          "raw_value": "Gross for Fridge(Liter) 420 ℓ",
+          "source_url": "https://www.samsung.com/id/refrigerators/side-by-side/refrigerator-sbs-rs90f-basic-660l-black-doi-rs70f65knfse/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "net_freezer_capacity_l": {
+          "value": 202,
+          "raw_value": "Net for Freezer(Liter) 202 ℓ",
+          "source_url": "https://www.samsung.com/id/refrigerators/side-by-side/refrigerator-sbs-rs90f-basic-660l-black-doi-rs70f65knfse/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "net_refrigerator_capacity_l": {
+          "value": 415,
+          "raw_value": "Net for Fridge(Liter) 415 ℓ",
+          "source_url": "https://www.samsung.com/id/refrigerators/side-by-side/refrigerator-sbs-rs90f-basic-660l-black-doi-rs70f65knfse/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "refrigerant": {
+          "value": "R-600a",
+          "raw_value": "Refrigerant R-600a",
+          "source_url": "https://www.samsung.com/id/refrigerators/side-by-side/refrigerator-sbs-rs90f-basic-660l-black-doi-rs70f65knfse/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "smartthings_app_support": {
+          "value": true,
+          "raw_value": "SmartThings App Support Yes",
+          "source_url": "https://www.samsung.com/id/refrigerators/side-by-side/refrigerator-sbs-rs90f-basic-660l-black-doi-rs70f65knfse/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "wifi_embedded": {
+          "value": true,
+          "raw_value": "WiFi Embedded Yes",
+          "source_url": "https://www.samsung.com/id/refrigerators/side-by-side/refrigerator-sbs-rs90f-basic-660l-black-doi-rs70f65knfse/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        }
+      },
+      "unresolved_core": [
+        "door_count",
+        "freezer_position",
+        "rated_power_w",
+        "defrost_type"
+      ],
+      "notes": [
+        "Side by Side dipakai sebagai form factor karena tertulis eksplisit; jumlah pintu dan posisi freezer tidak dipaksakan dari istilah tersebut.",
+        "Dimensi menggunakan ukuran bersih: tinggi dengan engsel dan kedalaman dengan pegangan pintu."
+      ]
+    },
+    {
+      "model_id": "SAMSUNG::RT19M300BGS",
+      "brand": "SAMSUNG",
+      "model": "RT19M300BGS",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        {
+          "url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/top-mount-freezer-rt19m300bgs-rt19m300bgs-se/",
+          "source_kind": "official_product_page",
+          "attempt": 1,
+          "outcome": "success_exact_alias",
+          "checked_at": "2026-08-21T19:51:32+07:00"
+        },
+        {
+          "url": "https://www.samsung.com/id/business/refrigerators/top-mount-freezer/top-mount-freezer-rt19m300bgs-rt19m300bgs-se/",
+          "source_kind": "official_business_product_page",
+          "attempt": 1,
+          "outcome": "success_exact_alias",
+          "checked_at": "2026-08-21T19:51:32+07:00"
+        },
+        {
+          "url": "https://images.samsung.com/is/content/samsung/assets/id/offer/2026/4/tnc/TnC_Home_Of_Samsung_MX_CE.pdf",
+          "source_kind": "official_promotion_pdf",
+          "attempt": 1,
+          "outcome": "success_exact_alias",
+          "checked_at": "2026-08-21T19:51:32+07:00"
+        }
+      ],
+      "specs": {
+        "form_factor": {
+          "value": "Top Mount Freezer",
+          "raw_value": "Top Mounted Freezer",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/top-mount-freezer-rt19m300bgs-rt19m300bgs-se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "door_count": {
+          "value": 2,
+          "raw_value": "RT19 Kulkas 2 Pintu",
+          "source_url": "https://images.samsung.com/is/content/samsung/assets/id/offer/2026/4/tnc/TnC_Home_Of_Samsung_MX_CE.pdf",
+          "source_kind": "official_promotion_pdf",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "freezer_position": {
+          "value": "Atas",
+          "raw_value": "top-mount-freezer",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/top-mount-freezer-rt19m300bgs-rt19m300bgs-se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "gross_capacity_l": {
+          "value": 216,
+          "raw_value": "Gross Total(Liter) 216 ℓ",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/top-mount-freezer-rt19m300bgs-rt19m300bgs-se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "net_capacity_l": {
+          "value": 208,
+          "raw_value": "Net Total(Liter) 208 ℓ",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/top-mount-freezer-rt19m300bgs-rt19m300bgs-se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "width_mm": {
+          "value": 555,
+          "raw_value": "Net Dimension (WxHxD)(mm) 555 x 1,445 x 637 mm",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/top-mount-freezer-rt19m300bgs-rt19m300bgs-se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "height_mm": {
+          "value": 1445,
+          "raw_value": "Net Case Height with Hinge(mm) 1445 mm",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/top-mount-freezer-rt19m300bgs-rt19m300bgs-se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "depth_mm": {
+          "value": 637,
+          "raw_value": "Net Depth with Door Handle(mm) 637 mm",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/top-mount-freezer-rt19m300bgs-rt19m300bgs-se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "compressor_type": {
+          "value": "Digital Inverter Compressor",
+          "raw_value": "Digital Inverter Compressor",
+          "source_url": "https://www.samsung.com/id/business/refrigerators/top-mount-freezer/top-mount-freezer-rt19m300bgs-rt19m300bgs-se/",
+          "source_kind": "official_business_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "cooling_system": {
+          "value": "All-around Cooling",
+          "raw_value": "216L Refrigerator TMF All-around Cooling",
+          "source_url": "https://www.samsung.com/id/business/refrigerators/top-mount-freezer/top-mount-freezer-rt19m300bgs-rt19m300bgs-se/",
+          "source_kind": "official_business_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "defrost_type": {
+          "value": "No Frost",
+          "raw_value": "No Frost Yes",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/top-mount-freezer-rt19m300bgs-rt19m300bgs-se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        }
+      },
+      "additional_specs": {
+        "energy_star_rating": {
+          "value": "5 Star",
+          "raw_value": "Energy Star Rating 5 Star",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/top-mount-freezer-rt19m300bgs-rt19m300bgs-se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "gross_freezer_capacity_l": {
+          "value": 60,
+          "raw_value": "Gross for Freezer(Liter) 60 ℓ",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/top-mount-freezer-rt19m300bgs-rt19m300bgs-se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "gross_refrigerator_capacity_l": {
+          "value": 156,
+          "raw_value": "Gross for Refrigerator(Liter) 156 ℓ",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/top-mount-freezer-rt19m300bgs-rt19m300bgs-se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "net_freezer_capacity_l": {
+          "value": 53,
+          "raw_value": "Net for Freezer(Liter) 53 ℓ",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/top-mount-freezer-rt19m300bgs-rt19m300bgs-se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "net_refrigerator_capacity_l": {
+          "value": 150,
+          "raw_value": "Net for Refrigerator(Liter) 150 ℓ",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/top-mount-freezer-rt19m300bgs-rt19m300bgs-se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "refrigerant": {
+          "value": "R-600a",
+          "raw_value": "Refrigerant R-600a",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/top-mount-freezer-rt19m300bgs-rt19m300bgs-se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        }
+      },
+      "unresolved_core": [
+        "rated_power_w"
+      ],
+      "notes": [
+        "Kode resmi pada halaman adalah RT19M300BGS/SE; target menyimpan kode dasar tanpa suffix pasar.",
+        "Daya listrik terukur tidak ditemukan; klaim hemat energi dan rating bintang tidak dipetakan menjadi watt.",
+        "Dimensi menggunakan ukuran bersih: tinggi dengan engsel dan kedalaman dengan pegangan pintu."
+      ]
+    },
+    {
+      "model_id": "SAMSUNG::RT22FARBDBB1",
+      "brand": "SAMSUNG",
+      "model": "RT22FARBDBB1",
+      "research_status": "unresolved",
+      "exact_match": false,
+      "checked_urls": [
+        {
+          "url": "https://www.samsung.com/id/business/refrigerators/top-mount-freezer/234l-black-rt22farbdb1-se-rt22farbdb1-se/",
+          "source_kind": "official_business_product_page",
+          "attempt": 1,
+          "outcome": "success_model_mismatch",
+          "checked_at": "2026-08-21T19:51:32+07:00"
+        }
+      ],
+      "specs": {},
+      "additional_specs": {},
+      "unresolved_core": [
+        "form_factor",
+        "door_count",
+        "freezer_position",
+        "gross_capacity_l",
+        "net_capacity_l",
+        "width_mm",
+        "height_mm",
+        "depth_mm",
+        "rated_power_w",
+        "compressor_type",
+        "cooling_system",
+        "defrost_type"
+      ],
+      "notes": [
+        "Source URL berhasil dibuka tetapi menyebut kode resmi RT22FARBDB1/SE, bukan target RT22FARBDBB1.",
+        "Pencarian exact target tidak menemukan sumber yang secara eksplisit menyatakan target sebagai alias RT22FARBDB1/SE.",
+        "Tidak ada nilai produk yang disalin dari model berbeda tersebut."
+      ]
+    },
+    {
+      "model_id": "SAMSUNG::RT25FARBDB1_SE",
+      "brand": "SAMSUNG",
+      "model": "RT25FARBDB1_SE",
+      "research_status": "unresolved",
+      "exact_match": false,
+      "checked_urls": [
+        {
+          "url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/digital-inverter-234l-black-rt25farbdb1-se/",
+          "source_kind": "official_product_page",
+          "attempt": 1,
+          "outcome": "success_exact_alias",
+          "checked_at": "2026-08-21T19:51:32+07:00"
+        },
+        {
+          "url": "https://www.samsung.com/id/business/refrigerators/top-mount-freezer/255l-black-rt25farbdb1-se-rt25farbdb1-se/",
+          "source_kind": "official_business_product_page",
+          "attempt": 1,
+          "outcome": "success_exact_alias",
+          "checked_at": "2026-08-21T19:51:32+07:00"
+        }
+      ],
+      "specs": {},
+      "additional_specs": {},
+      "unresolved_core": [
+        "form_factor",
+        "door_count",
+        "freezer_position",
+        "gross_capacity_l",
+        "net_capacity_l",
+        "width_mm",
+        "height_mm",
+        "depth_mm",
+        "rated_power_w",
+        "compressor_type",
+        "cooling_system",
+        "defrost_type"
+      ],
+      "notes": [
+        "Sumber resmi terdekat menampilkan kode RT25FARBDB1/SE, bukan token target RT25FARBDB1_SE.",
+        "Tidak ada nilai yang disalin karena sumber resmi tidak menyatakan secara eksplisit bahwa RT25FARBDB1_SE adalah alias RT25FARBDB1/SE."
+      ]
+    },
+    {
+      "model_id": "SAMSUNG::RT35CG5420B1SE",
+      "brand": "SAMSUNG",
+      "model": "RT35CG5420B1SE",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        {
+          "url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt5300c-top-mount-freezer-spacemax-348l-black-rt35cg5420b1se/",
+          "source_kind": "official_product_page",
+          "attempt": 1,
+          "outcome": "success_exact_match",
+          "checked_at": "2026-08-21T19:51:32+07:00"
+        }
+      ],
+      "specs": {
+        "form_factor": {
+          "value": "Top Mount Freezer",
+          "raw_value": "Top freezer Refrigerator",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt5300c-top-mount-freezer-spacemax-348l-black-rt35cg5420b1se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "door_count": {
+          "value": 2,
+          "raw_value": "Kulkas 2 Pintu",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt5300c-top-mount-freezer-spacemax-348l-black-rt35cg5420b1se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "freezer_position": {
+          "value": "Atas",
+          "raw_value": "top-mount-freezer",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt5300c-top-mount-freezer-spacemax-348l-black-rt35cg5420b1se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "net_capacity_l": {
+          "value": 348,
+          "raw_value": "Net Total(Liter) 348 ℓ",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt5300c-top-mount-freezer-spacemax-348l-black-rt35cg5420b1se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "width_mm": {
+          "value": 600,
+          "raw_value": "Net Dimension (WxHxD)(mm) 600 * 1715 * 709 mm",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt5300c-top-mount-freezer-spacemax-348l-black-rt35cg5420b1se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "height_mm": {
+          "value": 1715,
+          "raw_value": "Net Dimension (WxHxD)(mm) 600 * 1715 * 709 mm",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt5300c-top-mount-freezer-spacemax-348l-black-rt35cg5420b1se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "depth_mm": {
+          "value": 709,
+          "raw_value": "Net Dimension (WxHxD)(mm) 600 * 1715 * 709 mm",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt5300c-top-mount-freezer-spacemax-348l-black-rt35cg5420b1se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "compressor_type": {
+          "value": "Digital Inverter Compressor",
+          "raw_value": "Compressor Digital Inverter Compressor",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt5300c-top-mount-freezer-spacemax-348l-black-rt35cg5420b1se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "cooling_system": {
+          "value": "Mono Cooling",
+          "raw_value": "Cooling Type Mono Cooling",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt5300c-top-mount-freezer-spacemax-348l-black-rt35cg5420b1se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "defrost_type": {
+          "value": "No Frost",
+          "raw_value": "No Frost Yes",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt5300c-top-mount-freezer-spacemax-348l-black-rt35cg5420b1se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        }
+      },
+      "additional_specs": {
+        "active_fresh_filter": {
+          "value": false,
+          "raw_value": "Active Fresh Filter No",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt5300c-top-mount-freezer-spacemax-348l-black-rt35cg5420b1se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "net_freezer_capacity_l": {
+          "value": 80,
+          "raw_value": "Net for Freezer(Liter) 80 ℓ",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt5300c-top-mount-freezer-spacemax-348l-black-rt35cg5420b1se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "net_refrigerator_capacity_l": {
+          "value": 268,
+          "raw_value": "Net for Fridge(Liter) 268 ℓ",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt5300c-top-mount-freezer-spacemax-348l-black-rt35cg5420b1se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "net_weight_kg": {
+          "value": 55.5,
+          "raw_value": "Net Weight(kg) 55.5 kg",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt5300c-top-mount-freezer-spacemax-348l-black-rt35cg5420b1se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "optimal_fresh_zone": {
+          "value": true,
+          "raw_value": "Optimal Fresh Zone Yes",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt5300c-top-mount-freezer-spacemax-348l-black-rt35cg5420b1se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "refrigerant": {
+          "value": "R-600a",
+          "raw_value": "Refrigerant R-600a",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt5300c-top-mount-freezer-spacemax-348l-black-rt35cg5420b1se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "wifi_embedded": {
+          "value": false,
+          "raw_value": "WiFi Embedded No",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt5300c-top-mount-freezer-spacemax-348l-black-rt35cg5420b1se/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        }
+      },
+      "unresolved_core": [
+        "gross_capacity_l",
+        "rated_power_w"
+      ],
+      "notes": [
+        "Kapasitas 348L pada spesifikasi resmi berlabel net; tidak ada Gross Total pada halaman yang diperiksa.",
+        "Dimensi memakai urutan resmi Net Dimension (W x H x D)."
+      ]
+    },
+    {
+      "model_id": "SAMSUNG::RT42CG6420B1SE",
+      "brand": "SAMSUNG",
+      "model": "RT42CG6420B1SE",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        {
+          "url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-optimal-fresh-and-space-max-425l-black-rt42cg6420b1se/",
+          "source_kind": "official_product_page",
+          "attempt": 1,
+          "outcome": "transport_error",
+          "checked_at": "2026-08-21T19:51:32+07:00"
+        },
+        {
+          "url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-optimal-fresh-and-space-max-425l-black-rt42cg6420b1se/",
+          "source_kind": "official_product_page",
+          "attempt": 2,
+          "outcome": "transport_error",
+          "checked_at": "2026-08-21T19:51:32+07:00"
+        },
+        {
+          "url": "https://www.samsung.com/id/business/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-optimal-fresh-and-space-max-425l-black-rt42cg6420b1se/",
+          "source_kind": "official_business_product_page",
+          "attempt": 1,
+          "outcome": "success_exact_match",
+          "checked_at": "2026-08-21T19:51:32+07:00"
+        }
+      ],
+      "specs": {
+        "form_factor": {
+          "value": "Top Mount Freezer",
+          "raw_value": "top-mount-freezer",
+          "source_url": "https://www.samsung.com/id/business/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-optimal-fresh-and-space-max-425l-black-rt42cg6420b1se/",
+          "source_kind": "official_business_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "door_count": {
+          "value": 2,
+          "raw_value": "RT42 Kulkas 2 Pintu",
+          "source_url": "https://www.samsung.com/id/business/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-optimal-fresh-and-space-max-425l-black-rt42cg6420b1se/",
+          "source_kind": "official_business_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "freezer_position": {
+          "value": "Atas",
+          "raw_value": "top-mount-freezer",
+          "source_url": "https://www.samsung.com/id/business/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-optimal-fresh-and-space-max-425l-black-rt42cg6420b1se/",
+          "source_kind": "official_business_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "net_capacity_l": {
+          "value": 415,
+          "raw_value": "Net Total(Liter) 415 ℓ",
+          "source_url": "https://www.samsung.com/id/business/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-optimal-fresh-and-space-max-425l-black-rt42cg6420b1se/",
+          "source_kind": "official_business_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "width_mm": {
+          "value": 700,
+          "raw_value": "Net Dimension (WxHxD)(mm) 700 * 1785 * 672 mm",
+          "source_url": "https://www.samsung.com/id/business/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-optimal-fresh-and-space-max-425l-black-rt42cg6420b1se/",
+          "source_kind": "official_business_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "height_mm": {
+          "value": 1785,
+          "raw_value": "Net Dimension (WxHxD)(mm) 700 * 1785 * 672 mm",
+          "source_url": "https://www.samsung.com/id/business/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-optimal-fresh-and-space-max-425l-black-rt42cg6420b1se/",
+          "source_kind": "official_business_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "depth_mm": {
+          "value": 672,
+          "raw_value": "Net Dimension (WxHxD)(mm) 700 * 1785 * 672 mm",
+          "source_url": "https://www.samsung.com/id/business/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-optimal-fresh-and-space-max-425l-black-rt42cg6420b1se/",
+          "source_kind": "official_business_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "compressor_type": {
+          "value": "Digital Inverter Compressor",
+          "raw_value": "Compressor Digital Inverter Compressor",
+          "source_url": "https://www.samsung.com/id/business/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-optimal-fresh-and-space-max-425l-black-rt42cg6420b1se/",
+          "source_kind": "official_business_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "cooling_system": {
+          "value": "Mono Cooling",
+          "raw_value": "Cooling Type Mono Cooling",
+          "source_url": "https://www.samsung.com/id/business/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-optimal-fresh-and-space-max-425l-black-rt42cg6420b1se/",
+          "source_kind": "official_business_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "defrost_type": {
+          "value": "No Frost",
+          "raw_value": "No Frost Yes",
+          "source_url": "https://www.samsung.com/id/business/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-optimal-fresh-and-space-max-425l-black-rt42cg6420b1se/",
+          "source_kind": "official_business_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        }
+      },
+      "additional_specs": {
+        "active_fresh_filter": {
+          "value": false,
+          "raw_value": "Active Fresh Filter No",
+          "source_url": "https://www.samsung.com/id/business/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-optimal-fresh-and-space-max-425l-black-rt42cg6420b1se/",
+          "source_kind": "official_business_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "net_freezer_capacity_l": {
+          "value": 98,
+          "raw_value": "Net for Freezer(Liter) 98 ℓ",
+          "source_url": "https://www.samsung.com/id/business/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-optimal-fresh-and-space-max-425l-black-rt42cg6420b1se/",
+          "source_kind": "official_business_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "net_refrigerator_capacity_l": {
+          "value": 317,
+          "raw_value": "Net for Fridge(Liter) 317 ℓ",
+          "source_url": "https://www.samsung.com/id/business/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-optimal-fresh-and-space-max-425l-black-rt42cg6420b1se/",
+          "source_kind": "official_business_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "net_weight_kg": {
+          "value": 59,
+          "raw_value": "Net Weight(kg) 59 kg",
+          "source_url": "https://www.samsung.com/id/business/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-optimal-fresh-and-space-max-425l-black-rt42cg6420b1se/",
+          "source_kind": "official_business_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "optimal_fresh_zone": {
+          "value": true,
+          "raw_value": "Optimal Fresh Zone Yes",
+          "source_url": "https://www.samsung.com/id/business/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-optimal-fresh-and-space-max-425l-black-rt42cg6420b1se/",
+          "source_kind": "official_business_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "refrigerant": {
+          "value": "R-600a",
+          "raw_value": "Refrigerant R-600a",
+          "source_url": "https://www.samsung.com/id/business/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-optimal-fresh-and-space-max-425l-black-rt42cg6420b1se/",
+          "source_kind": "official_business_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "wifi_embedded": {
+          "value": false,
+          "raw_value": "WiFi Embedded No",
+          "source_url": "https://www.samsung.com/id/business/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-optimal-fresh-and-space-max-425l-black-rt42cg6420b1se/",
+          "source_kind": "official_business_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        }
+      },
+      "unresolved_core": [
+        "gross_capacity_l",
+        "rated_power_w"
+      ],
+      "notes": [
+        "URL awal gagal diambil dua kali; nilai berasal dari halaman bisnis resmi yang cocok exact.",
+        "Angka 425L hanya muncul pada slug URL dan tidak berlabel gross atau net; karena itu tidak dipetakan ke gross_capacity_l.",
+        "Dimensi memakai urutan resmi Net Dimension (W x H x D)."
+      ]
+    },
+    {
+      "model_id": "SAMSUNG::RT47CB66228JSE",
+      "brand": "SAMSUNG",
+      "model": "RT47CB66228JSE",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        {
+          "url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-bespoke-design-476l-rt47cb66228jse/",
+          "source_kind": "official_product_page",
+          "attempt": 1,
+          "outcome": "success_exact_match",
+          "checked_at": "2026-08-21T19:51:32+07:00"
+        },
+        {
+          "url": "https://images.samsung.com/is/content/samsung/assets/id/offer/2023/07/tnc/Estore_TnC_Back_to_School_v1.pdf",
+          "source_kind": "official_promotion_pdf",
+          "attempt": 1,
+          "outcome": "success_exact_match",
+          "checked_at": "2026-08-21T19:51:32+07:00"
+        }
+      ],
+      "specs": {
+        "form_factor": {
+          "value": "Top Mount Freezer",
+          "raw_value": "Bespoke TMF Refrigerator",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-bespoke-design-476l-rt47cb66228jse/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "door_count": {
+          "value": 2,
+          "raw_value": "RT47 Kulkas BESPOKE 2 Pintu",
+          "source_url": "https://images.samsung.com/is/content/samsung/assets/id/offer/2023/07/tnc/Estore_TnC_Back_to_School_v1.pdf",
+          "source_kind": "official_promotion_pdf",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "freezer_position": {
+          "value": "Atas",
+          "raw_value": "top-mount-freezer",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-bespoke-design-476l-rt47cb66228jse/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "gross_capacity_l": {
+          "value": 476,
+          "raw_value": "Gross Total(Liter) 476 ℓ",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-bespoke-design-476l-rt47cb66228jse/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "net_capacity_l": {
+          "value": 465,
+          "raw_value": "Net Total(Liter) 465 ℓ",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-bespoke-design-476l-rt47cb66228jse/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "width_mm": {
+          "value": 700,
+          "raw_value": "Net Dimension (WxHxD)(mm) 700 * 1825 * 717 mm",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-bespoke-design-476l-rt47cb66228jse/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "height_mm": {
+          "value": 1825,
+          "raw_value": "Net Dimension (WxHxD)(mm) 700 * 1825 * 717 mm",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-bespoke-design-476l-rt47cb66228jse/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "depth_mm": {
+          "value": 717,
+          "raw_value": "Net Dimension (WxHxD)(mm) 700 * 1825 * 717 mm",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-bespoke-design-476l-rt47cb66228jse/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "compressor_type": {
+          "value": "Digital Inverter Compressor",
+          "raw_value": "Compressor Digital Inverter Compressor",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-bespoke-design-476l-rt47cb66228jse/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "cooling_system": {
+          "value": "Mono Cooling",
+          "raw_value": "Cooling Type Mono Cooling",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-bespoke-design-476l-rt47cb66228jse/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "defrost_type": {
+          "value": "No Frost",
+          "raw_value": "No Frost Yes",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-bespoke-design-476l-rt47cb66228jse/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        }
+      },
+      "additional_specs": {
+        "active_fresh_filter": {
+          "value": false,
+          "raw_value": "Active Fresh Filter No",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-bespoke-design-476l-rt47cb66228jse/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "net_freezer_capacity_l": {
+          "value": 108,
+          "raw_value": "Net for Freezer(Liter) 108 ℓ",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-bespoke-design-476l-rt47cb66228jse/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "net_refrigerator_capacity_l": {
+          "value": 357,
+          "raw_value": "Net for Fridge(Liter) 357 ℓ",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-bespoke-design-476l-rt47cb66228jse/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "net_weight_kg": {
+          "value": 68.5,
+          "raw_value": "Net Weight(kg) 68.5 kg",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-bespoke-design-476l-rt47cb66228jse/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "optimal_fresh_zone": {
+          "value": true,
+          "raw_value": "Optimal Fresh Zone Yes",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-bespoke-design-476l-rt47cb66228jse/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "refrigerant": {
+          "value": "R-600a",
+          "raw_value": "Refrigerant R-600a",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-bespoke-design-476l-rt47cb66228jse/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        },
+        "wifi_embedded": {
+          "value": true,
+          "raw_value": "WiFi Embedded Yes",
+          "source_url": "https://www.samsung.com/id/refrigerators/top-mount-freezer/rt6300c-top-mount-freezer-bespoke-design-476l-rt47cb66228jse/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:51:32+07:00"
+        }
+      },
+      "unresolved_core": [
+        "rated_power_w"
+      ],
+      "notes": [
+        "Nama fitur Bespoke, Ungkep Compartment, dan Optimal Fresh tidak dipetakan ke kategori inti selain yang punya field teknis eksplisit.",
+        "Dimensi memakai urutan resmi Net Dimension (W x H x D)."
+      ]
+    }
+  ]
+}

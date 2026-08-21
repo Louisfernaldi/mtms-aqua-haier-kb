@@ -1,0 +1,150 @@
+{
+  "brand": "MIDEA",
+  "model_count": 7,
+  "researched_at": "2026-08-21T19:48:07+07:00",
+  "records": [
+    {
+      "model_id": "MIDEA::MDRF550FGF28ID",
+      "brand": "MIDEA",
+      "model": "MDRF550FGF28ID",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": ["https://www.midea.com/id/refrigerators/fridge/multi-door/midea-407-l-platinum-fresh-multi-door-refrigerator-mdrf550fgf28id.mdrf550fgf28id"],
+      "specs": {
+        "form_factor": {"value": "Multi Pintu", "raw_value": "Kategori Multi Door", "source_url": "https://www.midea.com/id/refrigerators/fridge/multi-door/midea-407-l-platinum-fresh-multi-door-refrigerator-mdrf550fgf28id.mdrf550fgf28id", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "width_mm": {"value": 753, "raw_value": "Dimensi (WxDxH) mm 753x610x1780", "source_url": "https://www.midea.com/id/refrigerators/fridge/multi-door/midea-407-l-platinum-fresh-multi-door-refrigerator-mdrf550fgf28id.mdrf550fgf28id", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "height_mm": {"value": 1780, "raw_value": "Dimensi (WxDxH) mm 753x610x1780", "source_url": "https://www.midea.com/id/refrigerators/fridge/multi-door/midea-407-l-platinum-fresh-multi-door-refrigerator-mdrf550fgf28id.mdrf550fgf28id", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "depth_mm": {"value": 610, "raw_value": "Dimensi (WxDxH) mm 753x610x1780", "source_url": "https://www.midea.com/id/refrigerators/fridge/multi-door/midea-407-l-platinum-fresh-multi-door-refrigerator-mdrf550fgf28id.mdrf550fgf28id", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "rated_power_w": {"value": 170, "raw_value": "Daya Listrik 170 W", "source_url": "https://www.midea.com/id/refrigerators/fridge/multi-door/midea-407-l-platinum-fresh-multi-door-refrigerator-mdrf550fgf28id.mdrf550fgf28id", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "compressor_type": {"value": "Inverter", "raw_value": "Kompresor Inverter", "source_url": "https://www.midea.com/id/refrigerators/fridge/multi-door/midea-407-l-platinum-fresh-multi-door-refrigerator-mdrf550fgf28id.mdrf550fgf28id", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"}
+      },
+      "additional_specs": {
+        "capacity_unlabelled_l": {"value": 407, "raw_value": "Kapasitas 407 L", "source_url": "https://www.midea.com/id/refrigerators/fridge/multi-door/midea-407-l-platinum-fresh-multi-door-refrigerator-mdrf550fgf28id.mdrf550fgf28id", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "compressor_warranty": {"value": "12 tahun", "raw_value": "Garansi 12 Tahun Garansi Kompresor", "source_url": "https://www.midea.com/id/refrigerators/fridge/multi-door/midea-407-l-platinum-fresh-multi-door-refrigerator-mdrf550fgf28id.mdrf550fgf28id", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"}
+      },
+      "unresolved_core": ["door_count", "freezer_position", "gross_capacity_l", "net_capacity_l", "cooling_system", "defrost_type"],
+      "notes": ["Official page names the model exactly.", "Capacity is not labelled gross or net and is therefore not mapped to either core capacity field.", "Multi Air Flow is retained as a marketing feature, not promoted to a technical cooling-system equivalence."]
+    },
+    {
+      "model_id": "MIDEA::MDRS710FGF28ID",
+      "brand": "MIDEA",
+      "model": "MDRS710FGF28ID",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": ["https://web.archive.org/web/20260309031926/https://www.midea.com/id/refrigerators/fridge/side-by-side/midea-548-l-large-capacity-side-by-side-refrigerator-mdrs710fgf28id.mdrs710fgf28id"],
+      "specs": {
+        "form_factor": {"value": "Side by Side", "raw_value": "Kategori Side by Side", "source_url": "https://web.archive.org/web/20260309031926/https://www.midea.com/id/refrigerators/fridge/side-by-side/midea-548-l-large-capacity-side-by-side-refrigerator-mdrs710fgf28id.mdrs710fgf28id", "source_kind": "official_archive", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "rated_power_w": {"value": 145, "raw_value": "Daya Listrik 145 W", "source_url": "https://web.archive.org/web/20260309031926/https://www.midea.com/id/refrigerators/fridge/side-by-side/midea-548-l-large-capacity-side-by-side-refrigerator-mdrs710fgf28id.mdrs710fgf28id", "source_kind": "official_archive", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "compressor_type": {"value": "Inverter Quattro", "raw_value": "Teknologi kompresor dan kipas ... Inverter Quattro", "source_url": "https://web.archive.org/web/20260309031926/https://www.midea.com/id/refrigerators/fridge/side-by-side/midea-548-l-large-capacity-side-by-side-refrigerator-mdrs710fgf28id.mdrs710fgf28id", "source_kind": "official_archive", "verified_at": "2026-08-21T19:48:07+07:00"}
+      },
+      "additional_specs": {
+        "capacity_unlabelled_l": {"value": 548, "raw_value": "Kapasitas 548 L", "source_url": "https://web.archive.org/web/20260309031926/https://www.midea.com/id/refrigerators/fridge/side-by-side/midea-548-l-large-capacity-side-by-side-refrigerator-mdrs710fgf28id.mdrs710fgf28id", "source_kind": "official_archive", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "dimensions_unlabelled": {"value": "897 x 706 x 1765 mm", "raw_value": "Dimensi 897 x 706 x 1765", "source_url": "https://web.archive.org/web/20260309031926/https://www.midea.com/id/refrigerators/fridge/side-by-side/midea-548-l-large-capacity-side-by-side-refrigerator-mdrs710fgf28id.mdrs710fgf28id", "source_kind": "official_archive", "verified_at": "2026-08-21T19:48:07+07:00"}
+      },
+      "unresolved_core": ["door_count", "freezer_position", "gross_capacity_l", "net_capacity_l", "width_mm", "height_mm", "depth_mm", "cooling_system", "defrost_type"],
+      "notes": ["Exact official Indonesian product page was recovered through the Wayback Machine.", "Dimension order is not labelled on the archived page, so width, depth, and height remain unresolved.", "Capacity is unlabelled and Multi Air Flow is not treated as a technical cooling-system equivalence."]
+    },
+    {
+      "model_id": "MIDEA::MDRT345MTB30",
+      "brand": "MIDEA",
+      "model": "MDRT345MTB30",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": ["https://www.midea.com/id/refrigerators/fridge/2-door/midea-236-l-multi-air-flow-meet-2-door-refrigerator-mdrt345mtb30.mdrt345mtb30"],
+      "specs": {
+        "form_factor": {"value": "2 Pintu", "raw_value": "Kategori 2 Pintu", "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-236-l-multi-air-flow-meet-2-door-refrigerator-mdrt345mtb30.mdrt345mtb30", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "door_count": {"value": 2, "raw_value": "Kategori 2 Pintu", "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-236-l-multi-air-flow-meet-2-door-refrigerator-mdrt345mtb30.mdrt345mtb30", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "width_mm": {"value": 546, "raw_value": "Dimensi (WxDxH) mm 546x610x1522", "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-236-l-multi-air-flow-meet-2-door-refrigerator-mdrt345mtb30.mdrt345mtb30", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "height_mm": {"value": 1522, "raw_value": "Dimensi (WxDxH) mm 546x610x1522", "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-236-l-multi-air-flow-meet-2-door-refrigerator-mdrt345mtb30.mdrt345mtb30", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "depth_mm": {"value": 610, "raw_value": "Dimensi (WxDxH) mm 546x610x1522", "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-236-l-multi-air-flow-meet-2-door-refrigerator-mdrt345mtb30.mdrt345mtb30", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "rated_power_w": {"value": 95, "raw_value": "Daya Listrik 95 W", "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-236-l-multi-air-flow-meet-2-door-refrigerator-mdrt345mtb30.mdrt345mtb30", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "compressor_type": {"value": "Non-Inverter", "raw_value": "Kompresor Non-Inverter", "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-236-l-multi-air-flow-meet-2-door-refrigerator-mdrt345mtb30.mdrt345mtb30", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"}
+      },
+      "additional_specs": {"capacity_unlabelled_l": {"value": 236, "raw_value": "Kapasitas 236 L", "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-236-l-multi-air-flow-meet-2-door-refrigerator-mdrt345mtb30.mdrt345mtb30", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"}},
+      "unresolved_core": ["freezer_position", "gross_capacity_l", "net_capacity_l", "cooling_system", "defrost_type"],
+      "notes": ["Official page names the exact model.", "Capacity is unlabelled; Multi Air-Flow is not promoted to cooling_system."]
+    },
+    {
+      "model_id": "MIDEA::MDRT385MTB30",
+      "brand": "MIDEA",
+      "model": "MDRT385MTB30",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": ["https://www.midea.com/id/refrigerators/fridge/2-door/midea-266-l-multi-air-flow-meet-2-door-refrigerator-mdrt385mtb30.mdrt385mtb30"],
+      "specs": {
+        "form_factor": {"value": "2 Pintu", "raw_value": "Kategori 2 Pintu", "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-266-l-multi-air-flow-meet-2-door-refrigerator-mdrt385mtb30.mdrt385mtb30", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "door_count": {"value": 2, "raw_value": "Kategori 2 Pintu", "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-266-l-multi-air-flow-meet-2-door-refrigerator-mdrt385mtb30.mdrt385mtb30", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "width_mm": {"value": 546, "raw_value": "Dimensi (WxDxH) mm 546x610x1657", "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-266-l-multi-air-flow-meet-2-door-refrigerator-mdrt385mtb30.mdrt385mtb30", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "height_mm": {"value": 1657, "raw_value": "Dimensi (WxDxH) mm 546x610x1657", "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-266-l-multi-air-flow-meet-2-door-refrigerator-mdrt385mtb30.mdrt385mtb30", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "depth_mm": {"value": 610, "raw_value": "Dimensi (WxDxH) mm 546x610x1657", "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-266-l-multi-air-flow-meet-2-door-refrigerator-mdrt385mtb30.mdrt385mtb30", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "rated_power_w": {"value": 115, "raw_value": "Daya Listrik 115 W", "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-266-l-multi-air-flow-meet-2-door-refrigerator-mdrt385mtb30.mdrt385mtb30", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "compressor_type": {"value": "Non-Inverter", "raw_value": "Kompresor Non-Inverter", "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-266-l-multi-air-flow-meet-2-door-refrigerator-mdrt385mtb30.mdrt385mtb30", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"}
+      },
+      "additional_specs": {"capacity_unlabelled_l": {"value": 266, "raw_value": "Kapasitas 266 L", "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-266-l-multi-air-flow-meet-2-door-refrigerator-mdrt385mtb30.mdrt385mtb30", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"}},
+      "unresolved_core": ["freezer_position", "gross_capacity_l", "net_capacity_l", "cooling_system", "defrost_type"],
+      "notes": ["Official page names the exact model.", "Capacity is unlabelled; Multi Air-Flow is not promoted to cooling_system."]
+    },
+    {
+      "model_id": "MIDEA::MDRT611EVD28ID",
+      "brand": "MIDEA",
+      "model": "MDRT611EVD28ID",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": ["https://www.midea.com/id/refrigerators/fridge/2-door/midea-473-l-big-capacity-everest-2-door-refrigerator-mdrt611evd28id.mdrt611evd28id"],
+      "specs": {
+        "form_factor": {"value": "2 Pintu", "raw_value": "Kategori 2 Pintu", "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-473-l-big-capacity-everest-2-door-refrigerator-mdrt611evd28id.mdrt611evd28id", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "door_count": {"value": 2, "raw_value": "Kategori 2 Pintu", "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-473-l-big-capacity-everest-2-door-refrigerator-mdrt611evd28id.mdrt611evd28id", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "width_mm": {"value": 700, "raw_value": "Dimensi (WxDxH) mm 700x714x1720", "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-473-l-big-capacity-everest-2-door-refrigerator-mdrt611evd28id.mdrt611evd28id", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "height_mm": {"value": 1720, "raw_value": "Dimensi (WxDxH) mm 700x714x1720", "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-473-l-big-capacity-everest-2-door-refrigerator-mdrt611evd28id.mdrt611evd28id", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "depth_mm": {"value": 714, "raw_value": "Dimensi (WxDxH) mm 700x714x1720", "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-473-l-big-capacity-everest-2-door-refrigerator-mdrt611evd28id.mdrt611evd28id", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "rated_power_w": {"value": 180, "raw_value": "Daya Listrik 180 W", "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-473-l-big-capacity-everest-2-door-refrigerator-mdrt611evd28id.mdrt611evd28id", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "compressor_type": {"value": "Inverter", "raw_value": "Kompresor Inverter", "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-473-l-big-capacity-everest-2-door-refrigerator-mdrt611evd28id.mdrt611evd28id", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "defrost_type": {"value": "No Frost", "raw_value": "Tanpa Bunga Es ... mencegah penumpukan es di freezer", "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-473-l-big-capacity-everest-2-door-refrigerator-mdrt611evd28id.mdrt611evd28id", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"}
+      },
+      "additional_specs": {"capacity_unlabelled_l": {"value": 473, "raw_value": "Kapasitas 473 L; Freezer 128 Liter; Chiller 345 Liter", "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-473-l-big-capacity-everest-2-door-refrigerator-mdrt611evd28id.mdrt611evd28id", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"}},
+      "unresolved_core": ["freezer_position", "gross_capacity_l", "net_capacity_l", "cooling_system"],
+      "notes": ["Official page names the exact model.", "Capacity is unlabelled gross/net; compartment figures are preserved only in raw_value."]
+    },
+    {
+      "model_id": "MIDEA::MDRT611EVD50ID",
+      "brand": "MIDEA",
+      "model": "MDRT611EVD50ID",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": ["https://www.midea.com/id/refrigerators/fridge/2-door/midea-473-l-big-capacity-everest-2-door-refrigerator-mdrt611evd50id.mdrt611evd50id"],
+      "specs": {
+        "form_factor": {"value": "2 Pintu", "raw_value": "Kategori 2 Pintu", "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-473-l-big-capacity-everest-2-door-refrigerator-mdrt611evd50id.mdrt611evd50id", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "door_count": {"value": 2, "raw_value": "Kategori 2 Pintu", "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-473-l-big-capacity-everest-2-door-refrigerator-mdrt611evd50id.mdrt611evd50id", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "width_mm": {"value": 700, "raw_value": "Dimensi (WxDxH) mm 700x714x1720", "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-473-l-big-capacity-everest-2-door-refrigerator-mdrt611evd50id.mdrt611evd50id", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "height_mm": {"value": 1720, "raw_value": "Dimensi (WxDxH) mm 700x714x1720", "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-473-l-big-capacity-everest-2-door-refrigerator-mdrt611evd50id.mdrt611evd50id", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "depth_mm": {"value": 714, "raw_value": "Dimensi (WxDxH) mm 700x714x1720", "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-473-l-big-capacity-everest-2-door-refrigerator-mdrt611evd50id.mdrt611evd50id", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "rated_power_w": {"value": 180, "raw_value": "Daya Listrik 180 W", "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-473-l-big-capacity-everest-2-door-refrigerator-mdrt611evd50id.mdrt611evd50id", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "compressor_type": {"value": "Inverter", "raw_value": "Kompresor Inverter", "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-473-l-big-capacity-everest-2-door-refrigerator-mdrt611evd50id.mdrt611evd50id", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "defrost_type": {"value": "No Frost", "raw_value": "Tanpa Bunga Es ... mencegah penumpukan es di freezer", "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-473-l-big-capacity-everest-2-door-refrigerator-mdrt611evd50id.mdrt611evd50id", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"}
+      },
+      "additional_specs": {"capacity_unlabelled_l": {"value": 473, "raw_value": "Kapasitas 473 L; Freezer 128 Liter; Chiller 345 Liter", "source_url": "https://www.midea.com/id/refrigerators/fridge/2-door/midea-473-l-big-capacity-everest-2-door-refrigerator-mdrt611evd50id.mdrt611evd50id", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"}},
+      "unresolved_core": ["freezer_position", "gross_capacity_l", "net_capacity_l", "cooling_system"],
+      "notes": ["Official page names the exact model.", "Capacity is unlabelled gross/net; compartment figures are preserved only in raw_value."]
+    },
+    {
+      "model_id": "MIDEA::MDRU288FZG02ID",
+      "brand": "MIDEA",
+      "model": "MDRU288FZG02ID",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": ["https://www.midea.com/id/refrigerators/freezer/upright-freezer/midea-200-l-inverter-quattro-upright-freezer-mdru288fzg02id.mdru288fzg02id"],
+      "specs": {
+        "form_factor": {"value": "Upright Freezer", "raw_value": "Kategori Upright Freezer", "source_url": "https://www.midea.com/id/refrigerators/freezer/upright-freezer/midea-200-l-inverter-quattro-upright-freezer-mdru288fzg02id.mdru288fzg02id", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "width_mm": {"value": 550, "raw_value": "Dimensi (WxDxH) mm 550x570x1270", "source_url": "https://www.midea.com/id/refrigerators/freezer/upright-freezer/midea-200-l-inverter-quattro-upright-freezer-mdru288fzg02id.mdru288fzg02id", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "height_mm": {"value": 1270, "raw_value": "Dimensi (WxDxH) mm 550x570x1270", "source_url": "https://www.midea.com/id/refrigerators/freezer/upright-freezer/midea-200-l-inverter-quattro-upright-freezer-mdru288fzg02id.mdru288fzg02id", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "depth_mm": {"value": 570, "raw_value": "Dimensi (WxDxH) mm 550x570x1270", "source_url": "https://www.midea.com/id/refrigerators/freezer/upright-freezer/midea-200-l-inverter-quattro-upright-freezer-mdru288fzg02id.mdru288fzg02id", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "rated_power_w": {"value": 150, "raw_value": "Daya Listrik 150 W", "source_url": "https://www.midea.com/id/refrigerators/freezer/upright-freezer/midea-200-l-inverter-quattro-upright-freezer-mdru288fzg02id.mdru288fzg02id", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "compressor_type": {"value": "Inverter", "raw_value": "Kompresor Inverter", "source_url": "https://www.midea.com/id/refrigerators/freezer/upright-freezer/midea-200-l-inverter-quattro-upright-freezer-mdru288fzg02id.mdru288fzg02id", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "cooling_system": {"value": "D-Tube", "raw_value": "Sistem Pembekuan D-Tube", "source_url": "https://www.midea.com/id/refrigerators/freezer/upright-freezer/midea-200-l-inverter-quattro-upright-freezer-mdru288fzg02id.mdru288fzg02id", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"}
+      },
+      "additional_specs": {"capacity_unlabelled_l": {"value": 200, "raw_value": "Kapasitas 200 L", "source_url": "https://www.midea.com/id/refrigerators/freezer/upright-freezer/midea-200-l-inverter-quattro-upright-freezer-mdru288fzg02id.mdru288fzg02id", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"}},
+      "unresolved_core": ["door_count", "freezer_position", "gross_capacity_l", "net_capacity_l", "defrost_type"],
+      "notes": ["Official page names the exact model.", "The source explicitly calls D-Tube a freezing system; no defrost type is stated.", "Capacity is unlabelled gross/net."]
+    }
+  ]
+}

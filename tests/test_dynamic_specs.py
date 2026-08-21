@@ -20,6 +20,12 @@ def load_categories():
     return json.loads((ROOT / "site" / "data" / "spec-categories.json").read_text(encoding="utf-8"))
 
 
+def load_core_categories():
+    categories = load_categories()
+    categories["spec_categories"] = copy.deepcopy(categories_list(categories)[:12])
+    return categories
+
+
 def legacy_model(**changes):
     model = {
         "model": "MODEL-1",
@@ -58,7 +64,7 @@ class DynamicSpecsMigrationTests(unittest.TestCase):
         self.assertEqual(values, {})
 
     def test_empty_unknown_key_is_dropped_without_adding_category(self):
-        categories = load_categories()
+        categories = load_core_categories()
         empty_unknown = {
             "value": None,
             "source_url": None,
@@ -75,7 +81,7 @@ class DynamicSpecsMigrationTests(unittest.TestCase):
         self.assertEqual(len(categories_list(categories)), 12)
 
     def test_unknown_key_becomes_deterministic_non_comparison_category(self):
-        categories = load_categories()
+        categories = load_core_categories()
         unknown = {
             "value": True,
             "source_url": "https://example.com/MODEL-1",

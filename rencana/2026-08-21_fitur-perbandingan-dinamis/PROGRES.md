@@ -373,3 +373,60 @@ Status: **lima gap audit diperbaiki; seluruh gerbang lokal dan host checker fina
 - `node --test tests/dynamic-specs-api.test.mjs`: **32/32 lulus**. Browser Chromium nyata: marker/event/injected element/JavaScript URL `0`, payload console/page error `0`, stored `data:image` tidak masuk DOM, preview lokal tidak tersimpan, satu PUT stale tanpa retry, serta `liveReady=false` terbukti sebelum reload.
 - Unit Python **11/11**, dynamic verifier **102/102**, product-detail verifier, dan seluruh targeted `node --check` lulus. Tidak ada network eksternal, write live, commit, push, deploy, atau pembacaan secret.
 - `python -X utf8 D:\AI\tmp\win-temp\opencode\check_mtms_ticket02_security.py` exit `0`: seluruh unit, regression 32/32, dua verifier existing, browser security E2E, targeted syntax checks, dan `git diff --check` hijau. Checker eksternal tidak diubah.
+
+## 2026-08-21 WIB - Implementasi Tiket 03 Riset Spesifikasi
+
+Status: **complete lokal/offline; jembatan independen hijau; tanpa live, GitHub write, commit, push, deploy, atau secret read**.
+
+### Hasil
+
+- Tujuh staging JSON tervalidasi exact terhadap fallback: Kompetitor 102/102, Produk-extra exact set difference 10, union unik 112, duplicate identity 0, record missing 0.
+- Status riset final: exact 92, partial 92, unresolved 20. Semua non-exact memiliki `specs={}` dan `additional_specs={}` serta tidak menerima research value.
+- Core exact-match masuk sparse `spec_values` dengan `origin=research`, `user_locked=false`, dan `raw_value` utuh. Nilai berbeda tidak ditimpa: 36 konflik menjadi 36 pending suggestions.
+- Kontrak tunggal mempertahankan 12 kategori inti sebagai urutan pertama, lalu menambahkan 29 kategori riset ke registry global `spec_categories` (`Tambahan`, `comparison=false`, `active=true`, order 130..410). Semua nilai inti dan tambahan hidup sparse di `spec_values`; sibling `research_categories` dan `research_additional_values` tidak ada.
+- Apply ke Kompetitor memproses 102 target; Produk memproses AQUA 32 + extra 10. Total nilai terpasang 885; additional dari notes tidak pernah diproses dan capacity unlabelled tidak dipromosikan ke gross/net.
+- `gen_kompetitor.py` selalu menjalankan validasi + exact-only apply dari staging lokal setelah generation/migration. Generator tidak melakukan web fetch. Regenerasi lalu apply ulang menjaga SHA ketiga output persis.
+- `gen_data_js.py` dibuktikan lewat output sementara lalu dibersihkan; `site/js/data.js` dipulihkan ke hash tracked `0bfeb34d9109b13364e9f1c9243cd7c8148d324f33e9c27079f623d9c4cff088` agar tidak meninggalkan perubahan di luar allowlist.
+
+### Bukti final
+
+```text
+$ python -X utf8 tools/verify_spec_research.py
+LULUS: staging konsisten; exact-only merge terbukti; user lock utuh; kategori tambahan tidak yatim
+denominator=112/112; exact/partial/unresolved=92/92/20; applied=885; conflicts/suggestions=36/36
+```
+
+```text
+$ python -X utf8 -m unittest discover -s tests -p 'test_*.py'
+Ran 26 tests
+OK
+```
+
+```text
+$ python -X utf8 tools/verify_dynamic_specs.py
+LULUS: 102/102 model valid; kategori yatim 0; overwrite user 0; field lama utuh
+```
+
+```text
+$ python -X utf8 tools/verify_product_detail.py
+PASS verify_product_detail: embedded-first <1.2s, shared modal, edit isolation, keyboard, body-lock, 1440/390
+```
+
+```text
+$ python -X utf8 D:\AI\tmp\win-temp\opencode\check_mtms_ticket03.py
+[verify_spec_research] exit=0
+[unit_tests] exit=0 (24/24)
+[verify_dynamic_specs] exit=0
+[verify_product_detail] exit=0
+[gen_data_js] exit=0
+[apply_idempotence] exit=0
+LULUS: gerbang tiket 03 hijau; apply byte-idempoten; file terlarang utuh
+```
+
+SHA256 output final:
+
+- `site/data/kompetitor.json`: `0923cf012f98c354c6c36f68ea82f913d9dcb4c9ee06f8adf32a76c426d700a1`
+- `site/data/produk-katalog.json`: `bd4f960874a93f1a6a0b0a173f2e62a241f91f671c94d96f2161dff8b5449cca`
+- `site/data/spec-categories.json`: `5a6629353abb2c2e8028e24da92bf35991e4b78439d022a0bb28e6b48a359c69`
+
+Catatan luar tiket: `node --test tests/dynamic-specs-api.test.mjs` lulus 36/37. Satu kegagalan authorization berasal dari perubahan worktree yang sudah ada pada `functions/_middleware.js` (API memanggil `next()` tanpa mengembalikan Response); file tersebut di luar allowlist tiket 03 dan tidak disentuh.

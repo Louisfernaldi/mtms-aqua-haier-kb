@@ -1010,6 +1010,7 @@ test("core key cannot be renamed or disabled; additional category key stays immu
     patch: { active: false },
   }), (error) => error instanceof HttpError && error.status === 400);
 
+  const nextOrder = Math.max(...categories.spec_categories.map((category) => category.order)) + 10;
   const extended = mutateCategories(categories, {
     action: "create_category",
     category: {
@@ -1018,7 +1019,7 @@ test("core key cannot be renamed or disabled; additional category key stays immu
       group: "Tambahan",
       unit: "-",
       comparison: false,
-      order: 130,
+      order: nextOrder,
       active: true,
     },
   });

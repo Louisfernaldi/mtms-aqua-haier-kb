@@ -1,0 +1,1855 @@
+{
+  "brand": "AQUA",
+  "model_count": 32,
+  "researched_at": "2026-08-21T19:53:29.748+07:00",
+  "records": [
+    {
+      "model_id": "AQUA::AQR-350RBM",
+      "brand": "AQUA",
+      "model": "AQR-350RBM",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://aquaelektronik.com/product/detail/387/AQR-350RBM%28BK%29",
+        "https://aquaelektronik.com/pdfs/0060528988.pdf"
+      ],
+      "specs": {
+        "form_factor": {
+          "value": "2 Pintu Freezer Bawah",
+          "raw_value": "freezer | di bagian bawah",
+          "source_url": "https://aquaelektronik.com/product/detail/387/AQR-350RBM%28BK%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_count": {
+          "value": 2,
+          "raw_value": "Kulkas 2 Pintu",
+          "source_url": "https://aquaelektronik.com/product/detail/387/AQR-350RBM%28BK%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "freezer_position": {
+          "value": "Bawah",
+          "raw_value": "freezer | di bagian bawah",
+          "source_url": "https://aquaelektronik.com/product/detail/387/AQR-350RBM%28BK%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "compressor_type": {
+          "value": "Twin Inverter",
+          "raw_value": "Twin Inverter",
+          "source_url": "https://aquaelektronik.com/product/detail/387/AQR-350RBM%28BK%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "cooling_system": {
+          "value": "360° Air Flow; Magic Cooling",
+          "raw_value": "360° Air Flow; Magic Cooling",
+          "source_url": "https://aquaelektronik.com/product/detail/387/AQR-350RBM%28BK%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "official_features": {
+          "value": [
+            "Magic Cooling",
+            "Twin Inverter",
+            "360° Air Flow",
+            "Deo Fresh",
+            "Digital Temperature Control"
+          ],
+          "raw_value": "Magic Cooling; Twin Inverter; 360° Air Flow; Deo Fresh; Digital Temperature Control",
+          "source_url": "https://aquaelektronik.com/product/detail/387/AQR-350RBM%28BK%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "gross_capacity_l",
+        "net_capacity_l",
+        "width_mm",
+        "height_mm",
+        "depth_mm",
+        "rated_power_w",
+        "defrost_type"
+      ],
+      "notes": [
+        "Official page states unlabelled capacity 324 L; not mapped to gross_capacity_l or net_capacity_l.",
+        "Official manual was checked but could not be extracted after two transport attempts; product-page findings remain partial."
+      ]
+    },
+    {
+      "model_id": "AQUA::AQR-355IG",
+      "brand": "AQUA",
+      "model": "AQR-355IG",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://aquaelektronik.com/product/detail/343/AQR-355IG%28BK%29",
+        "https://aquaelektronik.com/pdfs/0060528367.pdf"
+      ],
+      "specs": {
+        "door_count": {
+          "value": 2,
+          "raw_value": "KULKAS 2 PINTU",
+          "source_url": "https://aquaelektronik.com/product/detail/343/AQR-355IG%28BK%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "compressor_type": {
+          "value": "Twin Inverter",
+          "raw_value": "Twin Inverter",
+          "source_url": "https://aquaelektronik.com/product/detail/343/AQR-355IG%28BK%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "cooling_system": {
+          "value": "360° Air Flow; Navi Cooling",
+          "raw_value": "360° Air Flow; Navi Cooling",
+          "source_url": "https://aquaelektronik.com/product/detail/343/AQR-355IG%28BK%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "official_features": {
+          "value": [
+            "Navi Cooling",
+            "Twin Inverter",
+            "Deo Fresh",
+            "Glass Door"
+          ],
+          "raw_value": "Navi Cooling; Twin Inverter; Deo Fresh; Glass Door",
+          "source_url": "https://aquaelektronik.com/product/detail/343/AQR-355IG%28BK%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "form_factor",
+        "freezer_position",
+        "gross_capacity_l",
+        "net_capacity_l",
+        "width_mm",
+        "height_mm",
+        "depth_mm",
+        "rated_power_w",
+        "defrost_type"
+      ],
+      "notes": [
+        "Official page states unlabelled capacity 275 L; not mapped to gross_capacity_l or net_capacity_l.",
+        "Exact product page did not state a safe normalized form factor in model-specific text.",
+        "Official manual was checked but could not be extracted after two transport attempts; product-page findings remain partial."
+      ]
+    },
+    {
+      "model_id": "AQUA::AQR-355IM",
+      "brand": "AQUA",
+      "model": "AQR-355IM",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://aquaelektronik.com/product/detail/344/AQR-355IM%28BB%29",
+        "https://aquaelektronik.com/pdfs/0060528367.pdf"
+      ],
+      "specs": {
+        "door_count": {
+          "value": 2,
+          "raw_value": "KULKAS 2 PINTU",
+          "source_url": "https://aquaelektronik.com/product/detail/344/AQR-355IM%28BB%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "compressor_type": {
+          "value": "Twin Inverter",
+          "raw_value": "Twin Inverter",
+          "source_url": "https://aquaelektronik.com/product/detail/344/AQR-355IM%28BB%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "cooling_system": {
+          "value": "360° Air Flow; Navi Cooling",
+          "raw_value": "360° Air Flow; Navi Cooling",
+          "source_url": "https://aquaelektronik.com/product/detail/344/AQR-355IM%28BB%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "official_features": {
+          "value": [
+            "Navi Cooling",
+            "Twin Inverter",
+            "Deo Fresh"
+          ],
+          "raw_value": "Navi Cooling; Twin Inverter; Deo Fresh",
+          "source_url": "https://aquaelektronik.com/product/detail/344/AQR-355IM%28BB%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "form_factor",
+        "freezer_position",
+        "gross_capacity_l",
+        "net_capacity_l",
+        "width_mm",
+        "height_mm",
+        "depth_mm",
+        "rated_power_w",
+        "defrost_type"
+      ],
+      "notes": [
+        "Official page states unlabelled capacity 270 L; not mapped to gross_capacity_l or net_capacity_l.",
+        "Exact product page did not state a safe normalized form factor in model-specific text.",
+        "Official manual was checked but could not be extracted after two transport attempts; product-page findings remain partial."
+      ]
+    },
+    {
+      "model_id": "AQUA::AQR-382IM",
+      "brand": "AQUA",
+      "model": "AQR-382IM",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://aquaelektronik.com/product/detail/689/AQR-382IM%28BB%29",
+        "https://aquaelektronik.com/pdfs/0060531413.pdf"
+      ],
+      "specs": {
+        "compressor_type": {
+          "value": "Twin Inverter",
+          "raw_value": "Twin Inverter",
+          "source_url": "https://aquaelektronik.com/product/detail/689/AQR-382IM%28BB%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "official_features": {
+          "value": [
+            "Flash Design",
+            "Twin Inverter",
+            "Flexible Shelves",
+            "H-Deo Fresh"
+          ],
+          "raw_value": "Flash Design; Twin Inverter; Flexible Shelves; H-Deo Fresh",
+          "source_url": "https://aquaelektronik.com/product/detail/689/AQR-382IM%28BB%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "form_factor",
+        "door_count",
+        "freezer_position",
+        "gross_capacity_l",
+        "net_capacity_l",
+        "width_mm",
+        "height_mm",
+        "depth_mm",
+        "rated_power_w",
+        "cooling_system",
+        "defrost_type"
+      ],
+      "notes": [
+        "Exact product page did not state a safe normalized form factor in model-specific text.",
+        "Official manual was checked but could not be extracted after two transport attempts; product-page findings remain partial."
+      ]
+    },
+    {
+      "model_id": "AQUA::AQR-395IM",
+      "brand": "AQUA",
+      "model": "AQR-395IM",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://aquaelektronik.com/product/detail/450/AQR-395IM%28BK%29"
+      ],
+      "specs": {
+        "door_count": {
+          "value": 2,
+          "raw_value": "Kulkas 2 Pintu",
+          "source_url": "https://aquaelektronik.com/product/detail/450/AQR-395IM%28BK%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "compressor_type": {
+          "value": "Twin Inverter",
+          "raw_value": "twin inverter",
+          "source_url": "https://aquaelektronik.com/product/detail/450/AQR-395IM%28BK%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "cooling_system": {
+          "value": "Multi Air Flow",
+          "raw_value": "Multi Air Flow",
+          "source_url": "https://aquaelektronik.com/product/detail/450/AQR-395IM%28BK%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "official_features": {
+          "value": [
+            "Multi Air Flow",
+            "Twin Inverter"
+          ],
+          "raw_value": "Multi Air Flow; Twin Inverter",
+          "source_url": "https://aquaelektronik.com/product/detail/450/AQR-395IM%28BK%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "form_factor",
+        "freezer_position",
+        "gross_capacity_l",
+        "net_capacity_l",
+        "width_mm",
+        "height_mm",
+        "depth_mm",
+        "rated_power_w",
+        "defrost_type"
+      ],
+      "notes": [
+        "Official page states unlabelled capacity 333 L; not mapped to gross_capacity_l or net_capacity_l.",
+        "Exact product page did not state a safe normalized form factor in model-specific text."
+      ]
+    },
+    {
+      "model_id": "AQUA::AQR-405IG",
+      "brand": "AQUA",
+      "model": "AQR-405IG",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://aquaelektronik.com/product/detail/345/AQR-405IG%28BK%29"
+      ],
+      "specs": {
+        "door_count": {
+          "value": 2,
+          "raw_value": "Kulkas 2 Pintu",
+          "source_url": "https://aquaelektronik.com/product/detail/345/AQR-405IG%28BK%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "compressor_type": {
+          "value": "Twin Inverter",
+          "raw_value": "Twin Inverter",
+          "source_url": "https://aquaelektronik.com/product/detail/345/AQR-405IG%28BK%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "cooling_system": {
+          "value": "360° Air Flow; Magic Cooling",
+          "raw_value": "360° Air Flow; Magic Cooling",
+          "source_url": "https://aquaelektronik.com/product/detail/345/AQR-405IG%28BK%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "official_features": {
+          "value": [
+            "Magic Cooling",
+            "Twin Inverter",
+            "Deo Fresh",
+            "360° Air Flow",
+            "Magic Room"
+          ],
+          "raw_value": "Magic Cooling; Twin Inverter; Deo Fresh; 360° Air Flow; Magic Room",
+          "source_url": "https://aquaelektronik.com/product/detail/345/AQR-405IG%28BK%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "form_factor",
+        "freezer_position",
+        "gross_capacity_l",
+        "net_capacity_l",
+        "width_mm",
+        "height_mm",
+        "depth_mm",
+        "rated_power_w",
+        "defrost_type"
+      ],
+      "notes": [
+        "Official page states unlabelled capacity 312 L; not mapped to gross_capacity_l or net_capacity_l.",
+        "Exact product page did not state a safe normalized form factor in model-specific text."
+      ]
+    },
+    {
+      "model_id": "AQUA::AQR-415IM",
+      "brand": "AQUA",
+      "model": "AQR-415IM",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://aquaelektronik.com/product/detail/449/AQR-415IM%28BK%29"
+      ],
+      "specs": {
+        "door_count": {
+          "value": 2,
+          "raw_value": "Kulkas 2 Pintu",
+          "source_url": "https://aquaelektronik.com/product/detail/449/AQR-415IM%28BK%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "compressor_type": {
+          "value": "Twin Inverter",
+          "raw_value": "twin inverter",
+          "source_url": "https://aquaelektronik.com/product/detail/449/AQR-415IM%28BK%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "cooling_system": {
+          "value": "Multi Air Flow",
+          "raw_value": "Multi Air Flow",
+          "source_url": "https://aquaelektronik.com/product/detail/449/AQR-415IM%28BK%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "official_features": {
+          "value": [
+            "Multi Air Flow",
+            "Twin Inverter"
+          ],
+          "raw_value": "Multi Air Flow; Twin Inverter",
+          "source_url": "https://aquaelektronik.com/product/detail/449/AQR-415IM%28BK%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "form_factor",
+        "freezer_position",
+        "gross_capacity_l",
+        "net_capacity_l",
+        "width_mm",
+        "height_mm",
+        "depth_mm",
+        "rated_power_w",
+        "defrost_type"
+      ],
+      "notes": [
+        "Official page states unlabelled capacity 357 L; not mapped to gross_capacity_l or net_capacity_l.",
+        "Exact product page did not state a safe normalized form factor in model-specific text."
+      ]
+    },
+    {
+      "model_id": "AQUA::AQR-CSE565RBC",
+      "brand": "AQUA",
+      "model": "AQR-CSE565RBC",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://aquaelektronik.com/product/detail/627/AQR-CSE565RBC%28CB%29"
+      ],
+      "specs": {
+        "compressor_type": {
+          "value": "Twin Inverter",
+          "raw_value": "Twin Inverter",
+          "source_url": "https://aquaelektronik.com/product/detail/627/AQR-CSE565RBC%28CB%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "official_features": {
+          "value": [
+            "Twin Inverter",
+            "Digital Touch Screen",
+            "Eliminate Bacteria & Odors",
+            "90° Door-open Freely",
+            "Easy Access to Items"
+          ],
+          "raw_value": "Twin Inverter; Digital Touch Screen; Eliminate Bacteria & Odors; 90° Door-open Freely; Easy Access to Items",
+          "source_url": "https://aquaelektronik.com/product/detail/627/AQR-CSE565RBC%28CB%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "form_factor",
+        "door_count",
+        "freezer_position",
+        "gross_capacity_l",
+        "net_capacity_l",
+        "width_mm",
+        "height_mm",
+        "depth_mm",
+        "rated_power_w",
+        "cooling_system",
+        "defrost_type"
+      ],
+      "notes": [
+        "Exact product page did not state a safe normalized form factor in model-specific text."
+      ]
+    },
+    {
+      "model_id": "AQUA::AQR-CSE605RBC",
+      "brand": "AQUA",
+      "model": "AQR-CSE605RBC",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://aquaelektronik.com/product/detail/629/AQR-CSE605RBC%28CB%29"
+      ],
+      "specs": {
+        "compressor_type": {
+          "value": "Twin Inverter",
+          "raw_value": "Twin Inverter",
+          "source_url": "https://aquaelektronik.com/product/detail/629/AQR-CSE605RBC%28CB%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "official_features": {
+          "value": [
+            "Twin Inverter",
+            "Digital Touch Screen",
+            "Eliminate Bacteria & Odors",
+            "90° Door-open Freely",
+            "Premium Design & Texture"
+          ],
+          "raw_value": "Twin Inverter; Digital Touch Screen; Eliminate Bacteria & Odors; 90° Door-open Freely; Premium Design & Texture",
+          "source_url": "https://aquaelektronik.com/product/detail/629/AQR-CSE605RBC%28CB%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "form_factor",
+        "door_count",
+        "freezer_position",
+        "gross_capacity_l",
+        "net_capacity_l",
+        "width_mm",
+        "height_mm",
+        "depth_mm",
+        "rated_power_w",
+        "cooling_system",
+        "defrost_type"
+      ],
+      "notes": [
+        "Exact product page did not state a safe normalized form factor in model-specific text."
+      ]
+    },
+    {
+      "model_id": "AQUA::AQR-CSE696RSV",
+      "brand": "AQUA",
+      "model": "AQR-CSE696RSV",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://aquaelektronik.com/product/detail/645/AQR-CSE696RSV%28SL%29"
+      ],
+      "specs": {
+        "compressor_type": {
+          "value": "Twin Inverter",
+          "raw_value": "Twin Inverter",
+          "source_url": "https://aquaelektronik.com/product/detail/645/AQR-CSE696RSV%28SL%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "official_features": {
+          "value": [
+            "Smart Ice & Water Dispenser",
+            "Bigger Capacity",
+            "Eliminate Bacteria & Odors",
+            "Twin Inverter Energy-saving"
+          ],
+          "raw_value": "Smart Ice & Water Dispenser; Bigger Capacity; Eliminate Bacteria & Odors; Twin Inverter Energy-saving",
+          "source_url": "https://aquaelektronik.com/product/detail/645/AQR-CSE696RSV%28SL%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "form_factor",
+        "door_count",
+        "freezer_position",
+        "gross_capacity_l",
+        "net_capacity_l",
+        "width_mm",
+        "height_mm",
+        "depth_mm",
+        "rated_power_w",
+        "cooling_system",
+        "defrost_type"
+      ],
+      "notes": [
+        "Exact product page did not state a safe normalized form factor in model-specific text."
+      ]
+    },
+    {
+      "model_id": "AQUA::AQR-CTD506RGC",
+      "brand": "AQUA",
+      "model": "AQR-CTD506RGC",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://aquaelektronik.com/product/detail/628/AQR-CTD506RGC%28CB%29"
+      ],
+      "specs": {
+        "compressor_type": {
+          "value": "Twin Inverter",
+          "raw_value": "Twin Inverter",
+          "source_url": "https://aquaelektronik.com/product/detail/628/AQR-CTD506RGC%28CB%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "cooling_system": {
+          "value": "360° Cooling",
+          "raw_value": "360° Cooling",
+          "source_url": "https://aquaelektronik.com/product/detail/628/AQR-CTD506RGC%28CB%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "official_features": {
+          "value": [
+            "Magic Zone",
+            "Twin Inverter",
+            "Flexible Storage",
+            "360° Cooling",
+            "Deo Fresh",
+            "Premium Design & Texture"
+          ],
+          "raw_value": "Magic Zone; Twin Inverter; Flexible Storage; 360° Cooling; Deo Fresh; Premium Design & Texture",
+          "source_url": "https://aquaelektronik.com/product/detail/628/AQR-CTD506RGC%28CB%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "form_factor",
+        "door_count",
+        "freezer_position",
+        "gross_capacity_l",
+        "net_capacity_l",
+        "width_mm",
+        "height_mm",
+        "depth_mm",
+        "rated_power_w",
+        "defrost_type"
+      ],
+      "notes": [
+        "Exact product page did not state a safe normalized form factor in model-specific text."
+      ]
+    },
+    {
+      "model_id": "AQUA::AQR-CTD506RGG",
+      "brand": "AQUA",
+      "model": "AQR-CTD506RGG",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://aquaelektronik.com/product/detail/556/AQR-CTD506RGG%28BK%29"
+      ],
+      "specs": {
+        "form_factor": {
+          "value": "Multi Pintu",
+          "raw_value": "Multidoor",
+          "source_url": "https://aquaelektronik.com/product/detail/556/AQR-CTD506RGG%28BK%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "official_features": {
+          "value": [
+            "Magic Zone",
+            "Flexible Storage",
+            "Deo Fresh",
+            "Twin Fresh"
+          ],
+          "raw_value": "Magic Zone; Flexible Storage; Deo Fresh; Twin Fresh",
+          "source_url": "https://aquaelektronik.com/product/detail/556/AQR-CTD506RGG%28BK%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "door_count",
+        "freezer_position",
+        "gross_capacity_l",
+        "net_capacity_l",
+        "width_mm",
+        "height_mm",
+        "depth_mm",
+        "rated_power_w",
+        "compressor_type",
+        "cooling_system",
+        "defrost_type"
+      ],
+      "notes": [
+        "Official page states unlabelled capacity 406 L; not mapped to gross_capacity_l or net_capacity_l."
+      ]
+    },
+    {
+      "model_id": "AQUA::AQR-CTD746RAG",
+      "brand": "AQUA",
+      "model": "AQR-CTD746RAG",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://aquaelektronik.com/product/detail/552/AQR-CTD746RAG%28BK%29"
+      ],
+      "specs": {
+        "form_factor": {
+          "value": "Multi Pintu",
+          "raw_value": "Multidoor",
+          "source_url": "https://aquaelektronik.com/product/detail/552/AQR-CTD746RAG%28BK%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "official_features": {
+          "value": [
+            "Glass Door Black"
+          ],
+          "raw_value": "Glass Door Black",
+          "source_url": "https://aquaelektronik.com/product/detail/552/AQR-CTD746RAG%28BK%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "door_count",
+        "freezer_position",
+        "gross_capacity_l",
+        "net_capacity_l",
+        "width_mm",
+        "height_mm",
+        "depth_mm",
+        "rated_power_w",
+        "compressor_type",
+        "cooling_system",
+        "defrost_type"
+      ],
+      "notes": [
+        "Official page states unlabelled capacity 658 L; not mapped to gross_capacity_l or net_capacity_l."
+      ]
+    },
+    {
+      "model_id": "AQUA::AQR-D185",
+      "brand": "AQUA",
+      "model": "AQR-D185",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://aquaelektronik.com/product/detail/463/AQR-D185+%28MDS%29+Dark+Silver"
+      ],
+      "specs": {
+        "form_factor": {
+          "value": "1 Pintu",
+          "raw_value": "KULKAS 1 PINTU",
+          "source_url": "https://aquaelektronik.com/product/detail/463/AQR-D185+%28MDS%29+Dark+Silver",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_count": {
+          "value": 1,
+          "raw_value": "KULKAS 1 PINTU",
+          "source_url": "https://aquaelektronik.com/product/detail/463/AQR-D185+%28MDS%29+Dark+Silver",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "defrost_type": {
+          "value": "Semi-Auto Defrost",
+          "raw_value": "Semi-Auto Defrost",
+          "source_url": "https://aquaelektronik.com/product/detail/463/AQR-D185+%28MDS%29+Dark+Silver",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "official_features": {
+          "value": [
+            "Giant Freezer",
+            "Environmental Friendly",
+            "Semi-Auto Defrost"
+          ],
+          "raw_value": "Giant Freezer; Environmental Friendly; Semi-Auto Defrost",
+          "source_url": "https://aquaelektronik.com/product/detail/463/AQR-D185+%28MDS%29+Dark+Silver",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "freezer_position",
+        "gross_capacity_l",
+        "net_capacity_l",
+        "width_mm",
+        "height_mm",
+        "depth_mm",
+        "rated_power_w",
+        "compressor_type",
+        "cooling_system"
+      ],
+      "notes": [
+        "Official page states unlabelled capacity 145 L; not mapped to gross_capacity_l or net_capacity_l."
+      ]
+    },
+    {
+      "model_id": "AQUA::AQR-D205",
+      "brand": "AQUA",
+      "model": "AQR-D205",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://aquaelektronik.com/product/detail/464/AQR-D205+%28MDS%29+Dark+Silver"
+      ],
+      "specs": {
+        "form_factor": {
+          "value": "1 Pintu",
+          "raw_value": "KULKAS 1 PINTU",
+          "source_url": "https://aquaelektronik.com/product/detail/464/AQR-D205+%28MDS%29+Dark+Silver",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_count": {
+          "value": 1,
+          "raw_value": "KULKAS 1 PINTU",
+          "source_url": "https://aquaelektronik.com/product/detail/464/AQR-D205+%28MDS%29+Dark+Silver",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "defrost_type": {
+          "value": "Semi-Auto Defrost",
+          "raw_value": "Semi-Auto Defrost",
+          "source_url": "https://aquaelektronik.com/product/detail/464/AQR-D205+%28MDS%29+Dark+Silver",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "official_features": {
+          "value": [
+            "Giant Freezer",
+            "Environmental Friendly",
+            "Semi-Auto Defrost"
+          ],
+          "raw_value": "Giant Freezer; Environmental Friendly; Semi-Auto Defrost",
+          "source_url": "https://aquaelektronik.com/product/detail/464/AQR-D205+%28MDS%29+Dark+Silver",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "freezer_position",
+        "gross_capacity_l",
+        "net_capacity_l",
+        "width_mm",
+        "height_mm",
+        "depth_mm",
+        "rated_power_w",
+        "compressor_type",
+        "cooling_system"
+      ],
+      "notes": [
+        "Official page states unlabelled capacity 165 L; not mapped to gross_capacity_l or net_capacity_l."
+      ]
+    },
+    {
+      "model_id": "AQUA::AQR-D225",
+      "brand": "AQUA",
+      "model": "AQR-D225",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://aquaelektronik.com/product/detail/465/AQR-D225+%28MDS%29+Dark+Silver"
+      ],
+      "specs": {
+        "form_factor": {
+          "value": "1 Pintu",
+          "raw_value": "KULKAS 1 PINTU",
+          "source_url": "https://aquaelektronik.com/product/detail/465/AQR-D225+%28MDS%29+Dark+Silver",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_count": {
+          "value": 1,
+          "raw_value": "KULKAS 1 PINTU",
+          "source_url": "https://aquaelektronik.com/product/detail/465/AQR-D225+%28MDS%29+Dark+Silver",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "width_mm": {
+          "value": 525,
+          "raw_value": "Dimension (W*D*H)mm | 525x524x1235 ",
+          "source_url": "https://aquaelektronik.com/product/detail/465/AQR-D225+%28MDS%29+Dark+Silver",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "height_mm": {
+          "value": 524,
+          "raw_value": "Dimension (W*D*H)mm | 525x524x1235 ",
+          "source_url": "https://aquaelektronik.com/product/detail/465/AQR-D225+%28MDS%29+Dark+Silver",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "depth_mm": {
+          "value": 1235,
+          "raw_value": "Dimension (W*D*H)mm | 525x524x1235 ",
+          "source_url": "https://aquaelektronik.com/product/detail/465/AQR-D225+%28MDS%29+Dark+Silver",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "defrost_type": {
+          "value": "Semi-Auto Defrost",
+          "raw_value": "Semi-Auto Defrost",
+          "source_url": "https://aquaelektronik.com/product/detail/465/AQR-D225+%28MDS%29+Dark+Silver",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "official_features": {
+          "value": [
+            "Giant Freezer",
+            "Environmental Friendly",
+            "Semi-Auto Defrost"
+          ],
+          "raw_value": "Giant Freezer; Environmental Friendly; Semi-Auto Defrost",
+          "source_url": "https://aquaelektronik.com/product/detail/465/AQR-D225+%28MDS%29+Dark+Silver",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "freezer_position",
+        "gross_capacity_l",
+        "net_capacity_l",
+        "rated_power_w",
+        "compressor_type",
+        "cooling_system"
+      ],
+      "notes": [
+        "Official page states unlabelled capacity 180 L; not mapped to gross_capacity_l or net_capacity_l."
+      ]
+    },
+    {
+      "model_id": "AQUA::AQR-DTM245CBP",
+      "brand": "AQUA",
+      "model": "AQR-DTM245CBP",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://aquaelektronik.com/product/detail/603/AQR-DTM245CBP%28DS%29"
+      ],
+      "specs": {
+        "cooling_system": {
+          "value": "Turbo Cooling",
+          "raw_value": "Turbo Cooling",
+          "source_url": "https://aquaelektronik.com/product/detail/603/AQR-DTM245CBP%28DS%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "official_features": {
+          "value": [
+            "Turbo Cooling",
+            "Bigger Freezer",
+            "Humidity Control",
+            "H-DEO Fresh",
+            "Organized Storage"
+          ],
+          "raw_value": "Turbo Cooling; Bigger Freezer; Humidity Control; H-DEO Fresh; Organized Storage",
+          "source_url": "https://aquaelektronik.com/product/detail/603/AQR-DTM245CBP%28DS%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "form_factor",
+        "door_count",
+        "freezer_position",
+        "gross_capacity_l",
+        "net_capacity_l",
+        "width_mm",
+        "height_mm",
+        "depth_mm",
+        "rated_power_w",
+        "compressor_type",
+        "defrost_type"
+      ],
+      "notes": [
+        "Exact product page did not state a safe normalized form factor in model-specific text."
+      ]
+    },
+    {
+      "model_id": "AQUA::AQR-DTM265CBP",
+      "brand": "AQUA",
+      "model": "AQR-DTM265CBP",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://aquaelektronik.com/product/detail/610/AQR-DTM265CBP%28DS%29"
+      ],
+      "specs": {
+        "cooling_system": {
+          "value": "Turbo Cooling",
+          "raw_value": "Turbo Cooling",
+          "source_url": "https://aquaelektronik.com/product/detail/610/AQR-DTM265CBP%28DS%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "official_features": {
+          "value": [
+            "Turbo Cooling",
+            "Bigger Freezer",
+            "Humidity Control",
+            "H-DEO Fresh",
+            "Organized Storage"
+          ],
+          "raw_value": "Turbo Cooling; Bigger Freezer; Humidity Control; H-DEO Fresh; Organized Storage",
+          "source_url": "https://aquaelektronik.com/product/detail/610/AQR-DTM265CBP%28DS%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "form_factor",
+        "door_count",
+        "freezer_position",
+        "gross_capacity_l",
+        "net_capacity_l",
+        "width_mm",
+        "height_mm",
+        "depth_mm",
+        "rated_power_w",
+        "compressor_type",
+        "defrost_type"
+      ],
+      "notes": [
+        "Exact product page did not state a safe normalized form factor in model-specific text."
+      ]
+    },
+    {
+      "model_id": "AQUA::AQR-DTM265RAP",
+      "brand": "AQUA",
+      "model": "AQR-DTM265RAP",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://aquaelektronik.com/product/detail/620/AQR-DTM265RAP%28FB%29+"
+      ],
+      "specs": {
+        "compressor_type": {
+          "value": "Twin Inverter",
+          "raw_value": "Twin Inverter",
+          "source_url": "https://aquaelektronik.com/product/detail/620/AQR-DTM265RAP%28FB%29+",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "cooling_system": {
+          "value": "Turbo Cooling",
+          "raw_value": "Turbo Cooling",
+          "source_url": "https://aquaelektronik.com/product/detail/620/AQR-DTM265RAP%28FB%29+",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "official_features": {
+          "value": [
+            "Turbo Cooling",
+            "Bigger Freezer",
+            "Twin Inverter",
+            "H-DEO Fresh",
+            "Health Zone"
+          ],
+          "raw_value": "Turbo Cooling; Bigger Freezer; Twin Inverter; H-DEO Fresh; Health Zone",
+          "source_url": "https://aquaelektronik.com/product/detail/620/AQR-DTM265RAP%28FB%29+",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "form_factor",
+        "door_count",
+        "freezer_position",
+        "gross_capacity_l",
+        "net_capacity_l",
+        "width_mm",
+        "height_mm",
+        "depth_mm",
+        "rated_power_w",
+        "defrost_type"
+      ],
+      "notes": [
+        "Exact product page did not state a safe normalized form factor in model-specific text."
+      ]
+    },
+    {
+      "model_id": "AQUA::AQR-DTM265RAV",
+      "brand": "AQUA",
+      "model": "AQR-DTM265RAV",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://aquaelektronik.com/product/detail/621/AQR-DTM265RAV%28MX%29"
+      ],
+      "specs": {
+        "compressor_type": {
+          "value": "Twin Inverter",
+          "raw_value": "Twin Inverter",
+          "source_url": "https://aquaelektronik.com/product/detail/621/AQR-DTM265RAV%28MX%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "cooling_system": {
+          "value": "Turbo Cooling",
+          "raw_value": "Turbo Cooling",
+          "source_url": "https://aquaelektronik.com/product/detail/621/AQR-DTM265RAV%28MX%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "official_features": {
+          "value": [
+            "Turbo Cooling",
+            "Bigger Freezer",
+            "Twin Inverter",
+            "H-DEO Fresh",
+            "Health Zone"
+          ],
+          "raw_value": "Turbo Cooling; Bigger Freezer; Twin Inverter; H-DEO Fresh; Health Zone",
+          "source_url": "https://aquaelektronik.com/product/detail/621/AQR-DTM265RAV%28MX%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "form_factor",
+        "door_count",
+        "freezer_position",
+        "gross_capacity_l",
+        "net_capacity_l",
+        "width_mm",
+        "height_mm",
+        "depth_mm",
+        "rated_power_w",
+        "defrost_type"
+      ],
+      "notes": [
+        "Exact product page did not state a safe normalized form factor in model-specific text."
+      ]
+    },
+    {
+      "model_id": "AQUA::AQR-DTM285CBP",
+      "brand": "AQUA",
+      "model": "AQR-DTM285CBP",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://aquaelektronik.com/product/detail/605/AQR-DTM285CBP%28DS%29"
+      ],
+      "specs": {
+        "cooling_system": {
+          "value": "Turbo Cooling",
+          "raw_value": "Turbo Cooling",
+          "source_url": "https://aquaelektronik.com/product/detail/605/AQR-DTM285CBP%28DS%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "official_features": {
+          "value": [
+            "Turbo Cooling",
+            "Bigger Freezer",
+            "Humidity Control",
+            "H-DEO Fresh",
+            "Organized Storage"
+          ],
+          "raw_value": "Turbo Cooling; Bigger Freezer; Humidity Control; H-DEO Fresh; Organized Storage",
+          "source_url": "https://aquaelektronik.com/product/detail/605/AQR-DTM285CBP%28DS%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "form_factor",
+        "door_count",
+        "freezer_position",
+        "gross_capacity_l",
+        "net_capacity_l",
+        "width_mm",
+        "height_mm",
+        "depth_mm",
+        "rated_power_w",
+        "compressor_type",
+        "defrost_type"
+      ],
+      "notes": [
+        "Exact product page did not state a safe normalized form factor in model-specific text."
+      ]
+    },
+    {
+      "model_id": "AQUA::AQR-DTM285RAP",
+      "brand": "AQUA",
+      "model": "AQR-DTM285RAP",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://aquaelektronik.com/product/detail/618/AQR-DTM285RAP%28FB%29"
+      ],
+      "specs": {
+        "compressor_type": {
+          "value": "Twin Inverter",
+          "raw_value": "Twin Inverter",
+          "source_url": "https://aquaelektronik.com/product/detail/618/AQR-DTM285RAP%28FB%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "cooling_system": {
+          "value": "Turbo Cooling",
+          "raw_value": "Turbo Cooling",
+          "source_url": "https://aquaelektronik.com/product/detail/618/AQR-DTM285RAP%28FB%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "official_features": {
+          "value": [
+            "Turbo Cooling",
+            "Bigger Freezer",
+            "Twin Inverter",
+            "H-DEO Fresh",
+            "Health Zone"
+          ],
+          "raw_value": "Turbo Cooling; Bigger Freezer; Twin Inverter; H-DEO Fresh; Health Zone",
+          "source_url": "https://aquaelektronik.com/product/detail/618/AQR-DTM285RAP%28FB%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "form_factor",
+        "door_count",
+        "freezer_position",
+        "gross_capacity_l",
+        "net_capacity_l",
+        "width_mm",
+        "height_mm",
+        "depth_mm",
+        "rated_power_w",
+        "defrost_type"
+      ],
+      "notes": [
+        "Exact product page did not state a safe normalized form factor in model-specific text."
+      ]
+    },
+    {
+      "model_id": "AQUA::AQR-DTM285RAV",
+      "brand": "AQUA",
+      "model": "AQR-DTM285RAV",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://aquaelektronik.com/product/detail/619/AQR-DTM285RAV%28MX%29"
+      ],
+      "specs": {
+        "compressor_type": {
+          "value": "Twin Inverter",
+          "raw_value": "Twin Inverter",
+          "source_url": "https://aquaelektronik.com/product/detail/619/AQR-DTM285RAV%28MX%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "cooling_system": {
+          "value": "Turbo Cooling",
+          "raw_value": "Turbo Cooling",
+          "source_url": "https://aquaelektronik.com/product/detail/619/AQR-DTM285RAV%28MX%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "official_features": {
+          "value": [
+            "Turbo Cooling",
+            "Bigger Freezer",
+            "Twin Inverter",
+            "H-DEO Fresh",
+            "Health Zone"
+          ],
+          "raw_value": "Turbo Cooling; Bigger Freezer; Twin Inverter; H-DEO Fresh; Health Zone",
+          "source_url": "https://aquaelektronik.com/product/detail/619/AQR-DTM285RAV%28MX%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "form_factor",
+        "door_count",
+        "freezer_position",
+        "gross_capacity_l",
+        "net_capacity_l",
+        "width_mm",
+        "height_mm",
+        "depth_mm",
+        "rated_power_w",
+        "defrost_type"
+      ],
+      "notes": [
+        "Exact product page did not state a safe normalized form factor in model-specific text."
+      ]
+    },
+    {
+      "model_id": "AQUA::AQR-DTM305RAP",
+      "brand": "AQUA",
+      "model": "AQR-DTM305RAP",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://aquaelektronik.com/product/detail/615/AQR-DTM305RAP%28FB%29"
+      ],
+      "specs": {
+        "compressor_type": {
+          "value": "Twin Inverter",
+          "raw_value": "Twin Inverter",
+          "source_url": "https://aquaelektronik.com/product/detail/615/AQR-DTM305RAP%28FB%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "cooling_system": {
+          "value": "Turbo Cooling",
+          "raw_value": "Turbo Cooling",
+          "source_url": "https://aquaelektronik.com/product/detail/615/AQR-DTM305RAP%28FB%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "official_features": {
+          "value": [
+            "Turbo Cooling",
+            "Big Freezer",
+            "-1°C Chiller Box",
+            "Twin Inverter",
+            "H-DEO Fresh",
+            "Health Zone"
+          ],
+          "raw_value": "Turbo Cooling; Big Freezer; -1°C Chiller Box; Twin Inverter; H-DEO Fresh; Health Zone",
+          "source_url": "https://aquaelektronik.com/product/detail/615/AQR-DTM305RAP%28FB%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "form_factor",
+        "door_count",
+        "freezer_position",
+        "gross_capacity_l",
+        "net_capacity_l",
+        "width_mm",
+        "height_mm",
+        "depth_mm",
+        "rated_power_w",
+        "defrost_type"
+      ],
+      "notes": [
+        "Exact product page did not state a safe normalized form factor in model-specific text."
+      ]
+    },
+    {
+      "model_id": "AQUA::AQR-DTM305RAV",
+      "brand": "AQUA",
+      "model": "AQR-DTM305RAV",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://aquaelektronik.com/product/detail/614/AQR-DTM305RAV%28MX%29"
+      ],
+      "specs": {
+        "door_count": {
+          "value": 2,
+          "raw_value": "Kulkas 2 pintu",
+          "source_url": "https://aquaelektronik.com/product/detail/614/AQR-DTM305RAV%28MX%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "compressor_type": {
+          "value": "Twin Inverter",
+          "raw_value": "Twin Inverter",
+          "source_url": "https://aquaelektronik.com/product/detail/614/AQR-DTM305RAV%28MX%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "cooling_system": {
+          "value": "Turbo Cooling",
+          "raw_value": "Turbo Cooling",
+          "source_url": "https://aquaelektronik.com/product/detail/614/AQR-DTM305RAV%28MX%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "official_features": {
+          "value": [
+            "Turbo Cooling",
+            "Big Freezer",
+            "-1°C Chiller Box",
+            "Twin Inverter",
+            "H-DEO Fresh",
+            "Health Zone"
+          ],
+          "raw_value": "Turbo Cooling; Big Freezer; -1°C Chiller Box; Twin Inverter; H-DEO Fresh; Health Zone",
+          "source_url": "https://aquaelektronik.com/product/detail/614/AQR-DTM305RAV%28MX%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "form_factor",
+        "freezer_position",
+        "gross_capacity_l",
+        "net_capacity_l",
+        "width_mm",
+        "height_mm",
+        "depth_mm",
+        "rated_power_w",
+        "defrost_type"
+      ],
+      "notes": [
+        "Exact product page did not state a safe normalized form factor in model-specific text."
+      ]
+    },
+    {
+      "model_id": "AQUA::AQR-TSE605RBM",
+      "brand": "AQUA",
+      "model": "AQR-TSE605RBM",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://aquaelektronik.com/product/detail/703/AQR-TSE605RBM%28MX%29"
+      ],
+      "specs": {
+        "compressor_type": {
+          "value": "Twin Inverter",
+          "raw_value": "Twin Inverter",
+          "source_url": "https://aquaelektronik.com/product/detail/703/AQR-TSE605RBM%28MX%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "cooling_system": {
+          "value": "Multi Air Flow",
+          "raw_value": "Multi Air Flow",
+          "source_url": "https://aquaelektronik.com/product/detail/703/AQR-TSE605RBM%28MX%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "official_features": {
+          "value": [
+            "HCS Humidity Zone",
+            "Multi Air Flow",
+            "H-DEO",
+            "Twin Inverter Energy Saving",
+            "90° Door Auto Hold",
+            "Easy Access to Items"
+          ],
+          "raw_value": "HCS Humidity Zone; Multi Air Flow; H-DEO; Twin Inverter Energy Saving; 90° Door Auto Hold; Easy Access to Items",
+          "source_url": "https://aquaelektronik.com/product/detail/703/AQR-TSE605RBM%28MX%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "form_factor",
+        "door_count",
+        "freezer_position",
+        "gross_capacity_l",
+        "net_capacity_l",
+        "width_mm",
+        "height_mm",
+        "depth_mm",
+        "rated_power_w",
+        "defrost_type"
+      ],
+      "notes": [
+        "Exact product page did not state a safe normalized form factor in model-specific text."
+      ]
+    },
+    {
+      "model_id": "AQUA::AQR-TTD546RBC",
+      "brand": "AQUA",
+      "model": "AQR-TTD546RBC",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://aquaelektronik.com/product/detail/637/AQR-TTD546RBC%28CB%29"
+      ],
+      "specs": {
+        "compressor_type": {
+          "value": "Twin Inverter",
+          "raw_value": "Twin Inverter",
+          "source_url": "https://aquaelektronik.com/product/detail/637/AQR-TTD546RBC%28CB%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "cooling_system": {
+          "value": "Multi Air Flow",
+          "raw_value": "Multi Air Flow",
+          "source_url": "https://aquaelektronik.com/product/detail/637/AQR-TTD546RBC%28CB%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "official_features": {
+          "value": [
+            "Magic Zone",
+            "H-Deo",
+            "HCS Moist Zone",
+            "Twin Inverter",
+            "Multi Air Flow",
+            "Digital Touch Screen",
+            "Flexible Shelves"
+          ],
+          "raw_value": "Magic Zone; H-Deo; HCS Moist Zone; Twin Inverter; Multi Air Flow; Digital Touch Screen; Flexible Shelves",
+          "source_url": "https://aquaelektronik.com/product/detail/637/AQR-TTD546RBC%28CB%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "form_factor",
+        "door_count",
+        "freezer_position",
+        "gross_capacity_l",
+        "net_capacity_l",
+        "width_mm",
+        "height_mm",
+        "depth_mm",
+        "rated_power_w",
+        "defrost_type"
+      ],
+      "notes": [
+        "Exact product page did not state a safe normalized form factor in model-specific text."
+      ]
+    },
+    {
+      "model_id": "AQUA::AQR-TTD576RAG",
+      "brand": "AQUA",
+      "model": "AQR-TTD576RAG",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://aquaelektronik.com/product/detail/682/AQR-TTD576RAG%28BK%29"
+      ],
+      "specs": {
+        "compressor_type": {
+          "value": "Twin Inverter",
+          "raw_value": "Twin Inverter",
+          "source_url": "https://aquaelektronik.com/product/detail/682/AQR-TTD576RAG%28BK%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "official_features": {
+          "value": [
+            "HCS Humidity Zone",
+            "Minimize Bacteria & Odors",
+            "Color Display",
+            "Magic Zone 3 Temp. Settings",
+            "Day Light LED Panel",
+            "Twin Inverter Energy Saving"
+          ],
+          "raw_value": "HCS Humidity Zone; Minimize Bacteria & Odors; Color Display; Magic Zone 3 Temp. Settings; Day Light LED Panel; Twin Inverter Energy Saving",
+          "source_url": "https://aquaelektronik.com/product/detail/682/AQR-TTD576RAG%28BK%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "form_factor",
+        "door_count",
+        "freezer_position",
+        "gross_capacity_l",
+        "net_capacity_l",
+        "width_mm",
+        "height_mm",
+        "depth_mm",
+        "rated_power_w",
+        "cooling_system",
+        "defrost_type"
+      ],
+      "notes": [
+        "Exact product page did not state a safe normalized form factor in model-specific text."
+      ]
+    },
+    {
+      "model_id": "AQUA::AQR-TTD576RSG",
+      "brand": "AQUA",
+      "model": "AQR-TTD576RSG",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://aquaelektronik.com/product/detail/681/AQR-TTD576RSG%28CL%29"
+      ],
+      "specs": {
+        "compressor_type": {
+          "value": "Twin Inverter",
+          "raw_value": "Twin Inverter",
+          "source_url": "https://aquaelektronik.com/product/detail/681/AQR-TTD576RSG%28CL%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "official_features": {
+          "value": [
+            "HCS Humidity Zone",
+            "Minimize Bacteria & Odors",
+            "Magic 3-in-1 Pitcher",
+            "WiFi Connectivity",
+            "Magic Zone 3 Temp. Settings",
+            "Smart Auto Ice Making",
+            "Twin Inverter Energy Saving"
+          ],
+          "raw_value": "HCS Humidity Zone; Minimize Bacteria & Odors; Magic 3-in-1 Pitcher; WiFi Connectivity; Magic Zone 3 Temp. Settings; Smart Auto Ice Making; Twin Inverter Energy Saving",
+          "source_url": "https://aquaelektronik.com/product/detail/681/AQR-TTD576RSG%28CL%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "form_factor",
+        "door_count",
+        "freezer_position",
+        "gross_capacity_l",
+        "net_capacity_l",
+        "width_mm",
+        "height_mm",
+        "depth_mm",
+        "rated_power_w",
+        "cooling_system",
+        "defrost_type"
+      ],
+      "notes": [
+        "Exact product page did not state a safe normalized form factor in model-specific text."
+      ]
+    },
+    {
+      "model_id": "AQUA::AQR-VTM515RBC",
+      "brand": "AQUA",
+      "model": "AQR-VTM515RBC",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://aquaelektronik.com/product/detail/660/AQR-VTM515RBC%28CB%29"
+      ],
+      "specs": {
+        "form_factor": {
+          "value": "2 Pintu Top Mount",
+          "raw_value": "freezer atas",
+          "source_url": "https://aquaelektronik.com/product/detail/660/AQR-VTM515RBC%28CB%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_count": {
+          "value": 2,
+          "raw_value": "Kulkas 2 pintu",
+          "source_url": "https://aquaelektronik.com/product/detail/660/AQR-VTM515RBC%28CB%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "freezer_position": {
+          "value": "Atas",
+          "raw_value": "freezer atas",
+          "source_url": "https://aquaelektronik.com/product/detail/660/AQR-VTM515RBC%28CB%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "compressor_type": {
+          "value": "Twin Inverter",
+          "raw_value": "Twin Inverter",
+          "source_url": "https://aquaelektronik.com/product/detail/660/AQR-VTM515RBC%28CB%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "official_features": {
+          "value": [
+            "Double Magic Zone",
+            "H-Deo Fresh",
+            "Twin Inverter",
+            "Humidity Zone",
+            "Organized Storage"
+          ],
+          "raw_value": "Double Magic Zone; H-Deo Fresh; Twin Inverter; Humidity Zone; Organized Storage",
+          "source_url": "https://aquaelektronik.com/product/detail/660/AQR-VTM515RBC%28CB%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "gross_capacity_l",
+        "net_capacity_l",
+        "width_mm",
+        "height_mm",
+        "depth_mm",
+        "rated_power_w",
+        "cooling_system",
+        "defrost_type"
+      ],
+      "notes": []
+    },
+    {
+      "model_id": "AQUA::AQR-VTM535RAG",
+      "brand": "AQUA",
+      "model": "AQR-VTM535RAG",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://aquaelektronik.com/product/detail/661/AQR-VTM535RAG%28BK%29"
+      ],
+      "specs": {
+        "form_factor": {
+          "value": "2 Pintu Top Mount",
+          "raw_value": "freezer atas",
+          "source_url": "https://aquaelektronik.com/product/detail/661/AQR-VTM535RAG%28BK%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_count": {
+          "value": 2,
+          "raw_value": "Kulkas 2 pintu",
+          "source_url": "https://aquaelektronik.com/product/detail/661/AQR-VTM535RAG%28BK%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "freezer_position": {
+          "value": "Atas",
+          "raw_value": "freezer atas",
+          "source_url": "https://aquaelektronik.com/product/detail/661/AQR-VTM535RAG%28BK%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "compressor_type": {
+          "value": "Twin Inverter",
+          "raw_value": "Twin Inverter",
+          "source_url": "https://aquaelektronik.com/product/detail/661/AQR-VTM535RAG%28BK%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "official_features": {
+          "value": [
+            "Double Magic Zone",
+            "H-Deo Fresh",
+            "Twin Inverter",
+            "Organized Storage"
+          ],
+          "raw_value": "Double Magic Zone; H-Deo Fresh; Twin Inverter; Organized Storage",
+          "source_url": "https://aquaelektronik.com/product/detail/661/AQR-VTM535RAG%28BK%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "gross_capacity_l",
+        "net_capacity_l",
+        "width_mm",
+        "height_mm",
+        "depth_mm",
+        "rated_power_w",
+        "cooling_system",
+        "defrost_type"
+      ],
+      "notes": []
+    },
+    {
+      "model_id": "AQUA::AQR-VTM535RSG",
+      "brand": "AQUA",
+      "model": "AQR-VTM535RSG",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://aquaelektronik.com/product/detail/662/AQR-VTM535RSG%28CL%29"
+      ],
+      "specs": {
+        "form_factor": {
+          "value": "2 Pintu Top Mount",
+          "raw_value": "freezer atas",
+          "source_url": "https://aquaelektronik.com/product/detail/662/AQR-VTM535RSG%28CL%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_count": {
+          "value": 2,
+          "raw_value": "Kulkas 2 pintu",
+          "source_url": "https://aquaelektronik.com/product/detail/662/AQR-VTM535RSG%28CL%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "freezer_position": {
+          "value": "Atas",
+          "raw_value": "freezer atas",
+          "source_url": "https://aquaelektronik.com/product/detail/662/AQR-VTM535RSG%28CL%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "compressor_type": {
+          "value": "Twin Inverter",
+          "raw_value": "Twin Inverter",
+          "source_url": "https://aquaelektronik.com/product/detail/662/AQR-VTM535RSG%28CL%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "official_features": {
+          "value": [
+            "Sensor Light",
+            "Double Magic Zone",
+            "Organized Storage",
+            "H-DEO Fresh",
+            "Magic Pitcher",
+            "Double Health Zones",
+            "Twin Inverter",
+            "Smart Connectivity"
+          ],
+          "raw_value": "Sensor Light; Double Magic Zone; Organized Storage; H-DEO Fresh; Magic Pitcher; Double Health Zones; Twin Inverter; Smart Connectivity",
+          "source_url": "https://aquaelektronik.com/product/detail/662/AQR-VTM535RSG%28CL%29",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "gross_capacity_l",
+        "net_capacity_l",
+        "width_mm",
+        "height_mm",
+        "depth_mm",
+        "rated_power_w",
+        "cooling_system",
+        "defrost_type"
+      ],
+      "notes": []
+    }
+  ]
+}

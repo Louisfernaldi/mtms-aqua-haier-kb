@@ -1,0 +1,2123 @@
+{
+  "brand": "LG",
+  "model_count": 16,
+  "researched_at": "2026-08-21T19:53:29.748+07:00",
+  "records": [
+    {
+      "model_id": "LG::GC-L257CQEL",
+      "brand": "LG",
+      "model": "GC-L257CQEL",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://www.lg.com/id/kulkas-dan-freezer/kulkas-side-by-side/gc-l257cqel/"
+      ],
+      "specs": {
+        "form_factor": {
+          "value": "Side by Side",
+          "raw_value": "Side by Side",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-side-by-side/gc-l257cqel/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "freezer_position": {
+          "value": "Samping",
+          "raw_value": "Side by Side",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-side-by-side/gc-l257cqel/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "gross_capacity_l": {
+          "value": 674,
+          "raw_value": "674",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-side-by-side/gc-l257cqel/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "net_capacity_l": {
+          "value": 617,
+          "raw_value": "617",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-side-by-side/gc-l257cqel/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "width_mm": {
+          "value": 913,
+          "raw_value": "913 x 1790 x 735",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-side-by-side/gc-l257cqel/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "height_mm": {
+          "value": 1790,
+          "raw_value": "913 x 1790 x 735",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-side-by-side/gc-l257cqel/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "depth_mm": {
+          "value": 735,
+          "raw_value": "913 x 1790 x 735",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-side-by-side/gc-l257cqel/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "compressor_type": {
+          "value": "Smart Inverter Compressor",
+          "raw_value": "Smart Inverter Compressor",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-side-by-side/gc-l257cqel/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "cooling_system": {
+          "value": "LINEAR Cooling; Door Cooling+",
+          "raw_value": "LINEAR Cooling; Door Cooling+",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-side-by-side/gc-l257cqel/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "defrost_type": {
+          "value": "Total No Frost",
+          "raw_value": "Total No Frost",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-side-by-side/gc-l257cqel/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "weight_kg": {
+          "value": 111,
+          "raw_value": "111",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-side-by-side/gc-l257cqel/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "exterior_color": {
+          "value": "Matte Black Steel",
+          "raw_value": "Matte Black Steel",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-side-by-side/gc-l257cqel/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "wifi": {
+          "value": "Yes",
+          "raw_value": "Yes",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-side-by-side/gc-l257cqel/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_alarm": {
+          "value": "Yes",
+          "raw_value": "Yes",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-side-by-side/gc-l257cqel/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "automatic_ice_maker": {
+          "value": "Yes",
+          "raw_value": "Yes",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-side-by-side/gc-l257cqel/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "official_features": {
+          "value": [
+            "Smart Inverter",
+            "LINEAR Cooling",
+            "Door Cooling",
+            "Total No Frost",
+            "Hygiene Fresh",
+            "UVnano"
+          ],
+          "raw_value": "Smart Inverter; LINEAR Cooling; Door Cooling; Total No Frost; Hygiene Fresh; UVnano",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-side-by-side/gc-l257cqel/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "door_count",
+        "rated_power_w"
+      ],
+      "notes": []
+    },
+    {
+      "model_id": "LG::GC-V22FFQMB",
+      "brand": "LG",
+      "model": "GC-V22FFQMB",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gc-v22ffqmb/"
+      ],
+      "specs": {
+        "gross_capacity_l": {
+          "value": 595,
+          "raw_value": "595",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gc-v22ffqmb/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "net_capacity_l": {
+          "value": 458,
+          "raw_value": "458",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gc-v22ffqmb/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "width_mm": {
+          "value": 835,
+          "raw_value": "835 x 1787 x 730",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gc-v22ffqmb/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "height_mm": {
+          "value": 1787,
+          "raw_value": "835 x 1787 x 730",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gc-v22ffqmb/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "depth_mm": {
+          "value": 730,
+          "raw_value": "835 x 1787 x 730",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gc-v22ffqmb/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "compressor_type": {
+          "value": "Smart Inverter Compressor (BLDC)",
+          "raw_value": "Smart Inverter Compressor (BLDC)",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gc-v22ffqmb/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "cooling_system": {
+          "value": "LINEAR Cooling; Door Cooling+",
+          "raw_value": "LINEAR Cooling; Door Cooling+",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gc-v22ffqmb/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "weight_kg": {
+          "value": 109,
+          "raw_value": "109",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gc-v22ffqmb/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_material": {
+          "value": "PCM",
+          "raw_value": "PCM",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gc-v22ffqmb/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "exterior_color": {
+          "value": "Essence Matt Black",
+          "raw_value": "Essence Matt Black",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gc-v22ffqmb/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "wifi": {
+          "value": "Ya",
+          "raw_value": "Ya",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gc-v22ffqmb/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_alarm": {
+          "value": "Ya",
+          "raw_value": "Ya",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gc-v22ffqmb/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "automatic_ice_maker": {
+          "value": "Tidak",
+          "raw_value": "Tidak",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gc-v22ffqmb/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "official_features": {
+          "value": [
+            "Modern Flat Door",
+            "Akses Mudah",
+            "Linear Cooling",
+            "Door Cooling+",
+            "Hygiene Fresh+",
+            "Smart Inverter Compressor"
+          ],
+          "raw_value": "Modern Flat Door; Akses Mudah; Linear Cooling; Door Cooling+; Hygiene Fresh+; Smart Inverter Compressor",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gc-v22ffqmb/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "form_factor",
+        "door_count",
+        "freezer_position",
+        "rated_power_w",
+        "defrost_type"
+      ],
+      "notes": []
+    },
+    {
+      "model_id": "LG::GCFB41FPGAM",
+      "brand": "LG",
+      "model": "GCFB41FPGAM",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb41fpgam/"
+      ],
+      "specs": {
+        "form_factor": {
+          "value": "Multi Pintu",
+          "raw_value": "Multi Door",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb41fpgam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "gross_capacity_l": {
+          "value": 434,
+          "raw_value": "434",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb41fpgam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "net_capacity_l": {
+          "value": 400,
+          "raw_value": "400",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb41fpgam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "width_mm": {
+          "value": 755,
+          "raw_value": "755 x 1835 x 620",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb41fpgam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "height_mm": {
+          "value": 1835,
+          "raw_value": "755 x 1835 x 620",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb41fpgam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "depth_mm": {
+          "value": 620,
+          "raw_value": "755 x 1835 x 620",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb41fpgam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "compressor_type": {
+          "value": "Inverter Compressor",
+          "raw_value": "Inverter Compressor",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb41fpgam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "cooling_system": {
+          "value": "Multi Air Flow",
+          "raw_value": "Multi Air Flow",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb41fpgam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "defrost_type": {
+          "value": "Total No Frost",
+          "raw_value": "Total No Frost",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb41fpgam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "weight_kg": {
+          "value": 77,
+          "raw_value": "77",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb41fpgam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_material": {
+          "value": "Glass",
+          "raw_value": "Glass",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb41fpgam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "exterior_color": {
+          "value": "Hitam",
+          "raw_value": "Hitam",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb41fpgam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "wifi": {
+          "value": "Tidak",
+          "raw_value": "Tidak",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb41fpgam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_alarm": {
+          "value": "Ya",
+          "raw_value": "Ya",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb41fpgam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "automatic_ice_maker": {
+          "value": "Tidak",
+          "raw_value": "Tidak",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb41fpgam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "official_features": {
+          "value": [
+            "Inverter Compressor",
+            "Total No Frost",
+            "Multi Air Flow",
+            "Fresh Switch",
+            "Rak Tempered Glass",
+            "LED Lighting"
+          ],
+          "raw_value": "Inverter Compressor; Total No Frost; Multi Air Flow; Fresh Switch; Rak Tempered Glass; LED Lighting",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb41fpgam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "door_count",
+        "freezer_position",
+        "rated_power_w"
+      ],
+      "notes": []
+    },
+    {
+      "model_id": "LG::GCFB48FPGAM",
+      "brand": "LG",
+      "model": "GCFB48FPGAM",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb48fpgam/"
+      ],
+      "specs": {
+        "form_factor": {
+          "value": "Multi Pintu",
+          "raw_value": "Multi Door",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb48fpgam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "gross_capacity_l": {
+          "value": 550,
+          "raw_value": "550",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb48fpgam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "net_capacity_l": {
+          "value": 502,
+          "raw_value": "502",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb48fpgam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "width_mm": {
+          "value": 830,
+          "raw_value": "830 x 1855 x 698",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb48fpgam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "height_mm": {
+          "value": 1855,
+          "raw_value": "830 x 1855 x 698",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb48fpgam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "depth_mm": {
+          "value": 698,
+          "raw_value": "830 x 1855 x 698",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb48fpgam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "compressor_type": {
+          "value": "Inverter Compressor",
+          "raw_value": "Inverter Compressor",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb48fpgam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "cooling_system": {
+          "value": "Multi Air Flow",
+          "raw_value": "Multi Air Flow",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb48fpgam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "defrost_type": {
+          "value": "Total No Frost",
+          "raw_value": "Total No Frost",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb48fpgam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "weight_kg": {
+          "value": 94,
+          "raw_value": "94",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb48fpgam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_material": {
+          "value": "Glass",
+          "raw_value": "Glass",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb48fpgam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "exterior_color": {
+          "value": "Hitam",
+          "raw_value": "Hitam",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb48fpgam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "wifi": {
+          "value": "Tidak",
+          "raw_value": "Tidak",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb48fpgam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_alarm": {
+          "value": "Ya",
+          "raw_value": "Ya",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb48fpgam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "automatic_ice_maker": {
+          "value": "Tidak",
+          "raw_value": "Tidak",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb48fpgam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "official_features": {
+          "value": [
+            "Inverter Compressor",
+            "Total No Frost",
+            "Multi Air Flow",
+            "Fresh Switch",
+            "Rak Tempered Glass",
+            "LED Lighting"
+          ],
+          "raw_value": "Inverter Compressor; Total No Frost; Multi Air Flow; Fresh Switch; Rak Tempered Glass; LED Lighting",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-multi-door/gcfb48fpgam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "door_count",
+        "freezer_position",
+        "rated_power_w"
+      ],
+      "notes": []
+    },
+    {
+      "model_id": "LG::GCFB507PQAM",
+      "brand": "LG",
+      "model": "GCFB507PQAM",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://www.lg.com/id/kulkas-dan-freezer/kulkas-side-by-side/gcfb507pqam/"
+      ],
+      "specs": {
+        "form_factor": {
+          "value": "Side by Side",
+          "raw_value": "Side by Side",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-side-by-side/gcfb507pqam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "freezer_position": {
+          "value": "Samping",
+          "raw_value": "Side by Side",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-side-by-side/gcfb507pqam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "width_mm": {
+          "value": 910,
+          "raw_value": "910 x 1786 x 643",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-side-by-side/gcfb507pqam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "height_mm": {
+          "value": 1786,
+          "raw_value": "910 x 1786 x 643",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-side-by-side/gcfb507pqam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "depth_mm": {
+          "value": 643,
+          "raw_value": "910 x 1786 x 643",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-side-by-side/gcfb507pqam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "compressor_type": {
+          "value": "Smart Inverter Compressor",
+          "raw_value": "Smart Inverter Compressor",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-side-by-side/gcfb507pqam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "cooling_system": {
+          "value": "Multi Air Flow",
+          "raw_value": "Multi Air Flow",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-side-by-side/gcfb507pqam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "defrost_type": {
+          "value": "Total No Frost",
+          "raw_value": "Total No Frost",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-side-by-side/gcfb507pqam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "exterior_color": {
+          "value": "Silver",
+          "raw_value": "Silver",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-side-by-side/gcfb507pqam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_alarm": {
+          "value": "Yes",
+          "raw_value": "Yes",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-side-by-side/gcfb507pqam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "official_features": {
+          "value": [
+            "Total No Frost",
+            "Multi Air Flow",
+            "Touch LED Display",
+            "Lampu LED",
+            "Tempered Glass"
+          ],
+          "raw_value": "Total No Frost; Multi Air Flow; Touch LED Display; Lampu LED; Tempered Glass",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-side-by-side/gcfb507pqam/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "door_count",
+        "gross_capacity_l",
+        "net_capacity_l",
+        "rated_power_w"
+      ],
+      "notes": [
+        "No explicitly labelled gross/net capacity was found on the exact official page."
+      ]
+    },
+    {
+      "model_id": "LG::GN-B202SQIR",
+      "brand": "LG",
+      "model": "GN-B202SQIR",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b202sqir/"
+      ],
+      "specs": {
+        "form_factor": {
+          "value": "2 Pintu Top Mount",
+          "raw_value": "Top Freezer",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b202sqir/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_count": {
+          "value": 2,
+          "raw_value": "Kulkas 2 Pintu",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b202sqir/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "freezer_position": {
+          "value": "Atas",
+          "raw_value": "Top Freezer",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b202sqir/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "gross_capacity_l": {
+          "value": 202,
+          "raw_value": "202",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b202sqir/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "net_capacity_l": {
+          "value": 187,
+          "raw_value": "187",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b202sqir/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "width_mm": {
+          "value": 555,
+          "raw_value": "555 x 1400 x 585",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b202sqir/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "height_mm": {
+          "value": 1400,
+          "raw_value": "555 x 1400 x 585",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b202sqir/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "depth_mm": {
+          "value": 585,
+          "raw_value": "555 x 1400 x 585",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b202sqir/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "compressor_type": {
+          "value": "Recipro Compressor",
+          "raw_value": "Recipro Compressor",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b202sqir/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "cooling_system": {
+          "value": "Multi Air Flow",
+          "raw_value": "Multi Air Flow",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b202sqir/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "defrost_type": {
+          "value": "Total No Frost",
+          "raw_value": "Total No Frost",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b202sqir/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "weight_kg": {
+          "value": 39,
+          "raw_value": "39",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b202sqir/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "energy_consumption_kwh_year": {
+          "value": 419.65,
+          "raw_value": "419,65",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b202sqir/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_material": {
+          "value": "PCM",
+          "raw_value": "PCM",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b202sqir/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "exterior_color": {
+          "value": "Dark Graphite Steel",
+          "raw_value": "Dark Graphite Steel",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b202sqir/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "wifi": {
+          "value": "Tidak",
+          "raw_value": "Tidak",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b202sqir/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_alarm": {
+          "value": "Tidak",
+          "raw_value": "Tidak",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b202sqir/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "water_dispenser": {
+          "value": "Tidak",
+          "raw_value": "Tidak",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b202sqir/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "automatic_ice_maker": {
+          "value": "Tidak",
+          "raw_value": "Tidak",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b202sqir/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "official_features": {
+          "value": [
+            "Multi Air Flow",
+            "Total No Frost",
+            "Rak Tempered Glass",
+            "Moist Balance Crisper",
+            "Big Veggie Box",
+            "Pocket Handle"
+          ],
+          "raw_value": "Multi Air Flow; Total No Frost; Rak Tempered Glass; Moist Balance Crisper; Big Veggie Box; Pocket Handle",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b202sqir/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "rated_power_w"
+      ],
+      "notes": []
+    },
+    {
+      "model_id": "LG::GN-B212PQNF",
+      "brand": "LG",
+      "model": "GN-B212PQNF",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b212pqnf/"
+      ],
+      "specs": {
+        "form_factor": {
+          "value": "2 Pintu Top Mount",
+          "raw_value": "Top Freezer",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b212pqnf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_count": {
+          "value": 2,
+          "raw_value": "Kulkas 2 Pintu",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b212pqnf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "freezer_position": {
+          "value": "Atas",
+          "raw_value": "Top Freezer",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b212pqnf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "gross_capacity_l": {
+          "value": 235,
+          "raw_value": "235",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b212pqnf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "net_capacity_l": {
+          "value": 217,
+          "raw_value": "217",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b212pqnf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "width_mm": {
+          "value": 555,
+          "raw_value": "555 x 1445 x 637",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b212pqnf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "height_mm": {
+          "value": 1445,
+          "raw_value": "555 x 1445 x 637",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b212pqnf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "depth_mm": {
+          "value": 637,
+          "raw_value": "555 x 1445 x 637",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b212pqnf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "compressor_type": {
+          "value": "Smart Inverter Compressor (BLDC)",
+          "raw_value": "Smart Inverter Compressor (BLDC)",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b212pqnf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "cooling_system": {
+          "value": "Multi Air Flow",
+          "raw_value": "Multi Air Flow",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b212pqnf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "defrost_type": {
+          "value": "Total No Frost",
+          "raw_value": "Total No Frost",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b212pqnf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "weight_kg": {
+          "value": 43,
+          "raw_value": "43",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b212pqnf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "energy_consumption_kwh_year": {
+          "value": 333.2,
+          "raw_value": "333,2",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b212pqnf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_material": {
+          "value": "PCM",
+          "raw_value": "PCM",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b212pqnf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "exterior_color": {
+          "value": "Essence Matte Black",
+          "raw_value": "Essence Matte Black",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b212pqnf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "wifi": {
+          "value": "Tidak",
+          "raw_value": "Tidak",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b212pqnf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_alarm": {
+          "value": "Tidak",
+          "raw_value": "Tidak",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b212pqnf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "water_dispenser": {
+          "value": "Tidak",
+          "raw_value": "Tidak",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b212pqnf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "automatic_ice_maker": {
+          "value": "Tidak",
+          "raw_value": "Tidak",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b212pqnf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "official_features": {
+          "value": [
+            "Inverter Compressor",
+            "Multi Air Flow",
+            "Total No Frost",
+            "Rak Tempered Glass",
+            "Kontrol Suhu Terpisah",
+            "Fresh Zone"
+          ],
+          "raw_value": "Inverter Compressor; Multi Air Flow; Total No Frost; Rak Tempered Glass; Kontrol Suhu Terpisah; Fresh Zone",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b212pqnf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "rated_power_w"
+      ],
+      "notes": []
+    },
+    {
+      "model_id": "LG::GN-B242PFSF",
+      "brand": "LG",
+      "model": "GN-B242PFSF",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b242pfsf/"
+      ],
+      "specs": {
+        "form_factor": {
+          "value": "2 Pintu Top Mount",
+          "raw_value": "Top Freezer",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b242pfsf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_count": {
+          "value": 2,
+          "raw_value": "Kulkas 2 Pintu",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b242pfsf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "freezer_position": {
+          "value": "Atas",
+          "raw_value": "Top Freezer",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b242pfsf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "gross_capacity_l": {
+          "value": 263,
+          "raw_value": "263",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b242pfsf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "net_capacity_l": {
+          "value": 243,
+          "raw_value": "243",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b242pfsf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "width_mm": {
+          "value": 555,
+          "raw_value": "555 x 1573 x 637",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b242pfsf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "height_mm": {
+          "value": 1573,
+          "raw_value": "555 x 1573 x 637",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b242pfsf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "depth_mm": {
+          "value": 637,
+          "raw_value": "555 x 1573 x 637",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b242pfsf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "compressor_type": {
+          "value": "Smart Inverter Compressor (BLDC)",
+          "raw_value": "Smart Inverter Compressor (BLDC)",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b242pfsf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "cooling_system": {
+          "value": "Multi Air Flow",
+          "raw_value": "Multi Air Flow",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b242pfsf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "weight_kg": {
+          "value": 46,
+          "raw_value": "46",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b242pfsf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "energy_consumption_kwh_year": {
+          "value": 342.67,
+          "raw_value": "342,67",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b242pfsf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_material": {
+          "value": "PCM",
+          "raw_value": "PCM",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b242pfsf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "exterior_color": {
+          "value": "Prime Silver",
+          "raw_value": "Prime Silver",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b242pfsf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "wifi": {
+          "value": "Tidak",
+          "raw_value": "Tidak",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b242pfsf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_alarm": {
+          "value": "Tidak",
+          "raw_value": "Tidak",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b242pfsf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "water_dispenser": {
+          "value": "Tidak",
+          "raw_value": "Tidak",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b242pfsf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "automatic_ice_maker": {
+          "value": "Tidak",
+          "raw_value": "Tidak",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b242pfsf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "official_features": {
+          "value": [
+            "Smart Inverter",
+            "Multi Air Flow",
+            "Humidity Controller",
+            "Moist Balance Crisper",
+            "Smart Diagnosis"
+          ],
+          "raw_value": "Smart Inverter; Multi Air Flow; Humidity Controller; Moist Balance Crisper; Smart Diagnosis",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b242pfsf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "rated_power_w",
+        "defrost_type"
+      ],
+      "notes": []
+    },
+    {
+      "model_id": "LG::GN-B262PQSF",
+      "brand": "LG",
+      "model": "GN-B262PQSF",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b262pqsf/"
+      ],
+      "specs": {
+        "form_factor": {
+          "value": "2 Pintu Top Mount",
+          "raw_value": "Top Freezer",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b262pqsf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_count": {
+          "value": 2,
+          "raw_value": "Kulkas 2 Pintu",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b262pqsf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "freezer_position": {
+          "value": "Atas",
+          "raw_value": "Top Freezer",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b262pqsf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "gross_capacity_l": {
+          "value": 287,
+          "raw_value": "287",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b262pqsf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "net_capacity_l": {
+          "value": 266,
+          "raw_value": "266",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b262pqsf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "width_mm": {
+          "value": 555,
+          "raw_value": "555 x 1680 x 637",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b262pqsf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "height_mm": {
+          "value": 1680,
+          "raw_value": "555 x 1680 x 637",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b262pqsf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "depth_mm": {
+          "value": 637,
+          "raw_value": "555 x 1680 x 637",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b262pqsf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "compressor_type": {
+          "value": "Smart Inverter Compressor (BLDC)",
+          "raw_value": "Smart Inverter Compressor (BLDC)",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b262pqsf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "cooling_system": {
+          "value": "Multi Air Flow; LINEAR Cooling",
+          "raw_value": "Multi Air Flow; LINEAR Cooling",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b262pqsf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "weight_kg": {
+          "value": 48,
+          "raw_value": "48",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b262pqsf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "energy_consumption_kwh_year": {
+          "value": 353.7,
+          "raw_value": "353,7",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b262pqsf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_material": {
+          "value": "PCM",
+          "raw_value": "PCM",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b262pqsf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "exterior_color": {
+          "value": "Essence Matte Black",
+          "raw_value": "Essence Matte Black",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b262pqsf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "wifi": {
+          "value": "Tidak",
+          "raw_value": "Tidak",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b262pqsf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_alarm": {
+          "value": "Tidak",
+          "raw_value": "Tidak",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b262pqsf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "water_dispenser": {
+          "value": "Tidak",
+          "raw_value": "Tidak",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b262pqsf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "automatic_ice_maker": {
+          "value": "Tidak",
+          "raw_value": "Tidak",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b262pqsf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "official_features": {
+          "value": [
+            "Linear Cooling",
+            "DoorCooling+",
+            "Multi Air Flow",
+            "Fresh 0 Zone",
+            "Inverter Compressor"
+          ],
+          "raw_value": "Linear Cooling; DoorCooling+; Multi Air Flow; Fresh 0 Zone; Inverter Compressor",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b262pqsf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "rated_power_w",
+        "defrost_type"
+      ],
+      "notes": []
+    },
+    {
+      "model_id": "LG::GN-B332PGFB",
+      "brand": "LG",
+      "model": "GN-B332PGFB",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b332pgfb-abmpein/"
+      ],
+      "specs": {
+        "form_factor": {
+          "value": "2 Pintu Top Mount",
+          "raw_value": "Kulkas 2 Pintu",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b332pgfb-abmpein/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_count": {
+          "value": 2,
+          "raw_value": "Kulkas 2 Pintu",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b332pgfb-abmpein/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "cooling_system": {
+          "value": "Multi Air Flow; LINEAR Cooling",
+          "raw_value": "Multi Air Flow; LINEAR Cooling",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b332pgfb-abmpein/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "official_features": {
+          "value": [
+            "Linear Cooling",
+            "DoorCooling+",
+            "Multi Air Flow",
+            "Fresh 0 Zone",
+            "Moving Ice Maker",
+            "Smart Inverter Compressor"
+          ],
+          "raw_value": "Linear Cooling; DoorCooling+; Multi Air Flow; Fresh 0 Zone; Moving Ice Maker; Smart Inverter Compressor",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b332pgfb-abmpein/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "freezer_position",
+        "gross_capacity_l",
+        "net_capacity_l",
+        "width_mm",
+        "height_mm",
+        "depth_mm",
+        "rated_power_w",
+        "compressor_type",
+        "defrost_type"
+      ],
+      "notes": [
+        "No explicitly labelled gross/net capacity was found on the exact official page."
+      ]
+    },
+    {
+      "model_id": "LG::GN-B332PQQF",
+      "brand": "LG",
+      "model": "GN-B332PQQF",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b332pqqf/"
+      ],
+      "specs": {
+        "form_factor": {
+          "value": "2 Pintu Top Mount",
+          "raw_value": "Top Freezer",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b332pqqf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_count": {
+          "value": 2,
+          "raw_value": "Kulkas 2 Pintu",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b332pqqf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "freezer_position": {
+          "value": "Atas",
+          "raw_value": "Top Freezer",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b332pqqf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "gross_capacity_l": {
+          "value": 360,
+          "raw_value": "360",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b332pqqf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "net_capacity_l": {
+          "value": 335,
+          "raw_value": "335",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b332pqqf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "width_mm": {
+          "value": 600,
+          "raw_value": "600 x 1720 x 710",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b332pqqf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "height_mm": {
+          "value": 1720,
+          "raw_value": "600 x 1720 x 710",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b332pqqf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "depth_mm": {
+          "value": 710,
+          "raw_value": "600 x 1720 x 710",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b332pqqf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "compressor_type": {
+          "value": "Smart Inverter Compressor (BLDC)",
+          "raw_value": "Smart Inverter Compressor (BLDC)",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b332pqqf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "cooling_system": {
+          "value": "Multi Air Flow; LINEARCooling",
+          "raw_value": "Multi Air Flow; LINEARCooling",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b332pqqf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "weight_kg": {
+          "value": 57,
+          "raw_value": "57",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b332pqqf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_material": {
+          "value": "PCM",
+          "raw_value": "PCM",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b332pqqf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "exterior_color": {
+          "value": "Dark Graphite Steel",
+          "raw_value": "Dark Graphite Steel",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b332pqqf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "wifi": {
+          "value": "Tidak",
+          "raw_value": "Tidak",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b332pqqf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_alarm": {
+          "value": "Tidak",
+          "raw_value": "Tidak",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b332pqqf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "water_dispenser": {
+          "value": "Tidak",
+          "raw_value": "Tidak",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b332pqqf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "automatic_ice_maker": {
+          "value": "Tidak",
+          "raw_value": "Tidak",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b332pqqf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "official_features": {
+          "value": [
+            "LINEARCooling",
+            "Multi Air Flow",
+            "Pull-out Tray",
+            "Fresh Zone",
+            "Smart Inverter Compressor"
+          ],
+          "raw_value": "LINEARCooling; Multi Air Flow; Pull-out Tray; Fresh Zone; Smart Inverter Compressor",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b332pqqf/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "rated_power_w",
+        "defrost_type"
+      ],
+      "notes": []
+    },
+    {
+      "model_id": "LG::GN-B392PGFB",
+      "brand": "LG",
+      "model": "GN-B392PGFB",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://www.lg.com/id/kulkas-dan-freezer1/kulkas-2-pintu/gn-b392pgfb/"
+      ],
+      "specs": {
+        "form_factor": {
+          "value": "2 Pintu Top Mount",
+          "raw_value": "Kulkas 2 Pintu",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer1/kulkas-2-pintu/gn-b392pgfb/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_count": {
+          "value": 2,
+          "raw_value": "Kulkas 2 Pintu",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer1/kulkas-2-pintu/gn-b392pgfb/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "official_features": {
+          "value": [
+            "Terbungkus Kesegaran Alami Lebih Lama",
+            "Suhu optimal di mana pun",
+            "Hemat energi & tahan lama",
+            "Pintu Flat",
+            "Hemat Waktu Defrosting",
+            "Boks Buah dan Sayur Lebih Besar"
+          ],
+          "raw_value": "Terbungkus Kesegaran Alami Lebih Lama; Suhu optimal di mana pun; Hemat energi & tahan lama; Pintu Flat; Hemat Waktu Defrosting; Boks Buah dan Sayur Lebih Besar",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer1/kulkas-2-pintu/gn-b392pgfb/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "freezer_position",
+        "gross_capacity_l",
+        "net_capacity_l",
+        "width_mm",
+        "height_mm",
+        "depth_mm",
+        "rated_power_w",
+        "compressor_type",
+        "cooling_system",
+        "defrost_type"
+      ],
+      "notes": [
+        "No explicitly labelled gross/net capacity was found on the exact official page."
+      ]
+    },
+    {
+      "model_id": "LG::GN-F372PXAK",
+      "brand": "LG",
+      "model": "GN-F372PXAK",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-f372pxak/"
+      ],
+      "specs": {
+        "form_factor": {
+          "value": "2 Pintu Top Mount",
+          "raw_value": "Kulkas 2 Pintu",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-f372pxak/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_count": {
+          "value": 2,
+          "raw_value": "Kulkas 2 Pintu",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-f372pxak/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "gross_capacity_l": {
+          "value": 410,
+          "raw_value": "410",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-f372pxak/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "net_capacity_l": {
+          "value": 363,
+          "raw_value": "363",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-f372pxak/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "compressor_type": {
+          "value": "Smart Inverter Compressor",
+          "raw_value": "Smart Inverter Compressor",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-f372pxak/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "cooling_system": {
+          "value": "LINEARCooling; Door Cooling+",
+          "raw_value": "LINEARCooling; Door Cooling+",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-f372pxak/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "weight_kg": {
+          "value": 69,
+          "raw_value": "69",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-f372pxak/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_material": {
+          "value": "VCM",
+          "raw_value": "VCM",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-f372pxak/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "exterior_color": {
+          "value": "Black Steel",
+          "raw_value": "Black Steel",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-f372pxak/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "wifi": {
+          "value": "Yes",
+          "raw_value": "Yes",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-f372pxak/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_alarm": {
+          "value": "Yes",
+          "raw_value": "Yes",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-f372pxak/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "automatic_ice_maker": {
+          "value": "Yes",
+          "raw_value": "Yes",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-f372pxak/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "official_features": {
+          "value": [
+            "LinearCooling",
+            "Door Cooling+",
+            "Hygiene Fresh",
+            "Spaceplus Ice System",
+            "Fresh 0 Zone",
+            "LG ThinQ"
+          ],
+          "raw_value": "LinearCooling; Door Cooling+; Hygiene Fresh; Spaceplus Ice System; Fresh 0 Zone; LG ThinQ",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-f372pxak/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "freezer_position",
+        "width_mm",
+        "height_mm",
+        "depth_mm",
+        "rated_power_w",
+        "defrost_type"
+      ],
+      "notes": []
+    },
+    {
+      "model_id": "LG::GN-Y201CLAR",
+      "brand": "LG",
+      "model": "GN-Y201CLAR",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://www.lg.com/id/kulkas-dan-freezer/kulkas-1-pintu/gn-y201clar/"
+      ],
+      "specs": {
+        "form_factor": {
+          "value": "1 Pintu",
+          "raw_value": "Kulkas 1 Pintu",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-1-pintu/gn-y201clar/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_count": {
+          "value": 1,
+          "raw_value": "Kulkas 1 Pintu",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-1-pintu/gn-y201clar/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "gross_capacity_l": {
+          "value": 169,
+          "raw_value": "169",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-1-pintu/gn-y201clar/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "net_capacity_l": {
+          "value": 164,
+          "raw_value": "164",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-1-pintu/gn-y201clar/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "width_mm": {
+          "value": 525,
+          "raw_value": "525 x 1135 x 555",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-1-pintu/gn-y201clar/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "height_mm": {
+          "value": 1135,
+          "raw_value": "525 x 1135 x 555",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-1-pintu/gn-y201clar/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "depth_mm": {
+          "value": 555,
+          "raw_value": "525 x 1135 x 555",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-1-pintu/gn-y201clar/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "compressor_type": {
+          "value": "Recipro Compressor",
+          "raw_value": "Recipro Compressor",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-1-pintu/gn-y201clar/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "weight_kg": {
+          "value": 29,
+          "raw_value": "29",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-1-pintu/gn-y201clar/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "energy_consumption_kwh_year": {
+          "value": 281.7,
+          "raw_value": "281,7",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-1-pintu/gn-y201clar/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_material": {
+          "value": "PCM",
+          "raw_value": "PCM",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-1-pintu/gn-y201clar/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "exterior_color": {
+          "value": "Dark Graphite Steel",
+          "raw_value": "Dark Graphite Steel",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-1-pintu/gn-y201clar/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "wifi": {
+          "value": "Tidak",
+          "raw_value": "Tidak",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-1-pintu/gn-y201clar/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "water_dispenser": {
+          "value": "Tidak",
+          "raw_value": "Tidak",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-1-pintu/gn-y201clar/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "official_features": {
+          "value": [
+            "Bio Shield",
+            "Rak Tempered Glass",
+            "Moist Balance Crisper",
+            "Freezer Zone",
+            "Lampu LED"
+          ],
+          "raw_value": "Bio Shield; Rak Tempered Glass; Moist Balance Crisper; Freezer Zone; Lampu LED",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-1-pintu/gn-y201clar/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "freezer_position",
+        "rated_power_w",
+        "cooling_system",
+        "defrost_type"
+      ],
+      "notes": []
+    },
+    {
+      "model_id": "LG::GN-Y331SLSR",
+      "brand": "LG",
+      "model": "GN-Y331SLSR",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://www.lg.com/id/kulkas-dan-freezer/kulkas-1-pintu/gn-y331slsr/"
+      ],
+      "specs": {
+        "form_factor": {
+          "value": "1 Pintu",
+          "raw_value": "Kulkas 1 Pintu",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-1-pintu/gn-y331slsr/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_count": {
+          "value": 1,
+          "raw_value": "Kulkas 1 Pintu",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-1-pintu/gn-y331slsr/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "gross_capacity_l": {
+          "value": 199,
+          "raw_value": "199",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-1-pintu/gn-y331slsr/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "net_capacity_l": {
+          "value": 195,
+          "raw_value": "195",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-1-pintu/gn-y331slsr/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "width_mm": {
+          "value": 525,
+          "raw_value": "525 x 1295 x 555",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-1-pintu/gn-y331slsr/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "height_mm": {
+          "value": 1295,
+          "raw_value": "525 x 1295 x 555",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-1-pintu/gn-y331slsr/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "depth_mm": {
+          "value": 555,
+          "raw_value": "525 x 1295 x 555",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-1-pintu/gn-y331slsr/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "compressor_type": {
+          "value": "Recipro Compressor",
+          "raw_value": "Recipro Compressor",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-1-pintu/gn-y331slsr/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "weight_kg": {
+          "value": 32,
+          "raw_value": "32",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-1-pintu/gn-y331slsr/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "energy_consumption_kwh_year": {
+          "value": 302.8,
+          "raw_value": "302,8",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-1-pintu/gn-y331slsr/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_material": {
+          "value": "PCM",
+          "raw_value": "PCM",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-1-pintu/gn-y331slsr/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "exterior_color": {
+          "value": "Prime Silver",
+          "raw_value": "Prime Silver",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-1-pintu/gn-y331slsr/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "wifi": {
+          "value": "Tidak",
+          "raw_value": "Tidak",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-1-pintu/gn-y331slsr/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "water_dispenser": {
+          "value": "Tidak",
+          "raw_value": "Tidak",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-1-pintu/gn-y331slsr/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "official_features": {
+          "value": [
+            "Semi-round Door",
+            "Vertical Pocket Handle",
+            "Moist Balance Crisper",
+            "Big Vegetable Box",
+            "Tempered Glass Shelf"
+          ],
+          "raw_value": "Semi-round Door; Vertical Pocket Handle; Moist Balance Crisper; Big Vegetable Box; Tempered Glass Shelf",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-1-pintu/gn-y331slsr/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "freezer_position",
+        "rated_power_w",
+        "cooling_system",
+        "defrost_type"
+      ],
+      "notes": []
+    },
+    {
+      "model_id": "LG::GN_B222SFIF",
+      "brand": "LG",
+      "model": "GN_B222SFIF",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b222sfif/"
+      ],
+      "specs": {
+        "form_factor": {
+          "value": "2 Pintu Top Mount",
+          "raw_value": "Top Freezer",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b222sfif/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_count": {
+          "value": 2,
+          "raw_value": "Kulkas 2 Pintu",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b222sfif/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "freezer_position": {
+          "value": "Atas",
+          "raw_value": "Top Freezer",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b222sfif/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "gross_capacity_l": {
+          "value": 225,
+          "raw_value": "225",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b222sfif/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "net_capacity_l": {
+          "value": 209,
+          "raw_value": "209",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b222sfif/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "width_mm": {
+          "value": 555,
+          "raw_value": "555 x 1520 x 585",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b222sfif/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "height_mm": {
+          "value": 1520,
+          "raw_value": "555 x 1520 x 585",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b222sfif/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "depth_mm": {
+          "value": 585,
+          "raw_value": "555 x 1520 x 585",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b222sfif/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "compressor_type": {
+          "value": "Smart Inverter Compressor (BLDC)",
+          "raw_value": "Smart Inverter Compressor (BLDC)",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b222sfif/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "cooling_system": {
+          "value": "Multi Air Flow",
+          "raw_value": "Multi Air Flow",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b222sfif/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "defrost_type": {
+          "value": "Total No Frost",
+          "raw_value": "Total No Frost",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b222sfif/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "additional_specs": {
+        "weight_kg": {
+          "value": 41,
+          "raw_value": "41",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b222sfif/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "energy_consumption_kwh_year": {
+          "value": 318.8,
+          "raw_value": "318,8",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b222sfif/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_material": {
+          "value": "PCM",
+          "raw_value": "PCM",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b222sfif/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "exterior_color": {
+          "value": "Dark Graphite Steel",
+          "raw_value": "Dark Graphite Steel",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b222sfif/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "wifi": {
+          "value": "Tidak",
+          "raw_value": "Tidak",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b222sfif/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "door_alarm": {
+          "value": "Tidak",
+          "raw_value": "Tidak",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b222sfif/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "water_dispenser": {
+          "value": "Tidak",
+          "raw_value": "Tidak",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b222sfif/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "automatic_ice_maker": {
+          "value": "Tidak",
+          "raw_value": "Tidak",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b222sfif/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        },
+        "official_features": {
+          "value": [
+            "Inverter Compressor",
+            "Multi Air Flow",
+            "Total No Frost",
+            "Rak Tempered Glass",
+            "Kontrol Suhu Terpisah",
+            "Fresh Zone"
+          ],
+          "raw_value": "Inverter Compressor; Multi Air Flow; Total No Frost; Rak Tempered Glass; Kontrol Suhu Terpisah; Fresh Zone",
+          "source_url": "https://www.lg.com/id/kulkas-dan-freezer/kulkas-2-pintu/gn-b222sfif/",
+          "source_kind": "official_product_page",
+          "verified_at": "2026-08-21T19:53:29.748+07:00"
+        }
+      },
+      "unresolved_core": [
+        "rated_power_w"
+      ],
+      "notes": []
+    }
+  ]
+}

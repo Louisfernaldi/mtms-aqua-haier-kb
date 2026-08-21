@@ -1,0 +1,242 @@
+{
+  "brand": "POLYTRON",
+  "model_count": 13,
+  "researched_at": "2026-08-21T19:48:07+07:00",
+  "records": [
+    {
+      "model_id": "POLYTRON::PRA_18DMY", "brand": "POLYTRON", "model": "PRA_18DMY", "research_status": "partial", "exact_match": true,
+      "checked_urls": ["https://polytron.co.id/produk/polytron-kulkas-1-pintu-belleza-180-liter-pra-18dmy/"],
+      "specs": {
+        "form_factor": {"value": "1 Pintu", "raw_value": "Product type One Door", "source_url": "https://polytron.co.id/produk/polytron-kulkas-1-pintu-belleza-180-liter-pra-18dmy/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "door_count": {"value": 1, "raw_value": "Product type One Door", "source_url": "https://polytron.co.id/produk/polytron-kulkas-1-pintu-belleza-180-liter-pra-18dmy/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "width_mm": {"value": 541, "raw_value": "Product dimension 54.1 x 58 x 122.3 cm", "source_url": "https://polytron.co.id/produk/polytron-kulkas-1-pintu-belleza-180-liter-pra-18dmy/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "height_mm": {"value": 1223, "raw_value": "Product dimension 54.1 x 58 x 122.3 cm", "source_url": "https://polytron.co.id/produk/polytron-kulkas-1-pintu-belleza-180-liter-pra-18dmy/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "depth_mm": {"value": 580, "raw_value": "Product dimension 54.1 x 58 x 122.3 cm", "source_url": "https://polytron.co.id/produk/polytron-kulkas-1-pintu-belleza-180-liter-pra-18dmy/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "rated_power_w": {"value": 70, "raw_value": "Power consumption 70 Watt", "source_url": "https://polytron.co.id/produk/polytron-kulkas-1-pintu-belleza-180-liter-pra-18dmy/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "defrost_type": {"value": "Semi Otomatis", "raw_value": "Semi auto defrost button", "source_url": "https://polytron.co.id/produk/polytron-kulkas-1-pintu-belleza-180-liter-pra-18dmy/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"}
+      },
+      "additional_specs": {
+        "capacity_unlabelled_l": {"value": 180, "raw_value": "Capacity 180L", "source_url": "https://polytron.co.id/produk/polytron-kulkas-1-pintu-belleza-180-liter-pra-18dmy/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "refrigerant": {"value": "R134a", "raw_value": "Refrigerant R134a", "source_url": "https://polytron.co.id/produk/polytron-kulkas-1-pintu-belleza-180-liter-pra-18dmy/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "gross_weight_kg": {"value": 34, "raw_value": "Gross weight 34 kg", "source_url": "https://polytron.co.id/produk/polytron-kulkas-1-pintu-belleza-180-liter-pra-18dmy/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "net_weight_kg": {"value": 31, "raw_value": "Nett weight 31 Kg", "source_url": "https://polytron.co.id/produk/polytron-kulkas-1-pintu-belleza-180-liter-pra-18dmy/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"}
+      },
+      "unresolved_core": ["freezer_position", "gross_capacity_l", "net_capacity_l", "compressor_type", "cooling_system"],
+      "notes": ["Official page names PRA 18DMY exactly after normalizing the repository underscore separator.", "Capacity is unlabelled gross/net."]
+    },
+    {
+      "model_id": "POLYTRON::PRB_159B_R", "brand": "POLYTRON", "model": "PRB_159B_R", "research_status": "unresolved", "exact_match": false,
+      "checked_urls": ["https://polytron.co.id/produk/polytron-kulkas-1-pintu-metallic-series-150-liter-prb-159r/", "https://polytron.co.id/?s=PRB%20159B%20R"],
+      "specs": {}, "additional_specs": {},
+      "unresolved_core": ["form_factor", "door_count", "freezer_position", "gross_capacity_l", "net_capacity_l", "width_mm", "height_mm", "depth_mm", "rated_power_w", "compressor_type", "cooling_system", "defrost_type"],
+      "notes": ["Starting URL is for PRB 159R, while official search separately returns PRB 159B and PRB 159Y.", "No official source explicitly aliases PRB_159B_R to one exact model, so values from neighbouring variants were not copied."]
+    },
+    {
+      "model_id": "POLYTRON::PRB_179R_B", "brand": "POLYTRON", "model": "PRB_179R_B", "research_status": "unresolved", "exact_match": false,
+      "checked_urls": ["https://polytron.co.id/produk/polytron-kulkas-1-pintu-metallic-series-170-liter-prb-179r/", "https://polytron.co.id/?s=PRB%20179R%20B"],
+      "specs": {}, "additional_specs": {},
+      "unresolved_core": ["form_factor", "door_count", "freezer_position", "gross_capacity_l", "net_capacity_l", "width_mm", "height_mm", "depth_mm", "rated_power_w", "compressor_type", "cooling_system", "defrost_type"],
+      "notes": ["Starting URL and official search identify PRB 179R, not the composite target PRB_179R_B.", "No explicit official alias was found, so PRB 179R specifications were not assigned to this target."]
+    },
+    {
+      "model_id": "POLYTRON::PRB_219R", "brand": "POLYTRON", "model": "PRB_219R", "research_status": "partial", "exact_match": true,
+      "checked_urls": ["https://polytron.co.id/produk/polytron-kulkas-2-pintu-metallic-series-210-liter-prb-219r/"],
+      "specs": {
+        "form_factor": {"value": "2 Pintu", "raw_value": "Product type Two Doors", "source_url": "https://polytron.co.id/produk/polytron-kulkas-2-pintu-metallic-series-210-liter-prb-219r/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "door_count": {"value": 2, "raw_value": "Product type Two Doors", "source_url": "https://polytron.co.id/produk/polytron-kulkas-2-pintu-metallic-series-210-liter-prb-219r/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "width_mm": {"value": 548, "raw_value": "Product dimension 54.8 x 63.2 x 139.4 cm", "source_url": "https://polytron.co.id/produk/polytron-kulkas-2-pintu-metallic-series-210-liter-prb-219r/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "height_mm": {"value": 1394, "raw_value": "Product dimension 54.8 x 63.2 x 139.4 cm", "source_url": "https://polytron.co.id/produk/polytron-kulkas-2-pintu-metallic-series-210-liter-prb-219r/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "depth_mm": {"value": 632, "raw_value": "Product dimension 54.8 x 63.2 x 139.4 cm", "source_url": "https://polytron.co.id/produk/polytron-kulkas-2-pintu-metallic-series-210-liter-prb-219r/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "rated_power_w": {"value": 100, "raw_value": "Power consumption 100 Watt", "source_url": "https://polytron.co.id/produk/polytron-kulkas-2-pintu-metallic-series-210-liter-prb-219r/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "defrost_type": {"value": "Otomatis", "raw_value": "Automatic defrost system", "source_url": "https://polytron.co.id/produk/polytron-kulkas-2-pintu-metallic-series-210-liter-prb-219r/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"}
+      },
+      "additional_specs": {
+        "capacity_unlabelled_l": {"value": 210, "raw_value": "Capacity 210L", "source_url": "https://polytron.co.id/produk/polytron-kulkas-2-pintu-metallic-series-210-liter-prb-219r/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "refrigerant": {"value": "R600a", "raw_value": "Refrigerant R600a", "source_url": "https://polytron.co.id/produk/polytron-kulkas-2-pintu-metallic-series-210-liter-prb-219r/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "gross_weight_kg": {"value": 43, "raw_value": "Gross weight 43 kg", "source_url": "https://polytron.co.id/produk/polytron-kulkas-2-pintu-metallic-series-210-liter-prb-219r/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "net_weight_kg": {"value": 39.5, "raw_value": "Nett weight 39.5 kg", "source_url": "https://polytron.co.id/produk/polytron-kulkas-2-pintu-metallic-series-210-liter-prb-219r/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"}
+      },
+      "unresolved_core": ["freezer_position", "gross_capacity_l", "net_capacity_l", "compressor_type", "cooling_system"],
+      "notes": ["Official page names PRB 219R exactly.", "Capacity is unlabelled gross/net; freezer position is not stated in the exact specification block."]
+    },
+    {
+      "model_id": "POLYTRON::PRB_25MNX", "brand": "POLYTRON", "model": "PRB_25MNX", "research_status": "unresolved", "exact_match": false,
+      "checked_urls": ["https://polytron.co.id/produk/kulkas-2-pintu-polytron-belleza-jumbo-prw-25mnx-series/", "https://polytron.co.id/?s=PRB%2025MNX"],
+      "specs": {}, "additional_specs": {},
+      "unresolved_core": ["form_factor", "door_count", "freezer_position", "gross_capacity_l", "net_capacity_l", "width_mm", "height_mm", "depth_mm", "rated_power_w", "compressor_type", "cooling_system", "defrost_type"],
+      "notes": ["Starting URL identifies PRW 25MNX/PRW 25MNXC, not PRB_25MNX.", "Official search returned no PRB 25MNX result; no values were copied across the brand-prefix mismatch."]
+    },
+    {
+      "model_id": "POLYTRON::PRM_495X", "brand": "POLYTRON", "model": "PRM_495X", "research_status": "partial", "exact_match": true,
+      "checked_urls": ["https://polytron.co.id/produk/kulkas-polytron-belleza-big-liter-inverter-with-vacuum-compartment-prm-495x/"],
+      "specs": {
+        "form_factor": {"value": "2 Pintu", "raw_value": "Product type Two Doors", "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-big-liter-inverter-with-vacuum-compartment-prm-495x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "door_count": {"value": 2, "raw_value": "Product type Two Doors", "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-big-liter-inverter-with-vacuum-compartment-prm-495x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "width_mm": {"value": 620, "raw_value": "Product dimension 620 x 682 x 1749 mm", "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-big-liter-inverter-with-vacuum-compartment-prm-495x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "height_mm": {"value": 1749, "raw_value": "Product dimension 620 x 682 x 1749 mm", "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-big-liter-inverter-with-vacuum-compartment-prm-495x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "depth_mm": {"value": 682, "raw_value": "Product dimension 620 x 682 x 1749 mm", "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-big-liter-inverter-with-vacuum-compartment-prm-495x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "rated_power_w": {"value": 140, "raw_value": "Power consumption 140 Watt", "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-big-liter-inverter-with-vacuum-compartment-prm-495x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "compressor_type": {"value": "Smart Inverter", "raw_value": "Smart Inverter ... inverter compressor", "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-big-liter-inverter-with-vacuum-compartment-prm-495x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"}
+      },
+      "additional_specs": {
+        "capacity_unlabelled_l": {"value": 350, "raw_value": "Capacity 350L", "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-big-liter-inverter-with-vacuum-compartment-prm-495x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "refrigerant": {"value": "R600a", "raw_value": "Refrigerant R600a", "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-big-liter-inverter-with-vacuum-compartment-prm-495x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "gross_weight_kg": {"value": 72.5, "raw_value": "Gross weight 72.5 kg", "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-big-liter-inverter-with-vacuum-compartment-prm-495x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "net_weight_kg": {"value": 67.5, "raw_value": "Nett weight 67.5 kg", "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-big-liter-inverter-with-vacuum-compartment-prm-495x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"}
+      },
+      "unresolved_core": ["freezer_position", "gross_capacity_l", "net_capacity_l", "cooling_system", "defrost_type"],
+      "notes": ["Official page names PRM 495X exactly.", "Capacity is unlabelled gross/net."]
+    },
+    {
+      "model_id": "POLYTRON::PRS_455S", "brand": "POLYTRON", "model": "PRS_455S", "research_status": "partial", "exact_match": true,
+      "checked_urls": ["https://polytron.co.id/produk/polytron-kulkas-2-pintu-side-by-side-450-liter-prs-455s/", "https://polytron.co.id/?s=PRS%20455S", "https://web.archive.org/web/20260000000000id_/https://polytron.co.id/produk/polytron-kulkas-2-pintu-side-by-side-450-liter-prs-455s/"],
+      "specs": {
+        "form_factor": {"value": "Side by Side", "raw_value": "Product type Two Doors Side by Side", "source_url": "https://web.archive.org/web/20260000000000id_/https://polytron.co.id/produk/polytron-kulkas-2-pintu-side-by-side-450-liter-prs-455s/", "source_kind": "official_archive", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "door_count": {"value": 2, "raw_value": "Product type Two Doors Side by Side", "source_url": "https://web.archive.org/web/20260000000000id_/https://polytron.co.id/produk/polytron-kulkas-2-pintu-side-by-side-450-liter-prs-455s/", "source_kind": "official_archive", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "width_mm": {"value": 836, "raw_value": "Product dimension 836 x 636 x 1780 mm", "source_url": "https://web.archive.org/web/20260000000000id_/https://polytron.co.id/produk/polytron-kulkas-2-pintu-side-by-side-450-liter-prs-455s/", "source_kind": "official_archive", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "height_mm": {"value": 1780, "raw_value": "Product dimension 836 x 636 x 1780 mm", "source_url": "https://web.archive.org/web/20260000000000id_/https://polytron.co.id/produk/polytron-kulkas-2-pintu-side-by-side-450-liter-prs-455s/", "source_kind": "official_archive", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "depth_mm": {"value": 636, "raw_value": "Product dimension 836 x 636 x 1780 mm", "source_url": "https://web.archive.org/web/20260000000000id_/https://polytron.co.id/produk/polytron-kulkas-2-pintu-side-by-side-450-liter-prs-455s/", "source_kind": "official_archive", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "rated_power_w": {"value": 120, "raw_value": "Power consumption 120 Watt", "source_url": "https://web.archive.org/web/20260000000000id_/https://polytron.co.id/produk/polytron-kulkas-2-pintu-side-by-side-450-liter-prs-455s/", "source_kind": "official_archive", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "compressor_type": {"value": "Inverter", "raw_value": "Inverter compressor Yes", "source_url": "https://web.archive.org/web/20260000000000id_/https://polytron.co.id/produk/polytron-kulkas-2-pintu-side-by-side-450-liter-prs-455s/", "source_kind": "official_archive", "verified_at": "2026-08-21T19:48:07+07:00"}
+      },
+      "additional_specs": {
+        "capacity_unlabelled_l": {"value": 450, "raw_value": "Capacity 450L", "source_url": "https://web.archive.org/web/20260000000000id_/https://polytron.co.id/produk/polytron-kulkas-2-pintu-side-by-side-450-liter-prs-455s/", "source_kind": "official_archive", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "refrigerant": {"value": "R600a", "raw_value": "Refrigerant R600a", "source_url": "https://web.archive.org/web/20260000000000id_/https://polytron.co.id/produk/polytron-kulkas-2-pintu-side-by-side-450-liter-prs-455s/", "source_kind": "official_archive", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "gross_weight_kg": {"value": 89, "raw_value": "Gross weight 89 kg", "source_url": "https://web.archive.org/web/20260000000000id_/https://polytron.co.id/produk/polytron-kulkas-2-pintu-side-by-side-450-liter-prs-455s/", "source_kind": "official_archive", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "net_weight_kg": {"value": 80, "raw_value": "Nett weight 80Kg", "source_url": "https://web.archive.org/web/20260000000000id_/https://polytron.co.id/produk/polytron-kulkas-2-pintu-side-by-side-450-liter-prs-455s/", "source_kind": "official_archive", "verified_at": "2026-08-21T19:48:07+07:00"}
+      },
+      "unresolved_core": ["freezer_position", "gross_capacity_l", "net_capacity_l", "cooling_system", "defrost_type"],
+      "notes": ["Current source URL returned HTTP 404 on two attempts; the exact official page was recovered from the Wayback Machine.", "The 404 is recorded as a source-page failure, not a verdict that the product did not exist.", "Generic feature sections naming other models were excluded."]
+    },
+    {
+      "model_id": "POLYTRON::PRS_465X", "brand": "POLYTRON", "model": "PRS_465X", "research_status": "partial", "exact_match": true,
+      "checked_urls": ["https://polytron.co.id/produk/polytron-kulkas-new-belleza-inverter-4-pintu-multidoor-side-by-side-prs-465x/"],
+      "specs": {
+        "form_factor": {"value": "Multi Pintu", "raw_value": "Product type Four Door Side By Side", "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-belleza-inverter-4-pintu-multidoor-side-by-side-prs-465x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "door_count": {"value": 4, "raw_value": "Product type Four Door Side By Side", "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-belleza-inverter-4-pintu-multidoor-side-by-side-prs-465x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "width_mm": {"value": 836, "raw_value": "Product dimension 836 x 636 x 1780 mm", "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-belleza-inverter-4-pintu-multidoor-side-by-side-prs-465x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "height_mm": {"value": 1780, "raw_value": "Product dimension 836 x 636 x 1780 mm", "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-belleza-inverter-4-pintu-multidoor-side-by-side-prs-465x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "depth_mm": {"value": 636, "raw_value": "Product dimension 836 x 636 x 1780 mm", "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-belleza-inverter-4-pintu-multidoor-side-by-side-prs-465x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "rated_power_w": {"value": 220, "raw_value": "Power consumption 220 Watt", "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-belleza-inverter-4-pintu-multidoor-side-by-side-prs-465x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "compressor_type": {"value": "Inverter", "raw_value": "teknologi Inverter", "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-belleza-inverter-4-pintu-multidoor-side-by-side-prs-465x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "cooling_system": {"value": "Multi Air Flow & Smart Air Distribution", "raw_value": "teknologi Multi Air flow & Smart Air Distribution", "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-belleza-inverter-4-pintu-multidoor-side-by-side-prs-465x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"}
+      },
+      "additional_specs": {
+        "capacity_unlabelled_l": {"value": 460, "raw_value": "Multi Door Side by Side refrigerator 460ltr", "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-belleza-inverter-4-pintu-multidoor-side-by-side-prs-465x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "refrigerant": {"value": "R600a", "raw_value": "Refrigerant R600a", "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-belleza-inverter-4-pintu-multidoor-side-by-side-prs-465x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "gross_weight_kg": {"value": 80, "raw_value": "Gross weight 80 kg", "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-belleza-inverter-4-pintu-multidoor-side-by-side-prs-465x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "net_weight_kg": {"value": 72, "raw_value": "Nett weight 72 kg", "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-belleza-inverter-4-pintu-multidoor-side-by-side-prs-465x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"}
+      },
+      "unresolved_core": ["freezer_position", "gross_capacity_l", "net_capacity_l", "defrost_type"],
+      "notes": ["Exact model appears in the official title.", "Capacity is unlabelled and differs from the legacy dataset; the official raw value is preserved only as unlabelled capacity.", "Generic feature blocks naming PRS 451Y/PRS 460B were excluded."]
+    },
+    {
+      "model_id": "POLYTRON::PRS_510X", "brand": "POLYTRON", "model": "PRS_510X", "research_status": "partial", "exact_match": true,
+      "checked_urls": ["https://polytron.co.id/produk/kulkas-polytron-new-belleza-inverter-4-pintu-side-by-side-prs-510x/"],
+      "specs": {
+        "form_factor": {"value": "Multi Pintu", "raw_value": "Kulkas Side By Side 4 Pintu", "source_url": "https://polytron.co.id/produk/kulkas-polytron-new-belleza-inverter-4-pintu-side-by-side-prs-510x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "door_count": {"value": 4, "raw_value": "Kulkas Side By Side 4 Pintu", "source_url": "https://polytron.co.id/produk/kulkas-polytron-new-belleza-inverter-4-pintu-side-by-side-prs-510x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "width_mm": {"value": 836, "raw_value": "Product dimension 83.6 x 63.6 x 183 cm", "source_url": "https://polytron.co.id/produk/kulkas-polytron-new-belleza-inverter-4-pintu-side-by-side-prs-510x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "height_mm": {"value": 1830, "raw_value": "Product dimension 83.6 x 63.6 x 183 cm", "source_url": "https://polytron.co.id/produk/kulkas-polytron-new-belleza-inverter-4-pintu-side-by-side-prs-510x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "depth_mm": {"value": 636, "raw_value": "Product dimension 83.6 x 63.6 x 183 cm", "source_url": "https://polytron.co.id/produk/kulkas-polytron-new-belleza-inverter-4-pintu-side-by-side-prs-510x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "rated_power_w": {"value": 200, "raw_value": "Power consumption 200 Watt", "source_url": "https://polytron.co.id/produk/kulkas-polytron-new-belleza-inverter-4-pintu-side-by-side-prs-510x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "compressor_type": {"value": "Inverter", "raw_value": "Inverter compressor", "source_url": "https://polytron.co.id/produk/kulkas-polytron-new-belleza-inverter-4-pintu-side-by-side-prs-510x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"}
+      },
+      "additional_specs": {
+        "capacity_unlabelled_l": {"value": 480, "raw_value": "Capacity 480L", "source_url": "https://polytron.co.id/produk/kulkas-polytron-new-belleza-inverter-4-pintu-side-by-side-prs-510x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "refrigerant": {"value": "R600a", "raw_value": "Refrigerant R600a", "source_url": "https://polytron.co.id/produk/kulkas-polytron-new-belleza-inverter-4-pintu-side-by-side-prs-510x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "gross_weight_kg": {"value": 101, "raw_value": "Gross weight 101 kg", "source_url": "https://polytron.co.id/produk/kulkas-polytron-new-belleza-inverter-4-pintu-side-by-side-prs-510x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "net_weight_kg": {"value": 92, "raw_value": "Nett weight 92 kg", "source_url": "https://polytron.co.id/produk/kulkas-polytron-new-belleza-inverter-4-pintu-side-by-side-prs-510x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"}
+      },
+      "unresolved_core": ["freezer_position", "gross_capacity_l", "net_capacity_l", "cooling_system", "defrost_type"],
+      "notes": ["Exact model appears in the official title.", "Capacity is unlabelled gross/net; generic blocks explicitly limited to other model numbers were excluded."]
+    },
+    {
+      "model_id": "POLYTRON::PRS_521Y", "brand": "POLYTRON", "model": "PRS_521Y", "research_status": "partial", "exact_match": true,
+      "checked_urls": ["https://polytron.co.id/produk/polytron-kulkas-new-side-by-side-2-pintu-prs-521y/"],
+      "specs": {
+        "form_factor": {"value": "Side by Side", "raw_value": "2 Door Side by Side refrigerator", "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-side-by-side-2-pintu-prs-521y/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "door_count": {"value": 2, "raw_value": "2 Door Side by Side refrigerator", "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-side-by-side-2-pintu-prs-521y/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "width_mm": {"value": 920, "raw_value": "Product dimension 92 x 65 x 177 cm (WxDxH)", "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-side-by-side-2-pintu-prs-521y/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "height_mm": {"value": 1770, "raw_value": "Product dimension 92 x 65 x 177 cm (WxDxH)", "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-side-by-side-2-pintu-prs-521y/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "depth_mm": {"value": 650, "raw_value": "Product dimension 92 x 65 x 177 cm (WxDxH)", "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-side-by-side-2-pintu-prs-521y/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "rated_power_w": {"value": 220, "raw_value": "Power consumption 220 Watt", "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-side-by-side-2-pintu-prs-521y/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "compressor_type": {"value": "Advanced Inverter", "raw_value": "Advanced Inverter", "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-side-by-side-2-pintu-prs-521y/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "defrost_type": {"value": "No Frost", "raw_value": "No Frost", "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-side-by-side-2-pintu-prs-521y/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"}
+      },
+      "additional_specs": {
+        "capacity_unlabelled_l": {"value": 550, "raw_value": "2 Door Side by Side refrigerator 550ltr", "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-side-by-side-2-pintu-prs-521y/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "refrigerant": {"value": "R600a", "raw_value": "Refrigerant R600a", "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-side-by-side-2-pintu-prs-521y/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "gross_weight_kg": {"value": 90, "raw_value": "Gross weight 90 kg", "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-side-by-side-2-pintu-prs-521y/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "net_weight_kg": {"value": 80, "raw_value": "Nett weight 80Kg", "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-side-by-side-2-pintu-prs-521y/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"}
+      },
+      "unresolved_core": ["freezer_position", "gross_capacity_l", "net_capacity_l", "cooling_system"],
+      "notes": ["Exact model appears in the official title.", "Capacity is unlabelled and conflicts with the legacy dataset, so it remains outside gross/net core fields."]
+    },
+    {
+      "model_id": "POLYTRON::PRS_551X", "brand": "POLYTRON", "model": "PRS_551X", "research_status": "partial", "exact_match": true,
+      "checked_urls": ["https://polytron.co.id/produk/polytron-kulkas-new-belleza-inverter-4-pintu-multidoor-side-by-side-prs-551x/"],
+      "specs": {
+        "form_factor": {"value": "Multi Pintu", "raw_value": "Product type Four Door Side By Side", "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-belleza-inverter-4-pintu-multidoor-side-by-side-prs-551x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "door_count": {"value": 4, "raw_value": "Product type Four Door Side By Side", "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-belleza-inverter-4-pintu-multidoor-side-by-side-prs-551x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "width_mm": {"value": 850, "raw_value": "Nett dimension w x d x h 85 x 70 x 177.5 cm", "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-belleza-inverter-4-pintu-multidoor-side-by-side-prs-551x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "height_mm": {"value": 1775, "raw_value": "Nett dimension w x d x h 85 x 70 x 177.5 cm", "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-belleza-inverter-4-pintu-multidoor-side-by-side-prs-551x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "depth_mm": {"value": 700, "raw_value": "Nett dimension w x d x h 85 x 70 x 177.5 cm", "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-belleza-inverter-4-pintu-multidoor-side-by-side-prs-551x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "rated_power_w": {"value": 230, "raw_value": "Power consumption 230 Watt", "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-belleza-inverter-4-pintu-multidoor-side-by-side-prs-551x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "compressor_type": {"value": "Inverter", "raw_value": "Inverter compressor", "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-belleza-inverter-4-pintu-multidoor-side-by-side-prs-551x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "cooling_system": {"value": "Smart Air Distribution", "raw_value": "Smart Air Distribution", "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-belleza-inverter-4-pintu-multidoor-side-by-side-prs-551x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"}
+      },
+      "additional_specs": {
+        "capacity_unlabelled_l": {"value": 548, "raw_value": "Capacity 548L", "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-belleza-inverter-4-pintu-multidoor-side-by-side-prs-551x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "refrigerant": {"value": "R600a", "raw_value": "Refrigerant R600a", "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-belleza-inverter-4-pintu-multidoor-side-by-side-prs-551x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "gross_weight_kg": {"value": 102, "raw_value": "Gross weight kg 102 kg", "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-belleza-inverter-4-pintu-multidoor-side-by-side-prs-551x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "net_weight_kg": {"value": 92, "raw_value": "Nett weight 92 kg", "source_url": "https://polytron.co.id/produk/polytron-kulkas-new-belleza-inverter-4-pintu-multidoor-side-by-side-prs-551x/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"}
+      },
+      "unresolved_core": ["freezer_position", "gross_capacity_l", "net_capacity_l", "defrost_type"],
+      "notes": ["Official page has an exact Tipe PRS 551X field.", "Capacity is unlabelled gross/net."]
+    },
+    {
+      "model_id": "POLYTRON::PRW_23MNX", "brand": "POLYTRON", "model": "PRW_23MNX", "research_status": "partial", "exact_match": true,
+      "checked_urls": ["https://polytron.co.id/produk/kulkas-polytron-belleza-jumbo-prw-23mnx/", "https://polytron.co.id/?s=PRW%2023MNX"],
+      "specs": {
+        "form_factor": {"value": "2 Pintu", "raw_value": "Kulkas 2 Pintu ... PRW 23MNX", "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-jumbo-prw-23mnx/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "door_count": {"value": 2, "raw_value": "Product type Two Doors", "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-jumbo-prw-23mnx/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "width_mm": {"value": 587, "raw_value": "Product Dimension (WxDxH) 58.7 x 57.6 x 138.8 cm", "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-jumbo-prw-23mnx/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "height_mm": {"value": 1388, "raw_value": "Product Dimension (WxDxH) 58.7 x 57.6 x 138.8 cm", "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-jumbo-prw-23mnx/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "depth_mm": {"value": 576, "raw_value": "Product Dimension (WxDxH) 58.7 x 57.6 x 138.8 cm", "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-jumbo-prw-23mnx/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "rated_power_w": {"value": 100, "raw_value": "Power consumption 100 Watt", "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-jumbo-prw-23mnx/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "defrost_type": {"value": "Otomatis", "raw_value": "Automatic defrost system", "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-jumbo-prw-23mnx/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"}
+      },
+      "additional_specs": {
+        "capacity_unlabelled_l": {"value": 220, "raw_value": "Capacity 220L", "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-jumbo-prw-23mnx/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "refrigerant": {"value": "R600a", "raw_value": "Refrigerant R600a", "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-jumbo-prw-23mnx/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "gross_weight_kg": {"value": 50.8, "raw_value": "Gross weight 50.8 kg", "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-jumbo-prw-23mnx/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "net_weight_kg": {"value": 46.1, "raw_value": "Nett weight 46.1 kg", "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-jumbo-prw-23mnx/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"}
+      },
+      "unresolved_core": ["freezer_position", "gross_capacity_l", "net_capacity_l", "compressor_type", "cooling_system"],
+      "notes": ["Official description repeatedly names base model PRW 23MNX; storefront title/search adds C as a colour/variant suffix.", "Capacity is unlabelled gross/net; freezer position is not stated."]
+    },
+    {
+      "model_id": "POLYTRON::PRW_29VX", "brand": "POLYTRON", "model": "PRW_29VX", "research_status": "partial", "exact_match": true,
+      "checked_urls": ["https://polytron.co.id/produk/kulkas-polytron-belleza-jumbo-inverter-prw-29vx-260-liter/", "https://polytron.co.id/?s=PRW%2029VX"],
+      "specs": {
+        "form_factor": {"value": "2 Pintu", "raw_value": "Kulkas 2 Pintu ... PRW 29VX", "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-jumbo-inverter-prw-29vx-260-liter/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "door_count": {"value": 2, "raw_value": "Product type Two Doors", "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-jumbo-inverter-prw-29vx-260-liter/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "width_mm": {"value": 587, "raw_value": "Product Dimension (WxDxH) 58.7 x 59.4 x 158.9 cm", "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-jumbo-inverter-prw-29vx-260-liter/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "height_mm": {"value": 1589, "raw_value": "Product Dimension (WxDxH) 58.7 x 59.4 x 158.9 cm", "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-jumbo-inverter-prw-29vx-260-liter/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "depth_mm": {"value": 594, "raw_value": "Product Dimension (WxDxH) 58.7 x 59.4 x 158.9 cm", "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-jumbo-inverter-prw-29vx-260-liter/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "rated_power_w": {"value": 75, "raw_value": "Power consumption 75 Watt", "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-jumbo-inverter-prw-29vx-260-liter/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "compressor_type": {"value": "Inverter", "raw_value": "Inverter compressor", "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-jumbo-inverter-prw-29vx-260-liter/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "defrost_type": {"value": "Otomatis", "raw_value": "Automatic defrost system", "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-jumbo-inverter-prw-29vx-260-liter/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"}
+      },
+      "additional_specs": {
+        "capacity_unlabelled_l": {"value": 260, "raw_value": "Capacity 260 L", "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-jumbo-inverter-prw-29vx-260-liter/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "refrigerant": {"value": "R600a", "raw_value": "Refrigerant R600a", "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-jumbo-inverter-prw-29vx-260-liter/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "gross_weight_kg": {"value": 60, "raw_value": "Gross weight 60 kg", "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-jumbo-inverter-prw-29vx-260-liter/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"},
+        "net_weight_kg": {"value": 55, "raw_value": "Nett weight 55 kg", "source_url": "https://polytron.co.id/produk/kulkas-polytron-belleza-jumbo-inverter-prw-29vx-260-liter/", "source_kind": "official_page", "verified_at": "2026-08-21T19:48:07+07:00"}
+      },
+      "unresolved_core": ["freezer_position", "gross_capacity_l", "net_capacity_l", "cooling_system"],
+      "notes": ["Official description repeatedly names base model PRW 29VX; storefront title/search adds C as a colour/variant suffix.", "Capacity is unlabelled gross/net; freezer position is not stated."]
+    }
+  ]
+}

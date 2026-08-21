@@ -107,6 +107,267 @@
       "comparison": true,
       "order": 120,
       "active": true
+    },
+    {
+      "key": "active_fresh_filter",
+      "label": "Active Fresh Filter",
+      "group": "Tambahan",
+      "unit": "-",
+      "comparison": false,
+      "order": 130,
+      "active": true
+    },
+    {
+      "key": "approximate_power_consumption_w_per_hour",
+      "label": "Approximate Power Consumption W Per Hour",
+      "group": "Tambahan",
+      "unit": "-",
+      "comparison": false,
+      "order": 140,
+      "active": true
+    },
+    {
+      "key": "automatic_ice_maker",
+      "label": "Automatic Ice Maker",
+      "group": "Tambahan",
+      "unit": "-",
+      "comparison": false,
+      "order": 150,
+      "active": true
+    },
+    {
+      "key": "capacity_unlabelled_l",
+      "label": "Capacity Unlabelled L",
+      "group": "Tambahan",
+      "unit": "-",
+      "comparison": false,
+      "order": 160,
+      "active": true
+    },
+    {
+      "key": "compressor_warranty",
+      "label": "Compressor Warranty",
+      "group": "Tambahan",
+      "unit": "-",
+      "comparison": false,
+      "order": 170,
+      "active": true
+    },
+    {
+      "key": "dimensions_unlabelled",
+      "label": "Dimensions Unlabelled",
+      "group": "Tambahan",
+      "unit": "-",
+      "comparison": false,
+      "order": 180,
+      "active": true
+    },
+    {
+      "key": "dispenser_type",
+      "label": "Dispenser Type",
+      "group": "Tambahan",
+      "unit": "-",
+      "comparison": false,
+      "order": 190,
+      "active": true
+    },
+    {
+      "key": "door_alarm",
+      "label": "Door Alarm",
+      "group": "Tambahan",
+      "unit": "-",
+      "comparison": false,
+      "order": 200,
+      "active": true
+    },
+    {
+      "key": "door_material",
+      "label": "Door Material",
+      "group": "Tambahan",
+      "unit": "-",
+      "comparison": false,
+      "order": 210,
+      "active": true
+    },
+    {
+      "key": "energy_consumption_kwh_year",
+      "label": "Energy Consumption Kwh Year",
+      "group": "Tambahan",
+      "unit": "-",
+      "comparison": false,
+      "order": 220,
+      "active": true
+    },
+    {
+      "key": "energy_star_rating",
+      "label": "Energy Star Rating",
+      "group": "Tambahan",
+      "unit": "-",
+      "comparison": false,
+      "order": 230,
+      "active": true
+    },
+    {
+      "key": "exterior_color",
+      "label": "Exterior Color",
+      "group": "Tambahan",
+      "unit": "-",
+      "comparison": false,
+      "order": 240,
+      "active": true
+    },
+    {
+      "key": "flexzone",
+      "label": "Flexzone",
+      "group": "Tambahan",
+      "unit": "-",
+      "comparison": false,
+      "order": 250,
+      "active": true
+    },
+    {
+      "key": "gross_freezer_capacity_l",
+      "label": "Gross Freezer Capacity L",
+      "group": "Tambahan",
+      "unit": "-",
+      "comparison": false,
+      "order": 260,
+      "active": true
+    },
+    {
+      "key": "gross_refrigerator_capacity_l",
+      "label": "Gross Refrigerator Capacity L",
+      "group": "Tambahan",
+      "unit": "-",
+      "comparison": false,
+      "order": 270,
+      "active": true
+    },
+    {
+      "key": "gross_weight_kg",
+      "label": "Gross Weight Kg",
+      "group": "Tambahan",
+      "unit": "-",
+      "comparison": false,
+      "order": 280,
+      "active": true
+    },
+    {
+      "key": "marketing_features",
+      "label": "Marketing Features",
+      "group": "Tambahan",
+      "unit": "-",
+      "comparison": false,
+      "order": 290,
+      "active": true
+    },
+    {
+      "key": "net_freezer_capacity_l",
+      "label": "Net Freezer Capacity L",
+      "group": "Tambahan",
+      "unit": "-",
+      "comparison": false,
+      "order": 300,
+      "active": true
+    },
+    {
+      "key": "net_refrigerator_capacity_l",
+      "label": "Net Refrigerator Capacity L",
+      "group": "Tambahan",
+      "unit": "-",
+      "comparison": false,
+      "order": 310,
+      "active": true
+    },
+    {
+      "key": "net_weight_kg",
+      "label": "Net Weight Kg",
+      "group": "Tambahan",
+      "unit": "-",
+      "comparison": false,
+      "order": 320,
+      "active": true
+    },
+    {
+      "key": "official_features",
+      "label": "Official Features",
+      "group": "Tambahan",
+      "unit": "-",
+      "comparison": false,
+      "order": 330,
+      "active": true
+    },
+    {
+      "key": "optimal_fresh_zone",
+      "label": "Optimal Fresh Zone",
+      "group": "Tambahan",
+      "unit": "-",
+      "comparison": false,
+      "order": 340,
+      "active": true
+    },
+    {
+      "key": "power_consumption_reported",
+      "label": "Power Consumption Reported",
+      "group": "Tambahan",
+      "unit": "-",
+      "comparison": false,
+      "order": 350,
+      "active": true
+    },
+    {
+      "key": "refrigerant",
+      "label": "Refrigerant",
+      "group": "Tambahan",
+      "unit": "-",
+      "comparison": false,
+      "order": 360,
+      "active": true
+    },
+    {
+      "key": "smartthings_app_support",
+      "label": "Smartthings App Support",
+      "group": "Tambahan",
+      "unit": "-",
+      "comparison": false,
+      "order": 370,
+      "active": true
+    },
+    {
+      "key": "water_dispenser",
+      "label": "Water Dispenser",
+      "group": "Tambahan",
+      "unit": "-",
+      "comparison": false,
+      "order": 380,
+      "active": true
+    },
+    {
+      "key": "weight_kg",
+      "label": "Weight Kg",
+      "group": "Tambahan",
+      "unit": "-",
+      "comparison": false,
+      "order": 390,
+      "active": true
+    },
+    {
+      "key": "wifi",
+      "label": "Wifi",
+      "group": "Tambahan",
+      "unit": "-",
+      "comparison": false,
+      "order": 400,
+      "active": true
+    },
+    {
+      "key": "wifi_embedded",
+      "label": "Wifi Embedded",
+      "group": "Tambahan",
+      "unit": "-",
+      "comparison": false,
+      "order": 410,
+      "active": true
     }
   ]
 }

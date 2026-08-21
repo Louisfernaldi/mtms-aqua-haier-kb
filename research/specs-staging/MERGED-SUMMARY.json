@@ -1,0 +1,206 @@
+{
+  "schema_version": 1,
+  "research": {
+    "denominator_unique": 112,
+    "records": 112,
+    "exact": 92,
+    "complete": 0,
+    "partial": 92,
+    "unresolved": 20,
+    "duplicate_identity": 0,
+    "record_missing": 0,
+    "per_source_file": {
+      "AQUA": {
+        "records": 32,
+        "exact": 32,
+        "partial": 32,
+        "unresolved": 0
+      },
+      "LG": {
+        "records": 16,
+        "exact": 16,
+        "partial": 16,
+        "unresolved": 0
+      },
+      "MIDEA": {
+        "records": 7,
+        "exact": 7,
+        "partial": 7,
+        "unresolved": 0
+      },
+      "POLYTRON": {
+        "records": 13,
+        "exact": 10,
+        "partial": 10,
+        "unresolved": 3
+      },
+      "SAMSUNG": {
+        "records": 11,
+        "exact": 6,
+        "partial": 6,
+        "unresolved": 5
+      },
+      "SHARP": {
+        "records": 23,
+        "exact": 16,
+        "partial": 16,
+        "unresolved": 7
+      },
+      "AQUA_PRODUCT_EXTRA": {
+        "records": 10,
+        "exact": 5,
+        "partial": 5,
+        "unresolved": 5
+      }
+    }
+  },
+  "application": {
+    "targets": {
+      "kompetitor": {
+        "target_models": 102,
+        "exact_models": 87,
+        "skipped_non_exact": 15,
+        "applied_values": {
+          "total": 767,
+          "core": {
+            "compressor_type": 57,
+            "cooling_system": 56,
+            "defrost_type": 25,
+            "depth_mm": 52,
+            "door_count": 59,
+            "form_factor": 39,
+            "freezer_position": 16,
+            "gross_capacity_l": 33,
+            "height_mm": 52,
+            "net_capacity_l": 35,
+            "rated_power_w": 22,
+            "width_mm": 52
+          },
+          "additional": {
+            "active_fresh_filter": 3,
+            "approximate_power_consumption_w_per_hour": 2,
+            "automatic_ice_maker": 11,
+            "capacity_unlabelled_l": 17,
+            "compressor_warranty": 1,
+            "dimensions_unlabelled": 1,
+            "dispenser_type": 1,
+            "door_alarm": 13,
+            "door_material": 12,
+            "energy_consumption_kwh_year": 7,
+            "energy_star_rating": 1,
+            "exterior_color": 14,
+            "flexzone": 1,
+            "gross_freezer_capacity_l": 2,
+            "gross_refrigerator_capacity_l": 2,
+            "gross_weight_kg": 10,
+            "marketing_features": 16,
+            "net_freezer_capacity_l": 5,
+            "net_refrigerator_capacity_l": 5,
+            "net_weight_kg": 14,
+            "official_features": 48,
+            "optimal_fresh_zone": 3,
+            "power_consumption_reported": 10,
+            "refrigerant": 30,
+            "smartthings_app_support": 2,
+            "water_dispenser": 8,
+            "weight_kg": 13,
+            "wifi": 13,
+            "wifi_embedded": 4
+          },
+          "source_kind": {
+            "official_archive": 16,
+            "official_business_product_page": 18,
+            "official_catalog": 2,
+            "official_page": 144,
+            "official_product_page": 585,
+            "official_promotion_pdf": 2
+          }
+        },
+        "conflicts": 24,
+        "suggestions_pending": 24,
+        "protected_preserved": 0
+      },
+      "produk-katalog": {
+        "target_models": 42,
+        "exact_models": 37,
+        "skipped_non_exact": 5,
+        "applied_values": {
+          "total": 118,
+          "core": {
+            "compressor_type": 27,
+            "cooling_system": 23,
+            "defrost_type": 3,
+            "depth_mm": 2,
+            "door_count": 15,
+            "freezer_position": 6,
+            "height_mm": 2,
+            "net_capacity_l": 1,
+            "width_mm": 2
+          },
+          "additional": {
+            "official_features": 37
+          },
+          "source_kind": {
+            "official_product_page": 118
+          }
+        },
+        "conflicts": 12,
+        "suggestions_pending": 12,
+        "protected_preserved": 0
+      }
+    },
+    "totals": {
+      "target_model_applications": 144,
+      "exact_model_applications": 124,
+      "skipped_non_exact": 20,
+      "applied_values": 885,
+      "conflicts": 36,
+      "suggestions_pending": 36,
+      "protected_preserved": 0
+    }
+  },
+  "staging_files": [
+    {
+      "file": "research/specs-staging/AQUA.json",
+      "sha256": "577e1bc44d2f48c718be7426238f0315f107a3f2e685b8213bb2f2f10aa7fc49"
+    },
+    {
+      "file": "research/specs-staging/LG.json",
+      "sha256": "dfd09f7dc2aedf5435a0e6df6238415c0ea7018e2065c1b8efb133101ee4eb3f"
+    },
+    {
+      "file": "research/specs-staging/MIDEA.json",
+      "sha256": "277d7d1739d45d05e897255c49f0bdee23a23e73db2ae5d5a79ea8621ba6eb08"
+    },
+    {
+      "file": "research/specs-staging/POLYTRON.json",
+      "sha256": "283aa8ab4d9692af522e6157ed53b966644dfb634eb1bde5bf90d5008ccd2ca1"
+    },
+    {
+      "file": "research/specs-staging/SAMSUNG.json",
+      "sha256": "5a3001ed4512c829ddca5c988ebdab5414b9203b378964a545cc1e508bd7d2e5"
+    },
+    {
+      "file": "research/specs-staging/SHARP.json",
+      "sha256": "46c1faa0fc2a4218e8a4cfee6789928e3ad540228091e867b17eea38597b3731"
+    },
+    {
+      "file": "research/specs-staging/AQUA_PRODUCT_EXTRA.json",
+      "sha256": "2a5485de4532ed89d9aeb88196df873f5040b53f1c2f5a26d581a5525a8f1eb9"
+    }
+  ],
+  "outputs": {
+    "site/data/kompetitor.json": {
+      "sha256": "0923cf012f98c354c6c36f68ea82f913d9dcb4c9ee06f8adf32a76c426d700a1",
+      "bytes": 417216
+    },
+    "site/data/produk-katalog.json": {
+      "sha256": "bd4f960874a93f1a6a0b0a173f2e62a241f91f671c94d96f2161dff8b5449cca",
+      "bytes": 123359
+    },
+    "site/data/spec-categories.json": {
+      "sha256": "5a6629353abb2c2e8028e24da92bf35991e4b78439d022a0bb28e6b48a359c69",
+      "bytes": 8054
+    }
+  }
+}

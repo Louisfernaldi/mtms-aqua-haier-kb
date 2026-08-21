@@ -7,6 +7,9 @@ Baca (HANYA record found: true):
 Tulis:
   site\data\kompetitor.json  -> data lama + fondasi spesifikasi dinamis per model
 
+Apply spesifikasi dinamis hanya membaca tujuh JSON staging lokal. Generator ini
+tidak melakukan fetch web; regenerasi selalu diakhiri exact-only research merge.
+
 Field per model (angka dari data, NOL ngarang):
   model, subcat (asli), cat (kode kategori), door, capacity_l, price_idr,
   price_source, semua fitur nonempty dari field features, image dari aset lokal
@@ -23,9 +26,11 @@ import os
 import re
 
 try:
-    from .migrate_dynamic_specs import migrate_document
+    from .apply_spec_research import apply_bundle
+    from .verify_spec_research import load_staging_documents, validate_research_contract
 except ImportError:  # eksekusi langsung: python tools/gen_kompetitor.py
-    from migrate_dynamic_specs import migrate_document
+    from apply_spec_research import apply_bundle
+    from verify_spec_research import load_staging_documents, validate_research_contract
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RISET_DIR = r"D:\AI\projects\kompetitor-haier\komparasi-5brand\data\riset_brand"
@@ -36,6 +41,7 @@ PDF_DST_NAME = "KOMPARASI-KULKAS-AQUA-5-BRAND-FINAL-v5.pdf"
 OUT_JSON = os.path.join(ROOT, "site", "data", "kompetitor.json")
 IMAGE_MAP = os.path.join(ROOT, "site", "assets", "kompetitor", "image_map.json")
 SPEC_CATEGORIES = os.path.join(ROOT, "site", "data", "spec-categories.json")
+PRODUCT_JSON = os.path.join(ROOT, "site", "data", "produk-katalog.json")
 
 CATEGORIES = [
     {"code": "SB", "label": "1 Pintu", "desc": "Satu pintu, freezer satu ruang"},
@@ -154,6 +160,21 @@ def load_groups(brands):
     return groups
 
 
+def finalize_dynamic_specs(data, products, spec_categories, staging_documents):
+    """Validasi staging lalu apply sesudah generation/migration secara lokal."""
+
+    errors = validate_research_contract(staging_documents, data, products)
+    if errors:
+        raise ValueError("staging riset inkonsisten: " + " | ".join(errors))
+    final_competitor, _final_products, final_categories = apply_bundle(
+        data,
+        products,
+        spec_categories,
+        staging_documents,
+    )
+    return final_competitor, final_categories
+
+
 def main():
     image_index = load_image_index()
     brands = [load_brand(b, image_index) for b in BRANDS]
@@ -171,17 +192,29 @@ def main():
         "groups": load_groups(brands),
         "sumber": "Riset per brand (website resmi + GFK), lihat price_source per model; angka dihitung mesin dari riset_brand JSON.",
     }
-    # Generator tidak boleh menghapus fondasi dynamic specs saat fallback data
-    # dibangun ulang. Migrator hanya memakai data lokal hasil generator ini dan
-    # tidak meriset atau menebak nilai baru.
+    # Generator tidak boleh menghapus hasil riset saat fallback dibangun ulang.
+    # Layer ini hanya membaca staging lokal tervalidasi dan tidak melakukan web fetch.
     with open(SPEC_CATEGORIES, "r", encoding="utf-8") as fh:
         spec_categories = json.load(fh)
-    data = migrate_document(data, spec_categories)
+    with open(PRODUCT_JSON, "r", encoding="utf-8") as fh:
+        products = json.load(fh)
+    staging_documents = load_staging_documents()
+    data, spec_categories = finalize_dynamic_specs(
+        data,
+        products,
+        spec_categories,
+        staging_documents,
+    )
     tmp = OUT_JSON + ".tmp"
     with open(tmp, "w", encoding="utf-8", newline="\n") as fh:
         json.dump(data, fh, ensure_ascii=False, indent=1)
         fh.write("\n")
     os.replace(tmp, OUT_JSON)
+    categories_tmp = SPEC_CATEGORIES + ".tmp"
+    with open(categories_tmp, "w", encoding="utf-8", newline="\n") as fh:
+        json.dump(spec_categories, fh, ensure_ascii=False, indent=2)
+        fh.write("\n")
+    os.replace(categories_tmp, SPEC_CATEGORIES)
     per = " ".join("%s=%d" % (b["brand"], b["model_count"]) for b in brands)
     print("gen_kompetitor: kompetitor.json ditulis OK (%s, pdf %d bytes)" % (per, pdf_size))
 

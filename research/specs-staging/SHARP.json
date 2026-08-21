@@ -1,0 +1,545 @@
+{
+  "brand": "SHARP",
+  "model_count": 23,
+  "researched_at": "2026-08-21T19:49:47+07:00",
+  "records": [
+    {
+      "model_id": "SHARP::SJ-236MN-HS",
+      "brand": "SHARP",
+      "model": "SJ-236MN-HS",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        {"url": "https://id.sharp/products/home-appliances/sj-236mn-hs", "source_kind": "official_product_page", "attempt": 1, "outcome": "success_exact_model", "checked_at": "2026-08-21T19:49:47+07:00"}
+      ],
+      "specs": {
+        "form_factor": {"value": "2 Pintu", "raw_value": "Door | Two Door Stainless Steel", "source_url": "https://id.sharp/products/home-appliances/sj-236mn-hs", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "door_count": {"value": 2, "raw_value": "Door | Two Door Stainless Steel", "source_url": "https://id.sharp/products/home-appliances/sj-236mn-hs", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "gross_capacity_l": {"value": 205, "raw_value": "Capacity (Gross / Netto) | 205 / 187", "source_url": "https://id.sharp/products/home-appliances/sj-236mn-hs", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "net_capacity_l": {"value": 187, "raw_value": "Capacity (Gross / Netto) | 205 / 187", "source_url": "https://id.sharp/products/home-appliances/sj-236mn-hs", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "width_mm": {"value": 545, "raw_value": "Width | 545", "source_url": "https://id.sharp/products/home-appliances/sj-236mn-hs", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "height_mm": {"value": 1380, "raw_value": "Height | 1,380", "source_url": "https://id.sharp/products/home-appliances/sj-236mn-hs", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "depth_mm": {"value": 588, "raw_value": "Depth | 588", "source_url": "https://id.sharp/products/home-appliances/sj-236mn-hs", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "rated_power_w": {"value": 75, "raw_value": "Consumption ( Watt ) | 75 Watt", "source_url": "https://id.sharp/products/home-appliances/sj-236mn-hs", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "cooling_system": {"value": "Fan Cooling Technology", "raw_value": "Cooling System | Fan Cooling Technology", "source_url": "https://id.sharp/products/home-appliances/sj-236mn-hs", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "defrost_type": {"value": "Automatic", "raw_value": "Defrosting | Automatic", "source_url": "https://id.sharp/products/home-appliances/sj-236mn-hs", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"}
+      },
+      "additional_specs": {
+        "refrigerant": {"value": "R134a", "raw_value": "Refrigerant (NON CFC) | R134a", "source_url": "https://id.sharp/products/home-appliances/sj-236mn-hs", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "marketing_features": {"value": ["MEGA Freezer", "Deep Freezing (up to -21 °C)", "Wide LED Lighting", "Deodorizer", "Tempered Glass", "Ice Twist Maker"], "raw_value": "MEGA Freezer; Deep Freezing (up to -21 °C); Wide LED Lighting; Deodorizer; Tempered Glass; Ice Twist Maker", "source_url": "https://id.sharp/products/home-appliances/sj-236mn-hs", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"}
+      },
+      "unresolved_core": ["freezer_position", "compressor_type"],
+      "notes": ["Posisi freezer dan jenis kompresor tidak dinyatakan eksplisit pada sumber."]
+    },
+    {
+      "model_id": "SHARP::SJ-246SI-GK",
+      "brand": "SHARP",
+      "model": "SJ-246SI-GK",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        {"url": "https://id.sharp/products/home-appliances/sj-246si-gk", "source_kind": "official_product_page", "attempt": 1, "outcome": "success_exact_model", "checked_at": "2026-08-21T19:49:47+07:00"}
+      ],
+      "specs": {
+        "form_factor": {"value": "2 Pintu", "raw_value": "Door | 2", "source_url": "https://id.sharp/products/home-appliances/sj-246si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "door_count": {"value": 2, "raw_value": "Door | 2", "source_url": "https://id.sharp/products/home-appliances/sj-246si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "gross_capacity_l": {"value": 205, "raw_value": "Capacity (Gross / Netto) | 205 / 187", "source_url": "https://id.sharp/products/home-appliances/sj-246si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "net_capacity_l": {"value": 187, "raw_value": "Capacity (Gross / Netto) | 205 / 187", "source_url": "https://id.sharp/products/home-appliances/sj-246si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "width_mm": {"value": 545, "raw_value": "Width | 545", "source_url": "https://id.sharp/products/home-appliances/sj-246si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "height_mm": {"value": 1378, "raw_value": "Height | 1378", "source_url": "https://id.sharp/products/home-appliances/sj-246si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "depth_mm": {"value": 625, "raw_value": "Depth | 625", "source_url": "https://id.sharp/products/home-appliances/sj-246si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "cooling_system": {"value": "Fan Cooling", "raw_value": "Cooling System | Fan Cooling", "source_url": "https://id.sharp/products/home-appliances/sj-246si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"}
+      },
+      "additional_specs": {
+        "power_consumption_reported": {"value": 47, "raw_value": "Consumption ( Watt ) | 47 (W/H)", "source_url": "https://id.sharp/products/home-appliances/sj-246si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "refrigerant": {"value": "R-134a", "raw_value": "Refrigerant (NON CFC) | R-134a", "source_url": "https://id.sharp/products/home-appliances/sj-246si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "marketing_features": {"value": ["Black Glitter Metal Flat Door & Side Handle Design", "Ice Box Design with Handgrip", "J-TECH Inverter Technology", "Ag+ Nano Deodorizer", "Mega Freezer & Crisper Room"], "raw_value": "Black Glitter Metal Flat Door & Side Handle Design; Ice Box Design with Handgrip; J-TECH Inverter Technology; Ag+ Nano Deodorizer; Mega Freezer & Crisper Room", "source_url": "https://id.sharp/products/home-appliances/sj-246si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"}
+      },
+      "unresolved_core": ["freezer_position", "rated_power_w", "compressor_type", "defrost_type"],
+      "notes": ["J-TECH Inverter disimpan sebagai nama fitur pemasaran karena sumber tidak menyebut jenis kompresor secara eksplisit."]
+    },
+    {
+      "model_id": "SHARP::SJ-326SI-GK",
+      "brand": "SHARP",
+      "model": "SJ-326SI-GK",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        {"url": "https://id.sharp/products/home-appliances/sj-326si-gk", "source_kind": "official_product_page", "attempt": 1, "outcome": "success_exact_model", "checked_at": "2026-08-21T19:49:47+07:00"}
+      ],
+      "specs": {
+        "form_factor": {"value": "2 Pintu", "raw_value": "Door | 2", "source_url": "https://id.sharp/products/home-appliances/sj-326si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "door_count": {"value": 2, "raw_value": "Door | 2", "source_url": "https://id.sharp/products/home-appliances/sj-326si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "gross_capacity_l": {"value": 256, "raw_value": "Capacity (Gross / Netto) | 256 / 237", "source_url": "https://id.sharp/products/home-appliances/sj-326si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "net_capacity_l": {"value": 237, "raw_value": "Capacity (Gross / Netto) | 256 / 237", "source_url": "https://id.sharp/products/home-appliances/sj-326si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "width_mm": {"value": 545, "raw_value": "Width | 545", "source_url": "https://id.sharp/products/home-appliances/sj-326si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "height_mm": {"value": 1628, "raw_value": "Height | 1628", "source_url": "https://id.sharp/products/home-appliances/sj-326si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "depth_mm": {"value": 625, "raw_value": "Depth | 625", "source_url": "https://id.sharp/products/home-appliances/sj-326si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "cooling_system": {"value": "Fan Cooling", "raw_value": "Cooling System | Fan Cooling", "source_url": "https://id.sharp/products/home-appliances/sj-326si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"}
+      },
+      "additional_specs": {
+        "power_consumption_reported": {"value": 48, "raw_value": "Consumption ( Watt ) | 48 (W/H)", "source_url": "https://id.sharp/products/home-appliances/sj-326si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "refrigerant": {"value": "R-134a", "raw_value": "Refrigerant (NON CFC) | R-134a", "source_url": "https://id.sharp/products/home-appliances/sj-326si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "marketing_features": {"value": ["Black Glitter Metal Flat Door & Side Handle Design", "Ice Box Design with Handgrip", "J-TECH Inverter Technology", "Ag+ Nano Deodorizer", "Mega Freezer & Crisper Room"], "raw_value": "Black Glitter Metal Flat Door & Side Handle Design; Ice Box Design with Handgrip; J-TECH Inverter Technology; Ag+ Nano Deodorizer; Mega Freezer & Crisper Room", "source_url": "https://id.sharp/products/home-appliances/sj-326si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"}
+      },
+      "unresolved_core": ["freezer_position", "rated_power_w", "compressor_type", "defrost_type"],
+      "notes": ["J-TECH Inverter tidak dipetakan ke compressor_type tanpa penyebutan kompresor eksplisit."]
+    },
+    {
+      "model_id": "SHARP::SJ-326XI-MK",
+      "brand": "SHARP",
+      "model": "SJ-326XI-MK",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        {"url": "https://id.sharp/products/home-appliances/sj-326xi-mk", "source_kind": "official_product_page", "attempt": 1, "outcome": "success_exact_model", "checked_at": "2026-08-21T19:49:47+07:00"}
+      ],
+      "specs": {
+        "form_factor": {"value": "2 Pintu", "raw_value": "Door | Two Door", "source_url": "https://id.sharp/products/home-appliances/sj-326xi-mk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "door_count": {"value": 2, "raw_value": "Door | Two Door", "source_url": "https://id.sharp/products/home-appliances/sj-326xi-mk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "gross_capacity_l": {"value": 256, "raw_value": "Capacity (Gross / Netto) | 256 / 237", "source_url": "https://id.sharp/products/home-appliances/sj-326xi-mk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "net_capacity_l": {"value": 237, "raw_value": "Capacity (Gross / Netto) | 256 / 237", "source_url": "https://id.sharp/products/home-appliances/sj-326xi-mk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "width_mm": {"value": 562, "raw_value": "Width | 562", "source_url": "https://id.sharp/products/home-appliances/sj-326xi-mk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "height_mm": {"value": 1626, "raw_value": "Height | 1626", "source_url": "https://id.sharp/products/home-appliances/sj-326xi-mk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "depth_mm": {"value": 560, "raw_value": "Depth | 560", "source_url": "https://id.sharp/products/home-appliances/sj-326xi-mk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "cooling_system": {"value": "Fan Cooling System", "raw_value": "Cooling System | Fan Cooling System", "source_url": "https://id.sharp/products/home-appliances/sj-326xi-mk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"}
+      },
+      "additional_specs": {
+        "power_consumption_reported": {"value": 48, "raw_value": "Consumption ( Watt ) | 48 (W/H)", "source_url": "https://id.sharp/products/home-appliances/sj-326xi-mk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "marketing_features": {"value": ["New J-Tech Inverter", "New Borderless Tempered Glass Door", "Tempered Glass Tray", "LED Lamp", "Fan Cooling System", "Ag+ Nano Deodorizer", "Low Voltage & Low Wattage"], "raw_value": "New J-Tech Inverter; New Borderless Tempered Glass Door; Tempered Glass Tray; LED Lamp; Fan Cooling System; Ag+ Nano Deodorizer; Low Voltage & Low Wattage", "source_url": "https://id.sharp/products/home-appliances/sj-326xi-mk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"}
+      },
+      "unresolved_core": ["freezer_position", "rated_power_w", "compressor_type", "defrost_type"],
+      "notes": ["Tabel resmi menampilkan Refrigerant dan Defrosting sebagai tanda hubung; keduanya tidak dianggap sebagai nilai produk."]
+    },
+    {
+      "model_id": "SHARP::SJ-386SI-DS",
+      "brand": "SHARP",
+      "model": "SJ-386SI-DS",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        {"url": "https://id.sharp/products/home-appliances/sj-386si-ds-2-door-shine-j-tech-inverter", "source_kind": "official_product_page", "attempt": 1, "outcome": "success_exact_model", "checked_at": "2026-08-21T19:49:47+07:00"}
+      ],
+      "specs": {
+        "form_factor": {"value": "2 Pintu", "raw_value": "SJ-386SI-DS | 2 Door Shine J-TECH Inverter; Door | 2", "source_url": "https://id.sharp/products/home-appliances/sj-386si-ds-2-door-shine-j-tech-inverter", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "door_count": {"value": 2, "raw_value": "Door | 2", "source_url": "https://id.sharp/products/home-appliances/sj-386si-ds-2-door-shine-j-tech-inverter", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "gross_capacity_l": {"value": 306, "raw_value": "Capacity (Gross / Netto) | 306 / 285", "source_url": "https://id.sharp/products/home-appliances/sj-386si-ds-2-door-shine-j-tech-inverter", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "net_capacity_l": {"value": 285, "raw_value": "Capacity (Gross / Netto) | 306 / 285", "source_url": "https://id.sharp/products/home-appliances/sj-386si-ds-2-door-shine-j-tech-inverter", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "width_mm": {"value": 585, "raw_value": "Width | 585", "source_url": "https://id.sharp/products/home-appliances/sj-386si-ds-2-door-shine-j-tech-inverter", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "height_mm": {"value": 1558, "raw_value": "Height | 1558", "source_url": "https://id.sharp/products/home-appliances/sj-386si-ds-2-door-shine-j-tech-inverter", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "depth_mm": {"value": 619, "raw_value": "Depth | 619", "source_url": "https://id.sharp/products/home-appliances/sj-386si-ds-2-door-shine-j-tech-inverter", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "cooling_system": {"value": "Fan Cooling", "raw_value": "Cooling System | Fan Cooling", "source_url": "https://id.sharp/products/home-appliances/sj-386si-ds-2-door-shine-j-tech-inverter", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"}
+      },
+      "additional_specs": {
+        "power_consumption_reported": {"value": 40, "raw_value": "Consumption ( Watt ) | 40 Watt/Hours", "source_url": "https://id.sharp/products/home-appliances/sj-386si-ds-2-door-shine-j-tech-inverter", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "refrigerant": {"value": "R-134a", "raw_value": "Refrigerant (NON CFC) | R-134a", "source_url": "https://id.sharp/products/home-appliances/sj-386si-ds-2-door-shine-j-tech-inverter", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "marketing_features": {"value": ["Mega Freezer (30:70)", "Ice Box Design with Handgrip", "24H/7 Always ON Plasmacluster", "Ag+ Nano Deodorizer", "MEGA Crisper with Humidity Control"], "raw_value": "Mega Freezer (30:70); Ice Box Design with Handgrip; 24H/7 Always ON Plasmacluster; Ag+ Nano Deodorizer; MEGA Crisper with Humidity Control", "source_url": "https://id.sharp/products/home-appliances/sj-386si-ds-2-door-shine-j-tech-inverter", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"}
+      },
+      "unresolved_core": ["freezer_position", "rated_power_w", "compressor_type", "defrost_type"],
+      "notes": ["Rasio 30:70 adalah nama fitur pada sumber dan tidak dipakai untuk menyimpulkan posisi freezer."]
+    },
+    {
+      "model_id": "SHARP::SJ-426GI-GK",
+      "brand": "SHARP",
+      "model": "SJ-426GI-GK",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        {"url": "https://id.sharp/products/home-appliances/sj-426gi-gk-2-door-shine-glassdoor-j-tech-inverter", "source_kind": "official_product_page", "attempt": 1, "outcome": "transport_internal_error_attempt_1", "checked_at": "2026-08-21T19:49:47+07:00"},
+        {"url": "https://id.sharp/products/home-appliances/sj-426gi-gk-2-door-shine-glassdoor-j-tech-inverter", "source_kind": "official_product_page", "attempt": 2, "outcome": "transport_internal_error_attempt_2", "checked_at": "2026-08-21T19:49:47+07:00"},
+        {"url": "https://id.sharp/products/home-appliances/sj-426gi-gk-2-door-shine-glassdoor-j-tech-inverter?v=2148", "source_kind": "official_product_page", "attempt": 1, "outcome": "success_exact_model", "checked_at": "2026-08-21T19:49:47+07:00"}
+      ],
+      "specs": {
+        "form_factor": {"value": "2 Pintu", "raw_value": "SJ-426GI-GK | 2 Door Shine Glassdoor J-TECH Inverter", "source_url": "https://id.sharp/products/home-appliances/sj-426gi-gk-2-door-shine-glassdoor-j-tech-inverter?v=2148", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "door_count": {"value": 2, "raw_value": "SJ-426GI-GK | 2 Door Shine Glassdoor J-TECH Inverter", "source_url": "https://id.sharp/products/home-appliances/sj-426gi-gk-2-door-shine-glassdoor-j-tech-inverter?v=2148", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "gross_capacity_l": {"value": 338, "raw_value": "Capacity (Gross / Netto) | 338 / 315", "source_url": "https://id.sharp/products/home-appliances/sj-426gi-gk-2-door-shine-glassdoor-j-tech-inverter?v=2148", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "net_capacity_l": {"value": 315, "raw_value": "Capacity (Gross / Netto) | 338 / 315", "source_url": "https://id.sharp/products/home-appliances/sj-426gi-gk-2-door-shine-glassdoor-j-tech-inverter?v=2148", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "width_mm": {"value": 590, "raw_value": "Width | 590", "source_url": "https://id.sharp/products/home-appliances/sj-426gi-gk-2-door-shine-glassdoor-j-tech-inverter?v=2148", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "height_mm": {"value": 1658, "raw_value": "Height | 1,658", "source_url": "https://id.sharp/products/home-appliances/sj-426gi-gk-2-door-shine-glassdoor-j-tech-inverter?v=2148", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "depth_mm": {"value": 665, "raw_value": "Depth | 665", "source_url": "https://id.sharp/products/home-appliances/sj-426gi-gk-2-door-shine-glassdoor-j-tech-inverter?v=2148", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "cooling_system": {"value": "Fan Cooling", "raw_value": "Cooling System | Fan Cooling", "source_url": "https://id.sharp/products/home-appliances/sj-426gi-gk-2-door-shine-glassdoor-j-tech-inverter?v=2148", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"}
+      },
+      "additional_specs": {
+        "power_consumption_reported": {"value": 62, "raw_value": "Power Consumption (Watt/Hour) | 62", "source_url": "https://id.sharp/products/home-appliances/sj-426gi-gk-2-door-shine-glassdoor-j-tech-inverter?v=2148", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "refrigerant": {"value": "R-134a", "raw_value": "Refrigerant (NON CFC) | R-134a", "source_url": "https://id.sharp/products/home-appliances/sj-426gi-gk-2-door-shine-glassdoor-j-tech-inverter?v=2148", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "marketing_features": {"value": ["Black Glitter Glass Door", "Side Handle Design", "Ice Box Design with Handgrip", "J-TECH Inverter Technology", "24H/7 Always ON Plasmacluster", "Ag+ Nano Deodorizer"], "raw_value": "Black Glitter Glass Door; Side Handle Design; Ice Box Design with Handgrip; J-TECH Inverter Technology; 24H/7 Always ON Plasmacluster; Ag+ Nano Deodorizer", "source_url": "https://id.sharp/products/home-appliances/sj-426gi-gk-2-door-shine-glassdoor-j-tech-inverter?v=2148", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"}
+      },
+      "unresolved_core": ["freezer_position", "rated_power_w", "compressor_type", "defrost_type"],
+      "notes": ["Dua kegagalan pada URL awal hanya dicatat sebagai kegagalan transport. Data berasal dari varian URL resmi dengan parameter v=2148 yang memuat model exact."]
+    },
+    {
+      "model_id": "SHARP::SJ-426SI-GK",
+      "brand": "SHARP",
+      "model": "SJ-426SI-GK",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        {"url": "https://id.sharp/products/home-appliances/sj-426si-gk", "source_kind": "official_product_page", "attempt": 1, "outcome": "success_exact_model", "checked_at": "2026-08-21T19:49:47+07:00"}
+      ],
+      "specs": {
+        "form_factor": {"value": "2 Pintu", "raw_value": "Door | 2", "source_url": "https://id.sharp/products/home-appliances/sj-426si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "door_count": {"value": 2, "raw_value": "Door | 2", "source_url": "https://id.sharp/products/home-appliances/sj-426si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "gross_capacity_l": {"value": 338, "raw_value": "Capacity (Gross / Netto) | 338 / 315", "source_url": "https://id.sharp/products/home-appliances/sj-426si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "net_capacity_l": {"value": 315, "raw_value": "Capacity (Gross / Netto) | 338 / 315", "source_url": "https://id.sharp/products/home-appliances/sj-426si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "width_mm": {"value": 590, "raw_value": "Width | 590", "source_url": "https://id.sharp/products/home-appliances/sj-426si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "height_mm": {"value": 1658, "raw_value": "Height | 1658", "source_url": "https://id.sharp/products/home-appliances/sj-426si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "depth_mm": {"value": 665, "raw_value": "Depth | 665", "source_url": "https://id.sharp/products/home-appliances/sj-426si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "cooling_system": {"value": "Fan Cooling", "raw_value": "Cooling System | Fan Cooling", "source_url": "https://id.sharp/products/home-appliances/sj-426si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"}
+      },
+      "additional_specs": {
+        "power_consumption_reported": {"value": 62, "raw_value": "Consumption ( Watt ) | 62 (W/H)", "source_url": "https://id.sharp/products/home-appliances/sj-426si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "refrigerant": {"value": "R-134", "raw_value": "Refrigerant (NON CFC) | R-134", "source_url": "https://id.sharp/products/home-appliances/sj-426si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "marketing_features": {"value": ["Black Glitter Metal Flat Door & Side Handle Design", "Ice Box Design with Handgrip", "J-TECH Inverter Technology", "24H/7 Always ON Plasmacluster", "Express Ice Making"], "raw_value": "Black Glitter Metal Flat Door & Side Handle Design; Ice Box Design with Handgrip; J-TECH Inverter Technology; 24H/7 Always ON Plasmacluster; Express Ice Making", "source_url": "https://id.sharp/products/home-appliances/sj-426si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"}
+      },
+      "unresolved_core": ["freezer_position", "rated_power_w", "compressor_type", "defrost_type"],
+      "notes": ["Raw refrigerant dipertahankan sebagai R-134 sesuai halaman; tidak dikoreksi menjadi model refrigeran lain."]
+    },
+    {
+      "model_id": "SHARP::SJ-456SI-GK",
+      "brand": "SHARP",
+      "model": "SJ-456SI-GK",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        {"url": "https://id.sharp/products/home-appliances/sj-456si-gk", "source_kind": "official_product_page", "attempt": 1, "outcome": "success_exact_model", "checked_at": "2026-08-21T19:49:47+07:00"}
+      ],
+      "specs": {
+        "form_factor": {"value": "2 Pintu", "raw_value": "Door | 2", "source_url": "https://id.sharp/products/home-appliances/sj-456si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "door_count": {"value": 2, "raw_value": "Door | 2", "source_url": "https://id.sharp/products/home-appliances/sj-456si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "gross_capacity_l": {"value": 352, "raw_value": "Capacity (Gross / Netto) | 352 / 329", "source_url": "https://id.sharp/products/home-appliances/sj-456si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "net_capacity_l": {"value": 329, "raw_value": "Capacity (Gross / Netto) | 352 / 329", "source_url": "https://id.sharp/products/home-appliances/sj-456si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "width_mm": {"value": 590, "raw_value": "Width | 590", "source_url": "https://id.sharp/products/home-appliances/sj-456si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "height_mm": {"value": 1738, "raw_value": "Height | 1738", "source_url": "https://id.sharp/products/home-appliances/sj-456si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "depth_mm": {"value": 665, "raw_value": "Depth | 665", "source_url": "https://id.sharp/products/home-appliances/sj-456si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "cooling_system": {"value": "Fan Cooling", "raw_value": "Cooling System | Fan Cooling", "source_url": "https://id.sharp/products/home-appliances/sj-456si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"}
+      },
+      "additional_specs": {
+        "power_consumption_reported": {"value": 50, "raw_value": "Consumption ( Watt ) | 50 (W/H)", "source_url": "https://id.sharp/products/home-appliances/sj-456si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "refrigerant": {"value": "R-134", "raw_value": "Refrigerant (NON CFC) | R-134", "source_url": "https://id.sharp/products/home-appliances/sj-456si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "marketing_features": {"value": ["Black Glitter Metal Flat Door & Side Handle Design", "Ice Box Design with Handgrip", "J-TECH Inverter Technology", "24H/7 Always ON Plasmacluster", "Express Ice Making"], "raw_value": "Black Glitter Metal Flat Door & Side Handle Design; Ice Box Design with Handgrip; J-TECH Inverter Technology; 24H/7 Always ON Plasmacluster; Express Ice Making", "source_url": "https://id.sharp/products/home-appliances/sj-456si-gk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"}
+      },
+      "unresolved_core": ["freezer_position", "rated_power_w", "compressor_type", "defrost_type"],
+      "notes": ["Raw refrigerant dipertahankan sebagai R-134 sesuai halaman resmi."]
+    },
+    {
+      "model_id": "SHARP::SJ-IF50PMA-DS",
+      "brand": "SHARP",
+      "model": "SJ-IF50PMA-DS",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        {"url": "https://id.sharp/products/home-appliances/sj-if50pma-ds-4-door-queen-series", "source_kind": "official_product_page", "attempt": 1, "outcome": "success_exact_model", "checked_at": "2026-08-21T19:49:47+07:00"}
+      ],
+      "specs": {
+        "form_factor": {"value": "Multi Pintu", "raw_value": "SJ-IF50PMA-DS | 4 Door Queen Series", "source_url": "https://id.sharp/products/home-appliances/sj-if50pma-ds-4-door-queen-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "door_count": {"value": 4, "raw_value": "SJ-IF50PMA-DS | 4 Door Queen Series", "source_url": "https://id.sharp/products/home-appliances/sj-if50pma-ds-4-door-queen-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "gross_capacity_l": {"value": 472, "raw_value": "Capacity (Gross / Netto) | 472/401", "source_url": "https://id.sharp/products/home-appliances/sj-if50pma-ds-4-door-queen-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "net_capacity_l": {"value": 401, "raw_value": "Capacity (Gross / Netto) | 472/401", "source_url": "https://id.sharp/products/home-appliances/sj-if50pma-ds-4-door-queen-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "width_mm": {"value": 795, "raw_value": "Width | 795", "source_url": "https://id.sharp/products/home-appliances/sj-if50pma-ds-4-door-queen-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "height_mm": {"value": 1800, "raw_value": "Height | 1800", "source_url": "https://id.sharp/products/home-appliances/sj-if50pma-ds-4-door-queen-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "depth_mm": {"value": 700, "raw_value": "Depth | 700", "source_url": "https://id.sharp/products/home-appliances/sj-if50pma-ds-4-door-queen-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "rated_power_w": {"value": 180, "raw_value": "Consumption ( Watt ) | 180", "source_url": "https://id.sharp/products/home-appliances/sj-if50pma-ds-4-door-queen-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "cooling_system": {"value": "Fan Cooling", "raw_value": "Cooling System | Fan Cooling", "source_url": "https://id.sharp/products/home-appliances/sj-if50pma-ds-4-door-queen-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"}
+      },
+      "additional_specs": {
+        "refrigerant": {"value": "R-600a", "raw_value": "Refrigerant (NON CFC) | R-600a", "source_url": "https://id.sharp/products/home-appliances/sj-if50pma-ds-4-door-queen-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "marketing_features": {"value": ["DOUBLE Protection", "24H/7 Always ON Plasmacluster", "Ag+ Nano Deodorizer", "Inverter Technology", "Crisper with Humidity Control Fresh Zone"], "raw_value": "DOUBLE Protection; 24H/7 Always ON Plasmacluster; Ag+ Nano Deodorizer; Inverter Technology; Crisper with Humidity Control Fresh Zone", "source_url": "https://id.sharp/products/home-appliances/sj-if50pma-ds-4-door-queen-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "approximate_power_consumption_w_per_hour": {"value": 38, "raw_value": "Note | Power consumption 38 Watt/Hours", "source_url": "https://id.sharp/products/home-appliances/sj-if50pma-ds-4-door-queen-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"}
+      },
+      "unresolved_core": ["freezer_position", "compressor_type", "defrost_type"],
+      "notes": ["Sumber menampilkan Consumption 180 W dan catatan power consumption 38 Watt/Hours; keduanya dipisahkan dan tidak disatukan."]
+    },
+    {
+      "model_id": "SHARP::SJ-IF51PG-BK",
+      "brand": "SHARP",
+      "model": "SJ-IF51PG-BK",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        {"url": "https://id.sharp/products/home-appliances/sj-if51pg-bk", "source_kind": "official_product_page", "attempt": 1, "outcome": "success_exact_model", "checked_at": "2026-08-21T19:49:47+07:00"},
+        {"url": "https://id.sharp/sites/default/files/uploads/files/E-Catalog%20Referigerator%202023.pdf", "source_kind": "official_product_page", "attempt": 1, "outcome": "success_explicit_variant_group_SJ-IF51PG-BK_CG", "checked_at": "2026-08-21T19:49:47+07:00"}
+      ],
+      "specs": {
+        "form_factor": {"value": "Multi Pintu", "raw_value": "Refrigerator Type | 4 Door Refrigerator; model group SJ-IF51PG-BK/CG", "source_url": "https://id.sharp/sites/default/files/uploads/files/E-Catalog%20Referigerator%202023.pdf", "source_kind": "official_catalog", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "door_count": {"value": 4, "raw_value": "Refrigerator Type | 4 Door Refrigerator; model group SJ-IF51PG-BK/CG", "source_url": "https://id.sharp/sites/default/files/uploads/files/E-Catalog%20Referigerator%202023.pdf", "source_kind": "official_catalog", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "gross_capacity_l": {"value": 472, "raw_value": "Capacity (Gross / Netto) | 472/401", "source_url": "https://id.sharp/products/home-appliances/sj-if51pg-bk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "net_capacity_l": {"value": 401, "raw_value": "Capacity (Gross / Netto) | 472/401", "source_url": "https://id.sharp/products/home-appliances/sj-if51pg-bk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "width_mm": {"value": 795, "raw_value": "Width | 795mm", "source_url": "https://id.sharp/products/home-appliances/sj-if51pg-bk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "height_mm": {"value": 1800, "raw_value": "Height | 1,800mm", "source_url": "https://id.sharp/products/home-appliances/sj-if51pg-bk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "depth_mm": {"value": 700, "raw_value": "Depth | 700mm", "source_url": "https://id.sharp/products/home-appliances/sj-if51pg-bk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "rated_power_w": {"value": 180, "raw_value": "Consumption ( Watt ) | 180", "source_url": "https://id.sharp/products/home-appliances/sj-if51pg-bk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "cooling_system": {"value": "Fan Cooling Technology", "raw_value": "Cooling System | Fan Cooling Technology", "source_url": "https://id.sharp/products/home-appliances/sj-if51pg-bk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"}
+      },
+      "additional_specs": {
+        "refrigerant": {"value": "R600a", "raw_value": "Refrigerant (NON CFC) | R600a", "source_url": "https://id.sharp/products/home-appliances/sj-if51pg-bk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "marketing_features": {"value": ["Inverter Technology", "Plasmacluster Ion", "LED Touch Control Panel", "Plasmacluster LED Lamp Indicator", "Tempered Glass Tray", "Black Glass Door"], "raw_value": "Inverter Technology; Plasmacluster Ion; LED Touch Control Panel; Plasmacluster LED Lamp Indicator; Tempered Glass Tray; Black Glass Door", "source_url": "https://id.sharp/products/home-appliances/sj-if51pg-bk", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"}
+      },
+      "unresolved_core": ["freezer_position", "compressor_type", "defrost_type"],
+      "notes": ["Halaman produk melaporkan depth 700 mm; katalog resmi 2023 melaporkan 692 mm untuk grup SJ-IF51PG-BK/CG. Nilai halaman exact dipertahankan dan konflik dicatat."]
+    },
+    {
+      "model_id": "SHARP::SJ-IF60PM-DS",
+      "brand": "SHARP",
+      "model": "SJ-IF60PM-DS",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        {"url": "https://id.sharp/products/home-appliances/sj-if60pm-ds-4-door-hybrid-cooling-system-queen-series", "source_kind": "official_product_page", "attempt": 1, "outcome": "success_exact_model", "checked_at": "2026-08-21T19:49:47+07:00"}
+      ],
+      "specs": {
+        "form_factor": {"value": "Multi Pintu", "raw_value": "SJ-IF60PM-DS | 4 Door Hybrid Cooling System QUEEN Series", "source_url": "https://id.sharp/products/home-appliances/sj-if60pm-ds-4-door-hybrid-cooling-system-queen-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "door_count": {"value": 4, "raw_value": "SJ-IF60PM-DS | 4 Door Hybrid Cooling System QUEEN Series", "source_url": "https://id.sharp/products/home-appliances/sj-if60pm-ds-4-door-hybrid-cooling-system-queen-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "gross_capacity_l": {"value": 523, "raw_value": "Capacity (Gross / Netto) | 523/466", "source_url": "https://id.sharp/products/home-appliances/sj-if60pm-ds-4-door-hybrid-cooling-system-queen-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "net_capacity_l": {"value": 466, "raw_value": "Capacity (Gross / Netto) | 523/466", "source_url": "https://id.sharp/products/home-appliances/sj-if60pm-ds-4-door-hybrid-cooling-system-queen-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "width_mm": {"value": 795, "raw_value": "Width | 795", "source_url": "https://id.sharp/products/home-appliances/sj-if60pm-ds-4-door-hybrid-cooling-system-queen-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "height_mm": {"value": 1800, "raw_value": "Height | 1800", "source_url": "https://id.sharp/products/home-appliances/sj-if60pm-ds-4-door-hybrid-cooling-system-queen-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "depth_mm": {"value": 740, "raw_value": "Depth | 740", "source_url": "https://id.sharp/products/home-appliances/sj-if60pm-ds-4-door-hybrid-cooling-system-queen-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "rated_power_w": {"value": 180, "raw_value": "Consumption ( Watt ) | 180", "source_url": "https://id.sharp/products/home-appliances/sj-if60pm-ds-4-door-hybrid-cooling-system-queen-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "cooling_system": {"value": "Fan Cooling System", "raw_value": "Cooling System | Fan Cooling System", "source_url": "https://id.sharp/products/home-appliances/sj-if60pm-ds-4-door-hybrid-cooling-system-queen-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"}
+      },
+      "additional_specs": {
+        "refrigerant": {"value": "R-600a", "raw_value": "Refrigerant (NON CFC) | R-600a", "source_url": "https://id.sharp/products/home-appliances/sj-if60pm-ds-4-door-hybrid-cooling-system-queen-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "marketing_features": {"value": ["Hybrid Cooling System", "Multi Temperature Compartment", "24H/7 Always ON Plasmacluster", "Ag+ Nano Deodorizer", "Freezer Lamp", "Smart Fan Controlled by Inverter", "4 Mode Function"], "raw_value": "Hybrid Cooling System; Multi Temperature Compartment; 24H/7 Always ON Plasmacluster; Ag+ Nano Deodorizer; Freezer Lamp; Smart Fan Controlled by Inverter; 4 Mode Function", "source_url": "https://id.sharp/products/home-appliances/sj-if60pm-ds-4-door-hybrid-cooling-system-queen-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "approximate_power_consumption_w_per_hour": {"value": 40, "raw_value": "Note | Power consumption 40 Watt/Hours", "source_url": "https://id.sharp/products/home-appliances/sj-if60pm-ds-4-door-hybrid-cooling-system-queen-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"}
+      },
+      "unresolved_core": ["freezer_position", "compressor_type", "defrost_type"],
+      "notes": ["Tabel teknis menyebut Fan Cooling System sementara judul dan materi fitur menyebut Hybrid Cooling System; cooling_system mengikuti tabel, nama pemasaran disimpan terpisah."]
+    },
+    {
+      "model_id": "SHARP::SJ-IF85PG-GB",
+      "brand": "SHARP",
+      "model": "SJ-IF85PG-GB",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        {"url": "https://id.sharp/products/home-appliances/sj-if85pg-gb", "source_kind": "official_product_page", "attempt": 1, "outcome": "success_exact_model", "checked_at": "2026-08-21T19:49:47+07:00"}
+      ],
+      "specs": {
+        "form_factor": {"value": "Multi Pintu", "raw_value": "Door | 4 Door Refrigerator", "source_url": "https://id.sharp/products/home-appliances/sj-if85pg-gb", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "door_count": {"value": 4, "raw_value": "Door | 4 Door Refrigerator", "source_url": "https://id.sharp/products/home-appliances/sj-if85pg-gb", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "gross_capacity_l": {"value": 590, "raw_value": "Capacity (Gross / Netto) | 590 / 520", "source_url": "https://id.sharp/products/home-appliances/sj-if85pg-gb", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "net_capacity_l": {"value": 520, "raw_value": "Capacity (Gross / Netto) | 590 / 520", "source_url": "https://id.sharp/products/home-appliances/sj-if85pg-gb", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "width_mm": {"value": 892, "raw_value": "Width | 892", "source_url": "https://id.sharp/products/home-appliances/sj-if85pg-gb", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "height_mm": {"value": 1720, "raw_value": "Height | 1720", "source_url": "https://id.sharp/products/home-appliances/sj-if85pg-gb", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "depth_mm": {"value": 768, "raw_value": "Depth | 768", "source_url": "https://id.sharp/products/home-appliances/sj-if85pg-gb", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "cooling_system": {"value": "Hybrid Cooling Technology", "raw_value": "Cooling System | Hybrid Cooling Technology", "source_url": "https://id.sharp/products/home-appliances/sj-if85pg-gb", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "defrost_type": {"value": "Automatic", "raw_value": "Defrosting | Automatic", "source_url": "https://id.sharp/products/home-appliances/sj-if85pg-gb", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"}
+      },
+      "additional_specs": {
+        "power_consumption_reported": {"value": "173-206", "raw_value": "Consumption ( Watt ) | 173 - 206", "source_url": "https://id.sharp/products/home-appliances/sj-if85pg-gb", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "refrigerant": {"value": "R600a", "raw_value": "Refrigerant (NON CFC) | R600a", "source_url": "https://id.sharp/products/home-appliances/sj-if85pg-gb", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "marketing_features": {"value": ["J-Tech INVERTER", "Plasmacluster Ion Technology", "LED Touch Control Panel", "Moisture Capsule", "Anti-Bacterial Honeycomb Deodorizer", "Magic Note Glass Door", "Double Smart Fan", "Express Freezing"], "raw_value": "J-Tech INVERTER; Plasmacluster Ion Technology; LED Touch Control Panel; Moisture Capsule; Anti-Bacterial Honeycomb Deodorizer; Magic Note Glass Door; Double Smart Fan; Express Freezing", "source_url": "https://id.sharp/products/home-appliances/sj-if85pg-gb", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"}
+      },
+      "unresolved_core": ["freezer_position", "rated_power_w", "compressor_type"],
+      "notes": ["Rentang daya 173-206 dipertahankan sebagai rentang string; tidak diubah menjadi satu angka."]
+    },
+    {
+      "model_id": "SHARP::SJ-IF91PG-GB",
+      "brand": "SHARP",
+      "model": "SJ-IF91PG-GB",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        {"url": "https://id.sharp/products/home-appliances/sj-if91pg-gb", "source_kind": "official_product_page", "attempt": 1, "outcome": "success_exact_model", "checked_at": "2026-08-21T19:49:47+07:00"}
+      ],
+      "specs": {
+        "form_factor": {"value": "Multi Pintu", "raw_value": "Door | 4 Door Refrigerator", "source_url": "https://id.sharp/products/home-appliances/sj-if91pg-gb", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "door_count": {"value": 4, "raw_value": "Door | 4 Door Refrigerator", "source_url": "https://id.sharp/products/home-appliances/sj-if91pg-gb", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "gross_capacity_l": {"value": 639, "raw_value": "Capacity (Gross / Netto) | 639 / 572", "source_url": "https://id.sharp/products/home-appliances/sj-if91pg-gb", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "net_capacity_l": {"value": 572, "raw_value": "Capacity (Gross / Netto) | 639 / 572", "source_url": "https://id.sharp/products/home-appliances/sj-if91pg-gb", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "width_mm": {"value": 892, "raw_value": "Width | 892", "source_url": "https://id.sharp/products/home-appliances/sj-if91pg-gb", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "height_mm": {"value": 1830, "raw_value": "Height | 1830", "source_url": "https://id.sharp/products/home-appliances/sj-if91pg-gb", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "depth_mm": {"value": 768, "raw_value": "Depth | 768", "source_url": "https://id.sharp/products/home-appliances/sj-if91pg-gb", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "cooling_system": {"value": "Hybrid Cooling Technology", "raw_value": "Cooling System | Hybrid Cooling Technology", "source_url": "https://id.sharp/products/home-appliances/sj-if91pg-gb", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "defrost_type": {"value": "Automatic", "raw_value": "Defrosting | Automatic", "source_url": "https://id.sharp/products/home-appliances/sj-if91pg-gb", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"}
+      },
+      "additional_specs": {
+        "power_consumption_reported": {"value": "173-206", "raw_value": "Consumption ( Watt ) | 173 - 206", "source_url": "https://id.sharp/products/home-appliances/sj-if91pg-gb", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "refrigerant": {"value": "R600a", "raw_value": "Refrigerant (NON CFC) | R600a", "source_url": "https://id.sharp/products/home-appliances/sj-if91pg-gb", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "marketing_features": {"value": ["J-Tech INVERTER", "Plasmacluster Ion Technology", "LED Touch Control Panel", "Moisture Capsule", "Anti-Bacterial Honeycomb Deodorizer", "Plasmacluster LED indicator", "Tempered Glass"], "raw_value": "J-Tech INVERTER; Plasmacluster Ion Technology; LED Touch Control Panel; Moisture Capsule; Anti-Bacterial Honeycomb Deodorizer; Plasmacluster LED indicator; Tempered Glass", "source_url": "https://id.sharp/products/home-appliances/sj-if91pg-gb", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"}
+      },
+      "unresolved_core": ["freezer_position", "rated_power_w", "compressor_type"],
+      "notes": ["Rentang daya 173-206 dipertahankan tanpa memilih nilai tunggal."]
+    },
+    {
+      "model_id": "SHARP::SJ-IS50M-SL",
+      "brand": "SHARP",
+      "model": "SJ-IS50M-SL",
+      "research_status": "unresolved",
+      "exact_match": false,
+      "checked_urls": [
+        {"url": "https://id.sharp/products/home-appliances/sj-is50ma-sl-side-side-series", "source_kind": "official_product_page", "attempt": 1, "outcome": "success_model_label_SJ-IS50MA-SL_not_exact_target", "checked_at": "2026-08-21T19:49:47+07:00"}
+      ],
+      "specs": {},
+      "additional_specs": {},
+      "unresolved_core": ["form_factor", "door_count", "freezer_position", "gross_capacity_l", "net_capacity_l", "width_mm", "height_mm", "depth_mm", "rated_power_w", "compressor_type", "cooling_system", "defrost_type"],
+      "notes": ["Nearby source checked, but no explicit alias for the exact target was found; no values were copied."]
+    },
+    {
+      "model_id": "SHARP::SJ-IS60MB-DS",
+      "brand": "SHARP",
+      "model": "SJ-IS60MB-DS",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        {"url": "https://id.sharp/products/home-appliances/sj-is60mb-ds-side-side-series", "source_kind": "official_product_page", "attempt": 1, "outcome": "success_exact_model", "checked_at": "2026-08-21T19:49:47+07:00"}
+      ],
+      "specs": {
+        "form_factor": {"value": "Side by Side", "raw_value": "SJ-IS60MB-DS | Side by Side Series", "source_url": "https://id.sharp/products/home-appliances/sj-is60mb-ds-side-side-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "door_count": {"value": 2, "raw_value": "Door | 2 Doors", "source_url": "https://id.sharp/products/home-appliances/sj-is60mb-ds-side-side-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "gross_capacity_l": {"value": 563, "raw_value": "Capacity (Gross / Netto) | 563 / 532", "source_url": "https://id.sharp/products/home-appliances/sj-is60mb-ds-side-side-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "net_capacity_l": {"value": 532, "raw_value": "Capacity (Gross / Netto) | 563 / 532", "source_url": "https://id.sharp/products/home-appliances/sj-is60mb-ds-side-side-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "width_mm": {"value": 910, "raw_value": "Width | 910", "source_url": "https://id.sharp/products/home-appliances/sj-is60mb-ds-side-side-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "height_mm": {"value": 1770, "raw_value": "Height | 1770", "source_url": "https://id.sharp/products/home-appliances/sj-is60mb-ds-side-side-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "depth_mm": {"value": 670, "raw_value": "Depth | 670", "source_url": "https://id.sharp/products/home-appliances/sj-is60mb-ds-side-side-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "cooling_system": {"value": "Fan Cooling", "raw_value": "Cooling System | Fan Cooling", "source_url": "https://id.sharp/products/home-appliances/sj-is60mb-ds-side-side-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"}
+      },
+      "additional_specs": {
+        "power_consumption_reported": {"value": 36, "raw_value": "Consumption ( Watt ) | 36 (W/h)", "source_url": "https://id.sharp/products/home-appliances/sj-is60mb-ds-side-side-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "refrigerant": {"value": "R600a", "raw_value": "Refrigerant (NON CFC) | R600a", "source_url": "https://id.sharp/products/home-appliances/sj-is60mb-ds-side-side-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "marketing_features": {"value": ["Smart Fan Controlled by Inverter", "Ag+ Nano Deodorizer", "360° Air Cooling System", "4 Mode Function", "Double Ice Twist Maker", "Mega Freezer", "Mega Crisper Room"], "raw_value": "Smart Fan Controlled by Inverter; Ag+ Nano Deodorizer; 360° Air Cooling System; 4 Mode Function; Double Ice Twist Maker; Mega Freezer; Mega Crisper Room", "source_url": "https://id.sharp/products/home-appliances/sj-is60mb-ds-side-side-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"}
+      },
+      "unresolved_core": ["freezer_position", "rated_power_w", "compressor_type", "defrost_type"],
+      "notes": ["Smart Fan Controlled by Inverter tidak dipetakan menjadi jenis kompresor karena sumber menyebut kipas, bukan kompresor."]
+    },
+    {
+      "model_id": "SHARP::SJ-IT660PM-DS",
+      "brand": "SHARP",
+      "model": "SJ-IT660PM-DS",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        {"url": "https://id.sharp/products/home-appliances/sj-it660pm-ds-2-door-grand-vetro-series", "source_kind": "official_product_page", "attempt": 1, "outcome": "success_exact_model", "checked_at": "2026-08-21T19:49:47+07:00"}
+      ],
+      "specs": {
+        "form_factor": {"value": "2 Pintu", "raw_value": "SJ-IT660PM-DS | 2 Door Grand VETRO Series", "source_url": "https://id.sharp/products/home-appliances/sj-it660pm-ds-2-door-grand-vetro-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "door_count": {"value": 2, "raw_value": "Door | 2", "source_url": "https://id.sharp/products/home-appliances/sj-it660pm-ds-2-door-grand-vetro-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "gross_capacity_l": {"value": 502, "raw_value": "Capacity (Gross / Netto) | 502 / 471", "source_url": "https://id.sharp/products/home-appliances/sj-it660pm-ds-2-door-grand-vetro-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "net_capacity_l": {"value": 471, "raw_value": "Capacity (Gross / Netto) | 502 / 471", "source_url": "https://id.sharp/products/home-appliances/sj-it660pm-ds-2-door-grand-vetro-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "width_mm": {"value": 700, "raw_value": "Width | 700", "source_url": "https://id.sharp/products/home-appliances/sj-it660pm-ds-2-door-grand-vetro-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "height_mm": {"value": 1795, "raw_value": "Height | 1795", "source_url": "https://id.sharp/products/home-appliances/sj-it660pm-ds-2-door-grand-vetro-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "depth_mm": {"value": 726, "raw_value": "Depth | 726", "source_url": "https://id.sharp/products/home-appliances/sj-it660pm-ds-2-door-grand-vetro-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "cooling_system": {"value": "Fan Cooling", "raw_value": "Cooling System | Fan Cooling", "source_url": "https://id.sharp/products/home-appliances/sj-it660pm-ds-2-door-grand-vetro-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"}
+      },
+      "additional_specs": {
+        "refrigerant": {"value": "R-600a", "raw_value": "Refrigerant (NON CFC) | R-600a", "source_url": "https://id.sharp/products/home-appliances/sj-it660pm-ds-2-door-grand-vetro-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "marketing_features": {"value": ["MEGA FREEZER (30:70)", "Ice Box Design with Handgrip", "LONGEST Fresh Drawer opening (up to 150 mm)", "24H/7 Always ON Plasmacluster Ion", "Ag+ Nano Deodorizer", "MEGA Crisper with Moisture Capsule", "Inverter Technology"], "raw_value": "MEGA FREEZER (30:70); Ice Box Design with Handgrip; LONGEST Fresh Drawer opening (up to 150 mm); 24H/7 Always ON Plasmacluster Ion; Ag+ Nano Deodorizer; MEGA Crisper with Moisture Capsule; Inverter Technology", "source_url": "https://id.sharp/products/home-appliances/sj-it660pm-ds-2-door-grand-vetro-series", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"}
+      },
+      "unresolved_core": ["freezer_position", "rated_power_w", "compressor_type", "defrost_type"],
+      "notes": ["Halaman resmi tidak menampilkan baris daya atau defrost. Inverter Technology tetap sebagai nama fitur."]
+    },
+    {
+      "model_id": "SHARP::SJ-N162N-HS",
+      "brand": "SHARP",
+      "model": "SJ-N162N-HS",
+      "research_status": "partial",
+      "exact_match": true,
+      "checked_urls": [
+        {"url": "https://id.sharp/products/home-appliances/sj-n162n-hs", "source_kind": "official_product_page", "attempt": 1, "outcome": "success_exact_model", "checked_at": "2026-08-21T19:49:47+07:00"}
+      ],
+      "specs": {
+        "form_factor": {"value": "1 Pintu", "raw_value": "Door | One Door", "source_url": "https://id.sharp/products/home-appliances/sj-n162n-hs", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "door_count": {"value": 1, "raw_value": "Door | One Door", "source_url": "https://id.sharp/products/home-appliances/sj-n162n-hs", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "gross_capacity_l": {"value": 133, "raw_value": "Capacity (Gross / Netto) | 133 / 128", "source_url": "https://id.sharp/products/home-appliances/sj-n162n-hs", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "net_capacity_l": {"value": 128, "raw_value": "Capacity (Gross / Netto) | 133 / 128", "source_url": "https://id.sharp/products/home-appliances/sj-n162n-hs", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "width_mm": {"value": 535, "raw_value": "Width | 535", "source_url": "https://id.sharp/products/home-appliances/sj-n162n-hs", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "height_mm": {"value": 970, "raw_value": "Height | 970", "source_url": "https://id.sharp/products/home-appliances/sj-n162n-hs", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "depth_mm": {"value": 550, "raw_value": "Depth | 550", "source_url": "https://id.sharp/products/home-appliances/sj-n162n-hs", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "rated_power_w": {"value": 60, "raw_value": "Consumption ( Watt ) | 60", "source_url": "https://id.sharp/products/home-appliances/sj-n162n-hs", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "cooling_system": {"value": "Direct Cooling", "raw_value": "Cooling System | Direct Cooling", "source_url": "https://id.sharp/products/home-appliances/sj-n162n-hs", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "defrost_type": {"value": "Semi Automatic", "raw_value": "Defrosting | Semi Automatic", "source_url": "https://id.sharp/products/home-appliances/sj-n162n-hs", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"}
+      },
+      "additional_specs": {
+        "refrigerant": {"value": "HFC-134a", "raw_value": "Refrigerant (NON CFC) | HFC-134a", "source_url": "https://id.sharp/products/home-appliances/sj-n162n-hs", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"},
+        "marketing_features": {"value": ["Mega Crisper Room", "Mega Freezer", "Direct Cooling System", "Tempered Glass Tray", "Low Wattage and Low Voltage", "Full Insulation", "Washable Gasket", "Fresh Room"], "raw_value": "Mega Crisper Room; Mega Freezer; Direct Cooling System; Tempered Glass Tray; Low Wattage and Low Voltage; Full Insulation; Washable Gasket; Fresh Room", "source_url": "https://id.sharp/products/home-appliances/sj-n162n-hs", "source_kind": "official_product_page", "verified_at": "2026-08-21T19:49:47+07:00"}
+      },
+      "unresolved_core": ["freezer_position", "compressor_type"],
+      "notes": ["Posisi freezer tidak dinyatakan pada sumber meski kapasitas freezer dicantumkan."]
+    },
+    {
+      "model_id": "SHARP::SJ-N182N",
+      "brand": "SHARP",
+      "model": "SJ-N182N",
+      "research_status": "unresolved",
+      "exact_match": false,
+      "checked_urls": [
+        {"url": "https://id.sharp/products/home-appliances/sj-n182n-hs", "source_kind": "official_product_page", "attempt": 1, "outcome": "success_model_label_SJ-N182N-HS_not_exact_target", "checked_at": "2026-08-21T19:49:47+07:00"}
+      ],
+      "specs": {},
+      "additional_specs": {},
+      "unresolved_core": ["form_factor", "door_count", "freezer_position", "gross_capacity_l", "net_capacity_l", "width_mm", "height_mm", "depth_mm", "rated_power_w", "compressor_type", "cooling_system", "defrost_type"],
+      "notes": ["Nearby source checked, but no explicit alias for the exact target was found; no values were copied."]
+    },
+    {
+      "model_id": "SHARP::SJ-N192N",
+      "brand": "SHARP",
+      "model": "SJ-N192N",
+      "research_status": "unresolved",
+      "exact_match": false,
+      "checked_urls": [
+        {"url": "https://id.sharp/products/home-appliances/sj-n192n-hs", "source_kind": "official_product_page", "attempt": 1, "outcome": "success_model_label_SJ-N192N-HS_not_exact_target", "checked_at": "2026-08-21T19:49:47+07:00"}
+      ],
+      "specs": {},
+      "additional_specs": {},
+      "unresolved_core": ["form_factor", "door_count", "freezer_position", "gross_capacity_l", "net_capacity_l", "width_mm", "height_mm", "depth_mm", "rated_power_w", "compressor_type", "cooling_system", "defrost_type"],
+      "notes": ["Nearby source checked, but no explicit alias for the exact target was found; no values were copied."]
+    },
+    {
+      "model_id": "SHARP::SJ-X165MG-GB_GR",
+      "brand": "SHARP",
+      "model": "SJ-X165MG-GB_GR",
+      "research_status": "unresolved",
+      "exact_match": false,
+      "checked_urls": [
+        {"url": "https://id.sharp/products/home-appliances/sj-x165mg-gbgr", "source_kind": "official_product_page", "attempt": 1, "outcome": "success_model_group_SJ-X165MG-GB_GR_not_literal_target", "checked_at": "2026-08-21T19:49:47+07:00"}
+      ],
+      "specs": {},
+      "additional_specs": {},
+      "unresolved_core": ["form_factor", "door_count", "freezer_position", "gross_capacity_l", "net_capacity_l", "width_mm", "height_mm", "depth_mm", "rated_power_w", "compressor_type", "cooling_system", "defrost_type"],
+      "notes": ["Nearby source checked, but no explicit alias for the exact target was found; no values were copied."]
+    },
+    {
+      "model_id": "SHARP::SJ-X185MG-GB_GR",
+      "brand": "SHARP",
+      "model": "SJ-X185MG-GB_GR",
+      "research_status": "unresolved",
+      "exact_match": false,
+      "checked_urls": [
+        {"url": "https://www.elektronikmurah.biz/products/sharp-kulkas-1-pintu-166l-sj-x185mg-gb", "source_kind": "retailer", "attempt": 1, "outcome": "success_retailer_model_SJ-X185MG-GB_not_literal_target", "checked_at": "2026-08-21T19:49:47+07:00"},
+        {"url": "https://id.sharp/products/home-appliances/sj-x185mg-gbgr", "source_kind": "official_product_page", "attempt": 1, "outcome": "success_official_model_group_SJ-X185MG-GB_GR_not_literal_target", "checked_at": "2026-08-21T19:49:47+07:00"}
+      ],
+      "specs": {},
+      "additional_specs": {},
+      "unresolved_core": ["form_factor", "door_count", "freezer_position", "gross_capacity_l", "net_capacity_l", "width_mm", "height_mm", "depth_mm", "rated_power_w", "compressor_type", "cooling_system", "defrost_type"],
+      "notes": ["Nearby source checked, but no explicit alias for the exact target was found; no values were copied."]
+    },
+    {
+      "model_id": "SHARP::SJ-X195MG-GB_GR",
+      "brand": "SHARP",
+      "model": "SJ-X195MG-GB_GR",
+      "research_status": "unresolved",
+      "exact_match": false,
+      "checked_urls": [
+        {"url": "https://id.sharp/products/home-appliances/sj-x195mg-gbgr", "source_kind": "official_product_page", "attempt": 1, "outcome": "success_model_group_SJ-X195MG-GB_GR_not_literal_target", "checked_at": "2026-08-21T19:49:47+07:00"}
+      ],
+      "specs": {},
+      "additional_specs": {},
+      "unresolved_core": ["form_factor", "door_count", "freezer_position", "gross_capacity_l", "net_capacity_l", "width_mm", "height_mm", "depth_mm", "rated_power_w", "compressor_type", "cooling_system", "defrost_type"],
+      "notes": ["Nearby source checked, but no explicit alias for the exact target was found; no values were copied."]
+    },
+    {
+      "model_id": "SHARP::SJ316MGGB",
+      "brand": "SHARP",
+      "model": "SJ316MGGB",
+      "research_status": "unresolved",
+      "exact_match": false,
+      "checked_urls": [
+        {"url": "https://id.sharp/products/home-appliances/sj-316mg-gbgr", "source_kind": "official_product_page", "attempt": 1, "outcome": "success_model_group_SJ-316MG-GB_GR_not_literal_target", "checked_at": "2026-08-21T19:49:47+07:00"}
+      ],
+      "specs": {},
+      "additional_specs": {},
+      "unresolved_core": ["form_factor", "door_count", "freezer_position", "gross_capacity_l", "net_capacity_l", "width_mm", "height_mm", "depth_mm", "rated_power_w", "compressor_type", "cooling_system", "defrost_type"],
+      "notes": ["Nearby source checked, but no explicit alias for the exact target was found; no values were copied."]
+    }
+  ]
+}
