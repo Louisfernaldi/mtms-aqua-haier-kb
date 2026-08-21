@@ -609,14 +609,14 @@ footer { border-top: 1px solid var(--border); background: var(--bg-card); margin
 .comp-legend{display:flex;flex-wrap:wrap;gap:12px;margin:12px 0;font-size:0.8rem;color:var(--text-muted);align-items:center}
 .comp-brand-dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px;vertical-align:middle}
 .comp-main{max-width:1200px;margin:0 auto;padding:0 16px}
-.comp-cat-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;position:sticky;top:58px;z-index:4;background:var(--bg)}
+.comp-cat-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
 .comp-add-btn{padding:6px 14px;border-radius:6px;border:1px solid var(--accent);background:var(--accent-soft);color:var(--accent-dark);font-size:.8rem;font-weight:600;cursor:pointer}
 .comp-add-btn:hover{background:var(--accent);color:#fff}
 .comp-table-wrap{position:relative;overflow-x:auto}
 .comp-table-wrap::after{content:"";position:absolute;top:0;right:0;width:24px;height:100%;background:linear-gradient(to left,var(--bg) 0%,transparent 100%);pointer-events:none;z-index:3}
 .comp-full-table{font-size:.82rem;min-width:1080px}
 .comp-full-table th,.comp-full-table td{padding:8px 6px}
-.comp-full-table th{font-size:.78rem;position:sticky;top:58px;z-index:5;background:var(--accent-dark);color:#fff}
+.comp-full-table th{font-size:.78rem;background:var(--accent-dark);color:#fff}
 .comp-full-table th:first-child{position:sticky;left:0;z-index:6;box-shadow:2px 0 8px rgba(0,0,0,.08)}
 .comp-cell{text-align:center;vertical-align:top}
 .comp-cell.comp-aqua{position:sticky;left:0;z-index:4;box-shadow:2px 0 8px rgba(0,0,0,.08);background:linear-gradient(180deg,#e6f4fb 0%,var(--bg) 100%)}
