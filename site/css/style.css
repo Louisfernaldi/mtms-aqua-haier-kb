@@ -708,3 +708,32 @@ footer { border-top: 1px solid var(--border); background: var(--bg-card); margin
 .comp-edit-card .foto-upload-row input[type="file"]{font-size:.75rem}
 .comp-edit-seksi{border-top:1px solid var(--border);padding-top:12px;margin-top:16px}
 @media(max-width:600px){.comp-full-table{font-size:.7rem}.comp-thumb{max-width:80px}}
+
+/* === Editor spesifikasi dinamis (panel tiket 02, bukan modal perbandingan) === */
+.ds-editor-fab{position:fixed;left:18px;bottom:18px;z-index:118;border:0;border-radius:24px;background:var(--accent);color:#fff;padding:11px 17px;font:600 .88rem var(--font);box-shadow:0 6px 20px rgba(0,102,204,.28);cursor:pointer}
+.ds-editor-fab:disabled{background:#6f7b84;cursor:not-allowed;opacity:.72;box-shadow:none}
+.ds-editor-boot-status{position:fixed;left:20px;bottom:64px;z-index:117;max-width:min(360px,calc(100vw - 40px));font-size:.72rem;color:var(--text-muted);background:var(--bg-card);border-radius:6px;padding:3px 7px}
+.ds-editor-boot-status:empty{display:none}.ds-editor-boot-status.error{color:#b42318;border:1px solid rgba(180,35,24,.28)}
+.ds-editor-shell{position:fixed;inset:0;z-index:150;display:grid;grid-template-columns:1fr minmax(320px,620px)}
+.ds-editor-shell[hidden]{display:none}.ds-editor-backdrop{grid-column:1;border:0;background:rgba(6,16,22,.52);cursor:default}
+.ds-editor-panel{grid-column:2;background:var(--bg-card);border-left:1px solid var(--border);box-shadow:-12px 0 38px rgba(0,0,0,.25);height:100vh;overflow-y:auto;color:var(--text)}
+.ds-editor-header{position:sticky;top:0;z-index:2;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 18px;background:var(--bg-card);border-bottom:1px solid var(--border)}
+.ds-editor-header strong{display:block;font-size:1rem}.ds-editor-header small{display:block;margin-top:2px;color:var(--text-muted);font-size:.72rem}
+.ds-editor-close{width:42px;height:42px;border:1px solid var(--border);border-radius:50%;background:var(--bg-soft);color:var(--text);font-size:1.5rem;cursor:pointer}
+.ds-editor-tabs{display:flex;gap:7px;flex-wrap:wrap;padding:12px 18px;border-bottom:1px solid var(--border)}
+.ds-editor-tabs button,.ds-editor-actions button,.ds-suggestion button,.ds-category-card button,.ds-category-create button{border:1px solid var(--border);border-radius:7px;background:var(--bg-soft);color:var(--text);padding:7px 10px;font:600 .78rem var(--font);cursor:pointer}
+.ds-editor-tabs button.active,.ds-editor-actions button,.ds-category-card button,.ds-category-create button{background:var(--accent);border-color:var(--accent);color:#fff}
+.ds-editor-status{margin:10px 18px 0;padding:8px 10px;border-radius:7px;min-height:1em;font-size:.78rem}.ds-editor-status:empty{display:none}
+.ds-editor-status.ok{background:rgba(26,127,55,.12);color:#1a7f37}.ds-editor-status.error{background:rgba(180,35,24,.12);color:#b42318}.ds-editor-status.info{background:var(--bg-soft);color:var(--text-muted)}
+.ds-editor-content{padding:16px 18px 28px}.ds-field{display:block;font-size:.8rem;font-weight:650;color:var(--text-muted);margin-bottom:12px}
+.ds-field select,.ds-field textarea,.ds-spec-row input,.ds-category-card input,.ds-category-create input{display:block;width:100%;box-sizing:border-box;margin-top:5px;padding:8px 9px;border:1px solid var(--border);border-radius:7px;background:var(--bg);color:var(--text);font:inherit}
+.ds-model-id{font-size:.76rem;color:var(--text-muted);overflow-wrap:anywhere}.ds-spec-list{display:grid;gap:8px;margin:14px 0}
+.ds-spec-row{display:grid;grid-template-columns:minmax(145px,1.1fr) minmax(125px,1fr) 38px;gap:5px 8px;align-items:center;padding:10px;border:1px solid var(--border);border-radius:9px;background:var(--bg-soft)}
+.ds-spec-row.inactive{opacity:.72}.ds-spec-row>span:first-child{display:flex;gap:5px;align-items:center;flex-wrap:wrap}.ds-spec-row strong{font-size:.8rem}.ds-spec-row code,.ds-category-card code{font-size:.66rem;color:var(--text-muted)}
+.ds-spec-row em,.ds-category-card em{font-size:.62rem;font-style:normal;background:rgba(180,35,24,.1);color:#b42318;border-radius:9px;padding:2px 6px}.ds-unit{font-size:.73rem;color:var(--text-muted)}
+.ds-provenance{grid-column:1/-1;color:var(--text-muted);font-size:.7rem;overflow-wrap:anywhere}.ds-provenance a,.ds-suggestion a{color:var(--accent)}
+.ds-editor-actions{display:flex;justify-content:flex-end;margin:12px 0 20px}.ds-suggestions{border-top:1px solid var(--border);padding-top:14px}.ds-suggestions h3,.ds-category-create h3{font-size:.92rem;margin:0 0 10px}
+.ds-suggestion{display:grid;gap:6px;padding:10px;margin:8px 0;border:1px solid var(--border);border-radius:9px;background:var(--bg-soft);font-size:.78rem}.ds-suggestion small{color:var(--text-muted)}.ds-suggestion div{display:flex;gap:7px}.ds-suggestion button.danger{color:#b42318}
+.ds-empty,.ds-help{font-size:.78rem;color:var(--text-muted)}.ds-category-create,.ds-category-card{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;padding:12px;margin-bottom:12px;border:1px solid var(--border);border-radius:10px;background:var(--bg-soft)}
+.ds-category-create h3,.ds-category-card>div{grid-column:1/-1}.ds-category-create label,.ds-category-card label{font-size:.72rem;color:var(--text-muted)}.ds-category-create button,.ds-category-card button{align-self:end}.ds-check{display:flex;align-items:center;gap:6px}.ds-check input{width:auto;margin:0}.ds-category-list{display:grid;gap:3px}
+@media(max-width:700px){.ds-editor-shell{display:block}.ds-editor-backdrop{display:none}.ds-editor-panel{width:100%;border-left:0}.ds-spec-row{grid-template-columns:minmax(125px,1fr) minmax(105px,1fr) 30px}.ds-category-create,.ds-category-card{grid-template-columns:repeat(2,minmax(0,1fr))}.ds-editor-fab{left:12px;bottom:12px}.ds-editor-boot-status{left:12px;bottom:58px}}

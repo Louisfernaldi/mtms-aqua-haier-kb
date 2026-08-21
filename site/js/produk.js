@@ -1,3 +1,38 @@
+function escHtml(value) {
+  return String(value == null ? "" : value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
+function safeMediaUrl(value) {
+  var url = String(value == null ? "" : value).trim();
+  if (!url || /[\u0000-\u001f\u007f\\]/.test(url) || /^\/\//.test(url)) return "";
+  if (/^[a-z][a-z0-9+.-]*:/i.test(url)) {
+    try {
+      var parsed = new URL(url);
+      return parsed.protocol === "http:" || parsed.protocol === "https:" ? url : "";
+    } catch (_error) {
+      return "";
+    }
+  }
+  return url;
+}
+
+// Foto hasil manifest hanya untuk render browser. Non-enumerable memastikan
+// full PUT legacy tidak mengirim foto_list turunan pada semua model.
+function attachDerivedFotoList(product, urls) {
+  Object.defineProperty(product, "foto_list", {
+    value: Array.isArray(urls) ? urls : [],
+    writable: true,
+    configurable: true,
+    enumerable: false
+  });
+  return product;
+}
+
 function renderRingkasan(targetId) {
   var host = document.getElementById(targetId);
   if (!host) return;
@@ -58,7 +93,7 @@ function renderRingkasan(targetId) {
 
   function fmtRentang(r) {
     if (!r || r === "-") return "-";
-    return "Rp " + r.replace(/-/g, "–").replace(/\s*juta/g, " juta");
+    return "Rp " + String(r).replace(/-/g, "–").replace(/\s*juta/g, " juta");
   }
 
   function fmtAngka(n) {
@@ -69,10 +104,10 @@ function renderRingkasan(targetId) {
   var html = "";
 
   var rows = ringkasan.segmen.map(function (s) {
-    return "<tr><td>" + s.label + "</td><td>" + fmtRentang(s.rentang) +
-      (s.sumber && s.sumber !== "-" ? ' <span class="src">(' + s.sumber + ")</span>" : "") +
-      "</td><td>" + s.jumlah_model + "</td><td>" +
-      (s.kapasitas_min != null ? s.kapasitas_min + "–" + s.kapasitas_max + " L gross" : "-") +
+    return "<tr><td>" + escHtml(s.label) + "</td><td>" + escHtml(fmtRentang(s.rentang)) +
+      (s.sumber && s.sumber !== "-" ? ' <span class="src">(' + escHtml(s.sumber) + ")</span>" : "") +
+      "</td><td>" + escHtml(s.jumlah_model) + "</td><td>" +
+      (s.kapasitas_min != null ? escHtml(s.kapasitas_min) + "–" + escHtml(s.kapasitas_max) + " L gross" : "-") +
       "</td></tr>";
   }).join("");
   html += '<div class="ringkasan-blok">' +
@@ -80,13 +115,13 @@ function renderRingkasan(targetId) {
     "<table><thead><tr><th>Segmen</th><th>Rentang Harga (Rp)</th><th>Jumlah Model</th><th>Kapasitas Range</th></tr></thead>" +
     "<tbody>" + rows + "</tbody></table>" +
     '<p class="sec-sub rk-sumber">Rentang harga per segmen dari Aqua PM; jumlah model &amp; kapasitas dihitung mesin dari katalog. ' +
-    (ringkasan.sumber || "") + ".</p>" +
+    escHtml(ringkasan.sumber || "") + ".</p>" +
     "</div>";
 
   var st = ringkasan.stats || {};
   html += '<div class="ringkasan-blok"><h3 class="ringkasan-judul">Angka Penting</h3><div class="ringkasan-stats">';
   function statCard(nilai, sub) {
-    return '<div class="stat-card"><b>' + nilai + "</b><span>" + sub + "</span></div>";
+    return '<div class="stat-card"><b>' + escHtml(nilai) + "</b><span>" + escHtml(sub) + "</span></div>";
   }
   if (st.garansi_terpanjang && st.garansi_terpanjang.nilai != null) {
     html += statCard(st.garansi_terpanjang.nilai + " th", "Garansi kompresor terpanjang · " + (st.garansi_terpanjang.label || ""));
@@ -108,12 +143,12 @@ function renderRingkasan(targetId) {
       kb.fakta.forEach(function (x) { if (x.judul === j) f = x; });
       if (!f) return;
       var poin = f.isi.split(/(?:\. )|(?: — )/).map(function (t) { return t.trim(); }).filter(Boolean).slice(0, 3);
-      var lis = poin.map(function (t) { return "<li>" + t + "</li>"; }).join("");
+      var lis = poin.map(function (t) { return "<li>" + escHtml(t) + "</li>"; }).join("");
       var ico = (typeof faktaEmoji === "function") ? faktaEmoji(f.judul, f.isi) : "📄";
       bullets.push(
-        '<div class="card ringkasan-bullet"><h3><span class="fakta-ico">' + ico + "</span>" + f.judul + "</h3>" +
+        '<div class="card ringkasan-bullet"><h3><span class="fakta-ico">' + escHtml(ico) + "</span>" + escHtml(f.judul) + "</h3>" +
         '<ul class="rk-bullets">' + lis + "</ul>" +
-        '<span class="src">Sumber: ' + f.sumber + "</span></div>"
+        '<span class="src">Sumber: ' + escHtml(f.sumber) + "</span></div>"
       );
     });
     if (bullets.length) {
@@ -134,7 +169,9 @@ function renderKatalog(targetId) {
     }
     function prepare(items, files) {
       items.forEach(function (p) {
-        if (!p.foto_list || !p.foto_list.length) p.foto_list = computeFotoList(p.model, p.foto, files);
+        if (!p.foto_list || !p.foto_list.length) {
+          attachDerivedFotoList(p, computeFotoList(p.model, p.foto, files));
+        }
       });
       var embedded = (window.MTMS_DATA && window.MTMS_DATA.katalog) || [];
       var fiturMap = {};
@@ -152,10 +189,14 @@ function renderKatalog(targetId) {
     }
     var refresh = fetch("api/produk").then(function (r) {
       if (!r.ok) throw new Error("api " + r.status);
+      window.MTMS_PRODUCTS_SHA = String(r.headers.get("X-Data-SHA") || r.headers.get("ETag") || "")
+        .replace(/^W\//, "").replace(/^"|"$/g, "");
       return r.json();
     }).then(function (items) {
       return loadManifest().then(function (files) {
         window.MTMS_MANIFEST = files;
+        // Penanda ini mempertahankan kontrak render lama: GET API sudah selesai.
+        // Pagar write tetap terpisah dan menolak simpan bila SHA belum tersedia.
         window.MTMS_DATA_LIVE = true;
         return prepare(items, files);
       });
@@ -211,14 +252,15 @@ function renderKatalog(targetId) {
 
       function thumb(p) {
         var f0 = p.foto || (p.foto_list && p.foto_list.length ? p.foto_list[0] : null);
-        if (f0) {
-          return '<div class="pk-thumb"><img loading="lazy" src="' + f0 + '" alt="' + p.model + '"></div>';
+        var safeFoto = safeMediaUrl(f0);
+        if (safeFoto) {
+          return '<div class="pk-thumb"><img loading="lazy" src="' + escHtml(safeFoto) + '" alt="' + escHtml(p.model) + '"></div>';
         }
         var model = p.model || "";
         var label = "Belum ada foto";
         if (model) label += " · " + model;
         var svg = '<svg class="pk-noimg-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 7h10"/><path d="M7 11h6"/><path d="M7 15h4"/><line x1="12" y1="19" x2="12" y2="21"/></svg>';
-        return '<div class="pk-thumb pk-noimg" aria-hidden="true">' + svg + '<span class="pk-noimg-label">' + label + '</span></div>';
+        return '<div class="pk-thumb pk-noimg" aria-hidden="true">' + svg + '<span class="pk-noimg-label">' + escHtml(label) + '</span></div>';
       }
 
       function card(p) {
@@ -226,23 +268,23 @@ function renderKatalog(targetId) {
         el.className = "pk-card";
         el.setAttribute("data-model", p.model);
         var flags = (p.flags || []).map(function (f) {
-          return '<span class="badge ' + f.toLowerCase().replace(/[^a-z]+/g, "-") + '">' + fmtFlag(f) + "</span>";
+          return '<span class="badge ' + escHtml(String(f).toLowerCase().replace(/[^a-z]+/g, "-")) + '">' + escHtml(fmtFlag(f)) + "</span>";
         }).join("");
         el.innerHTML =
           '<div class="pk-card-top">' +
-          '<span class="pk-cat">' + p.kategori + "</span>" +
+          '<span class="pk-cat">' + escHtml(p.kategori) + "</span>" +
           "<div>" + flags + "</div>" +
           "</div>" +
           thumb(p) +
-          '<h3 class="pk-model">' + p.model + "</h3>" +
+          '<h3 class="pk-model">' + escHtml(p.model) + "</h3>" +
           '<p class="pk-cap">' +
-          (p.kapasitas_gross ? p.kapasitas_gross + " L gross" : "") +
-          (p.kapasitas_nett ? " / " + p.kapasitas_nett + " L nett" : "") +
+          (p.kapasitas_gross ? escHtml(p.kapasitas_gross) + " L gross" : "") +
+          (p.kapasitas_nett ? " / " + escHtml(p.kapasitas_nett) + " L nett" : "") +
           "</p>" +
           '<p class="pk-meta">' +
-          (p.material ? "Pintu " + p.material : "") +
-          (p.daya_watt ? " · " + p.daya_watt + " W" : "") +
-          (p.garansi_tahun ? " · Garansi " + p.garansi_tahun + " th" : "") +
+          (p.material ? "Pintu " + escHtml(p.material) : "") +
+          (p.daya_watt ? " · " + escHtml(p.daya_watt) + " W" : "") +
+          (p.garansi_tahun ? " · Garansi " + escHtml(p.garansi_tahun) + " th" : "") +
           "</p>" +
           (p.harga_idr ? '<p class="pk-price">' + fmtRp(p.harga_idr) + "</p>" : "");
         el.onclick = function () { openProductDetail(p); };
@@ -336,6 +378,12 @@ function renderKatalog(targetId) {
           items.splice.apply(items, [0, items.length].concat(liveItems));
           render();
           initEditor(items, host);
+          window.MTMSDynamicSpecEditor.mount({
+            dataUrl: "api/produk",
+            categoriesUrl: "api/spec-categories",
+            initialData: liveItems,
+            initialSha: window.MTMS_PRODUCTS_SHA
+          });
           if (requestedModel !== null && document.querySelector('.pk-modal.open[data-mtms-product-detail="true"]')) {
             var refreshedProduct = items.find(function (item) { return item.model === requestedModel; });
             if (refreshedProduct) openProductDetail(refreshedProduct);
@@ -368,7 +416,8 @@ function computeFotoList(model, foto, files) {
   var fotos = [];
   (files || []).forEach(function (f) {
     if (f.name.toLowerCase().indexOf(prefix) === 0) {
-      fotos.push(f.url);
+      var safeFoto = safeMediaUrl(f.url);
+      if (safeFoto) fotos.push(safeFoto);
     }
   });
   function keyOf(u) {
@@ -380,10 +429,11 @@ function computeFotoList(model, foto, files) {
     var ka = keyOf(a), kb = keyOf(b);
     return ka[0] - kb[0] || (ka[1] < kb[1] ? -1 : ka[1] > kb[1] ? 1 : 0);
   });
-  if (foto) {
-    var i = fotos.indexOf(foto);
+  var safePrimary = safeMediaUrl(foto);
+  if (safePrimary) {
+    var i = fotos.indexOf(safePrimary);
     if (i > 0) fotos.splice(i, 1);
-    if (i !== 0) fotos.unshift(foto);
+    if (i !== 0) fotos.unshift(safePrimary);
   }
   return fotos;
 }
@@ -504,16 +554,13 @@ function initEditor(items, host) {
     opts = opts || {};
     var inp;
     if (opts.textarea) {
-      inp = '<textarea id="' + id + '" rows="' + (opts.rows || 4) + '">' + escHtml(String(val == null ? "" : val)) + "</textarea>";
+      inp = '<textarea id="' + escHtml(id) + '" rows="' + escHtml(opts.rows || 4) + '">' + escHtml(String(val == null ? "" : val)) + "</textarea>";
     } else if (opts.select) {
-      inp = '<select id="' + id + '"></select>';
+      inp = '<select id="' + escHtml(id) + '"></select>';
     } else {
-      inp = '<input id="' + id + '" type="' + (opts.type || "text") + '" value="' + escHtml(String(val == null ? "" : val)) + '">';
+      inp = '<input id="' + escHtml(id) + '" type="' + escHtml(opts.type || "text") + '" value="' + escHtml(String(val == null ? "" : val)) + '">';
     }
-    return '<label>' + label + inp + "</label>";
-  }
-  function escHtml(s) {
-    return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+    return '<label>' + escHtml(label) + inp + "</label>";
   }
 
   // resize gambar client-side biar upload ringan (maks ~1600px, jpeg 0.86)
@@ -554,8 +601,10 @@ function initEditor(items, host) {
     var prefix = (base.model || "").toLowerCase() + "__";
     var matches = (files || []).filter(function (f) { return f.name.toLowerCase().indexOf(prefix) === 0; });
     matches.forEach(function (f) {
+      var safeFoto = safeMediaUrl(f.url);
+      if (!safeFoto) return;
       var sel = (base.foto === f.url || fotos[0] === f.url) ? " selected" : "";
-      optHtml += '<option value="' + f.url + '"' + sel + ">" + f.name + "</option>";
+      optHtml += '<option value="' + escHtml(safeFoto) + '"' + sel + ">" + escHtml(f.name) + "</option>";
     });
     openOverlay(
       '<h3 class="pk-modal-title">' + (isNew ? "Tambah Produk Baru" : "Ubah Produk — " + escHtml(p.model)) + "</h3>" +
@@ -595,6 +644,7 @@ function initEditor(items, host) {
       var np = {};
       if (!isNew) Object.keys(p).forEach(function (k) { if (k !== "foto_list") np[k] = p[k]; });
       np.model = document.getElementById("f_model").value.trim();
+      if (!isNew && np.model_id) np.model_id = "AQUA::" + np.model;
       np.kategori = document.getElementById("f_kategori").value.trim();
       np.group = document.getElementById("f_group").value.trim();
       np.varian = document.getElementById("f_varian").value.split(",").map(function (s) { return s.trim(); }).filter(Boolean);
@@ -624,16 +674,23 @@ function initEditor(items, host) {
         msg.textContent = "❌ Model sudah ada di katalog. Pakai nama lain atau edit yang lama.";
         return;
       }
+      if (!window.MTMS_PRODUCTS_SHA) {
+        msg.textContent = "❌ Editor belum punya SHA data live. Muat ulang halaman.";
+        return;
+      }
       msg.textContent = "Menyimpan…";
       var next = isNew ? items.concat([np]) : items.map(function (x) { return x.model === p.model ? np : x; });
       fetch("api/produk", {
         method: "PUT",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", "If-Match": '"' + window.MTMS_PRODUCTS_SHA + '"' },
         body: JSON.stringify(next)
       }).then(function (r) {
         if (r.ok) {
+          window.MTMS_PRODUCTS_SHA = r.headers.get("X-Data-SHA") || window.MTMS_PRODUCTS_SHA;
           msg.textContent = "✅ Tersimpan. Memuat ulang…";
           setTimeout(function () { location.reload(); }, 600);
+        } else if (r.status === 412) {
+          msg.textContent = "❌ Data berubah di tempat lain. Muat ulang sebelum menyimpan.";
         } else if (r.status === 401) {
           msg.textContent = "❌ Sesi login habis. Login ulang untuk mengubah.";
         } else {
@@ -655,8 +712,10 @@ function initEditor(items, host) {
       var selV = slotVals[i] || "";
       var opts = '<option value="">(kosong)</option>';
       (files || []).forEach(function (f) {
+        var safeFoto = safeMediaUrl(f.url);
+        if (!safeFoto) return;
         var s = f.url === selV ? " selected" : "";
-        opts += '<option value="' + f.url + '"' + s + ">" + f.name + "</option>";
+        opts += '<option value="' + escHtml(safeFoto) + '"' + s + ">" + escHtml(f.name) + "</option>";
       });
       h +=
         '<div class="pk-foto-slot">' +
@@ -691,13 +750,14 @@ function initEditor(items, host) {
               return r.json().then(function (d) { return { ok: r.ok, d: d }; });
             }).then(function (r2) {
               var msg = document.getElementById("pk-edit-up-msg");
-              if (r2.ok && r2.d.url) {
-                var nm = r2.d.url.split("/").pop().split("?")[0];
-                if (!window.MTMS_MANIFEST.some(function (m) { return m.url === r2.d.url; })) {
-                  window.MTMS_MANIFEST.push({ name: nm, url: r2.d.url });
+              var uploadedUrl = r2.ok ? safeMediaUrl(r2.d.url) : "";
+              if (uploadedUrl) {
+                var nm = uploadedUrl.split("/").pop().split("?")[0];
+                if (!window.MTMS_MANIFEST.some(function (m) { return m.url === uploadedUrl; })) {
+                  window.MTMS_MANIFEST.push({ name: nm, url: uploadedUrl });
                 }
                 refreshFotoDropdowns();
-                select.value = r2.d.url;
+                select.value = uploadedUrl;
                 if (msg) msg.textContent = "✅ Foto terupload ke slot ini.";
               } else if (msg) {
                 msg.textContent = "❌ Upload gagal: " + ((r2.d && r2.d.error) || "?");
@@ -716,8 +776,10 @@ function initEditor(items, host) {
       var cur = sel.value;
       var opts = '<option value="">(kosong)</option>';
       window.MTMS_MANIFEST.forEach(function (f) {
+        var safeFoto = safeMediaUrl(f.url);
+        if (!safeFoto) return;
         var s = f.url === cur ? " selected" : "";
-        opts += '<option value="' + f.url + '"' + s + ">" + f.name + "</option>";
+        opts += '<option value="' + escHtml(safeFoto) + '"' + s + ">" + escHtml(f.name) + "</option>";
       });
       sel.innerHTML = opts;
       sel.value = cur;

@@ -1,96 +1,112 @@
-// Pages Function: GET/PUT /api/produk
-// Baca/tulis produk-katalog.json dari repo GitHub privat (mtms-aqua-haier-kb-data).
-// PUT butuh header X-Edit-Key = env.EDIT_PASSWORD. Local dev pakai .dev.vars (DATA_PATH bisa di-override).
+// Pages Function: authenticated GET/PUT/PATCH /api/produk.
+// GET keeps the historical array response; ETag/X-Data-SHA carry concurrency state.
 
-const OWNER = "Louisfernaldi";
-const REPO = "mtms-aqua-haier-kb-data";
-const BRANCH = "main";
+import {
+  assertFreshSha,
+  errorResponse,
+  etagHeaders,
+  jsonResponse,
+  mutateModelDocument,
+  prepareModelDocument,
+  readJsonBodyCapped,
+  readGithubJson,
+  requestBaseSha,
+  validateDocumentTransition,
+  validateRecursiveBounds,
+  writeGithubJson,
+} from "../_lib/dynamic-specs.js";
+
 const DEFAULT_PATH = "produk-katalog.json";
+const DEFAULT_CATEGORIES_PATH = "spec-categories.json";
 
-async function ghRequest(env, path, options = {}) {
-  const base = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${path}`;
-  const headers = {
-    Authorization: "Bearer " + env.GITHUB_TOKEN,
-    Accept: "application/vnd.github+json",
-    "User-Agent": "mtms-aqua-haier-kb",
-    "Content-Type": "application/json",
-    ...(options.headers || {}),
-  };
-  const res = await fetch(base + (options.query || ""), { ...options, headers });
-  return res;
+function dataPath(env) {
+  return env.DATA_PATH || DEFAULT_PATH;
 }
 
-async function readProducts(env) {
-  const path = env.DATA_PATH || DEFAULT_PATH;
-  const res = await ghRequest(env, path, {
-    method: "GET",
-    query: `?ref=${BRANCH}`,
-  });
-  if (!res.ok) {
-    throw new Error("GH_READ_" + res.status + ": " + (await res.text()).slice(0, 160));
-  }
-  const meta = await res.json();
-  const decoded = atob(meta.content.replace(/\n/g, ""));
-  return { array: JSON.parse(decoded), sha: meta.sha, path };
+function categoriesPath(env) {
+  return env.SPEC_CATEGORIES_PATH || DEFAULT_CATEGORIES_PATH;
+}
+
+function validProductArray(value) {
+  if (!Array.isArray(value) || !value.every(function (item) {
+    return item && typeof item === "object" && typeof item.model === "string" && item.model.trim();
+  })) return false;
+  const ids = value.map(function (item) { return (item.brand || "AQUA") + "::" + item.model; });
+  return ids.length === new Set(ids).size;
 }
 
 export async function onRequestGet(context) {
-  const { env } = context;
   try {
-    const { array } = await readProducts(env);
-    return new Response(JSON.stringify(array), {
-      headers: {
-        "Content-Type": "application/json; charset=utf-8",
-        "Cache-Control": "public, max-age=5",
-        "Access-Control-Allow-Origin": "*",
-      },
+    const current = await readGithubJson(context.env, dataPath(context.env));
+    if (!validProductArray(current.data)) throw new Error("produk data invalid");
+    return jsonResponse(current.data, 200, {
+      ...etagHeaders(current.sha),
+      "Cache-Control": "private, max-age=5",
     });
-  } catch (e) {
-    return new Response(JSON.stringify({ error: String(e) }), {
-      status: 500,
-      headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" },
-    });
+  } catch (error) {
+    return errorResponse(error);
   }
 }
 
 export async function onRequestPut(context) {
-  const { request, env } = context;
-  // Autentikasi: middleware _middleware.js sudah mewajibkan login untuk /api/*.
   let body;
   try {
-    body = await request.json();
-  } catch (e) {
-    return new Response(JSON.stringify({ error: "bad json" }), { status: 400, headers: { "Content-Type": "application/json" } });
+    body = await readJsonBodyCapped(context.request);
+    validateRecursiveBounds(body);
+  } catch (error) {
+    return errorResponse(error);
   }
-  if (!Array.isArray(body) || !body.every((p) => p && typeof p.model === "string")) {
-    return new Response(JSON.stringify({ error: "invalid payload: harus array produk dengan field model" }), {
-      status: 400,
-      headers: { "Content-Type": "application/json" },
-    });
+  const data = body && !Array.isArray(body) && Array.isArray(body.data) ? body.data : body;
+  if (!validProductArray(data)) {
+    return jsonResponse({ error: "invalid payload: harus array produk unik dengan field model" }, 400);
   }
   try {
-    const { sha, path } = await readProducts(env);
-    const encoded = btoa(unescape(encodeURIComponent(JSON.stringify(body, null, 2))));
-    const res = await ghRequest(env, path, {
-      method: "PUT",
-      query: "",
-      body: JSON.stringify({
-        message: "update produk via editor web (19 Agu 2026)",
-        content: encoded,
-        sha,
-        branch: BRANCH,
-      }),
-    });
-    if (!res.ok) {
-      throw new Error("GH_WRITE_" + res.status + ": " + (await res.text()).slice(0, 160));
-    }
-    return new Response(JSON.stringify({ ok: true }), {
-      headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" },
-    });
-  } catch (e) {
-    return new Response(JSON.stringify({ error: String(e) }), {
-      status: 500,
-      headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" },
-    });
+    const baseSha = requestBaseSha(context.request, body);
+    const path = dataPath(context.env);
+    const current = await readGithubJson(context.env, path);
+    assertFreshSha(baseSha, current.sha);
+    validateDocumentTransition(current.data, data);
+    const categories = await readGithubJson(context.env, categoriesPath(context.env));
+    const next = prepareModelDocument(data, categories.data, true);
+    const sha = await writeGithubJson(
+      context.env,
+      path,
+      next,
+      current.sha,
+      "update produk via editor web"
+    );
+    return jsonResponse({ ok: true, sha }, 200, etagHeaders(sha));
+  } catch (error) {
+    return errorResponse(error);
+  }
+}
+
+export async function onRequestPatch(context) {
+  let body;
+  try {
+    body = await readJsonBodyCapped(context.request);
+    validateRecursiveBounds(body);
+  } catch (error) {
+    return errorResponse(error);
+  }
+  if (!body || typeof body.action !== "string" || typeof body.model_id !== "string") {
+    return jsonResponse({ error: "invalid input/action model" }, 400);
+  }
+  try {
+    const baseSha = requestBaseSha(context.request, body);
+    const products = await readGithubJson(context.env, dataPath(context.env));
+    assertFreshSha(baseSha, products.sha);
+    const categories = await readGithubJson(context.env, categoriesPath(context.env));
+    const mutation = mutateModelDocument(products.data, body, categories.data);
+    const sha = await writeGithubJson(
+      context.env,
+      dataPath(context.env),
+      mutation.data,
+      products.sha,
+      "ubah spesifikasi produk via editor web"
+    );
+    return jsonResponse({ ok: true, sha, model: mutation.model }, 200, etagHeaders(sha));
+  } catch (error) {
+    return errorResponse(error);
   }
 }

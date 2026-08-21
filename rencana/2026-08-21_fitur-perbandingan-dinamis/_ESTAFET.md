@@ -3,7 +3,7 @@
 | id | tiket | status | dependensi |
 |---|---|---|---|
 | 01 | Bakukan skema dan migrasi | belum-mulai | - |
-| 02 | Bangun API dan editor dinamis | belum-mulai | 01 |
+| 02 | Bangun API dan editor dinamis | kelar-lokal | 01 |
 | 03 | Riset spesifikasi semua model | belum-mulai | 01 |
 | 04 | Tampilkan perbandingan dan modal | belum-mulai | 02, 03 |
 | 05 | Bangun tombol riset ulang | belum-mulai | 02, 03 |

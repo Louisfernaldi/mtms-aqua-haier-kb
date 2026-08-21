@@ -67,6 +67,8 @@
 <script src="js/search.js"></script>
 <script src="js/lightbox.js"></script>
 <script src="js/product-detail.js"></script>
+<script src="js/dynamic-spec-editor.js"></script>
+<script src="js/kompetitor-save-lock.js"></script>
 <script>
 (function(){
 var CAT_ORDER=["SB","TM","BM","SBS","MD"];
@@ -77,7 +79,17 @@ var emptyState=document.getElementById("comp-empty");
 var compData=null;
 var catalogData=[];
 var liveReady=false;
+var compSha="";
+var saveLock=window.MTMSCompetitorSaveLock.create();
+var saveBusy=false;
+var saveSequence=0;
 window.MTMS_COMPETITOR_LIVE_READY=false;
+
+function syncSaveLockState(){var state=saveLock.state();saveBusy=state.busy;saveSequence=state.sequence;}
+function beginSaveSequence(){var sequence=saveLock.begin();syncSaveLockState();return sequence;}
+function isCurrentSave(sequence){return saveLock.isCurrent(sequence);}
+function finishSaveSequence(sequence){var finished=saveLock.finish(sequence);syncSaveLockState();return finished;}
+function invalidateSaveSequence(){saveLock.invalidate();syncSaveLockState();}
 
 function grpToCat(g){return{"Single Door":"SB","Top Mount":"TM","Bottom Mount":"BM","Side by Side":"SBS","Multidoor":"MD"}[g]||""}
 function fp(v){return v?"Rp "+String(v).replace(/\B(?=(\d{3})+(?!\d))/g,"."):"Belum tersedia"}
@@ -85,13 +97,18 @@ function fp(v){return v?"Rp "+String(v).replace(/\B(?=(\d{3})+(?!\d))/g,"."):"Be
 function esc(s){var d=document.createElement("div");d.textContent=s;return d.innerHTML.replace(/"/g,"&quot;").replace(/'/g,"&#39;")}
 
 function displayableImage(value){
-  if(!value)return"";
-  if(/^data:image\/(?:png|jpe?g|gif|webp);base64,/i.test(value))return value;
+  var url=String(value==null?"":value).trim();
+  if(!url||/[\u0000-\u001f\u007f\\]/.test(url)||/^\/\//.test(url))return"";
   try{
-    var parsed=new URL(value,window.location.href);
-    if(parsed.origin===window.location.origin||parsed.protocol==="https:")return value;
+    var parsed=new URL(url,window.location.href);
+    if(parsed.protocol==="http:"||parsed.protocol==="https:"||(!/^[a-z][a-z0-9+.-]*:/i.test(url)&&parsed.origin===window.location.origin))return url;
   }catch(_error){return"";}
   return"";
+}
+
+function localPreviewImage(value){
+  var url=String(value==null?"":value).trim();
+  return /^data:image\/(?:png|jpe?g|gif|webp);base64,[a-z0-9+/=\s]+$/i.test(url)?url:"";
 }
 
 function showCardImageFallback(image){
@@ -162,7 +179,7 @@ function detailTriggerHtml(record){
     '<span class="comp-brand-badge comp-'+esc(lk)+'">'+esc(brand)+'</span>'+
     '<strong class="comp-model-name">'+esc(model)+'</strong>'+
     '<span class="comp-meta"><span class="comp-cap">'+(record.capacity?esc(record.capacity+" L"):"Belum tersedia")+'</span>'+
-    '<span class="comp-price">'+fp(record.price)+'</span></span>'+
+    '<span class="comp-price">'+esc(fp(record.price))+'</span></span>'+
     '<span class="comp-detail-label">Lihat detail</span></span></button>';
 }
 
@@ -304,7 +321,7 @@ function renderAll(){
   if(!html){emptyState.style.display="block";container.innerHTML="";}
   else{emptyState.style.display="none";container.innerHTML=html;}
   container.querySelectorAll(".comp-edit,.comp-del,.comp-add-btn,.comp-add-cell").forEach(function(button){
-    button.disabled=!liveReady;
+    button.disabled=!liveReady||saveBusy;
   });
   lazyLoad();
 }
@@ -363,14 +380,23 @@ function openOverlay(title,fields,onSave){
     }else{
       h+='<input type="'+(f.type||"text")+'" id="cef_'+f.id+'" value="'+esc(f.val||"")+'" placeholder="'+esc(f.ph||"")+'">';
     }
-    if(f.preview)h+='<img class="foto-preview" id="cef_prev_'+f.id+'" src="'+esc(f.val||"")+'" onerror="this.style.display=\'none\'">';
+    if(f.preview){
+      var previewUrl=displayableImage(f.val);
+      h+='<img class="foto-preview" id="cef_prev_'+f.id+'"'+(previewUrl?' src="'+esc(previewUrl)+'"':'')+'>';
+    }
     if(f.fileUpload){
-      h+='<div class="foto-upload-row"><input type="file" id="cef_file_'+f.id+'" accept="image/*"><button type="button" id="cef_up_'+f.id+'">Upload</button></div>';
+      h+='<div class="foto-upload-row"><input type="file" id="cef_file_'+f.id+'" accept="image/*"><button type="button" id="cef_up_'+f.id+'">Preview lokal</button></div>';
     }
   }
   h+='<div class="edit-actions"><button class="btn-cancel" id="cef_cancel">Batal</button><button class="btn-save" id="cef_save">Simpan</button></div></div>';
   o.innerHTML=h;
   document.body.appendChild(o);
+
+  for(var pi=0;pi<fields.length;pi++){
+    if(!fields[pi].preview)continue;
+    var preview=o.querySelector("#cef_prev_"+fields[pi].id);
+    if(preview)preview.addEventListener("error",function(){this.style.display="none";},{once:true});
+  }
 
   // Wire upload buttons
   for(var i=0;i<fields.length;i++){
@@ -381,9 +407,11 @@ function openOverlay(title,fields,onSave){
         if(!fi||!fi.files.length)return;
         var reader=new FileReader();
         reader.onload=function(ev){
-          o.querySelector("#cef_"+fid).value=ev.target.result;
+          var uploadUrl=localPreviewImage(ev.target.result);
+          if(!uploadUrl){showToast("Format preview tidak aman. Gunakan PNG, JPG, GIF, atau WebP.","err");return;}
           var prev=o.querySelector("#cef_prev_"+fid);
-          if(prev){prev.src=ev.target.result;prev.style.display="";}
+          if(prev){prev.src=uploadUrl;prev.style.display="";}
+          showToast("Preview lokal siap. Isi URL Gambar tidak diubah.","info");
         };
         reader.readAsDataURL(fi.files[0]);
       };
@@ -425,14 +453,17 @@ function doEdit(brand,model){
     {id:"image",label:"URL Gambar",val:m.image||"",ph:"https://... atau upload",fileUpload:true,preview:true},
     {id:"source",label:"Sumber URL",val:m.source_url||"",ph:"https://..."}
   ],function(v){
+    var imageUrl=String(v.image||"").trim();
+    if(imageUrl&&!displayableImage(imageUrl)){showToast("URL gambar wajib http/https atau path relatif situs.","err");return;}
     var prevSnap=JSON.parse(JSON.stringify(compData));
     var oldModel=m.model;
     m.model=v.model;
+    if(m.model_id)m.model_id=brand+"::"+m.model;
     m.cat=v.cat;m.subcat=v.cat;
     m.capacity_l=Number(v.cap)||0;
     m.price_idr=Number(v.price)||0;
     m.fitur=v.fitur.split("\n").map(function(s){return s.trim()}).filter(Boolean);
-    if(v.image)m.image=v.image;
+    if(imageUrl)m.image=imageUrl;
     m.source_url=v.source;
     // keep group references in sync on rename
     if(oldModel!==m.model&&compData.groups){
@@ -485,6 +516,8 @@ function doAdd(catCode){
     {id:"image",label:"URL Gambar",val:"",ph:"https://... atau upload",fileUpload:true,preview:true},
     {id:"source",label:"Sumber URL",val:"",ph:"https://..."}
   ],function(v){
+    var imageUrl=String(v.image||"").trim();
+    if(imageUrl&&!displayableImage(imageUrl)){showToast("URL gambar wajib http/https atau path relatif situs.","err");return;}
     var prevSnap=JSON.parse(JSON.stringify(compData));
     var bd=null;
     for(var i=0;i<compData.brands.length;i++){
@@ -495,7 +528,7 @@ function doAdd(catCode){
       model:v.model,cat:v.cat,subcat:v.cat,
       capacity_l:Number(v.cap)||0,price_idr:Number(v.price)||0,
       fitur:v.fitur.split("\n").map(function(s){return s.trim()}).filter(Boolean),
-      image:v.image||"",source_url:v.source
+      image:imageUrl,source_url:v.source
     });
     if(!compData.groups)compData.groups=[];
     if(v.brand==="AQUA"){
@@ -506,6 +539,7 @@ function doAdd(catCode){
       var best=null;
       for(var gi=0;gi<compData.groups.length;gi++){
         var g=compData.groups[gi];
+        if(g.competitors&&g.competitors[v.brand])continue;
         var aq=null;
         for(var i=0;i<compData.brands[0].models.length;i++){
           if(compData.brands[0].models[i].model===g.aqua){aq=compData.brands[0].models[i];break;}
@@ -553,6 +587,8 @@ function doAddInCell(brand,aquaModel){
     {id:"image",label:"URL Gambar",val:"",ph:"https://... atau upload",fileUpload:true,preview:true},
     {id:"source",label:"Sumber URL",val:"",ph:"https://..."}
   ],function(v){
+    var imageUrl=String(v.image||"").trim();
+    if(imageUrl&&!displayableImage(imageUrl)){showToast("URL gambar wajib http/https atau path relatif situs.","err");return;}
     var prevSnap=JSON.parse(JSON.stringify(compData));
     var bd=null;
     for(var i=0;i<compData.brands.length;i++){
@@ -563,7 +599,7 @@ function doAddInCell(brand,aquaModel){
       model:v.model,cat:v.cat,subcat:v.cat,
       capacity_l:Number(v.cap)||0,price_idr:Number(v.price)||0,
       fitur:v.fitur.split("\n").map(function(s){return s.trim()}).filter(Boolean),
-      image:v.image||"",source_url:v.source
+      image:imageUrl,source_url:v.source
     });
     if(v.brand==="AQUA"){
       compData.groups.push({aqua:v.model,competitors:{}});
@@ -576,21 +612,53 @@ function doAddInCell(brand,aquaModel){
 }
 
 function saveData(prevSnap){
+  if(!compSha){
+    if(prevSnap)compData=prevSnap;
+    renderAll();
+    showToast("Editor belum punya SHA data live. Muat ulang halaman.","err");
+    return;
+  }
+  var sequence=beginSaveSequence();
+  if(!sequence){
+    if(prevSnap)compData=prevSnap;
+    renderAll();
+    showToast("Penyimpanan sebelumnya masih berjalan. Perubahan kedua dibatalkan.","err");
+    return;
+  }
   // optimistic: langsung render state baru di memori, PUT jalan di background
   renderAll();
   showToast("Menyimpan\u2026","info");
-  fetch("api/kompetitor",{method:"PUT",headers:{"Content-Type":"application/json"},body:JSON.stringify(compData)})
-  .then(function(r){return r.json()})
-  .then(function(d){
-    if(d.ok){showToast("Tersimpan","ok");}
-    else{
-      if(prevSnap)compData=prevSnap;
+  fetch("api/kompetitor",{method:"PUT",headers:{"Content-Type":"application/json","If-Match":"\""+compSha+"\""},body:JSON.stringify(compData)})
+  .then(function(r){return r.json().catch(function(){return{}}).then(function(d){return{ok:r.ok,status:r.status,d:d,sha:r.headers.get("X-Data-SHA")||d.sha}})})
+  .then(function(result){
+    if(!isCurrentSave(sequence))return;
+    if(result.ok){
+      compSha=result.sha||compSha;
+      finishSaveSequence(sequence);
       renderAll();
-      showToast("Gagal: "+(d.error||"coba lagi"),"err");
+      showToast("Tersimpan","ok");
+      return;
     }
+    if(prevSnap)compData=prevSnap;
+    if(result.status===412){
+      // Jangan retry atau mempertahankan state stale walau sesaat.
+      compSha="";
+      liveReady=false;
+      window.MTMS_COMPETITOR_LIVE_READY=false;
+      invalidateSaveSequence();
+      renderAll();
+      showToast("Data berubah di tempat lain. Memuat ulang data terbaru...","err");
+      setTimeout(function(){window.location.reload();},0);
+      return;
+    }
+    finishSaveSequence(sequence);
+    renderAll();
+    showToast("Gagal: "+(result.d.error||"coba lagi"),"err");
   })
   .catch(function(e){
+    if(!isCurrentSave(sequence))return;
     if(prevSnap)compData=prevSnap;
+    finishSaveSequence(sequence);
     renderAll();
     showToast("Error: "+e.message,"err");
   });
@@ -655,8 +723,20 @@ function loadData(){
   // coba data live dari API (editable, sumber GitHub). Kalau gagal, pakai data bawaan.
   return fetch("api/kompetitor").then(function(r){
     if(!r.ok)throw new Error("api "+r.status);
+    compSha=String(r.headers.get("X-Data-SHA")||r.headers.get("ETag")||"").replace(/^W\//,"").replace(/^\"|\"$/g,"");
     return r.json();
-  }).then(function(d){compData=enrichCompetitor(d);liveReady=true;}).catch(function(){});
+  // liveReady mempertahankan arti lama: GET API selesai. saveData tetap fail-closed
+  // ketika compSha kosong, sedangkan panel tiket 02 punya gate SHA sendiri.
+  }).then(function(d){
+    compData=enrichCompetitor(d);liveReady=true;
+    window.MTMSDynamicSpecEditor.mount({
+      dataUrl: "api/kompetitor",
+      categoriesUrl: "api/spec-categories",
+      initialData: d,
+      initialSha: compSha
+    });
+    return d;
+  }).catch(function(){});
 }
 catalogData=cloneData(embeddedCatalog());
 compData=enrichCompetitor(cloneData(embeddedCompetitor()));

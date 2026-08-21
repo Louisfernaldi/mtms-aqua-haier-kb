@@ -1,89 +1,113 @@
-// Pages Function: GET/PUT /api/kompetitor
-// Baca/tulis kompetitor.json dari repo data GitHub.
-// Mirip /api/produk tapi untuk data perbandingan kompetitor.
+// Pages Function: authenticated GET/PUT/PATCH /api/kompetitor.
+// Model mutations are atomic, schema-validated, and guarded by an exact base SHA.
 
-const OWNER = "Louisfernaldi";
-const REPO = "mtms-aqua-haier-kb-data";
-const BRANCH = "main";
-const DATA_FILE = "kompetitor.json";
+import {
+  assertFreshSha,
+  errorResponse,
+  etagHeaders,
+  jsonResponse,
+  mutateModelDocument,
+  prepareModelDocument,
+  readJsonBodyCapped,
+  readGithubJson,
+  requestBaseSha,
+  validateDocumentTransition,
+  validateRecursiveBounds,
+  writeGithubJson,
+} from "../_lib/dynamic-specs.js";
 
-async function ghReq(env, path, opts = {}) {
-  const base = "https://api.github.com/repos/" + OWNER + "/" + REPO + "/contents/" + path;
-  const headers = {
-    Authorization: "Bearer " + env.GITHUB_TOKEN,
-    Accept: "application/vnd.github+json",
-    "User-Agent": "mtms-kb",
-    "Content-Type": "application/json",
-  };
-  if (opts.headers) Object.assign(headers, opts.headers);
-  return fetch(base + (opts.query || ""), { ...opts, headers });
+const DEFAULT_PATH = "kompetitor.json";
+const DEFAULT_CATEGORIES_PATH = "spec-categories.json";
+
+function dataPath(env) {
+  return env.KOMPETITOR_PATH || DEFAULT_PATH;
 }
 
-async function readData(env) {
-  const res = await ghReq(env, DATA_FILE, { method: "GET", query: "?ref=" + BRANCH });
-  if (!res.ok) throw new Error("GH_READ_" + res.status);
-  const meta = await res.json();
-  const bytes = Uint8Array.from(atob(meta.content.replace(/\n/g, "")), function (c) { return c.charCodeAt(0); });
-  const decoded = new TextDecoder().decode(bytes);
-  return { data: JSON.parse(decoded), sha: meta.sha };
+function categoriesPath(env) {
+  return env.SPEC_CATEGORIES_PATH || DEFAULT_CATEGORIES_PATH;
+}
+
+function validEnvelope(value) {
+  if (!value || typeof value !== "object" || !Array.isArray(value.brands)) return false;
+  const brands = value.brands.map(function (row) { return row && row.brand; });
+  return brands.every(function (brand) { return typeof brand === "string" && brand.trim(); }) &&
+    brands.length === new Set(brands).size &&
+    value.brands.every(function (row) { return Array.isArray(row.models); });
 }
 
 export async function onRequestGet(context) {
-  const { env } = context;
   try {
-    const { data } = await readData(env);
-    return new Response(JSON.stringify(data), {
-      headers: {
-        "Content-Type": "application/json; charset=utf-8",
-        "Cache-Control": "public, max-age=5",
-        "Access-Control-Allow-Origin": "*",
-      },
+    const current = await readGithubJson(context.env, dataPath(context.env));
+    if (!validEnvelope(current.data)) throw new Error("kompetitor data invalid");
+    return jsonResponse(current.data, 200, {
+      ...etagHeaders(current.sha),
+      "Cache-Control": "private, max-age=5",
     });
-  } catch (e) {
-    return new Response(JSON.stringify({ error: String(e) }), {
-      status: 500,
-      headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" },
-    });
+  } catch (error) {
+    return errorResponse(error);
   }
 }
 
 export async function onRequestPut(context) {
-  const { request, env } = context;
   let body;
   try {
-    body = await request.json();
-  } catch (e) {
-    return new Response(JSON.stringify({ error: "bad json" }), {
-      status: 400,
-      headers: { "Content-Type": "application/json" },
-    });
+    body = await readJsonBodyCapped(context.request);
+    validateRecursiveBounds(body);
+  } catch (error) {
+    return errorResponse(error);
   }
-  if (!body || !body.brands || !Array.isArray(body.brands)) {
-    return new Response(JSON.stringify({ error: "invalid payload: need {brands: [...]} " }), {
-      status: 400,
-      headers: { "Content-Type": "application/json" },
-    });
+  const data = body && body.data && validEnvelope(body.data) ? body.data : body;
+  if (!validEnvelope(data)) {
+    return jsonResponse({ error: "invalid payload: need unique brands with models" }, 400);
   }
   try {
-    const { sha } = await readData(env);
-    const encoded = btoa(unescape(encodeURIComponent(JSON.stringify(body, null, 2))));
-    const res = await ghReq(env, DATA_FILE, {
-      method: "PUT",
-      body: JSON.stringify({
-        message: "update kompetitor via editor web",
-        content: encoded,
-        sha,
-        branch: BRANCH,
-      }),
-    });
-    if (!res.ok) throw new Error("GH_WRITE_" + res.status);
-    return new Response(JSON.stringify({ ok: true }), {
-      headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" },
-    });
-  } catch (e) {
-    return new Response(JSON.stringify({ error: String(e) }), {
-      status: 500,
-      headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" },
-    });
+    const baseSha = requestBaseSha(context.request, body);
+    const path = dataPath(context.env);
+    const current = await readGithubJson(context.env, path);
+    assertFreshSha(baseSha, current.sha);
+    validateDocumentTransition(current.data, data);
+    const categories = await readGithubJson(context.env, categoriesPath(context.env));
+    const next = prepareModelDocument(data, categories.data, true);
+    const sha = await writeGithubJson(
+      context.env,
+      path,
+      next,
+      current.sha,
+      "update kompetitor via editor web"
+    );
+    return jsonResponse({ ok: true, sha }, 200, etagHeaders(sha));
+  } catch (error) {
+    return errorResponse(error);
+  }
+}
+
+export async function onRequestPatch(context) {
+  let body;
+  try {
+    body = await readJsonBodyCapped(context.request);
+    validateRecursiveBounds(body);
+  } catch (error) {
+    return errorResponse(error);
+  }
+  if (!body || typeof body.action !== "string" || typeof body.model_id !== "string") {
+    return jsonResponse({ error: "invalid input/action model" }, 400);
+  }
+  try {
+    const baseSha = requestBaseSha(context.request, body);
+    const path = dataPath(context.env);
+    const current = await readGithubJson(context.env, path);
+    assertFreshSha(baseSha, current.sha);
+    const categories = await readGithubJson(context.env, categoriesPath(context.env));
+    const mutation = mutateModelDocument(current.data, body, categories.data);
+    const sha = await writeGithubJson(
+      context.env,
+      path,
+      mutation.data,
+      current.sha,
+      "ubah spesifikasi model via editor web"
+    );
+    return jsonResponse({ ok: true, sha, model: mutation.model }, 200, etagHeaders(sha));
+  } catch (error) {
+    return errorResponse(error);
   }
 }

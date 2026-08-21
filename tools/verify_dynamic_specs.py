@@ -36,6 +36,11 @@ except ImportError:  # eksekusi langsung: python tools/verify_dynamic_specs.py
 ROOT = Path(__file__).resolve().parent.parent
 CATEGORIES_PATH = ROOT / "site" / "data" / "spec-categories.json"
 DATA_PATH = ROOT / "site" / "data" / "kompetitor.json"
+EDITOR_HTML_PATH = ROOT / "site" / "kompetitor.html"
+PRODUCT_HTML_PATH = ROOT / "site" / "produk.html"
+PRODUCT_JS_PATH = ROOT / "site" / "js" / "produk.js"
+EDITOR_JS_PATH = ROOT / "site" / "js" / "dynamic-spec-editor.js"
+EDITOR_CSS_PATH = ROOT / "site" / "css" / "style.css"
 REQUIRED_CATEGORY_FIELDS = {"key", "label", "group", "unit", "comparison", "order", "active"}
 REQUIRED_LEGACY_FIELDS = {
     "model",
@@ -121,9 +126,9 @@ def validate_categories(categories: Any) -> List[str]:
     for item in items[: len(CORE_CATEGORY_KEYS)]:
         if isinstance(item, dict) and (item.get("comparison") is not True or item.get("active") is not True):
             errors.append(f"kategori inti {item.get('key')} wajib active/comparison=true")
-    for item in items[len(CORE_CATEGORY_KEYS) :]:
-        if isinstance(item, dict) and item.get("comparison") is not False:
-            errors.append(f"kategori tambahan {item.get('key')} wajib comparison=false")
+    # Kategori tambahan dibuat non-comparison oleh migrator, lalu tiket 02
+    # mengizinkan user memilihnya sebagai kolom utama. Tipe boolean sudah
+    # diperiksa di atas; hanya 12 kategori inti yang wajib selalu true.
     return errors
 
 
@@ -292,6 +297,76 @@ def _read_json(path: Path) -> Any:
         return json.load(handle)
 
 
+def validate_editor_wiring() -> List[str]:
+    """Static offline gate for ticket 02 editor markup and API concurrency wiring."""
+    errors: List[str] = []
+    for path in (EDITOR_HTML_PATH, PRODUCT_HTML_PATH, PRODUCT_JS_PATH, EDITOR_JS_PATH, EDITOR_CSS_PATH):
+        if not path.is_file():
+            errors.append(f"editor file hilang: {path.relative_to(ROOT)}")
+    if errors:
+        return errors
+
+    html = EDITOR_HTML_PATH.read_text(encoding="utf-8")
+    product_html = PRODUCT_HTML_PATH.read_text(encoding="utf-8")
+    product_js = PRODUCT_JS_PATH.read_text(encoding="utf-8")
+    javascript = EDITOR_JS_PATH.read_text(encoding="utf-8")
+    css = EDITOR_CSS_PATH.read_text(encoding="utf-8")
+
+    html_needles = (
+        'src="js/dynamic-spec-editor.js"',
+        "MTMSDynamicSpecEditor.mount",
+        'dataUrl: "api/kompetitor"',
+        'categoriesUrl: "api/spec-categories"',
+        "initialData: d",
+        "initialSha: compSha",
+    )
+    product_needles = (
+        'src="js/dynamic-spec-editor.js"',
+        "MTMSDynamicSpecEditor.mount",
+        'dataUrl: "api/produk"',
+        "initialData: liveItems",
+        "initialSha: window.MTMS_PRODUCTS_SHA",
+    )
+    js_needles = (
+        "button.disabled = true",
+        'data-live-ready',
+        'data-ds-model-select',
+        'data-ds-spec-key',
+        'data-ds-features',
+        'research_suggestions',
+        'fitur_meta',
+        'feature_suggestions',
+        'data-ds-suggestion="accept"',
+        'data-ds-suggestion="reject"',
+        'data-ds-feature-suggestion="accept"',
+        'data-ds-feature-suggestion="reject"',
+        'data-ds-create-category',
+        'name="active"',
+        'name="order"',
+        'name="comparison"',
+        'X-Data-SHA',
+        'ETag',
+        'If-Match',
+        'method: "PATCH"',
+        'STALE SHA',
+    )
+    css_needles = (".ds-editor-fab", ".ds-editor-panel", ".ds-spec-row", ".ds-suggestion", ".ds-category-card")
+
+    for needle in html_needles:
+        if needle not in html:
+            errors.append(f"wiring HTML editor hilang: {needle}")
+    for needle in product_needles:
+        if needle not in product_html and needle not in product_js:
+            errors.append(f"wiring Produk editor hilang: {needle}")
+    for needle in js_needles:
+        if needle not in javascript:
+            errors.append(f"wiring JS editor hilang: {needle}")
+    for needle in css_needles:
+        if needle not in css:
+            errors.append(f"style editor hilang: {needle}")
+    return errors
+
+
 def main() -> int:
     categories_document = _read_json(CATEGORIES_PATH)
     data = _read_json(DATA_PATH)
@@ -315,7 +390,8 @@ def main() -> int:
         and serialized_document(once_categories, indent=2) == serialized_document(twice_categories, indent=2)
     )
 
-    all_errors = category_errors + document_errors + user_overwrites + lost_fields
+    editor_errors = validate_editor_wiring()
+    all_errors = category_errors + document_errors + user_overwrites + lost_fields + editor_errors
     if not byte_identical:
         all_errors.append("migrasi dua kali tidak byte-identik")
 
@@ -354,6 +430,7 @@ def main() -> int:
         "verify_dynamic_specs: idempotent_semantic=true idempotent_bytes=%s sha256=%s"
         % (str(byte_identical).lower(), digest)
     )
+    print("verify_dynamic_specs: editor_wiring=%s" % str(not editor_errors).lower())
 
     if all_errors:
         for error in all_errors:
