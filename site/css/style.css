@@ -606,6 +606,8 @@ footer { border-top: 1px solid var(--border); background: var(--bg-card); margin
 .pk-modal-edit:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
 
 /* === KOMPETITOR (.comp-*) — dipindah dari inline style kompetitor.html === */
+.comp-legend{display:flex;flex-wrap:wrap;gap:12px;margin:12px 0;font-size:0.8rem;color:var(--text-muted);align-items:center}
+.comp-brand-dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px;vertical-align:middle}
 .comp-main{max-width:1200px;margin:0 auto;padding:0 16px}
 .comp-cat-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;position:sticky;top:58px;z-index:4;background:var(--bg)}
 .comp-add-btn{padding:6px 14px;border-radius:6px;border:1px solid var(--accent);background:var(--accent-soft);color:var(--accent-dark);font-size:.8rem;font-weight:600;cursor:pointer}

@@ -334,14 +334,16 @@ function renderKatalog(targetId) {
         
         var modalBox = modal.querySelector(".pk-modal-box");
         modalBox.classList.add("pk-modal-wide");
-        modal.querySelector(".pk-modal-body").innerHTML =
-          fotoHtml +
+        var rightHtml =
           (flags ? '<div class="pk-modal-flags">' + flags + "</div>" : "") +
           priceHeroHtml +
           "<table><tbody>" + rowsHtml + "</tbody></table>" +
           fiturHtml +
           '<h4>Keunggulan & Fitur</h4>' +
           "<p class='pk-benefit'>" + p.benefit + "</p>";
+        modal.querySelector(".pk-modal-body").innerHTML =
+          '<div class="pk-modal-left">' + fotoHtml + '</div>' +
+          '<div class="pk-modal-right">' + rightHtml + '</div>';
         var gal = modal.querySelector(".pk-gal");
         if (gal) {
           var galImg = gal.querySelector(".pk-gal-img");
