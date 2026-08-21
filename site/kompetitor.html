@@ -38,12 +38,12 @@
     </div>
   </section>
   <div class="comp-legend">
-    <span class="comp-brand-dot" style="background:#0066CC"></span> AQUA
-    <span class="comp-brand-dot" style="background:#C00000"></span> LG
-    <span class="comp-brand-dot" style="background:#E60012"></span> Midea
-    <span class="comp-brand-dot" style="background:#0047AB"></span> Polytron
-    <span class="comp-brand-dot" style="background:#1428A0"></span> Samsung
-    <span class="comp-brand-dot" style="background:#C41E3A"></span> Sharp
+    <span class="comp-legend-item"><span class="comp-brand-dot" style="background:#0066CC" aria-hidden="true"></span>AQUA</span>
+    <span class="comp-legend-item"><span class="comp-brand-dot" style="background:#C00000" aria-hidden="true"></span>LG</span>
+    <span class="comp-legend-item"><span class="comp-brand-dot" style="background:#E60012" aria-hidden="true"></span>Midea</span>
+    <span class="comp-legend-item"><span class="comp-brand-dot" style="background:#0047AB" aria-hidden="true"></span>Polytron</span>
+    <span class="comp-legend-item"><span class="comp-brand-dot" style="background:#1428A0" aria-hidden="true"></span>Samsung</span>
+    <span class="comp-legend-item"><span class="comp-brand-dot" style="background:#C41E3A" aria-hidden="true"></span>Sharp</span>
   </div>
   <div id="comp-categories"></div>
   <div id="comp-empty" class="comp-empty" style="display:none"><p>Tidak ada data kompetitor.</p></div>
@@ -55,9 +55,18 @@
   </div>
 </footer>
 
+<div class="search-overlay" id="search-overlay">
+  <div class="search-box">
+    <input id="search-input" placeholder="Cari di semua materi..." oninput="doSearch()">
+    <div class="search-results" id="search-results"></div>
+  </div>
+</div>
+
 <script src="js/theme.js"></script>
 <script src="js/data.js"></script>
 <script src="js/search.js"></script>
+<script src="js/lightbox.js"></script>
+<script src="js/product-detail.js"></script>
 <script>
 (function(){
 var CAT_ORDER=["SB","TM","BM","SBS","MD"];
@@ -66,18 +75,35 @@ var BRANDS=["LG","MIDEA","POLYTRON","SAMSUNG","SHARP"];
 var container=document.getElementById("comp-categories");
 var emptyState=document.getElementById("comp-empty");
 var compData=null;
+var catalogData=[];
 
 function grpToCat(g){return{"Single Door":"SB","Top Mount":"TM","Bottom Mount":"BM","Side by Side":"SBS","Multidoor":"MD"}[g]||""}
-function ph(brand,model){var c={"AQUA":"0066CC","LG":"C00000","MIDEA":"E60012","POLYTRON":"0047AB","SAMSUNG":"1428A0","SHARP":"C41E3A"}[brand]||"999999";return"https://dummyimage.com/400x533/"+c+"/fff.jpg&text="+encodeURIComponent(brand+" "+model)}
-function fp(v){return v?"Rp "+String(v).replace(/\B(?=(\d{3})+(?!\d))/g,"."):"-"}
+function fp(v){return v?"Rp "+String(v).replace(/\B(?=(\d{3})+(?!\d))/g,"."):"Belum tersedia"}
 
-function esc(s){var d=document.createElement("div");d.textContent=s;return d.innerHTML}
+function esc(s){var d=document.createElement("div");d.textContent=s;return d.innerHTML.replace(/"/g,"&quot;").replace(/'/g,"&#39;")}
 
-function fiturHtml(f){
-  if(!f||!f.length)return'<span class="comp-meta">-</span>';
-  var h='<ul class="comp-fitur-list">';
-  for(var i=0;i<f.length;i++)h+='<li title="'+esc(f[i])+'">'+esc(f[i])+'</li>';
-  return h+'</ul>';
+function displayableImage(value){
+  if(!value)return"";
+  if(/^data:image\/(?:png|jpe?g|gif|webp);base64,/i.test(value))return value;
+  try{
+    var parsed=new URL(value,window.location.href);
+    if(parsed.origin===window.location.origin||parsed.protocol==="https:")return value;
+  }catch(_error){return"";}
+  return"";
+}
+
+function showCardImageFallback(image){
+  if(!image||image.getAttribute("data-image-fallback")==="true")return;
+  image.setAttribute("data-image-fallback","true");
+  var fallback=document.createElement("span");
+  fallback.className="comp-thumb comp-thumb-missing";
+  fallback.setAttribute("aria-label","Foto gagal dimuat");
+  fallback.textContent="Foto gagal dimuat";
+  if(image.parentNode)image.parentNode.replaceChild(fallback,image);
+}
+
+function wireCardImageFallback(image){
+  image.addEventListener("error",function(){showCardImageFallback(image);},{once:true});
 }
 
 /* === BUILD ROWS: one row per AQUA group, competitors from PDF mapping === */
@@ -90,7 +116,13 @@ function buildRows(catCode){
     var models=compData.brands[b].models;
     for(var j=0;j<models.length;j++){
       var m=models[j];
-      idx[brand+"|"+m.model]={brand:brand,model:m.model,cat:m.cat||m.subcat||"",capacity:m.capacity_l||0,price:m.price_idr||0,fitur:m.fitur||[],source_url:m.source_url||"",image:m.image||""};
+      var item={};
+      for(var key in m)if(Object.prototype.hasOwnProperty.call(m,key))item[key]=m[key];
+      item.brand=brand;
+      item.cat=m.cat||m.subcat||"";
+      item.capacity=m.capacity_l||0;
+      item.price=m.price_idr||0;
+      idx[brand+"|"+m.model]=item;
     }
   }
   var groups=compData.groups||[];
@@ -114,19 +146,89 @@ function buildRows(catCode){
   return rows;
 }
 
+function detailTriggerHtml(record){
+  var brand=record.brand||"";
+  var model=record.model||"";
+  var lk=brand.toLowerCase();
+  var image=record.image||record.photo||"";
+  var loadable=displayableImage(image);
+  var photo=loadable?
+    '<img class="comp-thumb" data-src="'+esc(loadable)+'" alt="'+esc(brand+" "+model)+'" loading="lazy">':
+    '<span class="comp-thumb comp-thumb-missing" aria-label="Foto belum tersedia">'+(image?"Foto tersedia di sumber":"Belum tersedia")+'</span>';
+  return '<button type="button" class="comp-model-info comp-detail-trigger" data-brand="'+esc(brand)+'" data-model="'+esc(model)+'" aria-label="Lihat detail '+esc(brand+" "+model)+'">'+
+    photo+'<span class="comp-model-detail">'+
+    '<span class="comp-brand-badge comp-'+esc(lk)+'">'+esc(brand)+'</span>'+
+    '<strong class="comp-model-name">'+esc(model)+'</strong>'+
+    '<span class="comp-meta"><span class="comp-cap">'+(record.capacity?esc(record.capacity+" L"):"Belum tersedia")+'</span>'+
+    '<span class="comp-price">'+fp(record.price)+'</span></span>'+
+    '<span class="comp-detail-label">Lihat detail</span></span></button>';
+}
+
+function findCanonical(model){
+  for(var i=0;i<catalogData.length;i++)if(catalogData[i].model===model)return catalogData[i];
+  return null;
+}
+
+function findCompetitor(brand,model){
+  if(!compData||!compData.brands)return null;
+  for(var i=0;i<compData.brands.length;i++){
+    if(compData.brands[i].brand!==brand)continue;
+    var models=compData.brands[i].models||[];
+    for(var j=0;j<models.length;j++)if(models[j].model===model)return models[j];
+  }
+  return null;
+}
+
+function normalizeCompetitor(brand,record){
+  var capacity=record.capacity_l;
+  return {
+    brand:brand,
+    model:record.model,
+    kategori:CAT_LABELS[record.cat||record.subcat]||record.cat||record.subcat||null,
+    door:record.door||null,
+    kapasitas_gross:capacity||null,
+    kapasitas_nett:null,
+    kapasitas_catatan:capacity?"Kapasitas dari sumber adalah total; nilai nett/gross tidak dijelaskan.":null,
+    range:null,
+    material:null,
+    daya_watt:null,
+    garansi_tahun:null,
+    varian:null,
+    serie:null,
+    harga_idr:record.price_idr||null,
+    harga_source:record.price_source||null,
+    fitur:(record.fitur||record.features||[]).slice(),
+    benefit:null,
+    foto:record.image||record.photo||null,
+    photo_url:record.photo_url||null,
+    source_url:record.source_url||null
+  };
+}
+
+function openDetail(brand,model){
+  if(brand==="AQUA"){
+    var canonical=findCanonical(model);
+    if(!canonical){showToast("Record katalog Produk belum tersedia untuk "+model,"err");return;}
+    window.MTMSProductDetail.open(canonical,{
+      canonicalUrl:"produk.html?model="+encodeURIComponent(model)
+    });
+    return;
+  }
+  var source=findCompetitor(brand,model);
+  if(!source){showToast("Detail belum tersedia untuk "+brand+" "+model,"err");return;}
+  var detail=normalizeCompetitor(brand,source);
+  window.MTMSProductDetail.open(detail,{
+    sourceUrl:detail.source_url,
+    sourceLabel:"Sumber "+brand+" "+model
+  });
+}
+
 function renderRow(row,catCode){
   var aq=row.aqua;
   var html='<tr>';
   // AQUA cell
   if(aq){
-    var img=aq.image||ph("AQUA",aq.model);
-    html+='<td class="comp-cell comp-aqua"><div class="comp-model-info">'+
-      '<img class="comp-thumb" data-src="'+img+'" alt="'+esc(aq.model)+'" loading="lazy">'+
-      '<div class="comp-model-detail">'+
-      '<strong class="comp-model-name">'+esc(aq.model)+'</strong>'+
-      '<div class="comp-meta"><span class="comp-cap">'+(aq.capacity?aq.capacity+" L":"-")+'</span><span class="comp-price">'+fp(aq.price)+'</span></div>'+
-      fiturHtml(aq.fitur)+
-      '</div></div>'+
+    html+='<td class="comp-cell comp-aqua">'+detailTriggerHtml(aq)+
       '<div class="comp-row-actions">'+
       '<button class="comp-edit" data-brand="AQUA" data-model="'+esc(aq.model)+'">✎ Edit</button>'+
       '<button class="comp-del" data-brand="AQUA" data-model="'+esc(aq.model)+'">🗑 Hapus</button>'+
@@ -140,15 +242,7 @@ function renderRow(row,catCode){
     var c=row.competitors[brand];
     var lk=brand.toLowerCase();
     if(c){
-      html+='<td class="comp-cell comp-'+lk+'"><div class="comp-model-info">'+
-        '<img class="comp-thumb" data-src="'+c.image+'" alt="'+esc(brand+" "+c.model)+'" loading="lazy">'+
-        '<div class="comp-model-detail">'+
-        '<span class="comp-brand-badge comp-'+lk+'">'+brand+'</span>'+
-        '<strong class="comp-model-name">'+esc(c.model)+'</strong>'+
-        '<div class="comp-meta"><span class="comp-cap">'+(c.capacity?c.capacity+" L":"-")+'</span><span class="comp-price">'+fp(c.price)+'</span></div>'+
-        fiturHtml(c.fitur)+
-        (c.source_url?'<a class="comp-source" href="'+c.source_url+'" target="_blank" rel="noopener">Sumber</a>':'')+
-        '</div></div>'+
+      html+='<td class="comp-cell comp-'+lk+'">'+detailTriggerHtml(c)+
         '<div class="comp-row-actions">'+
         '<button class="comp-edit" data-brand="'+esc(c.brand)+'" data-model="'+esc(c.model)+'">✎ Edit</button>'+
         '<button class="comp-del" data-brand="'+esc(c.brand)+'" data-model="'+esc(c.model)+'">🗑 Hapus</button>'+
@@ -162,7 +256,7 @@ function renderRow(row,catCode){
 }
 
 function renderAll(){
-  var katalog=(window.MTMS_DATA&&window.MTMS_DATA.katalog)||[];
+  var katalog=catalogData;
   var aqByCat={};
   for(var i=0;i<katalog.length;i++){
     var p=katalog[i];
@@ -178,11 +272,13 @@ function renderAll(){
     var rows=buildRows(catCode);
     if(!rows.length)continue;
     html+='<section class="comp-category-section">'+
-      '<div class="comp-cat-header"><h2 class="comp-category-title" style="margin:0;border-radius:6px">'+CAT_LABELS[catCode]+" ("+rows.length+" model)</h2>"+
-      '<button class="comp-add-btn" data-cat="'+catCode+'">+ Tambah Model</button></div>'+
+      '<div class="comp-cat-header"><div class="comp-category-heading">'+
+      '<h2 class="comp-category-title">'+esc(CAT_LABELS[catCode])+'</h2>'+
+      '<p class="comp-category-count">'+rows.length+' model</p></div>'+
+      '<button class="comp-add-btn" data-cat="'+esc(catCode)+'">+ Tambah Model</button></div>'+
       '<div class="comp-table-wrap"><table class="comp-full-table"><thead><tr>'+
-      '<th style="width:18%">AQUA (Referensi)</th>'+
-      '<th>LG</th><th>Midea</th><th>Polytron</th><th>Samsung</th><th>Sharp</th>'+
+      '<th scope="col"><span class="comp-column-head-primary">AQUA</span><small class="comp-column-head-secondary">Referensi</small></th>'+
+      '<th scope="col">LG</th><th scope="col">Midea</th><th scope="col">Polytron</th><th scope="col">Samsung</th><th scope="col">Sharp</th>'+
       '</tr></thead><tbody>';
     for(var ri=0;ri<rows.length;ri++)html+=renderRow(rows[ri],catCode);
     html+='</tbody></table></div></section>';
@@ -194,6 +290,7 @@ function renderAll(){
 
 function lazyLoad(){
   var imgs=document.querySelectorAll(".comp-thumb[data-src]");
+  for(var wi=0;wi<imgs.length;wi++)wireCardImageFallback(imgs[wi]);
   if("IntersectionObserver" in window){
     var obs=new IntersectionObserver(function(entries){
       for(var i=0;i<entries.length;i++){
@@ -220,6 +317,8 @@ container.addEventListener("click",function(e){
   if(btn){doAdd(btn.dataset.cat);return;}
   btn=e.target.closest(".comp-add-cell");
   if(btn){doAddInCell(btn.dataset.brand,btn.dataset.aqua);return;}
+  btn=e.target.closest(".comp-detail-trigger");
+  if(btn){openDetail(btn.dataset.brand,btn.dataset.model);return;}
 });
 
 /* === EDIT OVERLAY === */
@@ -375,7 +474,7 @@ function doAdd(catCode){
       model:v.model,cat:v.cat,subcat:v.cat,
       capacity_l:Number(v.cap)||0,price_idr:Number(v.price)||0,
       fitur:v.fitur.split("\n").map(function(s){return s.trim()}).filter(Boolean),
-      image:v.image||ph(v.brand,v.model),source_url:v.source
+      image:v.image||"",source_url:v.source
     });
     if(!compData.groups)compData.groups=[];
     if(v.brand==="AQUA"){
@@ -443,7 +542,7 @@ function doAddInCell(brand,aquaModel){
       model:v.model,cat:v.cat,subcat:v.cat,
       capacity_l:Number(v.cap)||0,price_idr:Number(v.price)||0,
       fitur:v.fitur.split("\n").map(function(s){return s.trim()}).filter(Boolean),
-      image:v.image||ph(v.brand,v.model),source_url:v.source
+      image:v.image||"",source_url:v.source
     });
     if(v.brand==="AQUA"){
       compData.groups.push({aqua:v.model,competitors:{}});
@@ -487,22 +586,60 @@ function showToast(msg,type){
 }
 
 /* === INIT === */
+function isHttp(){return window.location.protocol==="http:"||window.location.protocol==="https:";}
+function cloneData(value){return JSON.parse(JSON.stringify(value));}
+function embeddedCatalog(){return(window.MTMS_DATA&&window.MTMS_DATA.katalog)||[];}
+function embeddedCompetitor(){return(window.MTMS_DATA&&window.MTMS_DATA.kompetitor)||{brands:[]};}
+
+function loadCatalog(){
+  if(!isHttp()){catalogData=embeddedCatalog();return Promise.resolve();}
+  return fetch("api/produk").then(function(r){
+    if(!r.ok)throw new Error("api "+r.status);
+    return r.json();
+  }).then(function(data){catalogData=data;}).catch(function(){catalogData=embeddedCatalog();});
+}
+
+function enrichCompetitor(data){
+  var embedded=embeddedCompetitor();
+  var evidence={};
+  var embeddedBrands=embedded.brands||[];
+  for(var i=0;i<embeddedBrands.length;i++){
+    var brand=embeddedBrands[i].brand;
+    var models=embeddedBrands[i].models||[];
+    for(var j=0;j<models.length;j++)evidence[brand+"|"+models[j].model]=models[j];
+  }
+  var brands=data.brands||[];
+  for(var bi=0;bi<brands.length;bi++){
+    var apiBrand=brands[bi].brand;
+    var apiModels=brands[bi].models||[];
+    for(var mi=0;mi<apiModels.length;mi++){
+      var apiModel=apiModels[mi];
+      var proof=evidence[apiBrand+"|"+apiModel.model];
+      if(!proof)continue;
+      var fullFeatures=proof.fitur||proof.features||[];
+      if(fullFeatures.length)apiModel.fitur=fullFeatures.slice();
+      ["door","source_url","price_source","image","photo","photo_url"].forEach(function(field){
+        if(proof[field]!==null&&proof[field]!==undefined&&proof[field]!=="")apiModel[field]=proof[field];
+      });
+    }
+  }
+  return data;
+}
+
 function loadData(){
+  if(!isHttp()){
+    compData=enrichCompetitor(cloneData(embeddedCompetitor()));
+    return Promise.resolve();
+  }
   // coba data live dari API (editable, sumber GitHub). Kalau gagal, pakai data bawaan.
   return fetch("api/kompetitor").then(function(r){
     if(!r.ok)throw new Error("api "+r.status);
     return r.json();
-  }).then(function(d){compData=d;}).catch(function(){
-    return fetch("data/kompetitor.json").then(function(r){return r.json()}).then(function(d){compData=d;}).catch(function(){compData={brands:[]};});
+  }).then(function(d){compData=enrichCompetitor(d);}).catch(function(){
+    compData=enrichCompetitor(cloneData(embeddedCompetitor()));
   });
 }
-function waitForData(){
-  return new Promise(function(resolve){
-    if(window.MTMS_DATA&&window.MTMS_DATA.katalog)return resolve();
-    var c=setInterval(function(){if(window.MTMS_DATA&&window.MTMS_DATA.katalog){clearInterval(c);resolve();}},50);
-  });
-}
-waitForData().then(function(){loadData().then(renderAll);});
+Promise.all([loadCatalog(),loadData()]).then(renderAll);
 })();
 </script>
 </body>

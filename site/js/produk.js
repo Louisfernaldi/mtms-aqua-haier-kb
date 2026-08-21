@@ -135,6 +135,9 @@ function renderKatalog(targetId) {
       }
       return fetch("data/produk-katalog.json").then(function (r) { return r.json(); });
     }
+    if (window.location.protocol !== "http:" && window.location.protocol !== "https:") {
+      return Promise.resolve((window.MTMS_DATA && window.MTMS_DATA.katalog) || []);
+    }
     // coba data live dari API (editable). Kalau gagal, pakai data bawaan.
     return fetch("api/produk").then(function (r) {
       if (!r.ok) throw new Error("api " + r.status);
@@ -192,28 +195,6 @@ function renderKatalog(targetId) {
       pagination.className = "pk-pagination";
       host.appendChild(pagination);
 
-      var modal = document.createElement("div");
-      modal.className = "pk-modal";
-      modal.innerHTML =
-        '<div class="pk-modal-box" role="dialog" aria-modal="true">' +
-        '<button class="pk-modal-close" aria-label="Tutup">&times;</button>' +
-        '<h3 class="pk-modal-title"></h3>' +
-        '<div class="pk-modal-body"></div>' +
-        "</div>";
-      modal.addEventListener("click", function (e) {
-        if (e.target === modal) closeModal();
-      });
-      modal.querySelector(".pk-modal-close").onclick = closeModal;
-      document.addEventListener("keydown", function (e) {
-        if (e.key === "Escape" && modal.classList.contains("open")) closeModal();
-      });
-      document.body.appendChild(modal);
-
-      function closeModal() {
-        modal.classList.remove("open");
-        document.body.style.overflow = "";
-      }
-
       function fmtFlag(f) {
         var map = { "Inverter": "Inverter", "Non-Inverter": "Non-Inverter", "Import Thailand": "Import Thailand", "Flagship": "Flagship", "Entry": "Entry", "Best Seller": "Best Seller", "Halo Product": "Halo Product" };
         return map[f] || f;
@@ -262,127 +243,19 @@ function renderKatalog(targetId) {
           (p.garansi_tahun ? " · Garansi " + p.garansi_tahun + " th" : "") +
           "</p>" +
           (p.harga_idr ? '<p class="pk-price">' + fmtRp(p.harga_idr) + "</p>" : "");
-        el.onclick = function () { openModal(p); };
+        el.onclick = function () { openProductDetail(p); };
         return el;
       }
 
-      function openModal(p) {
-        var rows = [
-          ["Kategori", p.kategori],
-          ["Kapasitas", (p.kapasitas_gross ? p.kapasitas_gross + " L gross" : "") + (p.kapasitas_nett ? " / " + p.kapasitas_nett + " L nett" : "")],
-          ["Rentang kapasitas", p.range],
-          ["Material pintu", p.material],
-          ["Daya listrik", p.daya_watt ? p.daya_watt + " W" : "-"],
-          ["Garansi kompresor", p.garansi_tahun ? p.garansi_tahun + " tahun" : "-"],
-          ["Warna / varian", (p.varian || []).join(", ") || "-"],
-          ["Seri", p.serie || "-"]
-        ];
-        if (p.harga_idr) {
-          rows.push(["Harga pasar", fmtRp(p.harga_idr) + (p.harga_source ? ' <span class="pk-harga-src">(sumber: ' + p.harga_source + ")</span>" : "")]);
-        }
-        var rowsHtml = rows.map(function (r) {
-          return "<tr><th>" + r[0] + "</th><td>" + r[1] + "</td></tr>";
-        }).join("");
-        var flags = (p.flags || []).map(function (f) {
-          return '<span class="badge ' + f.toLowerCase().replace(/[^a-z]+/g, "-") + '">' + fmtFlag(f) + "</span>";
-        }).join("");
-        var fotos = (p.foto_list && p.foto_list.length) ? p.foto_list : (p.foto ? [p.foto] : []);
-        var fotoHtml = "";
-        if (fotos.length > 1) {
-          var thumbs = fotos.map(function (f, i) {
-            return '<button type="button" class="pk-gal-thumb' + (i === 0 ? " active" : "") +
-              '" data-idx="' + i + '" aria-label="Foto ' + (i + 1) + '"><img src="' + f + '" alt=""></button>';
-          }).join("");
-          fotoHtml =
-            '<div class="pk-gal">' +
-            '<div class="pk-gal-stage">' +
-            '<button type="button" class="pk-gal-nav" data-dir="-1" aria-label="Foto sebelumnya">&#8249;</button>' +
-            '<img class="pk-modal-img pk-gal-img" src="' + fotos[0] + '" alt="' + p.model + '" data-idx="0">' +
-            '<button type="button" class="pk-gal-nav" data-dir="1" aria-label="Foto berikutnya">&#8250;</button>' +
-            "</div>" +
-            '<div class="pk-gal-thumbs">' + thumbs + "</div>" +
-            "</div>";
-        } else if (fotos.length === 1) {
-          fotoHtml = '<img class="pk-modal-img pk-gal-img" src="' + fotos[0] + '" alt="' + p.model + '">';
-        } else {
-          var model = p.model || "";
-          var label = "Belum ada foto";
-          if (model) label += " \u00b7 " + model;
-          var svg = '<svg class="pk-noimg-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 7h10"/><path d="M7 11h6"/><path d="M7 15h4"/><line x1="12" y1="19" x2="12" y2="21"/></svg>';
-          fotoHtml = '<div class="pk-thumb pk-noimg" style="height:200px">' + svg + '<span class="pk-noimg-label">' + label + '</span></div>';
-        }
-        var fiturHtml = "<h4>Fitur Unggulan</h4>" +
-          ((p.fitur && p.fitur.length) ?
-            '<ul class="pk-fitur">' + p.fitur.map(function (x) { return "<li>" + x + "</li>"; }).join("") + "</ul>" :
-            '<p class="pk-benefit">Data fitur menyusul.</p>');
-        modal.querySelector(".pk-modal-title").innerHTML = p.model + ' <span class="pk-cat">' + p.kategori + "</span>";
-        // tombol Edit di modal detail
-        var editBtn = document.createElement("button");
-        editBtn.type = "button";
-        editBtn.className = "pk-modal-edit";
-        editBtn.textContent = "\u270f\ufe0f Edit";
-        editBtn.title = "Ubah produk ini";
-        editBtn.onclick = function () {
-          var cur = p;
-          closeModal();
-          setTimeout(function () {
-            if (window.__mtms_openEdit) window.__mtms_openEdit(cur);
-            else if (typeof openEdit === "function") openEdit(cur, window.MTMS_MANIFEST || []);
+      function openProductDetail(p) {
+        window.MTMSProductDetail.open(p, {
+          onEdit: function (record) {
+            if (window.__mtms_openEdit) window.__mtms_openEdit(record);
             else alert("Editor belum siap — refresh halaman");
-          }, 80);
-        };
-        modal.querySelector(".pk-modal-title").appendChild(editBtn);
-        
-        // Harga hero di kanan atas
-        var priceHeroHtml = "";
-        if (p.harga_idr) {
-          var src = p.harga_source ? ' <span class="pk-harga-src">(sumber: ' + p.harga_source + ")</span>" : "";
-          priceHeroHtml = '<div class="pk-price-hero">' + fmtRp(p.harga_idr) + src + '</div>';
-        }
-        
-        var modalBox = modal.querySelector(".pk-modal-box");
-        modalBox.classList.add("pk-modal-wide");
-        var rightHtml =
-          (flags ? '<div class="pk-modal-flags">' + flags + "</div>" : "") +
-          priceHeroHtml +
-          "<table><tbody>" + rowsHtml + "</tbody></table>" +
-          fiturHtml +
-          '<h4>Keunggulan & Fitur</h4>' +
-          "<p class='pk-benefit'>" + p.benefit + "</p>";
-        modal.querySelector(".pk-modal-body").innerHTML =
-          '<div class="pk-modal-left">' + fotoHtml + '</div>' +
-          '<div class="pk-modal-right">' + rightHtml + '</div>';
-        var gal = modal.querySelector(".pk-gal");
-        if (gal) {
-          var galImg = gal.querySelector(".pk-gal-img");
-          var thumbBtns = gal.querySelectorAll(".pk-gal-thumb");
-          function setFoto(i) {
-            i = (i + fotos.length) % fotos.length;
-            galImg.src = fotos[i];
-            galImg.setAttribute("data-idx", i);
-            for (var k = 0; k < thumbBtns.length; k++) {
-              if (Number(thumbBtns[k].getAttribute("data-idx")) === i) {
-                thumbBtns[k].classList.add("active");
-              } else {
-                thumbBtns[k].classList.remove("active");
-              }
-            }
           }
-          var navs = gal.querySelectorAll(".pk-gal-nav");
-          for (var j = 0; j < navs.length; j++) {
-            navs[j].onclick = function () {
-              setFoto(Number(galImg.getAttribute("data-idx")) + Number(this.getAttribute("data-dir")));
-            };
-          }
-          for (var t = 0; t < thumbBtns.length; t++) {
-            thumbBtns[t].onclick = function () {
-              setFoto(Number(this.getAttribute("data-idx")));
-            };
-          }
-        }
-        modal.classList.add("open");
-        document.body.style.overflow = "hidden";
+        });
       }
+
       function render() {
         var list = items.filter(function (p) {
           var okGroup = state.group === "Semua" || p.group === state.group;
@@ -451,6 +324,11 @@ function renderKatalog(targetId) {
 
       render();
       initEditor(items, host);
+      var requestedModel = new URLSearchParams(window.location.search).get("model");
+      if (requestedModel !== null) {
+        var requestedProduct = items.find(function (item) { return item.model === requestedModel; });
+        if (requestedProduct) openProductDetail(requestedProduct);
+      }
     })
     .catch(function () {
       host.innerHTML = '<p class="sec-sub">Katalog gagal dimuat.</p>';

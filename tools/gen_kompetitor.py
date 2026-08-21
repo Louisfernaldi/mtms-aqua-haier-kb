@@ -9,7 +9,8 @@ Tulis:
 
 Field per model (angka dari data, NOL ngarang):
   model, subcat (asli), cat (kode kategori), door, capacity_l, price_idr,
-  price_source, fitur (1-2 fitur teratas dari field features), source_url
+  price_source, semua fitur nonempty dari field features, image dari aset lokal
+  bila cocok exact atau photo_url, photo_url sebagai provenance, source_url
 
 Pemetaan kategori (subcat di tiap brand beda-beda):
   SD/TM/BM/SBS/MD (AQUA, MIDEA, POLYTRON, SHARP) -> SB/TM/BM/SBS/MD
@@ -19,6 +20,7 @@ Pemetaan kategori (subcat di tiap brand beda-beda):
 """
 import json
 import os
+import re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RISET_DIR = r"D:\AI\projects\kompetitor-haier\komparasi-5brand\data\riset_brand"
@@ -26,6 +28,7 @@ BRANDS = ["AQUA", "LG", "MIDEA", "POLYTRON", "SAMSUNG", "SHARP"]
 PDF_SRC = r"D:\AI\projects\kompetitor-haier\komparasi-5brand\out\KOMPARASI-KULKAS-AQUA-5-BRAND-FINAL-v5.pdf"
 PDF_DST_NAME = "KOMPARASI-KULKAS-AQUA-5-BRAND-FINAL-v5.pdf"
 OUT_JSON = os.path.join(ROOT, "site", "data", "kompetitor.json")
+IMAGE_MAP = os.path.join(ROOT, "site", "assets", "kompetitor", "image_map.json")
 
 CATEGORIES = [
     {"code": "SB", "label": "1 Pintu", "desc": "Satu pintu, freezer satu ruang"},
@@ -72,7 +75,30 @@ def map_cat(rec):
     return None
 
 
-def load_brand(name):
+def normalize_asset_key(value):
+    return re.sub(r"[^a-z0-9]", "", str(value).lower())
+
+
+def load_image_index():
+    with open(IMAGE_MAP, "r", encoding="utf-8") as fh:
+        image_map = json.load(fh)
+    index = {}
+    for filename, local_path in image_map.items():
+        stem = os.path.splitext(os.path.basename(filename))[0]
+        key = normalize_asset_key(stem)
+        if key and local_path:
+            index.setdefault(key, set()).add(local_path)
+    return index
+
+
+def local_image_for(image_index, brand, model):
+    matches = image_index.get(normalize_asset_key(str(brand) + str(model)), set())
+    if len(matches) == 1:
+        return next(iter(matches))
+    return None
+
+
+def load_brand(name, image_index):
     path = os.path.join(RISET_DIR, name + ".json")
     with open(path, "r", encoding="utf-8") as fh:
         raw = json.load(fh)
@@ -81,7 +107,8 @@ def load_brand(name):
         if not rec.get("found"):
             continue
         features = rec.get("features") or []
-        fitur = [f for f in features if str(f).strip()][:2]
+        fitur = [f for f in features if str(f).strip()]
+        photo_url = rec.get("photo_url")
         models.append({
             "model": key,
             "subcat": rec.get("subcat"),
@@ -91,13 +118,16 @@ def load_brand(name):
             "price_idr": rec.get("price_idr"),
             "price_source": rec.get("price_source"),
             "fitur": fitur,
+            "image": local_image_for(image_index, name, key) or photo_url,
+            "photo_url": photo_url,
             "source_url": rec.get("source_url"),
         })
     return {"brand": name, "model_count": len(models), "models": models}
 
 
 def main():
-    brands = [load_brand(b) for b in BRANDS]
+    image_index = load_image_index()
+    brands = [load_brand(b, image_index) for b in BRANDS]
     pdf_size = os.path.getsize(PDF_SRC)
     pdf = {
         "file": PDF_DST_NAME,
