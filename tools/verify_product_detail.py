@@ -40,12 +40,14 @@ def fixtures():
         catalog = json.load(fh)
     with open(COMP_PATH, encoding="utf-8") as fh:
         embedded_comp = json.load(fh)
+    if not embedded_comp.get("groups"):
+        fail("Fixture gagal: data bawaan kompetitor tidak punya groups untuk render cepat")
 
     by_model = {row.get("model"): row for row in catalog}
     aqua_models = next(b["models"] for b in embedded_comp["brands"] if b["brand"] == "AQUA")
-    aqua = next((row for row in aqua_models if row.get("model") in by_model and row.get("cat")), None)
+    aqua = next((row for row in aqua_models if row.get("model") == "AQR-DTM245CBP" and row.get("model") in by_model), None)
     if not aqua:
-        fail("Fixture gagal: tidak ada exact model AQUA yang sama di katalog dan kompetitor")
+        fail("Fixture gagal: AQR-DTM245CBP tidak ada di katalog dan kompetitor")
     competitor = None
     competitor_brand = None
     for brand in embedded_comp["brands"]:
@@ -60,7 +62,7 @@ def fixtures():
 
     canonical = json.loads(json.dumps(catalog))
     canonical_row = next(row for row in canonical if row.get("model") == aqua["model"])
-    canonical_row["benefit"] = "CANONICAL_SENTINEL_FROM_PRODUCT_API"
+    canonical_row["serie"] = "CANONICAL_SENTINEL_FROM_PRODUCT_API"
     canonical_row["material"] = "CANONICAL_MATERIAL_SENTINEL"
 
     # API kompetitor sengaja tipis. Implementasi wajib memperkaya dari embedded,
@@ -285,6 +287,46 @@ async def assert_mobile_body_lock(page, record):
     }""", original_style)
 
 
+async def assert_embedded_first_render(browser, base):
+    async def delayed_api(route):
+        await asyncio.sleep(4)
+        await route.continue_()
+
+    page = await browser.new_page(viewport={"width": 1440, "height": 900})
+    errors = []
+    page.on("console", lambda msg: errors.append("console-" + msg.type + ": " + msg.text) if msg.type == "error" else None)
+    page.on("pageerror", lambda err: errors.append("pageerror: " + str(err)))
+    await page.route("**/api/produk", delayed_api)
+    await page.route("**/api/kompetitor", delayed_api)
+    started = asyncio.get_running_loop().time()
+    await page.goto(base + "/kompetitor.html", wait_until="domcontentloaded")
+    await page.locator(".comp-detail-trigger").first.wait_for(state="visible", timeout=5000)
+    elapsed = asyncio.get_running_loop().time() - started
+    if elapsed >= 1.2:
+        fail("Kompetitor: render data bawaan terlalu lambat %.3fs; errors=%s" % (elapsed, json.dumps(errors)))
+    if await page.evaluate("window.MTMS_COMPETITOR_LIVE_READY !== false"):
+        fail("Kompetitor: fixture API tertunda tidak membuktikan render sebelum API")
+    await page.wait_for_function("window.MTMS_COMPETITOR_LIVE_READY === true", timeout=10000)
+    if await page.locator(".comp-edit:enabled").count() == 0:
+        fail("Kompetitor: tombol edit tidak aktif sesudah data live selesai")
+    await page.close()
+
+    page = await browser.new_page(viewport={"width": 1440, "height": 900})
+    await page.route("**/api/produk", delayed_api)
+    await page.route("**/api/foto", delayed_api)
+    started = asyncio.get_running_loop().time()
+    await page.goto(base + "/produk.html", wait_until="domcontentloaded")
+    await page.locator(".pk-card").first.wait_for(state="visible", timeout=5000)
+    elapsed = asyncio.get_running_loop().time() - started
+    if elapsed >= 1.2:
+        fail("Produk: render data bawaan terlalu lambat %.3fs" % elapsed)
+    if await page.locator(".pk-edit-add").count():
+        fail("Produk: editor aktif sebelum data live selesai")
+    await page.wait_for_function("window.MTMS_DATA_LIVE === true", timeout=12000)
+    await page.locator(".pk-edit-add").wait_for(state="visible", timeout=2000)
+    await page.close()
+
+
 async def assert_visual_round_3(modal, width):
     text = await modal.inner_text()
     if PRICE_SOURCE_DISPLAY not in text:
@@ -409,18 +451,16 @@ async def run_browser(base, aqua, competitor, competitor_brand):
         if os.path.exists(CHROME):
             launch["executable_path"] = CHROME
         browser = await pw.chromium.launch(**launch)
+        await assert_embedded_first_render(browser, base)
         for width, height in ((1440, 900), (390, 844)):
             page = await browser.new_page(viewport={"width": width, "height": height})
             errors = []
             page.on("console", lambda msg, bag=errors: bag.append("console-" + msg.type + ": " + msg.text) if msg.type == "error" else None)
             page.on("pageerror", lambda err, bag=errors: bag.append("pageerror: " + str(err)))
 
-            await page.goto(base + "/produk.html", wait_until="networkidle")
+            await page.goto(base + "/produk.html?model=" + aqua["model"], wait_until="networkidle")
             if not await page.evaluate("!!(window.MTMSProductDetail && typeof window.MTMSProductDetail.open === 'function')"):
                 fail("Produk: singleton window.MTMSProductDetail.open belum tersedia")
-            card = page.locator('.pk-card[data-model="%s"]' % aqua["model"])
-            await card.wait_for(state="visible")
-            await card.click()
             modal = await wait_modal(page)
             if "CANONICAL_SENTINEL_FROM_PRODUCT_API" not in await modal.inner_text():
                 fail("Produk card: shared modal tidak memakai record API canonical")
@@ -464,6 +504,12 @@ async def run_browser(base, aqua, competitor, competitor_brand):
             text = await modal.inner_text()
             if "CANONICAL_SENTINEL_FROM_PRODUCT_API" not in text or "CANONICAL_MATERIAL_SENTINEL" not in text:
                 fail("Kompetitor AQUA: bukan record katalog Produk canonical")
+            if "Rp 3.260.000" not in text:
+                fail("Kompetitor AQUA: harga kosong di canonical tidak diperkaya dari record kompetitor")
+            if not await modal.locator('img[src="%s"]' % aqua["image"]).count():
+                fail("Kompetitor AQUA: foto kosong di canonical tidak diperkaya dari record kompetitor")
+            if await modal.locator("h4", has_text="Keunggulan & Fitur").count():
+                fail("Kompetitor AQUA: benefit yang identik dengan fitur masih dirender dua kali")
             link = modal.locator('a[href*="produk.html?model="]')
             if not await link.count():
                 fail("Kompetitor AQUA: canonicalUrl ke produk.html?model= belum ada")
@@ -516,7 +562,7 @@ async def main():
         server.shutdown()
         server.server_close()
         thread.join(timeout=3)
-    print("PASS verify_product_detail: shared modal, canonical AQUA, enrichment, real 404 image fallbacks, visual round 3, edit isolation, keyboard, body-lock, 1440/390")
+    print("PASS verify_product_detail: embedded-first <1.2s with API delayed 4s, shared modal, canonical AQUA fallback enrichment, duplicate feature suppression, real 404 image fallbacks, edit isolation, keyboard, body-lock, 1440/390")
 
 
 if __name__ == "__main__":

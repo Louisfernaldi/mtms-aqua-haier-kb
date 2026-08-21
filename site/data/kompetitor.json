@@ -1954,5 +1954,231 @@
    ]
   }
  ],
+ "groups": [
+  {
+   "aqua": "AQR-CSE696RSV",
+   "competitors": {
+    "SAMSUNG": "RS70F65KNFSE",
+    "LG": "GC-L257CQEL"
+   }
+  },
+  {
+   "aqua": "AQR-TSE605RBM",
+   "competitors": {
+    "SHARP": "SJ-IS60MB-DS",
+    "MIDEA": "MDRS710FGF28ID"
+   }
+  },
+  {
+   "aqua": "AQR-TTD546RBC",
+   "competitors": {
+    "SHARP": "SJ-IF60PM-DS"
+   }
+  },
+  {
+   "aqua": "AQR-CSE605RBC",
+   "competitors": {
+    "SHARP": "SJ-IS60MB-DS",
+    "MIDEA": "MDRS710FGF28ID"
+   }
+  },
+  {
+   "aqua": "AQR-CSE565RBC",
+   "competitors": {
+    "SHARP": "SJ-IS50M-SL",
+    "LG": "GCFB507PQAM"
+   }
+  },
+  {
+   "aqua": "AQR-CTD746RAG",
+   "competitors": {
+    "SHARP": "SJ-IF91PG-GB",
+    "SAMSUNG": "RF65DB90B012SE"
+   }
+  },
+  {
+   "aqua": "AQR-TTD576RSG",
+   "competitors": {
+    "LG": "GC-V22FFQMB"
+   }
+  },
+  {
+   "aqua": "AQR-TTD576RAG",
+   "competitors": {
+    "SHARP": "SJ-IF85PG-GB",
+    "LG": "GCFB48FPGAM"
+   }
+  },
+  {
+   "aqua": "AQR-CTD506RGC",
+   "competitors": {
+    "SHARP": "SJ-IF50PMA-DS",
+    "LG": "GCFB41FPGAM",
+    "MIDEA": "MDRF550FGF28ID"
+   }
+  },
+  {
+   "aqua": "AQR-CTD506RGG",
+   "competitors": {
+    "SHARP": "SJ-IF51PG-BK"
+   }
+  },
+  {
+   "aqua": "AQR-VTM535RSG",
+   "competitors": {
+    "LG": "GN-F372PXAK"
+   }
+  },
+  {
+   "aqua": "AQR-VTM535RAG",
+   "competitors": {
+    "SHARP": "SJ-IT660PM-DS",
+    "SAMSUNG": "RT47CB66228JSE",
+    "MIDEA": "MDRT611EVD50ID"
+   }
+  },
+  {
+   "aqua": "AQR-VTM515RBC",
+   "competitors": {
+    "SHARP": "SJ-IT660PM-DS",
+    "SAMSUNG": "RT42CG6420B1SE",
+    "LG": "GN-B392PGFB",
+    "MIDEA": "MDRT611EVD28ID"
+   }
+  },
+  {
+   "aqua": "AQR-395IM",
+   "competitors": {
+    "SHARP": "SJ-426SI-GK",
+    "SAMSUNG": "RT35CG5420B1SE",
+    "LG": "GN-B332PQQF"
+   }
+  },
+  {
+   "aqua": "AQR-415IM",
+   "competitors": {
+    "SHARP": "SJ-456SI-GK",
+    "SAMSUNG": "RT35CG5420B1SE",
+    "LG": "GN-B332PGFB"
+   }
+  },
+  {
+   "aqua": "AQR-405IG",
+   "competitors": {
+    "SHARP": "SJ-426GI-GK"
+   }
+  },
+  {
+   "aqua": "AQR-355IG",
+   "competitors": {
+    "SHARP": "SJ-326XI-MK"
+   }
+  },
+  {
+   "aqua": "AQR-355IM",
+   "competitors": {
+    "SHARP": "SJ-326SI-GK",
+    "LG": "GN-B262PQSF",
+    "MIDEA": "MDRT385MTB30"
+   }
+  },
+  {
+   "aqua": "AQR-350RBM",
+   "competitors": {}
+  },
+  {
+   "aqua": "AQR-382IM",
+   "competitors": {
+    "SHARP": "SJ-386SI-DS"
+   }
+  },
+  {
+   "aqua": "AQR-DTM305RAV",
+   "competitors": {
+    "SHARP": "SJ-326SI-GK",
+    "SAMSUNG": "RT22FARBDBB1",
+    "LG": "GN-B242PFSF"
+   }
+  },
+  {
+   "aqua": "AQR-DTM285RAV",
+   "competitors": {
+    "SHARP": "SJ-326SI-GK",
+    "SAMSUNG": "RT22FARBDBB1",
+    "LG": "GN-B212PQNF"
+   }
+  },
+  {
+   "aqua": "AQR-DTM265RAV",
+   "competitors": {
+    "SHARP": "SJ-246SI-GK",
+    "SAMSUNG": "RT19M300BGS"
+   }
+  },
+  {
+   "aqua": "AQR-DTM305RAP",
+   "competitors": {
+    "SHARP": "SJ-326SI-GK",
+    "SAMSUNG": "RT22FARBDBB1",
+    "LG": "GN-B242PFSF"
+   }
+  },
+  {
+   "aqua": "AQR-DTM285RAP",
+   "competitors": {
+    "SHARP": "SJ-326SI-GK",
+    "SAMSUNG": "RT22FARBDBB1",
+    "LG": "GN-B212PQNF"
+   }
+  },
+  {
+   "aqua": "AQR-DTM265RAP",
+   "competitors": {
+    "SHARP": "SJ-246SI-GK",
+    "SAMSUNG": "RT19M300BGS"
+   }
+  },
+  {
+   "aqua": "AQR-DTM285CBP",
+   "competitors": {
+    "SHARP": "SJ316MGGB",
+    "MIDEA": "MDRT345MTB30"
+   }
+  },
+  {
+   "aqua": "AQR-DTM265CBP",
+   "competitors": {
+    "SHARP": "SJ-236MN-HS",
+    "LG": "GN-B202SQIR"
+   }
+  },
+  {
+   "aqua": "AQR-DTM245CBP",
+   "competitors": {
+    "SHARP": "SJ-236MN-HS"
+   }
+  },
+  {
+   "aqua": "AQR-D225",
+   "competitors": {
+    "SHARP": "SJ-N192N",
+    "LG": "GN-Y331SLSR",
+    "MIDEA": "MDRU288FZG02ID"
+   }
+  },
+  {
+   "aqua": "AQR-D205",
+   "competitors": {
+    "SHARP": "SJ-N182N",
+    "LG": "GN-Y201CLAR"
+   }
+  },
+  {
+   "aqua": "AQR-D185",
+   "competitors": {
+    "SHARP": "SJ-N162N-HS"
+   }
+  }
+ ],
  "sumber": "Riset per brand (website resmi + GFK), lihat price_source per model; angka dihitung mesin dari riset_brand JSON."
 }

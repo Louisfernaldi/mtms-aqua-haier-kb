@@ -236,14 +236,17 @@
   }
 
   function featuresHtml(record) {
-    var features = Array.isArray(record.fitur) ? record.fitur.filter(hasValue) : [];
-    if (!features.length && Array.isArray(record.features)) {
-      features = record.features.filter(hasValue);
-    }
+    var features = featureValues(record);
     if (!features.length) return '<p class="pk-benefit pk-detail-missing">' + MISSING + "</p>";
     return '<ul class="pk-fitur">' + features.map(function (feature) {
       return "<li>" + escapeHtml(feature) + "</li>";
     }).join("") + "</ul>";
+  }
+
+  function featureValues(record) {
+    var features = Array.isArray(record.fitur) ? record.fitur.filter(hasValue) : [];
+    if (!features.length && Array.isArray(record.features)) features = record.features.filter(hasValue);
+    return features;
   }
 
   function sourceHtml(record, options) {
@@ -356,7 +359,9 @@
     var photos = photoList(record);
     var sourceSection = "<h4>Sumber data</h4>" + sourceHtml(record, options);
     var featureSection = "<h4>Fitur Unggulan</h4>" + featuresHtml(record);
-    var benefitSection = hasValue(record.benefit) ?
+    var featureText = featureValues(record).map(String).join("; ");
+    var duplicateBenefit = hasValue(record.benefit) && String(record.benefit).trim() === featureText;
+    var benefitSection = hasValue(record.benefit) && !duplicateBenefit ?
       "<h4>Keunggulan &amp; Fitur</h4>" +
         '<p class="pk-benefit">' + escapeHtml(record.benefit) + "</p>" : "";
     var right = '<p class="pk-detail-brand"><strong>Brand:</strong> ' + escapeHtml(display(record.brand)) + "</p>" +

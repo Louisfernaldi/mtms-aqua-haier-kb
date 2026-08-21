@@ -129,40 +129,42 @@ function renderKatalog(targetId) {
   var host = document.getElementById(targetId);
   if (!host) return;
   function loadKatalog() {
-    function fallback() {
-      if (window.MTMS_DATA && window.MTMS_DATA.katalog && window.MTMS_DATA.katalog.length) {
-        return Promise.resolve(window.MTMS_DATA.katalog);
-      }
-      return fetch("data/produk-katalog.json").then(function (r) { return r.json(); });
+    function clone(value) {
+      return JSON.parse(JSON.stringify(value || []));
     }
+    function prepare(items, files) {
+      items.forEach(function (p) {
+        if (!p.foto_list || !p.foto_list.length) p.foto_list = computeFotoList(p.model, p.foto, files);
+      });
+      var embedded = (window.MTMS_DATA && window.MTMS_DATA.katalog) || [];
+      var fiturMap = {};
+      embedded.forEach(function (e) { if (e.model && e.fitur && e.fitur.length) fiturMap[e.model] = e.fitur; });
+      items.forEach(function (p) { if (!p.fitur && fiturMap[p.model]) p.fitur = fiturMap[p.model]; });
+      return items;
+    }
+    var embedded = clone((window.MTMS_DATA && window.MTMS_DATA.katalog) || []);
+    var initial = fetch("data/produk-assets.json")
+      .then(function (r) { return r.ok ? r.json() : []; })
+      .catch(function () { return []; })
+      .then(function (files) { return prepare(embedded, files); });
     if (window.location.protocol !== "http:" && window.location.protocol !== "https:") {
-      return Promise.resolve((window.MTMS_DATA && window.MTMS_DATA.katalog) || []);
+      return initial.then(function (items) { return { items: items, refresh: null }; });
     }
-    // coba data live dari API (editable). Kalau gagal, pakai data bawaan.
-    return fetch("api/produk").then(function (r) {
+    var refresh = fetch("api/produk").then(function (r) {
       if (!r.ok) throw new Error("api " + r.status);
       return r.json();
     }).then(function (items) {
       return loadManifest().then(function (files) {
-        items.forEach(function (p) {
-          // foto_list eksplisit (hasil edit/upload) dipakai apa adanya; kalau kosong, hitung otomatis dari file
-          if (!p.foto_list || !p.foto_list.length) {
-            p.foto_list = computeFotoList(p.model, p.foto, files);
-          }
-        });
-        // merge fitur dari data bawaan (data.js) biar "Fitur Unggulan" tetap tampil
-        var embedded = (window.MTMS_DATA && window.MTMS_DATA.katalog) || [];
-        var fiturMap = {};
-        embedded.forEach(function (e) { if (e.model && e.fitur && e.fitur.length) fiturMap[e.model] = e.fitur; });
-        items.forEach(function (p) { if (!p.fitur && fiturMap[p.model]) p.fitur = fiturMap[p.model]; });
         window.MTMS_MANIFEST = files;
         window.MTMS_DATA_LIVE = true;
-        return items;
+        return prepare(items, files);
       });
-    }).catch(fallback);
+    });
+    return initial.then(function (items) { return { items: items, refresh: refresh }; });
   }
   loadKatalog()
-    .then(function (items) {
+    .then(function (payload) {
+      var items = payload.items;
       var state = { group: "Semua", q: "", page: 1, pageSize: 12 };
 
       var chips = document.createElement("div");
@@ -328,6 +330,17 @@ function renderKatalog(targetId) {
       if (requestedModel !== null) {
         var requestedProduct = items.find(function (item) { return item.model === requestedModel; });
         if (requestedProduct) openProductDetail(requestedProduct);
+      }
+      if (payload.refresh) {
+        payload.refresh.then(function (liveItems) {
+          items.splice.apply(items, [0, items.length].concat(liveItems));
+          render();
+          initEditor(items, host);
+          if (requestedModel !== null && document.querySelector('.pk-modal.open[data-mtms-product-detail="true"]')) {
+            var refreshedProduct = items.find(function (item) { return item.model === requestedModel; });
+            if (refreshedProduct) openProductDetail(refreshedProduct);
+          }
+        }).catch(function () {});
       }
     })
     .catch(function () {

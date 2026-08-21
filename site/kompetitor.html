@@ -76,6 +76,8 @@ var container=document.getElementById("comp-categories");
 var emptyState=document.getElementById("comp-empty");
 var compData=null;
 var catalogData=[];
+var liveReady=false;
+window.MTMS_COMPETITOR_LIVE_READY=false;
 
 function grpToCat(g){return{"Single Door":"SB","Top Mount":"TM","Bottom Mount":"BM","Side by Side":"SBS","Multidoor":"MD"}[g]||""}
 function fp(v){return v?"Rp "+String(v).replace(/\B(?=(\d{3})+(?!\d))/g,"."):"Belum tersedia"}
@@ -205,12 +207,28 @@ function normalizeCompetitor(brand,record){
   };
 }
 
+function fillMissingCanonical(canonical,fallback){
+  var detail=Object.assign({},canonical);
+  Object.keys(fallback||{}).forEach(function(key){
+    var value=detail[key];
+    if(value===null||value===undefined||value===""||(Array.isArray(value)&&value.length===0)){
+      detail[key]=fallback[key];
+    }
+  });
+  return detail;
+}
+
 function openDetail(brand,model){
   if(brand==="AQUA"){
     var canonical=findCanonical(model);
     if(!canonical){showToast("Record katalog Produk belum tersedia untuk "+model,"err");return;}
-    window.MTMSProductDetail.open(canonical,{
-      canonicalUrl:"produk.html?model="+encodeURIComponent(model)
+    var source=findCompetitor(brand,model);
+    var detail=fillMissingCanonical(canonical,source?normalizeCompetitor(brand,source):{});
+    window.MTMSProductDetail.open(detail,{
+      canonicalUrl:"produk.html?model="+encodeURIComponent(model),
+      sourceUrl:detail.source_url,
+      sourceLabel:"Sumber "+brand+" "+model,
+      photoUrl:detail.photo_url
     });
     return;
   }
@@ -285,6 +303,9 @@ function renderAll(){
   }
   if(!html){emptyState.style.display="block";container.innerHTML="";}
   else{emptyState.style.display="none";container.innerHTML=html;}
+  container.querySelectorAll(".comp-edit,.comp-del,.comp-add-btn,.comp-add-cell").forEach(function(button){
+    button.disabled=!liveReady;
+  });
   lazyLoad();
 }
 
@@ -596,7 +617,7 @@ function loadCatalog(){
   return fetch("api/produk").then(function(r){
     if(!r.ok)throw new Error("api "+r.status);
     return r.json();
-  }).then(function(data){catalogData=data;}).catch(function(){catalogData=embeddedCatalog();});
+  }).then(function(data){catalogData=data;}).catch(function(){});
 }
 
 function enrichCompetitor(data){
@@ -635,11 +656,17 @@ function loadData(){
   return fetch("api/kompetitor").then(function(r){
     if(!r.ok)throw new Error("api "+r.status);
     return r.json();
-  }).then(function(d){compData=enrichCompetitor(d);}).catch(function(){
-    compData=enrichCompetitor(cloneData(embeddedCompetitor()));
+  }).then(function(d){compData=enrichCompetitor(d);liveReady=true;}).catch(function(){});
+}
+catalogData=cloneData(embeddedCatalog());
+compData=enrichCompetitor(cloneData(embeddedCompetitor()));
+renderAll();
+if(isHttp()){
+  Promise.all([loadCatalog(),loadData()]).then(function(){
+    window.MTMS_COMPETITOR_LIVE_READY=liveReady;
+    renderAll();
   });
 }
-Promise.all([loadCatalog(),loadData()]).then(renderAll);
 })();
 </script>
 </body>

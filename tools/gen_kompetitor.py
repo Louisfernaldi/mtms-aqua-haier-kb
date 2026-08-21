@@ -26,6 +26,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RISET_DIR = r"D:\AI\projects\kompetitor-haier\komparasi-5brand\data\riset_brand"
 BRANDS = ["AQUA", "LG", "MIDEA", "POLYTRON", "SAMSUNG", "SHARP"]
 PDF_SRC = r"D:\AI\projects\kompetitor-haier\komparasi-5brand\out\KOMPARASI-KULKAS-AQUA-5-BRAND-FINAL-v5.pdf"
+MASTER_SRC = r"D:\AI\projects\kompetitor-haier\komparasi-5brand\data\komparasi_master.json"
 PDF_DST_NAME = "KOMPARASI-KULKAS-AQUA-5-BRAND-FINAL-v5.pdf"
 OUT_JSON = os.path.join(ROOT, "site", "data", "kompetitor.json")
 IMAGE_MAP = os.path.join(ROOT, "site", "assets", "kompetitor", "image_map.json")
@@ -125,6 +126,28 @@ def load_brand(name, image_index):
     return {"brand": name, "model_count": len(models), "models": models}
 
 
+def load_groups(brands):
+    with open(MASTER_SRC, "r", encoding="utf-8") as fh:
+        raw_groups = json.load(fh).get("groups", [])
+    known = {
+        brand["brand"]: {model["model"] for model in brand["models"]}
+        for brand in brands
+    }
+    groups = []
+    for raw in raw_groups:
+        aqua = raw.get("aqua_base")
+        if aqua not in known.get("AQUA", set()):
+            continue
+        competitors = {}
+        for competitor in raw.get("competitors", []):
+            brand = str(competitor.get("brand") or "").upper()
+            model = competitor.get("model")
+            if brand in known and model in known[brand]:
+                competitors[brand] = model
+        groups.append({"aqua": aqua, "competitors": competitors})
+    return groups
+
+
 def main():
     image_index = load_image_index()
     brands = [load_brand(b, image_index) for b in BRANDS]
@@ -139,6 +162,7 @@ def main():
         "pdf": pdf,
         "categories": CATEGORIES,
         "brands": brands,
+        "groups": load_groups(brands),
         "sumber": "Riset per brand (website resmi + GFK), lihat price_source per model; angka dihitung mesin dari riset_brand JSON.",
     }
     tmp = OUT_JSON + ".tmp"
