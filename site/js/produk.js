@@ -322,7 +322,15 @@ function renderKatalog(targetId) {
         editBtn.className = "pk-modal-edit";
         editBtn.textContent = "\u270f\ufe0f Edit";
         editBtn.title = "Ubah produk ini";
-        editBtn.onclick = function () { closeModal(); openEdit(p, files); };
+        editBtn.onclick = function () {
+          var cur = p;
+          closeModal();
+          setTimeout(function () {
+            if (window.__mtms_openEdit) window.__mtms_openEdit(cur);
+            else if (typeof openEdit === "function") openEdit(cur, window.MTMS_MANIFEST || []);
+            else alert("Editor belum siap — refresh halaman");
+          }, 80);
+        };
         modal.querySelector(".pk-modal-title").appendChild(editBtn);
         
         // Harga hero di kanan atas
@@ -832,6 +840,8 @@ function initEditor(items, host) {
     return isNaN(n) ? null : n;
   }
 
+  // expose untuk tombol Edit di modal (scope berbeda)
+  window.__mtms_openEdit = function (p) { openEdit(p, window.MTMS_MANIFEST || files); };
   // pasang tombol edit di kartu (dipanggil tiap render lewat hook global)
   window.__mtms_after_render = editBtns;
   editBtns();
