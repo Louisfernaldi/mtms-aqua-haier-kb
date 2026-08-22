@@ -421,11 +421,118 @@ function lazyLoad(){
   }
 }
 
+/* === MINI EDIT SATU-KOLOM (popup kecil per baris spesifikasi) === */
+var miniBusy=false;
+function closeMiniEdit(){
+  document.querySelectorAll(".comp-mini-edit").forEach(function(p){p.remove();});
+}
+document.addEventListener("click",function(e){
+  if(e.target.closest(".comp-mini-edit"))return;
+  if(e.target.closest(".comp-spec-item.comp-spec-editable"))return;
+  closeMiniEdit();
+});
+document.addEventListener("keydown",function(e){
+  if(e.key==="Escape")closeMiniEdit();
+});
+function findModelAny(brand,model){
+  if(!compData||!compData.brands)return null;
+  for(var i=0;i<compData.brands.length;i++){
+    var b=compData.brands[i];
+    if(b.brand!==brand||!Array.isArray(b.models))continue;
+    for(var j=0;j<b.models.length;j++)if(b.models[j].model===model)return b.models[j];
+  }
+  return null;
+}
+function openMiniEdit(row){
+  closeMiniEdit();
+  var key=row.getAttribute("data-spec-key"),
+      brand=row.getAttribute("data-edit-brand"),
+      name=row.getAttribute("data-edit-name"),
+      modelId=brand+"::"+name,
+      label=row.querySelector("dt")?row.querySelector("dt").textContent:key;
+  var m=findModelAny(brand,name);
+  if(!m){doEdit(brand,name);return;}
+  var entry=(m.spec_values&&typeof m.spec_values==="object")?m.spec_values[key]:null;
+  var raw=(entry&&entry.value!==undefined&&entry.value!==null)?entry.value:"";
+  if(Array.isArray(raw))raw=raw.map(String).join(", ");
+  var pop=document.createElement("div");
+  pop.className="comp-mini-edit";pop.setAttribute("role","dialog");
+  pop.setAttribute("aria-label","Ubah "+label+" "+brand+" "+name);
+  pop.innerHTML='<strong>'+esc(label)+' — '+esc(brand)+' '+esc(name)+'</strong>'+
+    '<input type="text" class="comp-mini-input" aria-label="Nilai '+esc(label)+'">'+
+    '<div class="comp-mini-actions"><button type="button" class="comp-mini-save">Simpan</button>'+
+    '<button type="button" class="comp-mini-cancel">Batal</button></div>'+
+    '<p class="comp-mini-msg" role="status"></p>';
+  document.body.appendChild(pop);
+  var r=row.getBoundingClientRect(),pw=Math.min(320,window.innerWidth-24);
+  pop.style.position="fixed";
+  pop.style.width=pw+"px";
+  var left=Math.min(Math.max(12,r.left),window.innerWidth-pw-12);
+  var top=r.bottom+6;
+  if(top+140>window.innerHeight)top=Math.max(12,r.top-146);
+  pop.style.left=left+"px";pop.style.top=top+"px";
+  var input=pop.querySelector(".comp-mini-input"),msg=pop.querySelector(".comp-mini-msg");
+  input.value=String(raw);input.focus();input.select();
+  function miniMsg(t,kind){msg.textContent=t;msg.className="comp-mini-msg"+(kind?" is-"+kind:"");}
+  function save(){
+    if(miniBusy)return;
+    var v=input.value.trim();
+    if(!v){miniMsg("Isi nilainya dulu.","error");return;}
+    if(!compSha){miniMsg("Muat ulang halaman dulu supaya SHA terbaru.","error");return;}
+    miniBusy=true;
+    var buttons=pop.querySelectorAll("button");buttons.forEach(function(b){b.disabled=true;});
+    fetch("api/kompetitor",{method:"PATCH",credentials:"same-origin",
+      headers:{"Content-Type":"application/json","If-Match":"\""+compSha+"\""},
+      body:JSON.stringify({action:"set_spec_value",model_id:modelId,key:key,entry:{value:v}})
+    }).then(function(r){
+      return r.json().catch(function(){return{};}).then(function(j){return{status:r.status,body:j};});
+    }).then(function(res){
+      miniBusy=false;
+      if(res.status===200&&res.body.ok){
+        compSha=res.body.sha||compSha;
+        m.spec_values=m.spec_values&&typeof m.spec_values==="object"?m.spec_values:{};
+        var prev=m.spec_values[key]&&typeof m.spec_values[key]==="object"?m.spec_values[key]:{};
+        var parsed=v;
+        if(/^[-+]?[0-9]+([.][0-9]+)?$/.test(v))parsed=Number(v);
+        m.spec_values[key]={value:parsed,
+          source_url:prev.source_url||null,source_kind:prev.source_kind||null,
+          verified_at:prev.verified_at||new Date().toISOString(),
+          origin:"user",user_locked:true};
+        var cat=null;
+        if(window.MTMSSpecCategories){specCategories.forEach(function(c){if(c.key===key)cat=c;});}
+        ddUpdate(row,m.spec_values[key],cat);
+        closeMiniEdit();
+        showToast("Tersimpan: "+label+" "+brand+" "+name,"ok");
+        return;
+      }
+      buttons.forEach(function(b){b.disabled=false;miniBusy=false;});
+      if(res.status===401)miniMsg("Login dulu untuk menyimpan.","error");
+      else if(res.status===412||res.status===409){miniMsg("Data berubah di luar. Memuat ulang...","error");
+        loadData().then(function(){window.MTMS_COMPETITOR_LIVE_READY=liveReady;renderAll();refreshOpenDetail();});}
+      else if(res.status===403)miniMsg("Akses ditolak.","error");
+      else miniMsg((res.body&&res.body.error)||"Gagal menyimpan.","error");
+    }).catch(function(){
+      miniBusy=false;buttons.forEach(function(b){b.disabled=false;});
+      miniMsg("Jaringan bermasalah. Coba lagi.","error");
+    });
+  }
+  pop.querySelector(".comp-mini-save").addEventListener("click",save);
+  pop.querySelector(".comp-mini-cancel").addEventListener("click",closeMiniEdit);
+  input.addEventListener("keydown",function(ev){
+    if(ev.key==="Enter"){ev.preventDefault();save();}
+  });
+}
+function ddUpdate(row,entry,category){
+  var dd=row.querySelector("dd");if(!dd)return;
+  var text=window.MTMSSpecCategories?window.MTMSSpecCategories.formatValue(entry,category):String(entry.value==null?"Belum tersedia":entry.value);
+  dd.textContent=text;
+  row.classList.toggle("is-missing",text==="Belum tersedia");
+}
+
 /* === EVENT DELEGATION for edit/delete/add buttons === */
 container.addEventListener("click",function(e){
   var btn=e.target.closest(".comp-spec-item.comp-spec-editable");
-  if(btn&&liveReady&&window.MTMSDynamicSpecEditor&&window.MTMSDynamicSpecEditor.openFor&&
-     window.MTMSDynamicSpecEditor.openFor(btn.getAttribute("data-edit-model"),btn.getAttribute("data-spec-key"))){return;}
+  if(btn&&liveReady){openMiniEdit(btn);return;}
   if(btn){doEdit(btn.getAttribute("data-edit-brand"),btn.getAttribute("data-edit-name"));return;}
   btn=e.target.closest(".comp-edit");
   if(btn){doEdit(btn.dataset.brand,btn.dataset.model);return;}

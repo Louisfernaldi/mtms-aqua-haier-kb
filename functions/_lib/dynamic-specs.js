@@ -338,8 +338,10 @@ export function validateCategoryDocument(document) {
     const item = items[index];
     if (!item || item.key !== key) throw new HttpError(400, "kategori inti tidak boleh rename, hapus, atau diurut ulang");
     if (item.order !== (index + 1) * 10) throw new HttpError(400, "order kategori inti wajib 10..120");
-    if (item.active !== true || item.comparison !== true) {
-      throw new HttpError(400, "kategori inti wajib active dan comparison");
+    // Kebijakan owner 22 Agu 2026: inti wajib selalu AKTIF (anti-yatim);
+    // pilihan tampil di tabel utama (comparison) bebas diatur owner.
+    if (item.active !== true) {
+      throw new HttpError(400, "kategori inti wajib active");
     }
   });
   items.slice(CORE_CATEGORY_KEYS.length).forEach(function (item) {
@@ -399,8 +401,8 @@ export function mutateCategories(document, operation) {
     });
     if (CORE_CATEGORY_KEYS.includes(key)) {
       const coreIndex = CORE_CATEGORY_KEYS.indexOf(key);
-      if (item.order !== (coreIndex + 1) * 10 || item.active !== true || item.comparison !== true) {
-        throw new HttpError(400, "kategori inti tidak boleh dinonaktifkan, dikeluarkan dari comparison, atau diurut ulang");
+      if (item.order !== (coreIndex + 1) * 10 || item.active !== true) {
+        throw new HttpError(400, "kategori inti tidak boleh dinonaktifkan atau diurut ulang");
       }
     }
   } else {

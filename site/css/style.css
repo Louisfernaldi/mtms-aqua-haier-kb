@@ -826,6 +826,18 @@ footer { border-top: 1px solid var(--border); background: var(--bg-card); margin
   .comp-spec-item dd{font-size:.82rem}
 }
 
+.comp-mini-edit{position:fixed;z-index:210;display:flex;flex-direction:column;gap:8px;padding:14px;border:1px solid var(--accent);border-radius:12px;background:var(--bg-card);box-shadow:0 10px 34px rgba(6,16,22,.28)}
+.comp-mini-edit strong{font-size:.86rem;color:var(--text);overflow-wrap:anywhere}
+.comp-mini-input{width:100%;box-sizing:border-box;padding:9px 11px;border:1px solid var(--border);border-radius:8px;background:var(--bg);color:var(--text);font-size:.95rem}
+.comp-mini-input:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.comp-mini-actions{display:flex;gap:8px}
+.comp-mini-actions button{min-height:44px;min-width:64px;padding:8px 16px;border-radius:8px;border:1px solid var(--border);background:var(--bg-soft);color:var(--text);font:700 .84rem/1.2 var(--font);cursor:pointer}
+.comp-mini-actions .comp-mini-save{border-color:var(--accent);background:var(--accent-soft);color:var(--accent-dark)}
+.comp-mini-actions button:hover:not(:disabled),.comp-mini-actions button:focus-visible{outline:none;border-color:var(--accent)}
+.comp-mini-actions button:disabled{opacity:.55;cursor:wait}
+.comp-mini-msg{margin:0;min-height:1.1em;font-size:.8rem;color:var(--text-muted)}
+.comp-mini-msg.is-error{color:#b42318;font-weight:700}
+
 /* === Editor spesifikasi dinamis (panel tiket 02, bukan modal perbandingan) === */
 .ds-editor-entry{position:relative;display:flex;min-width:0;max-width:100%;flex:0 1 auto;flex-direction:column;align-items:flex-end;gap:5px;margin-left:auto}
 .ds-editor-fab{position:static;border:0;border-radius:12px;background:#006b96;color:#fff;padding:10px 16px;font:700 .88rem var(--font);box-shadow:0 6px 20px rgba(0,102,204,.22);cursor:pointer;min-width:44px;min-height:44px;white-space:nowrap}

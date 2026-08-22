@@ -379,6 +379,18 @@ class Handler(SimpleHTTPRequestHandler):
 
     def do_PATCH(self):
         path = self.path.split("?", 1)[0]
+        if path == "/api/kompetitor":
+            if not self.research:
+                return self._json({"error": "checker disabled"}, 404)
+            body = self._read_body()
+            self._research_log({"method": "PATCH", "path": "/api/kompetitor", "body": body,
+                                "if_match": self.headers.get("If-Match") or ""})
+            if (not isinstance(body, dict) or body.get("action") != "set_spec_value" or
+                    not isinstance(body.get("model_id"), str) or not isinstance(body.get("key"), str)):
+                return self._json({"error": "invalid set_spec_value"}, 400)
+            if (self.headers.get("If-Match") or "") != '"' + FIXTURE_SHA + '"':
+                return self._json({"error": "base SHA / If-Match tidak cocok"}, 412)
+            return self._json({"ok": True, "sha": FIXTURE_SHA, "model": {"ok": True}}, 200)
         if path == "/api/research":
             if not self.research:
                 return self._json({"error": "checker research disabled"}, 404)
@@ -1276,45 +1288,73 @@ async def assert_row_edit_focus(page, width, label):
         fail(label + ": data-edit-model hilang/salah: " + repr(model_id))
     await row.scroll_into_view_if_needed()
     await row.click()
-    shell = page.locator(".ds-editor-shell")
+    pop = page.locator(".comp-mini-edit")
     try:
-        await shell.wait_for(state="visible", timeout=4000)
+        await pop.wait_for(state="visible", timeout=4000)
     except AssertionError:
-        fail(label + ": klik baris spesifikasi tidak membuka editor")
-    select = shell.locator("[data-ds-model-select]")
-    if await select.count() != 1 or (await select.input_value()) != model_id:
-        fail(label + ": editor tidak membuka model baris: %s != %s" %
-             ((await select.input_value()) if await select.count() else None, model_id))
-    focused_key = await page.evaluate(
-        "document.activeElement && document.activeElement.getAttribute('data-ds-spec-key')")
-    if focused_key != "form_factor":
-        fail(label + ": fokus tidak mendarat di field form_factor: " + repr(focused_key))
-    await page.keyboard.press("Escape")
-    await shell.wait_for(state="hidden", timeout=4000)
+        fail(label + ": klik baris tidak memunculkan popup ubah-satu-kolom")
+    mini_input = pop.locator(".comp-mini-input")
+    if await mini_input.count() != 1:
+        fail(label + ": input popup mini hilang")
+    focused_class = await page.evaluate("document.activeElement && document.activeElement.className") or ""
+    if "comp-mini-input" not in focused_class:
+        fail(label + ": fokus tidak mendarat di input popup mini: " + repr(focused_class))
+    await mini_input.fill("999")
+    log_len_before = len(Handler.research["log"])
+    patch_before = len([e for e in Handler.research["log"]
+                        if e.get("method") == "PATCH" and e.get("path") == "/api/kompetitor"])
+    await pop.locator(".comp-mini-save").click()
+    saved_entry = await wait_research_log(lambda entry: entry.get("method") == "PATCH" and
+                                          entry.get("path") == "/api/kompetitor" and
+                                          isinstance(entry.get("body"), dict) and
+                                          entry["body"].get("key") == "form_factor",
+                                          timeout_ms=5000)
+    fresh_entries = Handler.research["log"][log_len_before:]
+    if len([e for e in fresh_entries if e.get("method") == "PATCH" and
+            e.get("path") == "/api/kompetitor"]) != 1:
+        recent = [e for e in Handler.research["log"]
+                  if e.get("method") == "PATCH" and e.get("path") == "/api/kompetitor"][-6:]
+        fail(label + ": simpan mini mengirim PATCH tidak tepat satu; terakhir: " +
+             json.dumps(recent, ensure_ascii=False)[:1200])
+    if saved_entry["if_match"] != '"' + FIXTURE_SHA + '"':
+        fail(label + ": simpan mini wajib bawa If-Match SHA terkini: " + repr(saved_entry["if_match"]))
+    body = saved_entry["body"]
+    if body.get("action") != "set_spec_value" or body.get("model_id") != model_id or \
+            body.get("entry", {}).get("value") != "999":
+        fail(label + ": payload simpan mini salah: " + json.dumps(body, ensure_ascii=False))
+    try:
+        await page.wait_for_function(
+            """selector => {
+                const row = document.querySelector(selector);
+                const dd = row && row.querySelector('dd');
+                return !!dd && dd.textContent.indexOf('999') !== -1;
+            }""", arg='.comp-category-section tbody tr td.comp-aqua .comp-spec-item[data-spec-key="form_factor"]',
+            timeout=4000)
+    except Exception:
+        fail(label + ": nilai kolom tidak terbarui jadi 999 setelah simpan")
 
+    # Escape menutup popup tanpa menyimpan
+    await row.click()
+    try:
+        await pop.wait_for(state="visible", timeout=3000)
+    except AssertionError:
+        fail(label + ": klik baris kedua tidak memunculkan popup lagi")
+    await page.keyboard.press("Escape")
+    try:
+        await pop.wait_for(state="hidden", timeout=2500)
+    except Exception:
+        fail(label + ": Escape tidak menutup popup mini")
+
+    # Sabotase: class editable dihapus -> klik tidak boleh memunculkan popup
     await row.evaluate("node => node.classList.remove('comp-spec-editable')")
-    bare_row = page.locator('.comp-category-section').first.locator(
-        'tbody tr').first.locator('td.comp-aqua .comp-spec-item[data-spec-key="form_factor"]')
+    bare_row = page.locator('.comp-category-section').first.locator('tbody tr').first.locator(
+        'td.comp-aqua .comp-spec-item[data-spec-key="form_factor"]')
     if await bare_row.count() != 1:
         fail(label + ": baris sabotase hilang dari DOM")
-    detected = False
-    try:
-        await bare_row.click()
-        sabotage_shell = page.locator(".ds-editor-shell")
-        await sabotage_shell.wait_for(state="visible", timeout=2500)
-        await page.keyboard.press("Escape")
-    except Exception:
-        detected = True
-    finally:
-        if await page.locator(".ds-editor-shell").count() and \
-                not await page.evaluate("document.querySelector('.ds-editor-shell').hidden"):
-            await page.keyboard.press("Escape")
-            try:
-                await page.locator(".ds-editor-shell").wait_for(state="hidden", timeout=2000)
-            except Exception:
-                pass
-    if not detected:
-        fail(label + ": sabotase baris non-editable tidak membuat verifier merah")
+    await bare_row.click()
+    await page.wait_for_timeout(900)
+    if await page.locator(".comp-mini-edit").count():
+        fail(label + ": sabotase baris non-editable masih memunculkan popup")
 
 
 async def page_sleep(ms):
@@ -1921,8 +1961,7 @@ async def run_browser(base, fixture):
                 await page.get_by_label("Bandingkan AQUA dengan", exact=True).select_option(competitor_brand)
             await assert_main_table_contract(page, categories, competitor_fixture, competitor_brand)
             await assert_inline_editor(page, width, "kompetitor %dpx" % width)
-            if width > 600:
-                await assert_row_edit_focus(page, width, "kompetitor %dpx" % width)
+            await assert_row_edit_focus(page, width, "kompetitor %dpx" % width)
             await assert_tap_targets(page, "kompetitor tabel %dpx" % width)
 
             edit = page.locator('.comp-edit[data-brand="AQUA"][data-model="%s"]' % aqua["model"])
