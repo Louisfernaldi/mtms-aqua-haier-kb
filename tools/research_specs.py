@@ -455,7 +455,16 @@ def run_worker(
         print("MODEL_MISMATCH", file=sys.stderr)
         return 1
 
-    if job.get("status") != "queued":
+    # Klaim ulang: status queued, ATAU running yang tersangkut karena semua
+    # sumber gagal pada percobaan sebelumnya (kode LAST_FETCH_FAILED) dan
+    # kuota attempts-nya masih ada. Ini pasangan dari izin dispatch-ulang di
+    # functions/api/research.js (dispatchIsEligible).
+    retryable = (
+        job.get("status") == "running"
+        and job.get("error_code") == "LAST_FETCH_FAILED"
+        and int(job.get("attempts", 0)) < int(job.get("max_attempts", 2))
+    )
+    if job.get("status") != "queued" and not retryable:
         print("SKIP_ALREADY_PROCESSED")
         return 0
 

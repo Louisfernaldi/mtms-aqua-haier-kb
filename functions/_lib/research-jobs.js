@@ -286,8 +286,13 @@ export function validateQueueDocument(document) {
         !Array.isArray(job.candidates) || job.candidates.length > 100 ||
         !job.sources.every(function (source) {
           const safe = safeOfficialSourceUrl(source && source.url, brandFromModelId(job.model_id));
+          // Receipt hasil worker boleh menggantikan kind dengan outcome/http_status/checked_at,
+          // tapi host URL tetap diwajibkan resmi (anti SSRF) di semua bentuk.
+          const receipt = source && typeof source === "object" && !Array.isArray(source) &&
+            (typeof source.outcome === "string" || typeof source.http_status === "number");
           return source && typeof source === "object" && !Array.isArray(source) &&
-            SOURCE_KINDS.has(source.source_kind) && typeof source.url === "string" && source.url === safe;
+            typeof source.url === "string" && source.url === safe &&
+            (receipt || SOURCE_KINDS.has(source.source_kind));
         }) ||
         !Number.isInteger(job.attempts) || job.attempts < 0 || job.attempts > MAX_DISPATCH_ATTEMPTS ||
         job.max_attempts !== MAX_DISPATCH_ATTEMPTS) {

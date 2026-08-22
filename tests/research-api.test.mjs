@@ -754,6 +754,111 @@ test("queue CAS retry cap is initial attempt plus at most two recomputations", a
   });
 });
 
+function workerReceiptJob(overrides = {}) {
+  const job = jobFixture(null, "2".repeat(32));
+  job.status = "running";
+  job.attempts = 1;
+  job.started_at = "2026-08-22T09:47:04Z";
+  job.error_code = "LAST_FETCH_FAILED";
+  job.sources = [{
+    url: "https://aquaelektronik.com/product/model-1",
+    outcome: "http_error",
+    http_status: 403,
+    checked_at: "2026-08-22T09:47:05Z",
+  }];
+  job.dispatch = {
+    status: "sent",
+    attempts: 1,
+    max_attempts: 2,
+    last_attempt_at: "2026-08-22T09:46:45.542Z",
+    last_success_at: "2026-08-22T09:46:48.033Z",
+    error_code: null,
+  };
+  return Object.assign(job, overrides);
+}
+
+test("worker receipt without source_kind stays readable; hostile host receipt is rejected", async () => {
+  const healthy = emptyQueue();
+  const goodJob = workerReceiptJob();
+  healthy.jobs[goodJob.job_id] = goodJob;
+  const okState = makeGithubMock({ queue: healthy });
+  await withMock(okState, async () => {
+    const currentEnv = env();
+    const response = await onRequestGet({
+      request: await request("GET", "/api/research?job_id=" + goodJob.job_id, currentEnv),
+      env: currentEnv,
+    });
+    assert.equal(response.status, 200);
+    const payload = await response.json();
+    assert.equal(payload.status, "running");
+    assert.equal(payload.error_code, "LAST_FETCH_FAILED");
+  });
+
+  const hostile = emptyQueue();
+  const badJob = workerReceiptJob({
+    sources: [{
+      url: "https://evil.example/product/model-1",
+      outcome: "http_error",
+      http_status: 200,
+      checked_at: "2026-08-22T09:47:05Z",
+    }],
+  });
+  hostile.jobs[badJob.job_id] = badJob;
+  const badState = makeGithubMock({ queue: hostile });
+  await withMock(badState, async () => {
+    const currentEnv = env();
+    const response = await onRequestGet({
+      request: await request("GET", "/api/research?job_id=" + badJob.job_id, currentEnv),
+      env: currentEnv,
+    });
+    assert.equal(response.status, 502);
+    const payload = await response.json();
+    assert.equal(payload.error, "RESEARCH_QUEUE_INVALID");
+  });
+});
+
+test("running job stuck on failed fetch is redispatched once per repeat POST", async () => {
+  const queue = emptyQueue();
+  const stuck = workerReceiptJob({
+    dispatch: {
+      status: "failed",
+      attempts: 1,
+      max_attempts: 2,
+      last_attempt_at: "2026-08-22T09:46:45.542Z",
+      last_success_at: null,
+      error_code: "DISPATCH_HTTP_500",
+    },
+  });
+  queue.jobs[stuck.job_id] = stuck;
+  const mockState = makeGithubMock({ queue });
+  await withMock(mockState, async ({ calls, state }) => {
+    const currentEnv = env({ RESEARCH_WORKFLOW_TOKEN: "fake-workflow-token" });
+    const runPost = async () => {
+      const pending = [];
+      const response = await onRequestPost({
+        request: await request("POST", "/api/research", currentEnv, { model_id: "AQUA::MODEL-1" }),
+        env: currentEnv,
+        waitUntil(promise) { pending.push(promise); },
+      });
+      await Promise.all(pending);
+      return response;
+    };
+    const first = await runPost();
+    assert.equal(first.status, 202);
+    const body = await first.json();
+    assert.equal(body.job_id, stuck.job_id);
+    const dispatches = calls.filter(
+      (call) => call.method === "POST" && call.url.includes("/actions/workflows/research-specs.yml/dispatches"));
+    assert.equal(dispatches.length, 1);
+    assert.equal(state.queue.jobs[stuck.job_id].dispatch.attempts, 2);
+    const second = await runPost();
+    assert.equal(second.status, 202);
+    assert.equal(calls.filter(
+      (call) => call.method === "POST" && call.url.includes("/actions/workflows/research-specs.yml/dispatches")).length, 1,
+      "attempts sudah mencapai max_attempts; tidak boleh dispatch lagi");
+  });
+});
+
 function own(value, key) {
   return Object.prototype.hasOwnProperty.call(value, key);
 }

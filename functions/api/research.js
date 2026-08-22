@@ -125,13 +125,15 @@ async function locateCurrentTarget(env, modelId) {
 }
 
 function dispatchIsEligible(job, nowMs) {
-  if (!job || job.status !== "queued") return false;
+  const active = job && (job.status === "queued" || job.status === "running");
+  if (!active) return false;
   const dispatch = job.dispatch && typeof job.dispatch === "object" ? job.dispatch : {};
   const attempts = Number.isInteger(dispatch.attempts) ? dispatch.attempts : 0;
   if (attempts >= MAX_DISPATCH_ATTEMPTS) return false;
   if (attempts === 0 || dispatch.status === "failed") return true;
   const lastAttempt = Date.parse(dispatch.last_attempt_at || "");
-  return (dispatch.status === "pending" || dispatch.status === "dispatching") &&
+  return (dispatch.status === "pending" || dispatch.status === "dispatching" ||
+      dispatch.status === "sent") &&
     (!Number.isFinite(lastAttempt) || nowMs - lastAttempt >= DISPATCH_STALE_MS);
 }
 
