@@ -369,7 +369,13 @@ def default_fetch_fn(url: str, timeout_s: float, max_bytes: int) -> FetchResult:
     redirects = 0
     while True:
         try:
-            req = url_request.Request(current, method="GET", headers={"User-Agent": "mtms-research-specs"})
+            req = url_request.Request(current, method="GET", headers={
+                "User-Agent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                               "AppleWebKit/537.36 (KHTML, like Gecko) "
+                               "Chrome/126.0.0.0 Safari/537.36"),
+                "Accept": "text/html,application/xhtml+xml",
+                "Accept-Language": "id-ID,id;q=0.9",
+            })
             with url_request.urlopen(req, timeout=timeout_s) as resp:
                 status = getattr(resp, "status", None) or getattr(resp, "code", None)
                 if status in (301, 302, 303, 307, 308) and redirects < 2:
