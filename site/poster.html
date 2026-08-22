@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Poster B2B AQUA</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/poster.css">
+  <script src="js/poster.js" defer></script>
+</head>
+<body>
+  <header>
+  <div class="nav">
+    <div class="brand"><img src="assets/Haier_Logo.svg" alt="Haier" class="brand-logo"><span class="brand-name">MTMS</span></div>
+    <button class="nav-toggle" aria-label="Menu" onclick="toggleNav()">☰</button>
+    <nav class="nav-links">
+      <a href="index.html">Beranda</a>
+      <a href="induksi.html">Induksi</a>
+      <a href="produk.html">Produk</a>
+      <a href="kompetitor.html">Kompetitor</a>
+      <a href="rotasi.html">Rotasi</a>
+      <a href="proses.html">Proses</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="file.html">File</a>
+      <a href="pasar.html">Pasar</a>
+      <a href="benchmark.html">Benchmark</a>
+      <a href="strategi.html">Strategi</a>
+      <a href="poster.html" class="active">Poster</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" onclick="openSearch()">Cari</button>
+      <button class="icon-btn" onclick="toggleTheme()">Mode</button>
+    </div>
+  </div>
+</header>
+
+<main class="poster-shell">
+    <header class="hero">
+      <p class="eyebrow">Materi internal</p>
+      <h1>Poster B2B Semua Lini</h1>
+      <p class="hero-copy">Empat lini produk, tiga format siap pakai (feed, story, cetak A4). Teks dan angka ditempel mesin dari data benchmark - nol typo.</p>
+      <p id="posterSummary" class="summary" aria-live="polite">Memuat daftar poster&hellip;</p>
+    </header>
+
+    <section class="controls" aria-label="Filter poster">
+      <label>
+        <span>Lini</span>
+        <select id="liniFilter">
+          <option value="">Semua lini</option>
+        </select>
+      </label>
+      <label>
+        <span>Format</span>
+        <select id="fmtFilter">
+          <option value="">Semua format</option>
+        </select>
+      </label>
+    </section>
+
+    <section class="grid-poster" id="gridPoster" aria-live="polite"></section>
+  </main>
+
+
+<footer>
+  <div class="footer-in">
+    <span>MTMS AQUA HAIER — Knowledge Hub · Management Trainee 2026</span>
+    <span>Halaman: Poster</span>
+  </div>
+</footer>
+
+<div class="search-overlay" id="search-overlay">
+  <div class="search-box">
+    <input id="search-input" placeholder="Cari di semua materi..." oninput="doSearch()">
+    <div class="search-results" id="search-results"></div>
+  </div>
+</div>
+<script src="js/theme.js"></script>
+<script src="js/data.js"></script>
+<script src="js/search.js"></script>
+<script>
+function toggleNav() {
+  document.querySelector('.nav-links').classList.toggle('open');
+}
+</script>
+
+</body>
+</html>

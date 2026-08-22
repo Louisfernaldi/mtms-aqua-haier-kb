@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Strategi Pasar Kulkas</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/strategi.css">
+  <script src="js/charts.js" defer></script>
+  <script src="js/strategi.js" defer></script>
+</head>
+<body>
+  <header>
+  <div class="nav">
+    <div class="brand"><img src="assets/Haier_Logo.svg" alt="Haier" class="brand-logo"><span class="brand-name">MTMS</span></div>
+    <button class="nav-toggle" aria-label="Menu" onclick="toggleNav()">☰</button>
+    <nav class="nav-links">
+      <a href="index.html">Beranda</a>
+      <a href="induksi.html">Induksi</a>
+      <a href="produk.html">Produk</a>
+      <a href="kompetitor.html">Kompetitor</a>
+      <a href="rotasi.html">Rotasi</a>
+      <a href="proses.html">Proses</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="file.html">File</a>
+      <a href="pasar.html">Pasar</a>
+      <a href="benchmark.html">Benchmark</a>
+      <a href="strategi.html" class="active">Strategi</a>
+      <a href="poster.html">Poster</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" onclick="openSearch()">Cari</button>
+      <button class="icon-btn" onclick="toggleTheme()">Mode</button>
+    </div>
+  </div>
+</header>
+
+<main class="strategi-shell">
+    <header class="hero">
+      <p class="eyebrow">Insight internal</p>
+      <h1>Strategi Pasar Kulkas</h1>
+      <p class="hero-copy">Analisa posisi AQUA dan arah pertumbuhan berbasis data retail GFK - setiap angka bersumber, bukan klaim.</p>
+      <p id="strategiSummary" class="summary" aria-live="polite">Memuat data strategi&hellip;</p>
+      <p class="generated">Data digenerate: <time id="generatedAt">&ndash;</time></p>
+    </header>
+
+    <section class="panel" aria-labelledby="posisiTitle">
+      <div class="panel-heading">
+        <div>
+          <p class="panel-kicker">Posisi nasional</p>
+          <h2 id="posisiTitle">Unit vs nilai</h2>
+        </div>
+        <p id="posisiCount" class="result-count" aria-live="polite"></p>
+      </div>
+      <div id="posisiCards" class="card-row"></div>
+      <div class="chart-grid">
+        <div class="chart-cell">
+          <h3>Share unit - top 5 brand</h3>
+          <div id="chartUnit" class="chart-host"></div>
+        </div>
+        <div class="chart-cell">
+          <h3>Share nilai - top 5 brand</h3>
+          <div id="chartValue" class="chart-host"></div>
+        </div>
+      </div>
+      <p id="posisiSources" class="source-row"></p>
+    </section>
+
+    <section class="panel" aria-labelledby="regionTitle">
+      <div class="panel-heading">
+        <div>
+          <p class="panel-kicker">Geografi</p>
+          <h2 id="regionTitle">Share AQUA per region</h2>
+        </div>
+        <p id="regionCount" class="result-count" aria-live="polite"></p>
+      </div>
+      <div id="chartRegion" class="chart-host chart-tall"></div>
+      <div id="regionTable" class="mini-table"></div>
+      <p id="regionSources" class="source-row"></p>
+    </section>
+
+    <section class="panel" aria-labelledby="kelasTitle">
+      <div class="panel-heading">
+        <div>
+          <p class="panel-kicker">Segmen harga</p>
+          <h2 id="kelasTitle">Share AQUA per kelas harga</h2>
+        </div>
+        <p id="kelasCount" class="result-count" aria-live="polite"></p>
+      </div>
+      <div id="chartKelas" class="chart-host chart-tall"></div>
+      <p id="kelasSources" class="source-row"></p>
+    </section>
+
+    <section class="panel" aria-labelledby="tipeTitle">
+      <div class="panel-heading">
+        <div>
+          <p class="panel-kicker">Bentuk produk</p>
+          <h2 id="tipeTitle">Share AQUA per tipe pintu</h2>
+        </div>
+        <p id="tipeCount" class="result-count" aria-live="polite"></p>
+      </div>
+      <div id="chartTipe" class="chart-host"></div>
+      <p id="tipeSources" class="source-row"></p>
+    </section>
+
+    <section class="panel panel-narasi" aria-labelledby="dilemaTitle">
+      <div class="panel-heading">
+        <div>
+          <p class="panel-kicker">Analisa</p>
+          <h2 id="dilemaTitle">Dilema dealer vs B2C</h2>
+        </div>
+      </div>
+      <div id="dilemaBody" class="narasi-body"></div>
+      <p id="dilemaSources" class="source-row"></p>
+    </section>
+
+    <section class="panel" aria-labelledby="rekomendasiTitle">
+      <div class="panel-heading">
+        <div>
+          <p class="panel-kicker">Arah kerja</p>
+          <h2 id="rekomendasiTitle">Rekomendasi bertingkat</h2>
+        </div>
+        <p id="rekomendasiCount" class="result-count" aria-live="polite"></p>
+      </div>
+      <div id="rekomendasiList" class="rekomendasi-list"></div>
+    </section>
+  </main>
+
+
+<footer>
+  <div class="footer-in">
+    <span>MTMS AQUA HAIER — Knowledge Hub · Management Trainee 2026</span>
+    <span>Halaman: Strategi</span>
+  </div>
+</footer>
+
+<div class="search-overlay" id="search-overlay">
+  <div class="search-box">
+    <input id="search-input" placeholder="Cari di semua materi..." oninput="doSearch()">
+    <div class="search-results" id="search-results"></div>
+  </div>
+</div>
+<script src="js/theme.js"></script>
+<script src="js/data.js"></script>
+<script src="js/search.js"></script>
+<script>
+function toggleNav() {
+  document.querySelector('.nav-links').classList.toggle('open');
+}
+</script>
+
+</body>
+</html>

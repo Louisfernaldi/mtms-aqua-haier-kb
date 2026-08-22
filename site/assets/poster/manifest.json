@@ -1,0 +1,67 @@
+{
+ "meta": {
+  "sumber_angka": "benchmark-harga.json"
+ },
+ "posters": [
+  {
+   "file": "assets/poster/coldchain-a4.png",
+   "lini": "coldchain",
+   "format": "a4"
+  },
+  {
+   "file": "assets/poster/coldchain-feed.png",
+   "lini": "coldchain",
+   "format": "feed"
+  },
+  {
+   "file": "assets/poster/coldchain-story.png",
+   "lini": "coldchain",
+   "format": "story"
+  },
+  {
+   "file": "assets/poster/kulkas-a4.png",
+   "lini": "kulkas",
+   "format": "a4"
+  },
+  {
+   "file": "assets/poster/kulkas-feed.png",
+   "lini": "kulkas",
+   "format": "feed"
+  },
+  {
+   "file": "assets/poster/kulkas-story.png",
+   "lini": "kulkas",
+   "format": "story"
+  },
+  {
+   "file": "assets/poster/tvac-a4.png",
+   "lini": "tvac",
+   "format": "a4"
+  },
+  {
+   "file": "assets/poster/tvac-feed.png",
+   "lini": "tvac",
+   "format": "feed"
+  },
+  {
+   "file": "assets/poster/tvac-story.png",
+   "lini": "tvac",
+   "format": "story"
+  },
+  {
+   "file": "assets/poster/water-a4.png",
+   "lini": "water",
+   "format": "a4"
+  },
+  {
+   "file": "assets/poster/water-feed.png",
+   "lini": "water",
+   "format": "feed"
+  },
+  {
+   "file": "assets/poster/water-story.png",
+   "lini": "water",
+   "format": "story"
+  }
+ ]
+}

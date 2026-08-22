@@ -1,0 +1,317 @@
+{
+ "meta": {
+  "digenerate": "2026-08-21T21:30:02+07:00",
+  "sumber": "site/data/insight/gfk-market-share.json",
+  "periode": "Jul 2024 - Jun 2025",
+  "penulis_narasi": "Sharleen (analis) - angka terisi mesin dari sumber"
+ },
+ "posisi_nasional": {
+  "unit_share": 0.146728819777,
+  "value_share": 0.122500390753,
+  "unit_rank": 3,
+  "value_rank": 4,
+  "asp_index": 0.835,
+  "top5_unit": [
+   {
+    "brand": "SHARP",
+    "share": 0.32262973332
+   },
+   {
+    "brand": "POLYTRON",
+    "share": 0.269918291809
+   },
+   {
+    "brand": "AQUA",
+    "share": 0.146728819777
+   },
+   {
+    "brand": "LG",
+    "share": 0.106997122997
+   },
+   {
+    "brand": "SAMSUNG",
+    "share": 0.049298450808
+   }
+  ],
+  "top5_value": [
+   {
+    "brand": "SHARP",
+    "share": 0.278056168592
+   },
+   {
+    "brand": "POLYTRON",
+    "share": 0.184782985198
+   },
+   {
+    "brand": "LG",
+    "share": 0.15329613439
+   },
+   {
+    "brand": "AQUA",
+    "share": 0.122500390753
+   },
+   {
+    "brand": "SAMSUNG",
+    "share": 0.112790662291
+   }
+  ],
+  "sumber": "site/data/insight/gfk-market-share.json#share_unit_nasional,#share_value_nasional"
+ },
+ "region": [
+  {
+   "region": "CENTRAL JAVA",
+   "aqua_share": 0.214945243405,
+   "penguasa": {
+    "brand": "POLYTRON",
+    "share": 0.272761764401
+   },
+   "sumber": "site/data/insight/gfk-market-share.json#share_unit_per_region.CENTRAL JAVA"
+  },
+  {
+   "region": "JABOTABEK",
+   "aqua_share": 0.195524484611,
+   "penguasa": {
+    "brand": "SHARP",
+    "share": 0.323948177346
+   },
+   "sumber": "site/data/insight/gfk-market-share.json#share_unit_per_region.JABOTABEK"
+  },
+  {
+   "region": "KALIMANTAN",
+   "aqua_share": 0.167894503101,
+   "penguasa": {
+    "brand": "SHARP",
+    "share": 0.432882173612
+   },
+   "sumber": "site/data/insight/gfk-market-share.json#share_unit_per_region.KALIMANTAN"
+  },
+  {
+   "region": "WEST JAVA",
+   "aqua_share": 0.139863508733,
+   "penguasa": {
+    "brand": "POLYTRON",
+    "share": 0.412994664101
+   },
+   "sumber": "site/data/insight/gfk-market-share.json#share_unit_per_region.WEST JAVA"
+  },
+  {
+   "region": "SULAWESI",
+   "aqua_share": 0.120741136778,
+   "penguasa": {
+    "brand": "SHARP",
+    "share": 0.413239345335
+   },
+   "sumber": "site/data/insight/gfk-market-share.json#share_unit_per_region.SULAWESI"
+  },
+  {
+   "region": "SUMATERA",
+   "aqua_share": 0.115181680159,
+   "penguasa": {
+    "brand": "SHARP",
+    "share": 0.436796543601
+   },
+   "sumber": "site/data/insight/gfk-market-share.json#share_unit_per_region.SUMATERA"
+  },
+  {
+   "region": "EAST JAVA",
+   "aqua_share": 0.108964016262,
+   "penguasa": {
+    "brand": "POLYTRON",
+    "share": 0.426413688338
+   },
+   "sumber": "site/data/insight/gfk-market-share.json#share_unit_per_region.EAST JAVA"
+  }
+ ],
+ "kelas_harga": [
+  {
+   "kelas": "< 1.5 MIL IDR",
+   "aqua_share": 0.087143966075,
+   "penguasa": {
+    "brand": "CHANGHONG",
+    "share": 0.20233955829
+   },
+   "sumber": "site/data/insight/gfk-market-share.json#share_per_price_class.< 1.5 MIL IDR"
+  },
+  {
+   "kelas": "< 1.75 MIL IDR",
+   "aqua_share": 0.171125874937,
+   "penguasa": {
+    "brand": "POLYTRON",
+    "share": 0.422196270499
+   },
+   "sumber": "site/data/insight/gfk-market-share.json#share_per_price_class.< 1.75 MIL IDR"
+  },
+  {
+   "kelas": "< 2.0 MIL IDR",
+   "aqua_share": 0.185293628735,
+   "penguasa": {
+    "brand": "POLYTRON",
+    "share": 0.442228998674
+   },
+   "sumber": "site/data/insight/gfk-market-share.json#share_per_price_class.< 2.0 MIL IDR"
+  },
+  {
+   "kelas": "< 2.25 MIL IDR",
+   "aqua_share": 0.108028722169,
+   "penguasa": {
+    "brand": "SHARP",
+    "share": 0.37333679475
+   },
+   "sumber": "site/data/insight/gfk-market-share.json#share_per_price_class.< 2.25 MIL IDR"
+  },
+  {
+   "kelas": "< 2.5 MIL IDR",
+   "aqua_share": 0.184047327765,
+   "penguasa": {
+    "brand": "POLYTRON",
+    "share": 0.324451332223
+   },
+   "sumber": "site/data/insight/gfk-market-share.json#share_per_price_class.< 2.5 MIL IDR"
+  },
+  {
+   "kelas": "< 3.0 MIL IDR",
+   "aqua_share": 0.20633121561,
+   "penguasa": {
+    "brand": "SHARP",
+    "share": 0.474574606909
+   },
+   "sumber": "site/data/insight/gfk-market-share.json#share_per_price_class.< 3.0 MIL IDR"
+  },
+  {
+   "kelas": "< 4.0 MIL IDR",
+   "aqua_share": 0.128069880448,
+   "penguasa": {
+    "brand": "SHARP",
+    "share": 0.311007127472
+   },
+   "sumber": "site/data/insight/gfk-market-share.json#share_per_price_class.< 4.0 MIL IDR"
+  },
+  {
+   "kelas": "< 6.0 MIL IDR",
+   "aqua_share": 0.061267351308,
+   "penguasa": {
+    "brand": "SAMSUNG",
+    "share": 0.273767056337
+   },
+   "sumber": "site/data/insight/gfk-market-share.json#share_per_price_class.< 6.0 MIL IDR"
+  },
+  {
+   "kelas": "< 8.0 MIL IDR",
+   "aqua_share": 0.071563040552,
+   "penguasa": {
+    "brand": "SAMSUNG",
+    "share": 0.302334162196
+   },
+   "sumber": "site/data/insight/gfk-market-share.json#share_per_price_class.< 8.0 MIL IDR"
+  },
+  {
+   "kelas": "< 10.0 MIL IDR",
+   "aqua_share": 0.113451211753,
+   "penguasa": {
+    "brand": "SHARP",
+    "share": 0.274855479013
+   },
+   "sumber": "site/data/insight/gfk-market-share.json#share_per_price_class.< 10.0 MIL IDR"
+  },
+  {
+   "kelas": "< 15.0 MIL IDR",
+   "aqua_share": 0.075739068317,
+   "penguasa": {
+    "brand": "SAMSUNG",
+    "share": 0.279597370815
+   },
+   "sumber": "site/data/insight/gfk-market-share.json#share_per_price_class.< 15.0 MIL IDR"
+  },
+  {
+   "kelas": "< 20.0 MIL IDR",
+   "aqua_share": 0.039777782866,
+   "penguasa": {
+    "brand": "SAMSUNG",
+    "share": 0.27454436636
+   },
+   "sumber": "site/data/insight/gfk-market-share.json#share_per_price_class.< 20.0 MIL IDR"
+  },
+  {
+   "kelas": ">= 20.0 MIL IDR",
+   "aqua_share": 0.000348282737,
+   "penguasa": {
+    "brand": "LG",
+    "share": 0.48520788399
+   },
+   "sumber": "site/data/insight/gfk-market-share.json#share_per_price_class.>= 20.0 MIL IDR"
+  }
+ ],
+ "tipe_pintu": [
+  {
+   "tipe": "2 DR FRZ. BTM",
+   "aqua_share": 0.200799838901,
+   "sumber": "site/data/insight/gfk-market-share.json#ref_type_breakdown.2 DR FRZ. BTM.AQUA"
+  },
+  {
+   "tipe": "4+ DOORS",
+   "aqua_share": 0.173712807086,
+   "sumber": "site/data/insight/gfk-market-share.json#ref_type_breakdown.4+ DOORS.AQUA"
+  },
+  {
+   "tipe": "3 DR SIDE BY SIDE",
+   "aqua_share": 0.166432835784,
+   "sumber": "site/data/insight/gfk-market-share.json#ref_type_breakdown.3 DR SIDE BY SIDE.AQUA"
+  },
+  {
+   "tipe": "1 DOOR",
+   "aqua_share": 0.15519211291,
+   "sumber": "site/data/insight/gfk-market-share.json#ref_type_breakdown.1 DOOR.AQUA"
+  },
+  {
+   "tipe": "2 DR FRZ. TOP",
+   "aqua_share": 0.14384881905,
+   "sumber": "site/data/insight/gfk-market-share.json#ref_type_breakdown.2 DR FRZ. TOP.AQUA"
+  },
+  {
+   "tipe": "2 DR SIDE BY SIDE",
+   "aqua_share": 0.057648790308,
+   "sumber": "site/data/insight/gfk-market-share.json#ref_type_breakdown.2 DR SIDE BY SIDE.AQUA"
+  }
+ ],
+ "dilema_dealer_b2c": {
+  "judul": "Dilema: fokus dealer tanpa peduli B2C, percuma?",
+  "paragraf": [
+   "GFK mengukur penjualan retail ke rumah tangga (B2C) - itu demand akhir yang menentukan barang laku atau tidak di rak dealer. Fokus dealer tanpa melihat B2C berarti menutup order ke wilayah/segmen yang demand retailnya lemah: dealer bisa beli sekali, tapi tidak repeat.",
+   "Buktinya di data: Central Java retail share AQUA 21,5% (terkuat) - dealer di sana paling mudah jalan karena barangnya terbukti laku. East Java hanya 10,9% dengan 42,6% milik Polytron - mendorong dealer agresif di sana berarti memaksa stok melawan demand; perbaiki demand retail dulu (promo, model tepat), dealer akan mengikuti.",
+   "Di sisi segmen, kelas >= 20 juta AQUA 0,0% - tidak ada amunisi untuk dealer premium. Fokuskan tenaga dealer di kelas 2-3 juta (18,4%-20,6%) di mana posisi retail AQUA paling sehat. Kesimpulan: B2C bukan saingan dealer, ia bukti demand yang membuat dealer mau repeat order."
+  ],
+  "sumber": "site/data/insight/gfk-market-share.json#share_unit_per_region,#share_per_price_class"
+ },
+ "rekomendasi": [
+  {
+   "tingkat": "TAHAN",
+   "judul": "Pertahankan kubu Central Java & Jabotabek",
+   "isi": "Central Java 21,5% dan Jabotabek keduanya posisi #2 regional. Jaga kelas 2,0-3,0 juta (18,5%-20,6%) dan stok tipe 2-door bottom freezer (20,1%, tipe terkuat AQUA).",
+   "sumber": "site/data/insight/gfk-market-share.json#(lihat angka dalam teks)"
+  },
+  {
+   "tingkat": "SERANG",
+   "judul": "East Java & West Java: hindari perang head-on dengan Polytron",
+   "isi": "Polytron menguasai 42,6% di East Java dan 41,3% di West Java, terutama di kelas < 2 juta. Naikkan presensi di kelas 2,5-3,0 juta (18,4%-20,6%) di mana pertarungan lebih seimbang.",
+   "sumber": "site/data/insight/gfk-market-share.json#(lihat angka dalam teks)"
+  },
+  {
+   "tingkat": "ISI-LUBANG",
+   "judul": "Lineup premium menengah kosong",
+   "isi": "3-door French door 0% dan regular 0%; side-by-side 3 pintu hanya 16,6%. Value share (12,3%) tertinggal dari unit share (14,7%) - mengisi kelas menengah-premium adalah jalur menaikkan nilai per unit.",
+   "sumber": "site/data/insight/gfk-market-share.json#(lihat angka dalam teks)"
+  },
+  {
+   "tingkat": "HINDARI",
+   "judul": "Jangan perang harga di kelas < 1,5 juta",
+   "isi": "Share AQUA hanya 8,7%; Changhong 20,2% plus Polytron menguasai segmen mati-harga ini. Margin hancur, potensi naik minim.",
+   "sumber": "site/data/insight/gfk-market-share.json#(lihat angka dalam teks)"
+  },
+  {
+   "tingkat": "KEMBANG",
+   "judul": "Kalimantan dipertahankan, Sumatera-Sulawesi lewat distributor",
+   "isi": "Kalimantan sehat di 16,8%. Sumatera dan Sulawesi lemah (11-12%) tetapi LG kuat di Sumatera - menandakan pasar premium ada; masuk via distributor dengan model 4+ doors (17,4%).",
+   "sumber": "site/data/insight/gfk-market-share.json#(lihat angka dalam teks)"
+  }
+ ]
+}

@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Benchmark Harga AQUA vs Kompetitor</title>
+  <meta name="description" content="Perbandingan kapasitas dan harga kulkas AQUA dengan kompetitor berdasarkan workbook benchmark.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/benchmark.css">
+  <script src="js/benchmark.js" defer></script>
+</head>
+<body>
+  <header>
+  <div class="nav">
+    <div class="brand"><img src="assets/Haier_Logo.svg" alt="Haier" class="brand-logo"><span class="brand-name">MTMS</span></div>
+    <button class="nav-toggle" aria-label="Menu" onclick="toggleNav()">☰</button>
+    <nav class="nav-links">
+      <a href="index.html">Beranda</a>
+      <a href="induksi.html">Induksi</a>
+      <a href="produk.html">Produk</a>
+      <a href="kompetitor.html">Kompetitor</a>
+      <a href="rotasi.html">Rotasi</a>
+      <a href="proses.html">Proses</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="file.html">File</a>
+      <a href="pasar.html">Pasar</a>
+      <a href="benchmark.html" class="active">Benchmark</a>
+      <a href="strategi.html">Strategi</a>
+      <a href="poster.html">Poster</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" onclick="openSearch()">Cari</button>
+      <button class="icon-btn" onclick="toggleTheme()">Mode</button>
+    </div>
+  </div>
+</header>
+
+<main class="benchmark-shell">
+    <header class="hero">
+      <p class="eyebrow">Market benchmark</p>
+      <h1>Harga AQUA vs Kompetitor</h1>
+      <p class="hero-copy">Bandingkan model, tipe pintu, kapasitas, dan harga tanpa menutup-nutupi data yang masih kosong.</p>
+      <p id="benchmarkSummary" class="summary" aria-live="polite">Memuat data benchmark…</p>
+      <p class="generated">Data digenerate: <time id="generatedAt">—</time></p>
+    </header>
+
+    <section class="controls" aria-label="Filter benchmark">
+      <label>
+        <span>Brand</span>
+        <select id="brandFilter">
+          <option value="">Semua brand</option>
+        </select>
+      </label>
+      <label>
+        <span>Tipe pintu</span>
+        <select id="typeFilter">
+          <option value="">Semua tipe</option>
+        </select>
+      </label>
+    </section>
+
+    <section class="panel" aria-labelledby="scatterTitle">
+      <div class="panel-heading">
+        <div>
+          <p class="panel-kicker">Peta posisi harga</p>
+          <h2 id="scatterTitle">Kapasitas vs harga</h2>
+        </div>
+        <p id="chartCount" class="result-count" aria-live="polite"></p>
+      </div>
+      <div id="scatterLegend" class="legend" aria-label="Legenda brand"></div>
+      <div class="chart-scroll">
+        <div id="scatterChart" class="chart-host"></div>
+      </div>
+      <p id="chartSources" class="source-row"></p>
+    </section>
+
+    <section class="panel" aria-labelledby="tableTitle">
+      <div class="panel-heading">
+        <div>
+          <p class="panel-kicker">Daftar model</p>
+          <h2 id="tableTitle">Tabel perbandingan</h2>
+        </div>
+        <p id="tableCount" class="result-count" aria-live="polite"></p>
+      </div>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col" data-column="brand"><button type="button" class="sort-button" data-sort="brand">Brand</button></th>
+              <th scope="col" data-column="model"><button type="button" class="sort-button" data-sort="model">Model</button></th>
+              <th scope="col" data-column="tipe_pintu"><button type="button" class="sort-button" data-sort="tipe_pintu">Tipe pintu</button></th>
+              <th scope="col" data-column="kapasitas_l" class="number"><button type="button" class="sort-button" data-sort="kapasitas_l">Kapasitas</button></th>
+              <th scope="col" data-column="harga_rp" class="number"><button type="button" class="sort-button" data-sort="harga_rp">Harga</button></th>
+              <th scope="col" data-column="harga_per_liter" class="number"><button type="button" class="sort-button" data-sort="harga_per_liter">Harga per liter</button></th>
+              <th scope="col">Sumber model</th>
+            </tr>
+          </thead>
+          <tbody id="benchmarkRows"></tbody>
+        </table>
+      </div>
+      <p id="tableSources" class="source-row"></p>
+    </section>
+
+    <p id="loadError" class="error-message" role="alert" hidden></p>
+    <noscript>Aktifkan JavaScript untuk memuat tabel dan grafik benchmark.</noscript>
+  </main>
+
+
+<footer>
+  <div class="footer-in">
+    <span>MTMS AQUA HAIER — Knowledge Hub · Management Trainee 2026</span>
+    <span>Halaman: Benchmark</span>
+  </div>
+</footer>
+
+<div class="search-overlay" id="search-overlay">
+  <div class="search-box">
+    <input id="search-input" placeholder="Cari di semua materi..." oninput="doSearch()">
+    <div class="search-results" id="search-results"></div>
+  </div>
+</div>
+<script src="js/theme.js"></script>
+<script src="js/data.js"></script>
+<script src="js/search.js"></script>
+<script>
+function toggleNav() {
+  document.querySelector('.nav-links').classList.toggle('open');
+}
+</script>
+
+</body>
+</html>

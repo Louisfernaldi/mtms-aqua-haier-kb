@@ -21,6 +21,10 @@
       <a href="proses.html">Proses</a>
       <a href="galeri.html">Galeri</a>
       <a href="file.html">File</a>
+      <a href="pasar.html">Pasar</a>
+      <a href="benchmark.html">Benchmark</a>
+      <a href="strategi.html">Strategi</a>
+      <a href="poster.html">Poster</a>
     </nav>
     <div class="nav-actions">
       <button class="icon-btn" onclick="openSearch()">Cari</button>
@@ -830,6 +834,17 @@ if(window.MTMSSpecCategories){
     refreshOpenDetail();
   });
 }
+window.MTMSProductDetail.configureResearch({
+  liveReady:function(){return liveReady;},
+  getWriteSha:function(){return compSha;},
+  onChanged:function(){
+    loadData().then(function(){
+      window.MTMS_COMPETITOR_LIVE_READY=liveReady;
+      renderAll();
+      refreshOpenDetail();
+    });
+  }
+});
 renderAll();
 if(isHttp()){
   Promise.all([loadCatalog(),loadData()]).then(function(){

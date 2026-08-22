@@ -10,4 +10,5 @@
 - Modal bersama: `site/js/product-detail.js`.
 - SPEC aktif fitur dinamis: `SPEC-fitur-perbandingan-dinamis-v1.md`.
 - Tiket: `rencana/2026-08-21_fitur-perbandingan-dinamis/`.
+- SPEC gelombang galeri+insight: `SPEC-galeri-insight-engine-v1.md` · tiket+papan: `rencana/2026-08-21_galeri-insight-engine/` (brainstorm: `brainstorms/2026-08-21-galeri-insight-engine.md`).
 - Hard-stop: deploy live dan tulisan data produksi butuh ACC; nol kirim customer, order, uang, atau harga marketplace.

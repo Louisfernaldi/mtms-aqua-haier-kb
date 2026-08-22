@@ -1,0 +1,39 @@
+# Receipt T11 — Integrasi nav & beranda
+
+- id: 11
+- tiket: integrasi-nav
+- status: kelar
+- owner: claude-mandor
+- verifier: pembukti (headless + grep, self-verify sesi ini)
+- depends_on: [02,05,07,08,09]
+- gerbang_acc: []
+- cek_selesai:
+  - "python tools/verify_site.py --page index.html (adaptasi: tools/evidence/t11/t11_verify_filtered.json)"
+  - "grep nav: 12 link di 12/13 html (login 0 wajar) + index 10 kartu"
+  - "headless index+galeri 0 error 0 h-scroll @390 + index 0 h-scroll @1280"
+  - "style.css mtime tidak berubah (2026-08-21 23:25:30 WIB)"
+- file_disentuh:
+  - "site/index.html"
+  - "site/induksi.html"
+  - "site/produk.html"
+  - "site/kompetitor.html"
+  - "site/rotasi.html"
+  - "site/proses.html"
+  - "site/galeri.html"
+  - "site/file.html"
+  - "site/pasar.html"
+  - "site/benchmark.html"
+  - "site/strategi.html"
+  - "site/poster.html"
+- file_dibaca_doang: ["tools/verify_site.py"]
+- catatan: "Nav 12 link (Beranda,Induksi,Produk,Kompetitor,Rotasi,Proses,Galeri,File,Pasar,Benchmark,Strategi,Poster) + 4 kartu baru di index (Pasar/Benchmark/Strategi/Poster) + stats 7->11; style.css tidak tersentuh sesuai SPEC; produk.html 404 /api/* di static server diabaikan (butuh Pages Functions live); re-deploy T12 BUTUH-ACC fresh"
+- bukti:
+  - "tools/evidence/t11/t11_index_390.png"
+  - "tools/evidence/t11/t11_index_1280.png"
+  - "tools/evidence/t11/t11_galeri_390.png"
+  - "tools/evidence/t11/t11_pasar_390.png"
+  - "tools/evidence/t11/t11_verify_filtered.json"
+  - "site/index.html:49-88 (grid 10 kartu)"
+  - "site/pasar.html:8-12 (header inject + style.css)"
+- waktu_wib: "2026-08-22 10:12 WIB"
+- sabotase: "hapus 1 link nav di index -> grep 11 !=12 would FAIL; headless would still PASS but nav completeness FAIL"

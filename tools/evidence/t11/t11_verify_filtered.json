@@ -1,0 +1,29 @@
+{
+  "index.html": {
+    "errors": [],
+    "hscroll390": false,
+    "nav": 12
+  },
+  "galeri.html": {
+    "errors": [],
+    "hscroll390": false,
+    "nav": 12
+  },
+  "produk.html": {
+    "errors": [
+      "console-error: Failed to load resource: the server responded with a status of 404 (File not found)",
+      "pageerror: api 404",
+      "console-error: Failed to load resource: the server responded with a status of 404 (File not found)"
+    ],
+    "hscroll390": false,
+    "nav": 12
+  },
+  "pasar.html": {
+    "errors": [],
+    "hscroll390": false,
+    "nav": 12
+  },
+  "index_1280": {
+    "hscroll1280": false
+  }
+}

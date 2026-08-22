@@ -6,6 +6,7 @@
 <title>File Asli — MTMS AQUA HAIER</title>
 <meta name="description" content="Buka dan unduh file materi asli MTMS AQUA HAIER: PDF, DOCX, XLSX per kategori.">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/file-viewer.css">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 </head>
 <body>
@@ -21,6 +22,10 @@
       <a href="proses.html">Proses</a>
       <a href="galeri.html">Galeri</a>
       <a href="file.html" class="active">File</a>
+      <a href="pasar.html">Pasar</a>
+      <a href="benchmark.html">Benchmark</a>
+      <a href="strategi.html">Strategi</a>
+      <a href="poster.html">Poster</a>
     </nav>
     <div class="nav-actions">
       <button class="icon-btn" onclick="openSearch()">Cari</button>
@@ -34,9 +39,25 @@
     <span class="hero-mini-ico">🗂️</span>
     <div>
       <h1>File Materi Asli</h1>
-      <p>Semua file tersedia langsung di halaman ini; PDF bisa dibuka di browser, DOCX/XLSX diunduh.</p>
+      <p>PDF bisa dipreview di browser. Isi DOCX dan spreadsheet bisa dibaca langsung sebagai teks atau tabel, tanpa mengunduh lebih dulu.</p>
     </div>
   </section>
+
+  <section class="file-viewer" id="file-viewer" aria-labelledby="file-viewer-title" hidden>
+    <div class="file-viewer-head">
+      <div>
+        <p class="file-viewer-kicker" id="file-viewer-meta"></p>
+        <h2 id="file-viewer-title">Isi file</h2>
+      </div>
+      <div class="file-viewer-actions">
+        <a class="file-download" id="file-viewer-download" href="#" download>Unduh asli</a>
+        <button class="file-viewer-close" id="file-viewer-close" type="button" aria-label="Tutup panel isi file">&times;</button>
+      </div>
+    </div>
+    <div class="file-sheet-tabs" id="file-sheet-tabs" role="tablist" aria-label="Pilih sheet" hidden></div>
+    <div class="file-viewer-content" id="file-viewer-content"></div>
+  </section>
+
   <div id="file-root"><p class="sec-sub" id="file-loading">Memuat daftar file…</p></div>
 </main>
 
@@ -58,85 +79,7 @@
 <script src="js/data.js"></script>
 <script src="js/search.js"></script>
 <script src="js/pdf-preview.js"></script>
-<script>
-function loadFiles() {
-  if (window.MTMS_DATA && window.MTMS_DATA.files && window.MTMS_DATA.files.length) {
-    return Promise.resolve(window.MTMS_DATA.files);
-  }
-  return fetch("data/files.json")
-    .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); });
-}
-loadFiles()
-  .then(function (groups) {
-    var root = document.getElementById("file-root");
-    root.innerHTML = "";
-    var idx = 0;
-    function buildGroup(g) {
-      var h = document.createElement("h2");
-      h.className = "sec";
-      h.textContent = g.folder;
-      var ul = document.createElement("ul");
-      ul.className = "file-list";
-      g.files.forEach(function (f) {
-        var li = document.createElement("li");
-        var nm = document.createElement("span");
-        nm.className = "nm";
-        var a = document.createElement("a");
-        a.href = f.path;
-        a.target = "_blank";
-        a.rel = "noopener";
-        a.textContent = f.name;
-        nm.appendChild(a);
-        if (f.drive) {
-          nm.appendChild(document.createTextNode(" "));
-          var da = document.createElement("a");
-          da.href = f.drive;
-          da.target = "_blank";
-          da.rel = "noopener";
-          da.textContent = "[Drive]";
-          nm.appendChild(da);
-        }
-        var sz = document.createElement("span");
-        sz.className = "sz";
-        sz.textContent = f.size;
-        li.appendChild(nm);
-        li.appendChild(sz);
-        if (new RegExp("\\.pdf$", "i").test(f.path) || new RegExp("\\.pdf$", "i").test(f.name || "")) {
-          var pv = document.createElement("button");
-          pv.type = "button";
-          pv.className = "btn-preview";
-          pv.textContent = "Preview";
-          pv.onclick = (function (path) {
-            return function () { window.bukaPdfPreview(path); };
-          })(f.path);
-          li.appendChild(pv);
-        }
-        ul.appendChild(li);
-      });
-      root.appendChild(h);
-      root.appendChild(ul);
-    }
-    function renderNext() {
-      if (idx >= groups.length) return;
-      buildGroup(groups[idx]);
-      idx++;
-      setTimeout(renderNext, 60);
-    }
-    renderNext();
-  })
-  .catch(function (err) {
-    var root = document.getElementById("file-root");
-    root.innerHTML = '<p class="sec-sub">Gagal memuat daftar file (' + err.message + ').</p>' +
-      '<button class="icon-btn" onclick="location.reload()">Coba lagi</button>';
-  });
-</script>
 <button class="to-top" id="to-top" aria-label="Kembali ke atas" title="Kembali ke atas">&#8593;</button>
-<script>
-var tt = document.getElementById("to-top");
-window.addEventListener("scroll", function () {
-  tt.classList.toggle("show", window.scrollY > 600);
-});
-tt.addEventListener("click", function () { window.scrollTo({ top: 0, behavior: "smooth" }); });
-</script>
+<script src="js/file-viewer.js"></script>
 </body>
 </html>

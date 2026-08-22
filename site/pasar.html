@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Peta Pasar Kulkas</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pasar.css">
+  <script src="js/pasar.js" defer></script>
+</head>
+<body>
+  <header>
+  <div class="nav">
+    <div class="brand"><img src="assets/Haier_Logo.svg" alt="Haier" class="brand-logo"><span class="brand-name">MTMS</span></div>
+    <button class="nav-toggle" aria-label="Menu" onclick="toggleNav()">☰</button>
+    <nav class="nav-links">
+      <a href="index.html">Beranda</a>
+      <a href="induksi.html">Induksi</a>
+      <a href="produk.html">Produk</a>
+      <a href="kompetitor.html">Kompetitor</a>
+      <a href="rotasi.html">Rotasi</a>
+      <a href="proses.html">Proses</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="file.html">File</a>
+      <a href="pasar.html" class="active">Pasar</a>
+      <a href="benchmark.html">Benchmark</a>
+      <a href="strategi.html">Strategi</a>
+      <a href="poster.html">Poster</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" onclick="openSearch()">Cari</button>
+      <button class="icon-btn" onclick="toggleTheme()">Mode</button>
+    </div>
+  </div>
+</header>
+
+<main class="pasar-shell">
+    <header class="hero">
+      <p class="eyebrow">Market share</p>
+      <h1>Peta Pasar Kulkas</h1>
+      <p class="hero-copy">Baca posisi brand secara nasional, per region, kelas harga, dan tipe pintu dari satu dataset pipeline.</p>
+      <p id="marketSummary" class="summary" aria-live="polite">Memuat data pasar…</p>
+      <p class="dataset-meta">
+        Periode: <strong id="marketPeriod">—</strong>
+        <span aria-hidden="true">·</span>
+        Data asal: <code id="upstreamSource">—</code>
+      </p>
+    </header>
+
+    <section class="controls" aria-label="Filter segmen pasar">
+      <label>
+        <span>Kelas harga</span>
+        <select id="priceFilter">
+          <option value="">Memuat kelas harga…</option>
+        </select>
+      </label>
+      <label>
+        <span>Tipe pintu</span>
+        <select id="typeFilter">
+          <option value="">Memuat tipe pintu…</option>
+        </select>
+      </label>
+      <p class="filter-note">Filter mengubah grafik segmen. Grafik nasional dan region tetap menunjukkan total pasar.</p>
+    </section>
+
+    <section class="panel" aria-labelledby="nationalTitle">
+      <div class="panel-heading">
+        <div>
+          <p class="panel-kicker">Nasional</p>
+          <h2 id="nationalTitle">Pangsa unit dan value per brand</h2>
+        </div>
+        <p id="nationalCount" class="result-count" aria-live="polite"></p>
+      </div>
+      <div class="series-legend" aria-label="Legenda ukuran pangsa">
+        <span><i class="legend-swatch unit-swatch"></i>Unit</span>
+        <span><i class="legend-swatch value-swatch"></i>Value</span>
+      </div>
+      <div class="chart-scroll">
+        <div id="nationalChart" class="chart-host paired-chart" aria-live="polite"></div>
+      </div>
+      <p class="source-row">
+        Sumber JSON: <code data-json-source>—</code>
+        <span aria-hidden="true">·</span>
+        Periode: <span data-source-period>—</span>
+      </p>
+    </section>
+
+    <section class="panel" aria-labelledby="regionTitle">
+      <div class="panel-heading">
+        <div>
+          <p class="panel-kicker">Sebaran wilayah</p>
+          <h2 id="regionTitle">Pangsa unit per region</h2>
+        </div>
+        <p id="regionCount" class="result-count" aria-live="polite"></p>
+      </div>
+      <div id="regionLegend" class="brand-legend" aria-label="Legenda brand"></div>
+      <div class="chart-scroll">
+        <div id="regionChart" class="chart-host region-chart" aria-live="polite"></div>
+      </div>
+      <p class="source-row">
+        Sumber JSON: <code data-json-source>—</code>
+        <span aria-hidden="true">·</span>
+        Periode: <span data-source-period>—</span>
+      </p>
+    </section>
+
+    <section class="panel" aria-labelledby="segmentTitle">
+      <div class="panel-heading">
+        <div>
+          <p class="panel-kicker">Filter segmen</p>
+          <h2 id="segmentTitle">Pangsa brand menurut pilihan</h2>
+        </div>
+        <p id="segmentCount" class="result-count" aria-live="polite"></p>
+      </div>
+      <div class="segment-grid">
+        <section class="segment-section" aria-labelledby="priceTitle">
+          <div class="segment-heading">
+            <h3 id="priceTitle">Kelas harga</h3>
+            <p id="priceSelection" class="selection-label"></p>
+          </div>
+          <div class="chart-scroll">
+            <div id="priceChart" class="chart-host share-list" aria-live="polite"></div>
+          </div>
+        </section>
+        <section class="segment-section" aria-labelledby="typeTitle">
+          <div class="segment-heading">
+            <h3 id="typeTitle">Tipe pintu</h3>
+            <p id="typeSelection" class="selection-label"></p>
+          </div>
+          <div class="chart-scroll">
+            <div id="typeChart" class="chart-host share-list" aria-live="polite"></div>
+          </div>
+        </section>
+      </div>
+      <p class="source-row">
+        Sumber JSON: <code data-json-source>—</code>
+        <span aria-hidden="true">·</span>
+        Periode: <span data-source-period>—</span>
+      </p>
+    </section>
+
+    <p id="loadError" class="error-message" role="alert" hidden></p>
+    <noscript>Aktifkan JavaScript untuk memuat grafik Peta Pasar.</noscript>
+  </main>
+
+
+<footer>
+  <div class="footer-in">
+    <span>MTMS AQUA HAIER — Knowledge Hub · Management Trainee 2026</span>
+    <span>Halaman: Pasar</span>
+  </div>
+</footer>
+
+<div class="search-overlay" id="search-overlay">
+  <div class="search-box">
+    <input id="search-input" placeholder="Cari di semua materi..." oninput="doSearch()">
+    <div class="search-results" id="search-results"></div>
+  </div>
+</div>
+<script src="js/theme.js"></script>
+<script src="js/data.js"></script>
+<script src="js/search.js"></script>
+<script>
+function toggleNav() {
+  document.querySelector('.nav-links').classList.toggle('open');
+}
+</script>
+
+</body>
+</html>

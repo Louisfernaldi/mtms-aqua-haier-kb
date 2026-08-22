@@ -1,0 +1,2068 @@
+{
+  "models": [
+    {
+      "brand": "AQUA",
+      "model": "AQR-D181(LK)",
+      "tipe_pintu": "1 Pintu",
+      "kapasitas_l": 137,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-D185(MDS)",
+      "tipe_pintu": "1 Pintu",
+      "kapasitas_l": 145,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-D205(MDS)",
+      "tipe_pintu": "1 Pintu",
+      "kapasitas_l": 165,
+      "harga_rp": 1898000,
+      "harga_per_liter": 11503.03,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-D225(MDS)",
+      "tipe_pintu": "1 Pintu",
+      "kapasitas_l": 180,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-D185 (MDS/MLS/MS/MSG)",
+      "tipe_pintu": "1 Pintu",
+      "kapasitas_l": 185,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-D185 (MPE/MBE/MME)",
+      "tipe_pintu": "1 Pintu",
+      "kapasitas_l": 185,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-D205 (MDS/MLS/MS/MSG)",
+      "tipe_pintu": "1 Pintu",
+      "kapasitas_l": 205,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-D205 (MPE/MBE/MME)",
+      "tipe_pintu": "1 Pintu",
+      "kapasitas_l": 205,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-D225 (MDS/MLS/MS/MSG)",
+      "tipe_pintu": "1 Pintu",
+      "kapasitas_l": 225,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-D225 (MPE/MBE/MME)",
+      "tipe_pintu": "1 Pintu",
+      "kapasitas_l": 225,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-DTM245CBP(DS)",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 185,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-DTM265CBP(DS)",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 205,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-DTM265RAV(MX)",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 205,
+      "harga_rp": 3598000,
+      "harga_per_liter": 17551.22,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-DTM268CB(DP)",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 205,
+      "harga_rp": 2998000,
+      "harga_per_liter": 14624.39,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-DTM285CBP(DS)",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 225,
+      "harga_rp": 3514000,
+      "harga_per_liter": 15617.78,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-DTM285RAV(MX)",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 225,
+      "harga_rp": 4063500,
+      "harga_per_liter": 18060.0,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-DTM248CB(DP)",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 240,
+      "harga_rp": 2898000,
+      "harga_per_liter": 12075.0,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-DTM305RAV(MX)",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 245,
+      "harga_rp": 4718500,
+      "harga_per_liter": 19259.18,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-DTM248CBP (DS/LS/SB/SG)",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 248,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-DTM248CBP (PE/ME/BE)",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 248,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-DTM265RAP/RAV (FB/MX)",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 265,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-DTM268CBP (DS/LS/SB/SG)",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 268,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-DTM268CBP (PE/ME/BE)",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 268,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-DTM288CB(DP)",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 280,
+      "harga_rp": 3198000,
+      "harga_per_liter": 11421.43,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-DTM285RAP/RAV (FB/MX)",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 285,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-DTM288CBP (DS/LS/SB/SG)",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 288,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-DTM288CBP (PE/ME/BE)",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 288,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-DTM305RAP/RAV (FB/MX)",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 305,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-382IM",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 382,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-395IM",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 395,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-415IM",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 415,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-VTM515RBC (CB)",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 515,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-VTM535RAG (BK)",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 535,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-VTM535RSG (CL)",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 535,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-320RBG (BK)",
+      "tipe_pintu": "Bottom Mount",
+      "kapasitas_l": 320,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-350RBG (BK)",
+      "tipe_pintu": "Bottom Mount",
+      "kapasitas_l": 350,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-350RBM (EBM)",
+      "tipe_pintu": "Bottom Mount",
+      "kapasitas_l": 350,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-CTD506RGG(BK)",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 406,
+      "harga_rp": 9198000,
+      "harga_per_liter": 22655.17,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-CTD506RGC(CB)",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 425,
+      "harga_rp": 8813500,
+      "harga_per_liter": 20737.65,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-TTD546RBG(BK)",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 469,
+      "harga_rp": 11609000,
+      "harga_per_liter": 24752.67,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-TTD546RBG(WT)",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 469,
+      "harga_rp": 11228500,
+      "harga_per_liter": 23941.36,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-TTD546RBV(MX)",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 469,
+      "harga_rp": 10149000,
+      "harga_per_liter": 21639.66,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-CTD506RBC (CB)",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 506,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-CTD506RBG (BK)",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 506,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-TTD546RBC (CB)",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 546,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-TTD546RBG (WT/CL/BK)",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 546,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-TTD576RAG (BK)",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 576,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-TTD576RSG (CL)",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 576,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-CTD746RAG(BK)U1",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 658,
+      "harga_rp": 18783500,
+      "harga_per_liter": 28546.35,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-CTD746RAG (BK)",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 746,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-CSE565RBC(CB)",
+      "tipe_pintu": "Side-by-Side",
+      "kapasitas_l": 480,
+      "harga_rp": 8428500,
+      "harga_per_liter": 17559.38,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-605IM(GB)",
+      "tipe_pintu": "Side-by-Side",
+      "kapasitas_l": 541,
+      "harga_rp": 9759000,
+      "harga_per_liter": 18038.82,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-CSE605RBC(CB)",
+      "tipe_pintu": "Side-by-Side",
+      "kapasitas_l": 542,
+      "harga_rp": 10439000,
+      "harga_per_liter": 19260.15,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-IG685AMT",
+      "tipe_pintu": "Side-by-Side",
+      "kapasitas_l": 562,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-TSE605RBM(MX)",
+      "tipe_pintu": "Side-by-Side",
+      "kapasitas_l": 569,
+      "harga_rp": 8398000,
+      "harga_per_liter": 14759.23,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-TSE696RAV(MX)",
+      "tipe_pintu": "Side-by-Side",
+      "kapasitas_l": 616,
+      "harga_rp": 10259000,
+      "harga_per_liter": 16654.22,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-CSE696RSV(SL)U1",
+      "tipe_pintu": "Side-by-Side",
+      "kapasitas_l": 658,
+      "harga_rp": 18415333,
+      "harga_per_liter": 27986.83,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "AQUA",
+      "model": "AQR-CSE696RSV (SL)",
+      "tipe_pintu": "Side-by-Side",
+      "kapasitas_l": 696,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Electrolux",
+      "model": "ETM2500A-B",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 246,
+      "harga_rp": 5549000,
+      "harga_per_liter": 22556.91,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Electrolux",
+      "model": "EQE4200A-B",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 419,
+      "harga_rp": 11489000,
+      "harga_per_liter": 27420.05,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Electrolux",
+      "model": "EQE4900A",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 496,
+      "harga_rp": 12759000,
+      "harga_per_liter": 25723.79,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Electrolux",
+      "model": "EQE4905A-B",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 496,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Electrolux",
+      "model": "EQE4960A-B",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 537,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Electrolux",
+      "model": "EQE5600A-S",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 562,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Electrolux",
+      "model": "ESE4500A-B",
+      "tipe_pintu": "Side-by-Side",
+      "kapasitas_l": 450,
+      "harga_rp": 8979000,
+      "harga_per_liter": 19953.33,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Electrolux",
+      "model": "ESE5100-B",
+      "tipe_pintu": "Side-by-Side",
+      "kapasitas_l": 545,
+      "harga_rp": 11559000,
+      "harga_per_liter": 21209.17,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Electrolux",
+      "model": "ESE6645A",
+      "tipe_pintu": "Side-by-Side",
+      "kapasitas_l": 600,
+      "harga_rp": 14609000,
+      "harga_per_liter": 24348.33,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Electrolux",
+      "model": "ESE6600B-B",
+      "tipe_pintu": "Side-by-Side",
+      "kapasitas_l": 624,
+      "harga_rp": 13149000,
+      "harga_per_liter": 21072.12,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "GEA",
+      "model": "G2D472RINOX",
+      "tipe_pintu": "Side-by-Side",
+      "kapasitas_l": 472,
+      "harga_rp": 6298000,
+      "harga_per_liter": 13343.22,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Haier",
+      "model": "HRF-CTD579RSG(BK)U1",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 500,
+      "harga_rp": 12999000,
+      "harga_per_liter": 25998.0,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Haier",
+      "model": "HRF-CTD579RAG(BK)",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 502,
+      "harga_rp": 8999000,
+      "harga_per_liter": 17926.29,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Haier",
+      "model": "HRF-CTD579RSG(WT)U1",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 508,
+      "harga_rp": 18999000,
+      "harga_per_liter": 37399.61,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Haier",
+      "model": "HRF-CTD619RSG(CG)U1",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 550,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Haier",
+      "model": "HRF-CTD619RSG(WT)U1",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 550,
+      "harga_rp": 16999000,
+      "harga_per_liter": 30907.27,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Haier",
+      "model": "HRF-CTD729RITA(BK)U1",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 650,
+      "harga_rp": 34999000,
+      "harga_per_liter": 53844.62,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Haier",
+      "model": "HRF-CTD779RAA(BK)",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 700,
+      "harga_rp": 17999000,
+      "harga_per_liter": 25712.86,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Haier",
+      "model": "HRF-CTD779RSA(BK)U1",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 700,
+      "harga_rp": 21999000,
+      "harga_per_liter": 31427.14,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Haier",
+      "model": "HRF-CMD589RSG(WT)U1",
+      "tipe_pintu": "Multi-Door 5 Pintu",
+      "kapasitas_l": 512,
+      "harga_rp": 20999000,
+      "harga_per_liter": 41013.67,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Hisense",
+      "model": "RT208N4ISN",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 168,
+      "harga_rp": 2799000,
+      "harga_per_liter": 16660.71,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Hisense",
+      "model": "RT266N4IBN",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 203,
+      "harga_rp": 3049000,
+      "harga_per_liter": 15019.7,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Hisense",
+      "model": "RQ556N4IBU/BL",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 467,
+      "harga_rp": 8399000,
+      "harga_per_liter": 17985.01,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Hisense",
+      "model": "RQ561N4IWU",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 507,
+      "harga_rp": 11779000,
+      "harga_per_liter": 23232.74,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Hisense",
+      "model": "RQ630N4IGUI3/GY",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 664,
+      "harga_rp": 12999000,
+      "harga_per_liter": 19576.81,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Hisense",
+      "model": "RS599N4ISN",
+      "tipe_pintu": "Side-by-Side",
+      "kapasitas_l": 468,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Hisense",
+      "model": "RS708N4IBU/BL",
+      "tipe_pintu": "Side-by-Side",
+      "kapasitas_l": 591,
+      "harga_rp": 8599000,
+      "harga_per_liter": 14549.92,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "LG",
+      "model": "GN-B212PQNF/BL",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 217,
+      "harga_rp": 4935666,
+      "harga_per_liter": 22745.0,
+      "sumber_file": "Rotation_-_REF__File_Rapih__EC_BENCHMARK.xlsx.txt"
+    },
+    {
+      "brand": "LG",
+      "model": "GN-B212PQNF",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 235,
+      "harga_rp": 4677333,
+      "harga_per_liter": 19903.54,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "LG",
+      "model": "GN-B262PQSF",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 287,
+      "harga_rp": 5329000,
+      "harga_per_liter": 18567.94,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "LG",
+      "model": "GCFB41FPGAM.N",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 479,
+      "harga_rp": 10472332,
+      "harga_per_liter": 21862.91,
+      "sumber_file": "Rotation_-_REF__File_Rapih__EC_BENCHMARK.xlsx.txt"
+    },
+    {
+      "brand": "LG",
+      "model": "GC-L22FFLQB",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 570,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "LG",
+      "model": "GCFB507PQAM",
+      "tipe_pintu": "Side-by-Side",
+      "kapasitas_l": 509,
+      "harga_rp": 9499000,
+      "harga_per_liter": 18662.08,
+      "sumber_file": "Rotation_-_REF__File_Rapih__EC_BENCHMARK.xlsx.txt"
+    },
+    {
+      "brand": "LG",
+      "model": "GC-L257CQEL/BL",
+      "tipe_pintu": "Side-by-Side",
+      "kapasitas_l": 674,
+      "harga_rp": 18233673,
+      "harga_per_liter": 27052.93,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "LG",
+      "model": "GC-X257CSEW",
+      "tipe_pintu": "Side-by-Side",
+      "kapasitas_l": 674,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "LG",
+      "model": "GC-B257SQYL",
+      "tipe_pintu": "Side-by-Side",
+      "kapasitas_l": 694,
+      "harga_rp": 12029000,
+      "harga_per_liter": 17332.85,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Midea",
+      "model": "MDRT385MTB30",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 266,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Midea",
+      "model": "MDRT572EVF28ID",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 428,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Midea",
+      "model": "MDRT572EVF50ID",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 428,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Midea",
+      "model": "Everest",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 473,
+      "harga_rp": 4500000,
+      "harga_per_liter": 9513.74,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Midea",
+      "model": "MDRT611EVD28ID",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 473,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Midea",
+      "model": "MDRT611EVD50ID",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 473,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Midea",
+      "model": "MDRF550FGF28ID",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 407,
+      "harga_rp": 7999000,
+      "harga_per_liter": 19653.56,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Midea",
+      "model": "MDRF632FGF28-ID",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 470,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Midea",
+      "model": "MDRF632FIF28ID",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 470,
+      "harga_rp": 10499000,
+      "harga_per_liter": 22338.3,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Midea",
+      "model": "MDRF632FIF22ID",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 474,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Midea",
+      "model": "MDRS710FGF02ID",
+      "tipe_pintu": "Side-by-Side",
+      "kapasitas_l": 548,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Midea",
+      "model": "MDRS710FGF28ID",
+      "tipe_pintu": "Side-by-Side",
+      "kapasitas_l": 548,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Midea",
+      "model": "MDRS715FGF28ID",
+      "tipe_pintu": "Side-by-Side",
+      "kapasitas_l": 558,
+      "harga_rp": 6999000,
+      "harga_per_liter": 12543.01,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Midea",
+      "model": "MDRS715FGF30ID",
+      "tipe_pintu": "Side-by-Side",
+      "kapasitas_l": 558,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Modena",
+      "model": "RF2250TGDS",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 220,
+      "harga_rp": 4429000,
+      "harga_per_liter": 20131.82,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Modena",
+      "model": "RF 4311 MADS",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 431,
+      "harga_rp": 10609000,
+      "harga_per_liter": 24614.85,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Modena",
+      "model": "RF 4671 SADS",
+      "tipe_pintu": "Side-by-Side",
+      "kapasitas_l": 467,
+      "harga_rp": 8879000,
+      "harga_per_liter": 19012.85,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Panasonic",
+      "model": "NRTC210BUND",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 217,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Panasonic",
+      "model": "NR-BB221Q-PK",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 221,
+      "harga_rp": 4692800,
+      "harga_per_liter": 21234.39,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Polytron",
+      "model": "PRH 51R",
+      "tipe_pintu": "1 Pintu",
+      "kapasitas_l": 50,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Polytron",
+      "model": "PRA 15DMY",
+      "tipe_pintu": "1 Pintu",
+      "kapasitas_l": 150,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Polytron",
+      "model": "PRB 159B",
+      "tipe_pintu": "1 Pintu",
+      "kapasitas_l": 150,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Polytron",
+      "model": "PRB 159R",
+      "tipe_pintu": "1 Pintu",
+      "kapasitas_l": 150,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Polytron",
+      "model": "PRB 159Y",
+      "tipe_pintu": "1 Pintu",
+      "kapasitas_l": 150,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Polytron",
+      "model": "PRW 23MNX",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 176,
+      "harga_rp": 3849000,
+      "harga_per_liter": 21869.32,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Polytron",
+      "model": "PRA 18 M0W",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 181,
+      "harga_rp": 2569000,
+      "harga_per_liter": 14193.37,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Polytron",
+      "model": "PRB 200R",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 200,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Polytron",
+      "model": "PRW 23MNR",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 220,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Polytron",
+      "model": "PRW 23VX",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 220,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Polytron",
+      "model": "PRW 25VX",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 240,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Polytron",
+      "model": "PRW 29HB",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 260,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Polytron",
+      "model": "PRW 29MNR",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 260,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Polytron",
+      "model": "PRW 29MNX",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 260,
+      "harga_rp": 3356122,
+      "harga_per_liter": 12908.16,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Polytron",
+      "model": "PRW 29VX",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 260,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Polytron",
+      "model": "PRS 510X",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 436,
+      "harga_rp": 10519000,
+      "harga_per_liter": 24126.15,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Polytron",
+      "model": "PRS 451Y",
+      "tipe_pintu": "Side-by-Side",
+      "kapasitas_l": 450,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Polytron",
+      "model": "PRS 455S",
+      "tipe_pintu": "Side-by-Side",
+      "kapasitas_l": 460,
+      "harga_rp": 7469000,
+      "harga_per_liter": 16236.96,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Polytron",
+      "model": "PRS 520Y",
+      "tipe_pintu": "Side-by-Side",
+      "kapasitas_l": 550,
+      "harga_rp": 6799000,
+      "harga_per_liter": 12361.82,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Samsung",
+      "model": "RT22FARBDB1/BL",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 234,
+      "harga_rp": 5569000,
+      "harga_per_liter": 23799.15,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Samsung",
+      "model": "RT25FARBDB1",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 255,
+      "harga_rp": 6539000,
+      "harga_per_liter": 25643.14,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Samsung",
+      "model": "RT35CG5440S9SE",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 348,
+      "harga_rp": 7570408,
+      "harga_per_liter": 21754.05,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Samsung",
+      "model": "RT38CB66408J",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 393,
+      "harga_rp": 8866326,
+      "harga_per_liter": 22560.63,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Samsung",
+      "model": "RT38CG6420B1SE",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 393,
+      "harga_rp": 8294898,
+      "harga_per_liter": 21106.61,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Samsung",
+      "model": "RF48A8000B4",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 511,
+      "harga_rp": 14099000,
+      "harga_per_liter": 27591.0,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Samsung",
+      "model": "RF65DB90B012SE",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 681,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Samsung",
+      "model": "RS57DG4000M9/SL",
+      "tipe_pintu": "Side-by-Side",
+      "kapasitas_l": 570,
+      "harga_rp": 10249000,
+      "harga_per_liter": 17980.7,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Samsung",
+      "model": "RS90F65DNFSE",
+      "tipe_pintu": "Side-by-Side",
+      "kapasitas_l": 641,
+      "harga_rp": 30000000,
+      "harga_per_liter": 46801.87,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Samsung",
+      "model": "RS70F65KNFSE/BL",
+      "tipe_pintu": "Side-by-Side",
+      "kapasitas_l": 660,
+      "harga_rp": 17799000,
+      "harga_per_liter": 26968.18,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Samsung",
+      "model": "RS70F65QNFSE/BL",
+      "tipe_pintu": "Side-by-Side",
+      "kapasitas_l": 680,
+      "harga_rp": 14099000,
+      "harga_per_liter": 20733.82,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-N163D-AB / AP",
+      "tipe_pintu": "1 Pintu",
+      "kapasitas_l": 133,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-N163D-SP / SH / SB",
+      "tipe_pintu": "1 Pintu",
+      "kapasitas_l": 133,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-N163D-VB / VR",
+      "tipe_pintu": "1 Pintu",
+      "kapasitas_l": 133,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-N163N-HS",
+      "tipe_pintu": "1 Pintu",
+      "kapasitas_l": 133,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-X166MG-GB / GR",
+      "tipe_pintu": "1 Pintu",
+      "kapasitas_l": 133,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-X168MG-DB / DP",
+      "tipe_pintu": "1 Pintu",
+      "kapasitas_l": 133,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-N183D-AB / AP",
+      "tipe_pintu": "1 Pintu",
+      "kapasitas_l": 166,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-N183D-SP / SH / SB",
+      "tipe_pintu": "1 Pintu",
+      "kapasitas_l": 166,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-N183D-VB / VR",
+      "tipe_pintu": "1 Pintu",
+      "kapasitas_l": 166,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-N183N-HS",
+      "tipe_pintu": "1 Pintu",
+      "kapasitas_l": 166,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-X186MG-GB / GR",
+      "tipe_pintu": "1 Pintu",
+      "kapasitas_l": 166,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-X188MG-DB / DP",
+      "tipe_pintu": "1 Pintu",
+      "kapasitas_l": 166,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-N193D-AB / AP",
+      "tipe_pintu": "1 Pintu",
+      "kapasitas_l": 184,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-N193D-SP / SH / SB",
+      "tipe_pintu": "1 Pintu",
+      "kapasitas_l": 184,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-N193D-VB / VR",
+      "tipe_pintu": "1 Pintu",
+      "kapasitas_l": 184,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-N193N-HS",
+      "tipe_pintu": "1 Pintu",
+      "kapasitas_l": 184,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-X196MG-GB / GR",
+      "tipe_pintu": "1 Pintu",
+      "kapasitas_l": 184,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-X198MG-DB / DP",
+      "tipe_pintu": "1 Pintu",
+      "kapasitas_l": 184,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-X198W-SB / DW",
+      "tipe_pintu": "1 Pintu",
+      "kapasitas_l": 185,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-X185MG-GR",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 166,
+      "harga_rp": 2089000,
+      "harga_per_liter": 12584.34,
+      "sumber_file": "Rotation_-_REF__File_Rapih__EC_BENCHMARK.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-195MD-SB / SY",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 172,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-195MD-SG2 / SR2",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 172,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-195MN-HS",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 172,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-197ND-VB2 / VP2",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 172,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-236MG-GB",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 187,
+      "harga_rp": 2999000,
+      "harga_per_liter": 16037.43,
+      "sumber_file": "Rotation_-_REF__File_Rapih__EC_BENCHMARK.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-236MG-GB / GR",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 205,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-236MG-GB/BE",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 205,
+      "harga_rp": 3029000,
+      "harga_per_liter": 14775.61,
+      "sumber_file": "Rotation_-_REF__File_Rapih__EC_BENCHMARK.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-236MN-HS",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 205,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-237MG-DB / DP",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 205,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-237ND-AP / AB",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 205,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-246GI-GK",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 205,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-246SI-GK",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 205,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-246XG-MR / MS",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 205,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-246XG-MS",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 205,
+      "harga_rp": 3599000,
+      "harga_per_liter": 17556.1,
+      "sumber_file": "Rotation_-_REF__File_Rapih__EC_BENCHMARK.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-246XI-MK",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 205,
+      "harga_rp": 4489000,
+      "harga_per_liter": 21897.56,
+      "sumber_file": "Rotation_-_REF__File_Rapih__EC_BENCHMARK.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-326SI-GK/BL",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 237,
+      "harga_rp": 4749000,
+      "harga_per_liter": 20037.97,
+      "sumber_file": "Rotation_-_REF__File_Rapih__EC_BENCHMARK.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-316MG-GB / GR",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 256,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-316MN-HS",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 256,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-317MG",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 256,
+      "harga_rp": 3171430,
+      "harga_per_liter": 12388.4,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-317MG-DB / DP",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 256,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-326GI-GK",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 256,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-326SI-GK",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 256,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-326XG-CP / MR / MS",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 256,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-326XI-MK",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 256,
+      "harga_rp": 4992663,
+      "harga_per_liter": 19502.59,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-356SI-DS",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 276,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-386SI-DS",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 306,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-420GP-SD",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 338,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-426GI-GK / GW / MS",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 338,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-426SI-GK",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 338,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-450GP-SD",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 352,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-456GI-GK / GW / MS",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 352,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-456SI-GK",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 352,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-IT620PM-DS",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 461,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-IT660PM-DS",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 502,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-IG762PM-SL",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 570,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-IG763PG-BK",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 570,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-IG862PM-SL",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 613,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-IG863PG-BK",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 613,
+      "harga_rp": 10815306,
+      "harga_per_liter": 17643.24,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-IG962PM-SL",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 656,
+      "harga_rp": 9998980,
+      "harga_per_liter": 15242.35,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-IG963PG-BK",
+      "tipe_pintu": "2 Pintu",
+      "kapasitas_l": 656,
+      "harga_rp": 11090817,
+      "harga_per_liter": 16906.73,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-IF50PMA-DS",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 472,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-IF51P-GCG",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 472,
+      "harga_rp": 10399000,
+      "harga_per_liter": 22031.78,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-IF51PG-BK",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 472,
+      "harga_rp": 9859000,
+      "harga_per_liter": 20887.71,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-IF51PG-BK / SJ-IF51PG-CG",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 472,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-IF51PG-BK/BL",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 472,
+      "harga_rp": 10149000,
+      "harga_per_liter": 21502.12,
+      "sumber_file": "Rotation_-_REF__File_Rapih__EC_BENCHMARK.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-IF60PM-DS",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 523,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-IF61PG-BK",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 523,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-IF85PG-GB",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 590,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-IF85PM-DS",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 590,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-IF90PM-DS",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 639,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-IF91PG-GB",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 639,
+      "harga_rp": 17939000,
+      "harga_per_liter": 28073.55,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-IF91PG-GB / SJ-IF91PG-GW",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 639,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-IFX96PDG-BK",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 780,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-IFX93PM-DS",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 800,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-IFX94PG-CG",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 800,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-IS50MA-SL",
+      "tipe_pintu": "Side-by-Side",
+      "kapasitas_l": 472,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-IS60MB-DS",
+      "tipe_pintu": "Side-by-Side",
+      "kapasitas_l": 563,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-IS61GA-BK",
+      "tipe_pintu": "Side-by-Side",
+      "kapasitas_l": 563,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-IS70PMA-DS",
+      "tipe_pintu": "Side-by-Side",
+      "kapasitas_l": 630,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-IS70PMA-SL",
+      "tipe_pintu": "Side-by-Side",
+      "kapasitas_l": 630,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "Sharp",
+      "model": "SJ-IS71PGA-BK",
+      "tipe_pintu": "Side-by-Side",
+      "kapasitas_l": 630,
+      "harga_rp": null,
+      "harga_per_liter": null,
+      "sumber_file": "Rotation_-_REF__Diagram_Sebar_-_Kapasitas_vs_Kategori_(AQUA_vs_Kompetitor)_-_Sharleen_MT.xlsx.txt"
+    },
+    {
+      "brand": "TCL",
+      "model": "P650SBS",
+      "tipe_pintu": "Side-by-Side",
+      "kapasitas_l": 546,
+      "harga_rp": 8259000,
+      "harga_per_liter": 15126.37,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Toshiba",
+      "model": "GR-RF611WI-PGF/BL",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 474,
+      "harga_rp": 10419000,
+      "harga_per_liter": 21981.01,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Toshiba",
+      "model": "GRRF611WI",
+      "tipe_pintu": "Multi-Door",
+      "kapasitas_l": 474,
+      "harga_rp": 9999000,
+      "harga_per_liter": 21094.94,
+      "sumber_file": "Rotation_-_REF__File_Rapih__EC_BENCHMARK.xlsx.txt"
+    },
+    {
+      "brand": "Toshiba",
+      "model": "GR-RS600WI-PMF",
+      "tipe_pintu": "Side-by-Side",
+      "kapasitas_l": 460,
+      "harga_rp": 8629000,
+      "harga_per_liter": 18758.7,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    },
+    {
+      "brand": "Toshiba",
+      "model": "GR-RS696WE-PMF/DY",
+      "tipe_pintu": "Side-by-Side",
+      "kapasitas_l": 620,
+      "harga_rp": 8799000,
+      "harga_per_liter": 14191.94,
+      "sumber_file": "Rotation_-_REF__Product_Benchmark_rev_Agu2026_(1).xlsx.txt"
+    }
+  ],
+  "meta": {
+    "digenerate": "2026-08-21T20:17:30+07:00"
+  }
+}

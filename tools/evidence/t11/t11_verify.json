@@ -1,0 +1,57 @@
+{
+  "index.html": {
+    "errors390": [],
+    "hscroll390": false,
+    "nav_count": 12,
+    "cards": 10,
+    "hscroll1280": false
+  },
+  "produk.html": {
+    "errors390": [
+      "console-error: Failed to load resource: the server responded with a status of 404 (File not found)",
+      "pageerror: api 404",
+      "console-error: Failed to load resource: the server responded with a status of 404 (File not found)"
+    ],
+    "hscroll390": false,
+    "nav_count": 12,
+    "cards": 0
+  },
+  "galeri.html": {
+    "errors390": [],
+    "hscroll390": false,
+    "nav_count": 12,
+    "cards": 0
+  },
+  "pasar.html": {
+    "errors390": [],
+    "hscroll390": false,
+    "nav_count": 12,
+    "cards": 0
+  },
+  "benchmark.html": {
+    "errors390": [
+      "console-error: Failed to load resource: the server responded with a status of 404 (File not found)"
+    ],
+    "hscroll390": false,
+    "nav_count": 12,
+    "cards": 0
+  },
+  "strategi.html": {
+    "errors390": [],
+    "hscroll390": false,
+    "nav_count": 12,
+    "cards": 0
+  },
+  "poster.html": {
+    "errors390": [],
+    "hscroll390": false,
+    "nav_count": 12,
+    "cards": 0
+  },
+  "file.html": {
+    "errors390": [],
+    "hscroll390": false,
+    "nav_count": 12,
+    "cards": 0
+  }
+}

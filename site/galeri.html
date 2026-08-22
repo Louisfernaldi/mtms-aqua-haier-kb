@@ -6,6 +6,7 @@
 <title>Galeri — MTMS AQUA HAIER</title>
 <meta name="description" content="323 foto kegiatan MTMS AQUA HAIER: kunjungan gudang, manufacturing visit, dan sesi induksi.">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/galeri.css">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 </head>
 <body>
@@ -21,6 +22,10 @@
       <a href="proses.html">Proses</a>
       <a href="galeri.html" class="active">Galeri</a>
       <a href="file.html">File</a>
+      <a href="pasar.html">Pasar</a>
+      <a href="benchmark.html">Benchmark</a>
+      <a href="strategi.html">Strategi</a>
+      <a href="poster.html">Poster</a>
     </nav>
     <div class="nav-actions">
       <button class="icon-btn" onclick="openSearch()">Cari</button>
@@ -33,18 +38,33 @@
   <section class="hero-mini">
     <span class="hero-mini-ico">📸</span>
     <div>
-      <h1>Galeri Kegiatan</h1>
-      <p>Klik foto untuk memperbesar. 323 foto dari kunjungan gudang, pabrik, dan sesi induksi.</p>
+      <h1>Museum Kegiatan MTMS</h1>
+      <p>Jelajahi 323 foto dalam urutan kegiatan dan subbab. Klik foto untuk memperbesar.</p>
     </div>
   </section>
-  <div id="galeri-root">
-    <div class="gallery-skeleton" id="gal-skeleton">
-      <div class="skel"></div><div class="skel"></div><div class="skel"></div>
-      <div class="skel"></div><div class="skel"></div><div class="skel"></div>
-      <div class="skel"></div><div class="skel"></div><div class="skel"></div>
-      <div class="skel"></div><div class="skel"></div><div class="skel"></div>
+
+  <section class="galeri-tools" aria-label="Pencarian foto galeri">
+    <label for="galeri-search">Cari foto di seluruh kegiatan</label>
+    <div class="galeri-search-wrap">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="11" cy="11" r="7"></circle>
+        <path d="m20 20-4-4"></path>
+      </svg>
+      <input id="galeri-search" type="search" autocomplete="off" placeholder="Cari nama foto, caption, atau teks di foto...">
     </div>
-    <p class="sec-sub" id="gal-loading" style="display:none">Foto belum dimuat — tarik ulang</p>
+    <p id="galeri-result-count" class="galeri-result-count" aria-live="polite">Memuat koleksi foto...</p>
+  </section>
+
+  <div id="galeri-root">
+    <div class="gallery-skeleton" id="galeri-skeleton" aria-label="Memuat galeri">
+      <div class="skel"></div><div class="skel"></div><div class="skel"></div><div class="skel"></div>
+      <div class="skel"></div><div class="skel"></div><div class="skel"></div><div class="skel"></div>
+    </div>
+  </div>
+
+  <div id="galeri-empty" class="galeri-empty" hidden>
+    <strong>Tidak ada foto yang cocok.</strong>
+    <span>Coba kata kunci lain atau kosongkan pencarian.</span>
   </div>
 </main>
 
@@ -73,83 +93,7 @@
 <script src="js/data.js"></script>
 <script src="js/search.js"></script>
 <script src="js/lightbox.js"></script>
-<script>
-function loadGaleri() {
-  if (window.MTMS_DATA && window.MTMS_DATA.galeri && window.MTMS_DATA.galeri.length) {
-    return Promise.resolve(window.MTMS_DATA.galeri);
-  }
-  return fetch("data/galeri.json")
-    .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); });
-}
-loadGaleri()
-  .then(function (groups) {
-    var root = document.getElementById("galeri-root");
-    var skeleton = document.getElementById("gal-skeleton");
-    var loading = document.getElementById("gal-loading");
-    if (skeleton) skeleton.style.display = "none";
-    if (loading) loading.style.display = "block";
-    root.innerHTML = "";
-    var idx = 0;
-    function buildGroup(g) {
-      var h = document.createElement("h2");
-      h.className = "sec";
-      h.textContent = g.folder;
-      var p = document.createElement("p");
-      p.className = "sec-sub";
-      p.textContent = g.files.length + " foto";
-      var gal = document.createElement("div");
-      gal.className = "gallery";
-      g.files.forEach(function (f) {
-        var fig = document.createElement("figure");
-        var img = document.createElement("img");
-        img.loading = "lazy";
-        img.decoding = "async";
-        img.src = "media/" + g.folder + "/" + f.file;
-        img.alt = f.name;
-        var cap = document.createElement("figcaption");
-        cap.textContent = f.name;
-        fig.appendChild(img);
-        fig.appendChild(cap);
-        gal.appendChild(fig);
-      });
-      root.appendChild(h);
-      root.appendChild(p);
-      root.appendChild(gal);
-    }
-    function renderNext() {
-      if (idx >= groups.length) { lightboxInit(); return; }
-      buildGroup(groups[idx]);
-      idx++;
-      lightboxInit();
-      if (idx >= groups.length) return;
-      var sentinel = document.createElement("div");
-      sentinel.style.height = "1px";
-      root.appendChild(sentinel);
-      if ("IntersectionObserver" in window) {
-        var io = new IntersectionObserver(function (entries) {
-          if (entries[0].isIntersecting) {
-            io.disconnect();
-            sentinel.remove();
-            renderNext();
-          }
-        }, { rootMargin: "600px 0px" });
-        io.observe(sentinel);
-      } else {
-        setTimeout(renderNext, 50);
-      }
-    }
-    renderNext();
-  })
-  .catch(function (err) {
-    var root = document.getElementById("galeri-root");
-    var skeleton = document.getElementById("gal-skeleton");
-    var loading = document.getElementById("gal-loading");
-    if (skeleton) skeleton.style.display = "none";
-    if (loading) loading.style.display = "block";
-    root.innerHTML = '<p class="sec-sub">Gagal memuat galeri (' + err.message + ').</p>' +
-      '<button class="icon-btn" onclick="location.reload()">Coba lagi</button>';
-  });
-</script>
+<script src="js/galeri.js"></script>
 <button class="to-top" id="to-top" aria-label="Kembali ke atas" title="Kembali ke atas">&#8593;</button>
 <script>
 var tt = document.getElementById("to-top");
