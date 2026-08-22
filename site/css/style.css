@@ -845,6 +845,10 @@ footer { border-top: 1px solid var(--border); background: var(--bg-card); margin
 .comp-spec-item.is-missing{cursor:pointer}
 .comp-spec-item.is-missing dd{text-decoration:underline dashed var(--border);text-underline-offset:3px}
 
+.comp-fill-meter{display:inline-block;margin-left:10px;padding:3px 9px;border-radius:999px;background:var(--bg-soft);color:var(--text-muted);font-size:.78rem;font-weight:700}
+.comp-pending-badge{position:absolute;top:6px;right:8px;min-width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;border-radius:999px;background:#f2c14e;color:#5f4300;font-size:.75rem;font-weight:800;z-index:2}
+.comp-model-info{position:relative}
+
 /* === Editor spesifikasi dinamis (panel tiket 02, bukan modal perbandingan) === */
 .ds-editor-entry{position:relative;display:flex;min-width:0;max-width:100%;flex:0 1 auto;flex-direction:column;align-items:flex-end;gap:5px;margin-left:auto}
 .ds-editor-fab{position:static;border:0;border-radius:12px;background:#006b96;color:#fff;padding:10px 16px;font:700 .88rem var(--font);box-shadow:0 6px 20px rgba(0,102,204,.22);cursor:pointer;min-width:44px;min-height:44px;white-space:nowrap}

@@ -196,8 +196,13 @@ function detailTriggerHtml(record){
   var photo=loadable?
     '<img class="comp-thumb" data-src="'+esc(loadable)+'" alt="'+esc(brand+" "+model)+'" loading="lazy">':
     '<span class="comp-thumb comp-thumb-missing" aria-label="Foto belum tersedia">'+(image?"Foto tersedia di sumber":"Belum tersedia")+'</span>';
+  var pendingN=0;
+  if(Array.isArray(record.research_suggestions)){
+    record.research_suggestions.forEach(function(s){if(s&&(s.status||"pending")==="pending")pendingN++;});
+  }
+  var badge=pendingN>0?'<span class="comp-pending-badge" title="'+pendingN+' usulan riset nunggu ACC">'+pendingN+'</span>':"";
   return '<button type="button" class="comp-model-info comp-detail-trigger" data-brand="'+esc(brand)+'" data-model="'+esc(model)+'" aria-label="Lihat detail '+esc(brand+" "+model)+'">'+
-    photo+'<span class="comp-model-detail">'+
+    photo+badge+'<span class="comp-model-detail">'+
     '<span class="comp-brand-badge comp-'+esc(lk)+'">'+esc(brand)+'</span>'+
     '<strong class="comp-model-name">'+esc(model)+'</strong>'+
     '<span class="comp-meta"><span class="comp-cap">'+(record.capacity?esc(record.capacity+" L"):"Belum tersedia")+'</span>'+
@@ -392,7 +397,41 @@ function renderAll(){
     button.disabled=!liveReady||saveBusy;
   });
   applySelectedMobileBrand();
+  fillMeters();
+  tryDeepLink();
   lazyLoad();
+}
+function fillMeters(){
+  document.querySelectorAll(".comp-category-section").forEach(function(sec){
+    var items=sec.querySelectorAll(".comp-spec-item");
+    if(!items.length)return;
+    var miss=sec.querySelectorAll(".comp-spec-item.is-missing").length;
+    var txt=(items.length-miss)+"/"+items.length+" terisi";
+    var head=sec.querySelector(".comp-category-heading");if(!head)return;
+    var m=head.querySelector(".comp-fill-meter");
+    if(!m){m=document.createElement("span");m.className="comp-fill-meter";head.appendChild(m);}
+    m.textContent=txt;
+  });
+}
+var deepLinkDone=false,deepLinkTries=0;
+function tryDeepLink(){
+  if(deepLinkDone||!location.hash||location.hash.length<3||deepLinkTries>20)return;
+  if(!liveReady){deepLinkTries++;return;}
+  var parts={};
+  location.hash.replace(/^#/,"").split("&").forEach(function(kv){
+    var p=kv.split("=",2);parts[p[0]]=decodeURIComponent(p[1]||"");
+  });
+  if(!parts.model||!parts.field)return;
+  var sel='.comp-spec-item.comp-spec-editable[data-edit-model="'+parts.model.replace(/"/g,"")+'"][data-spec-key="'+parts.field.replace(/[^a-z0-9_]/gi,"")+'"]';
+  var row=document.querySelector(sel);
+  if(!row){deepLinkTries++;return;}
+  deepLinkTries++;
+  row.scrollIntoView({block:"center"});
+  row.click();
+  setTimeout(function(){
+    if(document.querySelector(".comp-mini-edit")){deepLinkDone=true;}
+    else{deepLinkDone=false;}
+  },450);
 }
 
 if(mobileBrandSelect){
