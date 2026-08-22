@@ -696,3 +696,27 @@ LULUS (jalur overlay fallback diuji dengan skrip editor dikosongkan route)
 `
 
 Insiden tabrakan sesi: commit 906689a sesi galeri membawa CSS .pk-research dan panggilan configureResearch milik sesi ini ke live (deploy ce5b8836) tanpa modulnya di commit; live terverifikasi TIDAK putus karena deploy wrangler menyalin folder kerja yang saat itu sudah memuat product-detail.js WIP. Sisa diff sesi ini dikommit surgical terpisah.
+
+## 2026-08-22 WIB - Aktivasi Worker + Live Proof + Insiden Env
+
+ACC Louis: "Aktifkan sekarang" + "Promote sekalian". Dipasang: branch data `research-queue` + seed `research-jobs.json`, kunci Actions `MTMS_RESEARCH_DATA_TOKEN`, kunci Pages `RESEARCH_WORKFLOW_TOKEN` / `RESEARCH_WORKFLOW_REF=master`.
+
+Bukti live end-to-end (AQUA::AQR-D225): POST 202 -> workflow run success -> worker klaim+fetch 200 -> konfirmasi model dari teks halaman -> status terminal `completed` kebaca via GET. Kasus LG::GN-Y331SLSR: www.lg.com menolak scraper (403) -> berakhir failed/unresolved JUJUR setelah kuota 2 percobaan; halaman tanpa field JSON-LD produk selesai `completed` TANPA usulan (nol ngarang nilai).
+
+Bug yang ditemukan & ditambal di akarnya saat uji live:
+1. Validasi JS menuntut `source_kind` di receipt worker -> receipt (url resmi + outcome) kini diterima, host tetap dijaga allowlist.
+2. Job `running` gagal-fetch tak pernah di-dispatch ulang -> `dispatchIsEligible` mengizinkan, worker mengklaim ulang `running` berkode LAST_FETCH_FAILED.
+3. Tulisan worker menghilangkan `finished_at` -> validator menjadikannya opsional.
+4. Konfirmasi model hanya via JSON-LD Product -> jalur teks polos mandiri.
+5. Fetch memakai UA browser.
+
+INSIDEN LOGIN (12-13 WIB): PATCH deployment_configs dari sesi ini mengirim entri kunci lama TANPA nilai sehingga Cloudflare mengosongkan LOGIN_PASSWORD/GITHUB_TOKEN -> login situs 401 umum. Tanda tertukar antara deployment immutable `e878edaf` (sehat) vs baru. Pulih total via `tools/set_env_lengkap.py` yang SELALU mengirim nilai lengkap semua kunci dalam satu PATCH; login 200 terverifikasi ulang di master dan apex. Pelajaran: jangan pernah read-modify-write config CF untuk tipe kunci rahasia.
+
+```text
+$ node --test tests/research-api.test.mjs   -> tests 22 / pass 22 / fail 0
+$ python -m unittest discover -s tests -p "test_*.py" -> Ran 37 OK
+$ python -X utf8 tools/verify_product_detail.py -> PASS (termasuk edit-baris + sabotase)
+$ bukti apex: login 200; kompetitor comp-spec-editable YA; door_count/freezer_position comparison=false; POST riset 202
+```
+
+Rantai commit sesi ini: `73c9b79` tiket04 · `2dff6d0` tiket05 inti · `54045d5` edit-baris · `a4a5140` receipt+redispatch · `a2dca7c` finished_at opsional · `04c7160` nama polos · `584cd9b` UA browser · `9f7ad44` konfirmasi teks.
