@@ -778,7 +778,7 @@ async def assert_comparison_round1(page, width, label):
         fail(label + ": fixture tidak punya sel kompetitor kosong")
     action_contract = await actions.evaluate_all("""nodes => nodes.map(node => ({
         actual: node.textContent.trim(),
-        expected: '+ Tambah ' + node.getAttribute('data-brand')
+        expected: 'Model ' + node.getAttribute('data-brand') + ' belum ada · Tambah'
     }))""")
     wrong_actions = [item for item in action_contract if item["actual"] != item["expected"]]
     if wrong_actions:

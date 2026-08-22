@@ -837,6 +837,13 @@ footer { border-top: 1px solid var(--border); background: var(--bg-card); margin
 .comp-mini-actions button:disabled{opacity:.55;cursor:wait}
 .comp-mini-msg{margin:0;min-height:1.1em;font-size:.8rem;color:var(--text-muted)}
 .comp-mini-msg.is-error{color:#b42318;font-weight:700}
+.comp-mini-sapu{display:flex;align-items:center;gap:6px;font-size:.8rem;font-weight:700;color:var(--text-muted);cursor:pointer}
+.comp-mini-sapu input{width:16px;height:16px;accent-color:var(--accent)}
+.comp-mini-riset{border-style:dashed!important;border-color:var(--text-muted)!important;background:transparent!important;color:var(--text)!important}
+.comp-mini-newval{padding:8px 10px;border-radius:8px;background:var(--bg-soft);font-weight:800;color:var(--accent-dark);overflow-wrap:anywhere}
+.comp-spec-item.is-sapu-done dd{color:var(--accent-dark)}
+.comp-spec-item.is-missing{cursor:pointer}
+.comp-spec-item.is-missing dd{text-decoration:underline dashed var(--border);text-underline-offset:3px}
 
 /* === Editor spesifikasi dinamis (panel tiket 02, bukan modal perbandingan) === */
 .ds-editor-entry{position:relative;display:flex;min-width:0;max-width:100%;flex:0 1 auto;flex-direction:column;align-items:flex-end;gap:5px;margin-left:auto}

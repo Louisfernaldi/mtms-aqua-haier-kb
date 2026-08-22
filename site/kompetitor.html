@@ -338,7 +338,7 @@ function renderRow(row,catCode){
         '<button class="comp-del" data-brand="'+esc(c.brand)+'" data-model="'+esc(c.model)+'">🗑 Hapus</button>'+
         '</div></td>';
     }else{
-      html+='<td class="comp-cell comp-empty" data-brand="'+esc(brand)+'"><button type="button" class="comp-add-cell" data-brand="'+esc(brand)+'" data-aqua="'+esc(aq.model)+'" data-cat="'+esc(catCode)+'">+ Tambah '+esc(brand)+'</button></td>';
+      html+='<td class="comp-cell comp-empty" data-brand="'+esc(brand)+'"><button type="button" class="comp-add-cell" data-brand="'+esc(brand)+'" data-aqua="'+esc(aq.model)+'" data-cat="'+esc(catCode)+'">Model '+esc(brand)+' belum ada · Tambah</button></td>';
     }
   }
   html+='</tr>';
@@ -443,83 +443,178 @@ function findModelAny(brand,model){
   }
   return null;
 }
-function openMiniEdit(row){
-  closeMiniEdit();
-  var key=row.getAttribute("data-spec-key"),
-      brand=row.getAttribute("data-edit-brand"),
-      name=row.getAttribute("data-edit-name"),
-      modelId=brand+"::"+name,
-      label=row.querySelector("dt")?row.querySelector("dt").textContent:key;
-  var m=findModelAny(brand,name);
-  if(!m){doEdit(brand,name);return;}
+function wibTime(iso){
+  try{return new Date(iso).toLocaleString("id-ID",{timeZone:"Asia/Jakarta",day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"})+" WIB";}
+  catch(_e){return String(iso||"");}
+}
+function placeMini(pop,row){
+  var r=row.getBoundingClientRect(),pw=Math.min(320,window.innerWidth-24);
+  if(window.innerWidth<=600){pop.style.position="fixed";pop.style.left="8px";pop.style.right="8px";pop.style.top="auto";pop.style.bottom="10px";pop.style.width="auto";return;}
+  pop.style.position="fixed";pop.style.width=pw+"px";
+  var left=Math.min(Math.max(12,r.left),window.innerWidth-pw-12);
+  var top=r.bottom+6;
+  if(top+150>window.innerHeight)top=Math.max(12,r.top-156);
+  pop.style.left=left+"px";pop.style.top=top+"px";
+}
+function rawOf(m,key){
   var entry=(m.spec_values&&typeof m.spec_values==="object")?m.spec_values[key]:null;
   var raw=(entry&&entry.value!==undefined&&entry.value!==null)?entry.value:"";
   if(Array.isArray(raw))raw=raw.map(String).join(", ");
+  return String(raw);
+}
+function openMiniEdit(row){
+  closeMiniEdit();
+  var curRow=row;
+  function keyOf(r){return r.getAttribute("data-spec-key");}
+  function ctx(){
+    var k=keyOf(curRow),b=curRow.getAttribute("data-edit-brand"),n=curRow.getAttribute("data-edit-name");
+    return {key:k,brand:b,name:n,modelId:b+"::"+n,
+      label:curRow.querySelector("dt")?curRow.querySelector("dt").textContent:k,
+      m:findModelAny(b,n)};
+  }
+  var c=ctx();var m=c.m;
+  if(!m){doEdit(c.brand,c.name);return;}
+  var isEmpty=curRow.classList.contains("is-missing");
   var pop=document.createElement("div");
   pop.className="comp-mini-edit";pop.setAttribute("role","dialog");
-  pop.setAttribute("aria-label","Ubah "+label+" "+brand+" "+name);
-  pop.innerHTML='<strong>'+esc(label)+' — '+esc(brand)+' '+esc(name)+'</strong>'+
-    '<input type="text" class="comp-mini-input" aria-label="Nilai '+esc(label)+'">'+
-    '<div class="comp-mini-actions"><button type="button" class="comp-mini-save">Simpan</button>'+
+  pop.setAttribute("aria-label","Ubah "+c.label+" "+c.brand+" "+c.name);
+  pop.innerHTML='<strong>'+esc(c.label)+' — '+esc(c.brand)+' '+esc(c.name)+'</strong>'+
+    '<input type="text" class="comp-mini-input" aria-label="Nilai '+esc(c.label)+'">'+
+    '<div class="comp-mini-actions">'+
+    '<button type="button" class="comp-mini-save">Simpan</button>'+
     '<button type="button" class="comp-mini-cancel">Batal</button></div>'+
+    '<label class="comp-mini-sapu"><input type="checkbox" class="comp-mini-sapu-ck"> Lanjut baris berikutnya</label>'+
     '<p class="comp-mini-msg" role="status"></p>';
   document.body.appendChild(pop);
-  var r=row.getBoundingClientRect(),pw=Math.min(320,window.innerWidth-24);
-  pop.style.position="fixed";
-  pop.style.width=pw+"px";
-  var left=Math.min(Math.max(12,r.left),window.innerWidth-pw-12);
-  var top=r.bottom+6;
-  if(top+140>window.innerHeight)top=Math.max(12,r.top-146);
-  pop.style.left=left+"px";pop.style.top=top+"px";
+  placeMini(pop,curRow);
   var input=pop.querySelector(".comp-mini-input"),msg=pop.querySelector(".comp-mini-msg");
-  input.value=String(raw);input.focus();input.select();
+  var titleEl=pop.querySelector("strong");
+  var sapuCk=pop.querySelector(".comp-mini-sapu-ck");
+  try{sapuCk.checked=localStorage.getItem("mtms-mini-sapu")==="1";}catch(_e){}
+  sapuCk.addEventListener("change",function(){try{localStorage.setItem("mtms-mini-sapu",sapuCk.checked?"1":"0");}catch(_e){}});
+  input.value=rawOf(m,c.key);input.focus();input.select();
   function miniMsg(t,kind){msg.textContent=t;msg.className="comp-mini-msg"+(kind?" is-"+kind:"");}
-  function save(){
-    if(miniBusy)return;
-    var v=input.value.trim();
-    if(!v){miniMsg("Isi nilainya dulu.","error");return;}
-    if(!compSha){miniMsg("Muat ulang halaman dulu supaya SHA terbaru.","error");return;}
-    miniBusy=true;
-    var buttons=pop.querySelectorAll("button");buttons.forEach(function(b){b.disabled=true;});
+  function busy(on){miniBusy=on;pop.querySelectorAll("button").forEach(function(b){b.disabled=on;});}
+  function nextEmptyInColumn(){
+    var td=curRow.closest("td");if(!td)return null;
+    var items=Array.prototype.slice.call(td.querySelectorAll(".comp-spec-item.comp-spec-editable"));
+    var idx=items.indexOf(curRow);
+    for(var i=idx+1;i<items.length;i++)if(items[i].classList.contains("is-missing"))return items[i];
+    return null;
+  }
+  function moveTo(r){
+    curRow=r;c=ctx();
+    titleEl.textContent=c.label+" — "+c.brand+" "+c.name;
+    input.value=rawOf(c.m,c.key);msg.textContent="";
+    placeMini(pop,curRow);input.focus();input.select();
+  }
+  function applyLocal(v){
+    m.spec_values=m.spec_values&&typeof m.spec_values==="object"?m.spec_values:{};
+    var prev=m.spec_values[keyOf(curRow)]&&typeof m.spec_values[keyOf(curRow)]==="object"?m.spec_values[keyOf(curRow)]:{};
+    var parsed=v;
+    if(/^[-+]?[0-9]+([.][0-9]+)?$/.test(v))parsed=Number(v);
+    m.spec_values[keyOf(curRow)]={value:parsed,
+      source_url:prev.source_url||null,source_kind:prev.source_kind||null,
+      verified_at:new Date().toISOString(),
+      origin:"user",user_locked:true};
+    ddUpdate(curRow,m.spec_values[keyOf(curRow)]);
+  }
+  var sendPatch=function(v,isRetry){
+    busy(true);
     fetch("api/kompetitor",{method:"PATCH",credentials:"same-origin",
       headers:{"Content-Type":"application/json","If-Match":"\""+compSha+"\""},
-      body:JSON.stringify({action:"set_spec_value",model_id:modelId,key:key,entry:{value:v}})
+      body:JSON.stringify({action:"set_spec_value",model_id:c.modelId,key:c.key,entry:{value:v}})
     }).then(function(r){
       return r.json().catch(function(){return{};}).then(function(j){return{status:r.status,body:j};});
     }).then(function(res){
-      miniBusy=false;
       if(res.status===200&&res.body.ok){
         compSha=res.body.sha||compSha;
-        m.spec_values=m.spec_values&&typeof m.spec_values==="object"?m.spec_values:{};
-        var prev=m.spec_values[key]&&typeof m.spec_values[key]==="object"?m.spec_values[key]:{};
-        var parsed=v;
-        if(/^[-+]?[0-9]+([.][0-9]+)?$/.test(v))parsed=Number(v);
-        m.spec_values[key]={value:parsed,
-          source_url:prev.source_url||null,source_kind:prev.source_kind||null,
-          verified_at:prev.verified_at||new Date().toISOString(),
-          origin:"user",user_locked:true};
-        var cat=null;
-        if(window.MTMSSpecCategories){specCategories.forEach(function(c){if(c.key===key)cat=c;});}
-        ddUpdate(row,m.spec_values[key],cat);
+        applyLocal(v);
+        curRow.classList.add("is-sapu-done");
+        if(sapuCk.checked){
+          var nxt=nextEmptyInColumn();
+          if(nxt){busy(false);moveTo(nxt);return;}
+          closeMiniEdit();showToast("Ronde sapu selesai","ok");busy(false);
+          return;
+        }
         closeMiniEdit();
-        showToast("Tersimpan: "+label+" "+brand+" "+name,"ok");
+        showToast("Tersimpan: "+c.label+" "+c.brand+" "+c.name,"ok");
+        busy(false);
         return;
       }
-      buttons.forEach(function(b){b.disabled=false;miniBusy=false;});
+      busy(false);
       if(res.status===401)miniMsg("Login dulu untuk menyimpan.","error");
-      else if(res.status===412||res.status===409){miniMsg("Data berubah di luar. Memuat ulang...","error");
-        loadData().then(function(){window.MTMS_COMPETITOR_LIVE_READY=liveReady;renderAll();refreshOpenDetail();});}
+      else if(res.status===412||res.status===409){
+        fetch("api/kompetitor",{credentials:"same-origin"}).then(function(g){
+          var freshSha=g.headers.get("X-Data-SHA")||"";
+          return g.json().then(function(fresh){return{sha:freshSha,data:fresh};});
+        }).then(function(fr){
+          var fv="—",fvAt=new Date().toISOString();
+          for(var i=0;i<(fr.data.brands||[]).length;i++){
+            var bb=fr.data.brands[i];if(bb.brand!==c.brand)continue;
+            for(var jj=0;jj<(bb.models||[]).length;jj++)if(bb.models[jj].model===c.name){
+              var fe=(bb.models[jj].spec_values||{})[c.key]||{};
+              fv=fe.value===undefined?"—":fe.value;fvAt=fe.verified_at||new Date().toISOString();
+            }
+          }
+          pop.innerHTML='<strong>Konflik: '+esc(c.label+' — '+c.brand+' '+c.name)+'</strong>'+
+            '<p class="comp-mini-msg">Nilai ini baru diubah <b>'+esc(wibTime(fvAt))+'</b> menjadi:</p>'+
+            '<div class="comp-mini-newval">'+esc(String(fv))+'</div>'+
+            '<div class="comp-mini-actions"><button type="button" class="comp-mini-take">Pakai yang baru</button>'+
+            '<button type="button" class="comp-mini-force">Tetap timpa</button></div>';
+          placeMini(pop,curRow);
+          pop.querySelector(".comp-mini-take").addEventListener("click",function(){
+            compSha=fr.sha||compSha;applyLocal(String(fv));closeMiniEdit();
+            showToast("Dipakai nilai terbaru","ok");
+          });
+          pop.querySelector(".comp-mini-force").addEventListener("click",function(){
+            compSha=fr.sha||compSha;sendPatch(v,false);
+          });
+        }).catch(function(){miniMsg("Gagal memuat nilai terbaru.","error");});
+      }
       else if(res.status===403)miniMsg("Akses ditolak.","error");
       else miniMsg((res.body&&res.body.error)||"Gagal menyimpan.","error");
     }).catch(function(){
-      miniBusy=false;buttons.forEach(function(b){b.disabled=false;});
-      miniMsg("Jaringan bermasalah. Coba lagi.","error");
+      if(!isRetry){setTimeout(function(){sendPatch(v,true);},1200);return;}
+      busy(false);
+      miniMsg("Jaringan bermasalah dua kali. Coba lagi nanti.","error");
+    });
+  };
+  function save(){
+    if(miniBusy)return;
+    c=ctx();
+    var v=input.value.trim();
+    if(!v){miniMsg("Isi nilainya dulu.","error");return;}
+    if(!compSha){miniMsg("Muat ulang halaman dulu supaya SHA terbaru.","error");return;}
+    sendPatch(v,false);
+  }
+  var risetBtn=null;
+  if(isEmpty){
+    risetBtn=document.createElement("button");
+    risetBtn.type="button";risetBtn.className="comp-mini-riset";risetBtn.textContent="Minta riset";
+    pop.querySelector(".comp-mini-actions").insertBefore(risetBtn,pop.querySelector(".comp-mini-save"));
+    risetBtn.addEventListener("click",function(){
+      if(miniBusy)return;c=ctx();busy(true);
+      fetch("api/research",{method:"POST",credentials:"same-origin",
+        headers:{"Content-Type":"application/json"},
+        body:JSON.stringify({model_id:c.modelId})
+      }).then(function(r){return r.json().catch(function(){return{};}).then(function(j){return{status:r.status,body:j};});})
+      .then(function(res){
+        busy(false);
+        if(res.status===202)miniMsg("Riset antre. Hasil masuk tab Saran riset di detail model.","ok");
+        else if(res.status===401)miniMsg("Login dulu untuk minta riset.","error");
+        else miniMsg((res.body&&res.body.error)||"Gagal minta riset.","error");
+      }).catch(function(){busy(false);miniMsg("Jaringan bermasalah.","error");});
     });
   }
   pop.querySelector(".comp-mini-save").addEventListener("click",save);
   pop.querySelector(".comp-mini-cancel").addEventListener("click",closeMiniEdit);
   input.addEventListener("keydown",function(ev){
-    if(ev.key==="Enter"){ev.preventDefault();save();}
+    if(ev.key==="Enter"&&!ev.shiftKey){ev.preventDefault();save();}
+    else if(ev.key==="Enter"&&ev.shiftKey&&sapuCk.checked){
+      ev.preventDefault();
+      var nxt=nextEmptyInColumn();if(nxt)moveTo(nxt);
+    }
   });
 }
 function ddUpdate(row,entry,category){
