@@ -21,3 +21,4 @@ Gelombang eksekusi:
 - G2: 02 (butuh 01), 05 (butuh 04), 08 (butuh 01), 09 (butuh 07)
 - G3: 10 (butuh 01,04,06,07)
 - G4: 11 (butuh G2 + sesi sebelah KELAR) → 12 (BUTUH-ACC)
+
