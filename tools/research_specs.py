@@ -312,6 +312,10 @@ def _model_match(
     part = model_id.split("::", 1)[-1].lower() if "::" in model_id else model_id.lower()
     if mid in html_lower:
         return True
+    # Halaman resmi lazim menyebut nama model polos tanpa awalan merek;
+    # URL sumber sudah dipatok allowlist resmi per merek, jadi ini aman.
+    if part and part in html_lower:
+        return True
     if not isinstance(product_node, dict):
         return False
     for key in ("sku", "model", "mpn", "name"):
