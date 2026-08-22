@@ -551,6 +551,13 @@ def run_worker(
                 if _model_match(model_id, html_lower, product):
                     model_confirmed = True
                     source_candidates.extend(_collect_candidates(product, source_kind, source_url))
+        # Konfirmasi teks polos TIDAK bergantung JSON-LD Product; halaman resmi
+        # kerap hanya membawa ld+json non-produk. URL sumber sudah dijaga
+        # allowlist resmi per merek sehingga pemeriksaan nama model cukup.
+        if not model_confirmed and result.body is not None:
+            plain_lower = result.body.decode("utf-8", errors="ignore").lower()
+            if _model_match(model_id, plain_lower, None):
+                model_confirmed = True
         for item in source_candidates:
             value = item["value"]
             key = item["key"]
