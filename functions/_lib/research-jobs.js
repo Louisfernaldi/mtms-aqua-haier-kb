@@ -281,8 +281,8 @@ export function validateQueueDocument(document) {
         !isExactModelId(job.model_id) || !["kompetitor", "produk"].includes(job.target) ||
         !JOB_STATUSES.has(job.status) || !Array.isArray(job.sources) || job.sources.length > 2 ||
         typeof job.requested_at !== "string" || !job.requested_at ||
-        !(job.started_at === null || typeof job.started_at === "string") ||
-        !(job.finished_at === null || typeof job.finished_at === "string") ||
+        !(job.started_at === undefined || job.started_at === null || typeof job.started_at === "string") ||
+        !(job.finished_at === undefined || job.finished_at === null || typeof job.finished_at === "string") ||
         !Array.isArray(job.candidates) || job.candidates.length > 100 ||
         !job.sources.every(function (source) {
           const safe = safeOfficialSourceUrl(source && source.url, brandFromModelId(job.model_id));
