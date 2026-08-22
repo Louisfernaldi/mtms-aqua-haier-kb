@@ -1265,6 +1265,58 @@ async def wait_research_log(predicate, timeout_ms=5000):
     fail("log riset tidak memuat entri yang diharapkan dalam batas waktu")
 
 
+async def assert_row_edit_focus(page, width, label):
+    row = page.locator(
+        '.comp-category-section').first.locator(
+        'tbody tr').first.locator('td.comp-aqua .comp-spec-item.comp-spec-editable[data-spec-key="form_factor"]')
+    if await row.count() != 1:
+        fail(label + ": baris spesifikasi editable tidak exact satu: " + str(await row.count()))
+    model_id = await row.get_attribute("data-edit-model")
+    if not model_id or not model_id.startswith("AQUA::"):
+        fail(label + ": data-edit-model hilang/salah: " + repr(model_id))
+    await row.scroll_into_view_if_needed()
+    await row.click()
+    shell = page.locator(".ds-editor-shell")
+    try:
+        await shell.wait_for(state="visible", timeout=4000)
+    except AssertionError:
+        fail(label + ": klik baris spesifikasi tidak membuka editor")
+    select = shell.locator("[data-ds-model-select]")
+    if await select.count() != 1 or (await select.input_value()) != model_id:
+        fail(label + ": editor tidak membuka model baris: %s != %s" %
+             ((await select.input_value()) if await select.count() else None, model_id))
+    focused_key = await page.evaluate(
+        "document.activeElement && document.activeElement.getAttribute('data-ds-spec-key')")
+    if focused_key != "form_factor":
+        fail(label + ": fokus tidak mendarat di field form_factor: " + repr(focused_key))
+    await page.keyboard.press("Escape")
+    await shell.wait_for(state="hidden", timeout=4000)
+
+    await row.evaluate("node => node.classList.remove('comp-spec-editable')")
+    bare_row = page.locator('.comp-category-section').first.locator(
+        'tbody tr').first.locator('td.comp-aqua .comp-spec-item[data-spec-key="form_factor"]')
+    if await bare_row.count() != 1:
+        fail(label + ": baris sabotase hilang dari DOM")
+    detected = False
+    try:
+        await bare_row.click()
+        sabotage_shell = page.locator(".ds-editor-shell")
+        await sabotage_shell.wait_for(state="visible", timeout=2500)
+        await page.keyboard.press("Escape")
+    except Exception:
+        detected = True
+    finally:
+        if await page.locator(".ds-editor-shell").count() and \
+                not await page.evaluate("document.querySelector('.ds-editor-shell').hidden"):
+            await page.keyboard.press("Escape")
+            try:
+                await page.locator(".ds-editor-shell").wait_for(state="hidden", timeout=2000)
+            except Exception:
+                pass
+    if not detected:
+        fail(label + ": sabotase baris non-editable tidak membuat verifier merah")
+
+
 async def page_sleep(ms):
     await asyncio.sleep(ms / 1000)
 
@@ -1869,6 +1921,8 @@ async def run_browser(base, fixture):
                 await page.get_by_label("Bandingkan AQUA dengan", exact=True).select_option(competitor_brand)
             await assert_main_table_contract(page, categories, competitor_fixture, competitor_brand)
             await assert_inline_editor(page, width, "kompetitor %dpx" % width)
+            if width > 600:
+                await assert_row_edit_focus(page, width, "kompetitor %dpx" % width)
             await assert_tap_targets(page, "kompetitor tabel %dpx" % width)
 
             edit = page.locator('.comp-edit[data-brand="AQUA"][data-model="%s"]' % aqua["model"])

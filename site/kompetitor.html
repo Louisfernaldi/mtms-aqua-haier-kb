@@ -211,11 +211,13 @@ function comparisonSpecsHtml(record){
   var values=record.spec_values&&typeof record.spec_values==="object"&&!Array.isArray(record.spec_values)?record.spec_values:{};
   var categories=specCategories.filter(function(category){return category.active===true&&category.comparison===true})
     .sort(function(a,b){return a.order-b.order||a.key.localeCompare(b.key)});
+  var brand=record.brand||"AQUA";
+  var modelId=brand+"::"+record.model;
   return '<dl class="comp-spec-list">'+categories.map(function(category){
     var entry=values[category.key];
     var formatted=contract?contract.formatValue(entry,category):missing;
     var empty=formatted===missing;
-    return '<div class="comp-spec-item'+(empty?' is-missing':'')+'" data-spec-key="'+esc(category.key)+'">'+
+    return '<div class="comp-spec-item'+(empty?' is-missing':'')+' comp-spec-editable" data-spec-key="'+esc(category.key)+'" role="button" tabindex="0" aria-label="Edit '+esc(category.label)+' '+esc(brand)+' '+esc(record.model)+'" data-edit-model="'+esc(modelId)+'" data-edit-brand="'+esc(brand)+'" data-edit-name="'+esc(record.model)+'">'+
       '<dt>'+esc(category.label)+'</dt><dd>'+esc(formatted)+'</dd></div>';
   }).join("")+'</dl>';
 }
@@ -421,7 +423,11 @@ function lazyLoad(){
 
 /* === EVENT DELEGATION for edit/delete/add buttons === */
 container.addEventListener("click",function(e){
-  var btn=e.target.closest(".comp-edit");
+  var btn=e.target.closest(".comp-spec-item.comp-spec-editable");
+  if(btn&&liveReady&&window.MTMSDynamicSpecEditor&&window.MTMSDynamicSpecEditor.openFor&&
+     window.MTMSDynamicSpecEditor.openFor(btn.getAttribute("data-edit-model"),btn.getAttribute("data-spec-key"))){return;}
+  if(btn){doEdit(btn.getAttribute("data-edit-brand"),btn.getAttribute("data-edit-name"));return;}
+  btn=e.target.closest(".comp-edit");
   if(btn){doEdit(btn.dataset.brand,btn.dataset.model);return;}
   btn=e.target.closest(".comp-del");
   if(btn){doDel(btn.dataset.brand,btn.dataset.model);return;}
@@ -431,6 +437,13 @@ container.addEventListener("click",function(e){
   if(btn){doAddInCell(btn.dataset.brand,btn.dataset.aqua);return;}
   btn=e.target.closest(".comp-detail-trigger");
   if(btn){openDetail(btn.dataset.brand,btn.dataset.model);return;}
+});
+container.addEventListener("keydown",function(e){
+  if(e.key!=="Enter"&&e.key!==" ")return;
+  var row=e.target.closest(".comp-spec-item.comp-spec-editable");
+  if(!row)return;
+  e.preventDefault();
+  row.click();
 });
 
 /* === EDIT OVERLAY === */

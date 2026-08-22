@@ -4,6 +4,7 @@
   if (window.MTMSDynamicSpecEditor) return;
 
   var activeEditor = null;
+  var pendingFocusKey = "";
 
   var CORE_KEYS = [
     "form_factor", "door_count", "freezer_position", "gross_capacity_l",
@@ -228,16 +229,28 @@
       shell.hidden = false;
       button.setAttribute("aria-expanded", "true");
       render();
-      shell.querySelector(".ds-editor-close").focus();
+      var target = null;
+      if (pendingFocusKey) {
+        target = shell.querySelector('input[data-ds-spec-key="' + pendingFocusKey + '"]');
+        pendingFocusKey = "";
+      }
+      if (target) {
+        target.scrollIntoView({ block: "center" });
+        target.focus();
+        if (typeof target.select === "function") target.select();
+      } else {
+        shell.querySelector(".ds-editor-close").focus();
+      }
     }
 
-    function openFor(modelId) {
+    function openFor(modelId, focusKey) {
       if (!state.ready) return false;
       if (typeof modelId === "string" && modelId) {
         var exists = state.models.some(function (row) { return row.modelId === modelId; });
         if (!exists) return false;
         state.selectedModelId = modelId;
       }
+      pendingFocusKey = typeof focusKey === "string" ? focusKey : "";
       state.tab = "model";
       open();
       return true;
@@ -546,8 +559,8 @@
 
   window.MTMSDynamicSpecEditor = {
     mount: mount,
-    openFor: function (modelId) {
-      return Boolean(activeEditor && activeEditor.openFor(modelId));
+    openFor: function (modelId, focusKey) {
+      return Boolean(activeEditor && activeEditor.openFor(modelId, focusKey));
     },
     _loadInitialData: loadInitialData,
     _flattenModels: flattenModels
