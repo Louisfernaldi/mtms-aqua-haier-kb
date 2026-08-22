@@ -10,6 +10,9 @@
   var bodyLockState = null;
   var previousFocus = null;
   var sectionNavigationCleanup = null;
+  var researchConfig = { wired: false, liveReady: null, getWriteSha: null, onChanged: null };
+  var researchPollTimer = 0;
+  var RESEARCH_MAX_POLLS = 12;
   var CORE_CATEGORIES = [
     { key: "form_factor", label: "Tipe Kulkas", group: "Konfigurasi", unit: "-", comparison: true, order: 10, active: true },
     { key: "door_count", label: "Jumlah Pintu", group: "Konfigurasi", unit: "pintu", comparison: true, order: 20, active: true },
@@ -558,6 +561,241 @@
     }).join("") + "</div>";
   }
 
+  function configureResearch(options) {
+    options = options || {};
+    if (typeof options.liveReady === "function") researchConfig.liveReady = options.liveReady;
+    if (typeof options.getWriteSha === "function") researchConfig.getWriteSha = options.getWriteSha;
+    if (typeof options.onChanged === "function") researchConfig.onChanged = options.onChanged;
+    researchConfig.wired = Boolean(researchConfig.liveReady && researchConfig.getWriteSha && researchConfig.onChanged);
+  }
+
+  function clearResearchPoll() {
+    if (researchPollTimer) window.clearTimeout(researchPollTimer);
+    researchPollTimer = 0;
+  }
+
+  function researchModelId(record) {
+    var model = record && typeof record.model === "string" ? record.model.trim() : "";
+    if (!model) return "";
+    return (record.brand && String(record.brand).trim() || "AQUA") + "::" + model;
+  }
+
+  function researchRequest(method, body, extraHeaders) {
+    return window.fetch("api/research", {
+      method: method,
+      credentials: "same-origin",
+      headers: Object.assign({ "Content-Type": "application/json" }, extraHeaders || {}),
+      body: body === undefined ? undefined : JSON.stringify(body)
+    }).then(function (response) {
+      return response.json().catch(function () { return {}; }).then(function (payload) {
+        return { status: response.status, ok: response.ok, payload: payload };
+      });
+    });
+  }
+
+  function getResearchJob(jobId) {
+    return window.fetch("api/research?job_id=" + encodeURIComponent(jobId), { credentials: "same-origin" })
+      .then(function (response) {
+        return response.json().catch(function () { return {}; }).then(function (payload) {
+          return { status: response.status, ok: response.ok, payload: payload };
+        });
+      });
+  }
+
+  function setResearchStatus(box, message, kind) {
+    var status = box.querySelector(".pk-research-status");
+    if (!status) return;
+    status.textContent = message || "";
+    status.className = "pk-research-status" + (kind ? " is-" + kind : "");
+  }
+
+  function researchCategoryMap(options) {
+    var map = Object.create(null);
+    orderedCategories(options).forEach(function (category) { map[category.key] = category; });
+    return map;
+  }
+
+  function candidateCardHtml(candidate, category, jobId) {
+    return '<article class="pk-research-candidate is-pending" data-suggestion-id="' +
+      escapeAttr(candidate.suggestion_id) + '" data-job-id="' + escapeAttr(jobId) + '">' +
+      '<div class="pk-research-head"><strong>' + escapeHtml(category ? category.label : candidate.key) + "</strong></div>" +
+      '<p class="pk-research-value"><span>Usulan:</span> ' +
+      escapeHtml(formatSpecEntry({ value: candidate.value }, category)) + "</p>" +
+      provenanceHtml(candidate, "pk-research-provenance", false) +
+      '<div class="pk-research-actions">' +
+      '<button type="button" class="pk-research-accept">Terima</button>' +
+      '<button type="button" class="pk-research-reject">Tolak</button>' +
+      "</div></article>";
+  }
+
+  function renderResearchOutcome(box, job, categoryMap) {
+    var host = box.querySelector(".pk-research-candidates");
+    if (!host) return;
+    var candidates = Array.isArray(job.candidates) ? job.candidates.filter(function (item) {
+      return item && item.status === "pending";
+    }) : [];
+    if (job.status === "completed" && candidates.length) {
+      host.innerHTML = candidates.map(function (candidate) {
+        return candidateCardHtml(candidate, categoryMap[candidate.key], job.job_id);
+      }).join("");
+      setResearchStatus(box, "Riset selesai. Periksa usulan di bawah.", "ok");
+      wireCandidateActions(box);
+      return;
+    }
+    host.innerHTML = "";
+    if (job.status === "completed") setResearchStatus(box, "Riset selesai tanpa usulan baru.", "info");
+    else if (job.status === "unresolved") setResearchStatus(box, "Sumber tidak mengonfirmasi model ini.", "info");
+    else if (job.status === "failed") setResearchStatus(box, "Riset gagal dijalankan. Coba lagi nanti.", "error");
+    else setResearchStatus(box, "Riset masih berjalan...", "info");
+  }
+
+  function markDecision(card, kind, message) {
+    card.classList.remove("is-pending");
+    card.classList.add(kind === "accept" ? "is-accepted" : "is-rejected");
+    var actions = card.querySelector(".pk-research-actions");
+    if (actions) actions.remove();
+    var box = card.closest(".pk-research");
+    if (box && message) setResearchStatus(box, message, kind === "accept" ? "ok" : "info");
+  }
+
+  function handleDecision(card, action) {
+    var box = card.closest(".pk-research");
+    if (!box) return;
+    var jobId = card.getAttribute("data-job-id");
+    var suggestionId = card.getAttribute("data-suggestion-id");
+    var buttons = card.querySelectorAll(".pk-research-actions button");
+    buttons.forEach(function (button) { button.disabled = true; });
+    var headers = null;
+    if (action === "accept") {
+      var sha = typeof researchConfig.getWriteSha === "function" ? researchConfig.getWriteSha() : "";
+      if (!sha) {
+        setResearchStatus(box, "Muat ulang halaman dulu supaya SHA terbaru.", "error");
+        buttons.forEach(function (button) { button.disabled = false; });
+        return;
+      }
+      headers = { "If-Match": '"' + sha + '"' };
+    }
+    researchRequest("PATCH", { action: action, job_id: jobId, suggestion_id: suggestionId }, headers)
+      .then(function (result) {
+        if (result.ok) {
+          markDecision(card, action, action === "accept" ?
+            "Nilai diterima dan dikunci sebagai editan tim." :
+            "Usulan ditolak.");
+          if (action === "accept" && typeof researchConfig.onChanged === "function") {
+            researchConfig.onChanged();
+          }
+          return;
+        }
+        buttons.forEach(function (button) { button.disabled = false; });
+        if (result.status === 412 || result.status === 409) {
+          setResearchStatus(box, "Nilai sudah berubah sebelum diproses. Muat ulang halaman lalu ulangi.", "error");
+          if (typeof researchConfig.onChanged === "function") researchConfig.onChanged();
+        } else if (result.status === 401) {
+          setResearchStatus(box, "Login dulu untuk memproses usulan.", "error");
+        } else if (result.status === 403) {
+          setResearchStatus(box, "Akses ditolak.", "error");
+        } else if (result.status === 404) {
+          setResearchStatus(box, "Usulan tidak ditemukan; daftar mungkin sudah diperbarui.", "error");
+        } else {
+          setResearchStatus(box, "Proses gagal. Coba lagi.", "error");
+        }
+      })
+      .catch(function () {
+        buttons.forEach(function (button) { button.disabled = false; });
+        setResearchStatus(box, "Jaringan bermasalah. Coba lagi.", "error");
+      });
+  }
+
+  function wireCandidateActions(box) {
+    box.querySelectorAll(".pk-research-candidate").forEach(function (card) {
+      var accept = card.querySelector(".pk-research-accept");
+      var reject = card.querySelector(".pk-research-reject");
+      if (accept) accept.addEventListener("click", function () { handleDecision(card, "accept"); });
+      if (reject) reject.addEventListener("click", function () { handleDecision(card, "reject"); });
+    });
+  }
+
+  function pollResearchJob(box, jobId, delay, pollsLeft, categoryMap) {
+    clearResearchPoll();
+    if (pollsLeft <= 0) {
+      setResearchStatus(box, "Riset masih berjalan di latar. Buka ulang modal nanti untuk hasil.", "info");
+      return;
+    }
+    researchPollTimer = window.setTimeout(function () {
+      getResearchJob(jobId).then(function (result) {
+        if (!modal || !modal.classList.contains("open")) return;
+        if (!result.ok) {
+          setResearchStatus(box, result.status === 401 ?
+            "Login dulu untuk melihat status riset." :
+            "Status riset gagal dimuat.", "error");
+          return;
+        }
+        var job = result.payload || {};
+        if (job.status === "queued" || job.status === "running") {
+          setResearchStatus(box, "Riset masih berjalan...", "info");
+          pollResearchJob(box, jobId, delay, pollsLeft - 1, categoryMap);
+          return;
+        }
+        renderResearchOutcome(box, job, categoryMap);
+      }).catch(function () {
+        setResearchStatus(box, "Jaringan bermasalah saat mengecek riset.", "error");
+      });
+    }, delay);
+  }
+
+  function startResearch(button, box, categoryMap) {
+    var modelId = box.getAttribute("data-model-id") || "";
+    button.disabled = true;
+    setResearchStatus(box, "Mendaftarkan riset...", "info");
+    researchRequest("POST", { model_id: modelId }).then(function (result) {
+      if (result.status === 202 && result.payload && result.payload.job_id) {
+        setResearchStatus(box, "Riset antre. Sedang dicek berkala...", "info");
+        var delay = Number(result.payload.poll_after_ms);
+        pollResearchJob(box, result.payload.job_id,
+          Number.isFinite(delay) && delay >= 200 ? Math.min(delay, 5000) : 2000,
+          RESEARCH_MAX_POLLS, categoryMap);
+        return;
+      }
+      button.disabled = false;
+      if (result.status === 401) setResearchStatus(box, "Login dulu untuk memakai riset.", "error");
+      else if (result.status === 403) setResearchStatus(box, "Akses ditolak.", "error");
+      else if (result.status === 404) setResearchStatus(box, "Model tidak ada di data live.", "error");
+      else if (result.status === 503) setResearchStatus(box, "Riset sedang sibuk. Coba lagi nanti.", "error");
+      else setResearchStatus(box, "Riset gagal dijalankan.", "error");
+    }).catch(function () {
+      button.disabled = false;
+      setResearchStatus(box, "Jaringan bermasalah. Coba lagi.", "error");
+    });
+  }
+
+  function wireResearch(record, options) {
+    clearResearchPoll();
+    var box = modal.querySelector('.pk-research[data-model-id]');
+    if (!box) return;
+    var start = box.querySelector(".pk-research-start");
+    if (!start) return;
+    var ready = typeof researchConfig.liveReady === "function" ? researchConfig.liveReady() : true;
+    start.disabled = !ready;
+    if (!ready) setResearchStatus(box, "Menunggu data live sebelum riset bisa dijalankan.", "info");
+    start.addEventListener("click", function () {
+      startResearch(start, box, researchCategoryMap(options));
+    });
+  }
+
+  function researchSectionHtml(record) {
+    if (!researchConfig.wired) return "";
+    var modelId = researchModelId(record);
+    if (!modelId) return "";
+    return '<h4 id="mtms-product-detail-riset">Riset ulang</h4>' +
+      '<div class="pk-research" data-research="true" data-model-id="' + escapeAttr(modelId) + '">' +
+      '<div class="pk-research-bar">' +
+      '<button type="button" class="pk-research-start">Riset ulang</button>' +
+      '<span class="pk-research-status" role="status" aria-live="polite"></span>' +
+      "</div>" +
+      '<div class="pk-research-candidates"></div>' +
+      "</div>";
+  }
+
   function sourceHtml(record, options) {
     var sourceUrl = safeLink(options.sourceUrl || record.source_url);
     var photoUrl = safeLink(options.photoUrl || record.photo_url);
@@ -714,6 +952,7 @@
   function close() {
     if (!modal || !modal.classList.contains("open")) return;
     modal.classList.remove("open");
+    clearResearchPoll();
     clearSectionNavigation();
     if (previousFocus && document.contains(previousFocus) && typeof previousFocus.focus === "function") {
       previousFocus.focus();
@@ -771,13 +1010,15 @@
       "</div>" + sourceSection + featureSection +
       "<table><tbody>" + rows + "</tbody></table>" + benefitSection +
       '<h4 id="mtms-product-detail-spesifikasi">Spesifikasi terstruktur</h4>' +
-      dynamicSpecsHtml(record, options) + suggestionsHtml(record, options);
+      dynamicSpecsHtml(record, options) + suggestionsHtml(record, options) +
+      researchSectionHtml(record);
     modal.querySelector(".pk-modal-body").innerHTML =
       '<div class="pk-modal-left">' + photosHtml(record, photos) + "</div>" +
       '<div class="pk-modal-right">' + right + "</div>";
 
     wirePhotoFallbacks(modal.querySelector(".pk-modal-left"));
     wireGallery(photos);
+    wireResearch(record, options);
     wireSectionNavigation(Array.isArray(record.research_suggestions) && record.research_suggestions.length > 0);
     var edit = modal.querySelector(".pk-modal-edit");
     if (edit) {
@@ -794,6 +1035,7 @@
   window.MTMSProductDetail = {
     open: open,
     close: close,
+    configureResearch: configureResearch,
     isOpen: function () { return !!(modal && modal.classList.contains("open")); }
   };
 })(window, document);

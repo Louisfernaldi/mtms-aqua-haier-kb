@@ -649,3 +649,50 @@ Sabotase host dilakukan dengan memaksa pemilih mobile selalu kembali ke LG. Veri
 Dua juri fresh terpisah meluluskan screenshot final. Juri CEO memberi Design 8,6; Originality 8,3; Craft 8,7; Function 9,1; kriteria 5 LULUS; tidak ada teks yang perlu disipitkan. Juri desainer memberi Design 8,6; Originality 8,2; Craft 8,5; Function 9,1; kriteria 5 LULUS. Temuan sisa keduanya rendah: ruang kosong saat merek belum diisi dan tab mobile yang padat tetapi tetap terbaca.
 
 Full JS API suite tetap 36/37 karena `functions/_middleware.js` yang berubah di luar tiket; kegagalan terjadi sebelum endpoint mengembalikan response pada uji unauthorized. File tersebut tidak disentuh oleh tiket 04.
+
+## 2026-08-22 WIB - Tiket 05 Durable Queue/API/Workflow
+
+Status: **bagian queue/API/workflow selesai lokal/offline; worker dan UI belum diimplementasikan**.
+
+- `/api/research` kini menjaga auth sendiri, Origin mutasi, body exact/capped, exact model, allowlist host resmi, job opaque 128-bit, satu job aktif per model, queue SHA-CAS di `research-queue`, GET aman, serta accept/reject yang melindungi edit user terbaru.
+- Dispatch `workflow_dispatch` memakai `context.waitUntil`, token terpisah, maksimal dua percobaan, dan kegagalan tidak menghapus job durable atau membocorkan error/token. Workflow hanya GitHub-hosted `ubuntu-latest`, read-only checkout, dan secret data khusus.
+- Seed queue persis `{"schema_version":1,"jobs":{}}`. Seluruh `fetch` pada 14 tes endpoint dimock; tidak ada network, secret, live write, stage, commit, push, deploy, perubahan data, UI, worker, atau middleware.
+- `node --check` untuk `research.js`, `research-jobs.js`, dan `research-api.test.mjs`: lulus. `node --test tests/research-api.test.mjs`: **14/14 lulus**.
+- Checker independen `check_mtms_ticket05_api.py` (SHA256 `182AD3767026294499AB8B564D43A4DBA69C1445BEBF7E2535F260ABAD3BBAA6`): **LULUS**.
+
+### 2026-08-22 WIB - Gapfix lanjutan Tiket 05
+
+Status: **20 test endpoint lokal offline hijau; gap 1-7 ditutup sesuai kontrak terbaru**.
+
+- G1 sampai G7 diselaraskan (response PATCH 428/412/200, queue bootstrap 404->null sha, struktur sumber timeline, suggestion-v2, fallback workflow env, serta dispatch/POST behavior).
+- `node --check functions/api/research.js`, `node --check functions/_lib/research-jobs.js`, `node --check tests/research-api.test.mjs`: **berhasil tanpa error sintaks**.
+- `node --test tests/research-api.test.mjs`: **20/20 lulus**.
+
+## 2026-08-22 WIB - Tiket 05 Antrean Riset Tahan-Mati + UX Louis
+
+Keputusan owner (Louis, chat langsung): mesin riset ulang pakai antrean repo + worker GitHub Actions (bukan waitUntil doang). Tiga permintaan UX lain dikejar di tiket ini: (1) tombol Edit tiap kolom langsung buka editor spesifikasi model itu tanpa popup detail, (2) door_count dan (3) freezer_position keluar dari tabel perbandingan (comparison=false; tetap aktif di modal).
+
+Arsitektur terkunci: antrean hanya di cabang data esearch-queue berkas esearch-jobs.json (CAS SHA); API /api/research POST/GET/Patch bertahan-auth sendiri + Origin sama; sumber maks 2 URL resmi dipilih server; dispatch workflow esearch-specs.yml via token terpisah (kosong = job tetap antre, kode DISPATCH_NOT_CONFIGURED); hasil hanya kandidat pending sampai staf Terima (wajib If-Match; 409 kalau nilai berubah) / Tolak; worker Python stdlib klaim CAS, fetch berbatas (timeout/2MB/2 sumber), ekstrak JSON-LD Product exact-model, tidak pernah menulis dokumen target.
+
+`	ext
+$ node --test tests/research-api.test.mjs
+tests 20 / pass 20 / fail 0 (fetch dimock total)
+
+$ python -X utf8 -m unittest discover -s tests -p "test_*.py"
+Ran 37 tests (26 lama + 11 worker) OK
+
+$ python -X utf8 tools/verify_product_detail.py
+PASS ... (E2E 1440/390: riset UI klik->antre->kandidat->Terima If-Match->Tolak, polling mati saat modal tutup,
+Edit kolom buka editor model exact, sabotase box riset merah, fallback tabel exact ikut registry comparison)
+
+$ python -X utf8 tools/verify_dynamic_specs.py
+LULUS (validator inti kini: active=true wajib, comparison jadi kebijakan owner)
+
+$ python -X utf8 tools/verify_spec_research.py
+LULUS (receipt MERGED-SUMMARY diregen idempoten pasca flip kategori)
+
+$ python -X utf8 tools/verify_ticket02_security.py
+LULUS (jalur overlay fallback diuji dengan skrip editor dikosongkan route)
+`
+
+Insiden tabrakan sesi: commit 906689a sesi galeri membawa CSS .pk-research dan panggilan configureResearch milik sesi ini ke live (deploy ce5b8836) tanpa modulnya di commit; live terverifikasi TIDAK putus karena deploy wrangler menyalin folder kerja yang saat itu sudah memuat product-detail.js WIP. Sisa diff sesi ini dikommit surgical terpisah.

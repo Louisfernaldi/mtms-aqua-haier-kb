@@ -3,6 +3,8 @@
 
   if (window.MTMSDynamicSpecEditor) return;
 
+  var activeEditor = null;
+
   var CORE_KEYS = [
     "form_factor", "door_count", "freezer_position", "gross_capacity_l",
     "net_capacity_l", "width_mm", "height_mm", "depth_mm", "rated_power_w",
@@ -227,6 +229,18 @@
       button.setAttribute("aria-expanded", "true");
       render();
       shell.querySelector(".ds-editor-close").focus();
+    }
+
+    function openFor(modelId) {
+      if (!state.ready) return false;
+      if (typeof modelId === "string" && modelId) {
+        var exists = state.models.some(function (row) { return row.modelId === modelId; });
+        if (!exists) return false;
+        state.selectedModelId = modelId;
+      }
+      state.tab = "model";
+      open();
+      return true;
     }
 
     function close() {
@@ -524,7 +538,18 @@
     });
 
     loadLive();
+
+    var api = { openFor: openFor };
+    activeEditor = api;
+    return api;
   }
 
-  window.MTMSDynamicSpecEditor = { mount: mount, _loadInitialData: loadInitialData, _flattenModels: flattenModels };
+  window.MTMSDynamicSpecEditor = {
+    mount: mount,
+    openFor: function (modelId) {
+      return Boolean(activeEditor && activeEditor.openFor(modelId));
+    },
+    _loadInitialData: loadInitialData,
+    _flattenModels: flattenModels
+  };
 })(window, document);

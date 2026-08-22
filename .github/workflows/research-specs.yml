@@ -1,0 +1,29 @@
+name: Research model specifications
+
+on:
+  workflow_dispatch:
+    inputs:
+      job_id:
+        description: Opaque durable research job identifier
+        required: true
+        type: string
+      model_id:
+        description: Exact brand and model identifier
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    env:
+      RESEARCH_DATA_REPO: ${{ vars.RESEARCH_DATA_REPO || 'Louisfernaldi/mtms-aqua-haier-kb-data' }}
+      RESEARCH_BRANCH: ${{ vars.RESEARCH_BRANCH || 'research-queue' }}
+      RESEARCH_JOBS_PATH: ${{ vars.RESEARCH_JOBS_PATH || 'research-jobs.json' }}
+      MTMS_RESEARCH_DATA_TOKEN: ${{ secrets.MTMS_RESEARCH_DATA_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Research one exact model
+        run: python -X utf8 tools/research_specs.py --job-id "${{ inputs.job_id }}" --model-id "${{ inputs.model_id }}"

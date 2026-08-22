@@ -110,6 +110,6 @@ Snapshot deterministik tiket 03; seluruh sumber berasal dari tujuh JSON staging 
 |---|---:|---|
 | `site/data/kompetitor.json` | 417216 | `0923cf012f98c354c6c36f68ea82f913d9dcb4c9ee06f8adf32a76c426d700a1` |
 | `site/data/produk-katalog.json` | 123359 | `bd4f960874a93f1a6a0b0a173f2e62a241f91f671c94d96f2161dff8b5449cca` |
-| `site/data/spec-categories.json` | 8054 | `5a6629353abb2c2e8028e24da92bf35991e4b78439d022a0bb28e6b48a359c69` |
+| `site/data/spec-categories.json` | 8056 | `143adeae26459f30ea1f418c4ed88b0b7825c6dd5ff43c9f644d9bf65a4ae5a8` |
 
 Non-exact records tidak diterapkan. Notes tidak pernah menjadi fitur atau spesifikasi; hanya `specs` dan `additional_specs` eksplisit yang diproses.

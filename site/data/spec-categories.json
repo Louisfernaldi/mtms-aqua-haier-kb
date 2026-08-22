@@ -14,7 +14,7 @@
       "label": "Jumlah Pintu",
       "group": "Konfigurasi",
       "unit": "pintu",
-      "comparison": true,
+      "comparison": false,
       "order": 20,
       "active": true
     },
@@ -23,7 +23,7 @@
       "label": "Posisi Freezer",
       "group": "Konfigurasi",
       "unit": "-",
-      "comparison": true,
+      "comparison": false,
       "order": 30,
       "active": true
     },

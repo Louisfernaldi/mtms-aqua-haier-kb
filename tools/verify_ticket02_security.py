@@ -250,6 +250,13 @@ def run_browser(base_url: str) -> None:
         wait_for_ready(page, '#ds-editor-shell:not([hidden])')
         assert_secure_dom(page, "Produk dynamic editor")
 
+        # Jalur fallback overlay sengaja diuji terpisah: skrip editor dikosongkan
+        # supaya Edit kolom jatuh ke overlay lama tanpa error resource di console.
+        context.route(
+            "**/js/dynamic-spec-editor.js",
+            lambda route: route.fulfill(status=200, content_type="application/javascript", body=""),
+        )
+
         page.goto(base_url + "/kompetitor.html", wait_until="domcontentloaded")
         trigger = page.locator(".comp-detail-trigger").filter(has_text=MARKER)
         trigger.wait_for(state="visible", timeout=15_000)

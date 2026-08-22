@@ -506,6 +506,10 @@ function openOverlay(title,fields,onSave){
 
 function doEdit(brand,model){
   if(!compData)return;
+  if(liveReady&&window.MTMSDynamicSpecEditor&&window.MTMSDynamicSpecEditor.openFor&&
+     window.MTMSDynamicSpecEditor.openFor(brand+"::"+model)){
+    return;
+  }
   var bd=null;
   for(var i=0;i<compData.brands.length;i++){
     if(compData.brands[i].brand===brand){bd=compData.brands[i];break;}

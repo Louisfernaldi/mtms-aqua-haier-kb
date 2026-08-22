@@ -36,6 +36,23 @@ UNSAFE_JAVASCRIPT = "javascript:window.__ticket04_unsafe=1"
 UNSAFE_BACKSLASH = "https:\\evil.example\\ticket04-backslash"
 UNSAFE_CONTROL = "https://evil.example/ticket04\ncontrol"
 THEME_SETTLE_MS = 350
+RESEARCH_SUGGESTION_ID = "b" * 64
+RESEARCH_CANDIDATE_KEY = "compressor_type"
+RESEARCH_CANDIDATE_VALUE = "Inverter Cepat Fixture"
+
+
+def research_job_public(job):
+    return {
+        "job_id": job["job_id"],
+        "model_id": job["model_id"],
+        "target": "kompetitor",
+        "status": job["status"],
+        "requested_at": job["requested_at"],
+        "started_at": None,
+        "finished_at": "2026-08-21T15:00:00+00:00",
+        "error_code": None,
+        "candidates": job["candidates"],
+    }
 
 
 def fail(message):
@@ -273,6 +290,7 @@ class Handler(SimpleHTTPRequestHandler):
     catalog = None
     competitor = None
     categories = None
+    research = None
 
     def log_message(self, *_args):
         pass
@@ -287,14 +305,36 @@ class Handler(SimpleHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(body)
 
+    def _research_log(self, entry):
+        if self.research is not None:
+            self.research["log"].append(entry)
+
+    def _read_body(self):
+        length = int(self.headers.get("Content-Length") or 0)
+        raw = self.rfile.read(length) if length else b"{}"
+        try:
+            return json.loads(raw.decode("utf-8"))
+        except (ValueError, UnicodeDecodeError):
+            return None
+
     def do_GET(self):
+        path, _, query = self.path.partition("?")
+        if path == "/api/research":
+            self._research_log({"method": "GET", "path": self.path})
+            params = dict(part.split("=", 1) for part in query.split("&") if "=" in part)
+            job = self.research["jobs"].get(params.get("job_id")) if self.research else None
+            if not job:
+                return self._json({"error": "job tidak ditemukan"}, 404)
+            return self._json(research_job_public(job), 200, {"Cache-Control": "no-store"})
         path = self.path.split("?", 1)[0]
         if path in (CARD_404_PATH, MODAL_404_PATH):
             self.send_error(404)
             return
         if path == "/api/produk":
+            self._research_log({"method": "GET", "path": "/api/produk"})
             return self._json(self.catalog, headers={"X-Data-SHA": FIXTURE_SHA, "ETag": '"%s"' % FIXTURE_SHA})
         if path == "/api/kompetitor":
+            self._research_log({"method": "GET", "path": "/api/kompetitor"})
             return self._json(self.competitor, headers={"X-Data-SHA": FIXTURE_SHA, "ETag": '"%s"' % FIXTURE_SHA})
         if path == "/api/spec-categories":
             return self._json(self.categories, headers={"X-Data-SHA": FIXTURE_SHA, "ETag": '"%s"' % FIXTURE_SHA})
@@ -306,9 +346,72 @@ class Handler(SimpleHTTPRequestHandler):
         return self._json({"error": "checker read-only: PUT dilarang"}, 405)
 
     def do_POST(self):
+        path = self.path.split("?", 1)[0]
+        if path == "/api/research":
+            if not self.research:
+                return self._json({"error": "checker research disabled"}, 404)
+            body = self._read_body()
+            self._research_log({"method": "POST", "body": body})
+            if not isinstance(body, dict) or set(body) != {"model_id"} or not isinstance(body["model_id"], str):
+                return self._json({"error": "invalid input: exact model_id only"}, 400)
+            counter = self.research["counter"] + 1
+            self.research["counter"] = counter
+            job_id = "%032x" % counter
+            job = {
+                "job_id": job_id,
+                "model_id": body["model_id"],
+                "status": "completed",
+                "requested_at": "2026-08-21T14:59:59+00:00",
+                "candidates": [{
+                    "key": RESEARCH_CANDIDATE_KEY,
+                    "value": RESEARCH_CANDIDATE_VALUE,
+                    "observed_value": None,
+                    "source_url": "https://fixture.example/research",
+                    "source_kind": FIXTURE_SOURCE_KIND,
+                    "verified_at": "2026-08-21T15:00:00+00:00",
+                    "status": "pending",
+                    "suggestion_id": RESEARCH_SUGGESTION_ID,
+                }],
+            }
+            self.research["jobs"][job_id] = job
+            return self._json({"job_id": job_id, "status": "queued", "poll_after_ms": 50}, 202)
         return self._json({"error": "checker read-only: POST dilarang"}, 405)
 
     def do_PATCH(self):
+        path = self.path.split("?", 1)[0]
+        if path == "/api/research":
+            if not self.research:
+                return self._json({"error": "checker research disabled"}, 404)
+            body = self._read_body()
+            self._research_log({
+                "method": "PATCH",
+                "body": body,
+                "if_match": self.headers.get("If-Match") or "",
+            })
+            if (not isinstance(body, dict) or set(body) != {"action", "job_id", "suggestion_id"} or
+                    body.get("action") not in ("accept", "reject")):
+                return self._json({"error": "invalid decision input"}, 400)
+            job = self.research["jobs"].get(body.get("job_id")) if self.research else None
+            if not job:
+                return self._json({"error": "job tidak ditemukan"}, 404)
+            candidate = next((item for item in job["candidates"]
+                              if item.get("suggestion_id") == body.get("suggestion_id")), None)
+            if not candidate:
+                return self._json({"error": "suggestion tidak ditemukan"}, 404)
+            if candidate["status"] == "accepted" and body["action"] == "accept":
+                return self._json(research_job_public(job), 200)
+            if candidate["status"] == "rejected" and body["action"] == "reject":
+                return self._json(research_job_public(job), 200)
+            if candidate["status"] != "pending":
+                return self._json({"error": "suggestion sudah diputus"}, 409)
+            if body["action"] == "accept":
+                expected = '"' + FIXTURE_SHA + '"'
+                if (self.headers.get("If-Match") or "") != expected:
+                    return self._json({"error": "base SHA / If-Match tidak cocok"}, 412)
+                candidate["status"] = "accepted"
+            else:
+                candidate["status"] = "rejected"
+            return self._json(research_job_public(job), 200)
         return self._json({"error": "checker read-only: PATCH dilarang"}, 405)
 
     def do_DELETE(self):
@@ -1152,6 +1255,155 @@ async def assert_comparison_sabotage(page, width, label):
         await picker.evaluate("(node, style) => { if (style === null) node.removeAttribute('style'); else node.setAttribute('style', style); }", original_style)
 
 
+async def wait_research_log(predicate, timeout_ms=5000):
+    deadline = asyncio.get_running_loop().time() + timeout_ms / 1000
+    while asyncio.get_running_loop().time() < deadline:
+        for entry in Handler.research["log"]:
+            if predicate(entry):
+                return entry
+        await page_sleep(100)
+    fail("log riset tidak memuat entri yang diharapkan dalam batas waktu")
+
+
+async def page_sleep(ms):
+    await asyncio.sleep(ms / 1000)
+
+
+async def assert_inline_editor(page, width, label):
+    buttons = page.locator(".comp-edit:enabled")
+    if await buttons.count() == 0:
+        fail(label + ": tidak ada tombol Edit kolom aktif")
+    first = buttons.first
+    brand = await first.get_attribute("data-brand")
+    model = await first.get_attribute("data-model")
+    if not brand or not model:
+        fail(label + ": tombol Edit kolom kehilangan data-brand/model")
+    await first.click()
+    shell = page.locator(".ds-editor-shell")
+    try:
+        await shell.wait_for(state="visible", timeout=4000)
+    except AssertionError:
+        fail(label + ": Edit kolom tidak membuka editor spesifikasi langsung")
+    select = shell.locator("[data-ds-model-select]")
+    if await select.count() != 1:
+        fail(label + ": pilih model di editor hilang")
+    value = await select.input_value()
+    if value != brand + "::" + model:
+        fail(label + ": editor tidak membuka model kolom yang ditekan: %s != %s" %
+             (value, brand + "::" + model))
+    await page.keyboard.press("Escape")
+    await shell.wait_for(state="hidden", timeout=4000)
+
+
+async def assert_research_ui(page, modal, competitor_brand, competitor_model, comp_trigger, label):
+    model_id = competitor_brand + "::" + competitor_model
+
+    async def research_box_present(opened):
+        box = opened.locator('.pk-research[data-model-id="%s"]' % model_id)
+        if await box.count() != 1:
+            fail(label + ": riset box tidak exact satu untuk " + model_id)
+        return box
+
+    def entries(method=None, action=None):
+        result = []
+        for entry in Handler.research["log"]:
+            if method and entry.get("method") != method:
+                continue
+            body = entry.get("body")
+            if action and (not isinstance(body, dict) or body.get("action") != action):
+                continue
+            result.append(entry)
+        return result
+
+    box = await research_box_present(modal)
+    start = box.locator(".pk-research-start")
+    if not await start.is_enabled():
+        fail(label + ": tombol riset harus aktif saat data live siap")
+
+    post_before = len(entries("POST"))
+    await start.click()
+    candidate = modal.locator(".pk-research-candidate.is-pending")
+    await candidate.wait_for(state="visible", timeout=6000)
+    posts = entries("POST")
+    if len(posts) != post_before + 1:
+        fail(label + ": klik Riset ulang wajib tepat satu POST")
+    if posts[-1]["body"] != {"model_id": model_id}:
+        fail(label + ": POST body bukan exact {model_id}: " + json.dumps(posts[-1], ensure_ascii=False))
+    card_text = " ".join((await candidate.inner_text()).split())
+    if "Jenis Kompresor" not in card_text or RESEARCH_CANDIDATE_VALUE not in card_text:
+        fail(label + ": kandidat tidak menampilkan label kategori/nilai: " + card_text[:200])
+    if "Halaman produk resmi" not in card_text or "WIB" not in card_text:
+        fail(label + ": kandidat kehilangan provenance WIB/jenis sumber")
+
+    accept_patch_before = len(entries("PATCH", "accept"))
+    kompetitor_get_marker = len(entries("GET"))
+    await candidate.locator(".pk-research-accept").click()
+    accept_entry = await wait_research_log(
+        lambda entry: entry.get("method") == "PATCH" and isinstance(entry.get("body"), dict) and
+        entry["body"].get("action") == "accept" and
+        isinstance(entry["body"].get("suggestion_id"), str),
+        timeout_ms=6000)
+    if accept_entry["if_match"] != '"' + FIXTURE_SHA + '"':
+        fail(label + ": accept wajib membawa If-Match SHA data terkini: " + repr(accept_entry["if_match"]))
+    if len(entries("PATCH", "accept")) != accept_patch_before + 1:
+        fail(label + ": accept mengirim lebih dari satu PATCH")
+    deadline = asyncio.get_running_loop().time() + 6
+    refreshed = False
+    while asyncio.get_running_loop().time() < deadline:
+        gets = [entry for entry in Handler.research["log"][Handler.research["log"].index(accept_entry) + 1:]
+                if entry.get("method") == "GET" and entry.get("path") == "/api/kompetitor"]
+        if gets:
+            refreshed = True
+            break
+        await page_sleep(100)
+    if not refreshed:
+        fail(label + ": accept sukses tidak memicu refresh data (onChanged)")
+    await modal.locator(".pk-modal-close").click()
+    await modal.wait_for(state="hidden")
+
+    await comp_trigger.click()
+    reopened = await wait_modal(page)
+    box = await research_box_present(reopened)
+    await box.locator(".pk-research-start").click()
+    pending = reopened.locator(".pk-research-candidate.is-pending")
+    await pending.wait_for(state="visible", timeout=6000)
+    reject_patch_before = len(entries("PATCH", "reject"))
+    await pending.locator(".pk-research-reject").click()
+    await wait_research_log(
+        lambda entry: entry.get("method") == "PATCH" and isinstance(entry.get("body"), dict) and
+        entry["body"].get("action") == "reject",
+        timeout_ms=6000)
+    if len(entries("PATCH", "reject")) != reject_patch_before + 1:
+        fail(label + ": reject mengirim lebih dari satu PATCH")
+    rejected_card = reopened.locator(".pk-research-candidate.is-rejected")
+    try:
+        await rejected_card.first.wait_for(state="visible", timeout=5000)
+    except Exception:
+        fail(label + ": kartu usulan tidak berubah jadi ditolak")
+    status_text = await reopened.locator(".pk-research-status").inner_text()
+    if "ditolak" not in status_text.lower():
+        fail(label + ": status tolak tidak tampil: " + status_text)
+
+    await reopened.locator(".pk-modal-close").click()
+    await reopened.wait_for(state="hidden")
+    log_len = len(Handler.research["log"])
+    await page_sleep(700)
+    if len(Handler.research["log"]) != log_len:
+        fail(label + ": polling masih jalan setelah modal ditutup: " +
+             json.dumps(Handler.research["log"][log_len:], ensure_ascii=False))
+
+    await comp_trigger.click()
+    sabotaged = await wait_modal(page)
+    await sabotaged.locator(".pk-research").first.evaluate("node => node.remove()")
+    detected = False
+    try:
+        await research_box_present(sabotaged)
+    except AssertionError:
+        detected = True
+    if not detected:
+        fail(label + ": sabotase riset box dihapus tidak membuat verifier merah")
+
+
 async def assert_local_loaded_image(page, image, label):
     await image.wait_for(state="visible", timeout=5000)
     handle = await image.element_handle()
@@ -1327,11 +1579,30 @@ async def assert_embedded_first_render(browser, base):
         fail("Kompetitor: render data bawaan terlalu lambat %.3fs; errors=%s" % (elapsed, json.dumps(errors)))
     if await page.evaluate("window.MTMS_COMPETITOR_LIVE_READY !== false"):
         fail("Kompetitor: fixture API tertunda tidak membuktikan render sebelum API")
+    await page.locator(".comp-detail-trigger").first.click()
+    early_modal = await wait_modal(page)
+    early_start = early_modal.locator(".pk-research-start")
+    if await early_start.count() != 1:
+        fail("Kompetitor: tombol Riset ulang wajib ada di modal sejak awal")
+    if await early_start.is_enabled():
+        fail("Kompetitor: Riset ulang aktif sebelum data live; harus disabled")
+    early_hint = (await early_modal.locator(".pk-research-status").inner_text()).strip()
+    if "data live" not in early_hint:
+        fail("Kompetitor: hint menunggu data live tidak tampil: " + early_hint)
+    await page.keyboard.press("Escape")
+    await early_modal.wait_for(state="hidden")
     first_keys = await page.locator(".comp-spec-list").first.locator(".comp-spec-item").evaluate_all(
         "nodes => nodes.map(node => node.getAttribute('data-spec-key'))"
     )
-    if len(first_keys) != 12:
-        fail("Kompetitor: fallback kategori inti bukan exact 12 sebelum API: " + repr(first_keys))
+    with open(CATEGORIES_PATH, encoding="utf-8") as fh:
+        static_categories = json.load(fh)
+    expected_first = [item["key"] for item in static_categories["spec_categories"]
+                      if item["active"] is True and item["comparison"] is True]
+    if len(expected_first) < 8:
+        fail("Kompetitor: registry kategori comparison terlalu sedikit: " + repr(expected_first))
+    if first_keys != expected_first:
+        fail("Kompetitor: fallback tabel tidak exact ikut registry comparison: " +
+             repr(first_keys) + " != " + repr(expected_first))
     await page.wait_for_function("window.MTMS_COMPETITOR_LIVE_READY === true", timeout=10000)
     await page.wait_for_function("window.MTMSSpecCategories.getState().source === 'api'", timeout=10000)
     if await page.locator(".comp-edit:enabled").count() == 0:
@@ -1597,13 +1868,20 @@ async def run_browser(base, fixture):
             if width <= 600:
                 await page.get_by_label("Bandingkan AQUA dengan", exact=True).select_option(competitor_brand)
             await assert_main_table_contract(page, categories, competitor_fixture, competitor_brand)
+            await assert_inline_editor(page, width, "kompetitor %dpx" % width)
             await assert_tap_targets(page, "kompetitor tabel %dpx" % width)
 
             edit = page.locator('.comp-edit[data-brand="AQUA"][data-model="%s"]' % aqua["model"])
             await edit.click()
             if await page.locator('.pk-modal.open[data-mtms-product-detail="true"]').count():
                 fail("Kompetitor Edit: klik Edit ikut membuka shared detail")
-            await page.locator("#cef_cancel").click()
+            editor_shell = page.locator(".ds-editor-shell")
+            await editor_shell.wait_for(state="visible", timeout=4000)
+            edit_select = editor_shell.locator("[data-ds-model-select]")
+            if await edit_select.count() != 1 or (await edit_select.input_value()) != "AQUA::" + aqua["model"]:
+                fail("Kompetitor Edit: tombol kolom tidak langsung membuka model AQUA di editor")
+            await page.keyboard.press("Escape")
+            await editor_shell.wait_for(state="hidden", timeout=4000)
 
             await aqua_trigger.focus()
             await page.keyboard.press("Enter")
@@ -1667,6 +1945,7 @@ async def run_browser(base, fixture):
             await assert_modal_round1(page, modal, competitor_fixture, width, "kompetitor brand %dpx" % width)
             await assert_dark_readable(page, modal, "kompetitor brand %dpx" % width)
             await assert_tap_targets(page, "kompetitor modal %dpx" % width)
+            await assert_research_ui(page, modal, competitor_brand, competitor["model"], comp_trigger, "kompetitor brand %dpx" % width)
             await page.keyboard.press("Escape")
             await assert_clean(page, errors, "kompetitor %dpx" % width)
             await assert_real_image_fallbacks(page, base, comp_trigger)
@@ -1679,6 +1958,7 @@ async def main():
     Handler.catalog = fixture["catalog"]
     Handler.competitor = fixture["competitor_document"]
     Handler.categories = fixture["categories"]
+    Handler.research = {"jobs": {}, "log": [], "counter": 0}
     server = ThreadingHTTPServer(("127.0.0.1", 0), partial(Handler, directory=SITE))
     thread = threading.Thread(target=server.serve_forever, daemon=True)
     thread.start()

@@ -124,11 +124,13 @@ def validate_categories(categories: Any) -> List[str]:
         errors.append("order 12 kategori inti wajib 10..120")
 
     for item in items[: len(CORE_CATEGORY_KEYS)]:
-        if isinstance(item, dict) and (item.get("comparison") is not True or item.get("active") is not True):
-            errors.append(f"kategori inti {item.get('key')} wajib active/comparison=true")
+        if isinstance(item, dict) and item.get("active") is not True:
+            # Kebijakan Louis 22 Agu 2026: inti wajib selalu AKTIF (anti-yatim),
+            # tapi pilihan masuk tabel utama (comparison) bebas diatur owner.
+            errors.append(f"kategori inti {item.get('key')} wajib active=true")
     # Kategori tambahan dibuat non-comparison oleh migrator, lalu tiket 02
     # mengizinkan user memilihnya sebagai kolom utama. Tipe boolean sudah
-    # diperiksa di atas; hanya 12 kategori inti yang wajib selalu true.
+    # diperiksa di atas; comparison kini kebijakan owner, bukan paksaan validator.
     return errors
 
 
