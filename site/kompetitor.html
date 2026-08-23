@@ -559,7 +559,7 @@ function openMiniEdit(row){
       origin:"user",user_locked:true};
     ddUpdate(curRow,m.spec_values[keyOf(curRow)]);
   }
-  var sendPatch=function(v,isRetry){
+  var sendPatch=function(v){
     busy(true);
     fetch("api/kompetitor",{method:"PATCH",credentials:"same-origin",
       headers:{"Content-Type":"application/json","If-Match":"\""+compSha+"\""},
@@ -608,16 +608,15 @@ function openMiniEdit(row){
             showToast("Dipakai nilai terbaru","ok");
           });
           pop.querySelector(".comp-mini-force").addEventListener("click",function(){
-            compSha=fr.sha||compSha;sendPatch(v,false);
+            compSha=fr.sha||compSha;sendPatch(v);
           });
         }).catch(function(){miniMsg("Gagal memuat nilai terbaru.","error");});
       }
       else if(res.status===403)miniMsg("Akses ditolak.","error");
       else miniMsg((res.body&&res.body.error)||"Gagal menyimpan.","error");
     }).catch(function(){
-      if(!isRetry){setTimeout(function(){sendPatch(v,true);},1200);return;}
       busy(false);
-      miniMsg("Jaringan bermasalah dua kali. Coba lagi nanti.","error");
+      miniMsg("Jaringan bermasalah. Tekan Simpan untuk coba lagi.","error");
     });
   };
   function save(){
