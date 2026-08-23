@@ -399,6 +399,7 @@ function renderAll(){
   applySelectedMobileBrand();
   fillMeters();
   tryDeepLink();
+  syncRqCount();
   lazyLoad();
 }
 function fillMeters(){
@@ -661,6 +662,155 @@ function ddUpdate(row,entry,category){
   var text=window.MTMSSpecCategories?window.MTMSSpecCategories.formatValue(entry,category):String(entry.value==null?"Belum tersedia":entry.value);
   dd.textContent=text;
   row.classList.toggle("is-missing",text==="Belum tersedia");
+}
+
+/* === ANTREAN RISET (papan Terima/Tolak luar modal + keyboard J/K/A/R) === */
+function collectPendingQueue(){
+  var out=[];
+  if(!compData||!compData.brands)return out;
+  compData.brands.forEach(function(b){
+    (b.models||[]).forEach(function(mm){
+      var id=((b.brand||"AQUA")+"::"+mm.model);
+      if(Array.isArray(mm.research_suggestions)){
+        mm.research_suggestions.forEach(function(s,i){
+          if(s&&(s.status||"pending")==="pending")out.push({brand:b.brand||"AQUA",model:mm.model,model_id:id,index:i,s:s});
+        });
+      }
+      if(Array.isArray(mm.feature_suggestions)){
+        mm.feature_suggestions.forEach(function(s,i){
+          if(s&&(s.status||"pending")==="pending")out.push({brand:b.brand||"AQUA",model:mm.model,model_id:id,index:i,s:s,fitur:true});
+        });
+      }
+    });
+  });
+  return out;
+}
+var rqOpen=false,rqIdx=0;
+function rqCount(){return collectPendingQueue().length;}
+function fmtWib(iso){try{return new Date(iso).toLocaleString("id-ID",{timeZone:"Asia/Jakarta",day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"})+" WIB";}catch(_e){return String(iso||"");}}
+function renderRisetDrawer(){
+  var d=document.querySelector(".riset-drawer");if(!d)return;
+  var q=collectPendingQueue();
+  if(rqIdx>=q.length)rqIdx=Math.max(0,q.length-1);
+  var cnt=d.querySelector(".rq-count-live");
+  if(cnt)cnt.textContent=q.length;
+  var list=d.querySelector(".rq-list");
+  if(!q.length){
+    list.innerHTML='<p class="rq-empty">Nol usulan nunggu ACC. Semua beres.</p>';
+    return;
+  }
+  list.innerHTML=q.map(function(item,i){
+    var cat=null;specCategories.forEach(function(c){if(c.key===item.s.key)cat=c;});
+    var lbl=item.fitur?"Fitur Unggulan":(cat?cat.label:(item.s.key||"?"));
+    var val=item.fitur?(Array.isArray(item.s.fitur)?item.s.fitur.join(" · "):String(item.s.value==null?"":item.s.value)):
+      (window.MTMSSpecCategories?window.MTMSSpecCategories.formatValue({value:item.s.value},cat||{unit:"-"}):String(item.s.value));
+    var src=item.s.source_url?'<a href="'+esc(String(item.s.source_url))+'" target="_blank" rel="noopener noreferrer">sumber</a>':"";
+    return '<li class="rq-item'+(i===rqIdx?" is-active":"")+'" data-rq-index="'+i+'">'+
+      '<div class="rq-head"><strong>'+esc(lbl)+'</strong><span class="rq-model">'+esc(item.brand+" "+item.model)+'</span></div>'+
+      '<div class="rq-val">'+esc(String(val))+'</div>'+
+      '<div class="rq-meta">'+src+(item.s.verified_at?' · '+esc(fmtWib(item.s.verified_at)):'')+'</div>'+
+      '<div class="rq-actions"><button type="button" class="rq-accept" data-i="'+i+'">Terima</button>'+
+      '<button type="button" class="rq-reject" data-i="'+i+'">Tolak</button></div></li>';
+  }).join("");
+  var act=list.querySelector(".rq-item.is-active");
+  if(act&&act.scrollIntoView)act.scrollIntoView({block:"nearest"});
+}
+function openRisetDrawer(){
+  var d=document.querySelector(".riset-drawer");
+  if(!d){
+    d=document.createElement("aside");
+    d.className="riset-drawer";d.setAttribute("aria-label","Antrean riset");
+    d.innerHTML='<header><strong>Antrean riset</strong><span class="rq-count-live"></span>'+
+      '<button type="button" class="rq-close" aria-label="Tutup">&times;</button></header>'+
+      '<p class="rq-hint">J=lanjut · K=kembali · A=terima · R=tolak · Esc=tutup</p>'+
+      '<div class="rq-list"></div>';
+    document.body.appendChild(d);
+    d.querySelector(".rq-close").addEventListener("click",closeRisetDrawer);
+    d.addEventListener("click",function(e){
+      var b=e.target.closest(".rq-accept,.rq-reject");
+      if(!b)return;
+      rqIdx=Number(b.getAttribute("data-i"))||0;
+      rqDecide(b.classList.contains("rq-accept")?"accept":"reject");
+    });
+  }
+  rqOpen=true;renderRisetDrawer();
+}
+function closeRisetDrawer(){
+  var d=document.querySelector(".riset-drawer");
+  if(d)d.remove();rqOpen=false;
+}
+function rqApplyLocal(item,status){
+  if(!compData||!compData.brands)return;
+  for(var i=0;i<compData.brands.length;i++){
+    var b=compData.brands[i];
+    if((b.brand||"AQUA")!==item.brand)continue;
+    for(var j=0;j<(b.models||[]).length;j++){
+      var mm=b.models[j];if(mm.model!==item.model)continue;
+      var arr=item.fitur?mm.feature_suggestions:mm.research_suggestions;
+      if(arr&&arr[item.index]){arr[item.index].status=status;arr[item.index].decided_at=new Date().toISOString();}
+      return;
+    }
+  }
+}
+var rqBusy=false;
+function rqDecide(action){
+  if(rqBusy)return;
+  var q=collectPendingQueue();if(!q.length)return;
+  var item=q[Math.min(rqIdx,q.length-1)];
+  rqBusy=true;
+  fetch("api/kompetitor",{method:"PATCH",credentials:"same-origin",
+    headers:{"Content-Type":"application/json","If-Match":"\""+compSha+"\""},
+    body:JSON.stringify({action:action+(item.fitur?"_feature_suggestion":"_suggestion"),
+      model_id:item.model_id,suggestion_index:item.index})
+  }).then(function(r){return r.json().catch(function(){return{};}).then(function(j){return{status:r.status,body:j};});})
+  .then(function(res){
+    rqBusy=false;
+    if(res.status===200&&res.body.ok){
+      compSha=res.body.sha||compSha;
+      rqApplyLocal(item,action==="accept"?"accepted":"rejected");
+      showToast((action==="accept"?"Diterima: ":"Ditolak: ")+item.brand+" "+item.model,"ok");
+      renderRisetDrawer();renderAll();
+      return;
+    }
+    if(res.status===401)showToast("Login dulu untuk memutus usulan.","err");
+    else if(res.status===412||res.status===409){
+      loadData().then(function(){window.MTMS_COMPETITOR_LIVE_READY=liveReady;renderAll();
+        if(rqOpen)renderRisetDrawer();});
+      showToast("Data berubah di luar. Daftar disegarkan.","err");
+    }
+    else showToast((res.body&&res.body.error)||"Gagal memutus usulan.","err");
+  }).catch(function(){rqBusy=false;showToast("Jaringan bermasalah.","err");});
+}
+document.addEventListener("keydown",function(e){
+  if(!rqOpen)return;
+  var t=e.target&&e.target.tagName;
+  if(t==="INPUT"||t==="TEXTAREA"||t==="SELECT")return;
+  var q=collectPendingQueue();
+  if(e.key==="j"||e.key==="J"){if(q.length){rqIdx=(rqIdx+1)%q.length;renderRisetDrawer();e.preventDefault();}}
+  else if(e.key==="k"||e.key==="K"){if(q.length){rqIdx=(rqIdx-1+q.length)%q.length;renderRisetDrawer();e.preventDefault();}}
+  else if(e.key==="a"||e.key==="A"){e.preventDefault();rqDecide("accept");}
+  else if(e.key==="r"||e.key==="R"){e.preventDefault();rqDecide("reject");}
+  else if(e.key==="Escape"){closeRisetDrawer();}
+});
+function mountRisetEntry(){
+  var hero=document.querySelector(".hero-mini");
+  if(!hero||document.getElementById("riset-queue-btn"))return;
+  var wrap=document.createElement("div");
+  wrap.className="riset-entry";
+  wrap.style.marginLeft="auto";
+  var btn=document.createElement("button");
+  btn.type="button";btn.id="riset-queue-btn";
+  btn.className="comp-queue-btn";
+  btn.innerHTML='Antrean riset <span class="rq-count">0</span>';
+  btn.setAttribute("aria-haspopup","dialog");
+  btn.addEventListener("click",openRisetDrawer);
+  wrap.appendChild(btn);
+  hero.appendChild(wrap);
+  syncRqCount();
+}
+function syncRqCount(){
+  var c=document.querySelector("#riset-queue-btn .rq-count");
+  if(c)c.textContent=rqCount();
 }
 
 /* === EVENT DELEGATION for edit/delete/add buttons === */
@@ -1092,6 +1242,7 @@ if(window.MTMSSpecCategories){
     refreshOpenDetail();
   });
 }
+mountRisetEntry();
 window.MTMSProductDetail.configureResearch({
   liveReady:function(){return liveReady;},
   getWriteSha:function(){return compSha;},

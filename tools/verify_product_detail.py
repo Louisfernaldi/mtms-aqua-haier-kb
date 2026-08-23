@@ -385,9 +385,13 @@ class Handler(SimpleHTTPRequestHandler):
             body = self._read_body()
             self._research_log({"method": "PATCH", "path": "/api/kompetitor", "body": body,
                                 "if_match": self.headers.get("If-Match") or ""})
-            if (not isinstance(body, dict) or body.get("action") != "set_spec_value" or
-                    not isinstance(body.get("model_id"), str) or not isinstance(body.get("key"), str)):
-                return self._json({"error": "invalid set_spec_value"}, 400)
+            if (not isinstance(body, dict) or
+                    body.get("action") not in ("set_spec_value", "accept_suggestion", "reject_suggestion",
+                                               "accept_feature_suggestion", "reject_feature_suggestion") or
+                    not isinstance(body.get("model_id"), str) or
+                    (body.get("action") == "set_spec_value" and not isinstance(body.get("key"), str)) or
+                    (body.get("action") != "set_spec_value" and not isinstance(body.get("suggestion_index"), int))):
+                return self._json({"error": "invalid mutation"}, 400)
             if (self.headers.get("If-Match") or "") != '"' + FIXTURE_SHA + '"':
                 return self._json({"error": "base SHA / If-Match tidak cocok"}, 412)
             return self._json({"ok": True, "sha": FIXTURE_SHA, "model": {"ok": True}}, 200)
