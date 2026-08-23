@@ -1,6 +1,6 @@
 # SPEC Fitur Perbandingan Dinamis v1
 
-Status: RANCANGAN · 2026-08-21 WIB
+Status: LIVE · 2026-08-22 WIB (deploy eaea55a8/d97edd28, commit bcff9ec)
 Sumber: `D:\AI\state\brainstorms\2026-08-21-mtms-perbandingan-fitur-dinamis.md`
 Keputusan produksi: `D:\AI\state\ronda\antrian-acc\KEPUTUSAN-mtms-aqua-haier-kb.md` bila deploy/tulis-live siap.
 
